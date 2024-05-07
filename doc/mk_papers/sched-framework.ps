@@ -1,0 +1,1980 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 10 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Bold FMFONTDEFINE
+2 0 /Times-Italic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 1 of 10 \321) 260.86 37 T
+90 72 522 720 R
+7 X
+V
+1 18 Q
+0 X
+(Mach Scheduling Framework) 188.07 708 T
+1 14 Q
+(1) 416.94 715.2 T
+1 12 Q
+(Rob Haydt, Joseph CaraDonna, Franklin Reynolds) 174.89 676 T
+0 10 Q
+(1 Cambridge Center) 265.47 647.33 T
+(Cambridge, MA 02142) 259.5 633.33 T
+(Open Software Foundation / Research Institute) 212.04 619.33 T
+1 14 Q
+(Abstract) 279.97 588.67 T
+0 10 Q
+0.96 (The Mach scheduling subsystem provides the policies and mechanisms to schedule and) 126 566.33 P
+1.72 (control threads. This paper describes the Mach Scheduling Framework which restruc-) 126 554.33 P
+0.17 (tures the subsystem to separate the policies from mechanisms, supports multiple indepen-) 126 542.33 P
+(dent scheduling policies, and provides new functionality for real-time support in Mach.) 126 530.33 T
+1 14 Q
+(1   Intr) 90 499.67 T
+(oduction) 131.33 499.67 T
+0 10 Q
+0.26 (The Scheduling Framework is an evolution of the Mach 3 scheduling system. The initial motivation was to) 90 479.33 P
+0.66 (support multiple scheduling policies and to simplify the development of new scheduling policies. This re-) 90 467.33 P
+0.75 (quired a restructuring of the scheduler components separating the basic scheduling mechanisms involving) 90 455.33 P
+0.4 (thread state from the policy speci\336c functions. It also required some level of support for coping with inter-) 90 443.33 P
+(actions between the policies.) 90 431.33 T
+0.06 (The Framework design is based on the philosophy that each policy should be treated as a black box. A poli-) 90 410.33 P
+0.49 (cy exports only its interfaces and a metapriority thread attribute. Any interactions between policies are de-) 90 398.33 P
+(cided by the Framework based on the metapriorities of the threads involved.) 90 386.33 T
+1.01 (The Framework is also addressing other scheduling related issues needed for real-time support involving) 90 365.33 P
+1.31 (RPC, other IPC services, processor capacity reservation, thread control, and simplifying the thread state) 90 353.33 P
+(machine.) 90 341.33 T
+1 14 Q
+(2  The Scheduling Framework) 90 310.67 T
+0 10 Q
+0.36 (The Scheduling Framework provides the mechanisms necessary to isolate policies from the rest of the ker-) 90 290.33 P
+1.13 (nel, support multiple active policies, and mediate interactions among policies. In order too minimize the) 90 278.33 P
+0.33 (complexity of handling multiple policies, each policy is a unique object with a relatively small set of inter-) 90 266.33 P
+(faces.) 90 254.33 T
+0.8 (A policy exports its interfaces to the Scheduling Framework which, in turn, provides access to the policy) 90 233.33 P
+0.49 (for the rest of the kernel and the other policies. Surprisingly) 90 221.33 P
+0.49 (, each policy needs to provide only a small set) 333.26 221.33 P
+2.33 (of interfaces. The thread scheduling state transition functions are thread_setrun\050\051, thread_select\050\051, and) 90 209.33 P
+0.94 (thread_handof) 90 197.33 P
+0.94 (f \050\051 \050which will be replaced by a similar function for RPC\051. The thread manipulation func-) 147.55 197.33 P
+1.68 (tions are thread_set_policy\050\051, thread_cancel_policy\050\051, thread_set_attributes\050\051, and thread_get_attributes\050\051.) 90 185.33 P
+0.46 (The Framework support interfaces are policy_start\050\051, policy_stop\050\051, and policy_preempt\050\051. Policies need to) 90 173.33 P
+0.35 (export time based interfaces to deal with the passage of time \050pro\336ling, quantum, quotas, etc.\051 and respond) 90 161.33 P
+0.19 (to both periodic and aperiodic alarms. More information about these interfaces is presented in the appropri-) 90 149.33 P
+(ate sections.) 90 137.33 T
+90 105 522 119.98 C
+90 117.96 234 117.96 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 10 Q
+0 X
+0 K
+2.18 (1.  This r) 126 98.33 P
+2.18 (esear) 168.28 98.33 P
+2.18 (ch was supported in part by the Advanced Resear) 189.56 98.33 P
+2.18 (ch Pr) 404.85 98.33 P
+2.18 (ojects Agency) 428.59 98.33 P
+(\050ARP) 126 86.33 T
+(A\051 and the Air For) 146.36 86.33 T
+(ce Materiel Command \050AFMC\051.) 220.39 86.33 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 2 of 10 \321) 260.86 37 T
+90 72 522 720 R
+7 X
+V
+0 10 Q
+0 X
+1.12 (Interactions among active policies within the kernel is inevitable. Consider the case of two threads from) 90 713.33 P
+0.87 (dif) 90 701.33 P
+0.87 (ferent policies waiting for the same lock. Somehow precedence must be determined for acquiring lock) 100.92 701.33 P
+0.71 (ownership. Requests are currently granted in First-In-First-Out \050FIF0\051 order but it can certainly be ar) 90 689.33 P
+0.71 (gued) 502.57 689.33 P
+0.68 (that access would more appropriately be granted based on scheduling attributes. This is \336ne if the threads) 90 677.33 P
+1.3 (are scheduled by the same policy but how can the scheduling attributes from dif) 90 665.33 P
+1.3 (ferent policies be com-) 426.23 665.33 P
+(pared when a policy\325) 90 653.33 T
+(s semantics are only understood by the policy itself?) 173.54 653.33 T
+1 13 Q
+(2.1  Metapriority) 90 623.33 T
+0 10 Q
+1.25 (If a policy shouldn\325) 90 603.33 P
+1.25 (t have to be complicated by the need to \322understand\323 other policies \050see Rationale\051,) 172.12 603.33 P
+1.13 (then all policies need to provide some form of scheduling attribute which can be understood universally) 90 591.33 P
+0.35 (throughout the framework. This attribute is the metapriority \050sched_priority_t\051 which should be considered) 90 579.33 P
+(the base class from which all other sheduling attribute classes are derived.) 90 567.33 T
+0.91 (The metapriority is an integer value in a range bounded by the system con\336guration constants SCHED_-) 90 546.33 P
+0.7 (MET) 90 534.33 P
+0.7 (A_BEST and SCHED_MET) 110.3 534.33 P
+0.7 (A_WORST) 225.83 534.33 P
+0.7 (. Its purpose is to give the kernel a low overhead mechanism) 272.29 534.33 P
+(for evaluating the relative importance of threads which may be from dif) 90 522.33 T
+(ferent policies.) 376.54 522.33 T
+0.26 (Metapriority granularity may be insuf) 90 501.33 P
+0.26 (\336cient to adequately express the relative importance of all the threads) 241.86 501.33 P
+0.55 (scheduled by a speci\336c policy) 90 489.33 P
+0.55 (. A policy can easily use private scheduling data as a local re\336nement to the) 211.46 489.33 P
+1.38 (granularity of the metapriority) 90 477.33 P
+1.38 (. It is the responsibility of the policy to maintain order among its threads) 214.79 477.33 P
+(which map to a common metapriority) 90 465.33 T
+(.) 240.09 465.33 T
+1.33 (No policy is required to be able to map backwards from a metapriority value to a set of scheduling at-) 90 444.33 P
+1.49 (tributes. The Framework NEVER changes the metapriority value of a thread or the ordering of threads) 90 432.33 P
+(which share a common metapriority) 90 420.33 T
+(.) 233.69 420.33 T
+1 13 Q
+(2.2  Policy Object) 90 390.33 T
+0 10 Q
+0.12 (Since a policy is isolated from the rest of the kernel, the framework needs a \322handle\323 to access it. Each pol-) 90 370.33 P
+1.97 (icy is represented by a policy object \050sched_policy_t\051, which de\336nes the interfaces \050including a small) 90 358.33 P
+0.82 (amount of shared data\051 between the policy and the framework. The framework in turn provides access to) 90 346.33 P
+(these interfaces for the rest of the kernel.) 90 334.33 T
+0.19 (The Policy Object should be considered a base class from which all the speci\336c Policy Object\325) 90 313.33 P
+0.19 (s are derived) 470.57 313.33 P
+0.59 (\050as much as this is possible using \322c\323\051. In other words, every policy is free to expand on it\325) 90 301.33 P
+0.59 (s policy object) 462.53 301.33 P
+(adding private data \336elds and methods.) 90 289.33 T
+1.49 (Here is a brief description of the data and methods \050i.e. interfaces\051 contained in the Policy Object \050see) 90 268.33 P
+(Framework Structure for more information\051.) 90 256.33 T
+1 F
+(Policy Object Data) 99 235.33 T
+0 6 Q
+(\245) 90 214.33 T
+0 10 Q
+(policy index - the numerical index of the policy in the policy table. This is the same value contained in) 102.02 214.33 T
+(the thread structure policy \336eld.) 102.02 202.33 T
+0 6 Q
+(\245) 90 186.33 T
+0 10 Q
+(min_priority - the minimum metapriority allowed for a thread in this policy) 102.02 186.33 T
+0 6 Q
+(\245) 90 170.33 T
+0 10 Q
+(max_priority - the maximum metapriority allowed for a thread in this policy) 102.02 170.33 T
+0 6 Q
+(\245) 90 154.33 T
+0 10 Q
+(priority - the metapriority for the most important runnable thread of this policy) 102.02 154.33 T
+0 6 Q
+(\245) 90 138.33 T
+0 10 Q
+(policy_queue - the links for the list of policies with runnable threads) 102.02 138.33 T
+1 F
+(Thr) 99 117.33 T
+(ead State T) 115.48 117.33 T
+(ransition Methods) 163.04 117.33 T
+0 6 Q
+(\245) 90 96.33 T
+0 10 Q
+(thread_setrun\050\051 - called when a thread under this policy becomes runnable.) 102.02 96.33 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 3 of 10 \321) 260.86 37 T
+90 72 522 720 R
+7 X
+V
+0 6 Q
+0 X
+(\245) 90 713.33 T
+0 10 Q
+(thead_select\050\051 - called to select a new thread to run \050this implies that the currently active thread will stop) 102.02 713.33 T
+(running\051) 102.02 701.33 T
+0 6 Q
+(\245) 90 685.33 T
+0 10 Q
+(thread_handof) 102.02 685.33 T
+(f\050\051 - called to hand control from an active thread to a blocked thread \050this will be replaced) 159.57 685.33 T
+(as part of the RPC work\051) 102.02 673.33 T
+0 6 Q
+(\245) 90 657.33 T
+0 10 Q
+(thread_surrender\050\051 - called to give up the processor \050synchronizer speci\336c \337avors may be necessary\051) 102.02 657.33 T
+0 6 Q
+(\245) 90 641.33 T
+0 10 Q
+(thread_sync_wait\050\051 - called to block the current thread on a synchronizer) 102.02 641.33 T
+0 6 Q
+(\245) 90 625.33 T
+0 10 Q
+(thread_sync_abort\050\051 - called to remove a thread from a synchronizer wait list) 102.02 625.33 T
+0 6 Q
+(\245) 90 609.33 T
+0 10 Q
+(policy_sync_wakeup\050\051 - called to wakeup a thread waiting on a synchronizer) 102.02 609.33 T
+0 6 Q
+(\245) 90 593.33 T
+0 10 Q
+(policy_preempt\050\051 - called to preempt an active thread under this policy) 102.02 593.33 T
+1 F
+(Thr) 99 572.33 T
+(ead Manipulations Methods) 115.48 572.33 T
+0 6 Q
+(\245) 90 551.33 T
+0 10 Q
+(thread_set_policy\050\051 - called to add a thread to this policy) 102.02 551.33 T
+0 6 Q
+(\245) 90 535.33 T
+0 10 Q
+(thread_cancel_policy\050\051 - called to remove a thread from this policy) 102.02 535.33 T
+0 6 Q
+(\245) 90 519.33 T
+0 10 Q
+(thread_set_attributes\050\051 - called to set scheduling attributes for this thread) 102.02 519.33 T
+0 6 Q
+(\245) 90 503.33 T
+0 10 Q
+(thread_get_attributes\050\051 - called to get scheduling attributes for this thread) 102.02 503.33 T
+0 6 Q
+(\245) 90 487.33 T
+0 10 Q
+(policy_start\050\051 - called to make a policy active) 102.02 487.33 T
+0 6 Q
+(\245) 90 471.33 T
+0 10 Q
+(policy_stop\050\051 - called to make a policy inactive) 102.02 471.33 T
+0 6 Q
+(\245) 90 455.33 T
+0 10 Q
+(policy_note_time\050\051 - called to note the passage of time, for quantum, priority decay \050timesharing\051, etc.) 102.02 455.33 T
+0 6 Q
+(\245) 90 439.33 T
+0 10 Q
+(policy_alarm\050\051 - called to note a time-out) 102.02 439.33 T
+1 13 Q
+(2.3  Framework Structur) 90 409.33 T
+(e) 228.97 409.33 T
+0 10 Q
+0.36 (The Framework provides access to the policy interfaces for the kernel and provides kernel mechanisms for) 90 389.33 P
+1.73 (policies. It uses a simple Fixed Priority model to determine which policy has the thread with the best) 90 377.33 P
+0.79 (metapriority and passes control to that policy) 90 365.33 P
+0.79 (. Anytime a thread\325) 274.52 365.33 P
+0.79 (s metapriority is better than the currently) 354.05 365.33 P
+(running thread, the Framework requests that the policy preempt it.) 90 353.33 T
+2.07 (Although the possible metapriority range is an integer between SCHED_MET) 90 332.33 P
+2.07 (A_BEST and SCHED_-) 420.69 332.33 P
+0.74 (MET) 90 320.33 P
+0.74 (A_WORST) 110.3 320.33 P
+0.74 (, each policy has is assigned a subrange into which it should map its threads\325 metapriori-) 156.75 320.33 P
+1.93 (ties. The policy is also allowed to use the metapriorities SCHED_MET) 90 308.33 P
+1.93 (A_BEST \050as an escape hatch\051,) 392.45 308.33 P
+(SCHED_MET) 90 296.33 T
+(A_WORST) 148.06 296.33 T
+(, and SCHED_MET) 194.51 296.33 T
+(A_DEPRESSED \050for priority depression\051.) 274.5 296.33 T
+1 12 Q
+(2.3.1  Run Queues) 90 267 T
+0 10 Q
+0.71 (Now) 90 247.33 P
+0.71 (, you might want to sit down for the next part. Under the Framework, run queues only exist within a) 108.78 247.33 P
+0.23 (policy) 90 235.33 P
+0.23 (. The Framework selects a policy to run and the policy in turn selects threads. When a policy has any) 114.34 235.33 P
+0.41 (runnable threads, it calls sched_run_policy\050 policy) 90 223.33 P
+0.41 (, priority\051 to notify the Framework of its highest priority) 293.47 223.33 P
+1.86 (thread. The Framework sorts the policy into a list and possibly tries to preempt the currently running) 90 211.33 P
+(thread.) 90 199.33 T
+1 12 Q
+(2.3.2  Scheduling Policies) 90 170 T
+0 10 Q
+0.91 (The Mach Scheduling Policy is always present and contains the subpolicies: T) 90 150.33 P
+0.91 (imesharing, Fixed Priority) 413.1 150.33 P
+0.91 (,) 519.5 150.33 P
+0.53 (Round Robin, and Support. The system always boots under the Mach policy) 90 138.33 P
+0.53 (. The Support subpolicy maps) 400.24 138.33 P
+2.75 (to the range SCHED_MACH_BEST to SCHED_MACH_SUPPOR) 90 126.33 P
+2.75 (T) 373.29 126.33 P
+2.75 (. The others map onto the range) 378.65 126.33 P
+(SCHED_MACH_BASE to SCHED_MET) 90 114.33 T
+(A_WORST) 259.12 114.33 T
+(.) 305.57 114.33 T
+0.3 (Policies can have overlapping metapriority ranges. The purpose of a policy\325) 90 93.33 P
+0.3 (s metapriority range is to allow) 395.85 93.33 P
+1.14 (the relative importance of a policy\325) 90 81.33 P
+1.14 (s threads to be easily con\336gurable. Allowing overlapping ranges pre-) 235.86 81.33 P
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 4 of 10 \321) 260.86 37 T
+90 72 522 720 R
+7 X
+V
+0 10 Q
+0 X
+1.02 (cludes a policy from implicitly locking out the threads of another policy) 90 713.33 P
+1.02 (. For example, a deadline policy) 388.4 713.33 P
+0.35 (might be con\336gured from SCHED_MET) 90 701.33 P
+0.35 (A_BEST to SCHED_MACH_BASE could starve the UNIX Serv-) 254.41 701.33 P
+0.45 (er but if it\325) 90 689.33 P
+0.45 (s con\336gured from SCHED_MET) 133.84 689.33 P
+0.45 (A_BEST to SCHED_MET) 266.82 689.33 P
+0.45 (A_WORST) 375.2 689.33 P
+0.45 (, the Server can compete) 421.66 689.33 P
+0.86 (with the distant deadline threads but as the deadlines approach, the metapriorities will improve until they) 90 677.33 P
+(supercede the priorities of the Server threads.) 90 665.33 T
+1.13 (Overlapping metapriority ranges doesn\325) 90 644.33 P
+1.13 (t fully resolve the unwieldy problem of supporting multiple poli-) 252.81 644.33 P
+(cies but it at least allows some amelioration \050see Rationale\051.) 90 632.33 T
+1 12 Q
+(2.3.3  The Policy T) 90 603 T
+(able) 184.18 603 T
+0 10 Q
+0.3 (A pointer to the object for each policy is contained in the sched_policies table. This table is indexed by the) 90 583.33 P
+(value contained in the index \336eld of the policy object and the policy \336eld of each thread.) 90 571.33 T
+0.47 (The policy table is used during system initialization to start each policy) 90 550.33 P
+0.47 (. Scheduling initialization basically) 379.57 550.33 P
+(consists of indexing through the table calling into each policy and passing the metapriority range.) 90 538.33 T
+1 12 Q
+(2.3.4  Thr) 90 509 T
+(ead_select\050\051) 139.76 509 T
+0 10 Q
+0.82 (The thread_select\050\051 routine is used to obtain the next thread to run. The framework provides a thread_se-) 90 489.33 P
+1.6 (lect\050\051 routine which in turn calls the thread_select\050\051 method for the policy which will provide the next) 90 477.33 P
+(thread. This way) 90 465.33 T
+(, thread_select\050\051 helps provide a transparent transition between the two policies.) 156.24 465.33 T
+1 14 Q
+(3  Restructuring the Scheduler) 90 434.67 T
+0 10 Q
+0.58 (The scheduling subsystem contains a collection of scheduling mechanisms and the scheduling framework.) 90 414.33 P
+0.06 (The framework contains the policy_table object and the policy objects. Things like the in-kernel locks, con-) 90 402.33 P
+1.02 (text switching code, assert_wait\050\051, are part of the scheduling subsystem but they are mechanisms that do) 90 390.33 P
+0.36 (not change when dif) 90 378.33 P
+0.36 (ferent scheduling policies are installed. These mechanisms can themselves be replaced) 172.24 378.33 P
+(but they can be considered policy independent.) 90 366.33 T
+0.56 (Policy isolation, RPC, thread control, and simplifying the scheduler state machine all contribute to the ne-) 90 182.33 P
+(cessity for restructuring the scheduler modules. The bulk of this work is accomplished in sched_prim.c.) 90 170.33 T
+1 13 Q
+(3.1  Sched_prim.c and Sched_mach.c) 90 140.33 T
+0 10 Q
+4.2 (Mach timesharing, \336xed priority and quantum management functionality have been moved from) 90 120.33 P
+1.27 (sched_prim.c into a new module, sched_mach.c. Some of the routines were modi\336ed for multiprocessor) 90 108.33 P
+1.18 (support to remain in sched_prim instead of being duplicated in each policy) 90 96.33 P
+1.18 (. The routines thread_select\050\051) 401.33 96.33 P
+(and thread_setrun\050\051 were renamed to mach_thread_select\050\051 and mach_thread_setrun\050\051.) 90 84.33 T
+90 72 522 720 C
+90 200 522 363 C
+97.34 205 493.34 354 R
+7 X
+0 K
+V
+0.5 H
+0 Z
+0 X
+N
+214.34 223 439.34 345 R
+7 X
+V
+13 X
+N
+247.34 256 283.34 331 R
+7 X
+V
+0 X
+N
+238.34 243.5 274.34 318.5 R
+7 X
+V
+0 X
+N
+229.34 231 265.34 306 R
+7 X
+V
+0 X
+N
+205.31 319.09 114.52 319.09 2 L
+V
+0.49 H
+N
+0 10 Q
+(Scheduling Subsystem) 114.52 320.18 T
+424.89 319.09 331.34 319.09 2 L
+V
+N
+(Scheduling Framework) 331.34 320.18 T
+(Scheduling Policies) 291.34 277.18 T
+344.34 232 353.34 259 R
+7 X
+V
+0.5 H
+0 X
+N
+(Policy T) 357.52 241.01 T
+(able) 390.97 241.01 T
+(\050context switching,) 122.52 281.01 T
+(locks, timers, etc.\051) 122.52 269.01 T
+90 72 522 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 5 of 10 \321) 260.86 37 T
+103 74 535 722 R
+7 X
+V
+0 10 Q
+0 X
+1.16 (Sched_prim.c has also become the repository of the Scheduling Framework related functions like policy) 103 715.33 P
+1.67 (dispatching, adding and removing policies, and the multiprocessor support functions removed from the) 103 703.33 P
+(Mach Policy routines \050now in sched_mach.\051.) 103 691.33 T
+1 13 Q
+(3.2  W) 103 661.33 T
+(akeup Order for Synchr) 137.99 661.33 T
+(onizers) 272.3 661.33 T
+0 10 Q
+0.31 (T) 103 641.33 P
+0.31 (raditionally) 108.76 641.33 P
+0.31 (, wakeup order for locks, semaphores, RPC or other types of IPC has been FIFO. Mach wake-) 154.19 641.33 P
+0.28 (up order has not been strictly FIFO, but there have been \322no-starvation\323 guarantees. This can easily lead to) 103 629.33 P
+1 (priority inversions and other scheduling anomalies and therefore may not be appropriate for all real-time) 103 617.33 P
+0.09 (systems. The wakeup order of threads is a function of the scheduling policy associated with the synchroniz-) 103 605.33 P
+0.35 (er) 103 593.33 P
+0.35 (. As an example, threads will block when attempting to upcall on a port with no empty threads. When an) 110.22 593.33 P
+0 (empty thread is made available the rule used to select a thread to wakeup will be based on the policy associ-) 103 581.33 P
+1.07 (ated with the port. See RPC, R) 103 569.33 P
+1.07 (T Synchronizers and R) 231.51 569.33 P
+1.07 (T IPC papers for more details [Burke94][Caradon-) 325.99 569.33 P
+(na94][T) 103 557.33 T
+(ravostino94].) 134.84 557.33 T
+0.58 (In kernel lock and wakeup queues are another example. Threads associated with multiple scheduling poli-) 103 536.33 P
+0.63 (cies interact using these locks in the kernel. The wakeup order is derived from the scheduling framework.) 103 524.33 P
+0.8 (Dif) 103 512.33 P
+0.8 (ferent instances of the kernel can use dif) 116.14 512.33 P
+0.8 (ferent wakeup order rules. One wakeup policy) 282.8 512.33 P
+0.8 (, perhaps based) 472.07 512.33 P
+(on FIFO or meta-priority) 103 500.33 T
+(, is used for in-kernel synchronization.) 202.57 500.33 T
+0.27 (Associated with each synchronizer is a scheduling policy which de\336nes wakeup ordering. If the policy of a) 103 479.33 P
+0.34 (thread doesn\325) 103 467.33 P
+0.34 (t match the policy of the synchronizer) 157.28 467.33 P
+0.34 (, the policy of the synchronizer uses the metapriority of) 310.46 467.33 P
+(the thread to determine the thread\325) 103 455.33 T
+(s position in the wakeup list.) 240.4 455.33 T
+0.47 (The result is that applications which have all their threads scheduled by the same policy will get fully pre-) 103 434.33 P
+0.36 (dictable behavior) 103 422.33 P
+0.36 (. Where threads of multiple policies interact, the policy which \322owns\323 the semaphore will) 171.93 422.33 P
+0.32 (order the threads it \322owns\323 to the granularity provided by its scheduling attributes \050e.g. deadlines, etc.\051 and) 103 410.33 P
+(then use the metapriority of the \322foreign\323 threads to order them into the list.) 103 398.33 T
+0.84 (This approach corresponds nicely with the cpu scheduling model in that threads from a policy in a better) 103 377.33 P
+0.03 (metapriority range should end up at the start of the wakeup list and those from a policy with a worse metap-) 103 365.33 P
+(riority range should be relegated to the tail.) 103 353.33 T
+0.79 (Just for completeness, the Framework will provide \050as part of the Mach policy\051 a FIFO policy to provide) 103 332.33 P
+0.89 (FIFO access to synchronizers. This makes the behavior currently observed on ports accessible to all syn-) 103 320.33 P
+(chronizers.) 103 308.33 T
+1 13 Q
+(3.3  Scheduler Interactions with RPC) 103 278.33 T
+0 10 Q
+1.5 (The RPC code essentially supplants the IPC \322hot path\323 so ipc_sched.c is a vestigial remnant. RPC has) 103 258.33 P
+1.22 (some major requirements of the Scheduling Framework. RPC calls and replies cause thread state transi-) 103 246.33 P
+0.55 (tions between an active and empty thread. In some cases, an RPC can result in an implicit change of poli-) 103 234.33 P
+(cy) 103 222.33 T
+(. If a server thread changes scheduling attributes, they must not be propagated back to the calling thread.) 111.79 222.33 T
+0.24 (There is a series of checks across an RPC. If the client and server aren\325) 103 201.33 P
+0.24 (t running under the same policy) 390.13 201.33 P
+0.24 (, the) 517.55 201.33 P
+0.89 (client\325) 103 189.33 P
+0.89 (s scheduling attributes have to be saved and the default server attributes instantiated. On the return) 127.99 189.33 P
+1.47 (from the server) 103 177.33 P
+1.47 (, if the server and the client have dif) 166.59 177.33 P
+1.47 (ferent scheduling attributes, the client\325) 322.18 177.33 P
+1.47 (s original at-) 481.55 177.33 P
+(tributes must be restored.) 103 165.33 T
+0.29 (If the scheduling attributes of a thread in the middle of an RPC chain are modi\336ed, the new attributes must) 103 144.33 P
+0.59 (not be propagated downstream \050i.e. towards the head thread in the chain\051, the new attributes must take ef-) 103 132.33 P
+1.6 (fect when the thread being changed becomes active but the new attributes must not be propagated up-) 103 120.33 P
+(stream \050i.e. towards the root client thread in the RPC chain\051.) 103 108.33 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 6 of 10 \321) 260.86 37 T
+90 72 522 720 R
+7 X
+V
+1 13 Q
+0 X
+(3.4  Thr) 90 711.33 T
+(ead Contr) 134.14 711.33 T
+(ol) 189.8 711.33 T
+0 10 Q
+0.92 (The thread control operations are being redesigned because they don\325) 90 691.33 P
+0.92 (t work reliably) 375.93 691.33 P
+0.92 (, they complicate the) 435.97 691.33 P
+(scheduling state machine, and they needed additional work to support RPC.) 90 679.33 T
+0.61 (In order for thread control operations to behave reliably) 90 658.33 P
+0.61 (, they only ef) 316.81 658.33 P
+0.61 (fect the user visible state of a thread.) 371.2 658.33 P
+0.27 (A thread must be in user mode or blocked in a \322user visible\323 condition like waiting for an RPC response, a) 90 646.33 P
+0.27 (message receive, a user lock, a user semaphore or an event. These routines will perform explicit checks for) 90 634.33 P
+(thread control operations.) 90 622.33 T
+1.23 (Operations like modifying the scheduling attributes of a thread must be ef) 90 601.33 P
+1.23 (fective by the time they com-) 398.43 601.33 P
+0.51 (plete. One of the reasons why the Utah Asynchronous Procedure Call mechanism has been rejected is that) 90 589.33 P
+0.36 (operation completion only guarantees that operation has been queued to the thread not that it\325) 90 577.33 P
+0.36 (s taken ef) 468.17 577.33 P
+0.36 (fect) 507.02 577.33 P
+(\050for more reasons see Rationale\051.) 90 565.33 T
+1.88 (Changes in thread attributes \050e.g. registers, scheduling attributes\051 will be processed immediately if the) 90 544.33 P
+1.36 (thread is in the correct state. Otherwise, the perpetrator will block until the thread reaches a reasonable) 90 532.33 P
+1.02 (state. Changes in thread state \050i.e. thread_suspend\050\051, thread_abort\050\051 and alerts along the RPC chain\051, will) 90 520.33 P
+(also block until the thread is in the appropriate state.) 90 508.33 T
+1 13 Q
+(3.5  Scheduler State Machine) 90 478.33 T
+0 10 Q
+0.2 (The original Mach 3 scheduling state diagram is lar) 90 458.33 P
+0.2 (ge and complex. The proposed separation of scheduling) 297.41 458.33 P
+2.18 (mechanisms from policies makes some of the scheduling mechanisms, and consequently some of the) 90 446.33 P
+1.58 (scheduling state machine, policy independent. Policy designers need only concern themselves with that) 90 434.33 P
+(fraction of the state machine that varies from policy to policy) 90 422.33 T
+(.) 334.18 422.33 T
+1.84 (The changes to the Scheduler State Machine involve removing stack_handof) 90 401.33 P
+1.84 (f, suspend, and wait from) 413.06 401.33 P
+0.87 (scheduling state calculations. The mechanics of calling assert_wait\050\051, thread_block\050\051, thread_setrun\050\051, etc.) 90 389.33 P
+0.46 (haven\325) 90 377.33 P
+0.46 (t changed. The bits are still present in the thread structure but they\325re no longer evaluated as part of) 117.01 377.33 P
+(the state machine.) 90 365.33 T
+(As far as the Scheduling Framework is concerned, threads can be in one of three states:) 90 344.33 T
+0 6 Q
+(\245) 90 323.33 T
+0 10 Q
+(ACTIVE - running on a processor) 102.02 323.33 T
+(. Thread_dispatch\050\051 moves the thread into BLOCKED if W) 237.76 323.33 T
+(AIT is set,) 473.98 323.33 T
+(otherwise, is moves it into READY) 102.02 311.33 T
+(.) 242.88 311.33 T
+0 6 Q
+(\245) 90 295.33 T
+0 10 Q
+(READY - runnable. Thread_invoke\050\051 moves the thread into ACTIVE.) 102.02 295.33 T
+0 6 Q
+(\245) 90 279.33 T
+0 10 Q
+(BLOCKED - not runnable. Thread_setrun\050\051 moves the thread into ACTIVE if there is an idle processor) 102.02 279.33 T
+(otherwise it moves it into READY) 102.02 267.33 T
+(.) 239.27 267.33 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 7 of 10 \321) 260.86 37 T
+90 72 522 720 R
+7 X
+V
+0 11 Q
+0 X
+(NOTE: stack handof) 102.02 465.67 T
+(fs, suspend, and interrupt are no longer) 192.75 465.67 T
+(a formal part of the state machine.) 366.97 465.67 T
+(Suspend and interrupt) 102.02 452.67 T
+(are thread state modi\336ers which are explicitly checked by) 201.2 452.67 T
+(thread control) 457.18 452.67 T
+(routines.) 102.02 439.67 T
+0 10 Q
+0.97 (Thread_invoke is called to make the tar) 90 401.33 P
+0.97 (get thread Active. When thread_dispatch is called, the \050formerly\051) 253.87 401.33 P
+-0.05 (Active thread becomes Blocked if either the W) 90 389.33 P
+-0.05 (AIT or SUSPEND bits are set. Otherwise, it becomes Ready) 276.42 389.33 P
+-0.05 (.) 517.06 389.33 P
+0.41 (When thread_setrun is called for a Blocked thread, it can move the thread directly to Active if an idle pro-) 90 368.33 P
+(cessor is available. Otherwise, the thread becomes Ready) 90 356.33 T
+(.) 318.33 356.33 T
+1 13 Q
+(3.6  Priority Inheritance) 90 326.33 T
+0 10 Q
+0.65 (In conjunction with the preemption project [Swartzendruber94], the use of priority inheritance to expedite) 90 306.33 P
+(the acquisition of a kernel lock already held is being explored. There are really two issues here:) 90 294.33 T
+0 6 Q
+(\245) 90 273.33 T
+0 10 Q
+(kernel locks must be acquired based on sheduling attributes \050instead of FIFO\051) 102.02 273.33 T
+0 6 Q
+(\245) 90 257.33 T
+0 10 Q
+(when a lock con\337ict occurs, the lock owner must be temporarily promoted using the scheduling at-) 102.02 257.33 T
+(tributes of the requesting thread) 102.02 245.33 T
+1.45 (Considering the threads can be of dif) 90 224.33 P
+1.45 (ferent policies, this presents some potentially nasty problems. The) 246.16 224.33 P
+(\336rst issue can be addressed by using the metapriority to determine acquisition order) 90 212.33 T
+(.) 423.67 212.33 T
+0.33 (The second issue is more complicated. Consider the easier case where the threads run under the same poli-) 90 191.33 P
+(cy) 90 179.33 T
+(. This just requires the policy to be able to transfer the attributes of the current thread to the lock holder) 98.79 179.33 T
+(.) 510.44 179.33 T
+0.41 (Now consider the case of threads from dif) 90 158.33 P
+0.41 (ferent policies. The metapriority is the only useful data but there) 260.6 158.33 P
+2.12 (isn\325) 90 146.33 P
+2.12 (t necessarily a reasonable mapping from metapriority to the scheduling attributes of a policy \050see) 104.81 146.33 P
+(Metapriority\051.) 90 134.33 T
+0.41 (It is possible for the policy of the current thread to import the thread which holds the lock but that\325) 90 113.33 P
+0.41 (s not as) 491.19 113.33 P
+0.83 (easy as it looks. First of) 90 101.33 P
+0.83 (f, it requires an interaction between the policies \050potentially high overhead\051. Sec-) 188.93 101.33 P
+1.3 (ond, there\325) 90 89.33 P
+1.3 (s no guarantee that the policy of the lock holder) 134.05 89.33 P
+1.3 (, isn\325) 336.04 89.33 P
+1.3 (t going to bump the metapriority of the) 357.15 89.33 P
+(thread which could cause some signi\336cant confusion.) 90 77.33 T
+90 72 522 720 C
+180 479 432 709 C
+7 X
+0 K
+90 450 31.5 31.5 373.5 551.5 G
+0.5 H
+0 Z
+0 X
+90 450 31.5 31.5 373.5 551.5 A
+7 X
+90 450 31.5 31.5 310.5 668.5 G
+0 X
+90 450 31.5 31.5 310.5 668.5 A
+0 11 Q
+(BLOCKED) 351 549.38 T
+7 X
+90 450 31.5 31.5 229.5 569.5 G
+0 X
+90 450 31.5 31.5 229.5 569.5 A
+(ACTIVE) 288 666.38 T
+(READY) 207 567.38 T
+7 X
+0 90 36 72 342 583 G
+381.04 595.66 378 583 373.87 595.35 377.45 595.5 4 Y
+0 X
+V
+2 Z
+10 90 36 72 342 583 A
+7 X
+90 180 45 63 279 601 G
+238.27 612.79 234 601 231.38 613.26 234.83 613.02 4 Y
+0 X
+V
+90 169 45 63 279 601 A
+7 X
+270 360 45 45 252 637 G
+292.12 625.8 297 637 298.8 624.91 295.46 625.36 4 Y
+0 X
+V
+270 345 45 45 252 637 A
+7 X
+180 270 27 63 351 637 G
+321.05 624.84 323.99 637 327.94 625.12 324.49 624.98 4 Y
+0 X
+V
+191 270 27 63 351 637 A
+7 X
+180 270 81 9 342 556 G
+270.54 548.37 261 556 273.14 554.59 271.84 551.48 4 Y
+0 X
+V
+210 270 81 9 342 556 A
+(Thread State T) 252.37 503.51 T
+(ransitions) 317.27 503.51 T
+90 72 522 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 8 of 10 \321) 260.86 37 T
+90 72 522 720 R
+7 X
+V
+0 10 Q
+0 X
+0.45 (All these problems can be worked around, by providing a promotion call into a policy) 90 713.33 P
+0.45 (. The promotion call) 439.03 713.33 P
+0.14 (noti\336es a policy that another policy wants to promote a speci\336c thread. The policy can reject the request \050in) 90 701.33 P
+0.45 (which case, the requesting thread blocks\051. If it allows promotion, the policy does whatever bookkeeping is) 90 689.33 P
+1.31 (necessary) 90 677.33 P
+1.31 (. The promoting policy transfers control to the thread \050using the attributes of the thread which) 128.2 677.33 P
+0.64 (wants to acquire the lock\051. When the next thread switch occurs, the policy once again calls the promotion) 90 665.33 P
+1 (routine so the other policy can do any necessary bookkeeping and the thread which wants to acquire the) 90 653.33 P
+0.08 (lock is set to restart at the lock acquisition routine \050which may repeat the sequence\051. Not keeping the sched-) 90 641.33 P
+(uling attributes across a thread switch prevents the lock holder from \322running away\323 with them.) 90 629.33 T
+0.71 (This approach optimizes the case when the kernel lock holder was preempted while running and isn\325) 90 608.33 P
+0.71 (t go-) 502.69 608.33 P
+0.61 (ing to hold the lock for a great length of time. It assumes that there is a new type of kernel lock for inter-) 90 596.33 P
+(agency \050which is probably reasonable because of the overhead of tracking ownership on all locks\051.) 90 584.33 T
+1 14 Q
+(4  Rationale) 90 553.67 T
+0 10 Q
+0.41 (In the Framework, the con\337ict between performance and \337exibility is particularly important. Scheduling is) 90 533.33 P
+0.33 (one of the most frequent activities in the system and additional overhead can have a severe impact. For the) 90 521.33 P
+0.25 (most part, the Framework is just a structure to which policies are attached. It assumes that policies are well) 90 509.33 P
+0.35 (behaved and so doesn\325) 90 497.33 P
+0.35 (t enforce rules \050for example, it doesn\325) 181.63 497.33 P
+0.35 (t check to see that a policy only uses priorities) 334.25 497.33 P
+0.82 (in its assigned range\051. Likewise, there aren\325) 90 485.33 P
+0.82 (t a lot of bells and whistles; the goal is to minimize overhead) 269.02 485.33 P
+(while providing suf) 90 473.33 T
+(\336cient \337exibility to support multiple policies.) 168.11 473.33 T
+1 13 Q
+(4.1  Multiple Scheduling Policies) 90 443.33 T
+0 10 Q
+0.88 (The Scheduling Framework is intended to provide a vehicle for the development and deployment of new) 90 423.33 P
+0.63 (scheduling policies. It is particularly ef) 90 411.33 P
+0.63 (fective in real-time systems where scheduling policies need to pro-) 248.99 411.33 P
+0.16 (vide predictable behavior within a system. Although the Framework doesn\325) 90 399.33 P
+0.16 (t resolve the problems of sched-) 393.25 399.33 P
+0.54 (uling in real-time systems, it suf) 90 387.33 P
+0.54 (\336ciently isolates policies so that they can be incorporated into a system in) 221.32 387.33 P
+(a modular fashion independent of the rest of the system.) 90 375.33 T
+0.32 (The Scheduling Framework supports multiple active scheduling policies even though it\325) 90 354.33 P
+0.32 (s not at all obvious) 445.2 354.33 P
+0.17 (how to produce predictable behavior in a such a system. Since there is so little experience in resolving con-) 90 342.33 P
+0.23 (\337icts among scheduling policies, the Framework uses a simple mechanism which is easy to understand that) 90 330.33 P
+0.43 (operates with minimal additional overhead. This priority based mechanism is primitive but there is insuf) 90 318.33 P
+0.43 (\336-) 513.11 318.33 P
+0.16 (cient evidence to indicate that a more complicated mechanism would be of any practical use. Priority based) 90 306.33 P
+0.41 (scheduling certainly has limitations but the metapriority value as it is used in the Framework should be re-) 90 294.33 P
+0.8 (garded as a scheduling attribute which is not intended to preclude the development of additional meta-at-) 90 282.33 P
+0.89 (tributes. Hopefully) 90 270.33 P
+0.89 (, the modularity enabled by the Framework, the simple arbitration mechanism, and the) 165.75 270.33 P
+0.25 (capabilities provided by overlapping metapriorities will encourage research in this area and, in turn, lead to) 90 258.33 P
+(re\336nements of the Framework especially in the area of meta-attributes.) 90 246.33 T
+(The following items should be considered when using multiple policies in the framework:) 90 225.33 T
+0 6 Q
+(\245) 90 204.33 T
+0 10 Q
+(the system starts with the Mach Policy and it\325) 102.02 204.33 T
+(s also needed to run the UNIX Server) 284.14 204.33 T
+0 6 Q
+(\245) 90 188.33 T
+0 10 Q
+(a uniprocessor system should use one real-time policy and the Mach Policy) 102.02 188.33 T
+0 6 Q
+(\245) 90 172.33 T
+0 10 Q
+(a multiprocessor system can use multiple real-time scheduling policies but only one should be active on) 102.02 172.33 T
+(each processor set) 102.02 160.33 T
+0 6 Q
+(\245) 90 144.33 T
+0 10 Q
+(the Mach Policy should be present on the system but doesn\325) 102.02 144.33 T
+(t need to be enabled on more than one pro-) 341.69 144.33 T
+(cessor set) 102.02 132.33 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 9 of 10 \321) 260.86 37 T
+90 72 522 720 R
+7 X
+V
+1 13 Q
+0 X
+(4.2  Comparison to the CMU W) 90 711.33 T
+(ork) 265.65 711.33 T
+0 10 Q
+0.65 (The approaches are actually quite similar) 90 691.33 P
+0.65 (. The CMU work de\336nes the policy interfaces at a slightly lower) 257.28 691.33 P
+0.31 (level but the basic approach seems to be the same [Golub93]. The dif) 90 679.33 P
+0.31 (ference between the RI and CMU ap-) 370.27 679.33 P
+0.27 (proaches is that CMU uses a rigid non-overlapping hierarchy of run queues. The run queues are in a global) 90 667.33 P
+0.34 (array ordered from best to worst priority and each policy has a contiguous band of run queues dedicated to) 90 655.33 P
+(it. The framework directly selects the next thread to run by scanning the run queues from best to worst.) 90 643.33 T
+(This structure presents several complications which aren\325) 90 622.33 T
+(t present in the RI approach:) 319.64 622.33 T
+0 6 Q
+(\245) 90 601.33 T
+0 10 Q
+(The RI approach allows overlapping priority ranges to help a policy prevent starvation of the threads in) 102.02 601.33 T
+(another policy) 102.02 589.33 T
+(. This allows the UNIX Server \050a standard although not required part of a Mach system\051) 158.83 589.33 T
+(to be supported just by overlapping its metapriority range with the low end of the real-time policy\325) 102.02 577.33 T
+(s) 495.66 577.33 T
+(range.) 102.02 565.33 T
+0 6 Q
+(\245) 90 549.33 T
+0 10 Q
+(The RI approach doesn\325) 102.02 549.33 T
+(t require a separate policy for priority depression. Moving threads between poli-) 198.15 549.33 T
+(cies can be a very expensive operation depending on the policies involved \050e.g. a bene\336t based policy) 102.02 537.33 T
+(can require priority recalculation for all the threads in a policy when a thread is added or removed) 102.02 525.33 T
+([Locke86]\051.) 102.02 513.33 T
+0 6 Q
+(\245) 90 497.33 T
+0 10 Q
+(Since policy scheduling takes precedence over thread scheduling, the RI approach has an inherent capa-) 102.02 497.33 T
+(bility for Processor Capacity Reservation essentially by depressing the policy) 102.02 485.33 T
+(. Under the CMU ap-) 410.89 485.33 T
+(proach, the equivalent mechanism would probably involve either marking the run queues \050complicating) 102.02 473.33 T
+(the run queue scan\051 or relocating the threads to dif) 102.02 461.33 T
+(ferent queues \050this probably requires the explicit sup-) 303.07 461.33 T
+(port in the policy\051.) 102.02 449.33 T
+0.59 (In the RI approach, run queues are policy object private data. How a policy orders its threads is irrelevant) 90 428.33 P
+0.7 (externally) 90 416.33 P
+0.7 (. The only time the Framework interferes with a policy is when there is a con\337ict between poli-) 129.32 416.33 P
+0.46 (cies. In this case, the Framework arbitrates using a simple, low-overhead comparison based on metapriori-) 90 404.33 P
+0.96 (ty) 90 392.33 P
+0.96 (. The CMU behavior can be obtained under the Framework by con\336guring the policy ranges in a strict) 97.13 392.33 P
+(non-overlapping hierarchy) 90 380.33 T
+(.) 195.65 380.33 T
+1 13 Q
+(4.3  Thr) 90 350.33 T
+(ead Contr) 134.14 350.33 T
+(ol) 189.8 350.33 T
+0 10 Q
+0.75 (In the Thread Migration work, Utah proposed the use of Asynchronous Procedure Calls \050APC\051 for thread) 90 330.33 P
+0.98 (control. When a thread control operation is performed, a control block is built and linked onto the tar) 90 318.33 P
+0.98 (get) 509.79 318.33 P
+(thread. Control blocks are processed when the thread exits the kernel before returning to user) 90 306.33 T
+(.) 461.66 306.33 T
+1.27 (While an APC provides a general purpose mechanism for controlling threads in an RPC chain, it\325) 90 285.33 P
+1.27 (s also) 498.24 285.33 P
+0.96 (very complicated. How are the resources for the APC control block accounted? In what order are APC\325) 90 273.33 P
+0.96 (s) 518.11 273.33 P
+0.54 (processed? How does a thread know that the operation has actually occurred \050in particular) 90 261.33 P
+0.54 (, if set_thread is) 456.55 261.33 P
+(followed by get_thread, what is the result\051?) 90 249.33 T
+0.21 (Since the small set of thread control operations can be implemented relatively simply) 90 228.33 P
+0.21 (, there seems to be lit-) 432.7 228.33 P
+(tle point in trying to make the APC mechanism work.) 90 216.33 T
+1 13 Q
+(4.4  Overlapping Metapriorities) 90 186.33 T
+0 10 Q
+0.95 (How can overlapping metapriorities be used ef) 90 166.33 P
+0.95 (fectively? Consider the example in section 2.3.2. A Dead-) 282.61 166.33 P
+0.38 (line policy and the Mach policy are both present in the system. If it\325) 90 154.33 P
+0.38 (s known that the maximum time need-) 365.91 154.33 P
+1.36 (ed to complete real-time activity is .5 second, then the ranges could be con\336gured so that any deadline) 90 142.33 P
+0.33 (more than .5 second away falls within the overlap between the Mach policy and the Deadline policy but as) 90 130.33 P
+1.02 (soon as a deadline is within .5 second, the thread\325) 90 118.33 P
+1.02 (s metapriority is boosted into the range better than the) 297.11 118.33 P
+0.75 (Mach policy) 90 106.33 P
+0.75 (. This guarantees that all real-time activity can complete but also allows non-real-time activi-) 140.34 106.33 P
+(ties to run without impediment.) 90 94.33 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 10 of 10 \321) 257.86 37 T
+90 72 522 720 R
+7 X
+V
+0 10 Q
+0 X
+0.78 (Although overlapping metapriorities provide \337exibility) 90 713.33 P
+0.78 (, it is quite possible for policies to be incompatible) 312.89 713.33 P
+(with each other or to be inappropriately con\336gured.) 90 701.33 T
+0.28 (In order for a policy to be used ef) 90 680.33 P
+0.28 (fectively) 225.86 680.33 P
+0.28 (, the expectations of that policy with respect to the granularity of) 260.18 680.33 P
+0.43 (its range and the ef) 90 668.33 P
+0.43 (fect of overlap within the range certainly need to be documented. The extremes of over) 167.6 668.33 P
+2.17 (aggressively calculating metapriorities and insuf) 90 656.33 P
+2.17 (\336ciently doing so could result in unexpected behavior) 292.24 656.33 P
+(when multiple policies coexist under heavy load.) 90 644.33 T
+1 13 Q
+(4.5  Pr) 90 614.33 T
+(ocessor Capacity Reservation) 126.19 614.33 T
+0 10 Q
+0.44 (The Framework\325) 90 594.33 P
+0.44 (s scheduling of policies lends itself to reserving CPU time on a policy basis so that multi-) 157.34 594.33 P
+0.3 (ple real-time policies can run predictably on a uniprocessor) 90 582.33 P
+0.3 (. The basic idea is that when a policy\325) 328.87 582.33 P
+0.3 (s time ex-) 481.98 582.33 P
+(pires, other policies should have better priorities.) 90 570.33 T
+0.21 (The exact mechanisms for Capacity Reservation are stil being investigated. T) 90 549.33 P
+0.21 (iming issues such as the gran-) 401.29 549.33 P
+0.46 (ularity of capacity reservation, determining the start and stop of each capacity period, what happens to un-) 90 537.33 P
+(used time, how does it interact with priority inheritence and wakeup order) 90 525.33 T
+(, are all complicated questions.) 385.5 525.33 T
+1 13 Q
+(Refer) 90 502.33 T
+(ences) 120.76 502.33 T
+0 10 Q
+([Burke94]) 90 480.33 T
+2.62 (E. Burke, M. Condict, D. Mitchell, F) 180 480.33 P
+2.62 (. Reynolds, P) 342.59 480.33 P
+2.62 (. W) 400.02 480.33 P
+2.62 (atkins, B. W) 416.27 480.33 P
+2.62 (ilcox, \322RPC) 471.07 480.33 P
+(Design for Real-T) 180 468.33 T
+(ime Mach\323, OSF/RI T) 252.37 468.33 T
+(echnical Report, February 1994.) 341.06 468.33 T
+([CaraDonna94]) 90 447.33 T
+3.02 (J. CaraDonna, R. Haydt, F) 180 447.33 P
+3.02 (. Reynolds, \322New Synchronization Services for Osf) 297.34 447.33 P
+(Mach: Synchronizers\323, OSF/RI T) 180 435.33 T
+(echnical Report, April 1994.) 313.66 435.33 T
+([Golub93]) 90 414.33 T
+1.56 (D.B. Golub, \322Adding Real-T) 180 414.33 P
+1.56 (ime Scheduling to the Mach Kernel\323, Master Thesis,) 300.38 414.33 P
+(Department of Computer Science, University of Pittsbur) 180 402.33 T
+(gh, 1993.) 405.51 402.33 T
+([Locke86]) 90 381.33 T
+2.94 (C.D. Locke, \322Best Ef) 180 381.33 P
+2.94 (fort Decision Making for Real-T) 274.14 381.33 P
+2.94 (ime Scheduling\323, Ph. D.) 416.01 381.33 P
+(Thesis, Department of Computer Science, CMU, May 1986.) 180 369.33 T
+([Swartzendruber94]) 90 348.33 T
+3.82 (D. Swartzendruber) 180 348.33 P
+3.82 (, \322A Preemptible Mach Kernel\323, OSF/RI T) 258.91 348.33 P
+3.82 (echnical Report,) 452.68 348.33 P
+(February 1994.) 180 336.33 T
+([T) 90 315.33 T
+(ravostino94]) 99.08 315.33 T
+4.58 (F) 180 315.33 P
+4.58 (. T) 184.76 315.33 P
+4.58 (ravostino, F) 200.09 315.33 P
+4.58 (. Reynolds, T) 251.62 315.33 P
+4.58 (. Martin, \322Real-T) 313.89 315.33 P
+4.58 (ime Local and Remote IPC:) 392.09 315.33 P
+(Architecture and Design\323, OSF/RI T) 180 303.33 T
+(echnical Report, April, 1994.) 326.14 303.33 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 10 1
+%%DocumentFonts: Times-Roman
+%%+ Times-Bold
+%%+ Times-Italic

@@ -1,0 +1,5970 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 17 FMDOCUMENT
+0 0 /Helvetica-Bold FMFONTDEFINE
+1 0 /Times-Bold FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 0 /Helvetica FMFONTDEFINE
+4 0 /Courier-Bold FMFONTDEFINE
+5 0 /Times-Italic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+72 75.33 558 75.33 2 L
+2 Z
+N
+0 10 Q
+(1) 72 59.95 T
+0 9 Q
+( of) 77.56 59.95 T
+0 10 Q
+(35) 91.04 59.95 T
+72 644 558 660 C
+186 645 438 645 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 24 Q
+0 X
+0 K
+-0.17 (RPC Design for Real-T) 143.06 668 S
+-0.17 (ime Mach) 376.98 668 S
+1 19 Q
+-0.13 (1) 477.58 677.6 S
+72 590 558 606 C
+186 591 438 591 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 24 Q
+0 X
+0 K
+-0.17 (*DRAFT*) 262.28 614 S
+72 545 558 561 C
+234 548 390 548 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+1 12 Q
+0 X
+0 K
+(E. Burke, M. Condict, D. Mitchell, F) 131.69 565 T
+(. Reynolds, P) 317.14 565 T
+(. W) 382.67 565 T
+(atkins, W) 400.01 565 T
+(. W) 448.22 565 T
+(illcox) 465.99 565 T
+1 10 Q
+(2) 493.31 569.8 T
+0 9 Q
+-0.66 (Open Software Foundation / Research) 234 515 P
+(Institute) 297.52 503 T
+1 10 Q
+(4/12/94) 299.73 478.33 T
+1 18 Q
+(Abstract) 281.53 425 T
+2 10 Q
+0.17 (Almost from the beginning, Mach has supported an RPC interface through the use of) 144 398.33 P
+0.01 (MIG and other interface generators. Requirements from the real-time OS community) 144 386.33 P
+0.01 (,) 483.5 386.33 P
+0.25 0.02 (as well as those in the wider Mach community interested in improving performance,) 144 374.33 B
+-0.02 (have encouraged us to seek to add the RPC abstraction directly to the Mach interface.) 144 362.33 P
+0.25 0.33 (This is accomplished by adding a new Mach trap, and supporting the notion of) 144 350.33 B
+0.25 0.15 (migrating threads within the Mach kernel. It is hoped that doing this will not only) 144 338.33 B
+0.12 (greatly improve performance in many common cases, but will also eventually lead to) 144 326.33 P
+(a more powerful programming model for real-time distributed systems.) 144 314.33 T
+72 121 558 134 C
+72 129 180 129 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 9 Q
+0 X
+0 K
+(1.) 72 115 T
+2 10 Q
+(This work has been supported in part by the Advanced Research Projects Agency \050ARP) 83.23 115 T
+(A\051 and the Rome Laboratory) 433.44 115 T
+(\050RL\051 of the Air Force Materiel Command \050AFMC\051) 72 105 T
+(2.  W) 72 91.33 T
+(. W) 93.01 91.33 T
+(illcox is a visiting engineer from Digital Equipment Corporation) 107.04 91.33 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Introduction) 54 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(2) 54 59.95 T
+0 9 Q
+( of) 59.56 59.95 T
+0 10 Q
+( 35) 70.54 59.95 T
+54 669 540 672 C
+54 671.15 288 671.15 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(1.0) 54 676 T
+(Introduction) 81 676 T
+0 10 Q
+(1.1) 54 640.33 T
+(General Background) 81 640.33 T
+2 F
+-0.14 (Several recent papers, based on the work of existing systems, have indicated that message based systems that optimize the) 54 617.33 P
+0.25 0.1 (Remote Procedure Call \050RPC\051 case experience signif) 54 605.33 B
+0.25 0.1 (icant performance improvements. One of the current goals of the) 272.15 605.33 B
+-0.03 (OSF/RI MK7 project is to realize these improvements in the current development path for the real-time Mach kernel. The) 54 593.33 P
+0.25 0.04 (migrating threads work developed at the University of Utah [Fo93] will be ported to the current Mach used by the real-) 54 581.33 B
+0.25 0 (time group at OSF/RI, and this work will be further enhanced to accommodate real-time performance requirements such) 54 569.33 B
+0.17 (as predictability and real-time scheduling policies \050e.g. deadline and best-ef) 54 557.33 P
+0.17 (fort\051. Adding the migrating threads \050hereafter) 357.63 557.33 P
+0.25 0.08 (referred to as \322shuttles\323\051 should not require more than minimal changes to the current Mach thread interface. The new) 54 545.33 B
+0.25 0.09 (shuttle abstraction will contain, among other things, the new scheduling information to be used by scheduling policies) 54 533.33 B
+-0.04 (\050after scheduling policy/mechanism separation is implemented\051. This information will be carried between tasks and even-) 54 521.33 P
+0 (tually \050in MK7 Rev 3\051 between nodes. Note that the shuttle abstraction used in this design borrows heavily from the shut-) 54 509.33 P
+(tle abstraction developed in the Spring Nucleus [Gr93]) 54 497.33 T
+0.25 0.06 (Once the shuttle abstraction is implemented, the RPC mechanism will be built on top of it. The RPC will also preserve) 54 473.33 B
+0.25 0.03 (other hidden kernel information supported by the IPC mechanism \050such as security tokens\051. A signif) 54 461.33 B
+0.25 0.03 (icant amount of the) 461.22 461.33 B
+0.25 0.03 (work of porting Utah migrating threads to Mach shuttles will be done under the co-location project; specif) 54 449.33 B
+0.25 0.03 (ically) 485.08 449.33 B
+0.25 0.03 (, the co-) 506.81 449.33 B
+0.25 0.05 (location project will do that part of the shuttle movement that takes it from user space into kernel space. The path from) 54 437.33 B
+0 (kernel space into user space will be implemented by the MK7 project. It is a requirement of the MK7 project that the new) 54 425.33 P
+(RPC performance show signi\336cant improvement over current Mach IPC based RPC.) 54 413.33 T
+0.25 0.01 (It will be possible to send a message or an RPC to the same port. N.B.:Messages and RPCs occupy dif) 54 389.33 B
+0.25 0.01 (ferent queues and) 468.83 389.33 B
+-0.19 (do not interact or have receive order dependencies. This requires empty and active threads to be available in order for both) 54 377.33 P
+(messages and RPCs to be received.) 54 365.33 T
+0 F
+(1.2) 54 333.33 T
+(Messages and RPC) 81 333.33 T
+2 F
+(Many RPC speci\336c optimizations were made to Mach 3. RPCs are typically constructed from pairs of send/receive mes-) 54 317.33 T
+(sage operations. There are four message operations involved: the client sends a request, the server receives a request, the) 54 305.33 T
+(server sends the reply and the client receives the reply) 54 293.33 T
+(. \050See Figure) 269.56 293.33 T
+("Mach IPC based RPC" on page) 323.41 293.33 T
+(3.\051) 455.38 293.33 T
+-0.07 (Messages have a canonical, architecture independent format. Each message operation has suf) 54 269.33 P
+-0.07 (\336cient information \050message) 425.78 269.33 P
+0.2 (meta data\051 in the operation parameters plus the message header and the optional descriptor array to describe the message) 54 257.33 P
+0.09 (and any necessary processing to the kernel. Any data, except for OOL data, that is being transferred is copied to the mes-) 54 245.33 P
+-0.02 (sage body) 54 233.33 P
+-0.02 (, a buf) 93.58 233.33 P
+-0.02 (fer that immediately follows the message header) 118.62 233.33 P
+-0.02 (. OOL data descriptors have the address, length and copy) 311.72 233.33 P
+0.13 (semantic for any additional buf) 54 221.33 P
+0.13 (fers, not contiguous with the message, that should be sent with the message. The Untyped) 179.25 221.33 P
+(IPC service is described in detail in [Re93].) 54 209.33 T
+-0.06 (The R) 54 185.33 P
+-0.06 (T RPC project is strongly in\337uenced by the Utah migrating threads project [Fo93]. Their work relied on the Mach 3) 78.05 185.33 P
+0.25 0.01 (T) 54 173.33 B
+0.25 0.01 (yped IPC trap and its marshalling and unmarshalling rules. In fact, no changes to the stub generator) 59.42 173.33 B
+0.25 0.01 (, MIG [T) 461.93 173.33 B
+0.25 0.01 (r93], were) 498.55 173.33 B
+0.25 0.19 (made. One important dif) 54 161.33 B
+0.25 0.19 (ference between our project and theirs is that we plan signif) 157.11 161.33 B
+0.25 0.19 (icant changes to MIG and RPC) 409.09 161.33 B
+0.25 0.01 (parameter marshalling. W) 54 149.33 B
+0.25 0.01 (e expect these changes to result in signif) 157.97 149.33 B
+0.25 0.01 (icant performance improvements. Some of the optimi-) 320.77 149.33 B
+0.11 (zations will be platform dependent. This document focuses on a prototypical implementation, including the iX86 speci\336c) 54 137.33 P
+(optimizations, though an ef) 54 125.33 T
+(fort is made to delineate the optimizations from the details of the programming model.) 163.2 125.33 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Introduction) 72 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(3) 527.85 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+2 F
+0.13 (Perhaps the most important dif) 72 677.33 P
+0.13 (ference between R) 195.61 677.33 P
+0.13 (TRPC and Mach IPC based RPC is the treatment of message meta data.) 269.65 677.33 P
+0.25 0.01 (The RPC parameter data, and the IN and OUT ar) 72 665.33 B
+0.25 0.01 (guments to the remote service, will be treated separately from the meta) 270.63 665.33 B
+0.25 0.06 (data. Every ef) 72 653.33 B
+0.25 0.06 (fort will be made to use the parameter data, without additional copies, as it is provided by the standard C) 128.9 653.33 B
+0.25 0.1 (compiler of each tar) 72 641.33 B
+0.25 0.1 (get platform. This contrasts with the mach_msg approach which requires the parameter data to be) 154.84 641.33 B
+(coped to the message body) 72 629.33 T
+(.) 179.05 629.33 T
+0.25 0.1 (The RPC meta data is contained in a new structure called a signature. The signature is similar to the kernel descriptor) 72 249.33 B
+0.08 (array used by untyped IPC. An important philosophical dif) 72 237.33 P
+0.08 (ference is that in RPC, the client signature speci\336es the format) 307.62 237.33 P
+0.25 0.03 (of the data it sends to the server) 72 225.33 B
+0.25 0.03 (, and the format of the data it expects from the server) 201.08 225.33 B
+0.25 0.03 (\325) 417.68 225.33 B
+0.25 0.03 (s reply) 420.48 225.33 B
+0.25 0.03 (. It also describes the client) 447.19 225.33 B
+0.25 0.07 (side scatter list for OUT parameters \050scatter lists were introduced with Untyped IPC\051. This client specif) 72 213.33 B
+0.25 0.07 (ied signature is) 495.89 213.33 B
+0.25 0.01 (presented to the server with the RPC. The server decides if the signature is acceptable and either returns an error or uses) 72 201.33 B
+(the client\325) 72 189.33 T
+(s signature to interpret the incoming data and the sending of the reply) 111.7 189.33 T
+(.) 388.64 189.33 T
+0.04 (A variety of mechanisms have been proposed for optimizing or reducing the number of times the signature has to be cop-) 72 165.33 P
+0.25 0.04 (ied. In the ideal case, the client and the server have agreed on a small number to name the signature, via subsystem and) 72 153.33 B
+0.25 0.02 (signature registration. Once agreement is reached the name of the signature can be passed in lieu of the entire signature.) 72 141.33 B
+(This can be a signi\336cant savings.) 72 129.33 T
+0.16 (Consider the costs associated with moving the meta data using Mach IPC based RPC. Note that the meta data consists of) 72 105.33 P
+0.03 (8 integers for the message trap, 6 integers for the message header and 3 integers for each kernel descriptor) 72 93.33 P
+0.03 (. On the invoke) 496.29 93.33 P
+72 90 558 684 C
+75.94 270 554.06 626 C
+90.94 470.86 189.94 587.86 R
+0.5 H
+2 Z
+0 X
+0 K
+N
+90.44 316.33 189.44 433.33 R
+N
+448.44 316.33 547.44 433.33 R
+N
+447.94 470.86 546.94 587.86 R
+N
+240.94 488.86 276.94 569.86 R
+N
+241.44 334.33 277.44 415.33 R
+N
+366.94 488.86 402.94 569.86 R
+N
+367.44 334.33 403.44 415.33 R
+N
+75.94 452.09 561.94 452.09 2 L
+3 H
+N
+3 10 Q
+(T) 126 525.71 T
+(ask 1) 130.99 525.71 T
+(T) 483.49 371.19 T
+(ask 2) 488.49 371.19 T
+(T) 482.99 525.71 T
+(ask 2) 487.99 525.71 T
+(T) 125.5 371.19 T
+(ask 1) 130.49 371.19 T
+(MSG) 247.55 525.71 T
+(MSG) 373.55 525.71 T
+(MSG) 374.05 371.19 T
+(MSG) 248.05 371.19 T
+231.78 544.67 239.93 535.86 228.35 539.01 230.07 541.84 4 Y
+V
+189.94 565.86 230.07 541.84 2 L
+0.5 H
+N
+229 511.62 240.93 512.86 231.47 505.48 230.23 508.55 4 Y
+V
+190.94 492.86 230.24 508.55 2 L
+N
+198.58 402.54 190.43 411.34 202.01 408.19 200.3 405.36 4 Y
+V
+200.3 405.35 240.44 381.33 2 L
+N
+201.39 339.42 189.43 338.34 199 345.59 200.19 342.5 4 Y
+V
+200.2 342.49 241.44 358.33 2 L
+N
+436.34 559.71 447.92 562.86 439.77 554.05 438.06 556.88 4 Y
+V
+402.94 535.86 438.07 556.88 2 L
+N
+437.4 501.63 447.92 495.86 435.94 495.18 436.67 498.41 4 Y
+V
+402.94 505.86 436.69 498.4 2 L
+N
+415 384.49 403.42 381.34 411.57 390.15 413.29 387.32 4 Y
+V
+413.3 387.31 448.44 408.33 2 L
+N
+413.94 345.58 403.42 351.35 415.4 352.03 414.67 348.8 4 Y
+V
+414.69 348.79 448.44 341.33 2 L
+N
+346.75 535.14 366.94 529.36 346.75 523.57 346.75 529.36 4 Y
+V
+276.94 529.36 346.75 529.36 2 L
+3 H
+N
+297.62 369.04 277.44 374.83 297.62 380.62 297.62 374.83 4 Y
+V
+297.62 374.83 367.44 374.83 2 L
+N
+0 F
+(Send) 240.49 466 T
+(Receive) 367.49 466 T
+(Receive) 242.49 311 T
+(Send) 372.49 310 T
+91.5 275 548.5 297 R
+7 X
+V
+0 12 Q
+0 X
+(Figure -) 91.5 289 T
+(Mach IPC based RPC) 138.81 289 T
+72 90 558 684 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Introduction) 54 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(4) 54 59.95 T
+0 9 Q
+( of) 59.56 59.95 T
+0 10 Q
+( 35) 70.54 59.95 T
+2 F
+0.18 (side of RPC, using messages, meta data is copied once in the client stub and twice in the kernel \050in and then out\051. On the) 54 677.33 P
+(reply side, meta data is again copied once in server stub and twice in the kernel. All those copies eventually add up.) 54 665.33 T
+0 F
+(1.3) 54 633.33 T
+(Requirements) 81 633.33 T
+0 9 Q
+(1.3.1) 54 611 T
+(Performance) 81 611 T
+2 10 Q
+0.25 0.2 (The optimized RPC should show at least twofold improvement over Mach IPC based RPC. W) 54 586.33 B
+0.25 0.2 (e expect a signif) 450.84 586.33 B
+0.25 0.2 (icant) 519.75 586.33 B
+0.25 0.01 (improvement based on the simplicity of the former compared with the latter) 54 574.33 B
+0.25 0.01 (. The Utah [Fo93] work achieved a factor of) 360.63 574.33 B
+(three, and we expect to at least maintain that level of improvement, if not exceed it.) 54 562.33 T
+2 8 Q
+(1) 387.65 566.33 T
+0 9 Q
+(1.3.2) 54 539 T
+(Compatibility) 81 539 T
+2 10 Q
+0.25 0 (Most of the server code should be source compatible with the new RPC; however some changes will have to be made to) 54 514.33 B
+0.25 0.08 (the server loop that dispatches incoming RPCs. In particular) 54 502.33 B
+0.25 0.08 (, the servers will now have to initialize the subsystem that) 301.31 502.33 B
+(determines all of the RPC entry points, and will have to initialize ports with empty threads \050see below\051.) 54 490.33 T
+(Any client programs that already use Mach IPC based RPC should be source compatible at the MIG interface.) 54 466.33 T
+0 F
+(1.4) 54 434.33 T
+(Design Principles) 81 434.33 T
+2 F
+(Four basic principles were followed in developing the new RPC:) 54 411.33 T
+0 9 Q
+(1.) 54 393.33 T
+2 10 Q
+(Mutually suspicious servers \050services\051.) 67.75 393.33 T
+0 9 Q
+(2.) 54 376.09 T
+2 10 Q
+(Necessary and suf) 67.75 376.09 T
+(\336cient criteria for additions to the kernel.) 140.27 376.09 T
+0 9 Q
+(3.) 54 358.84 T
+2 10 Q
+(Address space and network transparency of interfaces.) 67.75 358.84 T
+0 9 Q
+(4.) 54 341.6 T
+2 10 Q
+(Support of distributed failure semantics.) 67.75 341.6 T
+0.25 0.03 (An example of the principle of mutually suspicious servers is the decision to only allow the thread control operations to) 54 318.36 B
+-0.13 (af) 54 306.36 P
+-0.13 (fect the tar) 61.59 306.36 P
+-0.13 (get thread. In theory) 103.88 306.36 P
+-0.13 (, it would have been possible for an operation like thread suspend to go through the tar) 183.89 306.36 P
+-0.13 (get) 527.79 306.36 P
+0.14 (thread to the shuttle, and from there to the current head of the RPC chain, ef) 54 294.36 P
+0.14 (fectively suspending the shuttle where it was) 359.85 294.36 P
+-0.17 (executing. But this would have made other servers much more vulnerable to resource attacks, and violated the principle of) 54 282.36 P
+(mutually suspicious servers.) 54 270.35 T
+0.25 0.01 (The principle of necessary and suf) 54 246.35 B
+0.25 0.01 (f) 192.88 246.35 B
+0.25 0.01 (icient criteria refers to only adding to the kernel those mechanisms that are necessary) 195.67 246.35 B
+0.25 0.09 (and suf) 54 234.35 B
+0.25 0.09 (f) 83.84 234.35 B
+0.25 0.09 (icient to implementing a given feature. As much code as is practical for performance and programming model) 86.71 234.35 B
+0.25 0.09 (considerations should be left in user space in runtime libraries. This principle prevents the microkernel from losing its) 54 222.35 B
+(\322micro\323 status by becoming too bloated with features.) 54 210.35 T
+0.25 0.04 (Address space and network transparency is desirable from the point of view of the programming model. Obviously it is) 54 186.35 B
+(much easier for the programmer not to have to be concerned with the location of the tar) 54 174.35 T
+(get of an RPC.) 403.55 174.35 T
+-0.03 (The programmer should be accountable for the more extensive failure semantics of distribution, and be able to accept and) 54 150.35 P
+(respond to errors relating to node and communication failures.) 54 138.35 T
+54 113 540 126 C
+54 121 162 121 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 9 Q
+0 X
+0 K
+-0.1 (1.) 54 107 P
+2 10 Q
+-0.12 (Because of weirdness and performance issues with devices and Mach IPC based RPC a new OOL memory semantic is) 65.03 107 P
+(being created. It could be that fbufs + real RPC is a win here) 54 97 T
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Introduction) 72 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(5) 527.85 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+(1.5) 72 677.33 T
+(Abstractions and De\336nitions) 99 677.33 T
+2 F
+0.06 (T) 72 654.33 P
+0.06 (o prepare for the discussion of the RPC design, we will present some abstractions and de\336nitions that will be referred to) 77.41 654.33 P
+(throughout this document.) 72 642.33 T
+4 11 Q
+(\245) 72 624.33 T
+2 10 Q
+(RPC - A Remote Procedure Call is any procedure that crosses an address space boundary) 85.75 624.33 T
+(. \050Although technically a) 442.05 624.33 T
+(Mach system call is an RPC by this de\336nition, for our purposes it is a special case and is not considered an RPC.\051) 85.75 612.33 T
+4 11 Q
+(\245) 72 597.33 T
+2 10 Q
+(Network RPC - An RPC that crosses a node boundary) 85.75 597.33 T
+(.) 301.35 597.33 T
+4 11 Q
+(\245) 72 582.33 T
+2 10 Q
+(Thread - Normally an execution stack and processor state. In Mach \050and other systems\051 a thread is also a schedulable) 85.75 582.33 T
+(object that contains scheduling parameters and \050possibly\051 scheduling policy information.) 85.75 570.33 T
+4 11 Q
+(\245) 72 555.33 T
+2 10 Q
+(Migrating Thread - A thread that crosses address space or node boundaries.) 85.75 555.33 T
+4 11 Q
+(\245) 72 540.33 T
+2 10 Q
+-0.24 (Shuttle - In order to have migrating threads and still maintain backward compatibility with Mach threads, threads have) 85.75 540.33 P
+(been separated into two separate abstractions. The original thread now has the stack and processor state, \050and also) 85.75 528.33 T
+-0.27 (some scheduling information\051 while the new shuttle abstraction contains the scheduling policy and parameters, as well) 85.75 516.33 P
+-0.21 (as cpu usage and a pointer to the current thread. The shuttle is the part of the thread/shuttle system that migrates, while) 85.75 504.33 P
+(the thread part remains with the task in which it was created.) 85.75 492.33 T
+4 11 Q
+(\245) 72 477.33 T
+2 10 Q
+(Empty Thread - A Mach thread that is not currently associated with a shuttle.) 85.75 477.33 T
+4 11 Q
+(\245) 72 462.33 T
+2 10 Q
+(Active Thread - A non-empty Mach thread.) 85.75 462.33 T
+4 11 Q
+(\245) 72 447.33 T
+2 10 Q
+(RPC Chain Head- The thread at which the shuttle is currently pointing.) 85.75 447.33 T
+4 11 Q
+(\245) 72 432.33 T
+2 10 Q
+(Root Thread - A thread that was created active \050with a shuttle\051. This is the way to create a thread compatible with pre-) 85.75 432.33 T
+(RPC Mach. As long as the root thread does not perform an RPC, it will behave identically with pre-RPC Mach task-) 85.75 420.33 T
+(captive threads. If it does an RPC then the shuttle will migrate.) 85.75 408.33 T
+4 11 Q
+(\245) 72 393.33 T
+2 10 Q
+(RPC Chain - Active threads in dif) 85.75 393.33 T
+(ferent tasks linked by RPC calls.) 221.04 393.33 T
+4 11 Q
+(\245) 72 378.33 T
+2 10 Q
+-0.33 (Orphan Chain - The part of an RPC chain that is disconnected from the root thread by the loss of an intermediate active) 85.75 378.33 P
+(thread.) 85.75 366.33 T
+4 11 Q
+(\245) 72 351.33 T
+2 10 Q
+(RPC Upcall - The process of acquiring an empty thread in the tar) 85.75 351.33 T
+(get task, binding it to the incoming shuttle and) 345.93 351.33 T
+(branching to the work function speci\336ed by either the registered subsystem or the empty thread state.) 85.75 339.33 T
+4 11 Q
+(\245) 72 324.33 T
+2 10 Q
+(Exception - The hardware or software interruption of the execution of a thread in either a task or the kernel.) 85.75 324.33 T
+4 11 Q
+(\245) 72 309.33 T
+2 10 Q
+(Alert - A software generated exception that af) 85.75 309.33 T
+(fects the head of an RPC chain through the shuttle.) 269.01 309.33 T
+4 11 Q
+(\245) 72 294.33 T
+2 10 Q
+(Signature - An array of descriptors that describe the kernel visible ar) 85.75 294.33 T
+(guments \050e.g. ports\051 pushed on the stack for an) 359.51 294.33 T
+(RPC call.) 85.75 282.33 T
+4 11 Q
+(\245) 72 267.33 T
+2 10 Q
+-0.32 (Subsystem - A data structure registered by an RPC tar) 85.75 267.33 P
+-0.32 (get task to allow the kernel to marshall and unmarshal ar) 298.88 267.33 P
+-0.32 (guments) 521.96 267.33 P
+(and directly call task work functions.) 85.75 255.33 T
+4 11 Q
+(\245) 72 240.33 T
+2 10 Q
+(Failure Semantics - The de\336nition of the behavior of a system \050in this case RPC\051 in response to failure.) 85.75 240.33 T
+4 11 Q
+(\245) 72 225.33 T
+2 10 Q
+(Real-time Model - The model imposed on a kernel or operating system that asserts that execution time must be) 85.75 225.33 T
+(bounded and predictable, and that latency is minimized and throughput maximized for important cases.) 85.75 213.33 T
+0 9 Q
+(1.5.1) 72 190 T
+(New Functionality and Abstractions) 99 190 T
+2 10 Q
+-0.2 (There will be a new trap for Mach RPC plus a number of new calls for manipulating empty \050non-shuttle\051 threads. The new) 72 165.33 P
+0.25 0.13 (shuttle abstraction will be supported within the Mach kernel but will not be exported to the interface at this time. All) 72 153.33 B
+-0.18 (manipulation of shuttles will be done indirectly through the Mach thread interface. The shuttle abstraction will support the) 72 141.33 P
+0.21 (concept of migrating, distributed threads. Initially shuttles will only migrate from task to task within a single node. After) 72 129.33 P
+(the appropriate network protocols are developed and implemented, shuttles will be able to migrate between nodes.) 72 117.33 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 54 739.85 T
+(rap Interface) 80.47 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(6) 54 59.95 T
+0 9 Q
+( of) 59.56 59.95 T
+0 10 Q
+( 35) 70.54 59.95 T
+0 9 Q
+(1.5.2) 54 678 T
+(Changes to Mach Interface) 81 678 T
+2 10 Q
+(The changes to the Mach kernel interface consist of:) 54 653.33 T
+4 11 Q
+(\245) 54 635.33 T
+2 10 Q
+(The new Mach RPC trap.) 67.75 635.33 T
+4 11 Q
+(\245) 54 620.33 T
+2 10 Q
+(Calls for manipulating empty \050non shuttle\051 threads for upcalls.) 67.75 620.33 T
+4 11 Q
+(\245) 54 605.33 T
+2 10 Q
+(Call for manipulating the co-location subsystem data.) 67.75 605.33 T
+4 11 Q
+(\245) 54 590.33 T
+2 10 Q
+(Alerts.) 67.75 590.33 T
+4 11 Q
+(\245) 54 575.33 T
+2 10 Q
+(Summary of Proposed Changes) 67.75 575.33 T
+4 11 Q
+(\245) 54 560.33 T
+2 10 Q
+(RPC trap interface \050mach_rpc_trap\051) 67.75 560.33 T
+4 11 Q
+(\245) 54 545.33 T
+2 10 Q
+(- Signatures) 67.75 545.33 T
+4 11 Q
+(\245) 54 530.33 T
+2 10 Q
+(- Mach RPC T) 67.75 530.33 T
+(rap) 125.97 530.33 T
+4 11 Q
+(\245) 54 515.33 T
+2 10 Q
+(- Upcalls on ports) 67.75 515.33 T
+4 11 Q
+(\245) 54 500.33 T
+2 10 Q
+(- RPC Return T) 67.75 500.33 T
+(rap) 130.42 500.33 T
+4 11 Q
+(\245) 54 485.33 T
+2 10 Q
+(- Empty thread manipulation calls) 67.75 485.33 T
+4 11 Q
+(\245) 54 470.33 T
+2 10 Q
+(- Changes to MIG) 67.75 470.33 T
+4 11 Q
+(\245) 54 455.33 T
+2 10 Q
+(Shuttles) 67.75 455.33 T
+4 11 Q
+(\245) 54 440.33 T
+2 10 Q
+(- Empty threads) 67.75 440.33 T
+4 11 Q
+(\245) 54 425.33 T
+2 10 Q
+(- Scheduling policy) 67.75 425.33 T
+4 11 Q
+(\245) 54 410.33 T
+2 10 Q
+(- Shuttles and Thread Control) 67.75 410.33 T
+4 11 Q
+(\245) 54 395.33 T
+2 10 Q
+(- Kernel and user stack management) 67.75 395.33 T
+4 11 Q
+(\245) 54 380.33 T
+2 10 Q
+(Exceptions) 67.75 380.33 T
+4 11 Q
+(\245) 54 365.33 T
+2 10 Q
+(- Exceptions as upcalls) 67.75 365.33 T
+4 11 Q
+(\245) 54 350.33 T
+2 10 Q
+(- Alerts) 67.75 350.33 T
+4 11 Q
+(\245) 54 335.33 T
+2 10 Q
+(T) 67.75 335.33 T
+(rans-node RPC) 73.5 335.33 T
+4 11 Q
+(\245) 54 320.33 T
+2 10 Q
+(- Network RPC protocol) 67.75 320.33 T
+4 11 Q
+(\245) 54 305.33 T
+2 10 Q
+(- Distributed shuttle integrity and related protocols) 67.75 305.33 T
+54 262 540 265 C
+54 264.16 288 264.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(2.0) 54 269 T
+(RPC T) 81 269 T
+(rap Interface) 116.32 269 T
+2 10 Q
+0.25 0.11 (RPC is being promoted to a f) 54 241.33 B
+0.25 0.11 (irst class abstraction in the Mach user interface and therefore has it\325) 174.68 241.33 B
+0.25 0.11 (s own trap interface.) 455.42 241.33 B
+0.25 0.02 (Since we are no longer using Mach messages for RPC, the RPC parameter descriptors, or signatures, now exist separate) 54 229.33 B
+0.06 (from messages. Furthermore, all of the data that used to go into a message, is now either pushed on the stack or passed in) 54 217.33 P
+(an OOL memory buf) 54 205.33 T
+(fer) 137.92 205.33 T
+(. The complete RPC covers four phases:) 148.47 205.33 T
+0 9 Q
+(1.) 54 187.33 T
+2 10 Q
+(The RPC trap into the kernel) 67.75 187.33 T
+0 9 Q
+(2.) 54 170.09 T
+2 10 Q
+(The upcall into the tar) 67.75 170.09 T
+(get task) 155.84 170.09 T
+0 9 Q
+(3.) 54 152.84 T
+2 10 Q
+(The RPC return trap into the kernel) 67.75 152.84 T
+0 9 Q
+(4.) 54 135.6 T
+2 10 Q
+(The return into the calling task) 67.75 135.6 T
+(W) 54 112.35 T
+(e will elaborate on each of the four phases in the following sections.) 62.63 112.35 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 72 739.85 T
+(rap Interface) 98.47 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(7) 527.85 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+(2.1) 72 677.33 T
+(Signatures) 99 677.33 T
+2 F
+0.25 0.04 (The signature is a statically allocated and initialized data structure generated by MIG based on the interface description) 72 654.33 B
+(for an RPC. Each routine has it\325) 72 642.33 T
+(s own signature. The purpose of this signature is twofold:) 199.42 642.33 T
+0 9 Q
+(1.) 72 618.33 T
+2 10 Q
+0.06 (T) 85.75 618.33 P
+0.06 (o provide the kernel with the location of the port values within the parameter data so that the ports may be translated) 91.15 618.33 P
+(by the kernel when the parameters are copied to the destination.) 72 606.33 T
+0 9 Q
+(2.) 72 582.33 T
+2 10 Q
+-0.04 (T) 85.75 582.33 P
+-0.04 (o provide the size and address information of that parameter data that must be moved by the kernel, either via copyin) 91.15 582.33 P
+(and copyout, or directly from user space to user space using memory mapping techniques.) 72 570.33 T
+(A signature descriptor is:) 72 546.33 T
+4 8 Q
+(struct sig_desc) 72 529.67 T
+({) 72 517.67 T
+(param_type_t type;) 86.4 505.67 T
+(param_f) 86.4 493.67 T
+(lags_t f) 119.98 493.67 T
+(lags;) 158.36 493.67 T
+(size_t size) 86.4 481.67 T
+(unsigned offset) 86.4 469.67 T
+(};) 72 457.67 T
+2 10 Q
+0.25 0.01 (There will be one descriptor for every parameter that has to be looked at or translated by the kernel. The) 72 422.33 B
+1 F
+0.25 0.01 (type) 497.33 422.33 B
+2 F
+0.25 0.01 ( f) 515.71 422.33 B
+0.25 0.01 (ield indi-) 521.27 422.33 B
+(cates what kind of descriptor it is. T) 72 410.33 T
+(ypes are:) 215.09 410.33 T
+0 9 Q
+(1.) 72 392.33 T
+2 10 Q
+(MACH_RPC_POR) 85.75 392.33 T
+(T) 163.45 392.33 T
+0 9 Q
+(2.) 72 375.09 T
+2 10 Q
+(MACH_RPC_POR) 85.75 375.09 T
+(T_ARRA) 163.45 375.09 T
+(Y) 201.4 375.09 T
+0 9 Q
+(3.) 72 357.85 T
+2 10 Q
+(MACH_RPC_ARRA) 85.75 357.85 T
+(Y_FIXED) 171.46 357.85 T
+0 9 Q
+(4.) 72 340.6 T
+2 10 Q
+(MACH_RPC_ARRA) 85.75 340.6 T
+(Y_V) 171.46 340.6 T
+(ARIABLE) 189.6 340.6 T
+(The) 72 317.36 T
+1 F
+(\337ags) 90.04 317.36 T
+2 F
+(\336eld contains:) 111.98 317.36 T
+0 9 Q
+(1.) 72 299.36 T
+1 10 Q
+(dir) 88.24 299.36 T
+(ection) 100.84 299.36 T
+2 F
+( - speci\336es if it is an IN, OUT or IN/OUT parameter) 126.37 299.36 T
+0 9 Q
+(2.) 72 282.11 T
+1 10 Q
+(deallocate) 85.75 282.11 T
+2 F
+( - informs the kernel if the parameter is a memory object that is to be deallocated) 128.49 282.11 T
+0 9 Q
+(3.) 72 264.87 T
+1 10 Q
+(port_disposition) 85.75 264.87 T
+2 F
+( - indicate the type of port and the port action to be performed \050copy-send, send-once etc.\051) 155.17 264.87 T
+0 9 Q
+(4.) 72 247.62 T
+1 10 Q
+(on_stack) 85.75 247.62 T
+2 F
+( - tells if the parameter data is inlcuded in the parameter block copied in by the trap.) 123.5 247.62 T
+-0.09 (The) 72 224.38 P
+1 F
+-0.09 (size) 89.95 224.38 P
+2 F
+-0.09 ( \336eld is the size of the parameter data if it is a \336xed size parameter or the pointer to the size if it is a variable sized) 105.49 224.38 P
+(parameter) 72 212.38 T
+(. The) 111.41 212.38 T
+1 F
+(offset) 134.45 212.38 T
+2 F
+( \336eld is the of) 157.75 212.38 T
+(fset of the parameter in the parameter block.) 212.54 212.38 T
+(The full signature is:) 72 188.38 T
+4 8 Q
+(struct signature) 72 171.71 T
+({) 72 159.71 T
+(int parameter_words;) 86.4 147.71 T
+(int sig_count; /* = SIG_COUNT */) 86.4 135.71 T
+(sig_desc sig_array[SIG_COUNT];) 86.4 123.71 T
+(};) 72 111.71 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 54 739.85 T
+(rap Interface) 80.47 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(8) 54 59.95 T
+0 9 Q
+( of) 59.56 59.95 T
+0 10 Q
+( 35) 70.54 59.95 T
+54 89 540 684 R
+7 X
+V
+2 F
+0 X
+-0.21 (The) 54 677.33 P
+1 F
+-0.21 (parameter_words) 71.83 677.33 P
+2 F
+-0.21 ( \336eld indicates how many memory words \050or registers\051 are used by the RPC direct parameters. The) 147.88 677.33 P
+1 F
+0 (sig_count) 54 665.33 P
+2 F
+0 ( \336eld contains the number of descriptors that the kernel needs to correctly translate the data in the direct param-) 94.54 665.33 P
+(eters, and) 54 653.33 T
+1 F
+(sig_array) 94.8 653.33 T
+2 F
+( is the array of parameter descriptors.) 135.32 653.33 T
+0 F
+(2.2) 54 621.33 T
+(Mach Subsystems and Registration) 81 621.33 T
+2 F
+(The co-location project has developed the subsystem mechanism to provide two features:) 54 598.33 T
+0 9 Q
+(1.) 54 574.33 T
+2 10 Q
+0.04 (T) 67.75 574.33 P
+0.04 (o register an RPC signature with the kernel. This allows the kernel to optimize the RPC path by eliminating the need) 73.15 574.33 P
+(to copy signatures in and out of the kernel with every RPC.) 54 562.33 T
+0 9 Q
+(2.) 54 538.33 T
+2 10 Q
+0.25 0.06 (T) 67.75 538.33 B
+0.25 0.06 (o establish the server function entry points with the kernel. This permits the kernel to branch directly to the server) 73.21 538.33 B
+(work function and eliminates the need for server stubs \050except in the case of heterogeneous networks\051.) 54 526.33 T
+-0.19 (T) 54 502.33 P
+-0.19 (o make use of subsystems, the server must \336rst create one and then associate it with a particular port or port set. Once the) 59.41 502.33 P
+0.25 0.08 (subsystem is in place, and empty threads have been assigned to the port, the kernel can upcall directly to the functions) 54 490.33 B
+0.14 (speci\336ed in the subsystem. Server work functions are speci\336ed in the RPC by the) 54 478.33 P
+1 F
+0.14 (r) 383.22 478.33 P
+0.14 (outine_number) 387.48 478.33 P
+2 F
+0.14 ( ar) 453.01 478.33 P
+0.14 (gument in the RPC) 463.23 478.33 P
+(trap.) 54 466.33 T
+0 F
+(2.3) 54 434.33 T
+(Mach RPC T) 81 434.33 T
+(rap) 138.76 434.33 T
+2 F
+-0.05 (The Mach RPC trap is managed with a macro with a macine independent interface and a machine dependent implementa-) 54 418.33 P
+(tion. For instance, inside the funcion:) 54 406.33 T
+4 8 Q
+(kern_return_t foo\050arg1, ..., argN\051;) 54 389.67 T
+2 10 Q
+(MIG would generate the following macro call:) 54 366.33 T
+4 8 Q
+(MACH_RPC\050) 54 349.67 T
+(signature_buffer_pointer,) 68.4 337.67 T
+(signature_buffer_size,) 68.4 325.67 T
+(routine_number,) 68.4 313.67 T
+(destination_port,) 68.4 301.67 T
+(\050arg1, ..., argN\051\051;) 68.4 289.67 T
+2 10 Q
+-0.16 (This machine dependent macro would make use of registers and assembly instructions where appropriate in its implemen-) 54 266.33 P
+0.25 0.06 (tation, and would hide the dif) 54 254.33 B
+0.25 0.06 (ferences between stack and register architectures. The arrangement of the parameters and) 174.72 254.33 B
+(signature buf) 54 242.33 T
+(fer for RPC trap is indicated in Figure) 106.28 242.33 T
+("Parameters and Signature" on page) 260.63 242.33 T
+(9.) 407.29 242.33 T
+(The RPC parameters consist of:) 54 218.33 T
+4 11 Q
+(\245) 54 200.33 T
+1 10 Q
+(arg1) 67.75 200.33 T
+(... argn) 89.67 200.33 T
+2 F
+(- ar) 122.15 200.33 T
+(guments passed by the client.) 135.57 200.33 T
+4 11 Q
+(\245) 54 185.33 T
+1 10 Q
+(NDR_header) 67.75 185.33 T
+2 F
+( - area containing the NDR) 123.81 185.33 T
+2 8 Q
+(1) 231.79 189.33 T
+2 10 Q
+( or NDR-like information) 235.78 185.33 T
+(The RPC trap parameters:) 54 161.33 T
+4 11 Q
+(\245) 54 143.33 T
+1 10 Q
+(signatur) 67.75 143.33 T
+(e_buffer_size) 103.11 143.33 T
+2 F
+( - size in bytes of the signature buf) 159.72 143.33 T
+(fer) 297.78 143.33 T
+(.) 308.32 143.33 T
+4 11 Q
+(\245) 54 128.33 T
+1 10 Q
+(signatur) 67.75 128.33 T
+(e_buffer) 103.11 128.33 T
+2 F
+( - pointer to signature buf) 139.19 128.33 T
+(fer) 240.88 128.33 T
+54 102 540 115 C
+54 110 162 110 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 9 Q
+0 X
+0 K
+(1.) 54 96 T
+2 10 Q
+(NDR is a protocol between the client and the server) 65.23 96 T
+(, so keeping it out of the kernel makes it easier to change.) 271.62 96 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 72 739.85 T
+(rap Interface) 98.47 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(9) 527.85 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+4 11 Q
+(\245) 54 146.33 T
+1 10 Q
+(r) 67.75 146.33 T
+(outine_number) 72 146.33 T
+2 F
+( - identi\336er of the server work function) 137.53 146.33 T
+4 11 Q
+(\245) 54 131.33 T
+1 10 Q
+(destination_port) 67.75 131.33 T
+2 F
+( - always same as rpc_ar) 138.27 131.33 T
+(g1) 236.05 131.33 T
+(The signature buf) 54 107.33 T
+(fer contains:) 124.32 107.33 T
+54 90 540 666 C
+180 153 414 666 C
+215 360 369 481 R
+7 X
+0 K
+V
+3 H
+2 Z
+0 X
+N
+215.94 626 368.06 626 2 L
+1 H
+N
+215.94 599 368.06 599 2 L
+N
+90 450 1.43 0.86 292 619.14 G
+0 Z
+90 450 1.43 0.86 292 619.14 A
+90 450 1.43 0.86 292 612.29 G
+90 450 1.43 0.86 292 612.29 A
+90 450 1.43 0.86 292 604.86 G
+90 450 1.43 0.86 292 604.86 A
+3 10 Q
+(rpc_arg1 \050destination port\051) 233.4 638.19 T
+215.94 571 368.06 571 2 L
+V
+2 Z
+N
+(signature_pointer) 253.39 434.7 T
+(signature_array) 257.28 240.01 T
+(NDR_header) 262.84 545.46 T
+1 12 Q
+(Signatur) 248.97 201.52 T
+(e Buffer) 293.4 201.52 T
+(RPC Parameters) 248.54 503.52 T
+3 10 Q
+(rpc_argN) 271.45 582.19 T
+215.5 525 368.5 657 R
+3 H
+N
+216.6 423.49 367.4 423.49 2 L
+V
+1 H
+N
+215.5 220.55 368.5 316.55 R
+3 H
+N
+216.6 451 367.4 451 2 L
+V
+1 H
+N
+(routine_number) 257 407.19 T
+(signature_buf) 244.32 462 T
+(fer_size) 304.69 462 T
+1 12 Q
+(RPC T) 235.49 337.52 T
+(rap Parameters) 270.25 337.52 T
+216.6 392.49 367.4 392.49 2 L
+V
+N
+3 10 Q
+(destination_port) 256.45 374.19 T
+216.6 288.49 367.4 288.49 2 L
+V
+N
+216.6 262.49 367.4 262.49 2 L
+V
+N
+(parameter_words) 253.12 298 T
+(signature_count) 256.45 272 T
+180 153 411 176 R
+7 X
+V
+0 12 Q
+0 X
+(Figure -) 180 168 T
+(Parameters and Signature) 227.31 168 T
+54 90 540 666 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 54 739.85 T
+(rap Interface) 80.47 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(10) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+4 11 Q
+(\245) 54 677.33 T
+1 10 Q
+(parameter_words) 67.75 677.33 T
+2 F
+( - the number of words in the parameter block) 143.79 677.33 T
+4 11 Q
+(\245) 54 662.33 T
+1 10 Q
+(signatur) 67.75 662.33 T
+(e_count) 103.11 662.33 T
+2 F
+( - number of parameter descriptors in the signature_array) 136.42 662.33 T
+4 11 Q
+(\245) 54 647.33 T
+1 10 Q
+(signatur) 67.75 647.33 T
+(e_array) 103.11 647.33 T
+2 F
+( - area containing the array of parameter descriptors.) 136.41 647.33 T
+0.1 (The parameter data contains both the direct ar) 54 623.33 P
+0.1 (guments of the RPC and the ar) 237.97 623.33 P
+0.1 (guments to the RPC trap. The exact con\336gu-) 361.09 623.33 P
+0.23 (ration of the stack at the trap call is dependent upon how much ar) 54 611.33 P
+0.23 (gument marshalling is done by MIG. MIG can marshal) 318.02 611.33 P
+0.22 (any input arrays and allocate space for out parameter data on the stack and then copy the direct ar) 54 599.33 P
+0.22 (guments onto the stack) 447.45 599.33 P
+0.13 (after the out and in areas. T) 54 587.33 P
+0.13 (o save an extra copyin, the top four ar) 163.7 587.33 P
+0.13 (guments on the stack \050or at least the) 315.81 587.33 P
+1 F
+0.13 (paramater_byte_-) 462.84 587.33 P
+(count) 54 575.33 T
+2 F
+(\051 can be passed in registers.) 77.88 575.33 T
+0 9 Q
+(2.3.1) 54 552 T
+(Processing the Signature and Parameters) 81 552 T
+2 10 Q
+(Phase one \050Figure) 54 527.33 T
+("Phase 1: RPC T) 128.67 527.33 T
+(rap" on page) 195.98 527.33 T
+(1) 249.18 527.33 T
+(1\051 of the RPC consists of \336ve steps:.) 253.81 527.33 T
+0 9 Q
+(1.) 54 485.33 T
+2 10 Q
+-0.29 (The trap call places the caller) 67.75 485.33 P
+-0.29 (\325) 184.04 485.33 P
+-0.29 (s return address and register state on the thread control block \050TCB\051) 186.81 485.33 P
+2 8 Q
+-0.24 (1) 455.31 489.33 P
+2 10 Q
+-0.29 (. The trap treats this) 459.31 485.33 P
+(part of the TCB as if were a kernel stack, so immediately after the trap the kernel must switch to the shuttle stack.) 67.75 474.09 T
+0 9 Q
+(2.) 54 456.84 T
+2 10 Q
+-0.16 (The kernel copies the four ar) 67.75 456.84 P
+-0.16 (guments of the trap call from the client to the TCB. These are the) 181.96 456.84 P
+1 F
+-0.16 (signatur) 443.18 456.84 P
+-0.16 (e_buffer_size) 478.54 456.84 P
+2 F
+-0.16 (,) 535.16 456.84 P
+1 F
+(signatur) 67.75 445.6 T
+(e_pointer) 103.11 445.6 T
+2 F
+(,) 143.23 445.6 T
+1 F
+(r) 148.23 445.6 T
+(outine_number) 152.49 445.6 T
+2 F
+(, and) 217.61 445.6 T
+1 F
+(destination_port) 239.54 445.6 T
+2 F
+(.) 310.06 445.6 T
+0 9 Q
+(3.) 54 428.36 T
+2 10 Q
+-0.2 (The kernel uses) 67.75 428.36 P
+1 F
+-0.2 (signatur) 132.36 428.36 P
+-0.2 (e_buffer_size) 167.72 428.36 P
+2 F
+-0.2 ( and) 224.34 428.36 P
+1 F
+-0.2 (signatur) 243.37 428.36 P
+-0.2 (e_pointer) 278.73 428.36 P
+2 F
+-0.2 ( from the TCB to copyin the) 319.26 428.36 P
+1 F
+-0.2 (parameter_words) 433.61 428.36 P
+2 F
+-0.2 (,) 509.66 428.36 P
+1 F
+-0.2 (signa-) 514.45 428.36 P
+-0.31 (tur) 67.75 417.11 P
+-0.31 (e_count) 80.89 417.11 P
+2 F
+-0.31 ( and the \336rst N descriptors of the) 114.2 417.11 P
+1 F
+-0.31 (signatur) 245.55 417.11 P
+-0.31 (e_array) 280.91 417.11 P
+2 F
+-0.31 ( into the designated part of the TCB. If) 314.21 417.11 P
+1 F
+-0.31 (signatur) 469.14 417.11 P
+-0.31 (e_count) 504.49 417.11 P
+2 F
+0 (> N then the over\337ow is copied into memory allocted by the kernel for that purpose and the pointer to that memory is) 67.75 405.87 P
+(also saved inn the TCB. All of this allows the TCB to be a relatively small \336xed size data structure.) 67.75 394.62 T
+0 9 Q
+(4.) 54 377.38 T
+2 10 Q
+(The kernel scans the signature to determine how much of the parameter data is already on the stack and how much) 67.75 377.38 T
+(must be gathered by the kernel. The latter amount is reserved on the shuttle stack. The parameter block is then copied) 67.75 366.13 T
+(onto the shuttle stack after the reserved area. The parameters that originally were pointing into the user stack are) 67.75 354.89 T
+(changed to of) 67.75 343.64 T
+(fsets into the shuttle stack.) 121.96 343.64 T
+0 9 Q
+(5.) 54 326.4 T
+2 10 Q
+(Using the information in the signature, the kernel gathers all of the input parameter data that is not on the stack and) 67.75 326.4 T
+(copies it into the area of the shuttle stack reserved for that purpose. The parameters that used to point into user space) 67.75 315.15 T
+(are converted to of) 67.75 303.91 T
+(fsets into the shuttle stack.) 142.77 303.91 T
+(After the above steps are completed the kernel is ready to perform the upcall into the task designated by destination_port.) 54 280.67 T
+0.25 0.05 (If the signature has been registered by the server) 54 256.66 B
+0.25 0.05 (, then subsequent copyins of the signature array are not necessary) 251.95 256.66 B
+0.25 0.05 (. The) 519 256.66 B
+-0.17 (\336rst time a client makes a call to a server) 54 244.66 P
+-0.17 (, the kernel will set the value of the signature handle to a kernel manged signature) 215.56 244.66 P
+0.2 (identi\336er) 54 232.66 P
+0.2 (. Subsequent RPCs from that client to the server will pass the signature handle, informing the kernel that it does) 89.54 232.66 P
+(not have to copyin the signature array) 54 220.66 T
+(.) 204.35 220.66 T
+0 F
+(2.4) 54 188.66 T
+(RPC Upcall) 81 188.66 T
+2 F
+0.25 0.01 (The incoming shuttle, if it is arriving through the kernel from another task, must bind to an empty thread on the destina-) 54 165.66 B
+0.25 0.07 (tion port. If there are no empty threads available, the shuttle will block until one is available. After the empty thread is) 54 153.66 B
+0 (bound to the shuttle but before user level code in the task is executed, the parameters must be transferred to the user stack) 54 141.66 P
+-0.09 (of the formerly empty thread, and the necessary port translations \050as well as any other parameter transformations\051 must be) 54 129.66 P
+54 103 540 116 C
+54 111 162 111 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 9 Q
+0 X
+0 K
+(1.  The TCB used to the PCB \050process control block\051 which is a holdover from before Mach supported multiple threads.) 54 97 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 72 739.85 T
+(rap Interface) 98.47 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(1) 522.84 59.95 T
+(1) 527.85 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+72 90 541 684 C
+84.89 638.02 237.01 638.02 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+3 10 Q
+(Input Parameter Data) 107.06 611.52 T
+(Output Parameter Data Area) 96.06 657.52 T
+83.99 595.02 236.99 680.02 R
+3 H
+N
+1 12 Q
+(Parameter Data Ar) 105.57 578.52 T
+(ea) 204.59 578.52 T
+3 10 Q
+(From V) 361.52 663.19 T
+(arious User Memory) 393.54 663.19 T
+65.5 91 551.5 122 R
+7 X
+V
+0 12 Q
+0 X
+(Figure -) 65.5 114 T
+(Phase 1: RPC T) 112.81 114 T
+(rap) 200.8 114 T
+84.05 430 237.05 564 R
+6 X
+V
+0.5 H
+0 X
+N
+83.88 530.5 236 530.5 2 L
+1 H
+N
+83.88 503.5 236 503.5 2 L
+N
+90 450 1.43 0.86 155.71 523.64 G
+0 Z
+90 450 1.43 0.86 155.71 523.64 A
+90 450 1.43 0.86 155.71 516.79 G
+90 450 1.43 0.86 155.71 516.79 A
+90 450 1.43 0.86 155.71 509.36 G
+90 450 1.43 0.86 155.71 509.36 A
+3 10 Q
+(rpc_arg1 \050destination port\051) 102.78 487.69 T
+85 475.5 237.12 475.5 2 L
+V
+2 Z
+N
+(NDR_header) 125.17 447.95 T
+(rpc_argN) 137.98 544.69 T
+83.98 429.5 236.98 563.5 R
+3 H
+N
+85 289 238 398 R
+14 X
+V
+0 X
+N
+(routine_number) 123.27 327.58 T
+(signature_pointer) 118.66 355.85 T
+(destination_port) 121.71 301.27 T
+(signature_buf) 112.58 381 T
+(fer_size) 172.96 381 T
+84 346.53 237 346.53 2 L
+0.5 H
+N
+84 373.11 237 373.11 2 L
+N
+83 316.53 236 316.53 2 L
+N
+1 12 Q
+(RPC T) 101.48 269.96 T
+(rap Parameters) 136.24 269.96 T
+84.43 155.05 237.43 253.05 R
+5 X
+V
+3 H
+0 X
+N
+3 10 Q
+(parameter_words) 120.89 235.69 T
+(signature_count) 120.21 211.42 T
+(signature_array) 124.06 176.51 T
+83.5 201.26 236.5 201.26 2 L
+0.5 H
+N
+84.5 226.84 237.5 226.84 2 L
+N
+1 12 Q
+(Signatur) 116.2 136.02 T
+(e Buffer) 160.63 136.02 T
+326.5 450.5 478.5 540.5 R
+6 X
+V
+0 X
+N
+326.43 160 479.43 369 R
+3 H
+N
+326.43 422 479.43 635 R
+N
+(Thr) 346.47 139.52 T
+(ead Contr) 366.25 139.52 T
+(ol Block) 417.67 139.52 T
+(\050Client Thr) 362.86 127.52 T
+(ead\051) 420.95 127.52 T
+(Shuttle Stack) 368.74 401.52 T
+326.5 320.5 478.5 368.5 R
+0.5 H
+N
+3 10 Q
+(RPC T) 368.5 347.5 T
+(rap State) 398.11 347.5 T
+(\050Registers etc.\051) 368.5 337.5 T
+319.11 329.68 325.49 319.52 314.69 324.75 316.9 327.21 4 Y
+V
+239.5 396.5 316.91 327.2 2 L
+N
+326.5 264.5 479.5 319.5 R
+14 X
+V
+0 X
+N
+316.24 270.76 326.49 264.52 314.49 264.38 315.36 267.57 4 Y
+V
+240.5 287.5 315.38 267.55 2 L
+N
+313.61 265.2 325.49 263.51 314.52 258.65 314.07 261.92 4 Y
+V
+238.5 251.5 314.08 261.91 2 L
+N
+314.64 192.62 326.48 194.53 317.45 186.64 316.04 189.63 4 Y
+V
+238.5 153.5 316.06 189.6 2 L
+N
+326.5 194.5 478.5 264.5 R
+5 X
+V
+0 X
+N
+(signature_buf) 365.75 226.01 T
+(fer) 426.13 226.01 T
+(T) 362.5 289.5 T
+(rap Parameters) 368.24 289.5 T
+313.49 450.58 325.49 450.51 315.27 444.21 314.38 447.4 4 Y
+V
+237.5 426.5 314.39 447.39 2 L
+N
+316.03 546.39 326.49 540.51 314.5 539.95 315.27 543.17 4 Y
+V
+236.5 561.5 315.28 543.17 2 L
+N
+328.46 450 477.4 450 2 L
+V
+1 H
+N
+326.33 586 478.45 586 2 L
+N
+(Gathered Input Parameter Data) 333.5 603.5 T
+327.33 541 479.45 541 2 L
+N
+(Stack Input Parameter Data) 345.5 557.5 T
+(RPC parameters, etc.) 351.5 505.5 T
+(Step 1) 277.61 370.71 T
+(Step 2) 279.5 298.71 T
+(Step 3) 277.61 217.71 T
+(Step 4) 264.5 516.19 T
+(Step 5) 265.5 586.19 T
+2 F
+(Output Scatter Array) 360.5 174.5 T
+318.16 594.14 326.49 585.5 314.85 588.42 316.51 591.28 4 Y
+V
+237.5 636.5 316.52 591.28 2 L
+0.5 H
+N
+318.31 549.28 326.49 540.5 314.9 543.62 316.61 546.45 4 Y
+V
+237.5 593.5 316.61 546.45 2 L
+N
+336.63 639.47 325.49 635 332.57 644.69 334.6 642.08 4 Y
+V
+360.5 662 334.61 642.08 2 L
+N
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 54 739.85 T
+(rap Interface) 80.47 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(12) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+2 F
+0.08 (performed. At this point there are two cases to consider when copying data from the kernel to the server stack, the unreg-) 54 677.33 P
+0.09 (istered signature case and the registered signature case. Since the unregisterd case is a bit nore complex, we will consider) 54 665.33 P
+0.2 (it \336rst. As seen in Figure) 54 653.33 P
+0.2 ("Phase 2: RPC Upcall \050Unregistered\051" on page) 156.34 653.33 P
+0.2 (13 there are three steps to moving the data from) 346.95 653.33 P
+(the kernel to the server) 54 641.33 T
+(\325) 145.96 641.33 T
+(s stack:) 148.74 641.33 T
+0 9 Q
+(1.) 54 623.33 T
+2 10 Q
+-0.36 (Copyout the input parameter data and the parameters to the server stack, while reserving room for the output parameter) 67.75 623.33 P
+-0.11 (data. Change the of) 67.75 612.09 P
+-0.11 (fsets in the input parameters to addresses in the input parameter area. Change output parameter of) 144.95 612.09 P
+-0.11 (f-) 533.34 612.09 P
+(sets and the scattered output parameter of) 67.75 600.84 T
+(fsets to of) 233.54 600.84 T
+(fsets in the output parameter area of the server stack. Information) 272.78 600.84 T
+(for changing of) 67.75 589.6 T
+(fsets to pointers is derived from the signature data.) 129.18 589.6 T
+0 9 Q
+(2.) 54 572.35 T
+2 10 Q
+-0.11 (Copyout the signature array from the TCB to the server stack. The signature is used by MIG for checking and manipu-) 67.75 572.35 P
+(lation of parameters.) 67.75 561.11 T
+0 9 Q
+(3.) 54 543.87 T
+2 10 Q
+(Copyout the RPC trap parameters) 67.75 543.87 T
+1 F
+(signatur) 205.16 543.87 T
+(e_count) 240.52 543.87 T
+2 F
+(,) 273.83 543.87 T
+1 F
+(rpc_arg_pointer) 278.83 543.87 T
+2 F
+( and) 348.78 543.87 T
+1 F
+(r) 368.21 543.87 T
+(outine_number) 372.47 543.87 T
+2 F
+( to the server stack in) 437.99 543.87 T
+-0.09 (preparation for the upcall to) 67.75 532.62 P
+1 F
+-0.09 (server_entry_point) 181.37 532.62 P
+2 F
+-0.09 ( \050the address of which is stored as program counter of the state of the) 262.97 532.62 P
+(empty thread used for the upcall\051.) 67.75 521.38 T
+(There are two main dif) 54 498.13 T
+(ferences between unregisterd and registered signatures:) 145.41 498.13 T
+0 9 Q
+(1.) 54 480.13 T
+2 10 Q
+( the signature data does not have to be copied into the server when it is registered) 67.75 480.13 T
+0 9 Q
+(2.) 54 462.89 T
+2 10 Q
+(the kernel branches directly into the server work function, circumventing the) 67.75 462.89 T
+1 F
+(server_entry_point) 376.95 462.89 T
+2 F
+( and MIG stub.) 458.56 462.89 T
+0.25 0.01 (After the incoming parameters are established on the user stack, user mode is entered and the thread is dispatched to the) 54 439.64 B
+0.16 (entry point designated by the original RPC call. In servers with unregistered signatures, this is accomplished by) 54 427.64 P
+1 F
+0.16 (server_-) 505.04 427.64 P
+0.25 0.09 (entry_point) 54 415.64 B
+2 F
+0.25 0.09 ( dispatching on) 105.02 415.64 B
+1 F
+0.25 0.09 (r) 170.86 415.64 B
+0.25 0.09 (outine_number) 175.21 415.64 B
+2 F
+0.25 0.09 ( using the \050MIG generated and globally def) 241.97 415.64 B
+0.25 0.09 (ined\051) 420.09 415.64 B
+1 F
+0.25 0.09 (server_entry_table) 443.95 415.64 B
+2 F
+0.25 0.09 (. In) 526.14 415.64 B
+0.25 0.09 (servers with registered signatures, the work function is entered directly by the kernel using a function table associated) 54 403.64 B
+-0.06 (with the signature registration bound to the destination port. See Figure) 54 391.64 P
+-0.06 ("Phase 2: RPC Upcall \050Unregistered\051" on page) 340.97 391.64 P
+-0.06 (13) 530.01 391.64 P
+(to see the dif) 54 379.64 T
+(ferences in the server stack.) 105.17 379.64 T
+0 F
+(2.5) 54 347.64 T
+(RPC Return T) 81 347.64 T
+(rap) 145.41 347.64 T
+4 8 Q
+(kern_return_t mach_rpc_return_trap\050\051;) 54 332.98 T
+2 10 Q
+-0.18 (The return address of the server work function \050or MIG generated interface function\051 should be made to point at a location) 54 309.64 P
+(that holds this trap. All the information needed to get back to the caller of the RPC is saved in the kernel) 54 297.64 T
+0.25 0.08 (As was mentioned previously) 54 273.64 B
+0.25 0.08 (, after the shuttle has entered the tar) 174.75 273.64 B
+0.25 0.08 (get work routine via upcall, the output parameters all) 322.05 273.64 B
+0.05 (point into memory pre-allocated by the server) 54 261.64 P
+0.05 (, or stack memory set up by MIG. After the work routine has completed, all) 237.07 261.64 P
+0.25 0.02 (of the output parameter data should be in one of these two areas. This output area \050plus the NDR header if necessary\051 is) 54 249.64 B
+0.25 0.03 (the only data that needs to be moved by the kernel back to the caller of the RPC. First it is copied onto the shuttle stack) 54 237.64 B
+0.25 0.06 (\050see Figure) 54 225.64 B
+0.25 0.06 ("Phase 3: RPC Return T) 102.21 225.64 B
+0.25 0.06 (rap" on page) 201.65 225.64 B
+0.25 0.06 (15\051, then the non-scatter part of the output data is copied to the client) 256.18 225.64 B
+0.05 (user stack to be unmarshalled later by MIG generated code in the client stub. Then the data pointed at by the scatter array) 54 213.64 P
+0.25 0.02 (is umarshalled by the kernel into the clients address space, and if necessary) 54 201.64 B
+0.25 0.02 (, the server) 358.36 201.64 B
+0.25 0.02 (\325) 403.57 201.64 B
+0.25 0.02 (s NDR header overwrites the cli-) 406.37 201.64 B
+0.23 (ents NDR header on the client user stack. \050See Figure) 54 189.64 P
+0.23 ("Phase 4: Return from RPC" on page) 272.85 189.64 P
+0.23 (16.\051 Finally) 425.36 189.64 P
+0.23 (, the return value) 471.59 189.64 P
+0.05 (of the call which is in a register) 54 177.64 P
+0.05 (, is stored in the register state of the TCB and the shuttle stack is switched to the TCB and) 179.73 177.64 P
+(a return from trap is executed to return to the client\325) 54 165.64 T
+(s user space RPC) 261.07 165.64 T
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 72 739.85 T
+(rap Interface) 98.47 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(13) 522.29 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+72 90 558 684 C
+350 558 504 603 R
+6 X
+0 K
+V
+0.5 H
+2 Z
+0 X
+N
+351 376 504 508 R
+6 X
+V
+3 H
+0 X
+N
+82.17 218.5 234.17 287.5 R
+5 X
+V
+0.5 H
+0 X
+N
+355.17 235.5 507.17 318.5 R
+5 X
+V
+0 X
+N
+81 465 234 646 R
+6 X
+V
+0 X
+N
+82.11 183 235.11 392 R
+3 H
+N
+81.11 437 234.11 646 R
+N
+1 12 Q
+(Thr) 102.15 162.52 T
+(ead Contr) 121.92 162.52 T
+(ol Block) 173.34 162.52 T
+(\050Client Thr) 118.54 150.52 T
+(ead\051) 176.62 150.52 T
+(Shuttle Stack) 123.42 416.52 T
+82.17 343.5 234.17 391.5 R
+0.5 H
+N
+3 10 Q
+(RPC T) 124.17 370.5 T
+(rap State) 153.79 370.5 T
+(\050Registers etc.\051) 124.17 360.5 T
+82.17 287.5 235.17 342.5 R
+(signature_buf) 121.43 250.01 T
+(fer) 181.8 250.01 T
+(T) 118.17 312.5 T
+(rap Parameters) 123.91 312.5 T
+83.13 465 232.07 465 2 L
+V
+1 H
+N
+81 601 233.12 601 2 L
+N
+(Gathered Input Parameter Data) 88.17 618.5 T
+82 556 234.12 556 2 L
+N
+(Stack Input Parameter Data) 100.17 572.5 T
+(RPC parameters, etc.) 106.17 520.5 T
+2 9 Q
+(Stack T) 514.11 201.95 T
+(op) 541.19 201.95 T
+3 10 Q
+(routine_number) 395.61 214.19 T
+352 474 504.12 474 2 L
+N
+352 447 504.12 447 2 L
+N
+90 450 1.43 0.86 423.83 467.14 G
+0 Z
+90 450 1.43 0.86 423.83 467.14 A
+90 450 1.43 0.86 423.83 460.29 G
+90 450 1.43 0.86 423.83 460.29 A
+90 450 1.43 0.86 423.83 452.86 G
+90 450 1.43 0.86 423.83 452.86 A
+(rpc_arg1 \050destination port\051) 370.9 431.19 T
+353.12 419 505.24 419 2 L
+V
+2 Z
+N
+355.13 419 504.08 419 2 L
+V
+N
+(NDR_header) 400.45 396.45 T
+534.31 229.53 531 218 527.69 229.53 531 229.53 4 Y
+V
+531 318 531 229.53 2 L
+V
+N
+(rpc_argN) 406.11 488.19 T
+355.11 200 508.11 318 R
+3 H
+N
+356.11 234.34 509.11 234.34 2 L
+0.5 H
+N
+356.11 319.5 509.11 319.5 2 L
+N
+350 648 502.12 648 2 L
+1 H
+N
+(Input Parameter Data) 374.17 578.5 T
+(Output Parameter Data Area) 363.17 624.5 T
+340.34 610.13 349.99 603 338.03 603.93 339.18 607.03 4 Y
+V
+234 646 339.19 607.03 2 L
+0.5 H
+N
+343.9 385.69 350.99 376.01 339.85 380.46 341.88 383.08 4 Y
+V
+234 466 341.88 383.07 2 L
+N
+81 99 558 124 R
+7 X
+V
+0 12 Q
+0 X
+(Figure -) 81 116 T
+(Phase 2: RPC Upcall \050Unregistered\051) 128.31 116 T
+338.41 561.11 350 558 338.52 554.49 338.46 557.8 4 Y
+V
+234 556 338.47 557.8 2 L
+N
+3 10 Q
+(signature_buf) 391.58 276.08 T
+(fer) 451.96 276.08 T
+342.99 318.2 354.98 318.02 344.71 311.81 343.85 315.01 4 Y
+V
+234 286 343.87 314.98 2 L
+N
+343.11 236.66 354.99 235.01 344.04 230.11 343.58 233.38 4 Y
+V
+235 218 343.58 233.37 2 L
+N
+344.62 181.05 356.99 198.02 355.49 177.08 350.05 179.07 4 Y
+V
+345 165 350.07 179.04 2 L
+3 H
+N
+(Stack Pointer) 280 161 T
+(at Server Entry) 280 151 T
+(Step 1) 298 634 T
+(Step 2) 314 263 T
+356.11 234.34 509.11 234.34 2 L
+0.5 H
+N
+1 12 Q
+(Server Stack) 399.76 173.52 T
+3 10 Q
+(Step 3) 317 191 T
+2 F
+(Output Scatter Array) 118 197 T
+350 558 504 648 R
+3 H
+N
+341.65 514.54 350.99 507.01 339.08 508.44 340.36 511.49 4 Y
+V
+234 556 340.37 511.48 2 L
+0.5 H
+N
+1 12 Q
+(RPC Parameters) 386.1 350.52 T
+(RPC Parameter Data) 365.61 537.52 T
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "13" 14
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 54 739.85 T
+(rap Interface) 80.47 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(14) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+(2.6) 72 344.33 T
+(Empty Thread Calls) 99 344.33 T
+4 8 Q
+(kern_return_t thread_create_empty\050) 72 329.67 T
+(mach_port_t) 86.4 317.67 T
+(task_port,) 158.4 317.67 T
+(mach_port_t) 86.4 305.67 T
+(rpc_port,) 158.4 305.67 T
+(thread_state_t) 86.4 293.67 T
+(thread_state_ptr,) 158.4 293.67 T
+(mach_port_t) 86.4 281.67 T
+(*thread_port\051) 158.4 281.67 T
+2 10 Q
+0.25 0.1 ( Creates a new empty thread \050i.e. one with no associated shuttle\051 in the task specif) 72 258.33 B
+0.25 0.1 (ied by task_port and inserts the) 410.97 258.33 B
+0.07 (thread in the list of empty threads that service RPC\325) 72 246.33 P
+0.07 (s tar) 279.48 246.33 P
+0.07 (geted at the speci\336ed port. If a portset is speci\336ed, the empty) 296.3 246.33 P
+0.16 (thread is put on the list of empty threads associated with the portset. These threads service RPC\325) 72 234.33 P
+0.16 (s that are tar) 459.05 234.33 P
+0.16 (geted at) 508.48 234.33 P
+0.25 0.06 (any of the ports in the portset. The thread_state_ptr specif) 72 222.33 B
+0.25 0.06 (ies the initial thread state that the thread should be given) 308.4 222.33 B
+0.25 0.05 (when it begins execution during an RPC. The thread_port OUT parameter is set to a send right that names the new) 72 210.33 B
+(thread.) 72 198.33 T
+-0.01 ( The thread_state_ptr needs to be a thread_state structure similar to that used by thread_create. This is because some-) 72 174.33 P
+-0.15 (times empty threads need more than a stack either because of architecture weirdness, like the P) 72 162.33 P
+-0.15 (A, or in case the server) 448.59 162.33 P
+-0.06 (is not going to register signatures and as a result the server needs to register the address of the server loop. The server) 72 150.33 P
+(loop is the alternative to stubless servers.) 72 138.33 T
+72 90 540 684 C
+72 351 540 684 C
+362 575 514 620 R
+6 X
+0 K
+V
+0.5 H
+2 Z
+0 X
+N
+361 440 514 527 R
+6 X
+V
+3 H
+0 X
+N
+81 450 234 631 R
+6 X
+V
+0.5 H
+0 X
+N
+81.11 422 234.11 631 R
+3 H
+N
+1 12 Q
+(Shuttle Stack) 123.42 401.52 T
+83.13 450 232.07 450 2 L
+V
+1 H
+N
+81 586 233.12 586 2 L
+N
+3 10 Q
+(Gathered Input Parameter Data) 88.17 603.5 T
+82 541 234.12 541 2 L
+N
+(Stack Input Parameter Data) 100.17 557.5 T
+(RPC parameters, etc.) 106.17 505.5 T
+362 496 514.12 496 2 L
+N
+362 469 514.12 469 2 L
+N
+90 450 1.43 0.86 433.83 489.14 G
+0 Z
+90 450 1.43 0.86 433.83 489.14 A
+90 450 1.43 0.86 433.83 482.29 G
+90 450 1.43 0.86 433.83 482.29 A
+90 450 1.43 0.86 433.83 474.86 G
+90 450 1.43 0.86 433.83 474.86 A
+(rpc_arg1 \050destination port\051) 380.9 453.19 T
+(rpc_argN) 416.11 510.19 T
+361.11 575 514.11 666 R
+3 H
+2 Z
+N
+(Input Parameter Data) 382.17 592.5 T
+(Output Parameter Data Area) 372.17 638.5 T
+349.82 623.38 360.99 619 349.2 616.8 349.51 620.09 4 Y
+V
+234 631 349.52 620.09 2 L
+0.5 H
+N
+81 360 567 385 R
+7 X
+V
+0 12 Q
+0 X
+(Figure -) 81 377 T
+(Phase 2: RPC Upcall \050Registered\051) 128.31 377 T
+348.76 444.22 359.99 440.01 348.23 437.62 348.49 440.92 4 Y
+V
+234 450 348.5 440.92 2 L
+N
+348 575.12 359.99 575 349.76 568.74 348.88 571.93 4 Y
+V
+234 541 348.88 571.93 2 L
+N
+349.89 531.57 360.99 527.01 349.16 525 349.53 528.28 4 Y
+V
+235 541 349.54 528.28 2 L
+N
+72 90 540 684 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "14" 15
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 72 739.85 T
+(rap Interface) 98.47 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(15) 522.29 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+4 8 Q
+(kern_return_t thread_suspend_when_empty\050) 72 102.67 T
+72 90 558 684 C
+72 126 540 684 C
+79.83 537 232.83 585 R
+13 X
+0 K
+V
+0.5 H
+2 Z
+0 X
+N
+81 247.5 233 316.5 R
+N
+79.83 585 232.83 675 R
+6 X
+V
+0 X
+N
+80.93 212 233.93 421 R
+3 H
+N
+79.93 466 232.93 675 R
+N
+1 12 Q
+(Thr) 100.97 191.52 T
+(ead Contr) 120.75 191.52 T
+(ol Block) 172.16 191.52 T
+(\050Client Thr) 117.36 179.52 T
+(ead\051) 175.45 179.52 T
+(Shuttle Stack) 122.24 445.52 T
+81 372.5 233 420.5 R
+0.5 H
+N
+3 10 Q
+(RPC T) 123 399.5 T
+(rap State) 152.61 399.5 T
+(\050Registers etc.\051) 123 389.5 T
+81 316.5 234 371.5 R
+(signature_buf) 119.25 280.01 T
+(fer) 179.63 280.01 T
+(T) 117 341.5 T
+(rap Parameters) 122.74 341.5 T
+80.83 585 232.95 585 2 L
+1 H
+N
+2 F
+(Output Scatter Array) 116.83 226 T
+3 F
+(NDR_header) 125.27 559.46 T
+80.83 629 232.95 629 2 L
+N
+(Output Parameter Data) 107 604.5 T
+(Scatter Output Data) 112.83 649 T
+349 547.52 502 639.52 R
+6 X
+V
+0.5 H
+0 X
+N
+350 310.52 503 355.52 R
+13 X
+V
+0 X
+N
+350 410.52 502.12 410.52 2 L
+1 H
+N
+350 383.52 502.12 383.52 2 L
+N
+90 450 1.43 0.86 421.83 403.66 G
+0 Z
+90 450 1.43 0.86 421.83 403.66 A
+90 450 1.43 0.86 421.83 396.8 G
+90 450 1.43 0.86 421.83 396.8 A
+90 450 1.43 0.86 421.83 389.38 G
+90 450 1.43 0.86 421.83 389.38 A
+(rpc_arg1 \050destination port\051) 368.9 367.71 T
+351.12 355.52 503.24 355.52 2 L
+V
+2 Z
+N
+353.13 355.52 502.08 355.52 2 L
+V
+N
+(NDR_header) 398.45 332.97 T
+(rpc_argN) 404.11 424.71 T
+350.11 309.52 503.11 443.52 R
+3 H
+N
+350 442.52 502.12 442.52 2 L
+1 H
+N
+349 547.52 501.12 547.52 2 L
+N
+(Input Parameter Data) 374.17 524.02 T
+(Output Parameter Data) 374.17 566.02 T
+349 593.52 501.12 593.52 2 L
+N
+(Scatter Output Data) 380 610.52 T
+1 12 Q
+(RPC Parameters) 382 283.52 T
+(RPC Parameter Data) 372 479.52 T
+349 505.52 502 638.52 R
+3 H
+N
+3 10 Q
+(Step 1) 278 601 T
+(Step 2) 273 380 T
+243.02 668.41 232.99 675 244.99 674.72 244.01 671.57 4 Y
+V
+349 639 244.01 671.57 2 L
+0.5 H
+N
+242.97 578.34 232.99 585.01 244.99 584.63 243.98 581.49 4 Y
+V
+349 548 243.99 581.48 2 L
+N
+235.34 572.23 233 584 241.22 575.26 238.28 573.75 4 Y
+V
+350 355 238.29 573.75 2 L
+N
+234.38 525.24 232 537 240.25 528.3 237.32 526.77 4 Y
+V
+349 310 237.32 526.77 2 L
+N
+72 131 537 150 R
+7 X
+V
+0 12 Q
+0 X
+(Figure -) 72 142 T
+(Phase 3: RPC Return T) 119.31 142 T
+(rap) 249.27 142 T
+72 90 558 684 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "15" 16
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 54 739.85 T
+(rap Interface) 80.47 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(16) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+4 8 Q
+(mach_port_t) 68.4 93.67 T
+(thread_port\051;) 140.4 93.67 T
+54 90 540 684 C
+54 99 540 684 C
+328.17 446 481.17 589 R
+3 H
+2 Z
+0 X
+0 K
+N
+81.07 610 233.07 652 R
+6 X
+V
+0.5 H
+0 X
+N
+324.11 179 477.11 388 R
+3 H
+N
+1 12 Q
+(Thr) 344.15 158.52 T
+(ead Contr) 363.92 158.52 T
+(ol Block) 415.34 158.52 T
+(\050Client Thr) 360.54 146.52 T
+(ead\051) 418.62 146.52 T
+324.17 339.5 476.17 387.5 R
+0.5 H
+N
+3 10 Q
+(RPC T) 366.17 366.5 T
+(rap State) 395.79 366.5 T
+(\050Registers etc.\051) 366.17 356.5 T
+324.17 283.5 477.17 339.5 R
+N
+324.17 213.5 476.17 283.5 R
+N
+(signature_array) 364.73 245.01 T
+(T) 360.17 308.5 T
+(rap Parameters) 365.91 308.5 T
+355.43 643.66 364.06 652 361.16 640.36 358.29 642.01 4 Y
+V
+358.3 642.01 328.07 589 2 L
+N
+(T) 342.07 660 T
+(o V) 347.07 660 T
+(arious User Memory) 361.33 660 T
+2 F
+(Output Scatter Array) 358.17 193.5 T
+328.07 447 481.07 499 R
+13 X
+V
+0 X
+N
+328.07 499 481.07 589 R
+6 X
+V
+0 X
+N
+1 12 Q
+(Shuttle Stack) 368.77 424.96 T
+329.07 499 481.19 499 2 L
+1 H
+N
+3 10 Q
+(NDR_header) 372.52 470.45 T
+329.07 543 481.19 543 2 L
+N
+(Output Parameter Data) 355.24 518.5 T
+(Scatter Output Data) 361.07 563 T
+239.02 599.07 234.06 610 244.05 603.36 241.54 601.21 4 Y
+V
+328.07 499 241.54 601.21 2 L
+0.5 H
+N
+239.11 641.11 234.06 652 244.11 645.44 241.61 643.28 4 Y
+V
+328.07 543 241.62 643.28 2 L
+N
+245.42 408.07 235.06 402.01 240.63 412.64 243.03 410.35 4 Y
+V
+328.07 499 243.03 410.35 2 L
+N
+245.61 360.73 235.06 355.01 240.98 365.45 243.3 363.09 4 Y
+V
+328.07 447 243.3 363.08 2 L
+N
+54 126 535 145 R
+7 X
+V
+0 12 Q
+0 X
+(Figure -) 54 137 T
+(Phase 4: Return from RPC) 101.31 137 T
+82.07 357 235.07 403 R
+13 X
+V
+0 X
+N
+81.89 457.5 234.02 457.5 2 L
+1 H
+N
+81.89 430.5 234.02 430.5 2 L
+N
+90 450 1.43 0.86 153.73 450.64 G
+0 Z
+90 450 1.43 0.86 153.73 450.64 A
+90 450 1.43 0.86 153.73 443.79 G
+90 450 1.43 0.86 153.73 443.79 A
+90 450 1.43 0.86 153.73 436.36 G
+90 450 1.43 0.86 153.73 436.36 A
+3 10 Q
+(rpc_arg1 \050destination port\051) 100.79 414.69 T
+83.01 402.5 235.14 402.5 2 L
+V
+2 Z
+N
+(NDR_header) 123.18 374.95 T
+(rpc_argN) 136 471.69 T
+82 356.5 235 490.5 R
+3 H
+N
+81.89 610.5 234.02 610.5 2 L
+1 H
+N
+(Input Parameter Data) 104.07 584 T
+(Output Parameter Data Area) 93.07 630 T
+81 567.5 234 652.5 R
+3 H
+N
+1 12 Q
+(RPC Parameters) 113.61 334.24 T
+54 90 540 684 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "16" 17
+%%Page: "17" 17
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 72 739.85 T
+(rap Interface) 98.47 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(17) 522.29 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+2 F
+-0.23 (Suspend the thread when the shuttle returns from the current task. This will cause the next shuttle that does an upcall using) 72 677.33 P
+(the newly emptied thread to be automatically suspended.) 72 665.33 T
+4 8 Q
+(kern_return_t thread_terminate_when_empty\050) 72 624.67 T
+(mach_port_t) 86.4 612.67 T
+(thread_port\051;) 158.4 612.67 T
+2 10 Q
+(Causes the thread to be terminated as soon as the shuttle returns from the current task.) 72 589.33 T
+0 F
+(2.7) 72 557.33 T
+(MIG Changes) 99 557.33 T
+0 9 Q
+(2.7.1) 72 535 T
+(Client Side Stubs) 99 535 T
+2 10 Q
+(The generic client side RPC interface for a function foo\050ar) 72 510.33 T
+(g1..ar) 305.24 510.33 T
+(gn\051 is a stub function:) 327.82 510.33 T
+4 8 Q
+(kern_return_t foo\050arg1..argn\051) 72 493.67 T
+({) 72 481.67 T
+(arg1_t arg1Copy;) 86.4 469.67 T
+(.) 86.4 457.67 T
+(.) 86.4 445.67 T
+(.) 86.4 433.67 T
+(argN_t argNCopy;) 86.4 421.67 T
+(NDR ndrhdr;) 86.4 409.67 T
+(int ndr_size = sizeof\050NDR\051;) 86.4 397.67 T
+(#def) 86.4 373.67 T
+(ine PARM_SIZE\050a,b,c\051\134) 105.59 373.67 T
+(&a >= &b ? \134) 86.4 361.67 T
+(\050\050char *\051 &a\051 - \050\050char *\051 &c\051 + sizeof\050a\051 : \134) 86.4 349.67 T
+(\050\050char *\051 &b\051 - \050\050char *\051 &c\051 + sizeof\050b\051) 86.4 337.67 T
+(#def) 86.4 325.67 T
+(ine PARAM_PTR\050a,b\051) 105.59 325.67 T
+(\050a,b\051\134) 86.4 313.67 T
+(&a >= &b ? \050\050char *\051 &b\051 : \050\050char *\051 &a\051) 86.4 301.67 T
+(return mach_rpc_trap\050) 86.4 277.67 T
+(PARM_SIZE\050arg1, argn, ndr_size\051,) 86.4 265.67 T
+(arg1,) 86.4 253.67 T
+(FOO_ROUTINE,) 86.4 241.67 T
+(PARAM_PTR\050arg1, argn\051,) 86.4 229.67 T
+(sizeof\050foo_sig\051/sizeof\050sig_desc\051,) 86.4 217.67 T
+(&foo_sig,) 86.4 205.67 T
+(&sig_handle\051;) 86.4 193.67 T
+(}) 72 181.67 T
+2 10 Q
+(The above represents the simplest case with no marshalling or unmarshalling done by the client stub.) 72 158.33 T
+0.25 0 (The identif) 72 134.33 B
+0.25 0 (ier FOO_ROUTINE represents the value generated by MIG to represent the procedure) 115.88 134.33 B
+1 F
+0.25 0 (foo,) 467.8 134.33 B
+2 F
+0.25 0 (and) 486.39 134.33 B
+1 F
+0.25 0 ( foo_sig) 500.83 134.33 B
+2 F
+0.25 0 ( is the) 533.6 134.33 B
+0.15 (signature data structure generated by MIG for) 72 122.33 P
+1 F
+0.15 (foo) 258.72 122.33 P
+2 F
+0.15 (. P) 272.04 122.33 P
+0.15 (ARM_SIZE is a compiler dependent macro that takes the \336rst or last) 281.83 122.33 P
+(parameter and the \336rst local variable and computes the size of the parameter data on the stack.) 72 110.33 T
+FMENDPAGE
+%%EndPage: "17" 18
+%%Page: "18" 18
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(RPC T) 54 739.85 T
+(rap Interface) 80.47 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(18) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+0 9 Q
+(2.7.2) 54 678 T
+(Server Side Stubs) 81 678 T
+2 10 Q
+-0.11 (Co-location wants the server to associate subsystems with ports. This allows them to move the work that is currently done) 54 653.33 P
+0.16 (in server stubs into the kernel \050presumably resulting in performance improvements\051 at the cost of eliminating some \337exi-) 54 641.33 P
+0.01 (bility) 54 629.33 P
+0.01 (. This \337exibility can be preserved by not registering a subsystem with a port. This requires the server to implement a) 74.46 629.33 P
+(server side stub similar in spirit to the stubs used by untyped IPC.) 54 617.33 T
+-0.22 (Our strategy is to make sure that we do a good job of preserving the \337exibility already in the system while allowing for the) 54 593.33 P
+-0.08 (optimizations of signature and subsystem registration. It is also very desirable that the server can be invoked by local, i.e.,) 54 581.33 P
+(collocated clients and remote clients. These requirements constrain the design of the server stubs.) 54 569.33 T
+0 9 Q
+(2.7.3) 54 546 T
+(Servers W) 81 546 T
+(ithout Registered Subsystems) 124.88 546 T
+2 10 Q
+0.22 (If the server does not register subsystem information, the kernel does not know how to unmarshal or marshall ar) 54 521.33 P
+0.22 (guments) 506.13 521.33 P
+0 (or demultiplex operation invocations for the server) 54 509.33 P
+0 (. The server will have to provide a server loop - like routine \050the server) 256.63 509.33 P
+(entry point routine\051 and MIG stubs.) 54 497.33 T
+0.25 0.04 (The address of the entry point routine \050for each thread\051 is provided to the kernel when the empty thread is created. This) 54 473.33 B
+(routine is upcalled by the kernel as part of delivering an RPC to the server) 54 461.33 T
+(.) 349.91 461.33 T
+-0.23 (The server entry point routine will look at the) 54 437.33 P
+1 F
+-0.23 (r) 236.54 437.33 P
+-0.23 (outine_number) 240.8 437.33 P
+2 F
+-0.23 ( and select a MIG generated server stub to check the signa-) 306.32 437.33 P
+-0.28 (ture array for type correctness. The stub will perform any NDR transformations necessary and invoke the tar) 54 425.33 P
+-0.28 (get operation.) 483.11 425.33 P
+-0.19 (The ar) 54 401.33 P
+-0.19 (gs for the tar) 79.43 401.33 P
+-0.19 (get function are already on the stack and we want to avoid copying them again when the tar) 129.48 401.33 P
+-0.19 (get function) 492.17 401.33 P
+0 (is called. This is accomplished by reserving some small amount of stack for the) 54 389.33 P
+1 F
+0 (server_entry_point) 374.02 389.33 P
+2 F
+0 ( routine and the MIG) 455.63 389.33 P
+-0.07 (server stub and by copying the RPC data from the kernel onto the user stack in a format that can be used by the server tar-) 54 377.33 P
+0.25 0.12 (get function. The s) 54 365.33 B
+1 F
+0.25 0.12 (erver_entry_point) 131.9 365.33 B
+2 F
+0.25 0.12 ( routine is a library routine that may be architecture or compiler dependent, but) 211.59 365.33 B
+(within that will be the same for all servers. It acts somewhat like a crt0 for server work functions.) 54 353.33 T
+0.09 (The MIG stub invokes the server work function which executes and eventually returns to the MIG stub. It is here that the) 54 329.33 P
+(RPC reply trap is executed.) 54 317.33 T
+(The server entry point pseudo code looks like this:) 54 293.33 T
+4 8 Q
+(server_entry_point\050\051) 54 276.67 T
+({) 54 264.67 T
+(get routine_number) 68.4 252.67 T
+(get server_entry_table) 68.4 240.67 T
+(get MIG server work function address) 68.4 228.67 T
+(set up frame pointer) 68.4 216.67 T
+(jump to MIG server work function) 68.4 204.67 T
+(}) 54 192.67 T
+FMENDPAGE
+%%EndPage: "18" 19
+%%Page: "19" 19
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Shuttles) 72 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(19) 522.29 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+2 F
+(The MIG server stub looks as follows:) 72 677.33 T
+4 8 Q
+(void MIG_server_foo\050) 72 648.67 T
+(int routine_num,) 86.4 636.67 T
+(void *rpc_args_ptr,) 86.4 624.67 T
+(int sig_count\051) 86.4 612.67 T
+({) 72 600.67 T
+(sig_ptr = \050sig_desc *\051 \050&sig_count + 1\051;) 86.4 588.67 T
+(int *ndr_size = \050int *\051 \050sig_ptr+sig_count\051;) 86.4 576.67 T
+(NDR *ndrptr = \050NDR *\051 \050ndr_sizep + 1\051;) 86.4 564.67 T
+(TranslateArgs\050) 86.4 552.67 T
+(rpc_args_ptr,) 100.8 540.67 T
+(sig_ptr,) 100.8 528.67 T
+(sig_count,) 100.8 516.67 T
+(*ndr_sizep,) 100.8 504.67 T
+(ndrpte\051;) 100.8 492.67 T
+(CallWithStackPtr\050server_foo,rpc_args_ptr\051;) 86.4 480.67 T
+(AddNDRheader\050ServerNDRHeader, sizof\050NDR\051\051;) 86.4 468.67 T
+(mach_rpc_trap_return\050\051;) 86.4 456.67 T
+(}) 72 444.67 T
+0 9 Q
+(2.7.4) 72 410 T
+(Servers W) 99 410 T
+(ith Registered Subsystems) 142.88 410 T
+2 10 Q
+-0.21 (For homogenous systems, servers with registered subsystems do not need any kind of stub, as the kernel has enough infor-) 72 385.33 P
+0.09 (mation \050via the signatures and the subsystem\051 to arrange the stack for a call directly into the server work function. In het-) 72 373.33 P
+0.13 (erogenous systems, it will probably be necessary to have some kind of generated stub to detect the incoming remote case) 72 361.33 P
+(and translate the parameters \050using something like the NDR record\051.) 72 349.33 T
+72 306 558 309 C
+72 308.16 306 308.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(3.0) 72 313 T
+(Shuttles) 99 313 T
+2 10 Q
+-0.1 (In order to avoid confusion within the context of the Mach kernel, the terms) 72 285.33 P
+5 F
+-0.1 (activation) 376.72 285.33 P
+2 F
+-0.1 ( and) 416.7 285.33 P
+5 F
+-0.1 (thr) 435.92 285.33 P
+-0.1 (ead) 447.21 285.33 P
+2 F
+-0.1 ( from the Utah model of) 461.64 285.33 P
+-0.03 (migrating threads were changed to) 72 273.33 P
+5 F
+-0.03 (thr) 212.57 273.33 P
+-0.03 (eads) 223.87 273.33 P
+2 F
+-0.03 ( and) 242.19 273.33 P
+5 F
+-0.03 (shuttles) 261.55 273.33 P
+2 F
+-0.03 (. This was done mainly to preserve backwards compatibility of the) 292.1 273.33 P
+-0.03 (Mach threads interface. The shuttle is now that part of the migrating thread that is scheduled and moves from task to task.) 72 261.33 P
+-0.24 (An activation, as far as the Mach interface is concerned is simply a Mach thread. In the kernel, however) 72 249.33 P
+-0.24 (, each Mach thread) 482.69 249.33 P
+0.02 (that is part of an RPC call chain, points to a shuttle, and the shuttle points at the Mach thread that is at the head of the call) 72 237.33 P
+0 (chain. The shuttle also contains some of the information that used to be in the thread, such as the scheduling and account-) 72 225.33 P
+(ing information.) 72 213.33 T
+-0.16 (Congestion control must be handled by the server and not by the kernel. This can be handled cheaply by the server library) 72 189.33 P
+-0.16 (.) 555.5 189.33 P
+-0.16 (Thus, providing this service in the kernel does not meet the \322necessary and suf) 72 177.33 P
+-0.16 (\336cient\323 criteria for kernel functionality) 383.92 177.33 P
+-0.16 (. It is) 538.06 177.33 P
+0.25 0.04 (the application or server responsibility to deal with possible priority inversion type of problems that might occur due to) 72 165.33 B
+(resource \050particularly empty thread\051 exhaustion.) 72 153.33 T
+0.25 0.1 (CPU cycles measurement will accumulate in the shuttle. This provides a mechanism that is a signif) 72 129.33 B
+0.25 0.1 (icant improvement) 480.98 129.33 B
+-0.04 (over the way Mach currently does resource accounting. Currently) 72 117.33 P
+-0.04 (, when a Mach task does an RPC to a server using Mach) 333.33 117.33 P
+0.25 0.03 (IPC, the accounting of the cpu time stops at the message boundary) 72 105.33 B
+0.25 0.03 (, and no more cpu time accrues to the user associated) 341.77 105.33 B
+FMENDPAGE
+%%EndPage: "19" 20
+%%Page: "20" 20
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Shuttles) 54 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(20) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+2 F
+0.25 0.03 (with that task until a reply is received. W) 54 677.33 B
+0.25 0.03 (ith the migrating shuttle, the accounting for the user can continue in the kernel) 221.41 677.33 B
+(and any subsequent servers, thus providing more accurate and complete accounting of cpu cycle time.) 54 665.33 T
+0.25 0 (T) 54 641.33 B
+0.25 0 (imeouts are accomplished by using other threads and alarms and alerts. A scheduling framework is being designed that) 59.76 641.33 B
+0.25 0.16 (will support other scheduling policies that may use deadlines and time constraints which would obviate the need for) 54 629.33 B
+(explicit timeouts.) 54 617.33 T
+(Thread_abort on a thread in the middle of an RPC causes an alert and a break of the RPC chain.) 54 593.33 T
+0.09 ( All implicit data delivered by IPC will also be delivered by RPC. Currently the only relevant implicit data is the security) 54 569.33 P
+(token, and this will be delivered by the RPC mechanism. Perhaps this can be done on a per destination port basis.) 54 557.33 T
+0.1 ( Active \050non-empty\051 threads may still be wired, but when the shuttle leaves and enters another task, the thread in the new) 54 533.33 P
+0.25 0.05 (task is not wired. If a non-root thread is to be wired, then this must be indicated in the upcall port or portset. All empty) 54 521.33 B
+-0.09 (threads associated with the upcall port will then be wired. Ports that are set to wire their empty threads lose that character-) 54 509.33 P
+(istic if they are moved.) 54 497.33 T
+0 F
+(3.1) 54 465.33 T
+(Empty Threads) 81 465.33 T
+2 F
+-0.14 ( For performance reasons, it is required that a pool of Mach threads be pre-allocated and associated with a destination port) 54 442.33 P
+0.12 (for the use of incoming shuttles. These threads will have no shuttles associated with them, but will be bound to incoming) 54 430.33 P
+0.25 0.05 (shuttles by the RPC mechanism. W) 54 418.33 B
+0.25 0.05 (e refer to these as empty threads, and they are created and managed separately from) 197.74 418.33 B
+(threads created via thread_create call.) 54 406.33 T
+0 F
+(3.2) 54 374.33 T
+(Root Threads and Rooted RPC Chains) 81 374.33 T
+2 F
+0.19 (The root thread of an RPC chain is the thread that was \336rst created using the thread_create Mach kernel call. Subsequent) 54 351.33 P
+-0.19 (RPC calls add new links to the RPC chain. As long as the RPC chain remains unbroken, it is a rooted RPC chain, rooted at) 54 339.33 P
+(the task where root thread was created.) 54 327.33 T
+0 F
+(3.3) 54 295.33 T
+(Orphan RPC Chains) 81 295.33 T
+2 F
+0.25 0.22 (If, for whatever reason, a link of an RPC chain disappears, the part of the RPC chain after the missing thread is an) 54 272.33 B
+0.03 (orphaned RPC chain. The kernel will assume that the only useful work that an orphaned chain can perform is cleaning up) 54 260.33 P
+0.25 0.01 (it\325) 54 248.33 B
+0.25 0.01 (s state in the various tasks it is threaded through. First, a clone of the shuttle is created so that the orphan chain can be) 62.37 248.33 B
+0.03 (scheduled independently from the rooted part of the chain. When the orphan is scheduled, a kernel generated alert will be) 54 236.33 P
+0.25 0 (sent to the head of the RPC chain, which will allow it to clean up. After the head thread returns to the kernel, it is termi-) 54 224.33 B
+0.25 0 (nated and the next thread back on the chain is alerted, and so on until the entire orphan RPC chain has had the chance to) 54 212.33 B
+-0.23 (clean up. Meanwhile, the part of the original RPC chain that is still rooted, will return from the RPC trap at the point of the) 54 200.33 P
+0.25 0.18 (break with an RPC_CHAIN_BREAK error) 54 188.33 B
+0.25 0.18 (, and may proceed accordingly) 234.07 188.33 B
+0.25 0.18 (. \050See Figure) 362.55 188.33 B
+0.25 0.18 ("RPC Chain and Orphan" on) 419.4 188.33 B
+(page) 54 176.33 T
+(17.\051) 75.37 176.33 T
+0 F
+(3.4) 54 144.33 T
+(Scheduling Policy) 81 144.33 T
+2 F
+0.25 0.03 ( Scheduling attributes f) 54 121.33 B
+0.25 0.03 (low from client to server as long as they are running the same scheduling poilicy) 147.98 121.33 B
+0.25 0.03 (. Empty threads) 476.03 121.33 B
+0.24 (have associated policies but they do not have priorities or other scheduling attributes. The policies are inherited from the) 54 109.33 P
+0.25 0.02 (empty thread\325) 54 97.33 B
+0.25 0.02 (s port. Servers might need to implement some sort of protection against clients with unfriendly scheduling) 109.71 97.33 B
+FMENDPAGE
+%%EndPage: "20" 21
+%%Page: "21" 21
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Shuttles) 72 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(21) 522.29 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+2 F
+0.25 0.03 (attributes but right now that does not seem necessary) 72 272.33 B
+0.25 0.03 (. Servers that need to protect themselves probably can. The client\325) 286.22 272.33 B
+0.25 0.03 (s) 554.11 272.33 B
+(scheduling attributes should be restored when the RPC returns.) 72 260.33 T
+0 F
+(3.5) 72 228.33 T
+(Shuttles and Thread Control) 99 228.33 T
+2 F
+0.25 0.01 (In the general case, a thread control function af) 72 205.33 B
+0.25 0.01 (fects only the tar) 262.61 205.33 B
+0.25 0.01 (get thread directly) 330.19 205.33 B
+0.25 0.01 (, and af) 402.9 205.33 B
+0.25 0.01 (fects the shuttle only indirectly) 432.97 205.33 B
+0.17 (through the thread. If a thread control function is called on a thread, the shuttle will be af) 72 193.33 P
+0.17 (fected only when it is executing) 429.74 193.33 P
+(with that thread.) 72 181.33 T
+0 9 Q
+(3.5.1) 72 158 T
+(Suspend) 99 158 T
+2 10 Q
+-0.09 (If the suspend operation is applied to a thread, then the shuttle will be suspended if it is currently executing on that thread,) 72 133.33 P
+0.14 (or when it returns from an RPC. If suspend is performed on an empty thread, then any shuttle that uses that empty thread) 72 121.33 P
+(on upcall will be immediately suspended.) 72 109.33 T
+72 90 558 684 C
+72 279 558 684 C
+136 560.72 224 657.72 R
+7 X
+0 K
+V
+0.5 H
+0 Z
+0 X
+N
+135 448.5 223 545.5 R
+7 X
+V
+0 X
+N
+13 X
+90 450 21 19.5 183 592.22 G
+0 X
+90 450 21 19.5 183 592.22 A
+7 X
+90 450 21 19.5 182 484 G
+0 X
+90 450 21 19.5 182 484 A
+223 333 367 659 R
+7 X
+V
+0 X
+N
+0 10 Q
+(Mach) 252.23 598.45 T
+3 F
+(T) 151.55 643.17 T
+(ask 1) 156.55 643.17 T
+(T) 150.55 528.45 T
+(ask 2) 155.55 528.45 T
+135 333 223 430 R
+7 X
+V
+0 X
+N
+(T) 150.55 410.45 T
+(ask 3) 155.55 410.45 T
+7 X
+90 450 21 19.5 182 372.5 G
+0 X
+90 450 21 19.5 182 372.5 A
+306.79 578.19 301 558 295.21 578.19 301 578.19 4 Y
+2 X
+V
+182 614.49 182 622 301 622 301 578.19 4 L
+3 H
+2 Z
+N
+256.81 530.79 277 525 256.81 519.21 256.81 525 4 Y
+V
+182 503 182 525 256.81 525 3 L
+N
+295.21 431.81 301 452 306.79 431.81 301 431.81 4 Y
+V
+182 392 182 401.15 301 401.15 301 431.81 4 L
+N
+225.07 355.39 202 362 225.07 368.62 225.07 362 4 Y
+0 X
+V
+322 452 322 362 225.07 362 3 L
+4 H
+N
+(Thread) 165.56 481.95 T
+(Thread) 165.56 370.45 T
+(Thread) 166.56 590.17 T
+219.19 487.93 199 493.72 219.19 499.51 219.19 493.72 4 Y
+V
+203 594.72 245 594.72 245 493.72 219.19 493.72 4 L
+3 H
+N
+216.54 490.41 205 493.72 216.54 497.03 216.54 493.72 4 Y
+7 X
+V
+203 594.72 245 594.72 245 493.72 216.54 493.72 4 L
+0.5 H
+N
+220.19 377.88 200 383.67 220.19 389.45 220.19 383.67 4 Y
+0 X
+V
+204 484.67 246 484.67 246 383.67 220.19 383.67 4 L
+3 H
+N
+217.54 380.36 206 383.67 217.54 386.97 217.54 383.67 4 Y
+7 X
+V
+204 484.67 246 484.67 246 383.67 217.54 383.67 4 L
+0.5 H
+N
+279 454 350 557 18 RR
+V
+1 H
+0 Z
+0 X
+N
+(Shuttle) 296.66 499.95 T
+463.81 641.79 484 636 463.81 630.21 463.81 636 4 Y
+2 X
+V
+437 636 463.81 636 2 L
+3 H
+2 Z
+N
+460.93 557.62 484 551 460.93 544.38 460.93 551 4 Y
+0 X
+V
+437 551 460.93 551 2 L
+4 H
+N
+460.81 598.79 481 593 460.81 587.21 460.81 593 4 Y
+V
+434 593 460.81 593 2 L
+3 H
+N
+3 9 Q
+(Shuttle Link) 435.05 646.45 T
+(Chain Head) 435.05 561.45 T
+13 X
+90 450 14.5 14.5 454.5 500.5 G
+1 H
+0 Z
+0 X
+90 450 14.5 14.5 454.5 500.5 A
+(Root Thread) 432.49 523.7 T
+(RPC Chain) 435 602.45 T
+463.46 596.31 475 593 463.46 589.69 463.46 593 4 Y
+7 X
+V
+432 593 463.46 593 2 L
+0.5 H
+2 Z
+N
+72 279 369 306 R
+V
+0 12 Q
+0 X
+(Figure -) 72 298 T
+(Rooted RPC Chain) 119.31 298 T
+72 90 558 684 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "21" 22
+%%Page: "22" 22
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Shuttles) 54 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(22) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+0 9 Q
+(3.5.2) 54 93 T
+(Resume) 81 93 T
+54 90 540 684 C
+54 99 540 684 C
+54 99 351 126 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(Figure -) 54 118 T
+(OrphanedRPC Chain) 101.31 118 T
+492.81 659.79 513 654 492.81 648.21 492.81 654 4 Y
+2 X
+V
+466 654 492.81 654 2 L
+3 H
+2 Z
+N
+489.93 575.62 513 569 489.93 562.38 489.93 569 4 Y
+0 X
+V
+466 569 489.93 569 2 L
+4 H
+N
+489.81 616.79 510 611 489.81 605.21 489.81 611 4 Y
+V
+463 611 489.81 611 2 L
+3 H
+N
+3 9 Q
+(Shuttle Link) 464.05 664.45 T
+(Chain Head) 464.05 579.45 T
+13 X
+90 450 14.5 14.5 483.5 518.5 G
+1 H
+0 Z
+0 X
+90 450 14.5 14.5 483.5 518.5 A
+(Root Thread) 461.49 541.71 T
+(RPC Chain) 464 620.45 T
+189 580 277 677 R
+7 X
+V
+0.5 H
+0 X
+N
+189 468.75 277 565.75 R
+7 X
+V
+0 X
+N
+189 357.5 277 454.5 R
+7 X
+V
+0 X
+N
+13 X
+90 450 21 19.5 236 611.5 G
+0 X
+90 450 21 19.5 236 611.5 A
+7 X
+90 450 21 19.5 236 393 G
+0 X
+90 450 21 19.5 236 393 A
+7 X
+90 450 21 19.5 236 502.25 G
+0 X
+90 450 21 19.5 236 502.25 A
+277 135 423 677 R
+N
+0 10 Q
+(Mach) 297.23 359.45 T
+3 F
+(T) 204.55 662.45 T
+(ask 1) 209.55 662.45 T
+(T) 204.55 437.45 T
+(ask 3) 209.55 437.45 T
+(T) 204.55 549.95 T
+(ask 2) 209.55 549.95 T
+189 246.25 277 343.25 R
+7 X
+V
+0 X
+N
+189 135 277 232 R
+7 X
+V
+0 X
+N
+(T) 204.55 324.95 T
+(ask 4) 209.55 324.95 T
+(T) 204.55 212.45 T
+(ask 5) 209.55 212.45 T
+7 X
+90 450 21 19.5 236 283.75 G
+0 X
+90 450 21 19.5 236 283.75 A
+7 X
+90 450 21 19.5 236 174.5 G
+0 X
+90 450 21 19.5 236 174.5 A
+303 385 378 488 18 RR
+1 H
+N
+(Shuttle) 323.55 277.95 T
+363.79 507.19 358 487 352.21 507.19 358 507.19 4 Y
+2 X
+V
+236 634.4 236 654 358 654 358 507.19 4 L
+3 H
+2 Z
+N
+334.21 204.81 340 225 345.79 204.81 340 204.81 4 Y
+V
+236 193 236 197.88 340 197.88 340 204.81 4 L
+N
+270.19 160.21 250 166 270.19 171.79 270.19 166 4 Y
+0 X
+V
+328 222 328 166 270.19 166 3 L
+N
+(Thread) 219.56 500.2 T
+(Thread) 219.56 390.95 T
+(Thread) 219.56 281.7 T
+(Thread) 219.56 172.45 T
+(Thread) 219.56 609.45 T
+215 415 258 373 2 L
+N
+214 373 256 417 2 L
+N
+273.19 492.21 253 498 273.19 503.79 273.19 498 4 Y
+V
+303 426 282.63 426 282.63 498 273.19 498 4 L
+N
+303 222 379 325 18 RR
+1 H
+0 Z
+N
+(Shuttle) 325.89 447.71 T
+(Clone) 328.4 435.46 T
+282.81 300.79 303 295 282.81 289.21 282.81 295 4 Y
+2 X
+V
+253 295 282.81 295 2 L
+3 H
+2 Z
+N
+0 X
+(\050Orphan\051) 321.01 262.7 T
+(\050Rooted\051) 323 423.71 T
+333.29 508.19 327.5 488 321.71 508.19 327.5 508.19 4 Y
+V
+235.5 524.11 235.5 551.5 327.5 551.5 327.5 508.19 4 L
+N
+330.81 504.54 327.5 493 324.19 504.54 327.5 504.54 4 Y
+7 X
+V
+235.5 524.11 235.5 551.5 327.5 551.5 327.5 504.54 4 L
+0.5 H
+N
+274.19 505.21 254 511 274.19 516.79 274.19 511 4 Y
+0 X
+V
+258 612 300 612 300 511 274.19 511 4 L
+3 H
+N
+271.54 507.69 260 511 271.54 514.31 271.54 511 4 Y
+7 X
+V
+258 612 300 612 300 511 271.54 511 4 L
+0.5 H
+N
+274.19 172.21 254 178 274.19 183.79 274.19 178 4 Y
+0 X
+V
+257.83 279 298 279 298 178 274.19 178 4 L
+3 H
+N
+271.27 174.69 259.74 178 271.27 181.31 271.27 178 4 Y
+7 X
+V
+257.83 279 298 279 298 178 271.27 178 4 L
+0.5 H
+N
+492.46 614.31 504 611 492.46 607.69 492.46 611 4 Y
+V
+461 611 492.46 611 2 L
+N
+54 90 540 684 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "22" 23
+%%Page: "23" 23
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Shuttles) 72 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(23) 522.29 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+2 F
+0.25 0.1 (Resume will cause any thread that has been suspended to be resumed. If the thread was part of an RPC chain, and the) 72 677.33 B
+0.25 0.08 (thread was suspended, then the ef) 72 665.33 B
+0.25 0.08 (fects of the suspend will be undone. This means that if the shuttle was currently sus-) 210.18 665.33 B
+0.06 (pended with that thread, the shuttle itself will be resumed, and if the shuttle has not yet returned or upcalled to the \050possi-) 72 653.33 P
+(bly empty\051 thread, then the shuttle will no longer be suspended when it does so.) 72 641.33 T
+0 9 Q
+(3.5.3) 72 618 T
+(Abort) 99 618 T
+2 10 Q
+0.25 0.1 (If an abort is performed on an active thread that is involved in an RPC, then the part of the RPC chain after the tar) 72 593.33 B
+0.25 0.1 (get) 545.58 593.33 B
+(thread will be orphaned. If the shuttle has not left the task due to an RPC then abort has the original Mach semantics.) 72 581.33 T
+0 9 Q
+(3.5.4) 72 558 T
+(T) 99 558 T
+(erminate) 103.83 558 T
+2 10 Q
+-0.09 (T) 72 533.33 P
+-0.09 (erminating a thread will indirectly terminate the shuttle if it has not migrated \050performed RPC\051. If the thread is part of an) 77.41 533.33 P
+(RPC call chain then two things will happen:) 72 521.33 T
+0 9 Q
+(1.) 72 503.33 T
+2 10 Q
+(The shuttle will clone and return to the previous RPC in the chain with an error) 85.75 503.33 T
+(.) 401.93 503.33 T
+0 9 Q
+(2.) 72 486.09 T
+2 10 Q
+(The original shuttle will be forced to execute orphaned thread alert handlers from the head of the RPC chain all the) 85.75 486.09 T
+(way back to the break, and then the orphan shuttle will be terminated.) 85.75 474.84 T
+0 9 Q
+(3.5.5) 72 452.27 T
+(Set State) 99 452.27 T
+2 10 Q
+-0.01 (This operation will set the state on an active thread waiting for an RPC return or an empty thread waiting for an upcall, as) 72 427.6 P
+0.08 (well as on a suspended local thread in a given task. The thread state will be assumed by the shuttle whenever it enters the) 72 415.6 P
+(thread or when the local thread is resumed.) 72 403.6 T
+0 9 Q
+(3.5.6) 72 380.27 T
+(Get State) 99 380.27 T
+2 10 Q
+(Like set state, get state works on empty threads, threads waiting for RPC return, and task-local suspended threads.) 72 355.6 T
+0 9 Q
+(3.5.7) 72 332.27 T
+(Other Control Functions) 99 332.27 T
+2 10 Q
+0.12 (W) 72 307.6 P
+0.12 (ith the scheduling framework in place there will also be functions for setting and getting scheduling policy) 81.04 307.6 P
+0.12 (, and getting) 508.07 307.6 P
+0.11 (and setting scheduling attributes. These functions will act on threads and shuttles in a way that is strictly analogous to set) 72 295.6 P
+(state and get state.) 72 283.6 T
+0 F
+(3.6) 72 251.6 T
+(Locking Shuttles and Threads) 99 251.6 T
+2 F
+0.25 0.02 ( The integration of \322Migrating threads\323 technology from the University of Utah results in signif) 72 228.6 B
+0.25 0.02 (icant modif) 459.33 228.6 B
+0.25 0.02 (ication to the) 505.05 228.6 B
+0.25 0.06 (threads data structures and lock protocols. W) 72 216.6 B
+0.25 0.06 (e have had to add multi-processing support because the Utah work is only) 255.48 216.6 B
+(correct for single processor systems.) 72 204.6 T
+0.11 (The key data structures are the thread, the shuttle the RPC chain and ports. The lock protocol was made a tad complex as) 72 180.6 P
+(a result of our ef) 72 168.6 T
+(forts to keep the number of locks acquired on the RPC path to a minimum.) 137.87 168.6 T
+4 11 Q
+(\245) 72 150.6 T
+2 10 Q
+(What locks what and why:) 85.75 150.6 T
+0 9 Q
+(1.) 72 135.6 T
+2 10 Q
+-0.17 (The port lock controls access to two new lists associated with the port: the blocked and empty lists. The empty list and) 85.75 135.6 P
+(the blocked list can not be occupied at the same time - this prevents weird races and convoy wakeups. The port lock) 85.75 124.35 T
+(also \050partially\051 protects the current_shuttle pointer of the threads that are currently doing an RPC to that port This is) 85.75 113.11 T
+0 (only one of the two locks that protect the current_shuttle pointer) 85.75 101.87 P
+0 (. \050See \0503\051, below) 342.2 101.87 P
+0 (.\051 The port lock protects the current_-) 407.87 101.87 P
+FMENDPAGE
+%%EndPage: "23" 24
+%%Page: "24" 24
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Shuttles) 54 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(24) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+2 F
+-0.16 (shuttle pointer from changing due to a returning RPC, but does not protect it from changing due to thread control oper-) 67.75 677.33 P
+(ations. T) 67.75 666.09 T
+(aking the port lock on one thread in an RPC chain is suf) 102.03 666.09 T
+(\336cient to protect \050from a returning RPC\051 the) 325.59 666.09 T
+(current_shuttle pointer in that thread, and also the current_shuttle pointer in all the older threads in the chain, because) 67.75 654.84 T
+(if the RPC cannot return out of that thread, it can\325) 67.75 643.6 T
+(t return to the older ones.) 266.6 643.6 T
+0 9 Q
+(2.) 54 626.35 T
+2 10 Q
+(Threads have an associated empty list which can be reached by dereferencing the port list pointer) 67.75 626.35 T
+(. This association is) 456.05 626.35 T
+-0.02 (made when the thread is created and never changes. As an invariant we can dereference the port list pointer with lock-) 67.75 615.11 P
+-0.07 (ing the thread. Threads are created as empty or normal. Normal threads are the root of a shuttle \050RPC chain\051. The port) 67.75 603.87 P
+(list for Normal threads is distinguished.) 67.75 592.62 T
+0 9 Q
+(3.) 54 575.38 T
+2 10 Q
+-0.05 (The thread lock protects the pointer from the thread to its current shuttle, for all threads but the top thread \050i.e. the cur-) 67.75 575.38 P
+(rently active thread\051 in the RPC chain. The current_shuttle pointer in the top thread is locked by locking the port asso-) 67.75 564.13 T
+(ciated with the top thread. This will prevent the top thread from returning from its currently active RPC, which is the) 67.75 552.89 T
+(only action that can modify the current_shuttle pointer -- in particular) 67.75 541.64 T
+(, breaking the chain in two will not modify the) 345.48 541.64 T
+(top thread\325) 67.75 530.4 T
+(s current_shuttle pointer) 110.77 530.4 T
+(.) 207.38 530.4 T
+0 9 Q
+(4.) 54 513.15 T
+2 10 Q
+-0.34 (A thread needs no lock on its current_shuttle pointer when it is active -- it cannot change then because the active thread) 67.75 513.15 P
+(is by de\336nition the top thread in its RPC chain. But a thread must not cache the value of its current_shuttle pointer) 67.75 501.91 T
+(across an RPC, since it can change during the RPC \050by a thread control operation that broke the chain in two\051. In the) 67.75 490.67 T
+(case of a chain break the original shuttle stays with the current thread in the orphaned chain and a clone of the shuttle) 67.75 479.42 T
+(is created an attached to the rooted chain.) 67.75 468.17 T
+0 9 Q
+(5.) 54 450.93 T
+2 10 Q
+(The shuttle lock protects the RPC chain of that shuttle. That is, it locks the \322top_thread\323 pointer in the shuttle, and it) 67.75 450.93 T
+(locks the next and prev pointers in all the threads that are in the shuttle\325) 67.75 439.69 T
+(s RPC chain. It does not lock the pointer from) 353.11 439.69 T
+(threads to the shuttle. \050See \0501\051 and \0503\051 for that.\051) 67.75 428.44 T
+4 11 Q
+(\245) 54 414.2 T
+2 10 Q
+(Lock-ordering rules:) 67.75 414.2 T
+0 9 Q
+(1.) 54 399.2 T
+2 10 Q
+(A thread must be locked before its shuttle.) 67.75 399.2 T
+0 9 Q
+(2.) 54 381.95 T
+2 10 Q
+(A thread\325) 67.75 381.95 T
+(s associated port must be locked before it\325) 105.21 381.95 T
+(s shuttle.) 273.15 381.95 T
+0 9 Q
+(3.) 54 364.71 T
+2 10 Q
+(A thread may be locked before or after its associated port \050I think?\051) 67.75 364.71 T
+0 9 Q
+(3.6.1) 54 342.13 T
+(RPC lock protocols) 81 342.13 T
+2 10 Q
+(RPC Invocation) 54 311.46 T
+0.25 0.08 (When the current thread attempts an RPC it f) 54 287.46 B
+0.25 0.08 (irst looks up and locks the tar) 239.56 287.46 B
+0.25 0.08 (get port \050which locks the empty list and the) 361.18 287.46 B
+0.25 0.01 (blocked list\051. Then it locks the current thread\325) 54 275.46 B
+0.25 0.01 (s current shuttle RPC chain lock. The CURRENT_SHUTTLE is executing) 238.67 275.46 B
+0.11 (and the relationship between the CURRENT_SHUTTLE and the CURRENT_THREAD won\325) 54 263.46 P
+0.11 (t change while it is execut-) 432.04 263.46 P
+0.22 (ing. If there is an empty thread on the tar) 54 251.46 P
+0.22 (get port\325) 219.06 251.46 P
+0.22 (s empty list add it to the shuttle. If there are no empty threads available) 252.87 251.46 P
+(the shuttle is added to the tar) 54 239.46 T
+(get port\325) 168.75 239.46 T
+(s blocked list.) 202.34 239.46 T
+FMENDPAGE
+%%EndPage: "24" 25
+%%Page: "25" 25
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Shuttles) 72 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(25) 522.29 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+2 F
+(Pseudo code for invoke:) 72 677.33 T
+4 8 Q
+(rpc_trap\050\051) 72 660.67 T
+({) 72 648.67 T
+(lookup and lock\050target_port\051; /* target port list */) 86.4 636.67 T
+(lock\050CURRENT_THREAD->shuttle\051; /* current shuttle */) 86.4 624.67 T
+(if \050 target_port->empty_list != NULL \051) 86.4 612.67 T
+({) 86.4 600.67 T
+(take f) 100.8 588.67 T
+(irst empty thread off list) 129.58 588.67 T
+(attach empty thread to head of shuttle) 100.8 576.67 T
+(unlock\050CURRENT_THREAD->shuttle\051;) 100.8 564.67 T
+(unlock\050target_port\051; /* target port list */) 100.8 552.67 T
+(}) 86.4 540.67 T
+(else) 86.4 528.67 T
+({) 86.4 516.67 T
+(place current shuttle on target port\325s blocked list) 100.8 504.67 T
+(unlock\050CURRENT_THREAD->shuttle\051;) 100.8 492.67 T
+(unlock\050target_port\051; /* target port list */) 100.8 480.67 T
+(current shuttle goes to sleep) 100.8 468.67 T
+(}) 86.4 456.67 T
+(f) 86.4 444.67 T
+(inish invoke) 91.2 444.67 T
+(}) 72 432.67 T
+0 9 Q
+(3.6.2) 72 386 T
+(RPC Reply) 99 386 T
+2 10 Q
+0.25 0.01 (RPC reply begins by locking the empty port list of the current thread. This allows us to dereference and lock the current) 72 361.33 B
+0.06 (thread\325) 72 349.33 P
+0.06 (s current shuttle\325) 99.75 349.33 P
+0.06 (s RPC chain. The current thread is removed from the RPC chain and the previous thread becomes) 166.5 349.33 P
+0.25 0.14 (the shuttle\325) 72 337.33 B
+0.25 0.14 (s current thread. Then the RPC chain lock is released. If there are no blocked shuttles on the server port\325) 118.1 337.33 B
+0.25 0.14 (s) 554.11 337.33 B
+0.25 0.12 (blocked list then the server thread is added to the port\325) 72 325.33 B
+0.25 0.12 (s empty list. If there are blocked shuttles then a shuttle locked,) 298.17 325.33 B
+-0.12 (removed from the blocked list and associated with the server thread. Then the shuttle lock is released and the port list lock) 72 313.33 P
+(is released. If the thread is not executing as a result of an upcall then the call to RPC reply results in an error) 72 301.33 T
+(.) 503.91 301.33 T
+FMENDPAGE
+%%EndPage: "25" 26
+%%Page: "26" 26
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Shuttles) 54 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(26) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+2 F
+(Pseudo code for reply:) 54 677.33 T
+4 8 Q
+(reply\050\051) 54 660.67 T
+({) 54 648.67 T
+(if CURRENT_THREAD->port_list == NULL{) 68.4 636.67 T
+(return\050 kr=ERROR \051;) 82.8 624.67 T
+(}) 68.4 612.67 T
+(lock\050CURRENT_THREAD->port\051; /* port list */) 68.4 600.67 T
+(lock\050CURRENT_THREAD->shuttle\051; /* current shuttle */) 68.4 588.67 T
+(remove CURRENT_THREAD from CURRENT_SHUTTLE) 68.4 564.67 T
+(/* just in case of a a shuttle break and cloning */) 68.4 540.67 T
+(adjust reply target thread to point to the CURRENT_SHUTTLE) 68.4 528.67 T
+(if \050CURRENT_THREAD\325s empty port has been deallocated\051{) 68.4 504.67 T
+(destroy CURRENT_THREAD;) 82.8 492.67 T
+(decrement CURRENT_THREAD\325s empty port\325s ref count;) 82.8 480.67 T
+(}) 68.4 468.67 T
+(unlock\050CURRENT_THREAD->shuttle\051; /* current shuttle */) 68.4 456.67 T
+(if \050CURRENT_THREAD->port_list->blocked != NULL\051{) 68.4 432.67 T
+(lock\050CURRENT_THREAD->port_list->blocked->shuttle\051;) 82.8 420.67 T
+(associate CURRENT_THREAD with this shuttle;) 82.8 408.67 T
+(remove this shuttle from blocked list;) 82.8 396.67 T
+(unlock\050CURRENT_THREAD->port_list->blocked->shuttle\051;) 82.8 384.67 T
+(wakeup\050CURRENT_THREAD->port_list->blocked->shuttle\051;) 82.8 372.67 T
+(} else {) 68.4 360.67 T
+(place CURRENT_THREAD on its empty list;) 82.8 348.67 T
+(}) 68.4 336.67 T
+(unlock\050 CURRENT_THREAD->port\051; /* port list */) 68.4 324.67 T
+(f) 68.4 300.67 T
+(inish reply) 73.2 300.67 T
+(}) 54 288.67 T
+0 9 Q
+(3.6.3) 54 266 T
+(Thread Control Operations) 81 266 T
+2 10 Q
+0.25 0.07 (Thread operation \050such as) 54 241.33 B
+1 F
+0.25 0.07 (thr) 162.83 241.33 B
+0.25 0.07 (ead_terminate) 176.18 241.33 B
+2 F
+0.25 0.07 (\051 lock the port list of the tar) 238.7 241.33 B
+0.25 0.07 (get thread and the tar) 352.07 241.33 B
+0.25 0.07 (get thread. This makes it) 438.79 241.33 B
+0.01 (safe to dereference the current shuttle pointer) 54 229.33 P
+0.01 (. If the pointer is NULL then the thread is empty) 234.49 229.33 P
+0.01 (, i.e., it is not involved in an) 428.01 229.33 P
+-0.05 (RPC and the thread operation can proceed. If the thread is not empty then the shuttle must be locked to block the progress) 54 217.33 P
+0.07 (RPC and other thread operations. Since this is out of order from the RPC sequence we must be prepared to fail to acquire) 54 205.33 P
+FMENDPAGE
+%%EndPage: "26" 27
+%%Page: "27" 27
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Shuttles) 72 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(27) 522.29 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+2 F
+-0.14 (the shuttle lock. If we fail we give up the locks already acquired, wait for some period of time and try again. Once we suc-) 72 677.33 P
+(ceed in acquiring the shuttle lock we can perform the thread operation.Pseudo code for thread operation:) 72 665.33 T
+4 8 Q
+(thread_operation\050\051) 72 648.67 T
+({) 72 636.67 T
+(while \050 TRUE \051) 86.4 624.67 T
+({) 86.4 612.67 T
+(/* lock upcalls or becoming empty */) 100.8 600.67 T
+(lock\050target_thread\051;) 100.8 588.67 T
+(lock\050target_thread->port_list\051;) 100.8 576.67 T
+(/* safe to dereference current_shuttle pointer */) 100.8 552.67 T
+(if \050NULL == target_thread->current_shuttle\051\051) 100.8 540.67 T
+({) 100.8 528.67 T
+(/* thread is empty */) 115.2 516.67 T
+(Do thread operation) 115.2 504.67 T
+(unlock\050target_thread\051;) 115.2 492.67 T
+(unlock\050target_thread->port_list\051;) 115.2 480.67 T
+(return;) 115.2 468.67 T
+(}) 100.8 456.67 T
+(if \050!trylock\050target_thread->current_shuttle\051\051) 100.8 444.67 T
+({) 100.8 432.67 T
+(/* couldn\325t get lock, backoff */) 115.2 420.67 T
+(lock\050target_thread\051;) 115.2 408.67 T
+(lock\050target_thread->port_list\051;) 115.2 396.67 T
+(wait_a_while\050\051;) 115.2 384.67 T
+(continue;) 115.2 372.67 T
+(}) 100.8 360.67 T
+(break;) 100.8 348.67 T
+(}) 86.4 336.67 T
+(Do thread operations, perhaps walk RPC chain) 86.4 324.67 T
+(unlock\050target_thread\051;) 86.4 300.67 T
+(unlock\050target_thread->port_list\051;) 86.4 288.67 T
+(unlock\050target_thread->current_shuttle\051;) 86.4 276.67 T
+(}) 72 253.33 T
+2 10 Q
+0.08 (If the thread operation results in a shuttle break \050thread terminate or thread abort\051 we are ok. The shuttle has been locked.) 72 213.33 P
+-0.05 (This means that other thread operations will fail to get the shuttle lock. When they grab thread locks and fail to get shuttle) 72 201.33 P
+0.25 0.05 (locks they will give up their thread locks which will permit the thread op that has the shuttle lock to acquire any thread) 72 189.33 B
+-0.01 (locks necessary to do the shuttle break \050i.e. change the current shuttle pointer) 72 177.33 P
+-0.01 (, etc.\051. RPC will not change the current shut-) 379.58 177.33 P
+-0.12 (tle pointer inappropriately because it only changes the shuttle pointer of empty threads \050threads not on a shuttle\051 during an) 72 165.33 P
+0.25 0 (upcall and the current thread during a reply) 72 153.33 B
+0.25 0 (. Shuttle breaks do not change the shuttle pointer for the thread at the head of) 246.06 153.33 B
+(the shuttle. The original shuttle is given to the orphan and the clone is given to the root.) 72 141.33 T
+-0.07 (Port operation \050such as port_deallocate or migrate\051 - Lock the port then lock and manipulate each thread or shuttle as nec-) 72 117.34 P
+(essary) 72 105.34 T
+(. Then release the port lock.) 96.33 105.34 T
+FMENDPAGE
+%%EndPage: "27" 28
+%%Page: "28" 28
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Shuttles) 54 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(28) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+2 F
+0.25 0.06 (Note that the shuttle lock controls the current shuttle, the prev and next pointers in the threads \050see Figure) 54 677.33 B
+0.25 0.06 ("Shuttle and) 489.77 677.33 B
+(Thread Locking Protocol" on page) 54 665.33 T
+(16\051.) 194.92 665.33 T
+0 F
+(3.7) 54 633.33 T
+(Kernel Stack Management) 81 633.33 T
+0 9 Q
+(3.7.1) 54 611 T
+(One Stack Per Shuttle) 81 611 T
+2 10 Q
+0.25 0.05 (The stacks are allocated in the Mach kernel on a per shuttle basis, with tiny stacks associated with each thread used for) 54 586.33 B
+0.25 0.03 (saving and restoring state when entering an leaving the kernel via an RPC trap. When the Mach RPC trap is called \050See) 54 574.33 B
+0.25 0.01 (Figure) 54 562.33 B
+0.25 0.01 ("RPC Path Stack Switches" on page) 82.67 562.33 B
+0.25 0.01 (28\051, the trap control points at the small stack which is part of the thread data) 231.23 562.33 B
+-0.02 (structure in the kernel. As soon as it can, the kernel saves enough state to get back into caller) 54 550.33 P
+-0.02 (\325) 424.89 550.33 P
+-0.02 (s space and then switches to) 427.67 550.33 P
+0.25 0.01 (the shuttle\325) 54 538.33 B
+0.25 0.01 (s kernel stack. \050Note: in the future we may be able to avoid the use of the shuttle kernel stack in some cases.\051) 98.48 538.33 B
+-0.14 (All subsequent work in the kernel until it upcalls into the destination task will be executed of) 54 526.33 P
+-0.14 (f of the shuttle\325) 423.01 526.33 P
+-0.14 (s kernel stack.) 483.38 526.33 P
+0.25 0.13 (Then the kernel will switch to the stack stub associated with the empty thread of the upcall and then enter user space) 54 514.33 B
+0.25 0.07 (again.For a normal RPC upcall the shuttle stack can be reset so that it can be reused completely for subsequent system) 54 502.33 B
+0.25 0.19 (calls and RPCs. \050See Figure) 54 490.33 B
+0.25 0.19 ("System Call Stack Switches" on page) 174.8 490.33 B
+0.25 0.19 (29 and Figure) 339.62 490.33 B
+0.25 0.19 ("RPC Return Stack Switches" on) 400.85 490.33 B
+(page) 54 478.33 T
+(30\051) 75.37 478.33 T
+0 9 Q
+(3.7.2) 54 158 T
+(One Stack or More Per Shuttle\051) 81 158 T
+2 10 Q
+0.13 (The main problem with associating a stack per shuttle arises when the kernel itself generates an upcall. This requires that) 54 133.33 P
+0.12 (some state information be saved on the stack when the shuttle enters user space. Therefore, subsequent uses of the kernel) 54 121.33 P
+-0.01 (stack, if they involve further kernel generated upcalls, could use up the kernel stack. T) 54 109.33 P
+-0.01 (o prevent this, the shuttle should be) 398.19 109.33 P
+-0.2 (marked whether the current shuttle stack is \322clean\323 or \322dirty\323. Upon re-entry into the kernel, the trap code, if it detects that) 54 97.33 P
+54 90 540 684 C
+54 178 540 475 C
+60.75 223 276.75 466 R
+0.5 H
+0 Z
+0 X
+0 K
+N
+186.75 466 186.75 223 2 L
+2 Z
+N
+60.75 349 186.75 349 2 L
+N
+69.75 381.73 114.75 457 R
+0 Z
+N
+195.75 321.18 240.75 384.18 R
+N
+195.75 419.37 240.75 457 R
+N
+174.56 442.79 194.75 437 174.56 431.21 174.56 437 4 Y
+V
+114.75 437 174.56 437 2 L
+3 H
+2 Z
+N
+222.54 405.19 216.75 385 210.96 405.19 216.75 405.19 4 Y
+V
+216.75 417.36 216.75 405.19 2 L
+N
+3 10 Q
+(User) 78.75 419.48 T
+(Stack) 78.75 409.03 T
+(Thread) 204.75 444.92 T
+(Stack) 204.75 434.46 T
+(Stub) 204.75 424.01 T
+(Shuttle) 202.75 354.9 T
+(Stack) 204.75 342.9 T
+195.75 248.37 240.75 286 R
+0.5 H
+0 Z
+N
+(Thread) 204.75 273.91 T
+(Stack) 204.75 263.46 T
+(Stub) 204.75 253.01 T
+69.75 231.73 114.75 307 R
+N
+(User) 78.75 269.48 T
+(Stack) 78.75 259.03 T
+0 12 Q
+(Mach) 243.75 397 T
+(T) 124.3 332.26 T
+(ask 2) 130.74 332.26 T
+(T) 124.3 360.26 T
+(ask 1) 130.74 360.26 T
+(RPC) 133.75 442 T
+(Upcall) 143.75 252.26 T
+134.94 262.21 114.75 268 134.94 273.79 134.94 268 4 Y
+V
+195.75 268 134.94 268 2 L
+3 H
+2 Z
+N
+222.54 307.19 216.75 287 210.96 307.19 216.75 307.19 4 Y
+V
+216.75 319.36 216.75 307.19 2 L
+N
+53.75 184 276.75 205 R
+7 X
+V
+0 X
+(Figure -) 53.75 197 T
+(RPC Path Stack Switches) 101.06 197 T
+291.4 223 507.4 466 R
+0.5 H
+0 Z
+N
+417.4 466 417.4 223 2 L
+2 Z
+N
+291.4 349 417.4 349 2 L
+N
+300.4 381.73 345.4 457 R
+0 Z
+N
+426.4 321.18 471.4 384.18 R
+N
+426.4 419.37 471.4 457 R
+N
+405.21 273.79 425.4 268 405.21 262.21 405.21 268 4 Y
+V
+345.4 268 405.21 268 2 L
+3 H
+2 Z
+N
+438.61 301.81 444.4 322 450.19 301.81 444.4 301.81 4 Y
+V
+444.4 286 444.4 301.81 2 L
+N
+3 10 Q
+(User) 309.4 419.48 T
+(Stack) 309.4 409.03 T
+(Thread) 435.4 444.92 T
+(Stack) 435.4 434.46 T
+(Stub) 435.4 424.01 T
+(Shuttle) 433.4 354.9 T
+(Stack) 435.4 342.9 T
+426.4 248.37 471.4 286 R
+0.5 H
+0 Z
+N
+(Thread) 435.4 273.91 T
+(Stack) 435.4 263.46 T
+(Stub) 435.4 253.01 T
+300.4 231.73 345.4 307 R
+N
+(User) 309.4 269.48 T
+(Stack) 309.4 259.03 T
+0 12 Q
+(Mach) 474.4 397 T
+(T) 354.95 332.26 T
+(ask 2) 361.39 332.26 T
+(T) 354.95 360.26 T
+(ask 1) 361.39 360.26 T
+(RPC) 365.08 441.63 T
+365.59 253.21 345.4 259 365.59 264.79 365.59 259 4 Y
+V
+426.4 259 365.59 259 2 L
+3 H
+2 Z
+N
+459.19 306.19 453.4 286 447.61 306.19 453.4 306.19 4 Y
+V
+453.4 318.36 453.4 306.19 2 L
+N
+(System Call) 348.4 277.26 T
+(T) 348.4 243.26 T
+(rap Return) 355.07 243.26 T
+289.75 183 526.75 205 R
+7 X
+V
+0 X
+(Figure -) 289.75 197 T
+(System Call Stack Switches) 337.06 197 T
+54 90 540 684 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "28" 29
+%%Page: "29" 29
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Exceptions and Alerts) 72 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(29) 522.29 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+2 F
+0.25 0.08 (the shuttle stack is dirty) 72 362.33 B
+0.25 0.08 (, will allocate a new f) 169.44 362.33 B
+0.25 0.08 (ixed size kernel stack from a free pool, and switch to that instead. Also a) 258.07 362.33 B
+0.25 0.06 (count of current stacks will be incremented and a link made from the new stack back to the dirty stack. Eventually) 72 350.33 B
+0.25 0.06 (, the) 540.28 350.33 B
+0.25 0.11 (shuttle will return to the kernel from the kernel generated upcall. It will detect the new clean stack, which it will then) 72 338.33 B
+0.25 0.06 (return to the free pool, and then switch to the original dirty stack that has the state saved for the return from the upcall.) 72 326.33 B
+(\050See Figure) 72 314.33 T
+("Kernel Generated Upcall" on page) 120.85 314.33 T
+(31.\051) 265.27 314.33 T
+72 271 558 274 C
+72 273.16 306 273.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(4.0) 72 278 T
+(Exceptions and Alerts) 99 278 T
+0 10 Q
+(4.1) 72 242.33 T
+(Exceptions as upcalls) 99 242.33 T
+2 F
+0.09 (The kernel currently sends messages to exception ports. Under the RPC model, the kernel would perform an upcall on an) 72 219.33 P
+0.25 0.03 (exception if there were any empty threads available on the exception port and if the task had registered a routine for the) 72 207.33 B
+0.19 (exception. Exceptions are applied to the current thread \050and thus to the current shuttle\051 if they are not software generated) 72 195.33 P
+0.25 0.1 (exceptions. If they are software generated they are applied to the current thread by default, but may also be applied to) 72 183.33 B
+0.25 0.1 (some other tar) 72 171.33 B
+0.25 0.1 (get thread \050see Alerts below\051. On an exception, the shuttle is bound to the empty thread supplied by the) 130.88 171.33 B
+-0.03 (exception upcall. When a thread causes an exception, it \336rst enters the kernel, if it is not already executing there. The ker-) 72 159.33 P
+0.05 (nel then \336nds the shuttle associated with the thread and makes an upcall to the current task\325) 72 147.33 P
+0.05 (s exception port, allocating an) 437.59 147.33 P
+0.25 0.06 (empty thread and binding it to the shuttle. The shuttle then dispatches to the exception handler in the same way that an) 72 135.33 B
+0.18 (RPC upcall dispatches to an RPC entry point. If there is no empty thread available on the exception port, then the shuttle) 72 123.33 P
+-0.06 (blocks, just as it would for an RPC upcall. If there is no entry point for the exception, the error RPC_NO_EXCEPTION_-) 72 111.33 P
+72 90 558 684 C
+72.25 369 557.75 684 C
+87.5 435 303.5 678 R
+0.5 H
+0 Z
+0 X
+0 K
+N
+213.5 678 213.5 435 2 L
+2 Z
+N
+87.5 561 213.5 561 2 L
+N
+96.5 593.73 141.5 669 R
+0 Z
+N
+222.5 533.18 267.5 596.18 R
+N
+222.5 631.37 267.5 669 R
+N
+161.69 643.21 141.5 649 161.69 654.79 161.69 649 4 Y
+V
+221.5 649 161.69 649 2 L
+3 H
+2 Z
+N
+237.71 609.17 243.5 629.36 249.29 609.17 243.5 609.17 4 Y
+V
+243.5 597 243.5 609.17 2 L
+N
+3 10 Q
+(User) 105.5 631.48 T
+(Stack) 105.5 621.03 T
+(Thread) 231.5 656.91 T
+(Stack) 231.5 646.46 T
+(Stub) 231.5 636.01 T
+(Shuttle) 229.5 566.9 T
+(Stack) 231.5 554.9 T
+222.5 460.37 267.5 498 R
+0.5 H
+0 Z
+N
+(Thread) 231.5 485.92 T
+(Stack) 231.5 475.46 T
+(Stub) 231.5 465.01 T
+96.5 443.73 141.5 519 R
+N
+(User) 105.5 481.48 T
+(Stack) 105.5 471.03 T
+0 12 Q
+(Mach) 270.5 609 T
+(T) 151.05 544.26 T
+(ask 2) 157.49 544.26 T
+(T) 151.05 572.26 T
+(ask 1) 157.49 572.26 T
+(T) 144.5 658.26 T
+(rap Return) 151.17 658.26 T
+(RPC Return) 144.5 460.63 T
+202.31 485.79 222.5 480 202.31 474.21 202.31 480 4 Y
+V
+141.5 480 202.31 480 2 L
+3 H
+2 Z
+N
+237.71 511.17 243.5 531.36 249.29 511.17 243.5 511.17 4 Y
+V
+243.5 499 243.5 511.17 2 L
+N
+78.5 372 309.5 395 R
+7 X
+V
+0 X
+(Figure -) 78.5 387 T
+(RPC Return Stack Switches) 125.81 387 T
+325 436 541 677 R
+0.5 H
+0 Z
+N
+451 560.96 451 436 2 L
+2 Z
+N
+325 560.96 451 560.96 2 L
+N
+334 569.89 379 668.07 R
+0 Z
+N
+458 602.8 503 665.28 R
+N
+334 570.25 379 617.49 R
+N
+438.81 654.03 459 648.24 438.81 642.45 438.81 648.24 4 Y
+V
+379 648.24 438.81 648.24 2 L
+3 H
+2 Z
+N
+3 10 Q
+(Thread) 343 595.57 T
+(Stack) 343 585.2 T
+(Stub) 343 574.83 T
+(Shuttle) 465 636.21 T
+(Stack) 467 624.31 T
+460 461.16 505 498.48 R
+0.5 H
+0 Z
+N
+(Thread) 469 486.48 T
+(Stack) 469 476.11 T
+(Stub) 469 465.74 T
+334 444.66 379 519.31 R
+N
+(User) 343 482.08 T
+(Stack) 343 471.71 T
+0 12 Q
+(Mach) 509 554 T
+(User T) 378.56 544.33 T
+(ask) 414.99 544.33 T
+(Fake RPC) 389 655.16 T
+(Upcall) 408 464.99 T
+399.19 474.84 379 480.63 399.19 486.42 399.19 480.63 4 Y
+V
+460 480.63 399.19 480.63 2 L
+3 H
+2 Z
+N
+486.79 519.66 481 499.48 475.21 519.66 481 519.66 4 Y
+V
+481 601.63 481 519.66 2 L
+N
+3 10 Q
+(Shuttle) 341.89 636.5 T
+(Stack) 343.89 624.6 T
+(Old) 346 649.21 T
+(New) 467 648.22 T
+(Fake) 344 606.56 T
+317 373 547 397 R
+7 X
+V
+0 12 Q
+0 X
+(Figure -) 317 389 T
+(Kernel Generated Upcall) 364.31 389 T
+72 90 558 684 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "29" 30
+%%Page: "30" 30
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Exceptions and Alerts) 54 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(30) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+2 F
+-0.17 (HANDLER will be returned on the previous RPC of the shuttle\325) 54 677.33 P
+-0.17 (s RPC chain. A task can register a handler that will handle) 308.76 677.33 P
+(any alert or exception. This handler will take the exception or alert id as an ar) 54 665.33 T
+(gument and return success or failure.) 363.58 665.33 T
+0 F
+(4.2) 54 633.33 T
+(Alerts) 81 633.33 T
+2 F
+0.25 0.05 ( Alerts are based on software generated exceptions. In the kernel the calling thread gets the shuttle from the destination) 54 610.33 B
+0.25 0.04 (thread, and then gets the current head of the RPC chain from the shuttle. \050See Figure) 54 598.33 B
+0.25 0.04 ("Raising an Alert" on page) 401.8 598.33 B
+0.25 0.04 (32.\051 A) 514 598.33 B
+-0.08 (software exception is executed on the head of the RPC chain, and the task that it is currently executing in has the opportu-) 54 586.33 P
+(nity to handle the alert. There are three situations that arise at this point:) 54 574.33 T
+0 9 Q
+(1.) 54 556.33 T
+2 10 Q
+(Theris no alert handler) 67.75 556.33 T
+(.) 157.96 556.33 T
+0 9 Q
+(2.) 54 539.09 T
+2 10 Q
+(The alert handler returns TRUE.) 67.75 539.09 T
+0 9 Q
+(3.) 54 521.84 T
+2 10 Q
+(The alert handler returns F) 67.75 521.84 T
+(ALSE.) 173.59 521.84 T
+(The disposition of the RPC chain after the alert is handled is determined by the alert attributes...) 54 498.6 T
+54 90 540 684 C
+180 132.31 414 495.27 C
+3 10 Q
+0 X
+0 K
+(Step 1: Alert is raised on thread) 187 479.87 T
+214.38 385.98 241.88 394.98 R
+0.5 H
+2 Z
+N
+260.22 385.98 287.73 394.98 R
+N
+306.07 385.98 333.57 394.98 R
+N
+(Threads) 214.38 403.98 T
+(Root) 214.38 367.98 T
+(Head) 354.11 371.45 T
+253.42 386.67 241.88 389.98 253.42 393.28 3 L
+0 Z
+N
+242.13 389.98 260.22 389.98 2 L
+2 Z
+N
+299.26 386.67 287.73 389.98 299.26 393.28 3 L
+0 Z
+N
+287.98 389.98 306.07 389.98 2 L
+2 Z
+N
+345.11 386.67 333.57 389.98 345.11 393.28 3 L
+0 Z
+N
+333.82 389.98 351.91 389.98 2 L
+2 Z
+N
+351.91 385.98 379.42 394.98 R
+N
+244.08 429.98 238.88 432.98 244.08 435.98 3 L
+0 Z
+N
+372 400.17 369 394.98 366 400.17 3 L
+N
+238.88 432.98 369 432.98 369 394.98 3 L
+N
+(Shuttle) 214.38 448.98 T
+260.39 380.78 263.39 385.98 266.39 380.78 3 L
+3 X
+N
+255.22 358.98 255.22 376.98 263.39 367.98 263.39 385.73 4 L
+2 Z
+N
+0 X
+(Alert) 241.02 350.8 T
+213.38 424.16 237.89 442.98 R
+N
+216.6 212.47 244.11 221.47 R
+N
+262.44 212.47 289.95 221.47 R
+N
+308.29 212.47 335.79 221.47 R
+N
+(Threads) 216.6 230.47 T
+(Root) 216.6 194.47 T
+(Head) 339.13 194.47 T
+255.64 213.16 244.11 216.47 255.64 219.78 3 L
+0 Z
+N
+244.36 216.47 262.44 216.47 2 L
+2 Z
+N
+301.48 213.16 289.95 216.47 301.48 219.78 3 L
+0 Z
+N
+290.2 216.47 308.29 216.47 2 L
+2 Z
+N
+347.33 213.16 335.79 216.47 347.33 219.78 3 L
+0 Z
+N
+336.04 216.47 354.13 216.47 2 L
+2 Z
+N
+354.13 212.47 381.64 221.47 R
+N
+246.3 256.47 241.11 259.47 246.3 262.47 3 L
+0 Z
+N
+363 226.67 360 221.47 357 226.67 3 L
+N
+241.11 259.47 360 259.47 360 221.47 3 L
+N
+(Shuttle) 216.6 275.47 T
+262.61 207.28 265.61 212.47 268.61 207.28 3 L
+3 X
+N
+257.44 185.47 257.44 203.47 265.61 194.47 265.61 212.22 4 L
+2 Z
+N
+0 X
+(Alert) 243.24 177.29 T
+382.98 288.85 379.98 283.65 376.98 288.85 3 L
+0 Z
+3 X
+N
+265.61 220.65 266.22 240.87 191.22 240.87 192.09 292.65 379.98 292.65 379.98 283.9 6 L
+2 Z
+N
+0 X
+(Step 2: Alert exception propagated to head) 187.22 318.69 T
+(Alert) 363.64 274.65 T
+(Exception) 363.64 262.65 T
+381 225.85 378 220.65 375 225.85 3 L
+0 Z
+3 X
+N
+388.15 256.65 388.15 247.65 378 247.65 378 220.9 4 L
+2 Z
+N
+215.6 250.65 240.11 269.47 R
+0 X
+N
+180 134.27 411 154.27 R
+7 X
+V
+0 12 Q
+0 X
+(Figure -) 180 146.27 T
+(Raising an Alert) 227.31 146.27 T
+54 90 540 684 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "30" 31
+%%Page: "31" 31
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Exceptions and Alerts) 72 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(31) 522.29 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+0 9 Q
+(4.2.1) 72 678 T
+(Alert Attributes) 99 678 T
+2 10 Q
+0.05 (In order for the kernel to know what to do when an alert handler returns true or false, the alert value must be de\336ned with) 72 653.33 P
+0.15 (a certain set of attributes. The two tables below and the following \336gures describe the behavior associated with attributes) 72 641.33 P
+(as enforced by the kernel.) 72 629.33 T
+0 9 Q
+(4.2.2) 72 196 T
+(Thread Alert) 99 196 T
+4 8 Q
+(kern_return_t thread_alert\050) 72 182.67 T
+(mach_port_t thread,) 86.4 170.67 T
+(mach_alert_t alertType\051;) 86.4 158.67 T
+2 10 Q
+0.15 (The function thread_alert sends an alert to the speci\336ed thread. The shuttle associated with the speci\336ed thread is located) 72 135.33 P
+-0.17 (by the kernel. The kernel uses that shuttle to locate the thread at the head of that shuttle\325) 72 123.33 P
+-0.17 (s call chain. The thread at the head) 420.45 123.33 P
+0.25 0.04 (of the call chain is the thread to which the alert is actually delivered. At this point the kernel upcalls to the threads alert) 72 111.33 B
+-0.17 (handler) 72 99.33 P
+-0.17 (. If there is no alert handler and if the calling thread has kernel priviledges, then it will be the same as if the handler) 101.42 99.33 P
+0 9 Q
+(T) 72 606 T
+(ABLE 1.) 76.83 606 T
+3 F
+(See Figure) 126 606 T
+("Alert Handler Returns TRUE" on page) 172.46 606 T
+(33) 329.68 606 T
+1 F
+(Alert Attributes) 78 572 T
+(PROP) 156 572 T
+(AGA) 179.8 572 T
+(TE) 199.1 572 T
+16.32 (LOCAL \050not) 234 583 P
+(PROP) 234 572 T
+(AGA) 257.8 572 T
+(TE\051) 277.1 572 T
+2 F
+(F) 78 554 T
+(A) 82.33 554 T
+(T) 87.82 554 T
+(AL) 92.6 554 T
+5.8 (Thread is emp-) 156 554 P
+1.95 (tied and the alert) 156 543 P
+0.62 (is re-raised on the) 156 532 P
+10.34 (previous thread) 156 521 P
+1.61 (in the RPC chain) 156 510 P
+2.28 (unless this is the) 156 499 P
+5.79 (thread that \336rst) 156 488 P
+(received the alert.) 156 477 T
+5.8 (Thread is emp-) 234 554 P
+2.05 (tied and previous) 234 543 P
+3.29 (RPC call returns) 234 532 P
+0.3 (with error indicat-) 234 521 P
+(ing fatal alert) 234 510 T
+3.35 (CONTINUE \050not) 78 465 P
+(F) 78 454 T
+(A) 82.33 454 T
+(T) 87.82 454 T
+(AL\051) 92.6 454 T
+(Thread continues) 156 465 T
+(Thread continues) 234 465 T
+0 F
+(T) 72 406 T
+(ABLE 2.) 76.83 406 T
+3 F
+(See Figure) 126 406 T
+("Alert Handler Returns F) 172.46 406 T
+(ALSE" on page) 269.55 406 T
+(34) 333.2 406 T
+1 F
+(Alert Attributes) 78 372 T
+(PROP) 156 372 T
+(AGA) 179.8 372 T
+(TE) 199.1 372 T
+16.32 (LOCAL \050not) 234 383 P
+(PROP) 234 372 T
+(AGA) 257.8 372 T
+(TE) 277.1 372 T
+2 F
+(F) 78 354 T
+(A) 82.33 354 T
+(T) 87.82 354 T
+(AL or) 92.6 354 T
+(CONTINUE) 78 331 T
+5.8 (Thread is emp-) 156 354 P
+1.95 (tied and the alert) 156 343 P
+0.62 (is re-raised on the) 156 332 P
+10.34 (previous thread) 156 321 P
+1.61 (in the RPC chain) 156 310 P
+2.28 (unless this is the) 156 299 P
+5.79 (thread that \336rst) 156 288 P
+0.93 (received the alert.) 156 277 P
+8.35 (Unhandled alert) 156 266 P
+22.82 (exception is) 156 255 P
+(raised on the task) 156 244 T
+5.8 (Thread is emp-) 234 354 P
+0.12 (tied and the previ-) 234 343 P
+9.53 (ous RPC call) 234 332 P
+1.55 (returns with error) 234 321 P
+2.85 (indicating unhan-) 234 310 P
+0.43 (dled alert. Unhan-) 234 299 P
+32.31 (dled alert) 234 288 P
+22.82 (exception is) 234 277 P
+(raised on the task) 234 266 T
+72 600 306 600 2 L
+V
+0.25 H
+0 Z
+N
+72 400 306 400 2 L
+V
+N
+FMENDPAGE
+%%EndPage: "31" 32
+%%Page: "32" 32
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Exceptions and Alerts) 54 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(32) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+2 F
+-0.2 (existed and had returned F) 54 168.32 P
+-0.2 (ALSE. If the calling thread does not have kernel privilidges, then it will search back up the RPC) 158.47 168.32 P
+0.25 0.02 (chain until it f) 54 156.32 B
+0.25 0.02 (inds an alert handler to invoke. If it f) 110.92 156.32 B
+0.25 0.02 (inds no handlers then the thread_alert call will return KERN_NO_A-) 260.11 156.32 B
+(LER) 54 144.32 T
+(T_HANDLER, indicating that the RPC chain was unaf) 72.28 144.32 T
+(fected by the alert.) 291.96 144.32 T
+0.25 0.02 (The kernel follows the exception delivery rules outlined in the previous section to deliver an EXC_ALER) 54 120.32 B
+0.25 0.02 (T exception to) 481.55 120.32 B
+(the thread. The alertT) 54 108.32 T
+(ype parameter becomes the code parameter to the exception handler) 139.89 108.32 T
+(.) 411.05 108.32 T
+54 90 540 684 C
+180 174.98 414 684 C
+3 10 Q
+0 X
+0 K
+(Threads) 214 566.6 T
+(Root) 214 530.6 T
+(Head) 349 530.6 T
+(Shuttle) 214 611.6 T
+(Case 1:) 187 665 T
+(Handler returns TRUE.) 187 653 T
+(Thread continues.) 187 641 T
+(Alert is CONTINUE.) 225.11 663.82 T
+246.2 593.6 241 596.6 246.2 599.6 3 L
+0.5 H
+0 Z
+N
+363 562.8 360 557.6 357 562.8 3 L
+N
+241 596.6 360 596.6 360 557.6 3 L
+N
+209.38 547.6 236.88 556.6 R
+2 Z
+N
+255.22 547.6 282.73 556.6 R
+N
+301.07 547.6 328.57 556.6 R
+N
+248.42 548.29 236.88 551.6 248.42 554.91 3 L
+0 Z
+N
+237.13 551.6 255.22 551.6 2 L
+2 Z
+N
+295.26 548.29 283.73 551.6 295.26 554.91 3 L
+0 Z
+N
+283.98 551.6 302.07 551.6 2 L
+2 Z
+N
+340.11 548.29 328.57 551.6 340.11 554.91 3 L
+0 Z
+N
+328.82 551.6 346.91 551.6 2 L
+2 Z
+N
+346.91 547.6 374.42 556.6 R
+N
+215.38 587.78 239.89 606.6 R
+N
+(Threads) 192.86 430.7 T
+(Root) 192.86 398.8 T
+(Head) 282.86 400.38 T
+192.86 446.22 219.86 462.9 R
+N
+(Shuttle) 192.86 470.59 T
+244.86 403.84 247.86 409.04 250.86 403.84 3 L
+0 Z
+3 X
+N
+238.86 385.11 238.86 401.06 247.86 393.08 247.86 408.79 4 L
+2 Z
+N
+0 X
+(Alert) 223.21 377.57 T
+225.05 452.17 219.86 455.17 225.05 458.17 3 L
+0 Z
+N
+297.86 427.48 294.86 422.29 291.86 427.48 3 L
+N
+219.86 455.17 294.86 455.17 294.86 422.29 3 L
+N
+(Alert) 309.86 469.86 T
+(Exception Re-raised) 309.86 459.23 T
+308.86 427.48 305.86 422.29 302.86 427.48 3 L
+3 X
+N
+336.86 454.2 336.86 446.22 305.86 446.22 305.86 422.54 4 L
+2 Z
+N
+0 X
+(Case 2: Alert is F) 190.22 505.32 T
+(A) 266.32 505.32 T
+(T) 272.25 505.32 T
+(AL and PROP) 277.61 505.32 T
+(AGA) 339.65 505.32 T
+(TE) 360.02 505.32 T
+(Handler returns TRUE) 190.22 494.68 T
+194.24 412.12 221.74 421.12 R
+N
+240.08 412.12 267.59 421.12 R
+N
+285.92 412.12 313.43 421.12 R
+N
+233.28 412.81 221.74 416.12 233.28 419.43 3 L
+0 Z
+N
+221.99 416.12 240.08 416.12 2 L
+2 Z
+N
+279.12 412.81 267.59 416.12 279.12 419.43 3 L
+0 Z
+N
+267.84 416.12 285.92 416.12 2 L
+2 Z
+N
+324.96 412.81 313.43 416.12 324.96 419.43 3 L
+0 Z
+N
+313.68 416.12 331.77 416.12 2 L
+2 Z
+N
+331.77 412.12 359.28 421.12 R
+N
+(Threads) 198.53 279.66 T
+(Root) 198.53 247 T
+(Head) 288.53 248.62 T
+(Shuttle) 198.53 320.48 T
+250.53 254.37 253.53 259.57 256.53 254.37 3 L
+0 Z
+3 X
+N
+244.53 235.08 244.53 251.4 253.53 243.24 253.53 259.32 4 L
+2 Z
+N
+0 X
+(Alert) 227.88 221.42 T
+230.73 302.8 225.53 305.8 230.73 308.8 3 L
+0 Z
+N
+300.53 276.18 297.53 270.98 294.53 276.18 3 L
+N
+225.53 305.8 297.53 305.8 297.53 270.98 3 L
+N
+(Case 3: Alert is F) 187.22 352.32 T
+(A) 263.32 352.32 T
+(T) 269.25 352.32 T
+(AL and LOCAL) 274.61 352.32 T
+(Handler returns TRUE) 187.22 341.43 T
+(RPC returns) 308.53 303.76 T
+(RPC_F) 308.53 292.88 T
+(A) 340.74 292.88 T
+(T) 346.67 292.88 T
+(AL_ALER) 352.04 292.88 T
+(T) 395.74 292.88 T
+327.07 263.04 315.53 266.35 327.07 269.65 3 L
+1 X
+N
+369.53 269.9 369.53 285.67 333.53 285.67 333.53 266.35 315.78 266.35 5 L
+7 X
+V
+2 Z
+1 X
+N
+195.64 259.87 223.15 268.87 R
+0 X
+N
+241.48 259.87 268.99 268.87 R
+N
+287.33 259.87 314.83 268.87 R
+N
+234.68 261.06 223.15 264.37 234.68 267.67 3 L
+0 Z
+N
+223.4 264.37 241.48 264.37 2 L
+2 Z
+N
+280.53 261.06 268.99 264.37 280.53 267.67 3 L
+0 Z
+N
+269.24 264.37 287.33 264.37 2 L
+2 Z
+N
+356.17 259.87 383.68 268.87 R
+N
+199.64 297.05 224.15 315.87 R
+N
+180 176 413 196 R
+7 X
+V
+0 12 Q
+0 X
+(Figure -) 180 188 T
+(Alert Handler Returns TRUE) 227.31 188 T
+54 90 540 684 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "32" 33
+%%Page: "33" 33
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Exceptions and Alerts) 72 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(33) 522.29 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+2 F
+(The following alert types may be speci\336ed in alertT) 72 303.36 T
+(ype:) 278.38 303.36 T
+4 11 Q
+(\245) 72 285.36 T
+2 10 Q
+(RPC_ALER) 85.75 285.36 T
+(T_ABOR) 135.13 285.36 T
+(T) 173.4 285.36 T
+4 11 Q
+(\245) 72 270.36 T
+2 10 Q
+(RPC_ALER) 85.75 270.36 T
+(T_SUSPEND) 135.13 270.36 T
+4 11 Q
+(\245) 72 255.36 T
+2 10 Q
+(RPC_ALER) 85.75 255.36 T
+(T_RESUME) 135.13 255.36 T
+(These alert types encode the F) 72 231.36 T
+(A) 192.55 231.36 T
+(T) 198.66 231.36 T
+(AL/CONTINUE and PROP) 203.97 231.36 T
+(AGA) 314.65 231.36 T
+(TE/LOCAL alert attributes shown in T) 335.18 231.36 T
+(abls 1 and 2.) 490.22 231.36 T
+0.25 0.15 (When thread_alert returns to the caller) 72 207.36 B
+0.25 0.15 (, one of two statements is guaranteed to be true. Either the specif) 232.6 207.36 B
+0.25 0.15 (ied thread no) 503.56 207.36 B
+(longer exists, or the speci\336ed thread will make no further changes to its state before alert processing completes.) 72 195.36 T
+0.23 (If a F) 72 171.36 P
+0.23 (A) 93.36 171.36 P
+0.23 (T) 99.47 171.36 P
+0.23 (AL alert propagates from the thread at the head of the call chain all the way back to the speci\336ed thread, then an) 104.77 171.36 P
+0.21 (alert exception is raised in the speci\336ed thread, the thread is emptied, and the RPC from the speci\336ed thread returns with) 72 159.36 P
+(RPC_F) 72 147.36 T
+(A) 100.7 147.36 T
+(T) 106.81 147.36 T
+(AL_ALER) 112.12 147.36 T
+(T) 155.93 147.36 T
+(. returns:) 161.3 147.36 T
+(KERN_SUCCESS - The thread was found and will make no further) 72 123.36 T
+(state change until alert processing completes.) 346.54 123.36 T
+(KERN_INV) 72 99.36 T
+(ALID_ARGUMENT - The thread no longer exists.) 120.67 99.36 T
+72 90 558 684 C
+198 310.02 432 684 C
+3 10 Q
+0 X
+0 K
+(Threads) 210.66 598.69 T
+(Root) 210.66 565.45 T
+(Head) 289.36 567.1 T
+210.66 614.75 234.27 632.12 R
+0.5 H
+2 Z
+N
+(Shuttle) 210.66 640.24 T
+264.88 571.07 267.88 576.26 270.88 571.07 3 L
+0 Z
+3 X
+N
+260.01 551.34 260.01 567.96 267.88 559.65 267.88 576.01 4 L
+2 Z
+N
+0 X
+(Alert) 247.33 541.59 T
+239.47 618.37 234.27 621.37 239.47 624.37 3 L
+0 Z
+N
+311.36 595.01 308.36 589.82 305.36 595.01 3 L
+N
+234.27 621.37 308.36 621.37 308.36 589.82 3 L
+N
+(Alert) 293.97 639.48 T
+(Exception Re-raised) 293.97 628.4 T
+326.1 594.01 323.1 588.82 320.1 594.01 3 L
+3 X
+N
+335.58 622.06 335.58 613.75 323.1 613.75 323.1 589.07 4 L
+2 Z
+N
+0 X
+(Case 4: Alert is F) 210.66 673.32 T
+(A) 286.76 673.32 T
+(T) 292.69 673.32 T
+(AL and PROP) 298.05 673.32 T
+(AGA) 360.09 673.32 T
+(TE) 380.46 673.32 T
+(Handler returns F) 210.66 662.24 T
+(ALSE) 287.87 662.24 T
+391.07 642.18 422.55 658.8 R
+3 H
+N
+(T) 366.46 643.3 T
+(ask) 371.45 643.3 T
+(Unhandled Alert) 351.68 564.69 T
+(Exception) 364.46 553.98 T
+211.04 577.95 238.55 586.95 R
+0.5 H
+N
+256.88 577.95 284.39 586.95 R
+N
+302.73 577.95 330.23 586.95 R
+N
+250.08 578.64 238.54 581.95 250.08 585.26 3 L
+0 Z
+N
+238.79 581.95 256.88 581.95 2 L
+2 Z
+N
+295.92 578.64 284.39 581.95 295.92 585.26 3 L
+0 Z
+N
+284.64 581.95 302.73 581.95 2 L
+2 Z
+N
+348.57 577.95 376.08 586.95 R
+N
+393.35 628.81 396.66 640.35 399.97 628.81 3 L
+0 Z
+N
+376.66 583.35 396.66 583.35 396.66 640.1 3 L
+2 Z
+N
+404.35 630.81 407.66 642.35 410.97 630.81 3 L
+0 Z
+N
+407.66 574.35 407.66 642.1 2 L
+2 Z
+N
+(Case 5: Alert is F) 204.66 496.32 T
+(A) 280.76 496.32 T
+(T) 286.69 496.32 T
+(AL and LOCAL) 292.05 496.32 T
+(Handler returns F) 204.66 485.36 T
+(ALSE) 281.87 485.36 T
+(Threads) 212.05 412.53 T
+(Root) 212.05 379.29 T
+(Head) 290.75 380.93 T
+212.05 428.58 235.66 445.96 R
+N
+(Shuttle) 212.05 454.08 T
+266.27 384.91 269.27 390.1 272.27 384.91 3 L
+0 Z
+3 X
+N
+261.4 365.17 261.4 381.79 269.27 373.48 269.27 389.85 4 L
+2 Z
+N
+0 X
+(Alert) 248.72 355.42 T
+240.86 442.2 235.66 445.2 240.86 448.2 3 L
+0 Z
+N
+293.75 408.85 290.75 403.65 287.75 408.85 3 L
+N
+235.66 445.2 290.75 445.2 290.75 403.65 3 L
+N
+389.46 468.02 420.94 484.64 R
+3 H
+2 Z
+N
+(T) 363.85 471.14 T
+(ask) 368.85 471.14 T
+(Unhandled Alert) 353.07 378.53 T
+(Exception) 365.85 367.82 T
+212.43 391.79 239.94 400.79 R
+0.5 H
+N
+258.27 391.79 285.78 400.79 R
+N
+304.12 391.79 331.62 400.79 R
+N
+251.47 392.48 239.93 395.79 251.47 399.1 3 L
+0 Z
+N
+240.18 395.79 258.27 395.79 2 L
+2 Z
+N
+297.32 392.48 285.78 395.79 297.32 399.1 3 L
+0 Z
+N
+286.03 395.79 304.12 395.79 2 L
+2 Z
+N
+360.96 392.79 388.47 401.79 R
+N
+395.74 453.65 399.05 465.19 402.36 453.65 3 L
+0 Z
+N
+391.05 398.19 399.05 398.19 399.05 464.94 3 L
+2 Z
+N
+406.64 453.68 410.05 465.19 413.25 453.62 3 L
+0 Z
+N
+409.39 391.3 410.05 464.94 2 L
+2 Z
+N
+(RPC returns) 297.29 446.33 T
+(RPC_F) 297.29 435.38 T
+(A) 329.5 435.38 T
+(T) 335.42 435.38 T
+(AL_ALER) 340.79 435.38 T
+(T) 384.5 435.38 T
+341.82 391.64 330.29 394.95 341.82 398.26 3 L
+0 Z
+1 X
+N
+373.42 400.35 374.01 425.38 350.09 425.38 350.09 394.95 330.54 394.95 5 L
+2 Z
+N
+198 309 430 330 R
+7 X
+V
+0 12 Q
+0 X
+(Figure -) 198 322 T
+(Alert Handler Returns F) 245.31 322 T
+(ALSE) 379.27 322 T
+72 90 558 684 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "33" 34
+%%Page: "34" 34
+612 792 0 FMBEGINPAGE
+54 750.68 540 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(T) 54 739.85 T
+(rans-node RPC) 59 739.85 T
+54 726.98 540 726.98 2 L
+0.25 H
+N
+54 75.33 540 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(34) 54 59.95 T
+0 9 Q
+( of) 65.11 59.95 T
+0 10 Q
+( 35) 76.1 59.95 T
+2 F
+(KERN_NO_ALER) 54 677.33 T
+(T_HANDLER - No alert handler) 131.13 677.33 T
+54 634 540 637 C
+54 636.15 288 636.15 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(5.0) 54 641 T
+(T) 81 641 T
+(rans-node RPC) 87.67 641 T
+2 10 Q
+0.11 ( Eventually) 54 613.33 P
+0.11 (, shuttles will have to be able to migrate to other nodes to support network transparent RPC. The case of shut-) 99.26 613.33 P
+0 (tles with respect to nodes is almost strictly analogous to the case of threads with respect to tasks. There are four ways that) 54 601.33 P
+(shuttles can traverse a network to other nodes:) 54 589.33 T
+4 11 Q
+(\245) 54 571.33 T
+2 10 Q
+(Incoming RPC.) 67.75 571.33 T
+4 11 Q
+(\245) 54 556.33 T
+2 10 Q
+(Return of Incoming RPC.) 67.75 556.33 T
+4 11 Q
+(\245) 54 541.33 T
+2 10 Q
+(Outgoing RPC.) 67.75 541.33 T
+4 11 Q
+(\245) 54 526.33 T
+2 10 Q
+(Return of Outgoing RPC.) 67.75 526.33 T
+0 F
+(5.1) 54 494.33 T
+(Incoming RPC) 81 494.33 T
+2 F
+0.01 (There has to be a pool of ready to run shuttles available for RPCs coming in from other nodes. Shuttles from this pool are) 54 471.33 P
+-0.24 (used to execute the x-Kernel based network RPC protocol. As soon a an RPC message arrives from another node, it is pro-) 54 459.33 P
+0.25 0.04 (cessed by the thread associated with one of these shuttles. The scheduling information is the f) 54 447.33 B
+0.25 0.04 (irst thing transferred from) 434.79 447.33 B
+0.25 0.1 (the RPC message, so that the shuttle can run at the appropriate level of importance as soon as possible. After that, the) 54 435.33 B
+-0.03 (parameters are transferred to the thread\325) 54 423.33 P
+-0.03 (s stack and the ports are translated based on the destination task of the RPC. Then) 213.43 423.33 P
+0.02 (the next shuttle in the pool is started to service the x-Kernel RPC protocol stack in anticipation of the next incoming RPC) 54 411.33 P
+(message. Finally the kernel makes an upcall into the destination task using the original shuttle.) 54 399.33 T
+0 F
+(5.2) 54 367.33 T
+(Return of Incoming RPC) 81 367.33 T
+2 F
+0.16 (After the RPC leaves the task on its way to returning to a task on another node, the kernel \336rst transfers the return values) 54 344.33 P
+0.25 0.05 (and the shuttle information \050including scheduling information\051 to an RPC protocol message, then delivers the shuttle to) 54 332.33 B
+0.25 0 (the x-Kernel RPC protocol stack. This shuttle is responsible for the execution within the RPC protocol until the protocol) 54 320.33 B
+0.2 (veri\336es that the shuttle has arrived and been accepted at the node of the destination task. The shuttle is then returned to a) 54 308.33 P
+(wait state in the pool of shuttles waiting for incoming RPCs.) 54 296.33 T
+0 F
+(5.3) 54 264.33 T
+(Outgoing RPC) 81 264.33 T
+2 F
+0.05 ( After the RPC leaves the task on its way to a task on another node, the kernel \336rst transfers the in parameters of the RPC) 54 241.33 P
+0.25 0.05 (and the shuttle information \050including scheduling information\051 to an RPC protocol message, then delivers the shuttle to) 54 229.33 B
+0.25 0 (the x-Kernel RPC protocol stack. This shuttle is responsible for the execution within the RPC protocol until the protocol) 54 217.33 B
+0.1 (veri\336es that the shuttle has arrived and been accepted at the node of the destination task. The shuttle is then placed a wait) 54 205.33 P
+(state in the pool of shuttles waiting for RPC returns.) 54 193.33 T
+0 F
+(5.4) 54 161.33 T
+(Return of Outgoing RPC) 83.5 161.33 T
+2 F
+0.25 0.02 ( When and RPC returns from another node, the shuttle associated with the RPC chain at that return point is retrieved by) 54 138.33 B
+0.12 (the RPC protocol. It is then processed by the thread associated with shuttle within the RPC protocol stack and the kernel.) 54 126.33 P
+0.11 (The scheduling information is the \336rst thing transferred from the RPC protocol message, so that the shuttle can run at the) 54 114.33 P
+FMENDPAGE
+%%EndPage: "34" 35
+%%Page: "35" 35
+612 792 0 FMBEGINPAGE
+72 750.68 558 750.68 2 L
+2 H
+0 Z
+0 X
+0 K
+N
+0 9 Q
+(Bibliography) 72 739.85 T
+72 726.98 558 726.98 2 L
+0.25 H
+N
+72 75.33 558 75.33 2 L
+2 H
+2 Z
+N
+0 10 Q
+(35) 522.29 59.95 T
+0 9 Q
+( of) 533.41 59.95 T
+0 10 Q
+(35) 546.89 59.95 T
+2 F
+0.25 0.02 (appropriate level of importance as soon as possible. After that, the return values are transferred to the thread\325) 72 677.33 B
+0.25 0.02 (s stack and) 513.44 677.33 B
+(the ports are translated based on the task to which the RPC is returning. Finally the kernel returns the shuttle into task.) 72 665.33 T
+0 F
+(5.5) 72 633.33 T
+(Network RPC protocol) 99 633.33 T
+2 F
+(<T) 72 610.33 T
+(o be done.>) 83.04 610.33 T
+0 F
+(5.6) 72 578.33 T
+(Distributed Shuttle Integrity and Related Protocols) 99 578.33 T
+2 F
+(<T) 72 555.33 T
+(o be done.>) 83.04 555.33 T
+72 512 558 515 C
+72 514.16 306 514.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(6.0) 72 519 T
+(Bibliography) 99 519 T
+2 10 Q
+([Co93]) 72 495.33 T
+(M. Condict, D. Mitchell, F) 124.99 495.33 T
+(. Reynolds. \322Server Co-location Projecr Proposal\323, OSF RI TR, 1993.) 231.36 495.33 T
+([Fo93]) 72 477.33 T
+(B. Ford, J. Lepreau. Evolving Mach 3.0 to Use Migrating Threads. UUCS-93-022.) 124.99 477.33 T
+([Gr93]) 72 459.33 T
+(G. Hamilton, P) 124.99 459.33 T
+(. Kougiouris. \322The Spring Nucleus: A Microkernel for Objects\323, SMLI TR-93-14) 184.41 459.33 T
+([Ha94]) 72 441.33 T
+(R. Haydt. Scheduling Framework. Forthcoming OSF/RI T) 124.99 441.33 T
+(echnical Report. April 1994.) 357.77 441.33 T
+([Re93]) 72 423.33 T
+(F) 124.99 423.33 T
+(. Reynolds, F) 129.75 423.33 T
+(. T) 182.26 423.33 T
+(ravostino, R. MacDonald, D. Elliston, K. Lopere. Design for an New Untyped IPC for) 193.01 423.33 T
+(Mach. OSF/RI Operating Systems Collected Papers V) 125.99 411.33 T
+(ol. II, 1993) 341.51 411.33 T
+([T) 72 393.33 T
+(r93]) 81.08 393.33 T
+(F) 124.99 393.33 T
+(. T) 129.75 393.33 T
+(ravostino. Untyped MIG: The Protocol. OSF/RI Operating Systems Collected Papers V) 140.5 393.33 T
+(ol. II, 1993.) 489 393.33 T
+([T) 72 375.33 T
+(r94]) 81.08 375.33 T
+(F) 124.99 375.33 T
+(. T) 129.75 375.33 T
+(ravostino. Real-T) 140.5 375.33 T
+(ime Local and Remote IPC: Architecture and Design. Forthcoming OSF/RI T) 210.1 375.33 T
+(echnical) 520.04 375.33 T
+(Report. April 1994.) 125.99 363.33 T
+62.8 456 64.8 466 R
+V
+FMENDPAGE
+%%EndPage: "35" 36
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 35 1
+%%DocumentFonts: Helvetica-Bold
+%%+ Times-Bold
+%%+ Times-Roman
+%%+ Helvetica
+%%+ Courier-Bold
+%%+ Times-Italic

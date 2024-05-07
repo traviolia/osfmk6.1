@@ -1,0 +1,3611 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 14 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Bold FMFONTDEFINE
+2 0 /Helvetica FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Courier FMFONTDEFINE
+5 0 /Helvetica-Bold FMFONTDEFINE
+6 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 1) 513.08 47.33 T
+1 14 Q
+(Micr) 118.99 710.67 T
+(okernel Modularity with Integrated Kernel Performance) 148.26 710.67 T
+1 11 Q
+(1) 487.52 716.27 T
+0 10 Q
+(Open Software Foundation) 251.87 605.33 T
+(Research Institute) 270.05 593.33 T
+(1 Cambridge Center) 265.47 581.33 T
+(Cambride, MA 02142) 262 569.33 T
+1 F
+-0.18 (Abstract) 144 541.33 P
+0 F
+-0.18 (. Microkernel-based operating systems are often much slower than compara-) 181.19 541.33 P
+(ble integrated kernels, mainly because system calls use RPC between protection) 144 529.33 T
+(domains, and because data copies between user processes and the OS require VM) 144 517.33 T
+-0.34 (manipulations. The use of multiple domains has traditionally been viewed as the basis) 144 505.33 P
+(for microkernel modularity) 144 493.33 T
+(, but in fact modularity within the OS need not be imple-) 252.16 493.33 T
+-0.11 (mented with this overhead, because the modules trust one another) 144 481.33 P
+-0.11 (. By collocating the) 405.64 481.33 P
+(OSF/1 server and the Mach microkernel within a single domain, and transparently) 144 469.33 T
+-0.18 (short-circuiting the message-based RPC\325) 144 457.33 P
+-0.18 (s into a more ef) 306.4 457.33 P
+-0.18 (\336cient form, we obtained per-) 367.66 457.33 P
+(formance no worse than 8% slower than the equivalent OSF/1 integrated kernel on) 144 445.33 T
+(demanding workload benchmarks. When collocated, a server) 144 433.33 T
+(\325) 388.62 433.33 T
+(s threads remain pre-) 391.39 433.33 T
+(emptible and all of its text and data remain pageable. Because the location transpar-) 144 421.33 T
+(ency of Mach RPC is preserved, the same binary server program can run collocated) 144 409.33 T
+(with Mach, or as an ordinary user task \050with lower performance\051. Further) 144 397.33 T
+(, since the) 436.42 397.33 T
+(short-circuiting code is generated by MIG, multiple servers can be simultaneously) 144 385.33 T
+-0.14 (collocated with Mach, as performance needs dictate, with no changes to the MIG dec-) 144 373.33 P
+-0.08 (larations. For all of these reasons, we preserve modularity while signi\336cantly improv-) 144 361.33 P
+(ing performance.) 144 349.33 T
+1 12 Q
+(1. Intr) 72 322 T
+(oduction and Backgr) 104.43 322 T
+(ound) 211.51 322 T
+0 10 Q
+(In the late 1980\325) 90 304.33 T
+(s, operating system designs consisting of a \322microkernel\323 \050MK\051 with one or more server tasks) 155.23 304.33 T
+(layered on top of it became increasingly popular with researchers and developers [Acc86, Hil92, Ren88, Roz92].) 72 292.33 T
+(T) 72 280.33 T
+(oday) 77.41 280.33 T
+(, in the mid-1990\325) 96.19 280.33 T
+(s, they have not yet achieved the same popularity with the product divisions of OS vendors,) 167.82 280.33 T
+(nor with end users. There are good reasons for both of these situations, which we examine below) 72 268.33 T
+(.) 458.84 268.33 T
+(Some of the appeal of microkernel-based operating systems comes from features like these:) 90 252.33 T
+(\245 Development is eased by reduced complexity and interconnectivity of modules. The) 108 236.33 T
+-0.14 (server\050s\051 can only interact with the microkernel and with each other through limited and) 115.2 224.33 P
+(well understood interfaces. T) 115.2 212.33 T
+(ypically) 231.08 212.33 T
+(, there is little or no shared memory) 262.63 212.33 T
+(, and an inter-) 404.66 212.33 T
+(face generator \050e.g., MIG, with Mach\051 is used to declare and implement the allowed) 115.2 200.33 T
+(interfaces.) 115.2 188.33 T
+(\245 Many dif) 108 172.33 T
+(ferent OS \322personalities\323 can be implemented as servers on top of the same) 150.74 172.33 T
+(general-purpose microkernel, reducing total development ef) 115.2 160.33 T
+(fort. The servers can share) 354.83 160.33 T
+(the same set of device drivers, scheduler and memory management system.) 115.2 148.33 T
+(\245 Porting an OS to a new platform is simpli\336ed by the fact that most machine-dependent) 108 132.33 T
+72 105 540 120 C
+81 118 225 118 2 L
+0.5 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 9 Q
+0 X
+0 K
+(1. This research was supported in part by the Advanced Research Projects Agency \050ARP) 90 99 T
+(A\051 and the Air Force Material) 408.15 99 T
+(Command \050AFMC\051.) 90 88 T
+0 10 Q
+(Michael Condict) 191.55 677.33 T
+(condict@osf.or) 191.76 665.33 T
+(g) 253.24 665.33 T
+(Don Bolinger) 359.65 677.33 T
+(bolinger@osf.or) 351.81 665.33 T
+(g) 417.19 665.33 T
+(Dave Mitchell) 196.27 645.33 T
+(dwm@osf.or) 196.48 633.33 T
+(g) 248.53 633.33 T
+(\203amonn McManus) 348.83 645.33 T
+(emcmanus@osf.or) 347.1 633.33 T
+(g) 421.91 633.33 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 2) 513.08 47.33 T
+(code \050and porting ef) 115.2 713.33 T
+(fort\051 is con\336ned to the microkernel, which is smaller than the com-) 195.79 713.33 T
+-0.05 (plete OS. Morevoer) 115.2 701.33 P
+-0.05 (, once the microkernel is ported, it provides a common base for port-) 193.81 701.33 P
+(ing any number of dif) 115.2 689.33 T
+(ferent OS personalities, avoiding redundant work.) 202.18 689.33 T
+(\245 Multiple OS personalities can be run simultaneously) 108 673.33 T
+(, allowing more \337exible allocation) 323.22 673.33 T
+(of software to hardware. \050It remains to be demonstrated that this is a real advantage,) 115.2 661.33 T
+(given the fact that running two operating systems on the same hardware greatly) 115.2 649.33 T
+-0.23 (increases the hardware requirements. It is probably superior to emulate one OS personal-) 115.2 637.33 P
+-0.18 (ity inside another , since this allows sharing of data and devices between the two [as e.g.) 115.2 625.33 P
+(in W) 115.2 613.33 T
+(ABI, a UNIX-based emulator for Microsoft W) 133.8 613.33 T
+(indows, from Sun].\051) 319.64 613.33 T
+(\245 User) 108 597.33 T
+(-mode OS servers can be debugged using the same tools as for user programs.) 132.67 597.33 T
+(Moreover) 115.2 585.33 T
+(, bugs in the OS server under development cannot crash other OS servers run-) 154.21 585.33 T
+(ning on the same system. \050At the OSF Research Institute, we debug OSF/1 servers by) 115.2 573.33 T
+(running them as user processes under another) 115.2 561.33 T
+(, more stable OSF/1 server on the same) 296.88 561.33 T
+(machine.\051) 115.2 549.33 T
+(\245 There are fewer constraints on the programming of the OS servers, since they run in a) 108 533.33 T
+-0.26 (user) 115.2 521.33 P
+-0.26 (-context, rather then being an integral part of the kernel. For example, server threads) 131.65 521.33 P
+(can be pre-emptible, the server code and data can be pageable, and there is no need to) 115.2 509.33 T
+-0.2 (block out interrupts in critical sections of code. The pageability of the server reduces the) 115.2 497.33 P
+(need for run-time or compile time feature con\336guration. A full-featured OS server can) 115.2 485.33 T
+-0.17 (be loaded and only the portion of it that is used will be paged in \050assuming good locality) 115.2 473.33 P
+(of reference within its modules\051.) 115.2 461.33 T
+-0.04 (Note, however) 90 445.33 P
+-0.04 (, that most of the above advantages are of interest only to the developer) 148.4 445.33 P
+-0.04 (, not the end user) 432.84 445.33 P
+-0.04 (. And the) 500.7 445.33 P
+(one that is visible to end users \050multiple OS personalities\051 is of questionable utility for most of them. On the other) 72 433.33 T
+(hand, one aspect of MK-based operating systems has been painfully visible to the end user) 72 421.33 T
+(, namely reduced perfor-) 433.84 421.33 T
+(mance compared to an equivalent integrated kernel \050IK\051 design. Since users don\325) 72 409.33 T
+(t directly reap the advantages of an) 395.45 409.33 T
+(MK system, they are understandably not willing to accept any noticeable performance degradation in exchange for) 72 397.33 T
+(them.) 72 385.33 T
+-0.31 (How noticeable is this degradation? It varies across the range of microkernels, but in the Mach-based systems we) 90 369.33 P
+(have measured, it is on the order of 20-40% in realistic workload benchmarks. Microbenchmarks, such as the \322null\323) 72 357.33 T
+(system call, typically show a 10-15x reduction in speed. This magnitude of degradation simply will not be tolerated) 72 345.33 T
+(by many users.) 72 333.33 T
+(The goal of the project reported here was to \336nd a way to retain most or all of the advantages of this modular) 90 317.33 T
+-0.09 (approach to operating system design, while eliminating any signi\336cant performance dif) 72 305.33 P
+-0.09 (ference compared to the tradi-) 419.9 305.33 P
+(tional IK design. W) 72 293.33 T
+(e began with an early version of the system since released by OSF as OSF/1 Rel. 1.3 MK\321a) 150.04 293.33 T
+(Mach 3.0 microkernel and an emulator) 72 281.33 T
+(-free) 227.24 281.33 T
+0 8 Q
+(2) 246.09 285.33 T
+0 10 Q
+( Unix single server) 250.09 281.33 T
+(. W) 325.32 281.33 T
+(e extensively modi\336ed this system to improve its) 338.95 281.33 T
+-0.08 (performance without abandoning its basic architecture, comparing its throughout to an equivalent IK version of OSF/) 72 269.33 P
+(1. W) 72 257.33 T
+(e will refer to our modi\336ed MK system as OSF/1 MK6.) 90.63 257.33 T
+-0.21 (In Section 2, we analyze the causes of poor performance in the MK system we started from, and begin to suggest) 90 241.33 P
+(how they can be reduced. Section 3 describes the two principal means we used to improve performance in OSF/1) 72 229.33 T
+-0.08 (MK6, based on our analysis: kernel collocation and short-circuited RPC. Section 4 presents our results to date, while) 72 217.33 P
+(Section 5 contrasts our work to previous ef) 72 205.33 T
+(forts in related areas. Finally) 243.65 205.33 T
+(, in Section 6 we brie\337y outline future direc-) 357.63 205.33 T
+(tions for the improved MK system we have implemented.) 72 193.33 T
+1 12 Q
+(2. The Cost of Hardwar) 72 166 T
+(e-Enfor) 193.37 166 T
+(ced Modularity) 232.46 166 T
+0 10 Q
+(W) 90 148.33 T
+(e now attempt to categorize and quantify the overhead in a typical microkernel-based operating system, run-) 98.64 148.33 T
+-0.08 (ning a typical workload. By \322overhead\323, we mean processing that has no counterpart in the equivalent integrated ker-) 72 136.33 P
+(nel. For this purpose, we use OSF/1 Rel. 1.3 MK, running on an Intel 80486-based system, since we have an) 72 124.33 T
+(equivalent IK, OSF/1 Rel. 1.3, available for comparison. In fact over 90% of the OSF/1 server code in the MK ver-) 72 112.33 T
+72 83 540 98 C
+81 96 225 96 2 L
+0.5 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 9 Q
+0 X
+0 K
+(2. See Section 2 for a discussion of the emulator issue for Mach-based UNIX servers.) 90 77 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 3) 513.08 47.33 T
+-0.33 (sion of the system is unchanged from the OSF/1 IK, and the code that dif) 72 677.33 P
+-0.33 (fers consists almost entirely of glue code that) 359.46 677.33 P
+(implements the layer between the server and users and between the server and Mach. This makes it easier to decide) 72 665.33 T
+(what constitutes overhead, and to separate out the true cost of modularizing the OS using separate protection) 72 653.33 T
+(domains.) 72 641.33 T
+-0.11 (W) 90 625.33 P
+-0.11 (e chose the Intel 80x86 processor because it is the primary reference platform for the Mach-based OS develop-) 98.64 625.33 P
+(ment at OSF) 72 613.33 T
+(. It was also one of the main platforms in the development of Mach at CMU. Hence it is reasonable to) 121.73 613.33 T
+-0.35 (assume that the implementations of the Mach 3.0 microkernel and the OSF/1 single server on this platform are mature) 72 601.33 P
+(and have been tuned extensively) 72 589.33 T
+(. A similar level of maturity and tuning can be assumed for OSF/1 IK, which is the) 201.25 589.33 T
+(basis for commercial products.) 72 577.33 T
+-0.03 (The performance analysis presented here is based, except where noted, on measurements taken on our DEC 450) 90 561.33 P
+(ST systems, which are IBM PC clones containing a 486DX/50 processor) 72 549.33 T
+(, a 256KB secondary cache, 20-32MB of) 362.8 549.33 T
+-0.08 (RAM, an Adaptec 1740 EISA F) 72 537.33 P
+-0.08 (AST SCSI II adapter) 199.11 537.33 P
+-0.08 (, and SCSI II disk drives. On other platforms, e.g. HP-P) 282.03 537.33 P
+-0.08 (A RISC,) 503.23 537.33 P
+(a greater disparity has been seen between the performance of integrated kernels and Mach microkernel-based sys-) 72 525.33 T
+(tems.) 72 513.33 T
+-0.22 (W) 90 497.33 P
+-0.22 (e have chosen one of the commercial workload benchmark programs in our performance analysis here, since it) 98.64 497.33 P
+(contains a fairly broad and relatively typical mix of UNIX system calls and user) 72 485.33 T
+(-mode activity) 391.84 485.33 T
+(. The benchmark,) 449.21 485.33 T
+(known as AIM III \050Release 2.0\051 is one of several in a suite supplied by the AIM Corporation. Other workload bench-) 72 473.33 T
+(marks could be expected to show similar results.) 72 461.33 T
+-0.14 (AIM III consists of a simulated multi-user workload, where each user does a \336xed amount of work, and the num-) 90 445.33 P
+(ber of simultaneous users can be speci\336ed. For our purposes, the only benchmark output that is relevant is the real) 72 433.33 T
+(time required for all simulated users to complete the workload. Figure 1 shows a graph of the performance of OSF/1) 72 421.33 T
+(IK and OSF/1 MK \050before applying the results of the work reported here\051 running AIM III with the number of simu-) 72 157.33 T
+(lated users varying from 2 to 30. As can be seen, the performance degradation in the microkernel-based OSF/1 is on) 72 145.33 T
+(the order of 30-40%.) 72 133.33 T
+(W) 90 117.33 T
+(e used pro\336ling, micro benchmarks and other techniques to categorize and quantify the overhead in OSF/1) 98.64 117.33 T
+(MK. Figure) 72 105.33 T
+(2) 121.69 105.33 T
+( gives a breakdown of the major sources of overhead in AIM III at the 8-user level. Below) 126.69 105.33 T
+(, we discuss) 486.86 105.33 T
+(the reasons for each of the lar) 72 93.33 T
+(gest categories of overhead and how much they could be reduced. Based on our experi-) 190.04 93.33 T
+(ence with other OS servers, such as the BSD4.3 server from CMU, we believe that the analysis is relatively insensi-) 72 81.33 T
+72 72 540 684 C
+94.07 167.99 517.93 418 C
+178.62 224.3 197.62 238.98 215.12 255.32 233.12 272 250.62 286.68 269.12 307.02 286.62 322.7
+ 305.12 336.37 322.62 352.05 341.12 370.06 358.12 393.08 376.51 407.08 376.51 407.08 13 L
+3 H
+2 Z
+0 X
+0 K
+N
+178.97 218.97 195.52 227.9 215.39 235.71 231.95 246.86 250.16 259.69 267.54 270.85 286.58 282.01
+ 303.96 293.73 321.35 304.33 339.56 317.16 357.77 326.08 375.16 339.47 394.2 351.75 410.75 361.79 428.97 374.62 15 L
+4 X
+N
+2 10 Q
+0 X
+(50) 110.94 230.62 T
+(100) 104.83 254.64 T
+(150) 104.83 278.65 T
+(200) 104.83 302.67 T
+(250) 104.83 326.68 T
+(300) 104.83 350.7 T
+(350) 104.83 374.71 T
+142.51 401.8 142.51 207.63 448.51 207.63 3 L
+1 H
+N
+144.84 375.73 151.41 375.73 2 L
+N
+7 X
+90 450 2.5 1.95 178.13 218.69 G
+0 X
+90 450 2.5 1.95 178.13 218.69 A
+7 X
+90 450 2.5 1.95 197.13 228.25 G
+0 X
+90 450 2.5 1.95 197.13 228.25 A
+7 X
+90 450 2.5 1.95 214.97 236.37 G
+0 X
+90 450 2.5 1.95 214.97 236.37 A
+7 X
+90 450 2.5 1.95 232.13 247.71 G
+0 X
+90 450 2.5 1.95 232.13 247.71 A
+7 X
+90 450 2.5 1.95 250.97 260.16 G
+0 X
+90 450 2.5 1.95 250.97 260.16 A
+7 X
+90 450 2.5 1.95 268.13 270.94 G
+0 X
+90 450 2.5 1.95 268.13 270.94 A
+7 X
+90 450 2.5 1.95 286.13 282.28 G
+0 X
+90 450 2.5 1.95 286.13 282.28 A
+7 X
+90 450 2.5 1.95 304.97 294.18 G
+0 X
+90 450 2.5 1.95 304.97 294.18 A
+7 X
+90 450 2.5 1.95 322.13 304.96 G
+0 X
+90 450 2.5 1.95 322.13 304.96 A
+7 X
+90 450 2.5 1.95 340.97 317.42 G
+0 X
+90 450 2.5 1.95 340.97 317.42 A
+7 X
+90 450 2.5 1.95 358.13 325.98 G
+0 X
+90 450 2.5 1.95 358.13 325.98 A
+7 X
+90 450 2.5 1.95 376.13 340.1 G
+0 X
+90 450 2.5 1.95 376.13 340.1 A
+7 X
+90 450 2.5 1.95 394.97 351.99 G
+0 X
+90 450 2.5 1.95 394.97 351.99 A
+7 X
+90 450 2.5 1.95 412.13 361.67 G
+0 X
+90 450 2.5 1.95 412.13 361.67 A
+7 X
+90 450 2.5 1.95 430.97 373.56 G
+0 X
+90 450 2.5 1.95 430.97 373.56 A
+143.47 375.62 152.47 375.62 2 L
+N
+7 X
+90 450 2.5 1.95 178.01 224.36 G
+0.5 H
+0 X
+90 450 2.5 1.95 178.01 224.36 A
+7 X
+90 450 2.5 1.95 197.09 239.03 G
+0 X
+90 450 2.5 1.95 197.09 239.03 A
+7 X
+90 450 2.5 1.95 214.93 255.6 G
+0 X
+90 450 2.5 1.95 214.93 255.6 A
+7 X
+90 450 2.5 1.95 232.51 272.39 G
+0 X
+90 450 2.5 1.95 232.51 272.39 A
+7 X
+90 450 2.5 1.95 249.93 287.29 G
+0 X
+90 450 2.5 1.95 249.93 287.29 A
+7 X
+90 450 2.5 1.95 269.09 307.41 G
+0 X
+90 450 2.5 1.95 269.09 307.41 A
+7 X
+90 450 2.5 1.95 286.09 322.98 G
+0 X
+90 450 2.5 1.95 286.09 322.98 A
+7 X
+90 450 2.5 1.95 304.92 336.32 G
+0 X
+90 450 2.5 1.95 304.92 336.32 A
+7 X
+90 450 2.5 1.95 322.09 352.33 G
+0 X
+90 450 2.5 1.95 322.09 352.33 A
+7 X
+90 450 2.5 1.95 340.42 370.23 G
+0 X
+90 450 2.5 1.95 340.42 370.23 A
+7 X
+90 450 2.5 1.95 357.59 392.91 G
+0 X
+90 450 2.5 1.95 357.59 392.91 A
+(2) 176.47 191.82 T
+(10) 245.63 191.82 T
+(20) 336.47 192.38 T
+(30) 425.63 191.82 T
+(SECONDS) 164.8 384.44 T
+(USERS) 408.76 220.73 T
+418.51 285.01 454.51 285.01 2 L
+3 H
+4 X
+N
+418.51 267 454.51 267 2 L
+0 X
+N
+(OSF/1 IK) 361.6 281.02 T
+(OSF/1 MK) 361.57 263.59 T
+143.13 351.94 152.13 351.94 2 L
+1 H
+N
+143.13 328.04 152.13 328.04 2 L
+N
+142.8 304.35 151.8 304.35 2 L
+N
+143.13 280.23 152.13 280.23 2 L
+N
+142.8 256.55 151.8 256.55 2 L
+N
+142.8 232.64 151.8 232.64 2 L
+N
+137.51 169.61 470.51 184.36 R
+7 X
+V
+1 F
+0 X
+(Figure 1. OSF/1 1.3 MK vs. OSF/1 1.3 IK on 1-30 User AIM III) 169.5 177.69 T
+178.51 208.96 178.51 214.97 2 L
+N
+250.51 208.06 250.51 214.97 2 L
+N
+430.51 208.06 430.51 214.97 2 L
+N
+340.51 208.96 340.51 215.87 2 L
+N
+143.3 400.43 152.3 400.43 2 L
+N
+72 72 540 684 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 4) 513.08 47.33 T
+(tive to which UNIX server is measured \050and applies to other OS servers, too, for that matter\051.) 72 468.93 T
+3 F
+(Syscall Path) 90 452.93 T
+0 F
+(. The overhead introduced by the MK\325) 139.69 452.93 T
+(s lengthier system call path is about as lar) 293.19 452.93 T
+(ge as all the others) 459.57 452.93 T
+(combined \05022 out of 46 seconds\051. The) 72 440.93 T
+4 9 Q
+(mach_msg) 226.34 440.93 T
+0 10 Q
+( service in the middle of this path accounts for at least 15 of the 22) 269.48 440.93 T
+(seconds, and the rest is due to the user) 72 428.93 T
+(-mode processing in the server to process the message buf) 224.75 428.93 T
+(fers and manage the) 456.89 428.93 T
+-0.17 (threads that are receiving messages. \050Unlike other Mach-based UNIX servers, OSF/1 MK does not have an emulator) 72 416.93 P
+-0.17 (,) 535.17 416.93 P
+-0.34 (so no emulator time appears in the system-call path; see below) 72 404.93 P
+-0.34 (, for more discussion of this.\051 W) 318.38 404.93 P
+-0.34 (e can see that the use of) 444.93 404.93 P
+(a highly general, inter) 72 392.93 T
+(-domain IPC service in each system call is by itself responsible for an unacceptable overhead.) 159.51 392.93 T
+-0.23 (Much work has been done to reduce the cost of inter) 72 380.93 P
+-0.23 (-domain RPC \050see Section 5\051, but the best results reported yet for) 279.33 380.93 P
+(Mach only reduce the null RPC code path \050by a factor of 3\051, and do not reduce the end-to-end cost of ar) 72 368.93 T
+(gument pro-) 485.94 368.93 T
+(cessing. The processing of ar) 72 356.93 T
+(guments such as arrays and ports is inherently much less ef) 188.12 356.93 T
+(\336cient across protection) 424.44 356.93 T
+(domains. The arrays have to be copied \050up to four times, in MIG-based RPC\051 or mapped using heavyweight virtual-) 72 344.93 T
+-0.17 (memory operations, and port rights have to be manipulated, involving potentially expensive port name lookup. In the) 72 332.93 P
+(integrated kernel, on the other hand, a cross-module procedure call has negligible ar) 72 320.93 T
+(gument-processing overhead,) 407.67 320.93 T
+(since the called module can directly access the arrays and port rights of the calling module by reference.) 72 308.93 T
+(Conventional wisdom says that MK-based systems can reduce their overhead to IK levels by the technique of) 90 292.93 T
+(implementing part of the semantics of system calls in a user) 72 280.93 T
+(-mode \322emulator\323 library that is linked into the address) 311.09 280.93 T
+-0.07 (space of each user task. The idea is that much of the semantics of the performance-critical system calls will be imple-) 72 268.93 P
+-0.08 (mented as library functions that cache OS data and/or share memory with the OS server and communicate with it via) 72 256.93 P
+(RPC only when necessary) 72 244.93 T
+(. Previous versions of OSF/1 MK used this method, inherited from the CMU BSD 4.3) 176 244.93 T
+(server) 72 232.93 T
+(. Unfortunately) 95.87 232.93 T
+(, the semantics of UNIX are in directcon\337ict with this approach. For example:) 156.28 232.93 T
+-0.1 (\245 UNIX requires that when an illegal address is passed as a parameter to a system call, the) 108 216.93 P
+(system call return the error \322EF) 115.2 204.93 T
+(AUL) 240.75 204.93 T
+(T\323 and the program continue to execute \050that is, it) 260.37 204.93 T
+-0.27 (cannot suf) 115.2 192.93 P
+-0.27 (fer an addressing fault\051. But almost any technique that tries to implement such) 156.11 192.93 P
+(a system call in a library routine will have to go to great pains to avoid taking a fault on) 115.2 180.93 T
+(the bad address, and its performance and complexity will suf) 115.2 168.93 T
+(fer accordingly) 358.18 168.93 T
+(. \050The best) 418.3 168.93 T
+(method that was devised for the OSF/1 server was to let the fault happen, and arrange) 115.2 156.93 T
+(that the server could help the emulator library recover) 115.2 144.93 T
+(, based on the knowledge that the) 330.18 144.93 T
+(emulator was referencing user) 115.2 132.93 T
+(-memory when the fault ocurred. This meant that every) 235.72 132.93 T
+(reference to user memory by emulator library routines had to go through specially) 115.2 120.93 T
+(designed functions, analogous to copyin/copyout in a UNIX kernel.\051) 115.2 108.93 T
+(\245 Any savings in communication between the emulator library and the OS server that is) 108 92.93 T
+-0.16 (based on the use of shared memory is likely to run into the problem of locks. Even if the) 115.2 80.93 P
+72 72 540 720 C
+90.9 475.6 521.1 720 C
+152.32 534.01 163.84 534.01 2 L
+0.5 H
+2 Z
+0 X
+0 K
+N
+152.32 557.04 163.84 557.04 2 L
+N
+152.32 545.52 163.84 545.52 2 L
+N
+152.32 603.12 163.84 603.12 2 L
+N
+152.32 626.16 163.84 626.16 2 L
+N
+152.32 614.64 163.84 614.64 2 L
+N
+152.32 568.56 163.84 568.56 2 L
+N
+152.32 591.6 163.84 591.6 2 L
+N
+152.32 580.08 163.84 580.08 2 L
+N
+152.32 637.68 163.84 637.68 2 L
+N
+152.32 660.72 163.84 660.72 2 L
+N
+152.32 649.2 163.84 649.2 2 L
+N
+152.32 672.24 163.84 672.24 2 L
+N
+152.32 695.28 163.84 695.28 2 L
+N
+152.32 683.76 163.84 683.76 2 L
+N
+469.1 534.01 480.61 534.01 2 L
+N
+469.1 568.56 480.61 568.56 2 L
+N
+469.1 551.29 480.61 551.29 2 L
+N
+469.1 637.68 480.61 637.68 2 L
+N
+469.1 672.24 480.61 672.24 2 L
+N
+469.1 654.96 480.61 654.96 2 L
+N
+469.1 585.84 480.61 585.84 2 L
+N
+469.1 620.4 480.61 620.4 2 L
+N
+469.1 603.12 480.61 603.12 2 L
+N
+469.1 689.51 480.61 689.51 2 L
+N
+469.1 706.79 480.61 706.79 2 L
+N
+2 10 Q
+(20) 135.04 553.25 T
+(40) 135.04 576.29 T
+(60) 135.04 599.33 T
+(80) 135.04 622.37 T
+(100) 129.28 645.41 T
+(120) 129.28 668.44 T
+(140) 129.28 691.48 T
+(0) 140.8 530.21 T
+(sec.) 0 -270 121.14 610.02 TF
+163.84 591.6 198.39 634.1 R
+14 X
+V
+0 X
+N
+204.15 591.6 238.71 634.1 R
+14 X
+V
+0 X
+N
+163.84 534.01 198.39 591.6 R
+4 X
+V
+0 X
+N
+204.15 534.01 238.71 591.6 R
+4 X
+V
+0 X
+N
+204.15 634.1 238.71 688.18 R
+7 X
+V
+0 X
+N
+(IK) 175.35 518.7 T
+(MK) 209.91 518.7 T
+(0) 493.41 529.35 T
+(10) 487 563.03 T
+(20) 487 597.59 T
+(30) 487 632.15 T
+(40) 487 666.71 T
+(50) 488.29 702.13 T
+434.54 534.01 469.1 693.36 R
+7 X
+V
+0 X
+N
+239.33 687.33 434.98 692.71 2 L
+8 X
+N
+239.33 633.33 434.54 534.01 2 L
+11 X
+N
+434.54 608.88 469.1 608.88 2 L
+0 X
+N
+434.54 620.4 469.1 620.4 2 L
+N
+434.54 637.68 469.1 637.68 2 L
+N
+434.54 653.04 469.1 653.04 2 L
+N
+434.54 666.48 469.1 666.48 2 L
+N
+(OSF/1) 384.62 586.07 T
+(Syscall) 382.7 574.55 T
+(Path) 388.46 561.75 T
+(22) 444.13 568.79 T
+(3) 449.28 610.99 T
+(5) 448.66 625.08 T
+(4.5) 449.26 639.42 T
+(3.5) 449.26 654.14 T
+(Mach Svc. Path) 338.51 603.35 T
+(Copyin/Copyout) 335.98 623.42 T
+(MP Locks) 367.78 640.64 T
+(Miscellaneous) 344.94 676.54 T
+(Server) 313.59 659.26 T
+(Thread Sync.) 350.06 659.26 T
+(User CPU) 244.47 563.9 T
+(Time) 253.43 552.38 T
+(OSF/1) 244.47 607.6 T
+(Time) 247.67 596.08 T
+(MK) 261.55 660.48 T
+(Overhead) 243.63 649.83 T
+(sec.) 0 -270 512.79 606.59 TF
+423.1 663.75 434.37 659.63 422.63 657.15 422.86 660.45 4 Y
+V
+416.88 660.87 422.87 660.45 2 L
+N
+423.24 647.13 434.67 643.5 423.05 640.52 423.14 643.83 4 Y
+V
+416.88 644 423.16 643.82 2 L
+N
+423.15 628.81 434.69 625.5 423.15 622.19 423.15 625.5 4 Y
+V
+416.88 625.5 423.15 625.5 2 L
+N
+422.39 614.87 434.36 614 423.75 608.4 423.07 611.63 4 Y
+V
+416.25 610.25 423.09 611.63 2 L
+N
+99.9 481.5 513.9 508.5 R
+7 X
+V
+1 F
+0 X
+(Figure 2. Overhead of OSF/1 1.3 MK Compared with OSF/1 1.3 IK) 163.64 501.83 T
+(Running AIM III on Intel 486DX50) 230.96 489.83 T
+72 72 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 5) 513.08 47.33 T
+(emulator library can only read the shared memory) 115.2 713.33 T
+(, it will probably need to be able to) 314.67 713.33 T
+(lock out the OS server for short periods of time to ensure that it can see a consistent) 115.2 701.33 T
+(snapshot of the state of the system. But we were unable to implement a safe locking) 115.2 689.33 T
+(mechanism between code in an untrusted user task and a trusted OS server) 115.2 677.33 T
+(. There) 412.76 677.33 T
+(doesn\325) 115.2 665.33 T
+(t seem to be a correct answer to the question of what should be done if the user) 141.66 665.33 T
+(task holds a lock inde\336nitely) 115.2 653.33 T
+(. An obvious example of this is the implementation of the) 229.49 653.33 T
+(read or write system call in an emulator library that has mapped the \336le into its address) 115.2 641.33 T
+(space. The emulator must update both the mapped \336le data and the \336le pointer as an) 115.2 629.33 T
+-0.33 (atomic action. This requires taking a lock on the open \336le data structure in the OS server) 115.2 617.33 P
+-0.33 (.) 463.33 617.33 P
+(But the emulator code and data can be modi\336ed by the user program, accidentally or) 115.2 605.33 T
+(maliciously) 115.2 593.33 T
+(. It may refuse to ever relinquish the lock, or it may put arbitrary illegal val-) 161.2 593.33 T
+(ues into any shared memory it can access, and the OS server must protect against this.) 115.2 581.33 T
+-0.21 (There are many more problems associated with untrusted emulators \050see [Pat93]\051, forcing us to conclude that the) 90 565.33 P
+(performance advantages of an emulator library are outweighed by the complexity and robustness problems it intro-) 72 553.33 T
+-0.06 (duces. Hence we made the necessary extensions to the Mach exception mechanism to allow it to serve as an ef) 72 541.33 P
+-0.06 (\336cient) 512.57 541.33 P
+(basis for \336elding UNIX system call traps and forwarding them as RPCs to a speci\336ed OS server) 72 529.33 T
+(. This in turn means) 455.08 529.33 T
+(that each UNIX system call always causes an RPC to the OS server) 72 517.33 T
+(.) 341.25 517.33 T
+(Since we cannot avoid lar) 90 501.33 T
+(ge overhead in cross-domain RPCs with non-trivial ar) 193.07 501.33 T
+(guments, and we cannot safely) 408.58 501.33 T
+(reduce the number of RPCs between the user and the OS server using emulation, we disagree with the claim of) 72 489.33 T
+([Ber92] that the performance of IPC is increasingly irrelevant for microkernel-based operating systems. On the con-) 72 477.33 T
+(trary) 72 465.33 T
+(, it is the foremost problem with such systems.) 90.22 465.33 T
+3 F
+(Copyin/Copyout) 90 449.33 T
+0 F
+(. The next lar) 155.52 449.33 T
+(gest overhead is the cost of copying data between user processes and the servers.) 208.63 449.33 T
+(Dif) 72 437.33 T
+(ferent methods are used in dif) 85.14 437.33 T
+(ferent versions of the OSF/1 server but there are heavy VM costs associated with) 204.04 437.33 T
+-0.08 (each one. A kernel-collocated server has much more direct access to the address space of each user task, without any) 72 425.33 P
+(need to invoke the VM system.) 72 413.33 T
+3 F
+(Multipr) 90 397.33 T
+(ocessor Locks) 120.17 397.33 T
+0 F
+(. Since the server has pre-emptible threads, it needs to protect concurrent access to data) 176.52 397.33 T
+-0.01 (structures. The server uses the same locks that protect the OSF/1 data structures in the integrated kernel when it runs) 72 385.33 P
+-0.33 (on a multiprocessor) 72 373.33 P
+-0.33 (. It is more ef) 149.63 373.33 P
+-0.33 (\336cient to prevent pre-emption in the server) 201.72 373.33 P
+-0.33 (, when running on a uniprocessor) 370.35 373.33 P
+-0.33 (, just like) 501.55 373.33 P
+-0.16 (in the integrated kernel. \050Note that this overhead is not inherent in a user) 72 361.33 P
+-0.16 (-mode server) 359.46 361.33 P
+-0.16 (, given that Mach could support) 411.35 361.33 P
+(non-preemptible threads in user tasks.\051) 72 349.33 T
+3 F
+-0.09 (Mach Service Path) 90 333.33 P
+0 F
+-0.09 (. This overhead was much lar) 165.88 333.33 P
+-0.09 (ger when most Mach services were accessed via message-based) 282.95 333.33 P
+(RPC. T) 72 321.33 T
+(oday) 101.29 321.33 T
+(, many of the performance-critical services have been reimplemented as conventional trap-based system) 120.07 321.33 T
+(calls, but there are enough message-based services left to produce a signi\336cant performance problem. Changing all) 72 309.33 T
+(the services on an ad hoc basis to trap-based versions is not attractive from a software complexity viewpoint, and in) 72 297.33 T
+(any case does not reduce the cost of the user) 72 285.33 T
+(-to-kernel privilege transition, an overhead not present within the inte-) 249.15 285.33 T
+(grated kernel.) 72 273.33 T
+3 F
+(Thr) 90 257.33 T
+(ead synchr) 104.07 257.33 T
+(onization) 147.28 257.33 T
+0 F
+(. C-threads is the user) 184.49 257.33 T
+(-mode threads package used by the server to multiplex multiple) 271.17 257.33 T
+(user threads on top of fewer Mach threads, which often allows ef) 72 245.33 T
+(\336cient user) 331.61 245.33 T
+(-mode context switches to take place,) 375.54 245.33 T
+-0.1 (without the use of any Mach services. But when Mach context switches are necessary) 72 233.33 P
+-0.1 (, null messages are are sent and) 412.5 233.33 P
+-0.23 (received, which is many times more expensive then a kernel-level context switch. While more ef) 72 221.33 P
+-0.23 (\336cient interfaces can) 455.49 221.33 P
+(be designed for thread synchronization, accessing these services still requires a user) 72 209.33 T
+(-to-kernel trap.) 406.54 209.33 T
+-0.22 (Much of the performance penalty associated with microkernel-based systems results from locating the OS server) 90 193.33 P
+-0.16 (in user space and using a single, general-purpose message mechanism to implement RPC. This adds a huge overhead) 72 181.33 P
+(to the system call path and makes OS access to both kernel and user memory more costly) 72 169.33 T
+(. Given that these penalties) 428.32 169.33 T
+-0.28 (cannot be suf) 72 157.33 P
+-0.28 (\336ciently lessened while the OS server remains in a separate protection domain, our principal strategy for) 124.55 157.33 P
+(improving MK performance in OSF/1 MK6 has been to move the OS server back into the kernel address space, and) 72 145.33 T
+(to optimize RPC for the case where client and server are in the same protection domain. Our primary challenge has) 72 133.33 T
+(been to do this without compromising the traditional MK modularity) 72 121.33 T
+(, and with minimal changes to Mach semantics.) 346.48 121.33 T
+(Our success in reconciling these con\337icting goals is the unique contribution of our project.) 72 109.33 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 6) 513.08 47.33 T
+1 12 Q
+(3. New Appr) 72 712 T
+(oach to Modularity in Mach) 136.74 712 T
+0 10 Q
+(The central idea behind our approach is to separate the notions of \322protection domain\323 \050address space\051 and \322pro-) 90 694.33 T
+(gram\323 \050a completely-linked executable\051. If server programs trust each other) 72 682.33 T
+(, we can load multiple instances into the) 373.56 682.33 T
+-0.28 (same domain, a process we call \322collocation.\323 User) 72 670.33 P
+-0.28 (-mode programs can be collocated in a single Mach task. The case) 275.51 670.33 P
+(of interest to us, however) 72 658.33 T
+(, is kernel-mode collocation, in which the Mach kernel and an OS personality server run in) 172.91 658.33 T
+(the kernel address space at kernel privilege, but not necessarily in the same Mach task. This form of collocation) 72 646.33 T
+(enables a wide variety of performance improvements.) 72 634.33 T
+-0.09 (T) 90 618.33 P
+-0.09 (o preserve all the bene\336ts of microkernel-based OS\325) 95.41 618.33 P
+-0.09 (s, we decided that the traditional approach of modularizing) 302.66 618.33 P
+(an OS by the use of dynamically-loaded, passive subroutine modules is not suf) 72 606.33 T
+(\336cient, since it can introduce hard-to-) 386.9 606.33 T
+-0.09 (track dependencies \050both architectural and pragmatic\051 on this mode of operation. W) 72 594.33 P
+-0.09 (e wish to run the same server pro-) 404.92 594.33 P
+-0.2 (gram both collocated and in user space. During development, when robustness problems are expected, we run the OS) 72 582.33 P
+(server in user mode, where hardware protection isolates it from other programs. Then, when it\325) 72 570.33 T
+(s suf) 451.43 570.33 T
+(\336ciently stable,) 469.85 570.33 T
+-0.09 (we can run the same server binary collocated with other programs. So we do not require the server or any portions of) 72 558.33 P
+(it to be recompiled or relinked to run collocated with other servers \050including the Mach kernel \322server\323\051.) 72 546.33 T
+(This raises the question of how we achieve performance optimizations in the collocated case, without explicitly) 90 530.33 T
+-0.04 (changing the server to take advantage of it. The primary answer is short-circuited RPC, in which we avoid the use of) 72 518.33 P
+-0.15 (a heavy-weight Mach service to implement RPC between collocated programs, replacing it with a light-weight mech-) 72 506.33 P
+-0.07 (anism more like a dynamically-linked procedure call, which takes full advantage of the fact that the client ar) 72 494.33 P
+-0.07 (guments) 503.7 494.33 P
+(can be directly accessed by the server code. Section 3.2 discusses this in detail.) 72 482.33 T
+1 12 Q
+(3.1 Kernel Collocation) 72 455 T
+0 10 Q
+-0.24 (Collocation is the enabling technology underlying many of the performance optimizations we have made. In gen-) 90 437.33 P
+-0.25 (eral, collocation means loading more than one program into the same address space. Though our design contemplates) 72 425.33 P
+-0.33 (using it in both user and kernel address spaces, up to now our work has concentrated on kernel collocation, so here we) 72 413.33 P
+(summarize that form.) 72 401.33 T
+(In our current implementation, each kernel-loaded program runs in a separate task, with part of the kernel\325) 90 385.33 T
+(s) 514.67 385.33 T
+-0.07 (address space alllocated as its own address space. Kernel-loaded tasks are created just like ordinary user) 72 373.33 P
+-0.07 (-space tasks.) 487.12 373.33 P
+-0.19 (A \336rst OS server may be kernel-loaded at boot time; additional programs may be kernel-loaded later via a new server) 72 361.33 P
+(system call interface. A collocated program runs almost exactly as if it were in user space. The program itself is not) 72 349.33 T
+(obliged to be aware that it is collocated, although it can check to enable speci\336c optimizations. Further) 72 337.33 T
+(, a collocated) 481.88 337.33 T
+-0.12 (program looks the same to Mach. Its threads remain preemptible, and its text and data remain pageable, though some) 72 325.33 P
+(machine architectures may partially restrict this.) 72 313.33 T
+0 8 Q
+(3) 264.63 317.33 T
+0 10 Q
+-0.15 (While each kernel-loaded program is in its own task, all share the same IPC namespace, in which port names are) 90 297.33 P
+-0.14 (pointers to kernel-internal port data structures. This enables us to speed up the short-circuited RPC path signi\336cantly) 72 285.33 P
+-0.14 (,) 535.15 285.33 P
+(by avoiding port name translation. However) 72 273.33 T
+(, the lack of separate port namespaces does impose a few restrictions on) 248.14 273.33 T
+-0.29 (collocated servers. Most importantly) 72 261.33 P
+-0.29 (, they may not rename or destroy ports, since doing so might invalidate access by) 217.05 261.33 P
+(other servers to shared kernel data. For related reasons, it is impractical to unload collocated servers from the kernel) 72 249.33 T
+(individually) 72 237.33 T
+(, unless they reliably reference-count all of their ports.) 119.66 237.33 T
+1 12 Q
+(3.2 Short-Cir) 72 210 T
+(cuited RPC) 139.74 210 T
+0 10 Q
+(Our performance analysis showed that the biggest performance problem of Mach microkernel-based systems is) 90 192.33 T
+(the cost of RPC, which is used pervasively between user tasks, the OS server\050s\051 and the Mach kernel. It was deemed) 72 180.33 T
+(necessary to greatly increase the performance of all these boundary crossings. Since, even when the server is kernel-) 72 168.33 T
+(loaded, they include both intra-domain and cross-domain RPCs, we designed two new mechanisms for RPC, cover-) 72 156.33 T
+-0.04 (ing both cases) 72 144.33 P
+0 8 Q
+-0.04 (4) 128.54 148.33 P
+0 10 Q
+-0.04 (. In order to make the choice of mechanism transparent to the client, MIG generates code in the client) 132.54 144.33 P
+72 116 540 131 C
+81 129 225 129 2 L
+0.5 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 9 Q
+0 X
+0 K
+(3. One problematic case is when exception handling requires the use of a stack, as on the 80x86, for instance. Our cur-) 90 110 T
+(rent 80x86 implementation requires server thread stacks to be wired, so that page faults will not occur while processing) 90 99 T
+(other exception types. However) 90 88 T
+(, even on 80x86 there are ways to avoid wiring thread stacks, and in the coming months) 203.95 88 T
+(we will be implementing one of them.) 90 77 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 7) 513.08 47.33 T
+(stub function that checks to see whether the tar) 72 713.33 T
+(get server is in the same address space. If so it uses the more ef) 259.46 713.33 T
+(\336cient) 511.58 713.33 T
+(mechanism, which we call short-circuited RPC. Otherwise, it uses a new Mach service,) 72 701.33 T
+4 9 Q
+(mach_rpc) 423.69 701.33 T
+0 10 Q
+(, which we have) 466.83 701.33 T
+-0.26 (designed to be capable of completely replacing) 72 689.33 P
+4 9 Q
+-0.55 (mach_msg) 260.89 689.33 P
+0 10 Q
+-0.26 (-based RPC. \050T) 304.03 689.33 P
+-0.26 (oday) 364.72 689.33 P
+-0.26 (, the MIG client stub has to fall back to) 383.5 689.33 P
+4 9 Q
+-0.13 (mach_msg) 72 677.33 P
+0 10 Q
+-0.06 ( for those cases that cannot yet be handled by) 115.14 677.33 P
+4 9 Q
+-0.13 (mach_rpc) 298.28 677.33 P
+0 10 Q
+-0.06 (, so there is a third case generated in the stub, but) 341.42 677.33 P
+(this is temporary) 72 665.33 T
+(.\051 The mechanisms used in the server to receive RPCs are identical, regardless of whether short-cir-) 138.53 665.33 T
+(cuiting or) 72 653.33 T
+4 9 Q
+(mach_rpc) 113.09 653.33 T
+0 10 Q
+( is used, so the server does not need to be aware of whether it is collocated with its clients.) 156.23 653.33 T
+(The algorithm at the core of both new RPC mechanisms is the partial thread migration developed at the Univer-) 90 637.33 T
+(sity of Utah [For93b]. Although it is not the most ef) 72 625.33 T
+(\336cient light-weight RPC possible, the Utah approach is a useful) 279.21 625.33 T
+(compromise to avoid making servers aware of which kind of RPC they are currently using, while preserving the full) 72 613.33 T
+(functionality of Mach. Full-scale migrating RPC would imply that client threads jump into server procedures that) 72 601.33 T
+(implement the desired service, i.e. that the thread executing the server code is the same thread as the client thread.) 72 589.33 T
+(This is not compatible with today\325) 72 577.33 T
+(s Mach-based OS servers, which may hold send rights on client thread ports and) 208.88 577.33 T
+-0.09 (may want to suspend or terminate the client threads without af) 72 565.33 P
+-0.09 (fecting any server threads. Thus we decided that in the) 320.22 565.33 P
+(near term there must appear to be separate client and server threads, with dif) 72 553.33 T
+(ferent port names. Another reason to do) 377.12 553.33 T
+(this is to allow separate control of the client and server) 72 541.33 T
+(, that is, \336ner) 290.33 541.33 T
+(-grained thread control. In Section 6, we discuss) 342.6 541.33 T
+(plans to implement a more ef) 72 529.33 T
+(\336cient, full-scale thread migration.) 188.69 529.33 T
+(In the Utah mechanism, a Mach thread is divided into two parts, which we call the thread activation and the) 90 513.33 T
+-0.18 (thread shuttle. The activation contains little more than the port naming the thread and its saved execution context; the) 72 501.33 P
+(shuttle contains the rest of the thread-speci\336c data, including the scheduler state. During RPC, the shuttle detaches) 72 489.33 T
+(itself temporarily from the client activation and migrates to a waiting activation in the server) 72 477.33 T
+(, where it begins execut-) 441.35 477.33 T
+(ing the server function that implements the RPC. Externally the client thread appears to be dif) 72 465.33 T
+(ferent from the server) 447.12 465.33 T
+-0.01 (thread and each can be controlled separately) 72 453.33 P
+-0.01 (. Upon return from the server function, the shuttle reattaches itself to the) 248.37 453.33 P
+(original client activation, which was remembered by linking it into the list of activations associated with this shuttle) 72 441.33 T
+(in one or more nested RPCs. This list is called the RPC chain. Since the client and server activations are named by) 72 429.33 T
+(dif) 72 417.33 T
+(ferent thread ports, they can be separately controlled with) 82.92 417.33 T
+4 9 Q
+(thread_abort) 315.52 417.33 T
+0 10 Q
+(,) 380.23 417.33 T
+4 9 Q
+(thread_suspend) 385.22 417.33 T
+0 10 Q
+(, etc. The use of) 460.72 417.33 T
+(these algorithms and data structures to implement RPC is detailed in Figure 3, below) 72 405.33 T
+(.) 410.59 405.33 T
+-0.31 (The performance advantages of this thread migration mechanism, compared to the thread context-switching used) 90 150.37 P
+-0.03 (in message-based RPC, are that no scheduler or context-switching code is on the RPC path and there is no reply port) 72 138.37 P
+(to deal with. This reduces the cost of a null RPC by a factor of 3.) 72 126.37 T
+72 94 540 109 C
+81 107 225 107 2 L
+0.5 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 9 Q
+0 X
+0 K
+(4. The) 90 88 T
+4 8 Q
+(mach_rpc) 115.21 88 T
+0 9 Q
+( service was designed jointly with the real-time Mach project here, which also needed a new RPC ser-) 153.59 88 T
+(vice for its own requirements.) 90 77 T
+108.5 163.03 503.5 402 C
+126.5 308 261.5 389 R
+7 X
+0 K
+V
+0.5 H
+0 Z
+0 X
+N
+126.5 209 261.5 290 R
+7 X
+V
+0 X
+N
+351.5 209 486.5 290 R
+7 X
+V
+0 X
+N
+351.5 308 486.5 389 R
+7 X
+V
+0 X
+N
+126.5 165.67 486.5 177 R
+7 X
+V
+1 10 Q
+0 X
+(Figure 3. Thread Migration During RPC) 219.33 170.33 T
+5 F
+(Before RPC) 169.98 193.21 T
+(RPC in Progress) 380.64 193.21 T
+306.5 389 306.5 209 2 L
+3 H
+N
+422.63 253.62 476.63 280.62 R
+0.5 H
+N
+422.63 217.62 476.63 253.62 R
+13 X
+V
+0 X
+N
+2 F
+(client) 136.4 319.21 T
+(server) 135.5 218 T
+(server) 360.5 220.21 T
+(client) 361.4 319.21 T
+405.51 213 481.88 285.25 R
+8 X
+N
+0 X
+(thread) 0 -270 418.13 233.87 TF
+(activation) 426.85 268.77 T
+(shuttle) 435.5 230.82 T
+(2) 446.51 257.62 T
+198.25 352.75 252.25 379.75 R
+N
+198.25 316.75 252.25 352.75 R
+13 X
+V
+0 X
+N
+181.13 312.13 257.5 384.38 R
+8 X
+N
+0 X
+(thread) 0 -270 193.76 333 TF
+(activation) 202.48 367.9 T
+(shuttle) 209.38 331.12 T
+(1) 222.13 356.75 T
+198.5 254 252.5 281 R
+N
+(activation) 202.5 268.88 T
+(2) 222.5 258.56 T
+397.76 245.19 405.49 236.01 394.07 239.7 395.92 242.44 4 Y
+8 X
+V
+257.51 334.5 395.93 242.44 2 L
+N
+423.5 353 477.5 380 R
+0 X
+N
+(activation) 427.5 367.88 T
+(1) 447.5 357.56 T
+453.81 292.54 450.5 281 447.2 292.54 450.5 292.54 4 Y
+V
+447.2 341.46 450.5 353 453.81 341.46 450.5 341.46 4 Y
+V
+450.5 292.54 450.5 341.46 2 L
+N
+(RPC) 456.38 325 T
+(chain) 456.38 313.82 T
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 8) 513.08 47.33 T
+(Unfortunately) 90 713.33 T
+(, there is still substantial overhead involved in the processing of the ar) 145.42 713.33 T
+(guments of an RPC. In-line) 424.78 713.33 T
+(arrays and scalar ar) 72 701.33 T
+(guments must be copied to a message buf) 149.24 701.33 T
+(fer) 315.34 701.33 T
+(, virtual copies of out-of-line arrays must be made,) 326.03 701.33 T
+(port-right counts must be manipulated and so forth. Message-based RPC always needs the overhead of a stub func-) 72 689.33 T
+(tion in the server) 72 677.33 T
+(, to unmarshall the input ar) 139.05 677.33 T
+(guments and marshal the output ar) 246.58 677.33 T
+(guments. But when client and server) 384.37 677.33 T
+-0.32 (are collocated, much, if not all, of this overhead is unnecessary) 72 665.33 P
+-0.32 (. And any ar) 319.92 665.33 P
+-0.32 (gument processing that is necessary can be) 368.19 665.33 P
+(done by the client stub, which can then call the server work function directly) 72 653.33 T
+(, eliminating any server) 377.79 653.33 T
+(-side stub.) 471.97 653.33 T
+(T) 90 637.33 T
+(o achieve this savings, our two new versions of RPC do not use a message buf) 95.41 637.33 T
+(fer) 408.36 637.33 T
+(. Instead, two dif) 418.9 637.33 T
+(ferent tech-) 486.17 637.33 T
+(niques are employed. Both of them require that the server use the same new Mach interfaces to register information) 72 625.33 T
+(about the RPCs it is willing to accept. This information includes, for each RPC routine, the address of the server) 72 613.33 T
+-0.39 (implementation function and a description of the routine\325) 72 601.33 P
+-0.39 (s ar) 297.74 601.33 P
+-0.39 (gument signature. Routines are registered together in sets) 311.33 601.33 P
+(called \322subsystems\323, which in object-oriented terms de\336ne a class. \050A suitable subsystem data structure is automati-) 72 589.33 T
+-0.03 (cally generated by MIG.\051 Each port that is to be a tar) 72 577.33 P
+-0.03 (get of such an RPC must be registered as associated with one of) 282.47 577.33 P
+-0.13 (these subsystems, that is, it names an object in the class. W) 72 565.33 P
+-0.13 (ithin Mach, this is recorded by having a pointer from each) 306.64 565.33 P
+(port structure to the associated subsystem data structure, which is supplied by the server during registration. See \336g-) 72 553.33 T
+-0.16 (ure 4) 72 541.33 P
+-0.16 ( for an outline of these data structures. Note that, given a port name and a routine number) 92.1 541.33 P
+-0.16 (, it now requires only a) 446.28 541.33 P
+(port name lookup to \336nd the port structure, then a couple of pointer dereferences and an array index to get to the) 72 325.33 T
+(address of the server function that implements that routine. And for kernel-loaded clients, the port name lookup,) 72 313.33 T
+-0.12 (which is the expensive part, is eliminated because we arrange that the port name is a pointer to the port data structure.) 72 301.33 P
+(In short-circuited RPC between collocated client and server) 90 285.33 T
+(, the MIG client stub does whatever copying and) 328.03 285.33 T
+(deallocation of ar) 72 273.33 T
+(guments is required by the MIG declaration \050we have extended MIG to allow call-by-reference) 141.76 273.33 T
+(semantics, in addition to call-by-value semantics\051, and then calls a \322glue-code\323 function in Mach that constructs a) 72 261.33 T
+(procedure call frame on the stack associated with a waiting activation in the server) 72 249.33 T
+(, migrates the shuttle to the server) 401.62 249.33 T
+(activation, and then transfers control to the correct server implementation function using the server) 72 237.33 T
+(-registered infor-) 467.06 237.33 T
+(mation.) 72 225.33 T
+(When cross-domain RPC is necessary) 90 209.33 T
+(, the client stub cannot do the ar) 241.47 209.33 T
+(gument processing, since it does not have) 368.98 209.33 T
+(access to the server) 72 197.33 T
+(\325) 149.8 197.33 T
+(s address space. In this case, it calls the) 152.58 197.33 T
+4 9 Q
+(mach_rpc) 312.18 197.33 T
+0 10 Q
+( service, supplying it with port, RPC routine) 355.32 197.33 T
+-0.34 (number and a machine-dependent identi\336cation of the client stub ar) 72 185.33 P
+-0.34 (guments \050they may be in registers or on the stack\051.) 338.83 185.33 P
+-0.1 (The implementation of) 72 173.33 P
+4 9 Q
+-0.22 (mach_rpc) 165.8 173.33 P
+0 10 Q
+-0.1 ( is responsible for both the ar) 208.95 173.33 P
+-0.1 (gument processing and the thread migration. The sub-) 324.74 173.33 P
+(system registered by the server contains all the information necessary to process the ar) 72 161.33 T
+(guments for each routine,) 417.39 161.33 T
+(which will consist of copying \050or virtually copying, using VM mapping with copy-on-write\051 arrays and port-rights) 72 149.33 T
+-0.22 (from client to server at the beginning of the RPC, deallocating them \050where appropriate\051 at the end, and copying back) 72 137.33 P
+(any output ar) 72 125.33 T
+(guments.) 124.56 125.33 T
+-0.01 (The major dif) 90 109.33 P
+-0.01 (ference between the two types of RPC is that the client stub does the ar) 144.76 109.33 P
+-0.01 (gument processing in short-) 428.71 109.33 P
+(circuited RPC, whereas Mach does it \050less ef) 72 97.33 T
+(\336ciently\051 in the) 251.13 97.33 T
+4 9 Q
+(mach_rpc) 314.71 97.33 T
+0 10 Q
+( service.) 357.85 97.33 T
+(W) 90 81.33 T
+(e now examine where the two types of RPC can be employed to maximize performance. The RPC\325) 98.64 81.33 T
+(s used in a) 494.19 81.33 T
+72 72 540 720 C
+103.12 335.67 508.88 538 C
+7 X
+0 K
+90 450 21.6 14.4 172.87 429.04 G
+0.5 H
+2 Z
+0 X
+90 450 21.6 14.4 172.87 429.04 A
+7 X
+90 450 21.6 14.4 173.54 470.37 G
+0 X
+90 450 21.6 14.4 173.54 470.37 A
+7 X
+90 450 21.6 14.4 174.47 510.11 G
+0 X
+90 450 21.6 14.4 174.47 510.11 A
+110.12 342.67 506.95 354 R
+7 X
+V
+1 10 Q
+0 X
+(Figure 4. RPC Linkage Data Structures) 223.87 347.33 T
+208.47 364.11 309.27 392.91 R
+7 X
+V
+1 H
+1 X
+N
+2 F
+0 X
+(RPC Port Struct) 228.07 375.45 T
+5 F
+(. . .) 250.6 420.81 T
+323.67 450.51 388.46 522.51 R
+7 X
+V
+0 X
+N
+2 F
+(RPC) 345.25 473.44 T
+(Server) 417.66 502.91 T
+(Struct) 343.25 454.24 T
+208.47 450.51 309.27 479.31 R
+7 X
+V
+1 X
+N
+0 X
+(RPC Port Struct) 228.07 461.84 T
+208.47 493.71 309.27 522.51 R
+7 X
+V
+1 X
+N
+0 X
+(RPC Port Struct) 228.07 505.04 T
+329.3 514.87 341.16 513.04 330.13 508.31 329.72 511.59 4 Y
+V
+302.07 508.11 329.73 511.59 2 L
+N
+329.25 496.06 339.83 501.7 333.85 491.31 331.55 493.68 4 Y
+V
+302.07 464.91 331.55 493.68 2 L
+N
+402.86 479.31 460.47 522.51 R
+N
+(Function) 413.4 490.61 T
+(Server) 417.66 452.51 T
+402.86 428.91 460.47 472.11 R
+N
+(Function) 413.4 440.21 T
+(Server) 417.66 387.71 T
+402.86 364.11 460.47 407.31 R
+N
+(Function) 413.4 375.41 T
+5 F
+(. . .) 420.86 416.95 T
+345.27 486.51 388.46 522.51 R
+5 X
+V
+0 X
+N
+2 F
+(Routine) 350.33 506.24 T
+(Subsystem) 334.46 463.71 T
+(T) 350.47 494.61 T
+(able) 355.46 494.61 T
+213.07 513.01 223.84 507.71 211.9 506.5 212.49 509.75 4 Y
+V
+186.51 514.37 212.49 509.75 2 L
+N
+213.21 469.95 223.84 464.38 211.87 463.47 212.54 466.71 4 Y
+V
+187.84 471.71 212.54 466.71 2 L
+N
+323.67 364.11 388.46 436.11 R
+7 X
+V
+0 X
+N
+(RPC) 345.25 387.05 T
+(Struct) 343.25 367.85 T
+345.27 400.11 388.46 436.11 R
+5 X
+V
+0 X
+N
+(Routine) 350.33 419.84 T
+(Subsystem) 334.46 377.31 T
+(T) 350.47 408.21 T
+(able) 355.46 408.21 T
+326.48 396.96 338.06 400.11 329.9 391.31 328.19 394.14 4 Y
+V
+302.07 378.51 328.2 394.13 2 L
+N
+390.87 521.98 402.86 522.51 392.98 515.7 391.92 518.84 4 Y
+V
+381.27 515.3 391.93 518.84 2 L
+N
+398.54 483.3 402.86 472.11 393.26 479.31 395.9 481.31 4 Y
+V
+381.27 500.9 395.91 481.31 2 L
+N
+392.36 413.12 402.86 407.31 390.87 406.68 391.61 409.9 4 Y
+V
+382.12 412 391.62 409.89 2 L
+N
+219.26 389.73 223.17 378.38 213.85 385.93 216.56 387.83 4 Y
+V
+188.51 428.37 216.56 387.83 2 L
+N
+(Port) 164.47 512.39 T
+(Name) 164.47 502.8 T
+(Port) 163.67 472.4 T
+(Name) 163.67 462.8 T
+(Port) 162.87 431.6 T
+(Name) 162.87 422 T
+72 72 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 9) 513.08 47.33 T
+(Mach microkernel-based system with a kernel-loaded server fall into three categories:) 72 713.33 T
+3 F
+(Mach-to-OS server:) 90 697.33 T
+0 F
+( In our current OSF/1 server) 170.21 697.33 T
+(, which is not emulator) 282.77 697.33 T
+(-based, OSF/1 system calls are imple-) 374.46 697.33 T
+(mented using Mach\325) 72 685.33 T
+(s exception handling facility; that is, each system call consists of a trap into the kernel, which) 153.62 685.33 T
+(then causes an exception RPC from Mach to the kernel-loaded server) 72 673.33 T
+(. This is an inter) 348.46 673.33 T
+(-domain RPC, which can be) 412.94 673.33 T
+(short-circuited.) 72 661.33 T
+3 F
+(OS server) 90 645.33 T
+(-to-Mach:) 129.49 645.33 T
+0 F
+( The kernel-loaded server uses RPC\325) 170.01 645.33 T
+(s to access Mach services. While these are also inter) 316.29 645.33 T
+(-) 524.8 645.33 T
+-0.08 (domain RPC\325) 72 633.33 P
+-0.08 (s, they cannot be short-circuited ef) 126.07 633.33 P
+-0.08 (fectively) 263.71 633.33 P
+-0.08 (, because Mach is not an ordinary server) 298.03 633.33 P
+-0.08 (. It requires that out-) 458.44 633.33 P
+(of-line memory be passed to it by a special handle, rather than a virtual address, and does not want the memory to) 72 621.33 T
+(actually be mapped into the kernel address space. Also, it can process the port-right and memory ar) 72 609.33 T
+(guments that) 468.74 609.33 T
+-0.06 (require copying more ef) 72 597.33 P
+-0.06 (\336ciently than the client stub in the OS server) 167.93 597.33 P
+-0.06 (, since it can access internal functions to do this.) 345.23 597.33 P
+-0.14 (For these reasons, we could do no better than to implement this case as a cross-domain RPC, although it really is not.) 72 585.33 P
+-0.09 (There is still a savings here compared to real cross-domain RPCs, because the kernel-loaded task has direct access to) 72 573.33 P
+(the) 72 561.33 T
+4 9 Q
+(mach_rpc) 86.71 561.33 T
+0 10 Q
+( service\321it does not have to trap to the service, as a user) 129.85 561.33 T
+(-mode task would. Also, the implementation) 356.98 561.33 T
+-0.23 (of) 72 549.33 P
+4 9 Q
+-0.5 (mach_rpc) 82.59 549.33 P
+0 10 Q
+-0.23 ( can be aware of the fact that the client is a kernel-loaded task and the server is Mach, and hence can use) 125.73 549.33 P
+(much more ef) 72 537.33 T
+(\336cient forms of ar) 127.33 537.33 T
+(gument processing, avoiding copyin costs and VM manipulations.) 199.04 537.33 T
+3 F
+-0.37 (User) 90 521.33 P
+-0.37 (-to-kernel:) 109.23 521.33 P
+0 F
+-0.37 ( In an emulator) 151.97 521.33 P
+-0.37 (-based OS, the emulator uses RPC\325) 211.45 521.33 P
+-0.37 (s to the OS server\050s\051 to implement system calls.) 350.09 521.33 P
+-0.11 (W) 72 509.33 P
+-0.11 (ith our kernel-loaded servers, this is a user) 81.04 509.33 P
+-0.11 (-mode to kernel-mode RPC, i.e. a cross-domain RPC. The emulator also) 249.41 509.33 P
+(accesses Mach services, which is another category of user) 72 497.33 T
+(-to-kernel RPC. Both of these can be implemented with) 303.54 497.33 T
+(MIG client stubs that call the) 72 485.33 T
+4 9 Q
+(mach_rpc) 190.82 485.33 T
+0 10 Q
+( service.) 233.95 485.33 T
+-0.17 (By collocating modules that communicate with one another frequently) 90 469.33 P
+-0.17 (, and providing an RPC mechanism that is) 370.05 469.33 P
+(optimized for this environment, we hoped to produce performance that is comparable to an integrated kernel. Recog-) 72 457.33 T
+(nizing that not all communicating programs can be collocated, we also designed a new) 72 445.33 T
+(, more ef) 417.77 445.33 T
+(\336cient form of inter) 453.39 445.33 T
+(-) 531.75 445.33 T
+-0.16 (domain RPC that is not message-based. The next section will report on the performance measurements we undertook) 72 433.33 P
+(to determine whether we were successful.) 72 421.33 T
+1 12 Q
+(4. Performance Results) 72 394 T
+0 10 Q
+(W) 90 376.33 T
+(e used performance parity on the AIM III benchmark \050compared to OSF/1 IK and other commercial versions) 98.64 376.33 T
+(of UNIX\051 as the success criterion for our project, among other reasons because this was the workload benchmark) 72 364.33 T
+(where we had seen the worst relative performance in the original OSF/1 MK system we started from. The current) 72 352.33 T
+(AIM III performance of OSF/1 MK6 relative to OSF/1 IK is shown in \336gure 5, below) 72 340.33 T
+(. It was measured on the same) 414.45 340.33 T
+(486DX/50 system described in Section 2:) 72 328.33 T
+(A chart comparing the performance of OSF/1 Rel. 1.3 MK \050the system before our improvements\051, OSF/1 MK6) 90 96.33 T
+-0.09 (\050the system after our improvements\051 and OSF/1 Rel. 1.3 IK on a variety of micro and workload benchmarks follows.) 72 84.33 P
+72 72 540 720 C
+97.88 109 514.12 325 C
+188.34 156.4 204.89 164.37 224.76 171.33 241.32 181.28 259.53 192.73 276.92 202.68 295.96 212.63
+ 313.34 223.08 330.73 232.53 348.94 243.97 367.15 251.93 384.54 263.87 403.58 274.82 420.14 283.77 438.36 295.21 15 L
+3 H
+2 Z
+4 X
+0 K
+N
+2 10 Q
+0 X
+(50) 120.3 166.78 T
+(100) 114.18 188.71 T
+(150) 114.18 210.64 T
+(200) 114.18 232.58 T
+(250) 114.18 254.51 T
+(300) 114.18 276.44 T
+(350) 114.18 298.37 T
+151.87 310.53 151.87 146.04 457.9 146.04 3 L
+1 H
+N
+154.21 299.57 163.21 299.57 2 L
+N
+7 X
+90 450 2.5 1.75 187.5 156.11 G
+0 X
+90 450 2.5 1.75 187.5 156.11 A
+7 X
+90 450 2.5 1.74 205.5 165.28 G
+0 X
+90 450 2.5 1.74 205.5 165.28 A
+7 X
+90 450 2.5 1.74 224.34 171.96 G
+0 X
+90 450 2.5 1.74 224.34 171.96 A
+7 X
+90 450 2.5 1.74 241.51 182.13 G
+0 X
+90 450 2.5 1.74 241.51 182.13 A
+7 X
+90 450 2.5 1.74 260.34 193.29 G
+0 X
+90 450 2.5 1.74 260.34 193.29 A
+7 X
+90 450 2.5 1.74 277.51 202.96 G
+0 X
+90 450 2.5 1.74 277.51 202.96 A
+7 X
+90 450 2.5 1.74 295.51 213.12 G
+0 X
+90 450 2.5 1.74 295.51 213.12 A
+7 X
+90 450 2.5 1.74 314.34 223.79 G
+0 X
+90 450 2.5 1.74 314.34 223.79 A
+7 X
+90 450 2.5 1.74 331.51 233.45 G
+0 X
+90 450 2.5 1.74 331.51 233.45 A
+7 X
+90 450 2.5 1.74 350.35 244.62 G
+0 X
+90 450 2.5 1.74 350.35 244.62 A
+7 X
+90 450 2.5 1.74 367.52 252.29 G
+0 X
+90 450 2.5 1.74 367.52 252.29 A
+7 X
+90 450 2.5 1.74 385.52 264.95 G
+0 X
+90 450 2.5 1.74 385.52 264.95 A
+7 X
+90 450 2.5 1.74 404.35 275.61 G
+0 X
+90 450 2.5 1.74 404.35 275.61 A
+7 X
+90 450 2.5 1.74 421.52 284.28 G
+0 X
+90 450 2.5 1.74 421.52 284.28 A
+7 X
+90 450 2.5 1.74 440.35 294.95 G
+0 X
+90 450 2.5 1.74 440.35 294.95 A
+186.96 154.78 205.29 163.91 223.63 174.07 241.13 186.25 259.47 194.37 277.8 205.54 295.3 214.68
+ 313.64 226.86 331.14 237.02 349.47 249.71 367.81 258.85 385.31 269.51 403.64 280.17 421.14 290.83 439.48 302.51 15 L
+3 H
+N
+151.33 310.94 151.33 146.45 457.36 146.45 3 L
+1 H
+N
+152.83 299.46 161.83 299.46 2 L
+N
+7 X
+90 450 2.5 1.78 186.96 154.01 G
+0.5 H
+0 X
+90 450 2.5 1.78 186.96 154.01 A
+7 X
+90 450 2.5 1.78 204.96 164.37 G
+0 X
+90 450 2.5 1.78 204.96 164.37 A
+7 X
+90 450 2.5 1.78 223.8 173.71 G
+0 X
+90 450 2.5 1.78 223.8 173.71 A
+7 X
+90 450 2.5 1.78 240.96 186.1 G
+0 X
+90 450 2.5 1.78 240.96 186.1 A
+7 X
+90 450 2.5 1.78 259.8 194.42 G
+0 X
+90 450 2.5 1.78 259.8 194.42 A
+7 X
+90 450 2.5 1.78 276.97 205.8 G
+0 X
+90 450 2.5 1.78 276.97 205.8 A
+7 X
+90 450 2.5 1.78 294.97 215.14 G
+0 X
+90 450 2.5 1.78 294.97 215.14 A
+7 X
+90 450 2.5 1.78 313.8 227.02 G
+0 X
+90 450 2.5 1.78 313.8 227.02 A
+7 X
+90 450 2.5 1.78 330.97 237.37 G
+0 X
+90 450 2.5 1.78 330.97 237.37 A
+7 X
+90 450 2.5 1.78 349.8 249.76 G
+0 X
+90 450 2.5 1.78 349.8 249.76 A
+7 X
+90 450 2.5 1.78 366.97 258.59 G
+0 X
+90 450 2.5 1.78 366.97 258.59 A
+7 X
+90 450 2.5 1.78 384.97 269.97 G
+0 X
+90 450 2.5 1.78 384.97 269.97 A
+7 X
+90 450 2.5 1.78 403.81 280.32 G
+0 X
+90 450 2.5 1.78 403.81 280.32 A
+7 X
+90 450 2.5 1.78 420.98 291.19 G
+0 X
+90 450 2.5 1.78 420.98 291.19 A
+7 X
+90 450 2.5 1.78 439.81 302.56 G
+0 X
+90 450 2.5 1.78 439.81 302.56 A
+(2) 185.84 131.34 T
+(10) 255.01 131.34 T
+(20) 345.85 131.85 T
+(30) 435.02 131.34 T
+(SECONDS) 179.17 298.88 T
+(USERS) 407.52 153.17 T
+254.05 278.3 308.05 278.3 2 L
+3 H
+4 X
+N
+253.22 260.58 307.22 260.58 2 L
+0 X
+N
+(OSF/1 IK) 197.71 274.45 T
+(OSF/1 MK6) 197.21 258.57 T
+152.5 277.84 161.5 277.84 2 L
+1 H
+N
+152.5 256.01 161.5 256.01 2 L
+N
+152.17 234.38 161.17 234.38 2 L
+N
+152.5 212.35 161.5 212.35 2 L
+N
+152.17 190.72 161.17 190.72 2 L
+N
+152.17 168.89 161.17 168.89 2 L
+N
+142.88 109 475.88 127 R
+7 X
+V
+1 F
+0 X
+(Figure 5. OSF/1 MK vs. OSF/1 IK on 1-30 User AIM III) 189.87 120.33 T
+72 72 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 10) 508.08 47.33 T
+(\050The percentage in parentheses, in the MK6 column, expresses its relative throughput compared to the OSF/1 IK, so) 72 713.33 T
+(lar) 72 701.33 T
+(ger is better) 82.36 701.33 T
+(.\051:) 129 701.33 T
+-0.09 (As can be seen, OSF/1 MK6 is no worse than 8% slower than OSF/1 IK for any of the workload benchmarks. In) 90 419.33 P
+-0.03 (the microbenchmarks \050) 72 407.33 P
+3 F
+-0.03 (getuid) 164.1 407.33 P
+0 F
+-0.03 (,) 189.08 407.33 P
+3 F
+-0.03 (fork) 194.05 407.33 P
+0 F
+-0.03 (/) 210.15 407.33 P
+3 F
+-0.03 (exec) 212.93 407.33 P
+0 F
+-0.03 (\051 its worst performance is only a little more than twice as slow as the IK, due) 230.68 407.33 P
+(to the use of short-circuited RPC.) 72 395.33 T
+-0.03 (MK6 is actually faster than the IK in NFSstone, because its networking performance is substantially better) 90 379.33 P
+-0.03 (. This) 514.8 379.33 P
+-0.11 (is mainly due to taking advantage of the more \337exible server programming environment. For example, we can af) 72 367.33 P
+-0.11 (ford) 520.96 367.33 P
+(to increase the default socket buf) 72 355.33 T
+(fer size from 4KB to 16KB, because they are pageable in the server) 203.66 355.33 T
+(.) 473.16 355.33 T
+(In attempting to account for the remaining 8% dif) 90 339.33 T
+(ference in AIM III times between MK and IK, we have calcu-) 288.57 339.33 T
+-0.05 (lated that, while it has been greatly improved, the null system call time is still responsible for over 3% overhead, and) 72 327.33 P
+(the slower program execution, for at least 4.5% \050AIM III invokes 400 forks and 800 execs at the level of 8 users.\051) 72 315.33 T
+(Thus these two overheads account for all the remaining dif) 72 303.33 T
+(ference between MK and IK. W) 306.92 303.33 T
+(e are currently examining) 434.33 303.33 T
+(the cause of the slow program execution, and plan to implement a more ef) 72 291.33 T
+(\336cient form of short-circuited RPC to) 368.27 291.33 T
+(address some of the remaining overhead in the system call path.) 72 279.33 T
+-0.25 (In order to further validate our results, and provide a comparison that is more applicable to UNIX systems in gen-) 90 263.33 P
+-0.28 (eral, we compared the performance of the improved OSF/1 MK to several dif) 72 251.33 P
+-0.28 (ferent commercial UNIX systems \050all of) 377.93 251.33 P
+(them IKs\051 that are available on the Intel x86 platform. W) 72 239.33 T
+(e also threw in one \322free\323 UNIX system, just in case the) 299.08 239.33 T
+(hacker community is producing more-performant systems than the industrial UNIX vendors. T) 72 227.33 T
+(able 2 shows the) 450.48 227.33 T
+(results for a variety of benchmarks, and Figure 6 graphs the performance of AIM III, from 2 to 30 users.) 72 215.33 T
+1 12 Q
+(T) 107.69 678 T
+(able 1: Relative Performance of OSF/1 Rel. 1.3 and MK6 \050kernel-collocated\051) 114.58 678 T
+0 10 Q
+(Benchmark) 142.56 653.33 T
+(OSF/1 Rel. 1.3 MK) 219.91 653.33 T
+(OSF/1 MK6) 327.95 653.33 T
+(OSF/1 Rel. 1.3 IK) 409.89 653.33 T
+3 F
+(getuid) 124.8 631.33 T
+0 F
+( syscall) 149.79 631.33 T
+(138) 218.4 631.33 T
+6 F
+(m) 235.89 631.33 T
+0 F
+(sec.) 241.65 631.33 T
+(31) 312 631.33 T
+6 F
+(m) 324.49 631.33 T
+0 F
+(sec. \05044%\051) 330.25 631.33 T
+(13.5) 405.6 631.33 T
+6 F
+(m) 425.59 631.33 T
+0 F
+(sec.) 431.35 631.33 T
+3 F
+(fork) 124.8 611.33 T
+0 F
+(/) 140.9 611.33 T
+3 F
+(exec) 143.68 611.33 T
+0 F
+(38/sec.) 218.4 611.33 T
+(50/sec. \05050%\051) 312 611.33 T
+(100/sec.) 405.6 611.33 T
+(AIM III, 2 users) 124.8 591.33 T
+(38.8 sec.) 218.4 591.33 T
+(24 sec. \050100%\051) 312 591.33 T
+(24 sec.) 405.6 591.33 T
+(AIM III, 8 users) 124.8 571.33 T
+(133 sec.) 218.4 571.33 T
+(88.6 sec. \05093%\051) 312 571.33 T
+(82.2 sec.) 405.6 571.33 T
+(AIM III, 30 users) 124.8 551.33 T
+(\050not measured\051) 218.4 551.33 T
+(364 sec. \05092%\051) 312 551.33 T
+(335 sec.) 405.6 551.33 T
+(NFSstone) 124.8 531.33 T
+(\050not measured\051) 218.4 531.33 T
+(140 NFSstones/sec.) 312 531.33 T
+(\050105%\051) 312 519.33 T
+(133 NFSstones/sec..) 405.6 531.33 T
+(Copy lar) 124.8 499.33 T
+(ge \336le) 159.32 499.33 T
+(\050not measured\051) 218.4 499.33 T
+-0.14 (366 KB/sec. \050122%\051) 312 499.33 P
+(300 KB/sec.) 405.6 499.33 T
+(Copy 1-byte \336le) 124.8 479.33 T
+(\050not measured\051) 218.4 479.33 T
+(24 \336les/sec. \05095%\051) 312 479.33 T
+(25.3 \336les/sec.) 405.6 479.33 T
+-0.75 (Find/grep \050400 \336les,) 124.8 459.33 P
+(4.5 MBytes\051) 124.8 447.33 T
+(\050not measured\051) 218.4 459.33 T
+(7.2 sec. \050103%\051) 312 459.33 T
+(7.4 sec.) 405.6 459.33 T
+1 12 Q
+(T) 123.68 192 T
+(able 2: Relative Performance of OSF/1 MK6 and other UNIX Systems) 130.57 192 T
+0 10 Q
+(Benchmark) 102.96 167.33 T
+(Solaris 2.1) 176.62 167.33 T
+(SCO Unix) 249.04 167.33 T
+(Free BSD) 322.15 167.33 T
+(Sys V Rel. 4.2) 384.99 167.33 T
+(OSF/1 MK6) 461.15 167.33 T
+(Null program) 96 145.33 T
+-0.24 (invoke w/) 96 133.33 P
+3 F
+-0.24 (sh) 135.46 133.33 P
+0 F
+-0.24 (\0501\051) 144.35 133.33 P
+(22/sec.) 168 145.33 T
+-0.23 (\050not measured\051) 240 145.33 P
+(87/sec.) 312 145.33 T
+-1.22 (83/sec. \050shared) 384 145.33 P
+(libraries\051) 384 133.33 T
+(35/sec \050shared) 456 145.33 T
+(libraries\051) 456 133.33 T
+(ftp get) 96 113.33 T
+(340 KB/sec.) 168 113.33 T
+(570 KB/sec.) 240 113.33 T
+(590 KB/sec.) 312 113.33 T
+(400 KB/sec.) 384 113.33 T
+(990 KB/sec.) 456 113.33 T
+(ftp put) 96 93.33 T
+(400 KB/sec.) 168 93.33 T
+(720 KB/sec.) 240 93.33 T
+(850 KB/sec.) 312 93.33 T
+(520 KB/sec.) 384 93.33 T
+(990 KB/sec.) 456 93.33 T
+118.8 667.75 118.8 440.25 2 L
+V
+0.5 H
+0 Z
+N
+212.4 668.25 212.4 439.75 2 L
+V
+N
+306 668.25 306 439.75 2 L
+V
+N
+399.6 668.25 399.6 439.75 2 L
+V
+N
+493.2 667.75 493.2 440.25 2 L
+V
+N
+118.55 668 493.45 668 2 L
+V
+N
+119.05 645.25 492.95 645.25 2 L
+V
+N
+119.05 642.75 492.95 642.75 2 L
+V
+N
+118.55 624 493.45 624 2 L
+V
+N
+118.55 604 493.45 604 2 L
+V
+N
+118.55 584 493.45 584 2 L
+V
+N
+118.55 564 493.45 564 2 L
+V
+N
+118.55 544 493.45 544 2 L
+V
+N
+118.55 512 493.45 512 2 L
+V
+N
+118.55 492 493.45 492 2 L
+V
+N
+118.55 472 493.45 472 2 L
+V
+N
+118.55 440 493.45 440 2 L
+V
+N
+90 181.75 90 86.25 2 L
+V
+N
+162 182.25 162 85.75 2 L
+V
+N
+234 182.25 234 85.75 2 L
+V
+N
+306 182.25 306 85.75 2 L
+V
+N
+378 182.25 378 85.75 2 L
+V
+N
+450 182.25 450 85.75 2 L
+V
+N
+522 181.75 522 86.25 2 L
+V
+N
+89.75 182 522.25 182 2 L
+V
+N
+90.25 159.25 521.75 159.25 2 L
+V
+N
+90.25 156.75 521.75 156.75 2 L
+V
+N
+89.75 126 522.25 126 2 L
+V
+N
+89.75 106 522.25 106 2 L
+V
+N
+89.75 86 522.25 86 2 L
+V
+N
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 11) 508.08 47.33 T
+(Some of the benchmarks need explanation. The one in T) 90 627.33 T
+(able 2 described as \322Null program invoke with) 315.25 627.33 T
+3 F
+(sh) 504.55 627.33 T
+0 F
+(\323 was) 513.44 627.33 T
+-0.25 (measured by running an empty C program using /) 72 615.33 P
+4 9 Q
+-0.53 (bin/sh) 268.78 615.33 P
+0 10 Q
+-0.25 (, whereas in the \322) 301.14 615.33 P
+3 F
+-0.25 (fork) 369.81 615.33 P
+0 F
+-0.25 (/) 385.91 615.33 P
+3 F
+-0.25 (exec) 388.69 615.33 P
+0 F
+-0.25 (\323 test of T) 406.44 615.33 P
+-0.25 (able 1, comparing OSF/) 445.24 615.33 P
+-0.29 (1 IK and MK, we measured the speed of invoking an empty program from a specially written parent process that used) 72 603.33 P
+3 F
+(fork) 72 591.33 T
+0 F
+(,) 88.1 591.33 T
+3 F
+(exec) 93.1 591.33 T
+0 F
+( and) 110.85 591.33 T
+3 F
+(wait) 130.28 591.33 T
+0 F
+(directly) 150 591.33 T
+(. In both cases, the time is measured for complete program execution, i.e. it includes the) 179.88 591.33 T
+(time for the program to exit. The shell overhead explains why the MK6 number is slower in the second table.) 72 579.33 T
+(Also, in the course of doing the AIM III measurements, we discovered that System V \050the only other UNIX sys-) 90 313.76 T
+(tem measured that uses dynamically linked shared libraries by default\051, does not use a shared-library shell, whereas) 72 301.76 T
+-0.31 (OSF/1 does. SInce the shell is invoked many times by the \322system\323 function during the execution of AIM III, and it is) 72 289.76 P
+-0.23 (substantially slower to invoke a program using shared libraries, we copied a statically linked shell on top of) 72 277.76 P
+4 9 Q
+-0.51 (/bin/sh) 499.99 277.76 P
+0 10 Q
+-0.08 (when running OSF/1 MK, to produce a more meaningful comparison. This is why the AIM III numbers for MK6 are) 72 265.76 P
+(better than in the previous table. W) 72 253.76 T
+(e should also note that we changed AIM III slightly when we ran it under Free) 211.93 253.76 T
+(BSD.) 72 241.76 T
+0 8 Q
+(5) 93.94 245.76 T
+0 10 Q
+(Finally) 90 225.76 T
+(, having recently \336nished a port of OSF/1 MK6 to the HP P) 117.68 225.76 T
+(A-RISC platform, we were able to get a pre-) 354.67 225.76 T
+(liminary performance comparison against HP/UX \050Hewlett Packard\325) 72 213.76 T
+(s commercial UNIX system\051 on an architecture) 346.24 213.76 T
+-0.07 (much dif) 72 201.76 P
+-0.07 (ferent from the Intel 486 where the other measurements were done. It should be cautioned that this measure-) 107.57 201.76 P
+(ment is based on an early port of MK6 and no tuning has yet been performed. However) 72 189.76 T
+(, one aspect of this port) 421.06 189.76 T
+72 164 540 179 C
+81 177 225 177 2 L
+0.5 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 9 Q
+0 X
+0 K
+-0.25 (5. When we \336rst measured the performance of AIM III on Free BSD, it was much slower than the other systems, leading us to) 90 158 P
+(wonder why) 72 147 T
+(. A cursory analysis showed that it was spending all its time in the create/close loop, a test which repeatedly calls) 116.09 147 T
+3 F
+-0.14 (cr) 72 136 P
+-0.14 (eat) 79.15 136 P
+0 F
+-0.14 (\0502\051 on the same \336le, then closes the \336le. Apparently FreeBSD does something horribly slow when) 90.14 136 P
+3 F
+-0.14 (cr) 441.84 136 P
+-0.14 (eat) 448.99 136 P
+0 F
+-0.14 ( is called on an empty) 459.97 136 P
+(\336le, compared to the other systems. Out of sympathy for this freely distributed and otherwise high-quality system, we modi\336ed) 72 125 T
+-0.06 (this test so that it would call) 72 114 P
+3 F
+-0.06 (open) 174.71 114 P
+0 F
+-0.06 (\0502\051 instead of) 192.18 114 P
+3 F
+-0.06 (cr) 242.18 114 P
+-0.06 (eat) 249.33 114 P
+0 F
+-0.06 ( after the \336rst iteration.) 260.32 114 P
+3 F
+-0.06 (Open) 344.9 114 P
+0 F
+-0.06 ( is semantically equivalent to) 364.36 114 P
+3 F
+-0.06 (cr) 471.17 114 P
+-0.06 (eat) 478.32 114 P
+0 F
+-0.06 ( when the \336le) 489.31 114 P
+(is zero-length, but we thought it might be faster) 72 103 T
+(, perhaps by avoiding any disk I/O. Indeed this proved to be the case, bringing the) 242.63 103 T
+(time for this test in line with the other systems. The AIM III measurements in FreeBSD were all made with this modi\336cation.) 72 92 T
+0 10 Q
+(AIM III, 8) 96 665.33 T
+(users) 96 653.33 T
+(150 sec.) 181.62 665.33 T
+(98 sec.) 256.12 665.33 T
+(91 sec.) 328.12 665.33 T
+(78 sec.) 400.12 665.33 T
+(78 sec.) 472.12 665.33 T
+1 12 Q
+(T) 123.68 712 T
+(able 2: Relative Performance of OSF/1 MK6 and other UNIX Systems) 130.57 712 T
+0 10 Q
+(Benchmark) 102.96 687.33 T
+(Solaris 2.1) 176.62 687.33 T
+(SCO Unix) 249.04 687.33 T
+(Free BSD) 322.15 687.33 T
+(Sys V Rel. 4.2) 384.99 687.33 T
+(OSF/1 MK6) 461.15 687.33 T
+90 701.75 90 646.25 2 L
+V
+0.5 H
+0 Z
+N
+162 702.25 162 645.75 2 L
+V
+N
+234 702.25 234 645.75 2 L
+V
+N
+306 702.25 306 645.75 2 L
+V
+N
+378 702.25 378 645.75 2 L
+V
+N
+450 702.25 450 645.75 2 L
+V
+N
+522 701.75 522 646.25 2 L
+V
+N
+89.75 702 522.25 702 2 L
+V
+N
+90.25 679.25 521.75 679.25 2 L
+V
+N
+90.25 676.75 521.75 676.75 2 L
+V
+N
+89.75 646 522.25 646 2 L
+V
+N
+72 72 540 720 C
+103.12 326.43 508.88 576 C
+102.29 333.1 499.12 344.43 R
+7 X
+0 K
+V
+1 10 Q
+0 X
+(Figure 6. AIM III Performance on Intel 486DX/50, 2 to 30 Users) 163.99 337.76 T
+212.13 404.67 258.53 430.29 270.41 438.82 300.11 457.01 329.43 468.15 412.76 515.49 6 L
+0.5 H
+0 Z
+N
+199.2 395.88 199.2 538.44 2 L
+1 H
+N
+448.61 395.88 199.15 395.88 2 L
+N
+199.15 538.44 194.7 538.44 2 L
+N
+199.15 413.7 194.7 413.7 2 L
+N
+199.15 431.52 194.7 431.52 2 L
+N
+199.15 449.34 194.7 449.34 2 L
+N
+199.15 467.16 194.7 467.16 2 L
+N
+199.15 484.98 194.7 484.98 2 L
+N
+199.15 502.8 194.7 502.8 2 L
+N
+199.15 520.62 194.7 520.62 2 L
+N
+270.43 395.88 270.43 391.43 2 L
+N
+234.79 395.88 234.79 391.43 2 L
+N
+306.06 395.88 306.06 391.43 2 L
+N
+341.7 395.88 341.7 391.43 2 L
+N
+377.34 395.88 377.34 391.43 2 L
+N
+412.97 395.88 412.97 391.43 2 L
+N
+2 F
+(400) 173.03 536.33 T
+(300) 173.03 500.69 T
+(100) 173.03 429.41 T
+(200) 173.03 465.05 T
+(5) 232.61 375.73 T
+(10) 265.97 375.83 T
+(15) 299.52 375.83 T
+(20) 335.15 375.83 T
+(25) 370.79 375.83 T
+(30) 406.43 375.83 T
+(Number of Users) 280.3 360.62 T
+(Secs. to Finish) 0 -270 161.64 447.55 TF
+342.45 530.78 212.3 406.74 2 L
+0.5 H
+N
+212.3 404.99 227.16 413.48 241.64 422.12 257.71 432.7 258.16 432.22 5 L
+N
+212.5 403.93 412.95 507.87 2 L
+N
+(Solaris) 301.45 525.73 T
+(SCO) 210.42 447.21 T
+(Free BSD) 357.07 524.81 T
+(SysVRel4) 398.96 469.65 T
+(MK6) 419.19 509.99 T
+448.61 395.88 448.61 391.43 2 L
+1 H
+N
+253.41 444.58 254.06 432.53 247.12 442.4 250.26 443.49 4 Y
+V
+38 90 17.82 17.82 236.25 432.52 A
+382.71 512.81 383.25 500.82 376.44 510.7 379.57 511.75 4 Y
+V
+377 519.5 379.58 511.75 2 L
+0.5 H
+N
+404.81 489.18 400.7 500.45 410.16 493.07 407.49 491.12 4 Y
+V
+414 482 407.49 491.12 2 L
+1 H
+2 Z
+N
+212.3 404.12 257.39 425.21 341.94 471.52 412.62 513.31 412.62 513.31 412.62 513.69 6 L
+0.5 H
+0 Z
+N
+72 72 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 12) 508.08 47.33 T
+(allowed us to get the most direct comparison yet of the relative performance of MK6 with respect to another UNIX) 72 713.33 T
+(integrated kernel. An emulation layer was implemented in the HP-P) 72 701.33 T
+(A version of MK6, allowing it to run native HP/) 342.56 701.33 T
+-0.03 (UX binaries. W) 72 689.33 P
+-0.03 (e then compiled AIM III using the HP/UX compiler and ran it using the HP/UX shell. So in this com-) 134.15 689.33 P
+(parison, all user code is identical\321only the implementation of the UNIX system calls dif) 72 677.33 T
+(fers. Figure 7) 428.25 677.33 T
+( shows the) 481.83 677.33 T
+(result of running AIM III from 2 to 30 users. As can be seen, MK6 is as fast fast as HP/UX for small numbers of) 72 413.33 T
+-0.11 (users, but begins to fall behind beyond a certain load level \050we hypothesize that this may be due to an inferior paging) 72 401.33 P
+(implementation in Mach 3.0\051.) 72 389.33 T
+(Overall, in workload benchmarks, it is clear that we have met our goal of substantial performance parity for a) 90 373.33 T
+(microkernel-based operating system, whether compared to an integrated kernel from the same code base \050i.e. OSF/1) 72 361.33 T
+(IK\051, or a variety of semantically-equivalent, but independently-implemented integrated kernels. That we have done) 72 349.33 T
+(so without loss of modularity should be evident from the fact that the same server binary can be run as a user) 72 337.33 T
+(-mode) 507.32 337.33 T
+(task, and need not contain any special code to deal with the two dif) 72 325.33 T
+(ferent execution environments.) 339.96 325.33 T
+-0.19 (Note: It should be emphasized that, although collocation and short-circuited RPC produced easily the lar) 90 309.33 P
+-0.19 (gest per-) 505.5 309.33 P
+(formance gains in OSF/1 MK6, other changes were also required to achieve the desired level of performance. Space) 72 297.33 T
+(does not permit listing them all here, but some of the most signi\336cant were the following, each of which addresses) 72 285.33 T
+(one of the problems shown in Figure 2:) 72 273.33 T
+(\245 A new version of C-threads in which context-switching is based on the use of depressed priority) 108 257.33 T
+(,) 497.8 257.33 T
+(instead of the sending of messages, as reported in [Dea93].) 115.2 245.33 T
+(\245 A \322uniprocessor\323 con\336guration of the OSF/1 server) 108 229.33 T
+(, in which all signi\336cant server activity happens) 320.11 229.33 T
+-0.12 (with a global lock held, preventing pre-emption of server threads, and allowing the \336ne-grained \050and) 115.2 217.33 P
+(expensive\051 per) 115.2 205.33 T
+(-data structure locks to be removed.) 173.56 205.33 T
+(\245 New Mach interfaces, especially device interfaces, such as a version of) 108 189.33 T
+4 9 Q
+(device_read) 400.69 189.33 T
+0 10 Q
+( that does not) 460.01 189.33 T
+(require a VM allocation in the caller to receive the data, and asynchronous I/O interfaces that do not) 115.2 177.33 T
+(require receiving a message for completion noti\336cation.) 115.2 165.33 T
+1 12 Q
+(5. Related W) 72 138 T
+(ork) 137.63 138 T
+0 10 Q
+(Our work has bene\336ted greatly from, and in some sense is an extension of, two related projects at the Utah Uni-) 90 120.33 T
+(versity) 72 108.33 T
+(, which began independently but eventually developed into a fruitful collaboration. One, [Lep93], improved) 98.56 108.33 T
+(the performance of an OSF/1 MK system running on a Hewlett-Packard P) 72 96.33 T
+(A-RISC system, by loading the OS server) 367.26 96.33 T
+-0.18 (into the kernel and avoiding the use of messages in the system call path. Unlike ours, this project did not de\336ne a gen-) 72 84.33 P
+72 72 540 720 C
+103.12 424.43 508.88 674 C
+102.29 431.1 499.12 442.43 R
+7 X
+0 K
+V
+1 10 Q
+0 X
+(Figure 7. AIM III Performance on HP-PA RISC, 2 to 30 Users) 167.88 435.76 T
+199.2 493.88 199.2 636.44 2 L
+1 H
+0 Z
+N
+448.61 493.88 199.15 493.88 2 L
+N
+199.15 636.44 194.7 636.44 2 L
+N
+199.15 511.7 194.7 511.7 2 L
+N
+199.15 529.52 194.7 529.52 2 L
+N
+199.15 547.34 194.7 547.34 2 L
+N
+199.15 565.16 194.7 565.16 2 L
+N
+199.15 582.98 194.7 582.98 2 L
+N
+199.15 600.8 194.7 600.8 2 L
+N
+199.15 618.62 194.7 618.62 2 L
+N
+270.43 493.88 270.43 489.43 2 L
+N
+234.79 493.88 234.79 489.43 2 L
+N
+306.06 493.88 306.06 489.43 2 L
+N
+341.7 493.88 341.7 489.43 2 L
+N
+377.34 493.88 377.34 489.43 2 L
+N
+412.97 493.88 412.97 489.43 2 L
+N
+2 F
+(400) 173.03 634.33 T
+(300) 173.03 598.69 T
+(100) 173.03 527.41 T
+(200) 173.03 563.05 T
+(5) 232.61 473.73 T
+(10) 265.97 473.83 T
+(15) 299.52 473.83 T
+(20) 335.15 473.83 T
+(25) 370.79 473.83 T
+(30) 406.43 473.83 T
+(Number of Users) 280.3 458.62 T
+(Secs. to Finish) 0 -270 161.64 545.54 TF
+(HP/UX) 405.28 584.38 T
+(OSF/1 MK6) 336.91 621.85 T
+448.61 493.88 448.61 489.43 2 L
+N
+204.21 499.26 212.11 500.74 220.51 504.2 227.43 507.17 234.35 512.11 239.79 515.57 247.2 520.51
+ 255.6 522.49 411.29 608.48 9 L
+2 Z
+N
+203.71 498.27 211.13 500.25 220.51 503.71 230.4 509.15 233.86 511.62 239.79 516.07 246.71 520.02
+ 255.6 524.47 411.29 629.73 9 L
+N
+72 72 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 13) 508.08 47.33 T
+-0.38 (eral framework for transparent, short-circuited RPC, and therefore did not address speeding up the RPC\325) 72 713.33 P
+-0.38 (s between the) 484.23 713.33 P
+(kernel-loaded server and the Mach kernel. The other project, [For93b], de\336ned an elegant form of \050partially\051 migrat-) 72 701.33 T
+-0.35 (ing RPC that preserved all the semantics of Mach\325) 72 689.33 P
+-0.35 (s message-based RPC, while speeding up null RPC 3-fold. W) 270.15 689.33 P
+-0.35 (e have) 512.4 689.33 P
+-0.08 (re-used some of the code from the Utah migrating RPC project, but have installed it under a new interface that is spe-) 72 677.33 P
+-0.01 (ci\336cally designed for RPC, resulting in more ef) 72 665.33 P
+-0.01 (\336cient ar) 261.07 665.33 P
+-0.01 (gument processing and better performance. Also, we use the) 296.13 665.33 P
+-0.19 (same core migrating RPC mechanism for cross-domain RPC and for collocated \050short-circuited\051 RPC. Our work inte-) 72 653.33 P
+(grates, extends and generalizes these two research projects, which was necessary to achieve our performance and) 72 641.33 T
+(modularity goals.) 72 629.33 T
+(There are many similarities between kernel collocation in our work and the supervisor actors introduced in Cho-) 90 613.33 T
+(rus V3 [Bri91, Roz92], though our implementation is more \337exible, in that we permit the same server image to run) 72 601.33 T
+(either collocated or in user mode, and automatically select the most ef) 72 589.33 T
+(\336cient RPC path in either case. Other dif) 351.62 589.33 T
+(fer-) 514.11 589.33 T
+(ences result from dissimilarities between Mach and Chorus. But perhaps the most important distinction is this:) 72 577.33 T
+(although Chorus V3 has been applied to re-implement existing Unix versions \050see e.g. [Bat92]\051, we are unaware of) 72 565.33 T
+(any published performance comparison between an optimized Chorus implementation of a given OS and an equiva-) 72 553.33 T
+-0.16 (lent IK implementation. W) 72 541.33 P
+-0.16 (e believe our analysis of MK overhead and how it can be made negligible under Mach pro-) 178.43 541.33 P
+(vides valuable validation for MK proponents of all stripes.) 72 529.33 T
+(More generally) 90 513.33 T
+(, much research has centered on fast IPC between tasks, though most of it has achieved faster) 150.69 513.33 T
+-0.21 (user) 72 501.33 P
+-0.21 (-to-user messaging by careful design supporting constrained functionality) 88.45 501.33 P
+-0.21 (. Our new form of RPC has the full gen-) 380.87 501.33 P
+(erality of RPC\325) 72 489.33 T
+(s implemented with) 132.53 489.33 T
+4 9 Q
+(mach_msg) 213.87 489.33 T
+0 10 Q
+(\050\051, but dynamically chooses the most performant mechanism based on) 257.01 489.33 T
+(the relationship between the protection domains of caller and callee.) 72 477.33 T
+(The RPC mechanism in Spring [Ham93] is quite similar in structure to our work; a portion of the thread) 90 461.33 T
+(migrates, failure and control semantics are similar) 72 449.33 T
+(, and they have chosen to optimize for round-trip RPC rather than) 271.73 449.33 T
+(building RPC out of one-way messages. Spring does not, however) 72 437.33 T
+(, implement collocation and automatic short-cir-) 336.71 437.33 T
+(cuiting within an address space. Spring has three RPC paths of varying capabilities and levels of performance. The) 72 425.33 T
+(fast path handles calls where the parameters total at most 16 bytes of simple scalar data. The second, known as the) 72 413.33 T
+-0.07 (vanilla path, handles up to 5K bytes of data including some small number of capabilities. The third, \322bulk\323 path, han-) 72 401.33 P
+-0.22 (dles the sending of entire pages of data, arbitrary numbers of capabilities, and attempts to use VM remapping to trans-) 72 389.33 P
+-0.06 (mit the data. In contrast, in our system the method of transmission is chosen not by the operand signature or size, but) 72 377.33 P
+-0.17 (by using the fastest method possible given the domain\050s\051 of caller and recipient. Calls between collocated objects use) 72 365.33 P
+(short-circuited RPC, those between objects in distinct address spaces on a single node will use a migrating-thread) 72 353.33 T
+(RPC trap, and only RPC that crosses a node boundary employs the more usual marshalling of ar) 72 341.33 T
+(guments into a) 456.3 341.33 T
+4 9 Q
+(mach_msg) 72 329.33 T
+0 10 Q
+(\050\051 call. In all of these mechanisms, the full generality and power of the Mach interface generator \050MIG\051 is) 115.14 329.33 T
+(available to the programmer) 72 317.33 T
+(.) 184.42 317.33 T
+(The commercial MK-based system with the lar) 90 301.33 T
+(gest installed base is QNX [Hil92]. QNX exceeds typical Unix) 278.02 301.33 T
+(I/O throughput, using a user) 72 289.33 T
+(-mode OS server) 184.23 289.33 T
+(. However) 251.4 289.33 T
+(, only synchronous, one-way message passing is supported.) 292.63 289.33 T
+(W) 72 277.33 T
+(e achieve nearly twice the rate of null system call execution when using a collocated server) 80.64 277.33 T
+(. QNX supports frag-) 444.52 277.33 T
+-0.25 (mented non-contiguous messages, but physically copies everything, rather than using VM remapping for lar) 72 265.33 P
+-0.25 (ger sizes.) 500.81 265.33 P
+(Our system supports both, transparently) 72 253.33 T
+(, and avoids the overhead completely in short-circuited RPC.) 230.97 253.33 T
+(The work of Bershad et al. on lightweight RPC [Ber90] optimizes for cross-domain RPC within a single) 90 237.33 T
+(machine, but uses full thread migration, which reduces the functionality of thread control and causes robustness and) 72 225.33 T
+(compatibility problems that do not occur with Utah\325) 72 213.33 T
+(s partial thread migration.) 279.94 213.33 T
+(W) 90 197.33 T
+(ith L3, Liedtke [Lie93] achieves excellent cross-domain RPC speeds through a complete redesign of the IPC) 99.04 197.33 T
+-0.3 (subsystem, rigorously following several design principles that keep IPC performance paramount. W) 72 185.33 P
+-0.3 (e did not have the) 467.93 185.33 P
+(luxury of changing existing source or binary interfaces. W) 72 173.33 T
+(e worked in a broader context, since blazing RPC perfor-) 304.63 173.33 T
+(mance is not enough to ensure good overall system throughput. System-level performance relative to a commercial-) 72 161.33 T
+(quality OS is not reported for L3.) 72 149.33 T
+1 12 Q
+(6. Futur) 72 122 T
+(e Dir) 113.76 122 T
+(ections) 139.19 122 T
+0 10 Q
+(Our framework allows multiple servers to be collocated with the Mach kernel. Although to date we have only) 90 104.33 T
+(worked with the OSF/1 single server) 72 92.33 T
+(, we have run multiple OSF/1 servers in the kernel simultaneously) 218.45 92.33 T
+(, with no ill) 482.35 92.33 T
+(ef) 72 80.33 T
+(fects. This is no dif) 79.59 80.33 T
+(ferent from running two user) 156.3 80.33 T
+(-mode single servers simultaneously) 271.57 80.33 T
+(. On the other hand, such serv-) 416.66 80.33 T
+FMENDPAGE
+%%EndPage: "13" 14
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 14) 508.08 47.33 T
+-0.19 (ers do not engage in RPC with each other) 72 713.33 P
+-0.19 (, so there is no performance bene\336t to their being in the same address space.) 236.1 713.33 P
+(T) 72 701.33 T
+(o evaluate such bene\336ts, we plan to port our work to a multi-server operating system, such as OSF/1 AD Rev 2,) 77.41 701.33 T
+(which is under development at the OSF RI. In this system, some nodes have two servers, which communicate via) 72 689.33 T
+-0.24 (RPC. Performance could be enhanced by collocating such servers together with the Mach kernel, and short-circuiting) 72 677.33 P
+(RPC between them.) 72 665.33 T
+(Our current model of kernel collocation loads each program into a separate kernel task and uses a partial thread) 90 649.33 T
+(switch in the RPC path. W) 72 637.33 T
+(e want to explore a more ef) 177.81 637.33 T
+(\336cient form of collocation, in which all programs are loaded) 286.98 637.33 T
+(into a single Mach kernel task and short-circuited RPC is implemented with true thread migration \050the client thread) 72 625.33 T
+(calls the server code directly) 72 613.33 T
+(, without switching activations or stacks\051. This would give up some thread control func-) 185.7 613.33 T
+(tionality) 72 601.33 T
+(, and would require more extensive changes to existing Mach servers, which believe that the server threads) 104.67 601.33 T
+(are dif) 72 589.33 T
+(ferent from the client threads and which may not have stacks that are compatible with one another) 97.63 589.33 T
+(.) 489 589.33 T
+(Although our framework allows for it, we have not yet fully implemented the collocation of multiple servers) 90 573.33 T
+(within a single user) 72 561.33 T
+(-mode task, with short-circuited RPC between them. This can be used to speed up multiserver) 149.81 561.33 T
+-0.32 (operating systems, where for security) 72 549.33 P
+-0.32 (, robustness or other reasons, it is not acceptable to collocate the servers with the) 219.7 549.33 P
+(Mach kernel. W) 72 537.33 T
+(e want to \336nish the implementation and compare its performance to that of kernel collocation.) 135.87 537.33 T
+(Our work has potentially interesting application to object-oriented systems. Using our new RPC-registration) 90 521.33 T
+(interfaces, one can create server tasks that passively implement multiple objects. These tasks would contain no) 72 509.33 T
+(threads \050except when clients migrate in\051, thus would be lighter) 72 497.33 T
+(-weight. W) 321.62 497.33 T
+(e want to explore this direction further) 365.79 497.33 T
+(,) 519.16 497.33 T
+(within the context of an appropriate object model.) 72 485.33 T
+(Looking further into the future, we would like to generalize our work and separate it out from the OSF/1 server) 90 469.33 T
+(and the Mach kernel. The goal would be to produce a general-purpose programmer) 72 457.33 T
+(\325) 404.6 457.33 T
+(s kit for constructing lar) 407.38 457.33 T
+(ge-scale) 503.24 457.33 T
+-0.12 (object-based systems using modules that may be transparently located at run-time within a protection domain, across) 72 445.33 P
+(protection domains on the same machine and even across the nodes of a network, without the system programmers) 72 433.33 T
+(needing to be aware of the module placement. The kit would contain the mechanisms for declaring the module inter-) 72 421.33 T
+(faces independently of their run-time placement and for implementing the module boundary crossings \050RPC\051 in the) 72 409.33 T
+(most ef) 72 397.33 T
+(\336cient manner possible, based on the relative locations of client and server) 101.52 397.33 T
+(. It probably would also contain) 399.09 397.33 T
+(mechanisms for thread management and for enabling ef) 72 385.33 T
+(\336cient, synchronized access to objects across nodes, such as) 294.7 385.33 T
+(automatic caching of objects and distributed locks on objects. Ideally) 72 373.33 T
+(, the server writer using such a kit would not) 347.83 373.33 T
+(need to be aware of such issues, and would be able to implement a set of operations on objects as a collection of pas-) 72 361.33 T
+-0.35 (sive functions, which are automatically compiled into ef) 72 349.33 P
+-0.35 (\336cient, multi-threaded, collocatable server modules, allowing) 294.22 349.33 P
+-0.01 (the microkernel-based approach to system construction to achieve a level of maturity and success in the marketplace) 72 337.33 P
+(that has so far eluded it.) 72 325.33 T
+1 12 Q
+(Acknowledgments) 72 298 T
+0 10 Q
+-0.26 (This work was originally conceived with Franklin Reynolds, also of the OSF Research Institute. Although he did) 90 280.33 P
+(not participate in its implementation, his contribution to the original design was invaluable. The work also bene\336ted) 72 268.33 T
+-0.22 (from constructive criticism and advice given by David Black, Alan Langerman, Paul Roy) 72 256.33 P
+-0.22 (, Dejan Milojicic and others) 426.75 256.33 P
+-0.32 (at the Research Institute. Randy Dean did the implementation of the improved C-threads. Jose Rogado, Eric Paire and) 72 244.33 P
+0 (others, at the Grenoble of) 72 232.33 P
+0 (\336ce of the OSF Research Institute, did the port to the HP-P) 173.68 232.33 P
+0 (A RISC and measured its perfor-) 408.16 232.33 P
+(mance.) 72 220.33 T
+1 12 Q
+(Refer) 72 193 T
+(ences) 100.41 193 T
+0 10 Q
+-0.22 ([Acc86] M. Accetta, R. Baron, W) 72 174.33 P
+-0.22 (. Bolosky) 205.12 174.33 P
+-0.22 (, D. Golub, R. Rashid, A. T) 242.57 174.33 P
+-0.22 (evanian, and M. Y) 350.45 174.33 P
+-0.22 (oung, \322Mach: A New Kernel) 422.89 174.33 P
+(Foundation for Unix Development,\323) 72 162.33 T
+3 F
+(Pr) 219.96 162.33 T
+(oceedings of the USENIX Summer \32486 Confer) 229.58 162.33 T
+(ence) 412.42 162.33 T
+0 F
+(, July 1986.) 430.73 162.33 T
+-0.31 ([Bat92] Nariman Batlivala, Barry Gleason, Jim Hamrick, Scott Lurndal, Darren Price, and James Soddy) 72 144.33 P
+-0.31 (, \322Experience) 483.73 144.33 P
+(with SVR4 over Chorus,\323) 72 132.33 T
+3 F
+(Pr) 177.77 132.33 T
+(oceedings of the USENIX W) 187.4 132.33 T
+(orkshop on Micr) 299.17 132.33 T
+(o-kernels and Other Kernel Ar) 365.43 132.33 T
+(chitectur) 487.75 132.33 T
+(es) 522.91 132.33 T
+0 F
+(,) 531.24 132.33 T
+(pp. 223-241, April 1992.) 72 120.33 T
+([Ber90] Brian N. Bershad, Thomas E. Anderson, Edward D. Lazowska, and Henry M. Levy) 72 102.33 T
+(, \322Lightweight Remote) 439.4 102.33 T
+(Procedure Call,\323) 72 90.33 T
+3 F
+(ACM T) 141.11 90.33 T
+(ransactions on Computer Systems) 169.72 90.33 T
+0 F
+(, 8\0501\051:37-55, February 1990.) 305.47 90.33 T
+FMENDPAGE
+%%EndPage: "14" 15
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+0 10 Q
+0 X
+0 K
+(24 June 1994) 72 47.33 T
+(Microkernel Modularity with Integrated Kernel Performance) 184.29 47.33 T
+(Page 15) 508.08 47.33 T
+([Ber92] Brian Bershad,) 72 713.33 T
+(\322The Increasing Irrelevance of IPC Performance for Micro-kernel-based Operating Sys-) 170.54 713.33 T
+(tems,\323) 72 701.33 T
+3 F
+(Pr) 100.31 701.33 T
+(oceedings of the USENIX W) 109.94 701.33 T
+(orkshop on Micr) 221.72 701.33 T
+(o-Kernels and Other Kernel Ar) 287.97 701.33 T
+(chitectur) 412.52 701.33 T
+(e) 447.68 701.33 T
+0 F
+(s, pp. 205-212, April) 452.12 701.33 T
+(1992.) 72 689.33 T
+([Bri91] Allan Bricker) 72 671.33 T
+(, Michel Gien, Marc Guillemont, Jim Lipkis, Douglas Orr) 158.2 671.33 T
+(, and Marc Rozier) 389.33 671.33 T
+(, \322A New Look at) 461.09 671.33 T
+(Microkernel-Based Unix Operating Systems: Lessons in Performance and Compatibility) 72 659.33 T
+(,\323) 425.57 659.33 T
+3 F
+(Pr) 435 659.33 T
+(oceedings of the EurO-) 444.62 659.33 T
+(pen Spring \32591 Confer) 72 647.33 T
+(ence) 161.3 647.33 T
+0 F
+(, May) 179.61 647.33 T
+(, 1991.) 202.28 647.33 T
+-0.08 ([Cla92] Raymond K. Clark, E. Douglas Jensen, and Franklin D. Reynolds, \322An Architectural Overview of the Alpha) 72 629.33 P
+(Real-T) 72 617.33 T
+(ime Distributed Kernel,\323) 99.4 617.33 T
+3 F
+(Pr) 201 617.33 T
+(oceedings of the USENIX W) 210.62 617.33 T
+(orkshop on Micr) 322.4 617.33 T
+(o-kernels and Other kernel Ar) 388.66 617.33 T
+(chitec-) 508.75 617.33 T
+(tur) 72 605.33 T
+(es) 83.29 605.33 T
+0 F
+(, pp. 127-146, April 1992.) 91.62 605.33 T
+([Dea93] Randall W) 72 587.33 T
+(. Dean, \322Using Continuations to Build a User) 149.35 587.33 T
+(-Level Threads Library) 330.43 587.33 T
+(,\323) 423.03 587.33 T
+3 F
+(Pr) 432.46 587.33 T
+(oceedings of the) 442.09 587.33 T
+(USENIX Mach III Symposium) 72 575.33 T
+0 F
+(, pp.137-152, April 1993.) 192.18 575.33 T
+-0.13 ([Dru92] Peter Druschel, Larry L. Peterson, and Norman C. Hutchinson,) 72 557.33 P
+-0.13 (\322Beyond Micro-Kernel Design: Decoupling) 362.31 557.33 P
+-0.08 (Modularity and Protection in Lipto,\323) 72 545.33 P
+3 F
+-0.08 (Pr) 220.97 545.33 P
+-0.08 (oceedings of the T) 230.59 545.33 P
+-0.08 (welfth International Confer) 302.63 545.33 P
+-0.08 (ence on Distributed Computing) 412.05 545.33 P
+(Systems) 72 533.33 T
+0 F
+(,) 103.64 533.33 T
+(pp. 512-520, June 1992.) 108.64 533.33 T
+([For93a] Bryan Ford, Mike Hibler) 72 515.33 T
+(, and Jay Lepreau,) 209.01 515.33 T
+3 F
+(Notes on Thr) 284.49 515.33 T
+(ead Models in Mach 3.0) 336.33 515.33 T
+0 F
+(, University of Utah Com-) 433.2 515.33 T
+(puter Science Dept., TR UUCS-93-012, April 1993.) 72 503.33 T
+([For93b] Bryan Ford and Jay Lepreau,) 72 485.33 T
+3 F
+(Evolving Mach 3.0 to Use Migrating Thr) 228.82 485.33 T
+(eads) 392.52 485.33 T
+0 F
+(, University of Utah Computer) 410.84 485.33 T
+(Science Dept., TR UUCS-93-022, November 1993.) 72 473.33 T
+([Ham93] Graham Hamilton, Panos Kougiouris,) 72 455.33 T
+3 F
+(The Spring Nucleus: A Micr) 266.87 455.33 T
+(okernel for Objects) 379.21 455.33 T
+0 F
+(, Sun Microsystems) 456.38 455.33 T
+(Laboratories, SMLI TR-93-14, April 1993.) 72 443.33 T
+-0.24 ([Hil92] Dan Hildebrand, \322An Architectural Overview of QNX,\323) 72 425.33 P
+3 F
+-0.24 (Pr) 329.34 425.33 P
+-0.24 (oceedings of the USENIX W) 338.97 425.33 P
+-0.24 (orkshop on Micr) 449.8 425.33 P
+-0.24 (o-ker-) 515.58 425.33 P
+(nels and Other Kernel Ar) 72 413.33 T
+(chitectur) 173.23 413.33 T
+(es) 208.4 413.33 T
+0 F
+(, pp. 1) 216.72 413.33 T
+(13-126, April 1992.) 241.34 413.33 T
+-0.16 ([Joh93] D.B.Johnson and W) 72 395.33 P
+-0.16 (.Zwaenepoel, \322The Peregrine High-Performance RPC System,\323) 184.15 395.33 P
+3 F
+-0.16 (Softwar) 439.95 395.33 P
+-0.16 (e -- Practice and) 470.69 395.33 P
+(Experience) 72 383.33 T
+0 F
+(, 23\0502\051:201-221, Feb. 1993.) 116.96 383.33 T
+([Lep93] Jay Lepreau, Mike Hibler) 72 365.33 T
+(, Bryan Ford, and Jef) 208.99 365.33 T
+(f Law) 293.19 365.33 T
+(, \322In-Kernel Servers on Mach 3.0: Implementation and) 316.13 365.33 T
+(Performance,\323) 72 353.33 T
+3 F
+(Pr) 132.5 353.33 T
+(oceedings of the USENIX Mach III Symposium,) 142.12 353.33 T
+0 F
+( pp. 39-55, April 1993.) 332.26 353.33 T
+-0.15 ([Lie93] Jochen Liedtke, \322Improving IPC by Kernel Design,\323) 72 335.33 P
+3 F
+-0.15 (Pr) 316.16 335.33 P
+-0.15 (oceedings of the 14th ACM Symposium on Operating) 325.79 335.33 P
+(Systems Principles) 72 323.33 T
+0 F
+(, pp. 175-188, December 1993.) 147.23 323.33 T
+-0.04 ([Pat93] Simon Patience, \322Redirecting System Calls in Mach 3.0, an Alternative to the Emulator) 72 305.33 P
+-0.04 (,\323) 453.64 305.33 P
+3 F
+-0.04 (Pr) 463.04 305.33 P
+-0.04 (oceedings of the) 472.66 305.33 P
+(USENIX Mach III Symposium) 72 293.33 T
+0 F
+(, pp. 57-74.) 192.18 293.33 T
+([Ren88] Robert van Renesse, Hans van Staveren, Andrew T) 72 275.33 T
+(anenbaum, \322Performance of the W) 311.67 275.33 T
+(orld\325) 449.91 275.33 T
+(s Fastest Distrib-) 468.79 275.33 T
+(uted Operating System,) 72 263.33 T
+3 F
+(\323 Operating Systems Review) 166.11 263.33 T
+0 F
+(, 22\0504\051, pp 23-24, October 1988.) 280.11 263.33 T
+([Roz92] M. Rozier) 72 245.33 T
+(, V) 147.38 245.33 T
+(. Abrossimov) 158.3 245.33 T
+(, F) 211.51 245.33 T
+(. Armand, I. Boule, M. Gien, M. Guillemont, F) 221.27 245.33 T
+(. Herrmann, C. Kaiser) 408.7 245.33 T
+(, S. Lan-) 496.56 245.33 T
+(glois, P) 72 233.33 T
+(. Leonard, and W) 100.88 233.33 T
+(. Neuhauser) 169.63 233.33 T
+(, \322Overview of the Chorus Distributed Operating System,\323) 216.96 233.33 T
+3 F
+(Pr) 454.02 233.33 T
+(oceedings of the) 463.64 233.33 T
+(USENIX W) 72 221.33 T
+(orkshop on Micr) 116.33 221.33 T
+(o-kernels and other Kernel Ar) 182.58 221.33 T
+(chitectur) 302.68 221.33 T
+(es) 337.84 221.33 T
+0 F
+(, pp. 39-69, April 1992.) 346.17 221.33 T
+FMENDPAGE
+%%EndPage: "15" 16
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 15 1
+%%DocumentFonts: Times-Roman
+%%+ Times-Bold
+%%+ Helvetica
+%%+ Times-Italic
+%%+ Courier
+%%+ Helvetica-Bold
+%%+ Symbol

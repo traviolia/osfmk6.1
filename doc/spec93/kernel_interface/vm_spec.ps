@@ -1,0 +1,6700 @@
+%!PS-Adobe-2.0
+%%Title: vm_specs.frame  -  /disk3/u2/billb/Home/Unencumbered/spec93/kernel_interface
+%%Creator: FrameMaker
+%%CreationDate: Tue Jan 31 18:33:55 1995
+%%For: billb
+%%DocumentFonts: (atend)
+%%Pages: 36 1
+%%BoundingBox: (atend)
+%%DocumentPaperSizes: Letter
+%%Orientation: Portrait
+%%NXNextStepVersion: 3.0
+%%EndComments
+
+%%BeginProcSet: /usr/lib/NextStep/printPackage.ps 3.0
+%!
+% NeXT Printing Package
+% Version: 3.0
+% Copyright: 1988, NeXT, Inc.
+
+/__NXdef{1 index where{pop pop pop}{def}ifelse}bind def
+/__NXbdef{1 index where{pop pop pop}{bind def}ifelse}bind def
+/UserObjects 10 array __NXdef
+/defineuserobject{
+	exch dup 1 add dup UserObjects length gt{
+		array dup 0 UserObjects putinterval
+		/UserObjects exch def
+	}{pop}ifelse UserObjects exch 3 -1 roll put
+}__NXbdef
+/undefineuserobject{UserObjects exch null put}__NXbdef
+/execuserobject{UserObjects exch get exec}__NXbdef
+/__NXRectPath{4 2 roll moveto 1 index 0 rlineto
+0 exch rlineto neg 0 rlineto closepath}__NXbdef
+/__NXProcessRectArgs{
+	1 index type /arraytype eq{
+		exch 0 4 2 index length 1 sub{
+			dup 3 add 1 exch{1 index exch get exch}for
+			5 1 roll 5 index exec
+		}for pop pop
+	}{exec}ifelse
+}__NXbdef
+/rectfill{gsave newpath {__NXRectPath fill} __NXProcessRectArgs grestore}__NXbdef
+/rectclip{newpath {__NXRectPath} __NXProcessRectArgs clip newpath}__NXbdef
+/rectstroke{
+	gsave newpath dup type /arraytype eq{dup length 6 eq}{false}ifelse{
+		{gsave __NXRectPath null concat stroke grestore}
+		dup length array cvx copy dup 2 4 -1 roll put __NXProcessRectArgs
+	}{{__NXRectPath stroke} __NXProcessRectArgs}ifelse grestore
+}__NXbdef
+/_NXLevel2 systemdict /languagelevel known {languagelevel 2 ge}{false}ifelse __NXdef
+/xyshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		3 index 3 index 2 mul 1 add get add exch
+		3 index	3 index 2 mul get add exch moveto pop
+	}for pop pop
+}__NXbdef
+/xshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		exch 3 index 3 index get add exch moveto pop
+	}for pop pop
+}__NXbdef
+/yshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		3 index 3 index get add moveto pop
+	}for pop pop
+}__NXbdef
+/arct{arcto pop pop pop pop}__NXbdef
+/setbbox{pop pop pop pop}__NXbdef
+/ucache{}__NXbdef
+/ucachestatus{mark 0 0 0 0 0}__NXbdef
+/setucacheparams{cleartomark}__NXbdef
+/uappend{systemdict begin cvx exec end}__NXbdef
+/ueofill{gsave newpath uappend eofill grestore}__NXbdef
+/ufill{gsave newpath uappend fill grestore}__NXbdef
+/ustroke{
+	gsave newpath dup length 6 eq
+	{exch uappend concat}{uappend}ifelse
+	stroke grestore
+}__NXbdef
+/__NXustrokepathMatrix dup where {pop pop}{matrix def}ifelse
+/ustrokepath{
+	newpath dup length 6 eq{
+		exch uappend __NXustrokepathMatrix currentmatrix exch concat
+		strokepath setmatrix
+	}{uappend strokepath}ifelse
+} __NXbdef
+/upath{
+	[exch {/ucache cvx}if pathbbox /setbbox cvx
+	 {/moveto cvx}{/lineto cvx}{/curveto cvx}{/closepath cvx}pathforall]cvx
+} __NXbdef
+/setstrokeadjust{pop}__NXbdef
+/currentstrokeadjust{false}__NXbdef
+/selectfont{exch findfont exch
+dup type /arraytype eq {makefont}{scalefont}ifelse setfont}__NXbdef
+/_NXCombineArrays{
+	counttomark dup 2 add index dup length 3 -1 roll {
+		2 index length sub dup 4 1 roll 1 index exch 4 -1 roll putinterval exch
+	}repeat pop pop pop
+}__NXbdef
+/flushgraphics{}def
+/setwindowtype{pop pop}def
+/currentwindowtype{pop 0}def
+/setalpha{pop}def
+/currentalpha{1.0}def
+/hidecursor{}def
+/obscurecursor{}def
+/revealcursor{}def
+/setcursor{4 {pop}repeat}bind def
+/showcursor{}def
+/NextStepEncoding where not{
+/NextStepEncoding StandardEncoding 256 array copy def
+0 [129/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/Ccedilla/Egrave
+/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/Ugrave/Uacute
+/Ucircumflex/Udieresis/Yacute/Thorn/mu/multiply/divide/copyright
+176/registered 181/brokenbar 190/logicalnot 192/onesuperior 201/twosuperior
+204/threesuperior 209/plusminus/onequarter/onehalf/threequarters/agrave
+/aacute/acircumflex/atilde/adieresis/aring/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave 226/iacute 228/icircumflex/idieresis/eth
+/ntilde 236/ograve/oacute/ocircumflex/otilde/odieresis 242/ugrave/uacute
+/ucircumflex 246/udieresis/yacute 252/thorn/ydieresis]
+{dup type /nametype eq
+ {NextStepEncoding 2 index 2 index put pop 1 add}{exch pop}ifelse
+}forall pop
+/NextStepEncoding NextStepEncoding readonly def
+/_NXfstr 128 string dup 0 (_NX) putinterval def
+/_NXfindfont /findfont load def
+/findfont{
+ % Because we can never let NextStepEncoding get into
+ % SharedFontDirectory, we cannot reencode a font to NextStepEncoding
+ % if we are in shared mode.  So if currentshared is true,
+ % we call the normal findfont and return that
+ /currentshared where {pop currentshared} {false} ifelse
+ {_NXfindfont}
+ {dup _NXfstr 3 125 getinterval cvs length 3 add _NXfstr 0 3 -1 roll
+  getinterval cvn exch FontDirectory 2 index known 
+  {pop FontDirectory exch get}
+  {_NXfindfont dup /Encoding get StandardEncoding eq
+   {	dup length dict exch
+	{1 index /FID ne {2 index 3 1 roll put}{pop pop}ifelse}forall
+	 dup /Encoding NextStepEncoding put definefont
+	}{exch pop} ifelse
+   }ifelse
+ }ifelse
+}bind def
+}{pop}ifelse
+/_NXImageString {/__NXImageString where{pop}{/__NXImageString 4000 string __NXdef}ifelse __NXImageString}__NXbdef
+/_NXDoImageOp{
+	3 dict begin /parr 5 array def 1 index{dup}{1}ifelse /chans exch def
+	chans 2 add 2 roll parr 0 chans getinterval astore pop
+	5 index 4 index mul 2 index{1 sub 8 idiv 1 add mul}{mul 1 sub 8 idiv 1 add}ifelse
+	4 index mul /totbytes exch def pop exch pop
+	gsave matrix invertmatrix concat 0.5 setgray 0 0 4 2 roll rectfill grestore
+	{0 1 chans 1 sub{parr exch get exec length totbytes exch sub /totbytes exch def}for totbytes 0 le{exit}if}loop end
+}__NXbdef
+/alphaimage{1 add _NXDoImageOp}def
+_NXLevel2{ 
+	/NXCalibratedRGBColorSpace where{pop}{
+		/NXCalibratedRGBColorSpace
+		{mark /NXCalibratedRGB /ColorSpace findresource exch pop}stopped
+		{cleartomark /NXCalibratedRGB[/CIEBasedABC 2 dict dup begin 
+		/MatrixLMN[.4124 .2126 .0193 .3576 .7152 .1192 .1805 .0722 .9505]def
+		/WhitePoint[.9505 1 1.089] def end] /ColorSpace defineresource}if def}ifelse
+	/nxsetrgbcolor{NXCalibratedRGBColorSpace setcolorspace setcolor}__NXbdef
+	/nxsetgray{dup dup nxsetrgbcolor}__NXbdef
+	/_NXCalibratedImage{exch{array astore dup length true}{false}ifelse
+		8 -1 roll{NXCalibratedRGBColorSpace setcolorspace}if
+		8 dict dup 9 1 roll begin /ImageType 1 def /MultipleDataSources exch def
+		currentcolorspace 0 get /Indexed eq{pop /Decode[0 2 6 index exp 1 sub]def}
+		{2 mul dup array /Decode exch def 1 sub 0 1 3 -1 roll{Decode exch dup 2 mod put}for}ifelse
+		/DataSource exch def /ImageMatrix exch def 
+		/BitsPerComponent exch def /Height exch def /Width exch def end image}__NXbdef
+} {
+	/setcmykcolor{
+		1.0 exch sub dup dup 6 -1 roll sub dup 0 lt{pop 0}if 5 1 roll
+		4 -1 roll sub dup 0 lt{pop 0}if 3 1 roll exch sub dup 0 lt{pop 0}if setrgbcolor}__NXbdef
+	/currentcmykcolor{currentrgbcolor 3{1.0 exch sub 3 1 roll}repeat 0}__NXbdef
+	/colorimage{_NXDoImageOp}__NXbdef
+	/nxsetrgbcolor{setrgbcolor}__NXbdef /nxsetgray{setgray}__NXbdef
+	/setpattern{pop .5 setgray}__NXbdef
+	/_NXCalibratedImage{dup 1 eq {pop pop image}{colorimage}ifelse pop}__NXbdef
+} ifelse
+/_NXSetCMYKOrRGB where{pop}{
+	mark{systemdict /currentwindow get exec}stopped
+	{{pop pop pop setcmykcolor}}{{nxsetrgbcolor pop pop pop pop}}ifelse /_NXSetCMYKOrRGB exch def cleartomark
+}ifelse
+%%EndProcSet
+
+_NXLevel2{/_NXsethsb where{pop}{/_NXsethsb /sethsbcolor load def}ifelse /sethsbcolor{_NXsethsb currentrgbcolor nxsetrgbcolor}def /setrgbcolor{nxsetrgbcolor}bind def /setgray{nxsetgray}bind def
+}if
+/FMwantcolorprinting true def
+%-
+%- FrameMaker Postscript Prolog 3.0, for use with FrameMaker 3.0
+%- Copyright (c) 1986, 87, 88, 89, 90, 91 by Frame Technology, Inc.
+%- All rights reserved.
+%-
+%-
+/landscape false def/t300[0.000 0.006 0.011 0.017 0.022 0.028 0.033 0.039
+0.045 0.050 0.056 0.061 0.067 0.073 0.078 0.084 0.089 0.095 0.101 0.117 0.133
+0.148 0.164 0.179 0.195 0.210 0.225 0.240 0.255 0.270 0.285 0.299 0.314 0.329
+0.344 0.359 0.374 0.389 0.404 0.419 0.435 0.451 0.466 0.482 0.498 0.513 0.529
+0.544 0.560 0.576 0.591 0.610 0.632 0.654 0.677 0.699 0.721 0.744 0.766 0.788
+0.821 0.866 0.911 0.955 1.000]def/t400[0.000 0.003 0.006 0.009 0.012 0.014
+0.017 0.020 0.023 0.026 0.029 0.032 0.035 0.038 0.041 0.043 0.046 0.049 0.056
+0.063 0.071 0.079 0.087 0.095 0.104 0.117 0.130 0.143 0.157 0.173 0.189 0.205
+0.225 0.245 0.259 0.272 0.285 0.298 0.314 0.329 0.345 0.361 0.376 0.392 0.407
+0.423 0.439 0.454 0.470 0.486 0.502 0.528 0.554 0.580 0.605 0.628 0.650 0.672
+0.695 0.727 0.762 0.796 0.857 0.922 1.000]def/tlinear[0.000 0.016 0.031 0.047
+0.062 0.078 0.094 0.109 0.125 0.141 0.156 0.172 0.188 0.203 0.219 0.234 0.250
+0.266 0.281 0.297 0.312 0.328 0.344 0.359 0.375 0.391 0.406 0.422 0.438 0.453
+0.469 0.484 0.500 0.516 0.531 0.547 0.562 0.578 0.594 0.609 0.625 0.641 0.656
+0.672 0.688 0.703 0.719 0.734 0.750 0.766 0.781 0.797 0.812 0.828 0.844 0.859
+0.875 0.891 0.906 0.922 0.938 0.953 0.969 0.984 1.000]def/orgmatrix matrix def
+/savematrix{orgmatrix currentmatrix pop}bind def/restorematrix{orgmatrix
+setmatrix}bind def/dmatrix matrix def/desiredpat 0 def/dpi 72 0 dmatrix
+defaultmatrix dtransform dup mul exch dup mul add sqrt round def/freq dpi
+18.75 div 8 div round dup 0 eq{pop 1}if 8 mul dpi exch div def/sangle 1 0
+dmatrix defaultmatrix dtransform exch atan def/graymode true def/pats 16 array
+def/mymatrix matrix def/savedgray 0 def/F/fill load def/rc/rectclip load def
+/GS/gsave load def/GR/grestore load def/SL/setlinewidth load def/SC
+/setlinecap load def/CS{closepath S}bind def/A/strokepath load def/TR
+/translate load def/L/lineto load def/M/moveto load def/D/curveto load def/C
+/closepath load def/T{moveto show}bind def/smat{mymatrix currentmatrix pop}
+bind def/rmat{mymatrix setmatrix}bind def/sp{P exch get exec}bind def
+systemdict/setshared known{300 dpi eq{/tran t300 def}{/tran t400 def}ifelse}{
+/tran tlinear def}ifelse systemdict/xshow known not{/xhow{/pts exch def/str
+exch def 0 1 str length 1 sub{currentpoint 3 -1 roll str 1 index 1 getinterval
+show 3 1 roll moveto pts exch get 0 rmoveto}for}bind def}{/xhow{checkink xshow
+}bind def}ifelse systemdict/xyshow known not{/xyhow{/pts exch def/str exch def
+0 1 str length 1 sub{currentpoint 3 -1 roll str 1 index 1 getinterval show 3 1
+roll moveto 2 mul pts 1 index get pts 3 -1 roll 1 add get rmoveto}for}bind def
+}{/xyhow{checkink xyshow}bind def}ifelse/CR{initclip newpath 4 2 roll M dup 0
+exch rlineto exch 0 rlineto 0 exch neg rlineto C clip newpath}bind def
+/makecontextpattern{exch pop[null 8 1/setpattern cvx]4 array copy dup 0 5 -1
+roll put cvx pats 3 1 roll put}def/P[0 1 15{[/desiredpat 3 -1 roll/store cvx]
+cvx}for]def/patoffsetx 0 def/patoffsety 0 def/currentpat null def/FrameDict
+250 dict def/FMBEGINPAGE{FrameDict begin}def/FMENDPAGE{end}def/FMLOCAL{
+FrameDict begin 0 def end}def FrameDict begin/NaN 0 def/gstring 0 def/gfile 0
+def/gindex 0 def/orgxfer 0 def/yscale 0 def/xscale 0 def/FMPrintInColor
+systemdict/colorimage known systemdict/currentcolortransfer known or
+FMwantcolorprinting and def FMPrintInColor{/HUE 0 def/SAT 0 def/BRIGHT 0 def
+/Colors[[0 0][0 0][0.00 1.0][0.37 1.0][0.66 1.0][0.58 1.0][0.83 1.0][0.10 1.0]
+]def/K{Colors exch get dup 0 get/HUE exch store 1 get/BRIGHT exch store HUE 0
+eq BRIGHT 0 eq and{1.0 SAT sub setgray}{HUE SAT BRIGHT sethsbcolor}ifelse}def
+/KT/K load def/mysetgray{/SAT exch 1.0 exch sub store HUE 0 eq BRIGHT 0 eq and
+{1.0 SAT sub setgray}{HUE SAT BRIGHT sethsbcolor}ifelse}bind def}{/mysetgray
+/setgray load def/K/pop load def/KT/pop load def}ifelse/G{/savedgray exch def
+savedgray mysetgray}def/setpattern{/bwidth exch def/bpside exch def/bstring
+exch def/onbits 0 def/offbits 0 def freq sangle landscape{90 add}if{/y exch
+def/x exch def/xindex x 1 add 2 div bpside mul cvi def/yindex y 1 add 2 div
+bpside mul cvi def bstring yindex bwidth mul xindex 8 idiv add get 1 7 xindex
+8 mod sub bitshift and 0 ne{/onbits onbits 1 add def 1}{/offbits offbits 1 add
+def 0}ifelse}setscreen tran offbits 64 mul offbits onbits add div cvi get
+mysetgray}bind def/myfonts[]def/procarray 30 array def 3.86 setmiterlimit
+currentscreen cvlit/orgproc exch def/organgle exch def/orgfreq exch def
+/currentpat -1 def/checkpat{graymode currentpat desiredpat ne or{pats
+desiredpat get exec/graymode false store/currentpat desiredpat store}if}bind
+def/Z{checkpat fill}bind def/checkink{graymode not{orgfreq organgle orgproc
+cvx setscreen/graymode true store savedgray mysetgray}if}bind def/F{checkink
+fill}bind def/dorectfill{checkink rectfill}bind def/dorectstroke{checkink
+rectstroke}bind def/S{checkink stroke}bind def/FmEncoding[/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/space/exclam/quotedbl/numbersign/dollar/percent
+/ampersand/quotesingle/parenleft/parenright/asterisk/plus/comma/hyphen/period
+/slash/zero/one/two/three/four/five/six/seven/eight/nine/colon/semicolon/less
+/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y
+/Z/bracketleft/backslash/bracketright/asciicircum/underscore/grave/a/b/c/d/e
+/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft/bar/braceright
+/asciitilde/.notdef/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis
+/Udieresis/aacute/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute
+/egrave/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde
+/oacute/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex
+/udieresis/dagger/.notdef/cent/sterling/section/bullet/paragraph/germandbls
+/registered/copyright/trademark/acute/dieresis/.notdef/AE/Oslash/.notdef
+/.notdef/.notdef/.notdef/yen/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/ordfeminine/ordmasculine/.notdef/ae/oslash/questiondown/exclamdown
+/logicalnot/.notdef/florin/.notdef/.notdef/guillemotleft/guillemotright
+/ellipsis/.notdef/Agrave/Atilde/Otilde/OE/oe/endash/emdash/quotedblleft
+/quotedblright/quoteleft/quoteright/.notdef/.notdef/ydieresis/Ydieresis
+/fraction/currency/guilsinglleft/guilsinglright/fi/fl/daggerdbl
+/periodcentered/quotesinglbase/quotedblbase/perthousand/Acircumflex
+/Ecircumflex/Aacute/Edieresis/Egrave/Iacute/Icircumflex/Idieresis/Igrave
+/Oacute/Ocircumflex/.notdef/Ograve/Uacute/Ucircumflex/Ugrave/dotlessi
+/circumflex/tilde/macron/breve/dotaccent/ring/cedilla/hungarumlaut/ogonek
+/caron]def/FmEncode{/basefontdict exch def/newfontdict basefontdict maxlength
+3 add dict def basefontdict{exch dup/FID ne{dup/Encoding eq{exch pop
+FmEncoding}{exch}ifelse newfontdict 3 1 roll put}{pop pop}ifelse}forall
+newfontdict}def/rrectpath{smat 4 2 roll TR/h exch def/w exch def/r exch def
+mark r 0 M w 0 w h r arcto w h 0 h r arcto 0 h 0 0 r arcto 0 0 w 0 r arcto C
+cleartomark rmat}def/RF{rrectpath F}bind def/RP{checkpat rrectpath fill}bind
+def/RS{rrectpath S}bind def/RQ{checkpat rrectpath A fill}bind def/NF{
+dorectfill}bind def/NR{checkpat 4 2 roll rectfill}bind def/W{savedgray 5 1
+roll 1.0 G dorectfill G}bind def/PP{newpath 3 1 roll M 1 sub{lineto}repeat}
+bind def/SP{3 1 roll M 3 div cvi{curveto}repeat}bind def/rectpath{M dup 0 exch
+rlineto exch 0 rlineto neg 0 exch rlineto C}def/N{dorectstroke}bind def/NQ{
+checkpat 4 2 roll rectstroke}bind def/replbox{M dup 0 exch rlineto exch 0
+rlineto neg 0 exch rlineto C currentgray .5 setgray fill setgray pop pop}def
+/graybox{currentgray 5 1 roll .6666666 setgray rectfill setgray}bind def
+/darkgraybox{currentgray 5 1 roll .333333 setgray rectfill setgray}bind def
+/arcpath{newpath TR/h exch def/w exch def/dth exch def/th exch def 90 th dth
+add sub 90 th sub dth 0 lt{exch}if 1 h w div neg scale 0 0 w 2 div 5 -2 roll
+arc}def/AS{smat arcpath rmat S}bind def/AP{checkpat smat arcpath rmat A fill}
+bind def/AF{smat arcpath 0 0 lineto rmat F}bind def/AQ{checkpat smat arcpath 0
+0 lineto rmat fill}bind def/mymakefont{/size exch def/name exch def/i exch def
+/myfontdict name cvn findfont def myfontdict begin Encoding StandardEncoding
+eq/NextStepEncoding where{pop Encoding NextStepEncoding eq or}if end{
+myfontdict FmEncode/gfontdict exch def/gfontdict(F   )dup 1 i(   )cvs
+putinterval cvn gfontdict definefont def}{/gfontdict myfontdict def}ifelse
+/myfonts[myfonts aload pop null]def myfonts i gfontdict[size 0 0 size neg 0 0
+]makefont put}def/mymakefontmetric{/BitmapWidths exch 0 eq def mymakefont}def
+/FF{myfonts exch get setfont}bind def/cliptowindow{initclip}def
+/beginprintcode{GS newpath 1 setlinewidth 0 SL 0 setlinejoin[]0 setdash 0
+setgray 10 setmiterlimit/FMdicttop countdictstack 1 add def/FMoptop count 7
+sub def 200 dict begin/showpage{}def TR dup neg scale 0.0 0.0 M}def
+/endprintcode{count -1 FMoptop{pop pop}for countdictstack -1 FMdicttop{pop
+end}for GR}def/beginPSInsetprintcode{/pinsetsave save def newpath 1
+setlinewidth 0 setlinecap 0 setlinejoin[]0 setdash 0 setgray 10 setmiterlimit
+/FMdicttop countdictstack 1 add def/FMoptop count def 200 dict begin/showpage
+{}def/showimage{}def}def/endPSInsetprintcode{count -1 FMoptop{pop pop}for
+countdictstack -1 FMdicttop{pop end}for pinsetsave restore}def/cacheimage{
+/flip exch def/theta exch def/bps exch def/h exch def/w exch def/destHeight
+exch def/destWidth exch def/destY exch def/destX exch def/rowbytes w bps mul 7
+add 8 idiv def/buffer rowbytes string def GS destX destY TR theta rotate
+destWidth flip{neg}if destHeight scale w h bps[w 0 0 h 0 h]{currentfile buffer
+readhexstring pop}bind image GR}def/inch{72 mul}def/paperheight 0 def
+/paperwidth 0 def/pagedimen{paperheight sub abs 16 lt exch paperwidth sub abs
+16 lt and{/papername exch def}{pop}ifelse}def/setpapername{/papersizedict 14
+dict def papersizedict begin/papername/unknown def/Letter 8.5 inch 11.0 inch
+pagedimen/LetterSmall 7.68 inch 10.16 inch pagedimen/Tabloid 11.0 inch 17.0
+inch pagedimen/Ledger 17.0 inch 11.0 inch pagedimen/Legal 8.5 inch 14.0 inch
+pagedimen/Statement 5.5 inch 8.5 inch pagedimen/Executive 7.5 inch 10.0 inch
+pagedimen/A3 11.69 inch 16.5 inch pagedimen/A4 8.26 inch 11.69 inch pagedimen
+/A4Small 7.47 inch 10.85 inch pagedimen/B4 10.125 inch 14.33 inch pagedimen
+/B5 7.16 inch 10.125 inch pagedimen end}def/papersize{papersizedict begin
+/Letter{lettertray letter}def/LetterSmall{lettertray lettersmall}def/Tabloid
+{11x17tray 11x17}def/Ledger{ledgertray ledger}def/Legal{legaltray legal}def
+/Statement{statementtray statement}def/Executive{executivetray executive}def
+/A3{a3tray a3}def/A4{a4tray a4}def/A4Small{a4tray a4small}def/B4{b4tray b4}
+def/B5{b5tray b5}def/unknown{unknown}def papersizedict dup papername known
+{papername}{/unknown}ifelse get end/FMdicttop countdictstack 1 add def
+statusdict begin stopped end countdictstack -1 FMdicttop{pop end}for}def
+/manualpapersize{papersizedict begin/Letter{letter}def/LetterSmall
+{lettersmall}def/Tabloid{11x17}def/Ledger{ledger}def/Legal{legal}def
+/Statement{statement}def/Executive{executive}def/A3{a3}def/A4{a4}def/A4Small
+{a4small}def/B4{b4}def/B5{b5}def/unknown{unknown}def papersizedict dup
+papername known{papername}{/unknown}ifelse get end stopped}def
+/desperatepapersize{statusdict/setpageparams known{paperwidth paperheight 0 1
+statusdict begin{setpageparams}stopped pop end}if}def/manualfeed false def
+/FmHorrible{4 dict begin/execuserobject{pop}def/undefineuserobject{pop}def
+/termwindow{}def/currentgstate{null}def}def/FmEndHorrible{end}def end
+/FmConfigurePaper{FrameDict begin pop pop/paperheight exch def/paperwidth exch
+def setpapername manualfeed{true}{papersize}ifelse{manualpapersize}{false}
+ifelse{desperatepapersize}if end}def/ALDsave FMLOCAL/ALDmatrix matrix def
+ALDmatrix currentmatrix pop/StartALD{/ALDsave save def savematrix ALDmatrix
+setmatrix}bind def/InALD{restorematrix}bind def/DoneALD{ALDsave restore}bind
+def
+<0f1e3c78f0e1c387> (I2366ec) 8 makecontextpattern
+<0f87c3e1f0783c1e> (I236708) 9 makecontextpattern
+<cccccccccccccccc> (I2367a8) 10 makecontextpattern
+<ffff0000ffff0000> (I2367c4) 11 makecontextpattern
+<8142241818244281> (I2367e0) 12 makecontextpattern
+<03060c183060c081> (I2367fc) 13 makecontextpattern
+<8040201008040201> (I236818) 14 makecontextpattern
+gsave
+-1 -9 translate
+ /__NXbasematrix matrix currentmatrix def
+grestore
+%%EndProlog
+%%BeginSetup
+%%PaperSize: Letter
+%%BeginPaperSize: Letter
+612 792 (Letter) false FmConfigurePaper
+%%EndPaperSize
+%%EndSetup
+
+%%Page: 69 1
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+2 SL
+3.86 setmiterlimit
+0 SC
+0 G
+432 45 M
+72 45 L
+S
+2 SC
+432 342 M
+72 342 L
+S
+0.25 SL
+432 720 M
+72 720 L
+S
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (69 ) widthshow
+0 0 612 792 CR
+1 G
+72 99 360 225 NF
+0 G
+2 (Times-Roman) 12 1 mymakefontmetric
+2 FF
+72 116 M 1.19989 0 (CHAPTER 4) ashow
+3 (Times-Roman) 24 1 mymakefontmetric
+3 FF
+180 116 M -0.479736 0 (V) ashow
+195.409058 116 M -0.479736 0 (irtual Memory Interf) ashow
+384.198486 116 M -0.479736 0 (ace) ashow
+1 G
+72 360 360 344.015991 NF
+0 G
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+72 367.666656 M 1.433258 0 32 (This chapter discusses the speci\336cs of the k) widthshow
+256.072876 367.666656 M 1.433258 0 32 (ernel\325) widthshow
+278.843201 367.666656 M 1.433258 0 32 (s virtual memory interf) widthshow
+375.53302 367.666656 M 1.433258 0 32 (aces. This in-) widthshow
+72 379.666626 M 0.952484 0 32 (cludes memory status related functions associated with a single task. Functions that are) widthshow
+72 391.666626 M 0.194244 0 32 (related to, or used by) widthshow
+156.277344 391.666626 M 0.194244 0 32 (, e) widthshow
+165.761673 391.666626 M 0.194244 0 32 (xternal memory managers \(pagers\) are described in the ne) widthshow
+399.315735 391.666626 M 0.194244 0 32 (xt chap-) widthshow
+(ter) 72.0 403.667 T
+(.) 82.0 403.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 70 2
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(70 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+180 119.983978 360 3.024002 CR
+0.25 SL
+2 SC
+0 G
+540 121.5 M
+180 121.5 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(host_page_size) 180.0 116.317 T
+0 FF
+(Function) 216.0 140.675 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Returns the current page size) 254.34 140.675 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 180.0 172.008 T
+4 FF
+(k) 216.0 190.675 T
+(ern_return_t ) 220.9 190.675 T
+0 FF
+(host_page_size) 272.83 190.675 T
+4 FF
+(\(host_name_port_t) 270.0 202.675 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(host,) 520.83 202.675 T
+4 FF
+(vm_of) 270.0 214.675 T
+(fset_t*) 295.86 214.675 T
+6 FF
+(pa) 494.65 214.675 T
+(g) 504.55 214.675 T
+(e_size\)) 509.45 214.675 T
+4 FF
+(;) 537.22 214.675 T
+5 FF
+(DESCRIPTION) 180.0 246.008 T
+4 FF
+(The ) 216.0 262.675 T
+0 FF
+(host_page_size ) 234.05 262.675 T
+4 FF
+(function returns the page size for the gi) 299.88 262.675 T
+(v) 456.54 262.675 T
+(en host.) 461.39 262.675 T
+5 FF
+(P) 180.0 294.008 T
+(ARAMETERS) 186.444 294.008 T
+6 FF
+(host) 216.0 318.675 T
+4 FF
+252 330.674561 M 1.319153 0 32 ([in host-name send right] The name \(or control\) port for the host for) widthshow
+(which the page size is desired.) 252.0 342.675 T
+6 FF
+(pa) 216.0 366.675 T
+(g) 225.9 366.675 T
+(e_size) 230.8 366.675 T
+4 FF
+([out scalar] The host\325) 252.0 378.674 T
+(s page size \(in bytes\).) 337.26 378.674 T
+5 FF
+(RETURN V) 180.0 410.008 T
+(ALUE) 240.709 410.008 T
+4 FF
+(Only generic errors apply) 216.0 426.674 T
+(.) 317.82 426.674 T
+5 FF
+(RELA) 180.0 458.008 T
+(TED INFORMA) 212.197 458.008 T
+(TION) 297.385 458.008 T
+4 FF
+(Functions: ) 216.0 474.674 T
+0 FF
+(mach_host_self) 260.73 474.674 T
+4 FF
+(.) 326.28 474.674 T
+72 105.984009 108 108 CR
+1 G
+81 114.984009 81 90 NF
+0 G
+0 FF
+(Status:) 81.0 122.651 T
+(Deri) 81.0 140.651 T
+(v) 99.78 140.651 T
+(ed fr) 104.68 140.651 T
+(om ) 124.77 140.651 T
+(vm_statistics be-) 81.0 152.651 T
+(cause the latter is ) 81.0 164.651 T
+(pri) 81.0 176.651 T
+(vileged) 93.68 176.651 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 71 3
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (71 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_allocate) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+0 SC
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_allocate) 72.0 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Allocates a re) 146.34 142.691 T
+(gion of virtual memory) 216.17 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_allocate) 164.83 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t*) 162.0 216.691 T
+6 FF
+(addr) 398.76 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(vm_size_t) 162.0 228.691 T
+6 FF
+(size) 414.6 228.691 T
+(,) 429.5 228.691 T
+4 FF
+(vm_allocate_t) 162.0 240.691 T
+6 FF
+(anywher) 387.38 240.691 T
+(e\)) 421.45 240.691 T
+4 FF
+(;) 429.22 240.691 T
+5 FF
+(DESCRIPTION) 72.0 272.024 T
+4 FF
+108 288.690552 M 0.760834 0 32 (The ) widthshow
+1 FF
+126.810837 288.690552 M 0.760834 0 32 (vm_allocate) widthshow
+4 FF
+177.910843 288.690552 M 0.760834 0 32 ( function allocates a re) widthshow
+271.33429 288.690552 M 0.760834 0 32 (gion of virtual memory in the speci\336ed) widthshow
+(task\325) 108.0 300.691 T
+(s address space. A ne) 126.89 300.691 T
+(w re) 211.89 300.691 T
+(gion is al) 229.231 300.691 T
+(w) 265.801 300.691 T
+(ays zero \336lled.) 272.921 300.691 T
+4 FF
+108 324.690491 M 0.408737 0 32 (If ) widthshow
+6 FF
+117.568741 324.690491 M 0.408737 0 32 (anywher) widthshow
+151.638947 324.690491 M 0.408737 0 32 (e) widthshow
+4 FF
+156.078949 324.690491 M 0.408737 0 32 ( is VM_ALLOCA) widthshow
+229.117035 324.690491 M 0.408737 0 32 (TE_ANYWHERE, the returned ) widthshow
+6 FF
+360.313263 324.690491 M 0.408737 0 32 (addr) widthshow
+378.833466 324.690491 M 0.408737 0 32 (ess) widthshow
+4 FF
+391.053467 324.690491 M 0.408737 0 32 ( will be at) widthshow
+108 336.690491 M 0.206863 0 32 (a page boundary; otherwise, the re) widthshow
+246.62442 336.690491 M 0.206863 0 32 (gion starts at the be) widthshow
+325.07196 336.690491 M 0.206863 0 32 (ginning of the virtual page) widthshow
+108 348.690491 M 1.229935 0 32 (containing ) widthshow
+6 FF
+153.949936 348.690491 M 1.229935 0 32 (addr) widthshow
+172.470139 348.690491 M 1.229935 0 32 (ess) widthshow
+4 FF
+184.69014 348.690491 M 1.229935 0 32 (. ) widthshow
+6 FF
+190.920074 348.690491 M 1.229935 0 32 (size) widthshow
+4 FF
+205.920074 348.690491 M 1.229935 0 32 ( is al) widthshow
+227.169998 348.690491 M 1.229935 0 32 (w) widthshow
+234.290054 348.690491 M 1.229935 0 32 (ays rounded up to an inte) widthshow
+341.109802 348.690491 M 1.229935 0 32 (gral number of pages.) widthshow
+4 FF
+108 360.69046 M 0.035812 0 32 (Because of this rounding to virtual page boundaries, the amount of memory allo-) widthshow
+108 372.69043 M 1.240768 0 32 (cated may be greater than ) widthshow
+6 FF
+219.443863 372.69043 M 1.240768 0 32 (size) widthshow
+4 FF
+234.443863 372.69043 M 1.240768 0 32 (. Use ) widthshow
+1 FF
+259.975403 372.69043 M 1.240768 0 32 (host_page_size) widthshow
+4 FF
+323.30542 372.69043 M 1.240768 0 32 ( to \336nd the current virtual) widthshow
+(page size.) 108.0 384.69 T
+108 408.69043 M 0.068512 0 32 (Initially) widthshow
+139.020355 408.69043 M 0.068512 0 32 (, there are no access restrictions on an) widthshow
+290.970032 408.69043 M 0.068512 0 32 (y of the pages of the ne) widthshow
+384.441284 408.69043 M 0.068512 0 32 (wly allocat-) widthshow
+(ed re) 108.0 420.69 T
+(gion. Child tasks inherit the ne) 127.56 420.69 T
+(w re) 250.09 420.69 T
+(gion as a cop) 267.43 420.69 T
+(y) 319.82 420.69 T
+(.) 324.171 420.69 T
+5 FF
+(P) 72.0 452.024 T
+(ARAMETERS) 78.444 452.024 T
+6 FF
+(tar) 108.0 476.69 T
+(g) 119.3 476.69 T
+(et_task) 124.2 476.69 T
+4 FF
+144 488.690369 M 0.33783 0 32 ([in task send right] The port for the task in whose address space the re-) widthshow
+(gion is to be allocated.) 144.0 500.69 T
+6 FF
+(addr) 108.0 524.69 T
+(ess) 126.52 524.69 T
+4 FF
+144 536.690308 M 0.939133 0 32 ([pointer to in/out scalar] The starting address for the re) widthshow
+371.422302 536.690308 M 0.939133 0 32 (gion. If the re-) widthshow
+144 548.690308 M 1.21994 0 32 (gion as speci\336ed by the gi) widthshow
+254.009842 548.690308 M 1.21994 0 32 (v) widthshow
+258.859924 548.690308 M 1.21994 0 32 (en starting address and size w) widthshow
+383.999695 548.690308 M 1.21994 0 32 (ould not lie) widthshow
+144 560.690308 M 0.628891 0 32 (within the task\325) widthshow
+206.928085 560.690308 M 0.628891 0 32 (s un-allocated memory) widthshow
+299.186218 560.690308 M 0.628891 0 32 (, the k) widthshow
+325.064087 560.690308 M 0.628891 0 32 (ernel does not allocate the) widthshow
+144 572.690308 M 0.275955 0 32 (re) widthshow
+151.620087 572.690308 M 0.275955 0 32 (gion. If allocated, the k) widthshow
+245.383972 572.690308 M 0.275955 0 32 (ernel returns the starting address actually used) widthshow
+(for the allocated re) 144.0 584.69 T
+(gion.) 219.1 584.69 T
+6 FF
+(size) 108.0 608.69 T
+4 FF
+([in scalar] The number of bytes to allocate.) 144.0 620.69 T
+6 FF
+(anywher) 108.0 644.69 T
+(e) 142.07 644.69 T
+4 FF
+([in scalar] Placement indicator) 144.0 656.69 T
+(. V) 265.92 656.69 T
+(alid v) 277.031 656.69 T
+(alues are:) 299.281 656.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(New allocate op-) 441.0 142.667 T
+(tions) 441.0 154.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 72 4
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(72 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(VM_ALLOCA) 252.0 113.651 T
+(TE_ANYWHERE) 312.551 113.651 T
+288 125.65065 M 1.133957 0 32 (The k) widthshow
+312.084015 125.65065 M 1.133957 0 32 (ernel allocates the re) widthshow
+397.805969 125.65065 M 1.133957 0 32 (gion in the ne) widthshow
+455.777954 125.65065 M 1.133957 0 32 (xt unused space that) widthshow
+288 137.650635 M 1.438828 0 32 (is suf) widthshow
+310.578979 137.650635 M 1.438828 0 32 <de6369656e742077697468696e2074686520616464726573732073706163652e20546865206b> widthshow
+472.141998 137.650635 M 1.438828 0 32 (ernel returns the) widthshow
+(starting address actually used in ) 288.0 149.651 T
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+(addr) 418.26 149.651 T
+(ess) 436.78 149.651 T
+3 FF
+(.) 449.0 149.651 T
+(VM_ALLOCA) 252.0 173.651 T
+(TE_FIXED) 312.551 173.651 T
+288 185.650589 M 0.943253 0 32 (The k) widthshow
+311.893311 185.650589 M 0.943253 0 32 (ernel allocates the re) widthshow
+397.043152 185.650589 M 0.943253 0 32 (gion starting at ) widthshow
+4 FF
+462.372925 185.650589 M 0.943253 0 32 (addr) widthshow
+480.893127 185.650589 M 0.943253 0 32 (ess) widthshow
+3 FF
+493.113129 185.650589 M 0.943253 0 32 ( unless that) widthshow
+(space is reserv) 288.0 197.651 T
+(ed.) 346.16 197.651 T
+(VM_ALLOCA) 252.0 221.651 T
+(TE_RESER) 312.551 221.651 T
+(VED) 360.091 221.651 T
+288 233.650543 M 0.639908 0 32 (The k) widthshow
+311.589966 233.650543 M 0.639908 0 32 (ernel allocates the re) widthshow
+395.829773 233.650543 M 0.639908 0 32 (gion starting at ) widthshow
+4 FF
+460.249512 233.650543 M 0.639908 0 32 (addr) widthshow
+478.769714 233.650543 M 0.639908 0 32 (ess) widthshow
+3 FF
+490.989716 233.650543 M 0.639908 0 32 ( e) widthshow
+498.319763 233.650543 M 0.639908 0 32 (v) widthshow
+503.169861 233.650543 M 0.639908 0 32 (en if that) widthshow
+(space is reserv) 288.0 245.651 T
+(ed.) 346.16 245.651 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(NO) 180.0 276.984 T
+(TES) 197.52 276.984 T
+3 FF
+216 293.650513 M 0.159073 0 32 (T) widthshow
+221.31044 293.650513 M 0.159073 0 32 (o establish dif) widthshow
+277.488708 293.650513 M 0.159073 0 32 (ferent protections or inheritance for the ne) widthshow
+447.033325 293.650513 M 0.159073 0 32 (w re) widthshow
+464.532471 293.650513 M 0.159073 0 32 (gion, use the ) widthshow
+0 FF
+518.339722 293.650513 M 0.159073 0 32 (vm_-) widthshow
+(pr) 216.0 305.65 T
+(otect) 225.82 305.65 T
+3 FF
+( and ) 246.36 305.65 T
+0 FF
+(vm_inherit) 265.8 305.65 T
+3 FF
+( functions.) 313.02 305.65 T
+216 329.650482 M 1.013565 0 32 (A task\325) widthshow
+245.623871 329.650482 M 1.013565 0 32 (s address space can contain both e) widthshow
+388.185364 329.650482 M 1.013565 0 32 (xplicitly allocated memory and auto-) widthshow
+216 341.650452 M 3.628494 0 32 (matically allocated memory) widthshow
+334.257355 341.650452 M 3.628494 0 32 (. The ) widthshow
+0 FF
+364.564331 341.650452 M 3.628494 0 32 (vm_allocate) widthshow
+3 FF
+415.664368 341.650452 M 3.628494 0 32 ( function e) widthshow
+465.541443 341.650452 M 3.628494 0 32 (xplicitly allocates) widthshow
+216 353.650452 M 2.014389 0 32 (memory) widthshow
+248.680359 353.650452 M 2.014389 0 32 (. The k) widthshow
+280.65918 353.650452 M 2.014389 0 32 (ernel automatically allocates memory to hold out-of-line data) widthshow
+216 365.650452 M 0.41629 0 32 (passed in a message \(and recei) widthshow
+340.291626 365.650452 M 0.41629 0 32 (v) widthshow
+345.141693 365.650452 M 0.41629 0 32 (ed with ) widthshow
+0 FF
+378.194275 365.650452 M 0.41629 0 32 (mach_msg) widthshow
+3 FF
+423.744263 365.650452 M 0.41629 0 32 (\). The k) widthshow
+455.856934 365.650452 M 0.41629 0 32 (ernel allocates mem-) widthshow
+(ory for the passed data as an inte) 216.0 377.65 T
+(gral number of pages.) 346.65 377.65 T
+216 401.650391 M 0.767242 0 32 (This interf) widthshow
+258.6073 401.650391 M 0.767242 0 32 (ace is machine w) widthshow
+329.399109 401.650391 M 0.767242 0 32 (ord length dependent because of the virtual address) widthshow
+(parameter) 216.0 413.65 T
+(.) 255.43 413.65 T
+5 FF
+(RETURN V) 180.0 444.984 T
+(ALUE) 240.709 444.984 T
+3 FF
+(KERN_INV) 216.0 469.65 T
+(ALID_ADDRESS) 264.641 469.65 T
+(The speci\336ed address is ille) 252.0 481.65 T
+(g) 362.39 481.65 T
+(al or reserv) 367.34 481.65 T
+(ed.) 412.17 481.65 T
+(KERN_NO_SP) 216.0 505.65 T
+(A) 277.861 505.65 T
+(CE) 284.681 505.65 T
+252 517.65033 M 1.458282 0 32 (There is not enough space in the task\325) widthshow
+413.018311 517.65033 M 1.458282 0 32 (s address space to allocate the) widthshow
+(ne) 252.0 529.65 T
+(w re) 261.19 529.65 T
+(gion.) 278.53 529.65 T
+5 FF
+(RELA) 180.0 560.984 T
+(TED INFORMA) 212.197 560.984 T
+(TION) 297.385 560.984 T
+3 FF
+216 577.650269 M 1.15593 0 32 (Functions: ) widthshow
+0 FF
+261.885925 577.650269 M 1.15593 0 32 (vm_deallocate) widthshow
+3 FF
+322.985931 577.650269 M 1.15593 0 32 (, ) widthshow
+0 FF
+329.141846 577.650269 M 1.15593 0 32 (vm_inherit) widthshow
+3 FF
+376.361877 577.650269 M 1.15593 0 32 (, ) widthshow
+0 FF
+382.517792 577.650269 M 1.15593 0 32 (vm_pr) widthshow
+410.667908 577.650269 M 1.15593 0 32 (otect) widthshow
+3 FF
+431.207886 577.650269 M 1.15593 0 32 (, ) widthshow
+0 FF
+437.363831 577.650269 M 1.15593 0 32 (vm_r) widthshow
+459.953918 577.650269 M 1.15593 0 32 (egion) widthshow
+3 FF
+482.733948 577.650269 M 1.15593 0 32 (, ) widthshow
+0 FF
+488.889862 577.650269 M 1.15593 0 32 (host_page_-) widthshow
+(size) 216.0 589.65 T
+3 FF
+(, ) 231.55 589.65 T
+0 FF
+(vm_r) 236.55 589.65 T
+(eser) 259.14 589.65 T
+(v) 276.25 589.65 T
+(e) 281.15 589.65 T
+3 FF
+(.) 285.59 589.65 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 73 5
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (73 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_beha) 72.0 56.824 T
+(vior_set) 106.776 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_beha) 72.0 118.333 T
+(vior_set) 126.096 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Sets e) 146.34 142.691 T
+(xpected data access hints) 184.8 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_beha) 164.83 192.691 T
+(vior_set) 203.47 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t) 162.0 216.691 T
+6 FF
+(addr) 398.76 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(vm_size_t) 162.0 228.691 T
+6 FF
+(size) 414.6 228.691 T
+(,) 429.5 228.691 T
+4 FF
+(vm_beha) 162.0 240.691 T
+(vior_t) 198.46 240.691 T
+6 FF
+(behavior\)) 390.34 240.691 T
+4 FF
+(;) 429.22 240.691 T
+5 FF
+(DESCRIPTION) 72.0 272.024 T
+4 FF
+108 288.690552 M 1.234924 0 32 (The ) widthshow
+1 FF
+127.284927 288.690552 M 1.234924 0 32 (vm_beha) widthshow
+165.925064 288.690552 M 1.234924 0 32 (vior_set ) widthshow
+4 FF
+203.539993 288.690552 M 1.234924 0 32 (function informs the k) widthshow
+296.30481 288.690552 M 1.234924 0 32 (ernel of the e) widthshow
+352.339691 288.690552 M 1.234924 0 32 (xpected access pat-) widthshow
+108 300.690521 M 0.219269 0 32 (tern for a re) widthshow
+155.427902 300.690521 M 0.219269 0 32 (gion of memory) widthshow
+219.656799 300.690521 M 0.219269 0 32 (. The k) widthshow
+248.045395 300.690521 M 0.219269 0 32 (ernel uses this information to bias its page re-) widthshow
+(placement algorithms.) 108.0 312.691 T
+108 336.690491 M 0.383026 0 32 (The re) widthshow
+134.053116 336.690491 M 0.383026 0 32 (gion starts at the be) widthshow
+213.205307 336.690491 M 0.383026 0 32 (ginning of the virtual page containing ) widthshow
+6 FF
+368.823486 336.690491 M 0.383026 0 32 (addr) widthshow
+387.343689 336.690491 M 0.383026 0 32 (ess) widthshow
+4 FF
+399.56366 336.690491 M 0.383026 0 32 (; it ends) widthshow
+108 348.690491 M 1.769974 0 32 (at the end of the virtual page containing ) widthshow
+6 FF
+283.799805 348.690491 M 1.769974 0 32 (addr) widthshow
+302.320007 348.690491 M 1.769974 0 32 (ess) widthshow
+4 FF
+314.540009 348.690491 M 1.769974 0 32 ( + ) widthshow
+6 FF
+328.719971 348.690491 M 1.769974 0 32 (size) widthshow
+4 FF
+343.719971 348.690491 M 1.769974 0 32 ( - 1. Because of this) widthshow
+108 360.69046 M 1.704514 0 32 (rounding to virtual page boundaries, the amount of memory af) widthshow
+372.500793 360.69046 M 1.704514 0 32 (fected may be) widthshow
+(greater than ) 108.0 372.69 T
+6 FF
+(size) 157.98 372.69 T
+4 FF
+(. Use ) 172.98 372.69 T
+1 FF
+(host_page_size) 196.03 372.69 T
+4 FF
+( to \336nd the current virtual page size.) 259.36 372.69 T
+5 FF
+(P) 72.0 404.024 T
+(ARAMETERS) 78.444 404.024 T
+6 FF
+(tar) 108.0 428.69 T
+(g) 119.3 428.69 T
+(et_task) 124.2 428.69 T
+4 FF
+144 440.69043 M 1.409988 0 32 ([in task send right] The port for the task in whose address space the) widthshow
+(memory object beha) 144.0 452.69 T
+(vior is to be set.) 225.45 452.69 T
+6 FF
+(addr) 108.0 476.69 T
+(ess) 126.52 476.69 T
+4 FF
+([in scalar] The starting address for the memory re) 144.0 488.69 T
+(gion.) 342.13 488.69 T
+6 FF
+(size) 108.0 512.69 T
+4 FF
+([in scalar] The number of bytes in the re) 144.0 524.69 T
+(gion.) 304.92 524.69 T
+6 FF
+(behavior) 108.0 548.69 T
+4 FF
+144 560.690308 M 0.16391 0 32 ([in scalar] The e) widthshow
+209.591827 560.690308 M 0.16391 0 32 (xpected reference pattern for the memory) widthshow
+375.531769 560.690308 M 0.16391 0 32 (. Possible v) widthshow
+421.449707 560.690308 M 0.16391 0 32 (al-) widthshow
+(ues are:) 144.0 572.69 T
+(VM_BEHA) 144.0 596.69 T
+(VIOR_DEF) 190.981 596.69 T
+(A) 238.571 596.69 T
+(UL) 245.241 596.69 T
+(T) 257.652 596.69 T
+180 608.690247 M 0.46489 0 32 (The system\325) widthshow
+229.075195 608.690247 M 0.46489 0 32 (s def) widthshow
+248.600143 608.690247 M 0.46489 0 32 (ault beha) widthshow
+285.245148 608.690247 M 0.46489 0 32 (vior) widthshow
+300.80545 608.690247 M 0.46489 0 32 (. Assumes strong locality of ref-) widthshow
+180 620.690247 M 2.494232 0 32 (erence, so LR) widthshow
+239.848694 620.690247 M 2.494232 0 32 (U page replacement, possibly with pre-fetch,) widthshow
+(w) 180.0 632.69 T
+(ould be appropriate.) 187.12 632.69 T
+(VM_BEHA) 144.0 656.69 T
+(VIOR_RANDOM) 190.981 656.69 T
+180 668.690186 M 0.591202 0 32 (No particular order e) widthshow
+265.203705 668.690186 M 0.591202 0 32 (xpected. Assumes weak locality of refer-) widthshow
+(ence, so LR) 180.0 680.69 T
+(U page replacement may be inef) 227.09 680.69 T
+(fecti) 356.52 680.69 T
+(v) 374.041 680.69 T
+(e.) 378.891 680.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(New) 441.0 142.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 74 6
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(74 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(VM_BEHA) 252.0 113.651 T
+(VIOR_SEQ) 298.981 113.651 T
+(UENTIAL) 347.211 113.651 T
+(F) 288.0 125.651 T
+(orw) 293.41 125.651 T
+(ard sequential order) 308.86 125.651 T
+(.) 387.73 125.651 T
+(VM_BEHA) 252.0 149.651 T
+(VIOR_RSEQNTL) 298.981 149.651 T
+(Re) 288.0 161.651 T
+(v) 298.86 161.651 T
+(erse sequential order) 303.71 161.651 T
+(.) 385.911 161.651 T
+4 (Times-Bold) 12 1 mymakefontmetric
+4 FF
+(NO) 180.0 192.984 T
+(TES) 197.52 192.984 T
+3 FF
+216 209.650604 M 0.309937 0 32 (This interf) widthshow
+258.149994 209.650604 M 0.309937 0 32 (ace is machine w) widthshow
+327.569885 209.650604 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 216.0 221.651 T
+(.) 245.99 221.651 T
+4 FF
+(RETURN V) 180.0 252.984 T
+(ALUE) 240.709 252.984 T
+3 FF
+(KERN_INV) 216.0 277.651 T
+(ALID_ADDRESS) 264.641 277.651 T
+(The speci\336ed address is ille) 252.0 289.651 T
+(g) 362.39 289.651 T
+(al or reserv) 367.34 289.651 T
+(ed.) 412.17 289.651 T
+4 FF
+(RELA) 180.0 320.984 T
+(TED INFORMA) 212.197 320.984 T
+(TION) 297.385 320.984 T
+3 FF
+(Functions: ) 216.0 337.651 T
+0 FF
+(vm_r) 260.73 337.651 T
+(egion, host_page_size) 283.32 337.651 T
+3 FF
+(.) 374.43 337.651 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 75 7
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (75 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_copy) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_copy) 72.0 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Copies a re) 146.34 142.691 T
+(gion in a task\325) 206.18 142.691 T
+(s virtual memory) 262.57 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_copy) 164.83 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t) 162.0 216.691 T
+6 FF
+(sour) 367.47 216.691 T
+(ce_addr) 384.88 216.691 T
+(ess) 417.28 216.691 T
+4 FF
+(,) 429.5 216.691 T
+(vm_size_t) 162.0 228.691 T
+6 FF
+(count,) 407.28 228.691 T
+4 FF
+(vm_address_t) 162.0 240.691 T
+6 FF
+(dest_addr) 374.04 240.691 T
+(ess\)) 413.67 240.691 T
+4 FF
+(;) 429.22 240.691 T
+5 FF
+(DESCRIPTION) 72.0 272.024 T
+4 FF
+108 288.690552 M 0.500793 0 32 (The ) widthshow
+1 FF
+126.550797 288.690552 M 0.500793 0 32 (vm_copy) widthshow
+4 FF
+164.880798 288.690552 M 0.500793 0 32 ( function copies a source re) widthshow
+276.924866 288.690552 M 0.500793 0 32 (gion to a destination re) widthshow
+370.43811 288.690552 M 0.500793 0 32 (gion within the) widthshow
+108 300.690521 M 0.92186 0 32 (same task\325) widthshow
+150.862167 300.690521 M 0.92186 0 32 (s virtual memory) widthshow
+220.386246 300.690521 M 0.92186 0 32 (. It is semantically equi) widthshow
+316.87384 300.690521 M 0.92186 0 32 (v) widthshow
+321.623962 300.690521 M 0.92186 0 32 (alent to ) widthshow
+1 FF
+355.687683 300.690521 M 0.92186 0 32 (vm_r) widthshow
+378.277771 300.690521 M 0.92186 0 32 (ead) widthshow
+4 FF
+393.277771 300.690521 M 0.92186 0 32 ( follo) widthshow
+415.339783 300.690521 M 0.92186 0 32 (wed) widthshow
+(by ) 108.0 312.691 T
+1 FF
+(vm_write) 120.5 312.691 T
+4 FF
+(. The destination re) 161.04 312.691 T
+(gion can o) 238.1 312.691 T
+(v) 279.61 312.691 T
+(erlap the source re) 284.46 312.691 T
+(gion.) 357.89 312.691 T
+108 336.690491 M 1.709061 0 32 (The destination re) widthshow
+183.47821 336.690491 M 1.709061 0 32 (gion must already be allocated. The source re) widthshow
+376.911743 336.690491 M 1.709061 0 32 (gion must be) widthshow
+(readable, and the destination re) 108.0 348.69 T
+(gion must be writable.) 232.54 348.69 T
+5 FF
+(P) 72.0 380.024 T
+(ARAMETERS) 78.444 380.024 T
+6 FF
+(tar) 108.0 404.69 T
+(g) 119.3 404.69 T
+(et_task) 124.2 404.69 T
+4 FF
+([in task send right] The port for the task whose memory is to be copied.) 144.0 416.69 T
+6 FF
+(sour) 108.0 440.69 T
+(ce_addr) 125.41 440.69 T
+(ess) 157.81 440.69 T
+4 FF
+144 452.69043 M 0.3936 0 32 ([in scalar] The starting address for the source re) widthshow
+338.04892 452.69043 M 0.3936 0 32 (gion. The address must) widthshow
+(be on a page boundary) 144.0 464.69 T
+(.) 233.88 464.69 T
+6 FF
+(count) 108.0 488.69 T
+4 FF
+144 500.690369 M 1.35582 0 32 ([in scalar] The number of bytes in the source re) widthshow
+345.722473 500.690369 M 1.35582 0 32 (gion. The number of) widthshow
+(bytes must con) 144.0 512.69 T
+(v) 203.6 512.69 T
+(ert to an inte) 208.45 512.69 T
+(gral number of virtual pages.) 258.57 512.69 T
+6 FF
+(dest_addr) 108.0 536.69 T
+(ess) 147.63 536.69 T
+4 FF
+144 548.690308 M 0.848953 0 32 ([in scalar] The starting address for the destination re) widthshow
+359.48175 548.690308 M 0.848953 0 32 (gion. The address) widthshow
+(must be on a page boundary) 144.0 560.69 T
+(.) 255.83 560.69 T
+5 FF
+(NO) 72.0 592.024 T
+(TES) 89.52 592.024 T
+4 FF
+108 608.690308 M 0.309937 0 32 (This interf) widthshow
+150.149994 608.690308 M 0.309937 0 32 (ace is machine w) widthshow
+219.56987 608.690308 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 108.0 620.69 T
+(.) 137.99 620.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(Belie) 441.0 142.667 T
+(v) 461.96 142.667 T
+(ed to be sta-) 466.86 142.667 T
+(ble) 441.0 154.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 76 8
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(76 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Bold) 12 1 mymakefontmetric
+3 FF
+(RETURN V) 180.0 114.984 T
+(ALUE) 240.709 114.984 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+(KERN_PR) 216.0 139.651 T
+(O) 260.05 139.651 T
+(TECTION_F) 266.87 139.651 T
+(AILURE) 319.461 139.651 T
+252 151.65065 M 1.575958 0 32 (The source re) widthshow
+309.421997 151.65065 M 1.575958 0 32 (gion is protected ag) widthshow
+392.699921 151.65065 M 1.575958 0 32 (ainst reading, or the destination re-) widthshow
+(gion is protected ag) 252.0 163.651 T
+(ainst writing.) 330.55 163.651 T
+(KERN_INV) 216.0 187.651 T
+(ALID_ADDRESS) 264.641 187.651 T
+252 199.650604 M 0.584106 0 32 (An address is ille) widthshow
+322.76239 199.650604 M 0.584106 0 32 (g) widthshow
+327.712433 199.650604 M 0.584106 0 32 (al or speci\336es a non-allocated re) widthshow
+459.613068 199.650604 M 0.584106 0 32 (gion, or there is not) widthshow
+(enough memory follo) 252.0 211.651 T
+(wing one of the addresses.) 338.41 211.651 T
+3 FF
+(RELA) 180.0 242.984 T
+(TED INFORMA) 212.197 242.984 T
+(TION) 297.385 242.984 T
+4 FF
+(Functions: ) 216.0 259.651 T
+0 FF
+(vm_pr) 260.73 259.651 T
+(otect) 288.88 259.651 T
+4 FF
+(, ) 309.42 259.651 T
+0 FF
+(vm_r) 314.42 259.651 T
+(ead) 337.01 259.651 T
+4 FF
+(, ) 352.01 259.651 T
+0 FF
+(vm_write) 357.01 259.651 T
+4 FF
+(, ) 397.55 259.651 T
+0 FF
+(host_page_size) 402.55 259.651 T
+4 FF
+(.) 465.88 259.651 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 77 9
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (77 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_deallocate) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_deallocate) 72.0 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Deallocates a re) 146.34 142.691 T
+(gion of virtual memory) 225.05 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_deallocate) 164.83 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t) 162.0 216.691 T
+6 FF
+(addr) 398.76 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(vm_size_t) 162.0 228.691 T
+6 FF
+(size\)) 410.89 228.691 T
+4 FF
+(;) 429.22 228.691 T
+5 FF
+(DESCRIPTION) 72.0 260.024 T
+4 FF
+108 276.690552 M 0.054504 0 32 (The ) widthshow
+1 FF
+126.104507 276.690552 M 0.054504 0 32 (vm_deallocate) widthshow
+4 FF
+187.204514 276.690552 M 0.054504 0 32 ( function deallocates a re) widthshow
+287.242615 276.690552 M 0.054504 0 32 (gion of virtual memory in the speci-) widthshow
+108 288.690552 M 0.816833 0 32 <de6564207461736bd5> widthshow
+145.207138 288.690552 M 0.816833 0 32 (s address space. If the speci\336ed range is reserv) widthshow
+337.921936 288.690552 M 0.816833 0 32 (ed, the space is deallo-) widthshow
+(cated b) 108.0 300.691 T
+(ut continues to be reserv) 136.4 300.691 T
+(ed.) 234.01 300.691 T
+108 324.690491 M 0.383026 0 32 (The re) widthshow
+134.053116 324.690491 M 0.383026 0 32 (gion starts at the be) widthshow
+213.205307 324.690491 M 0.383026 0 32 (ginning of the virtual page containing ) widthshow
+6 FF
+368.823486 324.690491 M 0.383026 0 32 (addr) widthshow
+387.343689 324.690491 M 0.383026 0 32 (ess) widthshow
+4 FF
+399.56366 324.690491 M 0.383026 0 32 (; it ends) widthshow
+108 336.690491 M 1.769974 0 32 (at the end of the virtual page containing ) widthshow
+6 FF
+283.799805 336.690491 M 1.769974 0 32 (addr) widthshow
+302.320007 336.690491 M 1.769974 0 32 (ess) widthshow
+4 FF
+314.540009 336.690491 M 1.769974 0 32 ( + ) widthshow
+6 FF
+328.719971 336.690491 M 1.769974 0 32 (size) widthshow
+4 FF
+343.719971 336.690491 M 1.769974 0 32 ( - 1. Because of this) widthshow
+108 348.690491 M 0.469055 0 32 (rounding to virtual page boundaries, the amount of memory deallocated may be) widthshow
+(greater than ) 108.0 360.69 T
+6 FF
+(size) 157.98 360.69 T
+4 FF
+(. Use ) 172.98 360.69 T
+1 FF
+(host_page_size) 196.03 360.69 T
+4 FF
+( to \336nd the current virtual page size.) 259.36 360.69 T
+1 FF
+108 384.69043 M 0.214462 0 32 (vm_deallocate) widthshow
+4 FF
+169.100006 384.69043 M 0.214462 0 32 ( af) widthshow
+179.33461 384.69043 M 0.214462 0 32 (fects only ) widthshow
+6 FF
+221.423538 384.69043 M 0.214462 0 32 (tar) widthshow
+232.72374 384.69043 M 0.214462 0 32 (g) widthshow
+237.623795 384.69043 M 0.214462 0 32 (et_task) widthshow
+4 FF
+265.953796 384.69043 M 0.214462 0 32 (. Other tasks that ha) widthshow
+346.321777 384.69043 M 0.214462 0 32 (v) widthshow
+351.171844 384.69043 M 0.214462 0 32 (e access to the deal-) widthshow
+(located memory can continue to reference it.) 108.0 396.69 T
+5 FF
+(P) 72.0 428.024 T
+(ARAMETERS) 78.444 428.024 T
+6 FF
+(tar) 108.0 452.69 T
+(g) 119.3 452.69 T
+(et_task) 124.2 452.69 T
+4 FF
+144 464.690399 M 0.33783 0 32 ([in task send right] The port for the task in whose address space the re-) widthshow
+(gion is to be deallocated.) 144.0 476.69 T
+6 FF
+(addr) 108.0 500.69 T
+(ess) 126.52 500.69 T
+4 FF
+([in scalar] The starting address for the re) 144.0 512.69 T
+(gion.) 306.3 512.69 T
+6 FF
+(size) 108.0 536.69 T
+4 FF
+([in scalar] The number of bytes to deallocate.) 144.0 548.69 T
+5 FF
+(NO) 72.0 580.024 T
+(TES) 89.52 580.024 T
+1 FF
+108 596.690308 M 0.246658 0 32 (vm_deallocate) widthshow
+4 FF
+169.100006 596.690308 M 0.246658 0 32 ( can be used to deallocate memory passed as out-of-line data in a) widthshow
+(message.) 108.0 608.69 T
+108 632.690308 M 0.309937 0 32 (This interf) widthshow
+150.149994 632.690308 M 0.309937 0 32 (ace is machine w) widthshow
+219.56987 632.690308 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 108.0 644.69 T
+(.) 137.99 644.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(Belie) 441.0 142.667 T
+(v) 461.96 142.667 T
+(ed to be sta-) 466.86 142.667 T
+(ble) 441.0 154.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 78 10
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(78 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Bold) 12 1 mymakefontmetric
+3 FF
+(RETURN V) 180.0 114.984 T
+(ALUE) 240.709 114.984 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+(KERN_INV) 216.0 139.651 T
+(ALID_ADDRESS) 264.641 139.651 T
+(The address is ille) 252.0 151.651 T
+(g) 324.34 151.651 T
+(al or speci\336es a non-allocated re) 329.29 151.651 T
+(gion.) 458.27 151.651 T
+3 FF
+(RELA) 180.0 182.984 T
+(TED INFORMA) 212.197 182.984 T
+(TION) 297.385 182.984 T
+4 FF
+(Functions: ) 216.0 199.651 T
+0 FF
+(mach_msg) 260.73 199.651 T
+4 FF
+(, ) 306.28 199.651 T
+0 FF
+(vm_allocate) 311.28 199.651 T
+4 FF
+(, ) 362.38 199.651 T
+0 FF
+(vm_map) 367.38 199.651 T
+4 FF
+(, ) 404.6 199.651 T
+0 FF
+(host_page_size) 409.6 199.651 T
+4 FF
+(.) 472.93 199.651 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 79 11
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (79 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_inherit) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_inherit) 72.0 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Sets the inheritance attrib) 146.34 142.691 T
+(ute for a re) 263.07 142.691 T
+(gion of virtual memory) 306.51 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_inherit) 164.83 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t) 162.0 216.691 T
+6 FF
+(addr) 398.76 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(vm_size_t) 162.0 228.691 T
+6 FF
+(size) 414.6 228.691 T
+(,) 429.5 228.691 T
+4 FF
+(vm_inherit_t) 162.0 240.691 T
+6 FF
+(ne) 359.38 240.691 T
+(w_inheritance\)) 368.67 240.691 T
+4 FF
+(;) 429.22 240.691 T
+5 FF
+(DESCRIPTION) 72.0 272.024 T
+4 FF
+108 288.690552 M 1.485397 0 32 (The ) widthshow
+1 FF
+127.5354 288.690552 M 1.485397 0 32 (vm_inherit) widthshow
+4 FF
+174.755402 288.690552 M 1.485397 0 32 ( function sets the inheritance attrib) widthshow
+320.57251 288.690552 M 1.485397 0 32 (ute for a re) widthshow
+368.468811 288.690552 M 1.485397 0 32 (gion within the) widthshow
+108 300.690521 M 1.120911 0 32 (speci\336ed task\325) widthshow
+166.061218 300.690521 M 1.120911 0 32 (s address space. The inheritance attrib) widthshow
+323.645905 300.690521 M 1.120911 0 32 (ute determines the type of) widthshow
+(access established for child tasks at task creation.) 108.0 312.691 T
+108 336.690491 M 1.009018 0 32 (Because inheritance applies to virtual pages, the speci\336ed) widthshow
+6 FF
+345.573151 336.690491 M 1.009018 0 32 ( addr) widthshow
+367.602356 336.690491 M 1.009018 0 32 (ess) widthshow
+4 FF
+379.822388 336.690491 M 1.009018 0 32 ( and) widthshow
+6 FF
+397.771393 336.690491 M 1.009018 0 32 ( size) widthshow
+4 FF
+416.280396 336.690491 M 1.009018 0 32 ( are) widthshow
+108 348.690491 M 0.481491 0 32 (rounded to page boundaries, as follo) widthshow
+255.687607 348.690491 M 0.481491 0 32 (ws: the re) widthshow
+295.380676 348.690491 M 0.481491 0 32 (gion starts at the be) widthshow
+374.926727 348.690491 M 0.481491 0 32 (ginning of the) widthshow
+108 360.69046 M 0.403015 0 32 (virtual page containing) widthshow
+6 FF
+201.016037 360.69046 M 0.403015 0 32 ( addr) widthshow
+222.439255 360.69046 M 0.403015 0 32 (ess) widthshow
+4 FF
+234.659256 360.69046 M 0.403015 0 32 (; it ends at the end of the virtual page containing) widthshow
+6 FF
+108 372.69043 M 1.977646 0 32 (addr) widthshow
+126.520203 372.69043 M 1.977646 0 32 (ess) widthshow
+4 FF
+138.740204 372.69043 M 1.977646 0 32 ( + ) widthshow
+6 FF
+153.335495 372.69043 M 1.977646 0 32 (size) widthshow
+4 FF
+168.335495 372.69043 M 1.977646 0 32 ( - 1. Because of this rounding to virtual page boundaries, the) widthshow
+108 384.69043 M 1.553604 0 32 (amount of memory af) widthshow
+199.340958 384.69043 M 1.553604 0 32 (fected may be greater than) widthshow
+6 FF
+311.625397 384.69043 M 1.553604 0 32 ( size) widthshow
+4 FF
+330.679016 384.69043 M 1.553604 0 32 (. Use) widthshow
+1 FF
+352.782593 384.69043 M 1.553604 0 32 ( host_page_size) widthshow
+4 FF
+420.166199 384.69043 M 1.553604 0 32 ( to) widthshow
+<de6e64207468652063757272656e74207669727475616c20706167652073697a652e> 108.0 396.69 T
+108 420.690399 M 0.329971 0 32 (A parent and a child task can share the same ph) widthshow
+301.199768 420.690399 M 0.329971 0 32 (ysical memory only if the inher-) widthshow
+108 432.690369 M 0.660812 0 32 (itance for the memory is set to VM_INHERIT_SHARE before the child task is) widthshow
+108 444.690369 M 0.885803 0 32 (created. Other than through the use of an e) widthshow
+285.166534 444.690369 M 0.885803 0 32 (xternal memory manager \(see ) widthshow
+1 FF
+410.339783 444.690369 M 0.885803 0 32 (vm_-) widthshow
+(map) 108.0 456.69 T
+4 FF
+(\), this is the only w) 126.89 456.69 T
+(ay that tw) 203.46 456.69 T
+(o tasks can share memory) 242.8 456.69 T
+(.) 345.46 456.69 T
+(Note that all the threads within a task share the task\325) 108.0 480.69 T
+(s memory) 316.86 480.69 T
+(.) 355.931 480.69 T
+108 504.690308 M 0.289948 0 32 (Inheritance can be set for reserv) widthshow
+237.29985 504.690308 M 0.289948 0 32 (ed re) widthshow
+257.149902 504.690308 M 0.289948 0 32 (gions. If the re) widthshow
+316.189819 504.690308 M 0.289948 0 32 (gion is reserv) widthshow
+370.499817 504.690308 M 0.289948 0 32 (ed b) widthshow
+387.529846 504.690308 M 0.289948 0 32 (ut not allo-) widthshow
+108 516.690308 M 0.887253 0 32 (cated, the inheritance will be applied to an) widthshow
+283.470886 516.690308 M 0.887253 0 32 (y memory subsequently allocated or) widthshow
+(mapped in that re) 108.0 528.69 T
+(gion.) 177.56 528.69 T
+5 FF
+(P) 72.0 560.024 T
+(ARAMETERS) 78.444 560.024 T
+6 FF
+(tar) 108.0 584.69 T
+(g) 119.3 584.69 T
+(et_task) 124.2 584.69 T
+4 FF
+144 596.690247 M 0.624954 0 32 ([in task send right] The port for the task whose address space contains) widthshow
+(the re) 144.0 608.69 T
+(gion.) 166.34 608.69 T
+6 FF
+(addr) 108.0 632.69 T
+(ess) 126.52 632.69 T
+4 FF
+([in scalar] The starting address for the re) 144.0 644.69 T
+(gion.) 306.3 644.69 T
+6 FF
+(size) 108.0 668.69 T
+4 FF
+([in scalar] The number of bytes in the re) 144.0 680.69 T
+(gion.) 304.92 680.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(Belie) 441.0 142.667 T
+(v) 461.96 142.667 T
+(ed to be sta-) 466.86 142.667 T
+(ble) 441.0 154.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 80 12
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(80 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Italic) 10 1 mymakefontmetric
+3 FF
+(ne) 216.0 113.651 T
+(w_inheritance) 225.29 113.651 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+([in scalar] The ne) 252.0 125.651 T
+(w inheritance attrib) 322.0 125.651 T
+(ute for the re) 399.56 125.651 T
+(gion. V) 450.78 125.651 T
+(alid v) 479.671 125.651 T
+(alues are:) 501.921 125.651 T
+(VM_INHERIT_SHARE) 252.0 149.651 T
+(Allo) 288.0 161.651 T
+(ws child tasks to share the re) 305.53 161.651 T
+(gion.) 420.36 161.651 T
+(VM_INHERIT_COPY) 252.0 185.651 T
+(Gi) 288.0 197.651 T
+(v) 297.75 197.651 T
+(es child tasks a cop) 302.6 197.651 T
+(y of the re) 379.71 197.651 T
+(gion.) 420.38 197.651 T
+(VM_INHERIT_NONE) 252.0 221.651 T
+(Pro) 288.0 233.651 T
+(vides no access to the re) 301.74 233.651 T
+(gion for child tasks.) 398.51 233.651 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(NO) 180.0 264.984 T
+(TES) 197.52 264.984 T
+4 FF
+216 281.650543 M 0.309937 0 32 (This interf) widthshow
+258.149994 281.650543 M 0.309937 0 32 (ace is machine w) widthshow
+327.569885 281.650543 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 216.0 293.651 T
+(.) 245.99 293.651 T
+5 FF
+(RETURN V) 180.0 324.984 T
+(ALUE) 240.709 324.984 T
+4 FF
+(KERN_INV) 216.0 349.651 T
+(ALID_ADDRESS) 264.641 349.651 T
+(The address is ille) 252.0 361.65 T
+(g) 324.34 361.65 T
+(al or speci\336es a non-allocated re) 329.29 361.65 T
+(gion.) 458.27 361.65 T
+5 FF
+(RELA) 180.0 392.984 T
+(TED INFORMA) 212.197 392.984 T
+(TION) 297.385 392.984 T
+4 FF
+216 409.650482 M 12.123901 0 32 (Functions:) widthshow
+0 FF
+258.22998 409.650482 M 12.123901 0 32 ( task_cr) widthshow
+304.333984 409.650482 M 12.123901 0 32 (eate) widthshow
+4 FF
+321.544006 409.650482 M 12.123901 0 32 (, ) widthshow
+0 FF
+338.667908 409.650482 M 12.123901 0 32 (vm_map) widthshow
+4 FF
+375.887909 409.650482 M 12.123901 0 32 (, ) widthshow
+0 FF
+393.01181 409.650482 M 12.123901 0 32 (vm_r) widthshow
+415.601929 409.650482 M 12.123901 0 32 (egion) widthshow
+4 FF
+438.381897 409.650482 M 12.123901 0 32 (, ) widthshow
+0 FF
+455.505798 409.650482 M 12.123901 0 32 (vm_r) widthshow
+478.095917 409.650482 M 12.123901 0 32 (eser) widthshow
+495.205994 409.650482 M 12.123901 0 32 (v) widthshow
+500.106018 409.650482 M 12.123901 0 32 (e) widthshow
+4 FF
+504.546021 409.650482 M 12.123901 0 32 (, ) widthshow
+0 FF
+521.669922 409.650482 M 12.123901 0 32 (nor-) widthshow
+(ma_task_clone) 216.0 421.65 T
+4 FF
+(.) 279.33 421.65 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 81 13
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (81 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_machine_attrib) 72.0 56.824 T
+(ute) 147.312 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_machine_attrib) 72.0 118.333 T
+(ute) 189.152 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Sets and gets special attrib) 146.34 142.691 T
+(utes of a memory re) 267.24 142.691 T
+(gion) 347.07 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_machine_attrib) 164.83 192.691 T
+(ute) 248.51 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t) 162.0 216.691 T
+6 FF
+(addr) 398.76 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(vm_size_t) 162.0 228.691 T
+6 FF
+(size) 414.6 228.691 T
+(,) 429.5 228.691 T
+4 FF
+(vm_machine_attrib) 162.0 240.691 T
+(ute_t) 239.57 240.691 T
+6 FF
+(attrib) 395.35 240.691 T
+(ute) 417.38 240.691 T
+(,) 429.5 240.691 T
+4 FF
+(vm_machine_attrib) 162.0 252.691 T
+(ute_v) 239.57 252.691 T
+(al_t*) 261.54 252.691 T
+6 FF
+(value\)) 404.23 252.691 T
+4 FF
+(;) 429.22 252.691 T
+5 FF
+(DESCRIPTION) 72.0 284.024 T
+4 FF
+108 300.690521 M 2.746613 0 32 (The ) widthshow
+1 FF
+128.796616 300.690521 M 2.746613 0 32 (vm_machine_attrib) widthshow
+212.47673 300.690521 M 2.746613 0 32 (ute) widthshow
+4 FF
+225.806732 300.690521 M 2.746613 0 32 ( function gets and sets special attrib) widthshow
+384.846527 300.690521 M 2.746613 0 32 (utes of the) widthshow
+108 312.690491 M 0.794403 0 32 (memory re) widthshow
+152.244492 312.690491 M 0.794403 0 32 (gion implemented by the underlying ) widthshow
+1 FF
+304.26651 312.690491 M 0.794403 0 32 (pmap) widthshow
+4 FF
+328.716492 312.690491 M 0.794403 0 32 ( module. These attrib) widthshow
+415.889832 312.690491 M 0.794403 0 32 (utes) widthshow
+108 324.690491 M 1.14212 0 32 (are properties such as cachability) widthshow
+244.658859 324.690491 M 1.14212 0 32 (, migratability and replicability) widthshow
+371.87558 324.690491 M 1.14212 0 32 (. The beha) widthshow
+415.889954 324.690491 M 1.14212 0 32 (vior) widthshow
+(of this function is machine dependent.) 108.0 336.69 T
+5 FF
+(P) 72.0 368.024 T
+(ARAMETERS) 78.444 368.024 T
+6 FF
+(tar) 108.0 392.69 T
+(g) 119.3 392.69 T
+(et_task) 124.2 392.69 T
+4 FF
+144 404.69043 M 1.409988 0 32 ([in task send right] The port for the task in whose address space the) widthshow
+(memory object is to be manipulated.) 144.0 416.69 T
+6 FF
+(addr) 108.0 440.69 T
+(ess) 126.52 440.69 T
+4 FF
+144 452.690399 M 0.515976 0 32 ([in scalar] The starting address for the memory re) widthshow
+346.257935 452.690399 M 0.515976 0 32 (gion. The granularity) widthshow
+144 464.690369 M 0.716965 0 32 (of rounding of this v) widthshow
+228.837997 464.690369 M 0.716965 0 32 (alue to page boundaries is implementation depen-) widthshow
+(dent.) 144.0 476.69 T
+6 FF
+(size) 108.0 500.69 T
+4 FF
+144 512.690308 M 0.198288 0 32 ([in scalar] The number of bytes in the re) widthshow
+306.506409 512.690308 M 0.198288 0 32 (gion. The granularity of round-) widthshow
+(ing of this v) 144.0 524.69 T
+(alue to page boundaries is implementation dependent.) 191.81 524.69 T
+6 FF
+(attrib) 108.0 548.69 T
+(ute) 130.03 548.69 T
+4 FF
+([in scalar] The name of the attrib) 144.0 560.69 T
+(ute to be get/set. Possible v) 275.43 560.69 T
+(alues are:) 384.07 560.69 T
+(MA) 144.0 584.69 T
+(TTR_CA) 159.001 584.69 T
+(CHE) 196.381 584.69 T
+180 596.690247 M 1.798584 0 32 (Cachability) widthshow
+225.460358 596.690247 M 1.798584 0 32 (. Aside from the generic v) widthshow
+338.623413 596.690247 M 1.798584 0 32 (alues listed belo) widthshow
+406.410736 596.690247 M 1.798584 0 32 (w) widthshow
+412.981079 596.690247 M 1.798584 0 32 (, the) widthshow
+(follo) 180.0 608.69 T
+(wing special v) 198.64 608.69 T
+(alues are de\336ned:) 256.16 608.69 T
+4 FF
+(MA) 180.0 632.69 T
+(TTR_V) 195.001 632.69 T
+(AL_CA) 224.761 632.69 T
+(CHE_FLUSH \321 \337ush from all caches) 256.582 632.69 T
+4 FF
+(MA) 180.0 656.69 T
+(TTR_V) 195.001 656.69 T
+(AL_DCA) 224.761 656.69 T
+(CHE_FLUSH \321 \337ush from data caches) 263.802 656.69 T
+180 680.690186 M 3.436996 0 32 (MA) widthshow
+195.00061 680.690186 M 3.436996 0 32 (TTR_V) widthshow
+224.761353 680.690186 M 3.436996 0 32 (AL_ICA) widthshow
+259.91156 680.690186 M 3.436996 0 32 (CHE_FLUSH \321 \337ush from instruction) widthshow
+4 FF
+(caches) 180.0 692.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(Belie) 441.0 142.667 T
+(v) 461.96 142.667 T
+(ed to be sta-) 466.86 142.667 T
+(ble) 441.0 154.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 82 14
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(82 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(MA) 252.0 113.651 T
+(TTR_MIGRA) 267.001 113.651 T
+(TE) 323.111 113.651 T
+(Migratability) 288.0 125.651 T
+(.) 340.13 125.651 T
+(MA) 252.0 149.651 T
+(TTR_REPLICA) 267.001 149.651 T
+(TE) 331.451 149.651 T
+(Replicability) 288.0 161.651 T
+(.) 339.02 161.651 T
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+(value) 216.0 185.651 T
+3 FF
+252 197.650589 M 0.495758 0 32 ([pointer to in/out scalar] The ne) widthshow
+381.148926 197.650589 M 0.495758 0 32 (w v) widthshow
+396.114838 197.650589 M 0.495758 0 32 (alue for the attrib) widthshow
+466.552246 197.650589 M 0.495758 0 32 (ute. The old v) widthshow
+523.339661 197.650589 M 0.495758 0 32 (alue) widthshow
+252 209.650574 M 0.739899 0 32 (is also returned in this v) widthshow
+351.279633 209.650574 M 0.739899 0 32 (ariable. The ne) widthshow
+412.209595 209.650574 M 0.739899 0 32 (w v) widthshow
+427.419617 209.650574 M 0.739899 0 32 (alue can be a speci\336c v) widthshow
+523.339233 209.650574 M 0.739899 0 32 (alue) widthshow
+(listed abo) 252.0 221.651 T
+(v) 290.46 221.651 T
+(e, or one of the follo) 295.31 221.651 T
+(wing generic v) 376.71 221.651 T
+(alues:) 435.89 221.651 T
+3 FF
+(MA) 252.0 245.651 T
+(TTR_V) 267.001 245.651 T
+(AL_OFF) 296.761 245.651 T
+(T) 288.0 257.651 T
+(urn attrib) 293.66 257.651 T
+(ute of) 330.4 257.651 T
+(f.) 353.201 257.651 T
+(MA) 252.0 281.651 T
+(TTR_V) 267.001 281.651 T
+(AL_ON) 296.761 281.651 T
+(T) 288.0 293.65 T
+(urn attrib) 293.66 293.65 T
+(ute on.) 330.4 293.65 T
+(MA) 252.0 317.65 T
+(TTR_V) 267.001 317.65 T
+(AL_GET) 296.761 317.65 T
+(No change, just return current v) 288.0 329.65 T
+(alue.) 414.94 329.65 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(NO) 180.0 360.984 T
+(TES) 197.52 360.984 T
+3 FF
+216 377.650452 M 0.309937 0 32 (This interf) widthshow
+258.149994 377.650452 M 0.309937 0 32 (ace is machine w) widthshow
+327.569885 377.650452 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 216.0 389.65 T
+(.) 245.99 389.65 T
+5 FF
+(RETURN V) 180.0 420.984 T
+(ALUE) 240.709 420.984 T
+3 FF
+(KERN_INV) 216.0 445.65 T
+(ALID_ADDRESS) 264.641 445.65 T
+(The address is ille) 252.0 457.65 T
+(g) 324.34 457.65 T
+(al or speci\336es a non-allocated re) 329.29 457.65 T
+(gion.) 458.27 457.65 T
+5 FF
+(RELA) 180.0 488.984 T
+(TED INFORMA) 212.197 488.984 T
+(TION) 297.385 488.984 T
+3 FF
+(Functions:) 216.0 505.65 T
+0 FF
+( vm_wir) 258.23 505.65 T
+(e) 293.32 505.65 T
+3 FF
+(.) 297.76 505.65 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 83 15
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (83 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_map) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_map) 72.0 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Maps a memory object to a task\325) 146.34 142.691 T
+(s address space) 291.88 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_map) 164.83 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t*) 162.0 216.691 T
+6 FF
+(addr) 398.76 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(vm_size_t) 162.0 228.691 T
+6 FF
+(size) 414.6 228.691 T
+(,) 429.5 228.691 T
+4 FF
+(vm_address_t) 162.0 240.691 T
+6 FF
+(mask,) 408.95 240.691 T
+4 FF
+(vm_allocate_t) 162.0 252.691 T
+6 FF
+(anywher) 391.09 252.691 T
+(e) 425.16 252.691 T
+(,) 429.5 252.691 T
+4 FF
+(mem_obj_rep_port_t) 162.0 264.691 T
+6 FF
+(memory_object_r) 306.48 264.691 T
+(epr) 376.65 264.691 T
+(esentative) 389.61 264.691 T
+(,) 429.5 264.691 T
+4 FF
+(vm_of) 162.0 276.691 T
+(fset_t) 187.86 276.691 T
+6 FF
+(of) 408.01 276.691 T
+(fset,) 415.61 276.691 T
+4 FF
+(boolean_t) 162.0 288.69 T
+6 FF
+(copy) 411.17 288.69 T
+(,) 429.5 288.69 T
+4 FF
+(vm_prot_t) 162.0 300.69 T
+6 FF
+(cur_pr) 370.51 300.69 T
+(otection,) 397.28 300.69 T
+4 FF
+(vm_prot_t) 162.0 312.69 T
+6 FF
+(max_pr) 367.18 312.69 T
+(otection,) 397.28 312.69 T
+4 FF
+(vm_inherit_t) 162.0 324.69 T
+6 FF
+(inheritance) 380.34 324.69 T
+4 FF
+(\);) 425.89 324.69 T
+5 FF
+(DESCRIPTION) 72.0 356.024 T
+4 FF
+108 372.69043 M 0.984116 0 32 (The ) widthshow
+1 FF
+127.034119 372.69043 M 0.984116 0 32 (vm_map) widthshow
+4 FF
+164.25412 372.69043 M 0.984116 0 32 ( function maps a portion of the speci\336ed memory object into the) widthshow
+108 384.69043 M 0.322449 0 32 (virtual address space belonging to ) widthshow
+6 FF
+248.202255 384.69043 M 0.322449 0 32 (tar) widthshow
+259.502441 384.69043 M 0.322449 0 32 (g) widthshow
+264.402527 384.69043 M 0.322449 0 32 (et_task) widthshow
+4 FF
+292.732513 384.69043 M 0.322449 0 32 (. The tar) widthshow
+326.797516 384.69043 M 0.322449 0 32 (get task can be the calling) widthshow
+(task or another task, identi\336ed by its task k) 108.0 396.69 T
+(ernel port.) 279.28 396.69 T
+108 420.690369 M 0.495331 0 32 (The portion of the memory object mapped is determined by ) widthshow
+6 FF
+354.033325 420.690369 M 0.495331 0 32 (of) widthshow
+361.633423 420.690369 M 0.495331 0 32 (fset) widthshow
+4 FF
+375.523438 420.690369 M 0.495331 0 32 ( and ) widthshow
+6 FF
+395.954102 420.690369 M 0.495331 0 32 (size) widthshow
+4 FF
+410.954102 420.690369 M 0.495331 0 32 (. The) widthshow
+108 432.690369 M 0.799286 0 32 (k) widthshow
+112.900055 432.690369 M 0.799286 0 32 (ernel maps ) widthshow
+6 FF
+160.598633 432.690369 M 0.799286 0 32 (addr) widthshow
+179.118835 432.690369 M 0.799286 0 32 (ess) widthshow
+4 FF
+191.338837 432.690369 M 0.799286 0 32 ( to the of) widthshow
+229.316833 432.690369 M 0.799286 0 32 (fset, so that an access to the memory starts at the) widthshow
+(of) 108.0 444.69 T
+(fset in the object.) 116.08 444.69 T
+108 468.690338 M 1.417694 0 32 (The ) widthshow
+6 FF
+127.467697 468.690338 M 1.417694 0 32 (mask) widthshow
+4 FF
+148.0177 468.690338 M 1.417694 0 32 ( parameter speci\336es additional alignment restrictions on the k) widthshow
+405.339325 468.690338 M 1.417694 0 32 (ernel\325) widthshow
+428.109619 468.690338 M 1.417694 0 32 (s) widthshow
+(selection of the starting address. Uses for this mask include:) 108.0 480.69 T
+7 (Times-Roman) 7 1 mymakefontmetric
+7 FF
+<a5> 108.0 498.69 T
+4 FF
+121.535995 498.690308 M 0.755646 0 32 (F) widthshow
+126.946075 498.690308 M 0.755646 0 32 (orcing the memory address alignment for a mapping to be the same as the) widthshow
+(alignment within the memory object.) 121.536 510.69 T
+7 FF
+<a5> 108.0 525.69 T
+4 FF
+121.535995 525.690308 M 0.350296 0 32 (Quickly \336nding the be) widthshow
+212.156967 525.690308 M 0.350296 0 32 (ginning of an allocated re) widthshow
+315.608246 525.690308 M 0.350296 0 32 (gion by performing bit arith-) widthshow
+(metic on an address kno) 121.536 537.69 T
+(wn to be in the re) 217.936 537.69 T
+(gion.) 287.496 537.69 T
+7 FF
+<a5> 108.0 552.69 T
+4 FF
+(Emulating a lar) 121.536 552.69 T
+(ger virtual page size.) 183.016 552.69 T
+108 576.690247 M 0.828659 0 32 (The ) widthshow
+6 FF
+126.878662 576.690247 M 0.828659 0 32 (cur_pr) widthshow
+153.648911 576.690247 M 0.828659 0 32 (otection) widthshow
+4 FF
+185.868912 576.690247 M 0.828659 0 32 (, ) widthshow
+6 FF
+191.697571 576.690247 M 0.828659 0 32 (max_pr) widthshow
+221.797821 576.690247 M 0.828659 0 32 (otection) widthshow
+4 FF
+254.017822 576.690247 M 0.828659 0 32 (, and ) widthshow
+6 FF
+277.615143 576.690247 M 0.828659 0 32 (inheritance) widthshow
+4 FF
+323.165161 576.690247 M 0.828659 0 32 ( parameters set the protec-) widthshow
+108 588.690186 M 0.026398 0 32 (tion and inheritance attrib) widthshow
+210.919312 588.690186 M 0.026398 0 32 (utes for the mapped object. As a rule, at least the maxi-) widthshow
+108 600.690186 M 1.079941 0 32 (mum protection should be speci\336ed so that a serv) widthshow
+314.249634 600.690186 M 1.079941 0 32 (er can mak) widthshow
+360.179565 600.690186 M 1.079941 0 32 (e a restricted \(for) widthshow
+108 612.690186 M 0.874939 0 32 (e) widthshow
+112.290085 612.690186 M 0.874939 0 32 (xample, read-only\) mapping in a client atomically) widthshow
+317.140076 612.690186 M 0.874939 0 32 (. The current protection and) widthshow
+108 624.690186 M 0.915405 0 32 (inheritance parameters are pro) widthshow
+231.936325 624.690186 M 0.915405 0 32 (vided for con) widthshow
+286.687378 624.690186 M 0.915405 0 32 (v) widthshow
+291.537445 624.690186 M 0.915405 0 32 (enience so that the caller does not) widthshow
+(ha) 108.0 636.69 T
+(v) 117.24 636.69 T
+(e to call ) 122.09 636.69 T
+1 FF
+(vm_inherit) 156.25 636.69 T
+4 FF
+( and ) 203.47 636.69 T
+1 FF
+(vm_pr) 222.91 636.69 T
+(otect) 251.06 636.69 T
+4 FF
+( separately) 271.6 636.69 T
+(.) 313.991 636.69 T
+108 660.690125 M 0.489273 0 32 (The same memory object can be mapped more than once and by more than one) widthshow
+108 672.690125 M 0.680801 0 32 (task. If an object is mapped by multiple tasks, the k) widthshow
+320.248077 672.690125 M 0.680801 0 32 (ernel maintains consistenc) widthshow
+426.999756 672.690125 M 0.680801 0 32 (y) widthshow
+108 684.690125 M 1.051285 0 32 (for all the mappings if the) widthshow
+216.706512 684.690125 M 1.051285 0 32 (y use the same page alignment for ) widthshow
+6 FF
+363.205505 684.690125 M 1.051285 0 32 (of) widthshow
+370.805603 684.690125 M 1.051285 0 32 (fset) widthshow
+4 FF
+384.695618 684.690125 M 1.051285 0 32 ( and are on) widthshow
+108 696.690063 M 0.435287 0 32 (the same host. In this case, the virtual memory to which the object is mapped is) widthshow
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(Amended f) 441.0 142.667 T
+(or ) 487.69 142.667 T
+(memory object ) 441.0 154.667 T
+(r) 441.0 166.667 T
+(epr) 445.26 166.667 T
+(esentati) 459.52 166.667 T
+(v) 492.19 166.667 T
+(es, ) 497.09 166.667 T
+(new allocate op-) 441.0 178.667 T
+(tions) 441.0 190.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 84 16
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(84 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+216 113.650665 M 0.64064 0 32 (shared by all the tasks. Changes made by one task in its address space are visi-) widthshow
+(ble to all the other tasks.) 216.0 125.651 T
+216 149.650635 M 1.227875 0 32 (If the ) widthshow
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+242.335754 149.650635 M 1.227875 0 32 (memory_object_r) widthshow
+312.505981 149.650635 M 1.227875 0 32 (epr) widthshow
+325.466187 149.650635 M 1.227875 0 32 (esentative) widthshow
+3 FF
+365.456177 149.650635 M 1.227875 0 32 ( is kno) widthshow
+394.332062 149.650635 M 1.227875 0 32 (wn to the k) widthshow
+442.635742 149.650635 M 1.227875 0 32 (ernel on which ) widthshow
+4 FF
+508.24939 149.650635 M 1.227875 0 32 (tar) widthshow
+519.549561 149.650635 M 1.227875 0 32 (g) widthshow
+524.449646 149.650635 M 1.227875 0 32 (et_-) widthshow
+216 161.65062 M 1.038284 0 32 (task) widthshow
+3 FF
+232.110001 161.65062 M 1.038284 0 32 ( is e) widthshow
+250.146652 161.65062 M 1.038284 0 32 (x) widthshow
+254.996735 161.65062 M 1.038284 0 32 (ecuting then the k) widthshow
+329.391663 161.65062 M 1.038284 0 32 (ernel kno) widthshow
+367.670074 161.65062 M 1.038284 0 32 (ws the identity of the underlying memory) widthshow
+216 173.650604 M 0.227966 0 32 (object and as a result the attrib) widthshow
+339.36792 173.650604 M 0.227966 0 32 (utes of that object as well as the maximum access) widthshow
+216 185.650589 M 0.315735 0 32 (allo) widthshow
+230.750137 185.650589 M 0.315735 0 32 (wed by this representati) widthshow
+326.707489 185.650589 M 0.315735 0 32 (v) widthshow
+331.557556 185.650589 M 0.315735 0 32 (e. If the representati) widthshow
+412.224915 185.650589 M 0.315735 0 32 (v) widthshow
+417.075012 185.650589 M 0.315735 0 32 (e is not kno) widthshow
+464.162354 185.650589 M 0.315735 0 32 (wn, the k) widthshow
+501.633881 185.650589 M 0.315735 0 32 (ernel will) widthshow
+216 197.650574 M 1.393051 0 32 (eng) widthshow
+230.39003 197.650574 M 1.393051 0 32 (age in a dialog with the memory manager holding the recei) widthshow
+480.140686 197.650574 M 1.393051 0 32 (v) widthshow
+484.990784 197.650574 M 1.393051 0 32 (e right to the) widthshow
+216 209.650558 M 0.416595 0 32 (representati) widthshow
+262.400146 209.650558 M 0.416595 0 32 (v) widthshow
+267.250244 209.650558 M 0.416595 0 32 (e port \(see ) widthshow
+0 FF
+312.650024 209.650558 M 0.416595 0 32 (memory_object_notify) widthshow
+3 FF
+409.290039 209.650558 M 0.416595 0 32 (\) from which the k) widthshow
+485.286499 209.650558 M 0.416595 0 32 (ernel will ob-) widthshow
+216 221.650543 M 0.983582 0 32 (tain these attrib) widthshow
+279.427277 221.650543 M 0.983582 0 32 (utes. These attrib) widthshow
+349.794556 221.650543 M 0.983582 0 32 (utes are necessary to determine the v) widthshow
+502.626221 221.650543 M 0.983582 0 32 (alidity of) widthshow
+216 233.650528 M 1.04213 0 32 (the ) widthshow
+0 FF
+231.762131 233.650528 M 1.04213 0 32 (vm_map) widthshow
+3 FF
+268.982117 233.650528 M 1.04213 0 32 ( call; the call will not return until the memory object is ready for) widthshow
+(use.) 216.0 245.651 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(P) 180.0 276.984 T
+(ARAMETERS) 186.444 276.984 T
+4 FF
+(tar) 216.0 301.65 T
+(g) 227.3 301.65 T
+(et_task) 232.2 301.65 T
+3 FF
+252 313.650482 M 1.409988 0 32 ([in task send right] The port for the task in whose address space the) widthshow
+(memory object is to be mapped.) 252.0 325.65 T
+4 FF
+(addr) 216.0 349.65 T
+(ess) 234.52 349.65 T
+3 FF
+252 361.650452 M 1.554977 0 32 ([pointer to in/out scalar] The starting address for the mapped object.) widthshow
+3 FF
+252 373.650421 M 1.375427 0 32 (The mapped object will start at the be) widthshow
+412.288086 373.650421 M 1.375427 0 32 (ginning of the page containing) widthshow
+4 FF
+252 385.650391 M 0.922653 0 32 (addr) widthshow
+270.520203 385.650391 M 0.922653 0 32 (ess) widthshow
+3 FF
+282.740204 385.650391 M 0.922653 0 32 (. If there is not enough room follo) widthshow
+424.488922 385.650391 M 0.922653 0 32 (wing the address, the k) widthshow
+520.009583 385.650391 M 0.922653 0 32 (ernel) widthshow
+3 FF
+252 397.650391 M 0.489075 0 32 (does not map the object. The k) widthshow
+377.874512 397.650391 M 0.489075 0 32 (ernel returns the starting address actual-) widthshow
+(ly used for the mapped object.) 252.0 409.65 T
+4 FF
+(size) 216.0 433.65 T
+3 FF
+252 445.65033 M 1.213303 0 32 ([in scalar] The number of bytes to allocate for the object. The k) widthshow
+520.009705 445.65033 M 1.213303 0 32 (ernel) widthshow
+(rounds this number up to an inte) 252.0 457.65 T
+(gral number of virtual pages.) 381.29 457.65 T
+4 FF
+(mask) 216.0 481.65 T
+3 FF
+252 493.650299 M 0.441971 0 32 ([in scalar] Alignment restrictions for starting address. Bits turned on in) widthshow
+(the mask will not be turned on in the starting address.) 252.0 505.65 T
+4 FF
+(anywher) 216.0 529.65 T
+(e) 250.07 529.65 T
+3 FF
+([in scalar] Placement indicator) 252.0 541.65 T
+(. V) 373.92 541.65 T
+(alid v) 385.031 541.65 T
+(alues are:) 407.281 541.65 T
+(VM_ALLOCA) 252.0 565.65 T
+(TE_ANYWHERE) 312.551 565.65 T
+288 577.650208 M 1.133957 0 32 (The k) widthshow
+312.084015 577.650208 M 1.133957 0 32 (ernel allocates the re) widthshow
+397.805969 577.650208 M 1.133957 0 32 (gion in the ne) widthshow
+455.777954 577.650208 M 1.133957 0 32 (xt unused space that) widthshow
+288 589.650208 M 1.438828 0 32 (is suf) widthshow
+310.578979 589.650208 M 1.438828 0 32 <de6369656e742077697468696e2074686520616464726573732073706163652e20546865206b> widthshow
+472.141998 589.650208 M 1.438828 0 32 (ernel returns the) widthshow
+(starting address actually used in ) 288.0 601.65 T
+4 FF
+(addr) 418.26 601.65 T
+(ess) 436.78 601.65 T
+3 FF
+(.) 449.0 601.65 T
+(VM_ALLOCA) 252.0 625.65 T
+(TE_FIXED) 312.551 625.65 T
+288 637.650146 M 0.943253 0 32 (The k) widthshow
+311.893311 637.650146 M 0.943253 0 32 (ernel allocates the re) widthshow
+397.043152 637.650146 M 0.943253 0 32 (gion starting at ) widthshow
+4 FF
+462.372925 637.650146 M 0.943253 0 32 (addr) widthshow
+480.893127 637.650146 M 0.943253 0 32 (ess) widthshow
+3 FF
+493.113129 637.650146 M 0.943253 0 32 ( unless that) widthshow
+(space is reserv) 288.0 649.65 T
+(ed.) 346.16 649.65 T
+(VM_ALLOCA) 252.0 673.65 T
+(TE_RESER) 312.551 673.65 T
+(VED) 360.091 673.65 T
+288 685.650146 M 0.639908 0 32 (The k) widthshow
+311.589966 685.650146 M 0.639908 0 32 (ernel allocates the re) widthshow
+395.829773 685.650146 M 0.639908 0 32 (gion starting at ) widthshow
+4 FF
+460.249512 685.650146 M 0.639908 0 32 (addr) widthshow
+478.769714 685.650146 M 0.639908 0 32 (ess) widthshow
+3 FF
+490.989716 685.650146 M 0.639908 0 32 ( e) widthshow
+498.319763 685.650146 M 0.639908 0 32 (v) widthshow
+503.169861 685.650146 M 0.639908 0 32 (en if that) widthshow
+(space is reserv) 288.0 697.65 T
+(ed.) 346.16 697.65 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 85 17
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (85 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_map) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+0 G
+3 (Times-Italic) 10 1 mymakefontmetric
+3 FF
+(memory_object_r) 108.0 115.667 T
+(epr) 178.17 115.667 T
+(esentative) 191.13 115.667 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+144 127.666641 M 3.548508 0 32 ([in memory-object-representati) widthshow
+271.988647 127.666641 M 3.548508 0 32 (v) widthshow
+276.838745 127.666641 M 3.548508 0 32 (e send right] The port naming the) widthshow
+144 139.666626 M 0.3582 0 32 (memory object representati) widthshow
+253.886551 139.666626 M 0.3582 0 32 (v) widthshow
+258.736633 139.666626 M 0.3582 0 32 (e. If MEMOR) widthshow
+315.183411 139.666626 M 0.3582 0 32 (Y_OBJECT_NULL is speci-) widthshow
+<de65642c20746865206b> 144.0 151.667 T
+(ernel allocates zero-\336lled memory) 183.62 151.667 T
+(, as with ) 319.88 151.667 T
+1 FF
+(vm_allocate) 355.99 151.667 T
+4 FF
+(.) 407.09 151.667 T
+3 FF
+(of) 108.0 175.667 T
+(fset) 115.6 175.667 T
+4 FF
+144 187.66658 M 1.647217 0 32 ([in scalar] An of) widthshow
+214.501801 187.66658 M 1.647217 0 32 (fset within the memory object, in bytes. The k) widthshow
+412.009583 187.66658 M 1.647217 0 32 (ernel) widthshow
+(maps ) 144.0 199.667 T
+3 FF
+(addr) 167.61 199.667 T
+(ess) 186.13 199.667 T
+4 FF
+( to the speci\336ed of) 198.35 199.667 T
+(fset.) 271.98 199.667 T
+3 FF
+(copy) 108.0 223.667 T
+4 FF
+144 235.666534 M 1.302444 0 32 ([in scalar] Cop) widthshow
+205.934952 235.666534 M 1.302444 0 32 (y indicator) widthshow
+249.737701 235.666534 M 1.302444 0 32 (. If true, the k) widthshow
+309.277527 235.666534 M 1.302444 0 32 (ernel copies the re) widthshow
+386.064972 235.666534 M 1.302444 0 32 (gion of the) widthshow
+144 247.666519 M 0.376282 0 32 (memory object to the speci\336ed task\325) widthshow
+290.591736 247.666519 M 0.376282 0 32 (s address space. If f) widthshow
+370.576904 247.666519 M 0.376282 0 32 (alse, the re) widthshow
+414.219574 247.666519 M 0.376282 0 32 (gion) widthshow
+(is directly mapped.) 144.0 259.667 T
+3 FF
+(cur_pr) 108.0 283.666 T
+(otection) 134.77 283.666 T
+4 FF
+144 295.666473 M 0.41626 0 32 ([in scalar] The initial current protection for the re) widthshow
+344.350189 295.666473 M 0.41626 0 32 (gion. V) widthshow
+373.657043 295.666473 M 0.41626 0 32 (alid v) widthshow
+396.323456 295.666473 M 0.41626 0 32 (alues are) widthshow
+(obtained by or\325ing together the follo) 144.0 307.666 T
+(wing v) 289.01 307.666 T
+(alues:) 316.26 307.666 T
+(VM_PR) 144.0 331.666 T
+(O) 176.94 331.666 T
+(T_READ) 183.76 331.666 T
+(Allo) 180.0 343.666 T
+(ws read access.) 197.53 343.666 T
+(VM_PR) 144.0 367.666 T
+(O) 176.94 367.666 T
+(T_WRITE) 183.76 367.666 T
+(Allo) 180.0 379.666 T
+(ws write access.) 197.53 379.666 T
+(VM_PR) 144.0 403.666 T
+(O) 176.94 403.666 T
+(T_EXECUTE) 183.76 403.666 T
+(Allo) 180.0 415.666 T
+(ws e) 197.53 415.666 T
+(x) 215.43 415.666 T
+(ecute access.) 220.28 415.666 T
+3 FF
+(max_pr) 108.0 439.666 T
+(otection) 138.1 439.666 T
+4 FF
+144 451.666321 M 0.24173 0 32 ([in scalar] The maximum protection for the re) widthshow
+329.112213 451.666321 M 0.24173 0 32 (gion. V) widthshow
+358.244568 451.666321 M 0.24173 0 32 (alues are the same) widthshow
+(as for ) 144.0 463.666 T
+3 FF
+(cur_pr) 168.99 463.666 T
+(otection) 195.76 463.666 T
+4 FF
+(.) 227.98 463.666 T
+3 FF
+(inheritance) 108.0 487.666 T
+4 FF
+144 499.66629 M 1.059875 0 32 ([in scalar] The initial inheritance attrib) widthshow
+303.78949 499.66629 M 1.059875 0 32 (ute for the re) widthshow
+358.189209 499.66629 M 1.059875 0 32 (gion. V) widthshow
+388.139709 499.66629 M 1.059875 0 32 (alid v) widthshow
+411.449707 499.66629 M 1.059875 0 32 (alues) widthshow
+(are:) 144.0 511.666 T
+(VM_INHERIT_SHARE) 144.0 535.666 T
+(Allo) 180.0 547.666 T
+(ws child tasks to share the re) 197.53 547.666 T
+(gion.) 312.36 547.666 T
+(VM_INHERIT_COPY) 144.0 571.666 T
+(Gi) 180.0 583.666 T
+(v) 189.75 583.666 T
+(es child tasks a cop) 194.6 583.666 T
+(y of the re) 271.71 583.666 T
+(gion.) 312.38 583.666 T
+(VM_INHERIT_NONE) 144.0 607.666 T
+(Pro) 180.0 619.666 T
+(vides no access to the re) 193.74 619.666 T
+(gion for child tasks.) 290.51 619.666 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(NO) 72.0 651.0 T
+(TES) 89.52 651.0 T
+1 FF
+108 667.666138 M 1.785736 0 32 (vm_map) widthshow
+4 FF
+145.220001 667.666138 M 1.785736 0 32 ( allocates a re) widthshow
+205.127304 667.666138 M 1.785736 0 32 (gion in a task\325) widthshow
+266.874817 667.666138 M 1.785736 0 32 (s address space and maps the speci\336ed) widthshow
+108 679.666138 M 0.726929 0 32 (memory object to this re) widthshow
+208.527802 679.666138 M 0.726929 0 32 (gion. ) widthshow
+1 FF
+232.034729 679.666138 M 0.726929 0 32 (vm_allocate) widthshow
+4 FF
+283.134735 679.666138 M 0.726929 0 32 ( allocates a zero-\336lled temporary re-) widthshow
+(gion in a task\325) 108.0 691.666 T
+(s address space.) 164.39 691.666 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 86 18
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(86 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+216 113.650665 M 0.230667 0 32 (Before a memory object can be mapped, a port naming it must be acquired from) widthshow
+(the memory manager serving it.) 216.0 125.651 T
+216 149.650635 M 0.309937 0 32 (This interf) widthshow
+258.149994 149.650635 M 0.309937 0 32 (ace is machine w) widthshow
+327.569885 149.650635 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 216.0 161.651 T
+(.) 245.99 161.651 T
+4 (Times-Bold) 12 1 mymakefontmetric
+4 FF
+(CA) 180.0 192.984 T
+(UTIONS) 196.728 192.984 T
+3 FF
+216 209.650604 M 0.223312 0 32 (Do not attempt to map a memory object unless it has been pro) widthshow
+466.839844 209.650604 M 0.223312 0 32 (vided by a memo-) widthshow
+216 221.650589 M 0.324127 0 32 (ry manager that implements the memory object interf) widthshow
+431.748962 221.650589 M 0.324127 0 32 (ace. If another type of port) widthshow
+216 233.650574 M 0.269958 0 32 (is speci\336ed, a thread that accesses the mapped virtual memory may become per-) widthshow
+(manently hung or may recei) 216.0 245.651 T
+(v) 327.95 245.651 T
+(e a memory e) 332.8 245.651 T
+(xception.) 386.8 245.651 T
+4 FF
+(RETURN V) 180.0 276.984 T
+(ALUE) 240.709 276.984 T
+3 FF
+(KERN_NO_SP) 216.0 301.651 T
+(A) 277.861 301.651 T
+(CE) 284.681 301.651 T
+252 313.650513 M 1.458282 0 32 (There is not enough space in the task\325) widthshow
+413.018311 313.650513 M 1.458282 0 32 (s address space to allocate the) widthshow
+(ne) 252.0 325.651 T
+(w re) 261.19 325.651 T
+(gion for the memory object.) 278.53 325.651 T
+(KERN_PR) 216.0 349.65 T
+(O) 260.05 349.65 T
+(TECTION_F) 266.87 349.65 T
+(AILURE) 319.461 349.65 T
+5 (Times-Italic) 10 1 mymakefontmetric
+5 FF
+252 361.650482 M 0.78418 0 32 (max_pr) widthshow
+282.10025 361.650482 M 0.78418 0 32 (otection) widthshow
+3 FF
+314.320251 361.650482 M 0.78418 0 32 ( or ) widthshow
+5 FF
+329.218628 361.650482 M 0.78418 0 32 (cur_pr) widthshow
+355.988861 361.650482 M 0.78418 0 32 (otection) widthshow
+3 FF
+388.208862 361.650482 M 0.78418 0 32 ( e) widthshow
+395.783142 361.650482 M 0.78418 0 32 (xceeds that permitted by ) widthshow
+5 FF
+499.459839 361.650482 M 0.78418 0 32 (memory_-) widthshow
+(object_r) 252.0 373.65 T
+(epr) 284.96 373.65 T
+(esentative) 297.92 373.65 T
+3 FF
+(.) 337.91 373.65 T
+(KERN_INV) 216.0 397.65 T
+(ALID_OBJECT) 264.641 397.65 T
+(The memory manager f) 252.0 409.65 T
+(ailed to map the memory object.) 346.04 409.65 T
+4 FF
+(RELA) 180.0 440.984 T
+(TED INFORMA) 212.197 440.984 T
+(TION) 297.385 440.984 T
+3 FF
+(Functions: ) 216.0 457.65 T
+0 FF
+(memory_object_notify) 260.73 457.65 T
+3 FF
+(, ) 356.72 457.65 T
+0 FF
+(vm_allocate) 361.72 457.65 T
+3 FF
+(, ) 412.82 457.65 T
+0 FF
+(vm_r) 417.82 457.65 T
+(eser) 440.41 457.65 T
+(v) 457.521 457.65 T
+(e) 462.421 457.65 T
+3 FF
+(, ) 466.861 457.65 T
+0 FF
+(vm_r) 471.861 457.65 T
+(emap) 494.451 457.65 T
+3 FF
+(.) 517.781 457.65 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 87 19
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (87 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_msync) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_msync) 72.0 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Synchronizes a memory range with its backing storage) 146.34 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_msync) 164.83 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t) 162.0 216.691 T
+6 FF
+(addr) 398.76 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(vm_size_t) 162.0 228.691 T
+6 FF
+(size) 414.6 228.691 T
+(,) 429.5 228.691 T
+4 FF
+(vm_sync_t) 162.0 240.691 T
+6 FF
+(sync_\337a) 384.33 240.691 T
+(gs\)) 417.0 240.691 T
+4 FF
+(;) 429.22 240.691 T
+5 FF
+(DESCRIPTION) 72.0 272.024 T
+4 FF
+108 288.690552 M 0.797226 0 32 (The ) widthshow
+1 FF
+126.847229 288.690552 M 0.797226 0 32 (vm_msync) widthshow
+4 FF
+172.397232 288.690552 M 0.797226 0 32 ( function synchronizes the contents of a memory range with its) widthshow
+108 300.690521 M 0.846588 0 32 (backing store image by \337ushing or cleaning the contents of the speci\336ed range) widthshow
+108 312.690491 M 1.643906 0 32 (to the range\325) widthshow
+161.278122 312.690491 M 1.643906 0 32 (s memory manager) widthshow
+240.816162 312.690491 M 1.643906 0 32 (, eng) widthshow
+261.850098 312.690491 M 1.643906 0 32 (aging in a synchronization protocol with) widthshow
+108 324.690491 M 1.677475 0 32 (the manager \() widthshow
+1 FF
+166.334961 324.690491 M 1.677475 0 32 (memory_object_synchr) widthshow
+266.685059 324.690491 M 1.677475 0 32 (onize) widthshow
+4 FF
+288.90509 324.690491 M 1.677475 0 32 (\). The client does not return from) widthshow
+108 336.690491 M 0.907242 0 32 (this call until the memory manager responds \(to the k) widthshow
+329.655243 336.690491 M 0.907242 0 32 (ernel\) with ) widthshow
+1 FF
+377.569733 336.690491 M 0.907242 0 32 (memory_ob-) widthshow
+(ject_synchr) 108.0 348.69 T
+(onize_completed) 157.25 348.69 T
+4 FF
+(.) 228.35 348.69 T
+5 FF
+(P) 72.0 380.024 T
+(ARAMETERS) 78.444 380.024 T
+6 FF
+(tar) 108.0 404.69 T
+(g) 119.3 404.69 T
+(et_task) 124.2 404.69 T
+4 FF
+144 416.69043 M 0.624954 0 32 ([in task send right] The port for the task whose address space contains) widthshow
+(the re) 144.0 428.69 T
+(gion.) 166.34 428.69 T
+6 FF
+(addr) 108.0 452.69 T
+(ess) 126.52 452.69 T
+4 FF
+([in scalar] The starting address for the re) 144.0 464.69 T
+(gion.) 306.3 464.69 T
+6 FF
+(size) 108.0 488.69 T
+4 FF
+([in scalar] The number of bytes in the re) 144.0 500.69 T
+(gion.) 304.92 500.69 T
+6 FF
+(sync_\337a) 108.0 524.69 T
+(gs) 140.67 524.69 T
+4 FF
+144 536.690308 M 2.774384 0 32 ([in scalar] The bit-wise OR of \337ags af) widthshow
+315.080841 536.690308 M 2.774384 0 32 (fecting the synchronization.) widthshow
+144 548.690308 M 7.657425 0 32 (Specifying both VM_SYNC_SYNCHR) widthshow
+318.365051 548.690308 M 7.657425 0 32 (ONOUS and VM_SYN-) widthshow
+(C_ASYNCHR) 144.0 560.69 T
+(ONOUS ) 203.05 560.69 T
+(is in) 239.99 560.69 T
+(v) 256.54 560.69 T
+(alid.) 261.291 560.69 T
+(VM_SYNC_INV) 144.0 584.69 T
+(ALID) 213.201 584.69 T
+(A) 236.681 584.69 T
+(TE) 242.792 584.69 T
+180 596.690247 M 1.031067 0 32 (Flushes pages in the range. Only precious pages are ) widthshow
+398.679626 596.690247 M 1.031067 0 32 (returned) widthshow
+(to the memory manager) 180.0 608.69 T
+(.) 274.71 608.69 T
+(VM_SYNC_SYNCHR) 144.0 632.69 T
+(ONOUS) 236.94 632.69 T
+180 644.690186 M 0.457718 0 32 (Writes dirty and precious pages back to the memory ) widthshow
+395.469482 644.690186 M 0.457718 0 32 (manager) widthshow
+429.499695 644.690186 M 0.457718 0 32 (,) widthshow
+(w) 180.0 656.69 T
+(aits for pages to reach backing storage.) 187.12 656.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(New) 441.0 142.667 T
+(, sync support) 459.33 142.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 88 20
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(88 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(VM_SYNC_ASYNCHR) 252.0 113.651 T
+(ONOUS) 352.16 113.651 T
+288 125.65065 M 0.457718 0 32 (Writes dirty and precious pages back to the memory ) widthshow
+503.469482 125.65065 M 0.457718 0 32 (manager) widthshow
+537.499695 125.65065 M 0.457718 0 32 (,) widthshow
+(returns without w) 288.0 137.651 T
+(aiting for pages to reach ) 358.45 137.651 T
+(backing storage.) 457.59 137.651 T
+4 (Times-Bold) 12 1 mymakefontmetric
+4 FF
+(NO) 180.0 168.984 T
+(TES) 197.52 168.984 T
+3 FF
+216 185.65062 M 0.309937 0 32 (This interf) widthshow
+258.149994 185.65062 M 0.309937 0 32 (ace is machine w) widthshow
+327.569885 185.65062 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 216.0 197.651 T
+(.) 245.99 197.651 T
+4 FF
+(RETURN V) 180.0 228.984 T
+(ALUE) 240.709 228.984 T
+3 FF
+(KERN_INV) 216.0 253.651 T
+(ALID_ADDRESS) 264.641 253.651 T
+(The address is ille) 252.0 265.651 T
+(g) 324.34 265.651 T
+(al or speci\336es a non-allocated re) 329.29 265.651 T
+(gion.) 458.27 265.651 T
+4 FF
+(RELA) 180.0 296.984 T
+(TED INFORMA) 212.197 296.984 T
+(TION) 297.385 296.984 T
+3 FF
+216 313.650574 M 1.514847 0 32 (Functions:) widthshow
+0 FF
+258.22998 313.650574 M 1.514847 0 32 ( memory_object_synchr) widthshow
+362.594971 313.650574 M 1.514847 0 32 (onize) widthshow
+3 FF
+384.814941 313.650574 M 1.514847 0 32 (, ) widthshow
+0 FF
+391.329803 313.650574 M 1.514847 0 32 (memory_object_synchr) widthshow
+491.679932 313.650574 M 1.514847 0 32 (onize_com-) widthshow
+(pleted) 216.0 325.651 T
+3 FF
+(.) 242.11 325.651 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 89 21
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (89 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_pr) 72.0 56.824 T
+(otect) 97.335 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_pr) 72.0 118.333 T
+(otect) 111.41 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Sets access pri) 146.34 142.691 T
+(vile) 219.41 142.691 T
+(ges for a re) 234.26 142.691 T
+(gion of virtual memory) 278.81 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_pr) 164.83 192.691 T
+(otect) 192.98 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t) 162.0 216.691 T
+6 FF
+(addr) 398.76 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(vm_size_t) 162.0 228.691 T
+6 FF
+(size) 414.6 228.691 T
+(,) 429.5 228.691 T
+4 FF
+(boolean_t) 162.0 240.691 T
+6 FF
+(set_maximum,) 374.51 240.691 T
+4 FF
+(vm_prot_t) 162.0 252.691 T
+6 FF
+(ne) 364.27 252.691 T
+(w_pr) 373.56 252.691 T
+(otection\)) 393.67 252.691 T
+4 FF
+(;) 429.22 252.691 T
+5 FF
+(DESCRIPTION) 72.0 284.024 T
+4 FF
+108 300.690521 M 0.410797 0 32 (The ) widthshow
+1 FF
+126.4608 300.690521 M 0.410797 0 32 (vm_pr) widthshow
+154.610901 300.690521 M 0.410797 0 32 (otect) widthshow
+4 FF
+175.150909 300.690521 M 0.410797 0 32 ( function sets access pri) widthshow
+271.524231 300.690521 M 0.410797 0 32 (vile) widthshow
+286.374329 300.690521 M 0.410797 0 32 (ges for a re) widthshow
+332.156799 300.690521 M 0.410797 0 32 (gion within the speci\336ed) widthshow
+108 312.690491 M 0.548889 0 32 (task\325) widthshow
+126.890305 312.690491 M 0.548889 0 32 (s address space. ) widthshow
+6 FF
+194.626984 312.690491 M 0.548889 0 32 (ne) widthshow
+203.917068 312.690491 M 0.548889 0 32 (w_pr) widthshow
+224.027313 312.690491 M 0.548889 0 32 (otection) widthshow
+4 FF
+256.247314 312.690491 M 0.548889 0 32 ( speci\336es a combination of read, write, and) widthshow
+(e) 108.0 324.69 T
+(x) 112.29 324.69 T
+(ecute accesses that are allo) 117.14 324.69 T
+(wed \(rather than prohibited\).) 224.07 324.69 T
+108 348.690491 M 0.383026 0 32 (The re) widthshow
+134.053116 348.690491 M 0.383026 0 32 (gion starts at the be) widthshow
+213.205307 348.690491 M 0.383026 0 32 (ginning of the virtual page containing) widthshow
+6 FF
+365.94043 348.690491 M 0.383026 0 32 ( addr) widthshow
+387.343689 348.690491 M 0.383026 0 32 (ess) widthshow
+4 FF
+399.56366 348.690491 M 0.383026 0 32 (; it ends) widthshow
+108 360.69046 M 1.769974 0 32 (at the end of the virtual page containing) widthshow
+6 FF
+279.529846 360.69046 M 1.769974 0 32 ( addr) widthshow
+302.320007 360.69046 M 1.769974 0 32 (ess) widthshow
+4 FF
+314.540009 360.69046 M 1.769974 0 32 ( + ) widthshow
+6 FF
+328.719971 360.69046 M 1.769974 0 32 (size) widthshow
+4 FF
+343.719971 360.69046 M 1.769974 0 32 ( - 1. Because of this) widthshow
+108 372.69043 M 1.226349 0 32 (rounding to virtual page boundaries, the amount of memory protected may be) widthshow
+(greater than) 108.0 384.69 T
+6 FF
+( size) 155.48 384.69 T
+4 FF
+(. Use) 172.98 384.69 T
+1 FF
+( host_page_size) 193.53 384.69 T
+4 FF
+( to \336nd the current virtual page size.) 259.36 384.69 T
+108 408.69043 M 0.54248 0 32 (The enforcement of virtual memory protection is machine-dependent. Nominal-) widthshow
+108 420.690399 M 2.309906 0 32 (ly read access requires VM_PR) widthshow
+242.919861 420.690399 M 2.309906 0 32 (O) widthshow
+249.740082 420.690399 M 2.309906 0 32 (T_READ permission, write access requires) widthshow
+108 432.690369 M 0.668137 0 32 (VM_PR) widthshow
+140.940216 432.690369 M 0.668137 0 32 (O) widthshow
+147.760437 432.690369 M 0.668137 0 32 (T_WRITE permission, and e) widthshow
+265.154938 432.690369 M 0.668137 0 32 (x) widthshow
+270.005005 432.690369 M 0.668137 0 32 (ecute access requires VM_PR) widthshow
+391.299683 432.690369 M 0.668137 0 32 (O) widthshow
+398.119873 432.690369 M 0.668137 0 32 (T_EXE-) widthshow
+108 444.690369 M 1.730911 0 32 (CUTE permission. Ho) widthshow
+200.931961 444.690369 M 1.730911 0 32 (we) widthshow
+212.342102 444.690369 M 1.730911 0 32 (v) widthshow
+217.192184 444.690369 M 1.730911 0 32 (er) widthshow
+224.562408 444.690369 M 1.730911 0 32 (, some combinations of access rights may not be) widthshow
+108 456.690369 M 0.12085 0 32 (supported. In particular) widthshow
+201.431931 456.690369 M 0.12085 0 32 (, the k) widthshow
+226.293686 456.690369 M 0.12085 0 32 (ernel interf) widthshow
+270.4646 456.690369 M 0.12085 0 32 (ace allo) widthshow
+301.155579 456.690369 M 0.12085 0 32 (ws write access to require VM_-) widthshow
+108 468.690338 M 2.132339 0 32 (PR) widthshow
+119.830215 468.690338 M 2.132339 0 32 (O) widthshow
+126.650436 468.690338 M 2.132339 0 32 (T_READ and VM_PR) widthshow
+221.625336 468.690338 M 2.132339 0 32 (O) widthshow
+228.445557 468.690338 M 2.132339 0 32 (T_WRITE permission and e) widthshow
+347.732666 468.690338 M 2.132339 0 32 (x) widthshow
+352.582764 468.690338 M 2.132339 0 32 (ecute access to re-) widthshow
+(quire VM_PR) 108.0 480.69 T
+(O) 163.99 480.69 T
+(T_READ permission.) 170.81 480.69 T
+(Protection cannot be set for re) 108.0 504.69 T
+(gions reserv) 228.1 504.69 T
+(ed b) 276.55 504.69 T
+(ut not allocated.) 293.29 504.69 T
+5 FF
+(P) 72.0 536.024 T
+(ARAMETERS) 78.444 536.024 T
+6 FF
+(tar) 108.0 560.69 T
+(g) 119.3 560.69 T
+(et_task) 124.2 560.69 T
+4 FF
+144 572.690308 M 0.624954 0 32 ([in task send right] The port for the task whose address space contains) widthshow
+(the re) 144.0 584.69 T
+(gion.) 166.34 584.69 T
+6 FF
+(addr) 108.0 608.69 T
+(ess) 126.52 608.69 T
+4 FF
+([in scalar] The starting address for the re) 144.0 620.69 T
+(gion.) 306.3 620.69 T
+6 FF
+(size) 108.0 644.69 T
+4 FF
+([in scalar] The number of bytes in the re) 144.0 656.69 T
+(gion.) 304.92 656.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(Belie) 441.0 142.667 T
+(v) 461.96 142.667 T
+(ed to be sta-) 466.86 142.667 T
+(ble) 441.0 154.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 90 22
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(90 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Italic) 10 1 mymakefontmetric
+3 FF
+(set_maximum) 216.0 113.651 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+252 125.65065 M 0.953247 0 32 ([in scalar] Maximum/current indicator) widthshow
+407.890076 125.65065 M 0.953247 0 32 (. If true, the ne) widthshow
+470.323181 125.65065 M 0.953247 0 32 (w protection sets) widthshow
+252 137.650635 M 0.297241 0 32 (the maximum protection for the re) widthshow
+390.816284 137.650635 M 0.297241 0 32 (gion. If f) widthshow
+426.580841 137.650635 M 0.297241 0 32 (alse, the ne) widthshow
+471.635468 137.650635 M 0.297241 0 32 (w protection sets) widthshow
+252 149.65062 M 0.896332 0 32 (the current protection for the re) widthshow
+381.571777 149.65062 M 0.896332 0 32 (gion. If the maximum protection is set) widthshow
+252 161.650604 M 0.879059 0 32 (belo) widthshow
+268.970154 161.650604 M 0.879059 0 32 (w the current protection, the current protection is reset to the ne) widthshow
+532.779968 161.650604 M 0.879059 0 32 (w) widthshow
+(maximum.) 252.0 173.651 T
+3 FF
+(ne) 216.0 197.651 T
+(w_pr) 225.29 197.651 T
+(otection) 245.4 197.651 T
+4 FF
+252 209.650558 M 0.489883 0 32 ([in scalar] The ne) widthshow
+323.469788 209.650558 M 0.489883 0 32 (w protection for the re) widthshow
+414.699432 209.650558 M 0.489883 0 32 (gion. V) widthshow
+444.079926 209.650558 M 0.489883 0 32 (alid v) widthshow
+466.819946 209.650558 M 0.489883 0 32 (alues are obtained) widthshow
+(by or\325ing together the follo) 252.0 221.651 T
+(wing v) 360.07 221.651 T
+(alues:) 387.32 221.651 T
+(VM_PR) 252.0 245.651 T
+(O) 284.94 245.651 T
+(T_READ) 291.76 245.651 T
+(Allo) 288.0 257.651 T
+(ws read access.) 305.53 257.651 T
+(VM_PR) 252.0 281.65 T
+(O) 284.94 281.65 T
+(T_WRITE) 291.76 281.65 T
+(Allo) 288.0 293.65 T
+(ws write access.) 305.53 293.65 T
+(VM_PR) 252.0 317.65 T
+(O) 284.94 317.65 T
+(T_EXECUTE) 291.76 317.65 T
+(Allo) 288.0 329.65 T
+(ws e) 305.53 329.65 T
+(x) 323.43 329.65 T
+(ecute access.) 328.28 329.65 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(NO) 180.0 360.984 T
+(TES) 197.52 360.984 T
+4 FF
+216 377.650452 M 0.309937 0 32 (This interf) widthshow
+258.149994 377.650452 M 0.309937 0 32 (ace is machine w) widthshow
+327.569885 377.650452 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 216.0 389.65 T
+(.) 245.99 389.65 T
+5 FF
+(RETURN V) 180.0 420.984 T
+(ALUE) 240.709 420.984 T
+4 FF
+(KERN_PR) 216.0 445.65 T
+(O) 260.05 445.65 T
+(TECTION_F) 266.87 445.65 T
+(AILURE) 319.461 445.65 T
+252 457.650391 M 1.386642 0 32 (The ne) widthshow
+280.62677 457.650391 M 1.386642 0 32 (w protection increased the current or maximum protection be-) widthshow
+(yond the e) 252.0 469.65 T
+(xisting maximum protection.) 293.51 469.65 T
+(KERN_INV) 216.0 493.65 T
+(ALID_ADDRESS) 264.641 493.65 T
+(The address is ille) 252.0 505.65 T
+(g) 324.34 505.65 T
+(al or speci\336es a non-allocated re) 329.29 505.65 T
+(gion.) 458.27 505.65 T
+5 FF
+(RELA) 180.0 536.984 T
+(TED INFORMA) 212.197 536.984 T
+(TION) 297.385 536.984 T
+4 FF
+(Functions: ) 216.0 553.65 T
+0 FF
+(vm_inherit) 260.73 553.65 T
+4 FF
+(, ) 307.95 553.65 T
+0 FF
+(vm_r) 312.95 553.65 T
+(egion) 335.54 553.65 T
+4 FF
+(.) 358.32 553.65 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 91 23
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (91 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_r) 72.0 56.824 T
+(ead) 92.331 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_r) 72.0 118.333 T
+(ead) 103.626 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Reads a task\325) 146.34 142.691 T
+(s virtual memory) 214.11 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_r) 164.83 192.691 T
+(ead) 187.42 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t) 162.0 216.691 T
+6 FF
+(addr) 398.76 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(vm_size_t) 162.0 228.691 T
+6 FF
+(size) 414.6 228.691 T
+(,) 429.5 228.691 T
+4 FF
+(pointer_t*) 162.0 240.691 T
+6 FF
+(data) 411.72 240.691 T
+4 FF
+(,) 429.5 240.691 T
+(mach_msg_type_number_t*) 162.0 252.691 T
+6 FF
+(data_count\)) 380.89 252.691 T
+4 FF
+(;) 429.22 252.691 T
+5 FF
+(vm_r) 72.0 272.024 T
+(ead_o) 99.108 272.024 T
+(v) 128.988 272.024 T
+(erwrite) 134.868 272.024 T
+1 FF
+(Ov) 108.0 284.691 T
+(erwrite ) 120.68 284.691 T
+4 FF
+(form) 154.27 284.691 T
+(k) 108.0 302.691 T
+(ern_return_t ) 112.9 302.691 T
+1 FF
+(vm_r) 164.83 302.691 T
+(ead_o) 187.42 302.691 T
+(v) 212.32 302.691 T
+(erwrite) 217.22 302.691 T
+4 FF
+(\(task_port_t) 162.0 314.69 T
+6 FF
+(tar) 384.97 314.69 T
+(g) 396.27 314.69 T
+(et_task,) 401.17 314.69 T
+4 FF
+(vm_address_t) 162.0 326.69 T
+6 FF
+(addr) 398.76 326.69 T
+(ess,) 417.28 326.69 T
+4 FF
+(vm_size_t) 162.0 338.69 T
+6 FF
+(size) 414.6 338.69 T
+(,) 429.5 338.69 T
+4 FF
+(pointer_t) 162.0 350.69 T
+6 FF
+(data) 411.72 350.69 T
+4 FF
+(,) 429.5 350.69 T
+(mach_msg_type_number_t*) 162.0 362.69 T
+6 FF
+(data_count\)) 380.89 362.69 T
+4 FF
+(;) 429.22 362.69 T
+5 FF
+(DESCRIPTION) 72.0 394.024 T
+4 FF
+108 410.69043 M 0.565292 0 32 (The ) widthshow
+1 FF
+126.615295 410.69043 M 0.565292 0 32 (vm_r) widthshow
+149.205399 410.69043 M 0.565292 0 32 (ead) widthshow
+4 FF
+164.205399 410.69043 M 0.565292 0 32 ( function reads a portion of a task\325) widthshow
+305.082764 410.69043 M 0.565292 0 32 (s virtual memory) widthshow
+373.893707 410.69043 M 0.565292 0 32 (. It allo) widthshow
+403.38443 410.69043 M 0.565292 0 32 (ws one) widthshow
+(task to read another task\325) 108.0 422.69 T
+(s memory) 207.98 422.69 T
+(.) 247.051 422.69 T
+5 FF
+(P) 72.0 454.024 T
+(ARAMETERS) 78.444 454.024 T
+6 FF
+(tar) 108.0 478.69 T
+(g) 119.3 478.69 T
+(et_task) 124.2 478.69 T
+4 FF
+([in task send right] The port for the task whose memory is to be read.) 144.0 490.69 T
+6 FF
+(addr) 108.0 514.69 T
+(ess) 126.52 514.69 T
+4 FF
+144 526.690308 M 1.574127 0 32 ([in scalar] The address at which to start the read. This address must) widthshow
+(name a page boundary) 144.0 538.69 T
+(.) 233.6 538.69 T
+6 FF
+(size) 108.0 562.69 T
+4 FF
+([in scalar] The number of bytes to read.) 144.0 574.69 T
+6 FF
+(data) 108.0 598.69 T
+4 FF
+144 610.690247 M 0.833054 0 32 ([out pointer to dynamic array of bytes, pointer to in array of bytes for) widthshow
+1 FF
+(vm_r) 144.0 622.69 T
+(ead_o) 166.59 622.69 T
+(v) 191.49 622.69 T
+(erwrite) 196.39 622.69 T
+4 FF
+(] The array of data returned by the read.) 227.48 622.69 T
+6 FF
+(data_count) 108.0 646.69 T
+4 FF
+144 658.690186 M 0.289948 0 32 ([in/out scalar] On input, the maximum size of the b) widthshow
+351.389648 658.690186 M 0.289948 0 32 (uf) widthshow
+359.469788 658.690186 M 0.289948 0 32 (fer; on output, the) widthshow
+(size returned \(in natural-sized units\).) 144.0 670.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(Ov) 441.0 142.667 T
+(erwrite mes-) 453.68 142.667 T
+(sage f) 441.0 154.667 T
+(orm added) 464.91 154.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 92 24
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(92 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Bold) 12 1 mymakefontmetric
+3 FF
+(NO) 180.0 114.984 T
+(TES) 197.52 114.984 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+216 131.650665 M 0.309937 0 32 (This interf) widthshow
+258.149994 131.650665 M 0.309937 0 32 (ace is machine w) widthshow
+327.569885 131.650665 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 216.0 143.651 T
+(.) 245.99 143.651 T
+3 FF
+(RETURN V) 180.0 174.984 T
+(ALUE) 240.709 174.984 T
+4 FF
+(KERN_PR) 216.0 199.651 T
+(O) 260.05 199.651 T
+(TECTION_F) 266.87 199.651 T
+(AILURE) 319.461 199.651 T
+(Speci\336ed memory is v) 252.0 211.651 T
+(alid, b) 341.47 211.651 T
+(ut does not permit reading.) 366.27 211.651 T
+(KERN_INV) 216.0 235.651 T
+(ALID_ADDRESS) 264.641 235.651 T
+252 247.650589 M 1.21994 0 32 (The address is ille) widthshow
+327.999908 247.650589 M 1.21994 0 32 (g) widthshow
+332.949951 247.650589 M 1.21994 0 32 (al or speci\336es a non-allocated re) widthshow
+468.029724 247.650589 M 1.21994 0 32 (gion, or there are) widthshow
+(less than ) 252.0 259.651 T
+5 (Times-Italic) 10 1 mymakefontmetric
+5 FF
+(size) 289.22 259.651 T
+4 FF
+( bytes of data follo) 304.22 259.651 T
+(wing the address.) 378.96 259.651 T
+3 FF
+(RELA) 180.0 290.984 T
+(TED INFORMA) 212.197 290.984 T
+(TION) 297.385 290.984 T
+4 FF
+(Functions: ) 216.0 307.651 T
+0 FF
+(vm_copy) 260.73 307.651 T
+4 FF
+(, ) 298.41 307.651 T
+0 FF
+(vm_deallocate) 303.41 307.651 T
+4 FF
+(, ) 364.51 307.651 T
+0 FF
+(vm_write) 369.51 307.651 T
+4 FF
+(.) 410.05 307.651 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 93 25
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (93 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_r) 72.0 56.824 T
+(egion) 92.331 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_r) 72.0 118.333 T
+(egion) 103.626 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Returns information on a re) 146.34 142.691 T
+(gion of virtual memory) 271.73 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_r) 164.83 192.691 T
+(egion) 187.42 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t*) 162.0 216.691 T
+6 FF
+(addr) 398.76 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(vm_size_t*) 162.0 228.691 T
+6 FF
+(size) 414.6 228.691 T
+(,) 429.5 228.691 T
+4 FF
+(vm_re) 162.0 240.691 T
+(gion_\337a) 187.4 240.691 T
+(v) 219.98 240.691 T
+(or_t) 224.78 240.691 T
+6 FF
+<df61766f72> 406.569 240.691 T
+4 FF
+(,) 429.5 240.691 T
+(vm_re) 162.0 252.691 T
+(gion_info_t) 187.4 252.691 T
+6 FF
+(info,) 413.94 252.691 T
+4 FF
+(mach_msg_type_number_t*) 162.0 264.691 T
+6 FF
+(info_count) 386.72 264.691 T
+4 FF
+(,) 429.5 264.691 T
+(mem_cache_name_port_t*) 162.0 276.691 T
+6 FF
+(object_name) 374.79 276.691 T
+4 FF
+(\);) 425.89 276.691 T
+5 FF
+(DESCRIPTION) 72.0 308.024 T
+4 FF
+108 324.690491 M 1.658936 0 32 (The ) widthshow
+1 FF
+127.708939 324.690491 M 1.658936 0 32 (vm_r) widthshow
+150.299042 324.690491 M 1.658936 0 32 (egion) widthshow
+4 FF
+173.079041 324.690491 M 1.658936 0 32 ( function returns information on a re) widthshow
+328.41275 324.690491 M 1.658936 0 32 (gion within the speci\336ed) widthshow
+(task\325) 108.0 336.69 T
+(s address space.) 126.89 336.69 T
+108 360.69046 M 0.748245 0 32 (The function be) widthshow
+172.66658 360.69046 M 0.748245 0 32 (gins looking at ) widthshow
+6 FF
+236.861313 360.69046 M 0.748245 0 32 (addr) widthshow
+255.381516 360.69046 M 0.748245 0 32 (ess) widthshow
+4 FF
+267.601501 360.69046 M 0.748245 0 32 ( and continues until it \336nds an allocated) widthshow
+108 372.69043 M 0.603973 0 32 (re) widthshow
+115.620087 372.69043 M 0.603973 0 32 (gion. If the input address is within a re) widthshow
+274.451965 372.69043 M 0.603973 0 32 (gion, the function uses the start of that) widthshow
+(re) 108.0 384.69 T
+(gion. The starting address for the located re) 115.62 384.69 T
+(gion is returned in ) 289.32 384.69 T
+6 FF
+(addr) 364.87 384.69 T
+(ess) 383.39 384.69 T
+4 FF
+(.) 395.61 384.69 T
+5 FF
+(P) 72.0 416.024 T
+(ARAMETERS) 78.444 416.024 T
+6 FF
+(tar) 108.0 440.69 T
+(g) 119.3 440.69 T
+(et_task) 124.2 440.69 T
+4 FF
+144 452.690399 M 0.624954 0 32 ([in task send right] The port for the task whose address space contains) widthshow
+(the re) 144.0 464.69 T
+(gion.) 166.34 464.69 T
+6 FF
+(addr) 108.0 488.69 T
+(ess) 126.52 488.69 T
+4 FF
+144 500.690369 M 0.469971 0 32 ([pointer to in/out scalar] The address at which to start looking for a re-) widthshow
+(gion. The function returns the starting address actually used.) 144.0 512.69 T
+6 FF
+(size) 108.0 536.69 T
+4 FF
+144 548.690308 M 1.756317 0 32 ([out scalar] The number of bytes in the located re) widthshow
+357.106964 548.690308 M 1.756317 0 32 (gion. The number) widthshow
+(con) 144.0 560.69 T
+(v) 158.04 560.69 T
+(erts to an inte) 162.89 560.69 T
+(gral number of virtual pages.) 216.9 560.69 T
+6 FF
+<df61766f72> 108.0 584.69 T
+4 FF
+([in scalar] The type of information to be returned. V) 144.0 596.69 T
+(alid v) 351.731 596.69 T
+(alues are:) 373.981 596.69 T
+(VM_REGION_B) 144.0 620.69 T
+(ASIC_INFO) 214.2 620.69 T
+180 632.690247 M 2.417099 0 32 (Basic information about the re) widthshow
+311.168488 632.690247 M 2.417099 0 32 (gion \(size, inheritance, etc.\).) widthshow
+(This information is declared by ) 180.0 644.69 T
+1 FF
+(vm_r) 308.04 644.69 T
+(egion_inf) 330.63 644.69 T
+(o) 369.83 644.69 T
+4 FF
+(.) 374.83 644.69 T
+6 FF
+(info) 108.0 668.69 T
+4 FF
+([out structure] Returned re) 144.0 680.69 T
+(gion information.) 250.21 680.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(Changed to r) 441.0 142.667 T
+(e-) 496.93 142.667 T
+(tur) 441.0 154.667 T
+(n a structur) 454.18 154.667 T
+(e) 504.55 154.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 94 26
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(94 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Italic) 10 1 mymakefontmetric
+3 FF
+(info_count) 216.0 113.651 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+252 125.65065 M 0.289948 0 32 ([in/out scalar] On input, the maximum size of the b) widthshow
+459.389648 125.65065 M 0.289948 0 32 (uf) widthshow
+467.469788 125.65065 M 0.289948 0 32 (fer; on output, the) widthshow
+(size returned \(in natural-sized units\).) 252.0 137.651 T
+3 FF
+(object_name) 216.0 161.651 T
+4 FF
+252 173.650604 M 1.111786 0 32 ([out memory-cache-name send right] The name of a send right to the) widthshow
+252 185.650589 M 0.416977 0 32 (memory cache object name port for the memory object associated with) widthshow
+252 197.650574 M 2.86911 0 32 (the re) widthshow
+277.209198 197.650574 M 2.86911 0 32 (gion. This v) widthshow
+330.757568 197.650574 M 2.86911 0 32 (alue can be used as a name to identify re) widthshow
+518.329651 197.650574 M 2.86911 0 32 (gions) widthshow
+(mapped ag) 252.0 209.651 T
+(ainst the same memory object.) 295.55 209.651 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(NO) 180.0 240.984 T
+(TES) 197.52 240.984 T
+4 FF
+216 257.650543 M 0.309937 0 32 (This interf) widthshow
+258.149994 257.650543 M 0.309937 0 32 (ace is machine w) widthshow
+327.569885 257.650543 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 216.0 269.651 T
+(.) 245.99 269.651 T
+5 FF
+(RETURN V) 180.0 300.984 T
+(ALUE) 240.709 300.984 T
+4 FF
+(KERN_INV) 216.0 325.651 T
+(ALID_ADDRESS) 264.641 325.651 T
+(There is no re) 252.0 337.65 T
+(gion at or be) 307.11 337.65 T
+(yond the speci\336ed starting address.) 357.23 337.65 T
+5 FF
+(RELA) 180.0 368.984 T
+(TED INFORMA) 212.197 368.984 T
+(TION) 297.385 368.984 T
+4 FF
+216 385.650482 M 0.837936 0 32 (Functions: ) widthshow
+0 FF
+261.567932 385.650482 M 0.837936 0 32 (vm_allocate) widthshow
+4 FF
+312.667938 385.650482 M 0.837936 0 32 (, ) widthshow
+0 FF
+318.505859 385.650482 M 0.837936 0 32 (vm_deallocate) widthshow
+4 FF
+379.605896 385.650482 M 0.837936 0 32 (, ) widthshow
+0 FF
+385.443817 385.650482 M 0.837936 0 32 (vm_inherit) widthshow
+4 FF
+432.663818 385.650482 M 0.837936 0 32 (, ) widthshow
+0 FF
+438.50177 385.650482 M 0.837936 0 32 (vm_pr) widthshow
+466.651855 385.650482 M 0.837936 0 32 (otect, vm_beha) widthshow
+531.669922 385.650482 M 0.837936 0 32 (v-) widthshow
+0 FF
+(ior_set, vm_r) 216.0 397.65 T
+(eser) 272.47 397.65 T
+(v) 289.58 397.65 T
+(e, memory_object_notify) 294.48 397.65 T
+4 FF
+(, ) 399.911 397.65 T
+0 FF
+(memory_object_get_name) 404.911 397.65 T
+4 FF
+(.) 517.651 397.65 T
+(Data Structures: ) 216.0 421.65 T
+0 FF
+(vm_r) 283.21 421.65 T
+(egion_inf) 305.8 421.65 T
+(o) 345.0 421.65 T
+4 FF
+(.) 350.0 421.65 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 95 27
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (95 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_r) 72.0 56.824 T
+(emap) 92.331 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_r) 72.0 118.333 T
+(emap) 103.626 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Re-maps the memory objects in a range of a task\325) 146.34 142.691 T
+(s memory) 359.36 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_r) 164.83 192.691 T
+(emap) 187.42 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t*) 162.0 216.691 T
+6 FF
+(tar) 370.34 216.691 T
+(g) 381.64 216.691 T
+(et_addr) 386.54 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(vm_size_t) 162.0 228.691 T
+6 FF
+(size) 414.6 228.691 T
+(,) 429.5 228.691 T
+4 FF
+(vm_address_t) 162.0 240.691 T
+6 FF
+(mask,) 408.95 240.691 T
+4 FF
+(vm_allocate_t) 162.0 252.691 T
+6 FF
+(anywher) 391.09 252.691 T
+(e) 425.16 252.691 T
+(,) 429.5 252.691 T
+4 FF
+(task_port_t) 162.0 264.691 T
+6 FF
+(sour) 382.1 264.691 T
+(ce_task,) 399.51 264.691 T
+4 FF
+(vm_address_t) 162.0 276.691 T
+6 FF
+(sour) 367.47 276.691 T
+(ce_addr) 384.88 276.691 T
+(ess,) 417.28 276.691 T
+4 FF
+(boolean_t) 162.0 288.69 T
+6 FF
+(copy) 411.17 288.69 T
+(,) 429.5 288.69 T
+4 FF
+(vm_prot_t*) 162.0 300.69 T
+6 FF
+(cur_pr) 370.51 300.69 T
+(otection,) 397.28 300.69 T
+4 FF
+(vm_prot_t*) 162.0 312.69 T
+6 FF
+(max_pr) 367.18 312.69 T
+(otection) 397.28 312.69 T
+4 FF
+(,) 429.5 312.69 T
+(vm_inherit_t) 162.0 324.69 T
+6 FF
+(inheritance) 380.34 324.69 T
+4 FF
+(\);) 425.89 324.69 T
+5 FF
+(DESCRIPTION) 72.0 356.024 T
+4 FF
+108 372.69043 M 0.863602 0 32 (The ) widthshow
+1 FF
+126.913605 372.69043 M 0.863602 0 32 (vm_r) widthshow
+149.503708 372.69043 M 0.863602 0 32 (emap) widthshow
+4 FF
+172.83371 372.69043 M 0.863602 0 32 ( function maps the memory objects underlying a portion of the) widthshow
+108 384.69043 M 0.330887 0 32 (speci\336ed ) widthshow
+6 FF
+146.38089 384.69043 M 0.330887 0 32 (sour) widthshow
+163.791092 384.69043 M 0.330887 0 32 (ce_task) widthshow
+4 FF
+193.781097 384.69043 M 0.330887 0 32 <d5> widthshow
+196.561401 384.69043 M 0.330887 0 32 (s virtual address space into the address space belonging to) widthshow
+6 FF
+108 396.690399 M 0.510712 0 32 (tar) widthshow
+119.300201 396.690399 M 0.510712 0 32 (g) widthshow
+124.200256 396.690399 M 0.510712 0 32 (et_task) widthshow
+4 FF
+152.530258 396.690399 M 0.510712 0 32 (. The tar) widthshow
+186.971786 396.690399 M 0.510712 0 32 (get task can be the calling task or another task, identi\336ed by) widthshow
+108 408.690369 M 0.639954 0 32 (its task k) widthshow
+144.73996 408.690369 M 0.639954 0 32 (ernel port. The ef) widthshow
+215.829971 408.690369 M 0.639954 0 32 (fect is as if the tar) widthshow
+290.219849 408.690369 M 0.639954 0 32 (get task performed a ) widthshow
+1 FF
+377.199677 408.690369 M 0.639954 0 32 (vm_map) widthshow
+4 FF
+414.419678 408.690369 M 0.639954 0 32 ( call) widthshow
+108 420.690369 M 0.262146 0 32 (gi) widthshow
+115.530136 420.690369 M 0.262146 0 32 (v) widthshow
+120.380219 420.690369 M 0.262146 0 32 (en the same memory object representati) widthshow
+280.571106 420.690369 M 0.262146 0 32 (v) widthshow
+285.421204 420.690369 M 0.262146 0 32 (e, maximum protection, current pro-) widthshow
+108 432.690369 M 1.356277 0 32 (tection, inheritance and reserv) widthshow
+232.338989 432.690369 M 1.356277 0 32 (ation state as the source task. Ho) widthshow
+371.036804 432.690369 M 1.356277 0 32 (we) widthshow
+382.44696 432.690369 M 1.356277 0 32 (v) widthshow
+387.297028 432.690369 M 1.356277 0 32 (er) widthshow
+394.667236 432.690369 M 1.356277 0 32 (, the tw) widthshow
+426.999878 432.690369 M 1.356277 0 32 (o) widthshow
+108 444.690338 M 0.788422 0 32 (tasks must reside on the same host. The k) widthshow
+280.027435 444.690338 M 0.788422 0 32 (ernel maps the memory objects start-) widthshow
+108 456.690308 M 0.229904 0 32 (ing at ) widthshow
+6 FF
+133.459808 456.690308 M 0.229904 0 32 (tar) widthshow
+144.76001 456.690308 M 0.229904 0 32 (g) widthshow
+149.660065 456.690308 M 0.229904 0 32 (et_addr) widthshow
+180.400269 456.690308 M 0.229904 0 32 (ess) widthshow
+4 FF
+192.62027 456.690308 M 0.229904 0 32 (, so that access to ) widthshow
+6 FF
+265.979797 456.690308 M 0.229904 0 32 (tar) widthshow
+277.279999 456.690308 M 0.229904 0 32 (g) widthshow
+282.180054 456.690308 M 0.229904 0 32 (et_addr) widthshow
+312.920258 456.690308 M 0.229904 0 32 (ess) widthshow
+4 FF
+325.140259 456.690308 M 0.229904 0 32 ( is as if the source task ac-) widthshow
+(cessed its ) 108.0 468.69 T
+6 FF
+(sour) 148.55 468.69 T
+(ce_addr) 165.96 468.69 T
+(ess) 198.36 468.69 T
+4 FF
+(.) 210.58 468.69 T
+108 492.690308 M 1.417694 0 32 (The ) widthshow
+6 FF
+127.467697 492.690308 M 1.417694 0 32 (mask) widthshow
+4 FF
+148.0177 492.690308 M 1.417694 0 32 ( parameter speci\336es additional alignment restrictions on the k) widthshow
+405.339325 492.690308 M 1.417694 0 32 (ernel\325) widthshow
+428.109619 492.690308 M 1.417694 0 32 (s) widthshow
+(selection of the starting address. Uses for this mask include:) 108.0 504.69 T
+7 (Times-Roman) 7 1 mymakefontmetric
+7 FF
+<a5> 108.0 522.69 T
+4 FF
+121.535995 522.690247 M 0.755646 0 32 (F) widthshow
+126.946075 522.690247 M 0.755646 0 32 (orcing the memory address alignment for a mapping to be the same as the) widthshow
+(alignment within the source task.) 121.536 534.69 T
+7 FF
+<a5> 108.0 549.69 T
+4 FF
+121.535995 549.690247 M 0.350296 0 32 (Quickly \336nding the be) widthshow
+212.156967 549.690247 M 0.350296 0 32 (ginning of an allocated re) widthshow
+315.608246 549.690247 M 0.350296 0 32 (gion by performing bit arith-) widthshow
+(metic on an address kno) 121.536 561.69 T
+(wn to be in the re) 217.936 561.69 T
+(gion.) 287.496 561.69 T
+7 FF
+<a5> 108.0 576.69 T
+4 FF
+(Emulating a lar) 121.536 576.69 T
+(ger virtual page size.) 183.016 576.69 T
+108 600.690186 M 2.703659 0 32 (The ) widthshow
+6 FF
+128.753662 600.690186 M 2.703659 0 32 (cur_pr) widthshow
+155.523911 600.690186 M 2.703659 0 32 (otection) widthshow
+4 FF
+187.743912 600.690186 M 2.703659 0 32 ( and ) widthshow
+6 FF
+212.591232 600.690186 M 2.703659 0 32 (max_pr) widthshow
+242.691483 600.690186 M 2.703659 0 32 (otection ) widthshow
+4 FF
+280.115143 600.690186 M 2.703659 0 32 (parameters return the protection at-) widthshow
+108 612.690186 M 0.052795 0 32 (trib) widthshow
+121.690109 612.690186 M 0.052795 0 32 (utes for the mapped memory) widthshow
+236.231659 612.690186 M 0.052795 0 32 (. If all memory within the range had the same at-) widthshow
+108 624.690186 M 3.583939 0 32 (trib) widthshow
+121.690109 624.690186 M 3.583939 0 32 (utes, these attrib) widthshow
+193.928101 624.690186 M 3.583939 0 32 (utes are returned; otherwise the call returns the most) widthshow
+(restricti) 108.0 636.69 T
+(v) 138.3 636.69 T
+(e v) 143.15 636.69 T
+(alues for an) 154.84 636.69 T
+(y memory in the re) 201.34 636.69 T
+(gion.) 277.291 636.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(Experimental, f) 441.0 142.667 T
+(or ) 507.41 142.667 T
+(copyin/copy) 441.0 154.667 T
+(out) 491.87 154.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 96 28
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(96 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Bold) 12 1 mymakefontmetric
+3 FF
+(P) 180.0 114.984 T
+(ARAMETERS) 186.444 114.984 T
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+(tar) 216.0 139.651 T
+(g) 227.3 139.651 T
+(et_task) 232.2 139.651 T
+5 (Times-Roman) 10 1 mymakefontmetric
+5 FF
+252 151.65065 M 1.409988 0 32 ([in task send right] The port for the task in whose address space the) widthshow
+(memory is to be mapped.) 252.0 163.651 T
+4 FF
+(tar) 216.0 187.651 T
+(g) 227.3 187.651 T
+(et_addr) 232.2 187.651 T
+(ess) 262.94 187.651 T
+5 FF
+252 199.650604 M 0.915985 0 32 ([pointer to in/out scalar] The starting address for the mapped memory) widthshow
+252 211.650589 M 1.32164 0 32 (in the tar) widthshow
+290.013367 211.650589 M 1.32164 0 32 (get task. The mapped memory will start at the be) widthshow
+497.288239 211.650589 M 1.32164 0 32 (ginning of) widthshow
+252 223.650574 M 0.217926 0 32 (the page containing ) widthshow
+4 FF
+333.473785 223.650574 M 0.217926 0 32 (tar) widthshow
+344.773987 223.650574 M 0.217926 0 32 (g) widthshow
+349.674042 223.650574 M 0.217926 0 32 (et_addr) widthshow
+380.414246 223.650574 M 0.217926 0 32 (ess) widthshow
+5 FF
+392.634247 223.650574 M 0.217926 0 32 (. If there is not enough room follo) widthshow
+529.44989 223.650574 M 0.217926 0 32 (w-) widthshow
+252 235.650558 M 1.344101 0 32 (ing the address, the k) widthshow
+341.98645 235.650558 M 1.344101 0 32 (ernel does not map the memory) widthshow
+474.427338 235.650558 M 1.344101 0 32 (. The k) widthshow
+505.065613 235.650558 M 1.344101 0 32 (ernel re-) widthshow
+(turns the starting address actually used for the mapped memory) 252.0 247.651 T
+(.) 504.92 247.651 T
+4 FF
+(size) 216.0 271.651 T
+5 FF
+252 283.650513 M 0.378296 0 32 ([in scalar] The number of bytes to map. The k) widthshow
+439.154724 283.650513 M 0.378296 0 32 (ernel rounds this number) widthshow
+(up to an inte) 252.0 295.65 T
+(gral number of virtual pages.) 301.57 295.65 T
+4 FF
+(mask) 216.0 319.65 T
+5 FF
+252 331.650452 M 0.441971 0 32 ([in scalar] Alignment restrictions for starting address. Bits turned on in) widthshow
+(the mask will not be turned on in the starting address.) 252.0 343.65 T
+4 FF
+(anywher) 216.0 367.65 T
+(e) 250.07 367.65 T
+5 FF
+([in scalar] Placement indicator) 252.0 379.65 T
+(. V) 373.92 379.65 T
+(alid v) 385.031 379.65 T
+(alues are:) 407.281 379.65 T
+(VM_ALLOCA) 252.0 403.65 T
+(TE_ANYWHERE) 312.551 403.65 T
+288 415.650391 M 1.133957 0 32 (The k) widthshow
+312.084015 415.650391 M 1.133957 0 32 (ernel allocates the re) widthshow
+397.805969 415.650391 M 1.133957 0 32 (gion in the ne) widthshow
+455.777954 415.650391 M 1.133957 0 32 (xt unused space that) widthshow
+288 427.650391 M 1.438828 0 32 (is suf) widthshow
+310.578979 427.650391 M 1.438828 0 32 <de6369656e742077697468696e2074686520616464726573732073706163652e20546865206b> widthshow
+472.141998 427.650391 M 1.438828 0 32 (ernel returns the) widthshow
+(starting address actually used in ) 288.0 439.65 T
+4 FF
+(tar) 418.26 439.65 T
+(g) 429.56 439.65 T
+(et_addr) 434.46 439.65 T
+(ess) 465.2 439.65 T
+5 FF
+(.) 477.42 439.65 T
+(VM_ALLOCA) 252.0 463.65 T
+(TE_FIXED) 312.551 463.65 T
+288 475.65033 M 1.154892 0 32 (The k) widthshow
+312.10495 475.65033 M 1.154892 0 32 (ernel allocates the re) widthshow
+397.889709 475.65033 M 1.154892 0 32 (gion starting at ) widthshow
+4 FF
+463.854401 475.65033 M 1.154892 0 32 (tar) widthshow
+475.154602 475.65033 M 1.154892 0 32 (g) widthshow
+480.054657 475.65033 M 1.154892 0 32 (et_addr) widthshow
+510.794861 475.65033 M 1.154892 0 32 (ess) widthshow
+5 FF
+523.014893 475.65033 M 1.154892 0 32 ( un-) widthshow
+(less that space is reserv) 288.0 487.65 T
+(ed.) 381.16 487.65 T
+(VM_ALLOCA) 252.0 511.65 T
+(TE_RESER) 312.551 511.65 T
+(VED) 360.091 511.65 T
+288 523.650269 M 0.511124 0 32 (The k) widthshow
+311.461182 523.650269 M 0.511124 0 32 (ernel allocates the re) widthshow
+395.314636 523.650269 M 0.511124 0 32 (gion starting at ) widthshow
+4 FF
+459.348022 523.650269 M 0.511124 0 32 (tar) widthshow
+470.648224 523.650269 M 0.511124 0 32 (g) widthshow
+475.548279 523.650269 M 0.511124 0 32 (et_addr) widthshow
+506.288483 523.650269 M 0.511124 0 32 (ess) widthshow
+5 FF
+518.508484 523.650269 M 0.511124 0 32 ( e) widthshow
+525.709717 523.650269 M 0.511124 0 32 (v) widthshow
+530.559814 523.650269 M 0.511124 0 32 (en) widthshow
+(if that space is reserv) 288.0 535.65 T
+(ed.) 372.27 535.65 T
+4 FF
+(sour) 216.0 559.65 T
+(ce_task) 233.41 559.65 T
+5 FF
+252 571.650269 M 0.852844 0 32 ([in task send right] The port for the task whose address space is to be) widthshow
+(mapped.) 252.0 583.65 T
+4 FF
+(sour) 216.0 607.65 T
+(ce_addr) 233.41 607.65 T
+(ess) 265.81 607.65 T
+5 FF
+252 619.650208 M 0.579147 0 32 ([in scalar] The starting address for the memory to be mapped from the) widthshow
+252 631.650146 M 1.260788 0 32 (source task. The memory to be mapped will start at the be) widthshow
+497.348755 631.650146 M 1.260788 0 32 (ginning of) widthshow
+252 643.650146 M 0.929901 0 32 (the page containing ) widthshow
+4 FF
+335.609711 643.650146 M 0.929901 0 32 (sour) widthshow
+353.019897 643.650146 M 0.929901 0 32 (ce_addr) widthshow
+385.420105 643.650146 M 0.929901 0 32 (ess) widthshow
+5 FF
+397.640137 643.650146 M 0.929901 0 32 (. If not enough memory e) widthshow
+503.789734 643.650146 M 0.929901 0 32 (xists fol-) widthshow
+(lo) 252.0 655.65 T
+(wing the address, the k) 259.53 655.65 T
+(ernel does not map the memory) 351.36 655.65 T
+(.) 477.081 655.65 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 97 29
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (97 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_r) 72.0 56.824 T
+(emap) 92.331 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+0 G
+3 (Times-Italic) 10 1 mymakefontmetric
+3 FF
+(copy) 108.0 115.667 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+144 127.666641 M 1.024933 0 32 ([in scalar] Cop) widthshow
+205.379929 127.666641 M 1.024933 0 32 (y indicator) widthshow
+248.905167 127.666641 M 1.024933 0 32 (. If true, the k) widthshow
+307.334961 127.666641 M 1.024933 0 32 (ernel copies the re) widthshow
+383.289856 127.666641 M 1.024933 0 32 (gion for the) widthshow
+144 139.666626 M 1.99173 0 32 (memory to the speci\336ed task\325) widthshow
+269.737244 139.666626 M 1.99173 0 32 (s address space. If f) widthshow
+356.184204 139.666626 M 1.99173 0 32 (alse, the re) widthshow
+403.05777 139.666626 M 1.99173 0 32 (gion is) widthshow
+(mapped read-write.) 144.0 151.667 T
+3 FF
+(cur_pr) 108.0 175.667 T
+(otection) 134.77 175.667 T
+4 FF
+144 187.66658 M 1.17897 0 32 ([out scalar] The most restricti) widthshow
+266.776031 187.66658 M 1.17897 0 32 (v) widthshow
+271.626099 187.66658 M 1.17897 0 32 (e current protection for the memory in) widthshow
+144 199.666565 M 1.174881 0 32 (the re) widthshow
+167.514969 199.666565 M 1.174881 0 32 (gion. V) widthshow
+197.58046 199.666565 M 1.174881 0 32 (alid v) widthshow
+221.005478 199.666565 M 1.174881 0 32 (alues are obtained by or\325ing together the follo) widthshow
+411.999817 199.666565 M 1.174881 0 32 (wing) widthshow
+(v) 144.0 211.667 T
+(alues:) 148.75 211.667 T
+(VM_PR) 144.0 235.667 T
+(O) 176.94 235.667 T
+(T_READ) 183.76 235.667 T
+(Allo) 180.0 247.667 T
+(ws read access.) 197.53 247.667 T
+(VM_PR) 144.0 271.667 T
+(O) 176.94 271.667 T
+(T_WRITE) 183.76 271.667 T
+(Allo) 180.0 283.666 T
+(ws write access.) 197.53 283.666 T
+(VM_PR) 144.0 307.666 T
+(O) 176.94 307.666 T
+(T_EXECUTE) 183.76 307.666 T
+(Allo) 180.0 319.666 T
+(ws e) 197.53 319.666 T
+(x) 215.43 319.666 T
+(ecute access.) 220.28 319.666 T
+3 FF
+(max_pr) 108.0 343.666 T
+(otection) 138.1 343.666 T
+4 FF
+144 355.666443 M 1.092178 0 32 ([out scalar] The most restricti) widthshow
+266.428864 355.666443 M 1.092178 0 32 (v) widthshow
+271.278931 355.666443 M 1.092178 0 32 (e maximum protection for the memory) widthshow
+(in the re) 144.0 367.666 T
+(gion. V) 176.62 367.666 T
+(alues are the same as for ) 205.511 367.666 T
+3 FF
+(cur_pr) 306.031 367.666 T
+(otection) 332.801 367.666 T
+4 FF
+(.) 365.021 367.666 T
+3 FF
+(inheritance) 108.0 391.666 T
+4 FF
+144 403.666382 M 1.059875 0 32 ([in scalar] The initial inheritance attrib) widthshow
+303.78949 403.666382 M 1.059875 0 32 (ute for the re) widthshow
+358.189209 403.666382 M 1.059875 0 32 (gion. V) widthshow
+388.139709 403.666382 M 1.059875 0 32 (alid v) widthshow
+411.449707 403.666382 M 1.059875 0 32 (alues) widthshow
+(are:) 144.0 415.666 T
+(VM_INHERIT_SHARE) 144.0 439.666 T
+(Allo) 180.0 451.666 T
+(ws child tasks to share the re) 197.53 451.666 T
+(gion.) 312.36 451.666 T
+(VM_INHERIT_COPY) 144.0 475.666 T
+(Gi) 180.0 487.666 T
+(v) 189.75 487.666 T
+(es child tasks a cop) 194.6 487.666 T
+(y of the re) 271.71 487.666 T
+(gion.) 312.38 487.666 T
+(VM_INHERIT_NONE) 144.0 511.666 T
+(Pro) 180.0 523.666 T
+(vides no access to the re) 193.74 523.666 T
+(gion for child tasks.) 290.51 523.666 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(NO) 72.0 555.0 T
+(TES) 89.52 555.0 T
+4 FF
+108 571.66626 M 0.309937 0 32 (This interf) widthshow
+150.149994 571.66626 M 0.309937 0 32 (ace is machine w) widthshow
+219.56987 571.66626 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 108.0 583.666 T
+(.) 137.99 583.666 T
+5 FF
+(RETURN V) 72.0 615.0 T
+(ALUE) 132.709 615.0 T
+4 FF
+(KERN_NO_SP) 108.0 639.666 T
+(A) 169.861 639.666 T
+(CE) 176.681 639.666 T
+144 651.666199 M 1.458282 0 32 (There is not enough space in the task\325) widthshow
+305.018311 651.666199 M 1.458282 0 32 (s address space to allocate the) widthshow
+(ne) 144.0 663.666 T
+(w re) 153.19 663.666 T
+(gion for the memory object.) 170.53 663.666 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 98 30
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(98 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(KERN_PR) 216.0 113.651 T
+(O) 260.05 113.651 T
+(TECTION_F) 266.87 113.651 T
+(AILURE) 319.461 113.651 T
+252 125.65065 M 0.114471 0 32 (Speci\336ed memory is v) widthshow
+341.813538 125.65065 M 0.114471 0 32 (alid, b) widthshow
+366.728149 125.65065 M 0.114471 0 32 (ut the backing memory manager is not per-) widthshow
+(mitted by the requesting task.) 252.0 137.651 T
+4 (Times-Bold) 12 1 mymakefontmetric
+4 FF
+(RELA) 180.0 168.984 T
+(TED INFORMA) 212.197 168.984 T
+(TION) 297.385 168.984 T
+3 FF
+(Functions:) 216.0 185.651 T
+0 FF
+( vm_r) 258.23 185.651 T
+(eser) 283.32 185.651 T
+(v) 300.43 185.651 T
+(e) 305.33 185.651 T
+3 FF
+(, ) 309.77 185.651 T
+0 FF
+(vm_map) 314.77 185.651 T
+3 FF
+(, ) 351.99 185.651 T
+0 FF
+(vm_r) 356.99 185.651 T
+(ead) 379.58 185.651 T
+3 FF
+(, ) 394.58 185.651 T
+0 FF
+(vm_write) 399.58 185.651 T
+3 FF
+(.) 440.12 185.651 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 99 31
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (99 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_r) 72.0 56.824 T
+(eser) 92.331 56.824 T
+(v) 107.73 56.824 T
+(e) 112.14 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_r) 72.0 118.333 T
+(eser) 103.626 118.333 T
+(v) 127.58 118.333 T
+(e) 134.44 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Marks a memory re) 146.34 142.691 T
+(gion as reserv) 239.78 142.691 T
+(ed) 295.17 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_r) 164.83 192.691 T
+(eser) 187.42 192.691 T
+(v) 204.53 192.691 T
+(e) 209.43 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t) 162.0 216.691 T
+6 FF
+(addr) 398.76 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(vm_size_t) 162.0 228.691 T
+6 FF
+(size\)) 410.89 228.691 T
+4 FF
+(;) 429.22 228.691 T
+5 FF
+(DESCRIPTION) 72.0 260.024 T
+4 FF
+108 276.690552 M 0.398102 0 32 (The ) widthshow
+1 FF
+126.448105 276.690552 M 0.398102 0 32 (vm_r) widthshow
+149.038208 276.690552 M 0.398102 0 32 (eser) widthshow
+166.14827 276.690552 M 0.398102 0 32 (v) widthshow
+171.048325 276.690552 M 0.398102 0 32 (e ) widthshow
+4 FF
+178.386429 276.690552 M 0.398102 0 32 (function marks the speci\336ed re) widthshow
+303.138916 276.690552 M 0.398102 0 32 (gion as reserv) widthshow
+359.325226 276.690552 M 0.398102 0 32 (ed. A reserv) widthshow
+408.561523 276.690552 M 0.398102 0 32 (ed re-) widthshow
+108 288.690552 M 1.123306 0 32 (gion is one which will not be used for random allocation \(out-of-line memory) widthshow
+(reception of non-e) 108.0 300.691 T
+(xplicit memory allocation\).) 181.16 300.691 T
+108 324.690491 M 0.026352 0 32 (A reserv) widthshow
+142.026443 324.690491 M 0.026352 0 32 (ed b) widthshow
+158.792908 324.690491 M 0.026352 0 32 (ut not allocated re) widthshow
+230.652054 324.690491 M 0.026352 0 32 (gion may ha) widthshow
+279.944885 324.690491 M 0.026352 0 32 (v) widthshow
+284.794952 324.690491 M 0.026352 0 32 (e an inheritance v) widthshow
+355.434143 324.690491 M 0.026352 0 32 (alue set b) widthshow
+393.056976 324.690491 M 0.026352 0 32 (ut no oth-) widthshow
+(er attrib) 108.0 336.69 T
+(utes. ) 139.18 336.69 T
+1 FF
+(vm_unr) 160.29 336.69 T
+(eser) 194.0 336.69 T
+(v) 211.11 336.69 T
+(e ) 216.01 336.69 T
+4 FF
+(will un-reserv) 222.95 336.69 T
+(e the memory) 278.62 336.69 T
+(.) 332.961 336.69 T
+5 FF
+(P) 72.0 368.024 T
+(ARAMETERS) 78.444 368.024 T
+6 FF
+(tar) 108.0 392.69 T
+(g) 119.3 392.69 T
+(et_task) 124.2 392.69 T
+4 FF
+144 404.69046 M 0.624954 0 32 ([in task send right] The port for the task whose address space contains) widthshow
+(the re) 144.0 416.69 T
+(gion.) 166.34 416.69 T
+6 FF
+(addr) 108.0 440.69 T
+(ess) 126.52 440.69 T
+4 FF
+([in scalar] The starting address for the re) 144.0 452.69 T
+(gion.) 306.3 452.69 T
+6 FF
+(size) 108.0 476.69 T
+4 FF
+([in scalar] The number of bytes in the re) 144.0 488.69 T
+(gion.) 304.92 488.69 T
+5 FF
+(NO) 72.0 520.024 T
+(TES) 89.52 520.024 T
+4 FF
+108 536.690369 M 0.309937 0 32 (This interf) widthshow
+150.149994 536.690369 M 0.309937 0 32 (ace is machine w) widthshow
+219.56987 536.690369 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 108.0 548.69 T
+(.) 137.99 548.69 T
+5 FF
+(RETURN V) 72.0 580.024 T
+(ALUE) 132.709 580.024 T
+4 FF
+(KERN_INV) 108.0 604.69 T
+(ALID_ADDRESS) 156.641 604.69 T
+(The address is ille) 144.0 616.69 T
+(g) 216.34 616.69 T
+(al.) 221.29 616.69 T
+5 FF
+(RELA) 72.0 648.024 T
+(TED INFORMA) 104.197 648.024 T
+(TION) 189.385 648.024 T
+4 FF
+108 664.690308 M 3.285934 0 32 (Functions:) widthshow
+1 FF
+150.229996 664.690308 M 3.285934 0 32 ( vm_allocate) widthshow
+4 FF
+207.115936 664.690308 M 3.285934 0 32 (, ) widthshow
+1 FF
+215.401871 664.690308 M 3.285934 0 32 (vm_deallocate) widthshow
+4 FF
+276.501892 664.690308 M 3.285934 0 32 (, ) widthshow
+1 FF
+284.787811 664.690308 M 3.285934 0 32 (mach_msg) widthshow
+4 FF
+330.33783 664.690308 M 3.285934 0 32 (, ) widthshow
+1 FF
+338.623749 664.690308 M 3.285934 0 32 (vm_map) widthshow
+4 FF
+375.84375 664.690308 M 3.285934 0 32 (, ) widthshow
+1 FF
+384.1297 664.690308 M 3.285934 0 32 (vm_r) widthshow
+406.719788 664.690308 M 3.285934 0 32 (egion) widthshow
+4 FF
+429.499786 664.690308 M 3.285934 0 32 (,) widthshow
+1 FF
+(vm_inherit) 108.0 676.69 T
+4 FF
+(, ) 155.22 676.69 T
+1 FF
+(vm_unr) 160.22 676.69 T
+(eser) 193.93 676.69 T
+(v) 211.04 676.69 T
+(e) 215.94 676.69 T
+4 FF
+(.) 220.38 676.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(New) 441.0 142.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 100 32
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(100 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+180 119.983978 360 3.024002 CR
+0.25 SL
+2 SC
+0 G
+540 121.5 M
+180 121.5 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_unr) 180.0 116.317 T
+(eser) 227.194 116.317 T
+(v) 251.148 116.317 T
+(e) 258.008 116.317 T
+0 FF
+(Function) 216.0 140.675 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Marks a memory re) 254.34 140.675 T
+(gion as no longer reserv) 347.78 140.675 T
+(ed) 443.72 140.675 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 180.0 172.008 T
+4 FF
+(k) 216.0 190.675 T
+(ern_return_t ) 220.9 190.675 T
+0 FF
+(vm_unr) 272.83 190.675 T
+(eser) 306.54 190.675 T
+(v) 323.65 190.675 T
+(e) 328.55 190.675 T
+4 FF
+(\(task_port_t) 270.0 202.675 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 492.97 202.675 T
+(g) 504.27 202.675 T
+(et_task,) 509.17 202.675 T
+4 FF
+(vm_address_t) 270.0 214.675 T
+6 FF
+(addr) 506.76 214.675 T
+(ess,) 525.28 214.675 T
+4 FF
+(vm_size_t) 270.0 226.675 T
+6 FF
+(size\)) 518.89 226.675 T
+4 FF
+(;) 537.22 226.675 T
+5 FF
+(DESCRIPTION) 180.0 258.008 T
+4 FF
+216 274.674561 M 0.229904 0 32 (The ) widthshow
+0 FF
+234.279907 274.674561 M 0.229904 0 32 (vm_unr) widthshow
+267.98999 274.674561 M 0.229904 0 32 (eser) widthshow
+285.100067 274.674561 M 0.229904 0 32 (v) widthshow
+290.000122 274.674561 M 0.229904 0 32 (e ) widthshow
+4 FF
+297.170044 274.674561 M 0.229904 0 32 (function marks the speci\336ed re) widthshow
+421.249756 274.674561 M 0.229904 0 32 (gion as no longer reserv) widthshow
+518.109436 274.674561 M 0.229904 0 32 (ed. A) widthshow
+216 286.674561 M 0.45578 0 32 (reserv) widthshow
+240.28009 286.674561 M 0.45578 0 32 (ed re) widthshow
+260.295959 286.674561 M 0.45578 0 32 (gion is one which will not be used for random allocation \(out-of-line) widthshow
+(memory reception of non-e) 216.0 298.675 T
+(xplicit memory allocation\).) 324.99 298.675 T
+5 FF
+(P) 180.0 330.008 T
+(ARAMETERS) 186.444 330.008 T
+6 FF
+(tar) 216.0 354.675 T
+(g) 227.3 354.675 T
+(et_task) 232.2 354.675 T
+4 FF
+252 366.6745 M 0.624954 0 32 ([in task send right] The port for the task whose address space contains) widthshow
+(the re) 252.0 378.674 T
+(gion.) 274.34 378.674 T
+6 FF
+(addr) 216.0 402.674 T
+(ess) 234.52 402.674 T
+4 FF
+([in scalar] The starting address for the re) 252.0 414.674 T
+(gion.) 414.3 414.674 T
+6 FF
+(size) 216.0 438.674 T
+4 FF
+([in scalar] The number of bytes in the re) 252.0 450.674 T
+(gion.) 412.92 450.674 T
+5 FF
+(NO) 180.0 482.008 T
+(TES) 197.52 482.008 T
+4 FF
+216 498.674408 M 0.309937 0 32 (This interf) widthshow
+258.149994 498.674408 M 0.309937 0 32 (ace is machine w) widthshow
+327.569885 498.674408 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 216.0 510.674 T
+(.) 245.99 510.674 T
+5 FF
+(RETURN V) 180.0 542.008 T
+(ALUE) 240.709 542.008 T
+4 FF
+(KERN_INV) 216.0 566.674 T
+(ALID_ADDRESS) 264.641 566.674 T
+(The address is ille) 252.0 578.674 T
+(g) 324.34 578.674 T
+(al.) 329.29 578.674 T
+5 FF
+(RELA) 180.0 610.008 T
+(TED INFORMA) 212.197 610.008 T
+(TION) 297.385 610.008 T
+4 FF
+216 626.674316 M 3.285934 0 32 (Functions:) widthshow
+0 FF
+258.22998 626.674316 M 3.285934 0 32 ( vm_allocate) widthshow
+4 FF
+315.115936 626.674316 M 3.285934 0 32 (, ) widthshow
+0 FF
+323.401855 626.674316 M 3.285934 0 32 (vm_deallocate) widthshow
+4 FF
+384.501892 626.674316 M 3.285934 0 32 (, ) widthshow
+0 FF
+392.787811 626.674316 M 3.285934 0 32 (mach_msg) widthshow
+4 FF
+438.33783 626.674316 M 3.285934 0 32 (, ) widthshow
+0 FF
+446.623749 626.674316 M 3.285934 0 32 (vm_map) widthshow
+4 FF
+483.84375 626.674316 M 3.285934 0 32 (, ) widthshow
+0 FF
+492.1297 626.674316 M 3.285934 0 32 (vm_r) widthshow
+514.719788 626.674316 M 3.285934 0 32 (egion) widthshow
+4 FF
+537.499756 626.674316 M 3.285934 0 32 (,) widthshow
+0 FF
+(vm_inherit) 216.0 638.674 T
+4 FF
+(, ) 263.22 638.674 T
+0 FF
+(vm_r) 268.22 638.674 T
+(eser) 290.81 638.674 T
+(v) 307.92 638.674 T
+(e) 312.82 638.674 T
+4 FF
+(.) 317.26 638.674 T
+72 105.984009 108 108 CR
+1 G
+81 114.984009 81 90 NF
+0 G
+0 FF
+(Status:) 81.0 122.651 T
+(New) 81.0 140.651 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 101 33
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+417 732.706665 M -2.5 0 32 (101 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_wir) 72.0 56.824 T
+(e) 101.331 56.824 T
+0.25 SL
+3.86 setmiterlimit
+0 SC
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_wir) 72.0 118.333 T
+(e) 117.626 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Speci\336es the pageability of a re) 146.34 142.691 T
+(gion of virtual memory) 287.0 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(LIBRAR) 72.0 174.024 T
+(Y) 118.248 174.024 T
+4 FF
+(#include <) 108.0 190.691 T
+1 FF
+(mach/mach_host.h) 150.58 190.691 T
+4 FF
+(>) 230.86 190.691 T
+5 FF
+(SYNOPSIS) 72.0 222.024 T
+4 FF
+(k) 108.0 240.691 T
+(ern_return_t ) 112.9 240.691 T
+1 FF
+(vm_wir) 164.83 240.691 T
+(e) 197.42 240.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(\() 162.0 252.691 T
+4 FF
+(task_port_t) 165.33 252.691 T
+6 FF
+(tar) 384.97 252.691 T
+(g) 396.27 252.691 T
+(et_task,) 401.17 252.691 T
+4 FF
+(vm_address_t) 162.0 264.691 T
+6 FF
+(addr) 398.76 264.691 T
+(ess,) 417.28 264.691 T
+4 FF
+(vm_size_t) 162.0 276.691 T
+6 FF
+(size) 414.6 276.691 T
+(,) 429.5 276.691 T
+4 FF
+(vm_prot_t) 162.0 288.691 T
+6 FF
+(wir) 372.38 288.691 T
+(ed_access\)) 385.35 288.691 T
+4 FF
+(;) 429.22 288.691 T
+5 FF
+(DESCRIPTION) 72.0 320.024 T
+4 FF
+108 336.690521 M 1.873581 0 32 (The ) widthshow
+1 FF
+127.923584 336.690521 M 1.873581 0 32 (vm_wir) widthshow
+160.513687 336.690521 M 1.873581 0 32 (e ) widthshow
+4 FF
+169.327271 336.690521 M 1.873581 0 32 (function sets the pageability pri) widthshow
+302.671753 336.690521 M 1.873581 0 32 (vile) widthshow
+317.52182 336.690521 M 1.873581 0 32 (ges for a re) widthshow
+367.692657 336.690521 M 1.873581 0 32 (gion within the) widthshow
+108 348.690491 M 1.470871 0 32 (speci\336ed task\325) widthshow
+166.411179 348.690491 M 1.470871 0 32 (s address space. ) widthshow
+6 FF
+236.913803 348.690491 M 1.470871 0 32 (wir) widthshow
+249.884003 348.690491 M 1.470871 0 32 (ed_access) widthshow
+4 FF
+290.424011 348.690491 M 1.470871 0 32 ( speci\336es the types of accesses to) widthshow
+108 360.690491 M 0.25531 0 32 (the memory re) widthshow
+166.68071 360.690491 M 0.25531 0 32 (gion which must not suf) widthshow
+264.12207 360.690491 M 0.25531 0 32 (fer from \(internal\) f) widthshow
+343.368103 360.690491 M 0.25531 0 32 (aults of an) widthshow
+385.388794 360.690491 M 0.25531 0 32 (y kind after) widthshow
+108 372.690491 M 0.8284 0 32 (this call returns. A non-null ) widthshow
+6 FF
+224.912003 372.690491 M 0.8284 0 32 (wir) widthshow
+237.882202 372.690491 M 0.8284 0 32 (ed_access) widthshow
+4 FF
+278.422211 372.690491 M 0.8284 0 32 ( v) widthshow
+286.500732 372.690491 M 0.8284 0 32 (alue indicates that the page is to be) widthshow
+108 384.69046 M 0.856964 0 32 <d27769726564d320696e746f206d656d6f72793b2061206e756c6c2076> widthshow
+232.854965 384.69046 M 0.856964 0 32 (alue indicates \322un-wiring\323. The k) widthshow
+369.762878 384.69046 M 0.856964 0 32 (ernel maintains) widthshow
+108 396.69043 M 1.539337 0 32 (for the re) widthshow
+147.578766 396.69043 M 1.539337 0 32 (gion a count of the number of times the re) widthshow
+329.312897 396.69043 M 1.539337 0 32 (gion is wired. A page is) widthshow
+108 408.69043 M 0.605347 0 32 (wired into ph) widthshow
+162.490723 408.69043 M 0.605347 0 32 (ysical memory if an) widthshow
+243.866852 408.69043 M 0.605347 0 32 (y task accessing it has a non-zero wired count) widthshow
+(for the page.) 108.0 420.69 T
+108 444.690399 M 0.383026 0 32 (The re) widthshow
+134.053116 444.690399 M 0.383026 0 32 (gion starts at the be) widthshow
+213.205307 444.690399 M 0.383026 0 32 (ginning of the virtual page containing) widthshow
+6 FF
+365.94043 444.690399 M 0.383026 0 32 ( addr) widthshow
+387.343689 444.690399 M 0.383026 0 32 (ess) widthshow
+4 FF
+399.56366 444.690399 M 0.383026 0 32 (; it ends) widthshow
+108 456.690369 M 1.769974 0 32 (at the end of the virtual page containing) widthshow
+6 FF
+279.529846 456.690369 M 1.769974 0 32 ( addr) widthshow
+302.320007 456.690369 M 1.769974 0 32 (ess) widthshow
+4 FF
+314.540009 456.690369 M 1.769974 0 32 ( + ) widthshow
+6 FF
+328.719971 456.690369 M 1.769974 0 32 (size) widthshow
+4 FF
+343.719971 456.690369 M 1.769974 0 32 ( - 1. Because of this) widthshow
+108 468.690369 M 1.704514 0 32 (rounding to virtual page boundaries, the amount of memory af) widthshow
+372.500793 468.690369 M 1.704514 0 32 (fected may be) widthshow
+(greater than) 108.0 480.69 T
+6 FF
+( size) 155.48 480.69 T
+4 FF
+(. Use) 172.98 480.69 T
+1 FF
+( host_page_size) 193.53 480.69 T
+4 FF
+( to \336nd the current virtual page size.) 259.36 480.69 T
+5 FF
+(P) 72.0 512.024 T
+(ARAMETERS) 78.444 512.024 T
+6 FF
+(tar) 108.0 536.69 T
+(g) 119.3 536.69 T
+(et_task) 124.2 536.69 T
+4 FF
+144 548.690308 M 0.624954 0 32 ([in task send right] The port for the task whose address space contains) widthshow
+(the re) 144.0 560.69 T
+(gion.) 166.34 560.69 T
+6 FF
+(addr) 108.0 584.69 T
+(ess) 126.52 584.69 T
+4 FF
+([in scalar] The starting address for the re) 144.0 596.69 T
+(gion.) 306.3 596.69 T
+6 FF
+(size) 108.0 620.69 T
+4 FF
+([in scalar] The number of bytes in the re) 144.0 632.69 T
+(gion.) 304.92 632.69 T
+6 FF
+(wir) 108.0 656.69 T
+(ed_access) 120.97 656.69 T
+4 FF
+([in scalar] The pageability of the re) 144.0 668.69 T
+(gion. V) 284.92 668.69 T
+(alid v) 313.811 668.69 T
+(alues are:) 336.061 668.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(Uses ledgers f) 441.0 142.667 T
+(or ) 499.07 142.667 T
+(pri) 441.0 154.667 T
+(vilege) 453.68 154.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 102 34
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(102 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(VM_PR) 252.0 113.651 T
+(O) 284.94 113.651 T
+(T_NONE) 291.76 113.651 T
+(Un-wire \(allo) 288.0 125.651 T
+(w to be paged\) the re) 341.9 125.651 T
+(gion of memory) 425.89 125.651 T
+(.) 489.681 125.651 T
+252 149.650635 M 0.33638 0 32 (An) widthshow
+264.070068 149.650635 M 0.33638 0 32 (y other v) widthshow
+300.042969 149.650635 M 0.33638 0 32 (alue speci\336es that the re) widthshow
+397.328613 149.650635 M 0.33638 0 32 (gion is to be wired and that the tar-) widthshow
+(get task must ha) 252.0 161.651 T
+(v) 316.52 161.651 T
+(e at least the speci\336ed amount of access to the re) 321.37 161.651 T
+(gion.) 515.62 161.651 T
+4 (Times-Bold) 12 1 mymakefontmetric
+4 FF
+(NO) 180.0 192.984 T
+(TES) 197.52 192.984 T
+3 FF
+216 209.650604 M 0.309937 0 32 (This interf) widthshow
+258.149994 209.650604 M 0.309937 0 32 (ace is machine w) widthshow
+327.569885 209.650604 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 216.0 221.651 T
+(.) 245.99 221.651 T
+(The wired memory is counted ag) 216.0 245.651 T
+(ainst the task\325) 347.87 245.651 T
+(s wired k) 402.87 245.651 T
+(ernel ledger limit.) 439.43 245.651 T
+4 FF
+(RETURN V) 180.0 276.984 T
+(ALUE) 240.709 276.984 T
+3 FF
+(KERN_INV) 216.0 301.651 T
+(ALID_ADDRESS) 264.641 301.651 T
+(The address is ille) 252.0 313.651 T
+(g) 324.34 313.651 T
+(al or speci\336es a non-allocated re) 329.29 313.651 T
+(gion.) 458.27 313.651 T
+4 FF
+(RELA) 180.0 344.984 T
+(TED INFORMA) 212.197 344.984 T
+(TION) 297.385 344.984 T
+3 FF
+(Functions: ) 216.0 361.651 T
+0 FF
+(thr) 260.73 361.651 T
+(ead_wir) 273.88 361.651 T
+(e) 308.14 361.651 T
+3 FF
+(.) 312.58 361.651 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 103 35
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+417 732.706665 M -2.5 0 32 (103 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(vm_write) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+72 121.999969 360 3.024002 CR
+0 G
+432 123.51 M
+72 123.51 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(vm_write) 72.0 118.333 T
+1 FF
+(Function) 108.0 142.691 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Writes data to a task\325) 146.34 142.691 T
+(s virtual memory) 245.77 142.691 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 72.0 174.024 T
+4 FF
+(k) 108.0 192.691 T
+(ern_return_t ) 112.9 192.691 T
+1 FF
+(vm_write) 164.83 192.691 T
+4 FF
+(\(task_port_t) 162.0 204.691 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(tar) 384.97 204.691 T
+(g) 396.27 204.691 T
+(et_task,) 401.17 204.691 T
+4 FF
+(vm_address_t) 162.0 216.691 T
+6 FF
+(addr) 398.76 216.691 T
+(ess,) 417.28 216.691 T
+4 FF
+(pointer_t) 162.0 228.691 T
+6 FF
+(data,) 411.72 228.691 T
+4 FF
+(mach_msg_type_number_t) 162.0 240.691 T
+6 FF
+(data_count\)) 380.89 240.691 T
+4 FF
+(;) 429.22 240.691 T
+5 FF
+(DESCRIPTION) 72.0 272.024 T
+4 FF
+108 288.690552 M 0.515625 0 32 (The ) widthshow
+1 FF
+126.565628 288.690552 M 0.515625 0 32 (vm_write) widthshow
+4 FF
+167.105637 288.690552 M 0.515625 0 32 ( function writes an array of data to a task\325) widthshow
+338.096588 288.690552 M 0.515625 0 32 (s virtual memory) widthshow
+406.808197 288.690552 M 0.515625 0 32 (. It al-) widthshow
+(lo) 108.0 300.691 T
+(ws one task to write to another task\325) 115.53 300.691 T
+(s memory) 259.68 300.691 T
+(.) 298.751 300.691 T
+108 324.690491 M 1.155655 0 32 (The result of ) widthshow
+1 FF
+165.066971 324.690491 M 1.155655 0 32 (vm_write) widthshow
+4 FF
+205.606979 324.690491 M 1.155655 0 32 ( is as if ) widthshow
+6 FF
+241.3396 324.690491 M 1.155655 0 32 (tar) widthshow
+252.639801 324.690491 M 1.155655 0 32 (g) widthshow
+257.539856 324.690491 M 1.155655 0 32 (et_task) widthshow
+4 FF
+285.869873 324.690491 M 1.155655 0 32 ( had directly written into the set of) widthshow
+(pages. Hence, ) 108.0 336.69 T
+6 FF
+(tar) 166.31 336.69 T
+(g) 177.61 336.69 T
+(et_task) 182.51 336.69 T
+4 FF
+( must ha) 210.84 336.69 T
+(v) 244.53 336.69 T
+(e write permission to the pages.) 249.38 336.69 T
+5 FF
+(P) 72.0 368.024 T
+(ARAMETERS) 78.444 368.024 T
+6 FF
+(tar) 108.0 392.69 T
+(g) 119.3 392.69 T
+(et_task) 124.2 392.69 T
+4 FF
+144 404.69046 M 0.812103 0 32 ([in task send right] The port for the task whose memory is to be writ-) widthshow
+(ten.) 144.0 416.69 T
+6 FF
+(addr) 108.0 440.69 T
+(ess) 126.52 440.69 T
+4 FF
+144 452.69043 M 0.602493 0 32 ([in scalar] The address at which to start the write. The starting address) widthshow
+(must be on a page boundary) 144.0 464.69 T
+(.) 255.83 464.69 T
+6 FF
+(data) 108.0 488.69 T
+4 FF
+144 500.690369 M 0.695679 0 32 ([pointer to page aligned in array of bytes] An array of data to be writ-) widthshow
+(ten.) 144.0 512.69 T
+6 FF
+(data_count) 108.0 536.69 T
+4 FF
+144 548.690308 M 0.404968 0 32 ([in scalar] The number of bytes in the array) widthshow
+320.430115 548.690308 M 0.404968 0 32 (. The size of the array must) widthshow
+(con) 144.0 560.69 T
+(v) 158.04 560.69 T
+(ert to an inte) 162.89 560.69 T
+(gral number of pages.) 213.01 560.69 T
+5 FF
+(NO) 72.0 592.024 T
+(TES) 89.52 592.024 T
+4 FF
+108 608.690308 M 0.309937 0 32 (This interf) widthshow
+150.149994 608.690308 M 0.309937 0 32 (ace is machine w) widthshow
+219.56987 608.690308 M 0.309937 0 32 (ord length speci\336c because of the virtual address pa-) widthshow
+(rameter) 108.0 620.69 T
+(.) 137.99 620.69 T
+5 FF
+(RETURN V) 72.0 652.024 T
+(ALUE) 132.709 652.024 T
+4 FF
+(KERN_PR) 108.0 676.69 T
+(O) 152.05 676.69 T
+(TECTION_F) 158.87 676.69 T
+(AILURE) 211.461 676.69 T
+(Speci\336ed memory is v) 144.0 688.69 T
+(alid, b) 233.47 688.69 T
+(ut does not permit writing.) 258.27 688.69 T
+432 108 108 108 CR
+1 G
+441 117 81 90 NF
+0 G
+1 FF
+(Status:) 441.0 124.667 T
+(Belie) 441.0 142.667 T
+(v) 461.96 142.667 T
+(ed to be sta-) 466.86 142.667 T
+(ble) 441.0 154.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 104 36
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(104 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(V) 180.0 56.824 T
+(irtual Memory Interface) 186.165 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(KERN_INV) 216.0 113.651 T
+(ALID_ADDRESS) 264.641 113.651 T
+252 125.65065 M 1.21994 0 32 (The address is ille) widthshow
+327.999908 125.65065 M 1.21994 0 32 (g) widthshow
+332.949951 125.65065 M 1.21994 0 32 (al or speci\336es a non-allocated re) widthshow
+468.029724 125.65065 M 1.21994 0 32 (gion, or there are) widthshow
+(less than ) 252.0 137.651 T
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+(data_count) 289.22 137.651 T
+3 FF
+( bytes a) 334.22 137.651 T
+(v) 364.57 137.651 T
+(ailable follo) 369.32 137.651 T
+(wing the address.) 417.12 137.651 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(RELA) 180.0 168.984 T
+(TED INFORMA) 212.197 168.984 T
+(TION) 297.385 168.984 T
+3 FF
+(Functions: ) 216.0 185.651 T
+0 FF
+(vm_copy) 260.73 185.651 T
+3 FF
+(, ) 298.41 185.651 T
+0 FF
+(vm_pr) 303.41 185.651 T
+(otect) 331.56 185.651 T
+3 FF
+(, ) 352.1 185.651 T
+0 FF
+(vm_r) 357.1 185.651 T
+(ead) 379.691 185.651 T
+3 FF
+(, ) 394.691 185.651 T
+0 FF
+(host_page_size) 399.691 185.651 T
+3 FF
+(.) 463.021 185.651 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+%%Trailer
+%%BoundingBox:0 0 612 792
+

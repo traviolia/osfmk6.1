@@ -1,0 +1,63 @@
+#
+# Copyright (c) 1995, 1994, 1993, 1992, 1991, 1990  
+# Open Software Foundation, Inc. 
+#  
+# Permission to use, copy, modify, and distribute this software and 
+# its documentation for any purpose and without fee is hereby granted, 
+# provided that the above copyright notice appears in all copies and 
+# that both the copyright notice and this permission notice appear in 
+# supporting documentation, and that the name of ("OSF") or Open Software 
+# Foundation not be used in advertising or publicity pertaining to 
+# distribution of the software without specific, written prior permission. 
+#  
+# OSF DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE 
+# INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+# FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL OSF BE LIABLE FOR ANY 
+# SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES 
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN 
+# ACTION OF CONTRACT, NEGLIGENCE, OR OTHER TORTIOUS ACTION, ARISING 
+# OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE 
+#
+# OSF Research Institute MK6.1 (unencumbered) 1/31/1995
+#
+##########################################################
+#
+# conf/config.debug
+#
+# This file defines configuration options that are normally used only during
+# kernel code development and debugging. They add run-time error checks or
+# statistics gathering, which will slow down the system
+#
+##########################################################
+#
+# MACH_ASSERT controls the assert() and ASSERT() macros, used to verify the
+#	consistency of various algorithms in the kernel. The performance impact
+#	of this option is significant.
+#
+options		MACH_ASSERT
+#
+# MACH_DEBUG enables the mach_debug_server, a message interface used to
+#	retrieve or control various statistics. This interface may expose data
+#	structures that would not normally be allowed outside the kernel, and
+#	MUST NOT be enabled on a released configuration.
+#
+options		MACH_DEBUG
+#
+# XPR_DEBUG enables the gathering of data through the XPR macros inserted
+#	into various subsystems. This option is normally only enabled for
+#	specific performance or behavior studies, as the overhead in both
+#	code and data space is large. The data is normally retrieved through
+#	the kernel debugger (kdb) or by reading /dev/kmem. 
+#
+options		XPR_DEBUG
+#
+# MACH_LDEBUG and MACH_LTRACKS control the internal consistency checks and
+#	data gathering in the locking package. This also enables a debug-only
+#	version of simple-locks on uniprocessor machines. The code size and
+#	performance impact of these options is significant.
+#	
+options		MACH_LDEBUG
+options		MACH_LTRACKS
+
+options		MACH_IPC_DEBUG
+options		MACH_VM_DEBUG

@@ -1,0 +1,2238 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 10 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Bold FMFONTDEFINE
+2 0 /Times-Italic FMFONTDEFINE
+3 0 /Courier FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 1 of 13\321) 270 37 T
+90 72 522 720 R
+7 X
+V
+1 18 Q
+0 X
+(New Synchr) 129.53 708 T
+(onization Services for OSF Mach:) 222.64 708 T
+( Synchr) 245.45 682 T
+(onizers) 304.6 682 T
+1 14 Q
+(1) 359.56 689.2 T
+1 12 Q
+(Joseph CaraDonna, Robert Haydt, Franklin Reynolds) 167.57 650 T
+0 10 Q
+(1 Cambridge Center) 265.47 621.33 T
+(Cambridge, MA 02142) 259.5 607.33 T
+(Open Software Foundation / Research Institute) 212.04 593.33 T
+(4/12/94) 290.73 565.33 T
+1 14 Q
+(Abstract) 279.97 534.67 T
+0 10 Q
+0.45 (Thread synchronization is an important issue which grows more complex as applications) 126 512.33 P
+1.03 (become distributed and real-time constraints are applied. Mach provides a collection of) 126 500.33 P
+1.64 (synchronization services: interprocess communication, shared memory) 126 488.33 P
+1.64 (, event counters,) 417.22 488.33 P
+0.26 (alarms and thread control operations. These services, however) 126 476.33 P
+0.26 (, do not adequately support) 376.41 476.33 P
+1.88 (thread synchronization for distributed real-time applications. OSF Mach is addressing) 126 464.33 P
+0.36 (the need for distributed real-time synchronization by introducing two new synchronizers:) 126 452.33 P
+1.46 (semaphores and locks. This paper describes the rationale, semantics and interfaces for) 126 440.33 P
+(the new synchronization services.) 126 428.33 T
+1 14 Q
+(1  Intr) 90 397.67 T
+(oduction) 127.83 397.67 T
+0 10 Q
+0.33 (Thread synchronization is an important issue which grows more complex as applications become distribut-) 90 377.33 P
+0.51 (ed and real-time constraints are applied. There are two basic forms of thread synchronization that occur in) 90 365.33 P
+1.35 (concurrent programs:) 90 353.33 P
+2 F
+1.35 (mutual exclusion) 180.96 353.33 P
+0 F
+1.35 ( and) 250.32 353.33 P
+2 F
+1.35 (condition synchr) 272.44 353.33 P
+1.35 (onization) 340.33 353.33 P
+0 F
+1.35 ([Andrews91]. Mutual exclusion is) 381.38 353.33 P
+0.55 (concerned with assuring that critical sections of code, which access shared memory) 90 341.33 P
+0.55 (, are not executed con-) 429.04 341.33 P
+0.2 (currently) 90 329.33 P
+0.2 (. Condition synchronization is concerned with ensuring that a task blocks, if necessary) 125.43 329.33 P
+0.2 (, until a giv-) 472.53 329.33 P
+2.43 (en condition is true. For example, communication between a producer and consumer thread is often) 90 317.33 P
+1.08 (implemented using a shared buf) 90 305.33 P
+1.08 (fer) 221.84 305.33 P
+1.08 (. The sender writes into the buf) 232.38 305.33 P
+1.08 (fer; the receiver reads from the buf) 363.33 305.33 P
+1.08 (fer) 508.96 305.33 P
+1.08 (.) 519.5 305.33 P
+1 (Mutual exclusion is practiced to ensure that the sender and receiver do not access the buf) 90 293.33 P
+1 (fer at the same) 460.43 293.33 P
+0.72 (time, preventing a partially written message from being read. Condition synchronization is used to ensure) 90 281.33 P
+(that a message has not been overwritten before it has been received.) 90 269.33 T
+(There are four cases in Mach where thread synchronization may be needed, between:) 90 248.33 T
+(1\051) 108 227.33 T
+(threads and the kernel) 126 227.33 T
+(2\051) 108 211.33 T
+(threads of a common task) 126 211.33 T
+(3\051) 108 195.33 T
+(threads of dif) 126 195.33 T
+(ferent tasks on a common node) 179.11 195.33 T
+(4\051) 108 179.33 T
+(threads of dif) 126 179.33 T
+(ferent tasks on dif) 179.11 179.33 T
+(ferent nodes) 250.82 179.33 T
+0.14 (Mach currently provides support for all four cases via a collection of thread synchronization services: inter-) 90 158.33 P
+0.27 (process communication \050IPC\051, shared memory) 90 146.33 P
+0.27 (, event counters, alarms, thread control operations, and the C) 276.69 146.33 P
+90 105 522 119.98 C
+90 117.96 234 117.96 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+2 10 Q
+0 X
+0 K
+2.18 (1.  This r) 126 98.33 P
+2.18 (esear) 168.28 98.33 P
+2.18 (ch was supported in part by the Advanced Resear) 189.56 98.33 P
+2.18 (ch Pr) 404.85 98.33 P
+2.18 (ojects Agency) 428.59 98.33 P
+(\050ARP) 126 86.33 T
+(A\051 and the Air For) 146.36 86.33 T
+(ce Materiel Command \050AFMC\051.) 220.39 86.33 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 2 of 13\321) 270 37 T
+90 72 522 720 R
+7 X
+V
+0 10 Q
+0 X
+0.3 (threads package. These services, however) 90 713.33 P
+0.3 (, do not adequately support thread synchronization for distributed) 257.86 713.33 P
+(real-time applications.) 90 701.33 T
+0.26 (Mach IPC provides a message based interprocess communication facility [Draves90]. The communications) 90 680.33 P
+0.47 (paradigm implemented by Mach IPC is many to one, allowing multiple tasks to hold a send right to a port) 90 668.33 P
+0.19 (while only a single task can hold a receive right. In order to suf) 90 656.33 P
+0.19 (\336ciently support thread synchronization, us-) 344.95 656.33 P
+0.8 (ing IPC, a signi\336cant number of ports would have to be allocated and maintained. This support is simply) 90 644.33 P
+0.79 (not acceptable in a system with \336nite capabilities and resources. Further) 90 632.33 P
+0.79 (, interrupt service routines \050ISRs\051) 385.33 632.33 P
+(cannot utilize the functionality of IPC, and therefore cannot synchronize with user tasks via IPC.) 90 620.33 T
+0.85 (Event counters were designed to address IPCs inability to coordinate memory access between a user) 90 599.33 P
+0.85 (-task) 502.57 599.33 P
+1.36 (and the ISR portion of a device driver \050user) 90 587.33 P
+1.36 (-level device drivers\051. The event counter service provides a) 274.41 587.33 P
+0.37 (semaphore-like condition protocol where the user) 90 575.33 P
+0.37 (-task is always the consumer and the kernel is always the) 290.12 575.33 P
+0.38 (producer) 90 563.33 P
+0.38 (. In other words, only the wait operation \050evc_wait\051 is exported to the user while the signal opera-) 124.97 563.33 P
+1.41 (tion \050evc_signal\051 can only be executed from interrupt context. While this protocol supports case one of) 90 551.33 P
+0.09 (thread synchronization, it ignores cases two through four) 90 539.33 P
+0.09 (. Furthermore, event counters are statically allocat-) 317.71 539.33 P
+0.59 (ed in the kernel with speci\336c purposes. In order to utilize evc_wait\050\051 the user) 90 527.33 P
+0.59 (-task must) 404.42 527.33 P
+2 F
+0.59 (know) 449.46 527.33 P
+0 F
+0.59 ( of the event) 470.56 527.33 P
+(counter) 90 515.33 T
+(\325) 120.34 515.33 T
+(s whereabouts in the kernel.) 123.12 515.33 T
+0.82 (The C threads package [Loepere93] is a user) 90 494.33 P
+0.82 (-level library which allows parallel programming in C under) 273.97 494.33 P
+0.93 (Mach. The package provides user) 90 482.33 P
+0.93 (-level threads with mutual exclusion and condition synchronization ser-) 228.11 482.33 P
+0.82 (vices. Because these thread synchronization services are provided by a user) 90 470.33 P
+0.82 (-level library) 399.72 470.33 P
+0.82 (, they are limited) 451.8 470.33 P
+0.32 (to intra-task communication. This limitation forces inter) 90 458.33 P
+0.32 (-task synchronization to be performed via other fa-) 316.31 458.33 P
+0.29 (cilities, like interprocess communication or shared memory) 90 446.33 P
+0.29 (. More importantly) 328.4 446.33 P
+0.29 (, however) 404.11 446.33 P
+0.29 (, the C threads syn-) 443.41 446.33 P
+3.3 (chronizer services assume that threads are scheduled according to a) 90 434.33 P
+2 F
+3.3 (fair) 395.02 434.33 P
+0 F
+3.3 ( time-sharing policy) 409.47 434.33 P
+3.3 (. This) 495.93 434.33 P
+0.8 (assumption no longer holds true under OSF Mach because real-time and time-sharing scheduling policies) 90 422.33 P
+(may co-exist on the same node [Haydt94].) 90 410.33 T
+1.15 (OSF Mach is addressing the need for distributed real-time synchronization by introducing two new syn-) 90 389.33 P
+0.65 (chronizers: semaphores and locks. The requirements for the new synchronizers are stated in Section 2. Is-) 90 377.33 P
+1.69 (sues regarding distributing synchronizers are presented in Section 3. Section 4 introduces the two new) 90 365.33 P
+0.01 (synchronizers being added to Mach, semaphores and locks, discussing their usefulness, semantics and inter-) 90 353.33 P
+0.7 (faces. Section 5 discusses scheduling policy support for synchronizers. Lastly) 90 341.33 P
+0.7 (, Appendix A presents some) 406.24 341.33 P
+(ideas for optimizing synchronizer performance.) 90 329.33 T
+1 14 Q
+(2  Requir) 90 298.67 T
+(ements) 145.72 298.67 T
+0 10 Q
+0.25 (W) 90 278.33 P
+0.25 (ith Mach\325) 99.04 278.33 P
+0.25 (s evolution towards distributed real-time application support, the requirements for synchroniza-) 137.87 278.33 P
+(tion services change. This section states our requirements for new OSF Mach synchronizers.) 90 266.33 T
+1.26 (Synchronizers should be network transparent. Hence, intra-task and inter) 90 245.33 P
+1.26 (-task synchronization should be) 391.35 245.33 P
+(implemented using the same abstractions and interfaces.) 90 233.33 T
+0.75 (W) 90 212.33 P
+0.75 (e should be able to use the new synchronizers to coordinate multi-task access to shared memory and to) 98.64 212.33 P
+0.28 (support producer/consumer style of communication. This requires an anonymous, counting wakeup service) 90 200.33 P
+0.74 (to avoid security and race problems. This new service should replace/eliminate event counters. T) 90 188.33 P
+0.74 (o do this) 486.09 188.33 P
+1.11 (means that wakeups from interrupt routines must be possible. These requirements ar) 90 176.33 P
+1.11 (gue against locks or) 439.01 176.33 P
+(mutexes or conditional variables and for a true event or semaphore-like service.) 90 164.33 T
+0.42 (It is also important to provide support for detecting and handling scheduling anomalies such as priority in-) 90 143.33 P
+0.91 (versions. Though semaphores can be used to implement critical sections or locks, the abstraction itself is) 90 131.33 P
+0.04 (more akin to a generator of events. Locks can be held by threads, semaphores cannot. Neither P nor V oper-) 90 119.33 P
+0.64 (ations imply) 90 107.33 P
+2 F
+0.64 (ownership) 143.49 107.33 P
+0 F
+0.64 (. Ownership of critical sections or locks is an essential part of most priority boost-) 185.14 107.33 P
+(ing protocols \050including best ef) 90 95.33 T
+(fort variations such as DASD [Clark90, Locke86]\051.) 214.74 95.33 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 3 of 13\321) 270 37 T
+90 72 522 720 R
+7 X
+V
+0 10 Q
+0 X
+0.66 (The need to deal with scheduling anomalies suggests the need for locks or a meta tool to describe the de-) 90 713.33 P
+(pendencies between semaphore events.) 90 701.33 T
+0.35 (Note: Klein presents a means for describing the relationships between primitive events in a way that might) 90 680.33 P
+0.4 (allow the construction of complex synchronization constructs such as transactions [Klein91]. This technol-) 90 668.33 P
+1.79 (ogy might be rich enough to provide a synchronization architecture. However) 90 656.33 P
+1.79 (, the work is not mature) 418.11 656.33 P
+(enough to use at this time.) 90 644.33 T
+0.98 (Compatibility with the C threads primitives is not a requirement, although it may be bene\336cial for the C) 90 623.33 P
+(threads library to take advantage of the new real-time synchronizer services.) 90 611.33 T
+0.48 (A user library implementation of synchronizers that avoid unnecessary interaction with the kernel is desir-) 90 590.33 P
+0.22 (able. User level inter) 90 578.33 P
+0.22 (-task locks and priority boosting, however) 173.73 578.33 P
+0.22 (, present dif) 343.2 578.33 P
+0.22 (\336cult problems. These issues are) 390.93 578.33 P
+(introduced in Appendix A, but still need to be explored further) 90 566.33 T
+(.) 340.11 566.33 T
+1 14 Q
+(3  Distributing Synchr) 90 535.67 T
+(onizers) 223.08 535.67 T
+0 10 Q
+1.54 (A consistent model is needed to deal with the four cases of thread synchronization listed in Section 1,) 90 515.33 P
+1.33 (while minimizing synchronization overhead. When distributing synchronization mechanisms, some form) 90 503.33 P
+(of common ground is needed.) 90 491.33 T
+0.61 (The new synchronizers are represented by ports. This representation provides a convenient convention for) 90 470.33 P
+0.44 (system wide threads to identify shared synchronizers, as well as, pass access rights to other tasks as so de-) 90 458.33 P
+1.32 (sired. Since Mach already provides techniques for passing ports from one task to another \050i.e., IPC and) 90 446.33 P
+(nameserver\051, synchronizer port naming naturally \336ts into the current Mach model.) 90 434.33 T
+1.65 (Overhead and performance trade-of) 90 413.33 P
+1.65 (fs are major concerns in the design and implementation of new sy-) 237.68 413.33 P
+1.36 (chronization services. Synchronization overhead increases as we move from case two to case four) 90 401.33 P
+1.36 (. Lets) 498.43 401.33 P
+0.12 (note that synchronization between user) 90 389.33 P
+0.12 (-threads and the kernel \050case one\051 is really a special case of synchro-) 246.3 389.33 P
+(nization between threads of dif) 90 377.33 T
+(ferent tasks on a common node \050case three\051.) 213.61 377.33 T
+1.23 (Synchronizer services packaged in a user) 90 356.33 P
+1.23 (-level library would provide the most ef) 260.5 356.33 P
+1.23 (\336cient means of thread) 427.01 356.33 P
+0.13 (synchronization within a common task. Threads would not have to trap to the kernel upon each synchroniz-) 90 344.33 P
+(er operation. Unfortunately) 90 332.33 T
+(, this scheme does not work for cases two and three.) 198.43 332.33 T
+0.35 (The use of synchronizer ports provides us with a method for operating on shared synchronizers across task) 90 311.33 P
+0.42 (boundaries, at the expense of additional overhead. A kernel trap occurs each time a thread performs a syn-) 90 299.33 P
+1.26 (chronizer operation. Furthermore, synchronizing between threads located on dif) 90 287.33 P
+1.26 (ferent machines not only) 419.12 287.33 P
+(causes kernel traps for each synchronizer operation, but involves network transactions as well.) 90 275.33 T
+1.79 (It becomes evident that synchronizer usage optimizations are desirable, if not necessary) 90 254.33 P
+1.79 (. These perfor-) 459.31 254.33 P
+1.28 (mance issues are not going unaddressed. W) 90 242.33 P
+1.28 (e are currently investigating techniques to achieve user) 270.92 242.33 P
+1.28 (-level) 499.24 242.33 P
+(synchronizer locality through the use of synchronizer caching on a per) 90 230.33 T
+(-task basis \050see Appendix A\051.) 371.24 230.33 T
+2 F
+(Note: This optimization is not scheduled for the RT2 r) 90 209.33 T
+(elease.) 305.36 209.33 T
+1 14 Q
+(4  New Synchr) 90 178.67 T
+(onizers) 176.42 178.67 T
+0 10 Q
+0.43 (T) 90 158.33 P
+0.43 (wo new synchronizers are being added to Mach: semaphores and locks. The following sections introduce) 95.41 158.33 P
+(the synchronizers, discussing their usefulness, semantics and interfaces.) 90 146.33 T
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 4 of 13\321) 270 37 T
+90 72 522 720 R
+7 X
+V
+1 13 Q
+0 X
+(4.1  Semaphor) 90 711.33 T
+(es) 169.48 711.33 T
+0 10 Q
+0.77 (Semaphores are a simple and powerful synchronization primitive that can be used to implement a host of) 90 691.33 P
+0.46 (other synchroniztion protocols. The semaphore abstraction is particularly well suited for inter) 90 679.33 P
+0.46 (-task produc-) 468.52 679.33 P
+(er/consumer style communication.) 90 667.33 T
+0.31 (Real-time applications frequently use shared memory to implement queues and similar data structures. Our) 90 646.33 P
+1.26 (experience with shared memory channels [Reynolds91] suggests that counting wakeups are essential for) 90 634.33 P
+(performance. Hence, we propose the creation of a simple counting semaphore service for Mach.) 90 622.33 T
+1 12 Q
+(4.1.1  Semantics) 90 593 T
+0 10 Q
+0.22 (The need for semaphores may come and go as execution progresses. T) 90 573.33 P
+0.22 (o address this type of behavior) 373.69 573.33 P
+0.22 (, tasks) 496.8 573.33 P
+0.62 (may dynamically create and destroy semaphores as the need arises. Semaphores are named by port rights,) 90 561.33 P
+(enabling operations on semaphores to be network transparent.) 90 549.33 T
+1.45 (A semaphore is associated with a particular task at semaphore creation time. This relationship is deter-) 90 528.33 P
+0.25 (mined by passing the tar) 90 516.33 P
+0.25 (get task\325) 188.52 516.33 P
+0.25 (s task port as a parameter to the semaphore creation routine. The only rea-) 222.36 516.33 P
+0.82 (son we associate semaphores with tasks is for naming and resource tracking. When a task terminates any) 90 504.33 P
+1.18 (semaphores associated with that task are destroyed. Threads blocked on a terminated semaphore are un-) 90 492.33 P
+0.49 (blocked, returning with the SEMAPHORE_DESTROYED error and all send rights naming the semaphore) 90 480.33 P
+(become dead names.) 90 468.33 T
+1.53 (A scheduling policy is assigned to each semaphore at creation time to manage the wakeup ordering of) 90 447.33 P
+(threads blocked on the semaphore \050see Section 5\051.) 90 435.33 T
+0.68 (Each semaphore has a count which governs the semantics of the counting semaphore. The initial value of) 90 414.33 P
+0.63 (the count is set at semaphore creation time. This value must be a positive number) 90 402.33 P
+0.63 (. Any attempts to pass a) 423.35 402.33 P
+(negative value will fail, returning with a KERN_INV) 90 390.33 T
+(ALID_ARGUMENT error) 301.89 390.33 T
+(.) 408.76 390.33 T
+0.78 (Signal and wait operations may be performed on a semaphore by any thread holding a send right for that) 90 369.33 P
+0.23 (semaphore. Signalling a semaphore increments the semaphore count and awakens one thread if any threads) 90 357.33 P
+0.45 (are blocked on the semaphore. Executing a wait operation decrements the semaphore count and blocks the) 90 345.33 P
+(calling thread if the semaphore count goes negative.) 90 333.33 T
+0.91 (In addition to the block and signal operations we provide a signal all operation. This allows us to imple-) 90 312.33 P
+0.44 (ment thundering herd wakeup, which despite the potential performance costs, is sometimes the desired be-) 90 300.33 P
+(havior \050i.e., memory allocation protocols often use thundering herd wakeups\051.) 90 288.33 T
+(All successful semaphore operations return KERN_SUCCESS.) 90 267.33 T
+1 12 Q
+(4.1.2  Interfaces) 90 238 T
+0 10 Q
+0.65 (The interfaces listed in this section create, destroy and manipulate semaphores. For each interface the fol-) 90 218.33 P
+0.27 (lowing features are presented: the interface name, a function description, a C form synopsis, and parameter) 90 206.33 P
+(descriptions.) 90 194.33 T
+1 11 Q
+(semaphor) 90 151.67 T
+(e_cr) 136.19 151.67 T
+(eate) 156.12 151.67 T
+(Function) 126 129.67 T
+0 10 Q
+0.21 (Creates a semaphore, associates the semaphore with the speci\336ed task, and returns a send) 126 112.33 P
+(right naming the new semaphore.) 126 100.33 T
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 5 of 13\321) 270 37 T
+90 72 522 720 R
+7 X
+V
+1 11 Q
+0 X
+(Synopsis) 126 712.67 T
+3 10 Q
+(kern_return_t) 126 696.33 T
+(semaphore_create) 234 696.33 T
+(\050task_port_t) 234 680.33 T
+(task,) 378 680.33 T
+(mach_port_t) 234 664.33 T
+(&semaphore,) 378 664.33 T
+(int) 234 648.33 T
+(policy,) 378 648.33 T
+(int) 234 632.33 T
+(value\051) 378 632.33 T
+1 11 Q
+(Parameters) 126 614.67 T
+2 10 Q
+(task) 126 597.33 T
+0 F
+(The task receiving the send right to the newly created semaphore.) 198 597.33 T
+2 F
+(semaphor) 126 580.33 T
+(e) 165.05 580.33 T
+0 F
+(The port naming the newly created semaphore.) 198 580.33 T
+2 F
+(policy) 126 563.33 T
+0 F
+(The blocked thread wakeup policy for the newly created semaphore.) 198 563.33 T
+2 F
+(value) 126 546.33 T
+0 F
+(The initial value of the semaphore count.) 198 546.33 T
+1 11 Q
+(semaphor) 90 507.67 T
+(e_destr) 136.19 507.67 T
+(oy) 170.16 507.67 T
+(Function) 126 485.67 T
+0 10 Q
+1.18 (Destroys a semaphore. All send rights naming the semaphore become dead names. All) 126 468.33 P
+0.56 (threads waiting on the semaphore become unblocked. The return from wait indicates the) 126 456.33 P
+0.73 (semaphore was destroyed. Semaphore_destroy will only succeed if the semaphore is as-) 126 444.33 P
+(sociated with the speci\336ed task.) 126 432.33 T
+1 11 Q
+(Synopsis) 126 414.67 T
+3 10 Q
+(kern_return_t) 126 398.33 T
+(semaphore_destroy) 234 398.33 T
+(\050task_port_t) 234 382.33 T
+(task,) 378 382.33 T
+(mach_port_t) 234 366.33 T
+(semaphore\051) 378 366.33 T
+1 11 Q
+(Parameters) 126 348.67 T
+2 10 Q
+(task) 126 331.33 T
+0 F
+(The task associated with the tar) 198 331.33 T
+(get semaphore.) 323.56 331.33 T
+2 F
+(semaphor) 126 314.33 T
+(e) 165.05 314.33 T
+0 F
+(The port naming the semaphore to be destroyed.) 198 314.33 T
+1 11 Q
+(semaphor) 90 275.67 T
+(e_signal) 136.19 275.67 T
+(Function) 126 253.67 T
+0 10 Q
+0.66 (Increments the semaphore count and if any threads are blocked on the semaphore, wake) 126 236.33 P
+(one up.) 126 224.33 T
+1 11 Q
+(Synopsis) 126 206.67 T
+3 10 Q
+(kern_return_t) 126 190.33 T
+(semaphore_signal) 234 190.33 T
+(\050mach_port_t) 234 174.33 T
+(semaphore\051) 378 174.33 T
+1 11 Q
+(Parameters) 126 156.67 T
+2 10 Q
+(semaphor) 126 139.33 T
+(e) 165.05 139.33 T
+0 F
+(The port naming the semaphore to be signalled.) 198 139.33 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 6 of 13\321) 270 37 T
+90 72 522 720 R
+7 X
+V
+1 11 Q
+0 X
+(semaphor) 90 712.67 T
+(e_signal_all) 136.19 712.67 T
+(Function) 126 690.67 T
+0 10 Q
+(W) 126 673.33 T
+(akeup all threads blocked on the semaphore. The wakeup count returns to zero.) 134.63 673.33 T
+1 11 Q
+(Synopsis) 126 655.67 T
+3 10 Q
+(kern_return_t) 126 639.33 T
+(semaphore_signal_all) 234 639.33 T
+(\050mach_port_t) 234 623.33 T
+(semaphore\051) 378 623.33 T
+1 11 Q
+(Parameters) 126 605.67 T
+2 10 Q
+(semaphor) 126 588.33 T
+(e) 165.05 588.33 T
+0 F
+(The port naming the semaphore to be signalled.) 198 588.33 T
+1 11 Q
+(semaphor) 90 549.67 T
+(e_wait) 136.19 549.67 T
+(Function) 126 527.67 T
+0 10 Q
+1.32 (Decrements the semaphore count and blocks the calling thread if the semaphore count) 126 510.33 P
+(goes negative.) 126 498.33 T
+1 11 Q
+(Synopsis) 126 480.67 T
+3 10 Q
+(kern_return_t) 126 464.33 T
+(semaphore_wait) 234 464.33 T
+(\050mach_port_t) 234 448.33 T
+(semaphore\051) 378 448.33 T
+1 11 Q
+(Parameters) 126 430.67 T
+2 10 Q
+(semaphor) 126 413.33 T
+(e) 165.05 413.33 T
+0 F
+1.48 (The port naming the semaphore that the wait operation is being per-) 198 413.33 P
+(formed) 198 401.33 T
+(upon.) 229.36 401.33 T
+1 12 Q
+(4.1.3  ISR Pr) 90 372 T
+(otocol) 155.41 372 T
+0 10 Q
+0.12 (In order to support a robust producer/consumer communication service, it is important to allow ISRs to sig-) 90 352.33 P
+0.52 (nal semaphores. The semaphore synchronizer service is designed to allow user) 90 340.33 P
+0.52 (-level device drivers to per-) 409.46 340.33 P
+(form wakeups, eliminating the need to use event counters.) 90 328.33 T
+1 11 Q
+(4.1.3.1  Semaphor) 90 299.67 T
+(e Exportation) 173.73 299.67 T
+0 10 Q
+1.07 (Device drivers which utilize semaphores are responsible for creating and exporting semaphores for user) 90 280.33 P
+1.07 (-) 518.67 280.33 P
+0.8 (level access. Semaphore creation is done at device initialization time, using the semaphore_create\050\051 inter-) 90 268.33 P
+(face. Device drivers may support multiple semaphores.) 90 256.33 T
+(Semaphore export is accomplished through the use of the device_get_status\050\051 interface:) 90 235.33 T
+3 F
+(kern_return_t) 126 214.33 T
+(device_get_status) 234 214.33 T
+(\050device_port_t) 234 198.33 T
+(device,) 378 198.33 T
+(device_flavor_t) 234 182.33 T
+(flavor,) 378 182.33 T
+(dev_status_t) 234 166.33 T
+(status,) 378 166.33 T
+(mach_msg_type_number_t*) 234 150.33 T
+(status_count\051) 378 150.33 T
+0 F
+0.03 (A new \337avor has been added, DEV_GET_SEMAPHORE, which causes device_get_status\050\051 to return an ar-) 90 113.33 P
+0.9 (ray of the device\325) 90 101.33 P
+0.9 (s semaphore ports to the requesting user) 162.36 101.33 P
+0.9 (-level task. The array of semaphore ports is re-) 328.01 101.33 P
+1.02 (turned to the) 90 89.33 P
+2 F
+1.02 (status) 146.09 89.33 P
+0 F
+1.02 ( parameter and the number of semaphores returned is determined by the) 169.42 89.33 P
+2 F
+1.02 (status_count) 471.47 89.33 P
+0 F
+(parameter) 90 77.33 T
+(. The meaning of the semaphores returned is device dependent.) 129.41 77.33 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 7 of 13\321) 270 37 T
+90 72 522 720 R
+7 X
+V
+0 10 Q
+0 X
+5.26 (In the event that the device does not implement any semaphores, device_get_status\050\051 returns) 90 713.33 P
+(D_NO_SEMAPHORE.) 90 701.33 T
+2 F
+0.36 (Note: Semaphor) 90 680.33 P
+0.36 (es ar) 155.23 680.33 P
+0.36 (e not imported. Device drivers can only signal kernel cr) 174.93 680.33 P
+0.36 (eated semaphor) 401.55 680.33 P
+0.36 (es on their lo-) 465.11 680.33 P
+(cal node.) 90 668.33 T
+1 11 Q
+(4.1.3.2  A) 90 639.67 T
+(voiding Deadlock) 132.82 639.67 T
+0 10 Q
+0.39 (Since ISRs can execute semaphore_signal\050\051, processor interrupts are disabled before the semaphore lock is) 90 620.33 P
+0.37 (acquired and enabled again after the lock has been released. This protocol is important in preventing dead-) 90 608.33 P
+0.66 (lock between producer and consumer threads. For example, consider a user) 90 596.33 P
+0.66 (-level thread \050consumer\051 and a) 397.25 596.33 P
+0.6 (device driver \050producer\051 synchronizing buf) 90 584.33 P
+0.6 (fer access via a semaphore in a uni-processor system. The con-) 264.29 584.33 P
+0.96 (sumer executes a semaphore_wait\050\051, which locks the semaphore lock during its execution, but before the) 90 572.33 P
+1.03 (lock is released an interrupt occurs causing a context switch. The ISR \050producer\051 then obtains control of) 90 560.33 P
+0.12 (the processor) 90 548.33 P
+0.12 (, executes a semaphore_signal\050\051 and attempts to acquire the semaphore lock. The lock acquisi-) 142.73 548.33 P
+(tion fails since it is already owned by the consumer thread and causes the ISR to spin, forever) 90 536.33 T
+(.) 463.62 536.33 T
+2 F
+0.58 (Note: W) 90 515.33 P
+0.58 (aiting on a semaphor) 122.69 515.33 P
+0.58 (e at the ISR level may) 209.28 515.33 P
+0.58 (, and often will, lead to deadlock. As a r) 298.48 515.33 P
+0.58 (esult, ISRs ar) 463.2 515.33 P
+0.58 (e) 517.56 515.33 P
+0.49 (not allowed to execute semaphor) 90 503.33 P
+0.49 (e_wait\050\051. This condition is detected by an assertion primitive if assertions) 223.15 503.33 P
+(ar) 90 491.33 T
+(e turned on.) 98.51 491.33 T
+1 13 Q
+(4.2  Locks) 90 461.33 T
+0 10 Q
+1.41 (Locks are a commonly used synchronization primitive that is easy to use and understand. The value of) 90 441.33 P
+0.28 (locks as a programming tool is born out by our experience using them in the construction of the kernel and) 90 429.33 P
+(the OSF/1 servers [CaraDonna93, Swartzendruber94, T) 90 417.33 T
+(ravostino93].) 311.98 417.33 T
+1 12 Q
+(4.2.1  Semantics) 90 388 T
+0 10 Q
+0.07 (Locks are \336rst class entities, which can be created and destroyed, as well as, locked and unlocked. Lock op-) 90 368.33 P
+1.49 (erations are performed against) 90 356.33 P
+2 F
+1.49 (lock sets) 219.75 356.33 P
+0 F
+1.49 (. Lock sets are named by ports, to allow them to be referenced) 255.39 356.33 P
+0.69 (across task boundaries. As with semaphores, lock sets are associated with tasks for resource tracking pur-) 90 344.33 P
+(poses.) 90 332.33 T
+0.38 (Each lock set represents either a single lock or a collection of associated locks. The number of locks that a) 90 311.33 P
+0.15 (lock set represents is de\336ned when the set is created. Each lock represented by a lock set is individually ad-) 90 299.33 P
+0.56 (dressable by supplying the lock set port and a speci\336c lock ID. The lock ID range depends on the number) 90 287.33 P
+0.69 (of locks the set represents, always beginning at zero but ending at the number of locks represented minus) 90 275.33 P
+0.19 (one. In many cases, a one-to-one correspondence between a lock set and a lock is desirable. At times, how-) 90 263.33 P
+0.92 (ever) 90 251.33 P
+0.92 (, it may be more convenient and practical to group associated locks together) 106.8 251.33 P
+0.92 (, represented by a single) 421.44 251.33 P
+(lock set. W) 90 239.33 T
+(e refer to this grouping of associated locks as) 134.45 239.33 T
+2 F
+(lock gr) 317.36 239.33 T
+(ouping) 345.03 239.33 T
+0 F
+(.) 372.8 239.33 T
+0.59 (Lock grouping has the advantage of providing a lar) 90 218.33 P
+0.59 (ge lock name space with each lock set. Locks within a) 299.36 218.33 P
+(lock group can be created without incurring the costs of allocating a lock set for each lock in the system.) 90 206.33 T
+0.88 (A simple example where lock grouping would be convenient is in the case of a lar) 90 185.33 P
+0.88 (ge array which imple-) 431.38 185.33 P
+0.13 (ments a lock for each element. A single lock set could then be created to represent all the locks in the array) 90 173.33 P
+0.13 (,) 519.5 173.33 P
+0.85 (and each element would operate on its own lock via the lock set. The relationship between the array ele-) 90 161.33 P
+0.37 (ments and the implemented locks is strictly an application convention. The kernel does not enforce this re-) 90 149.33 P
+(lationship.) 90 137.33 T
+(When a lock set is created, all the locks represented by the lock set are initialized to an unlocked state.) 90 116.33 T
+0.42 (As with semaphores, a scheduling policy is assigned to each lock set at creation time to manage the wake-) 90 95.33 P
+(up ordering of threads blocked on the locks within the lock set \050see Section 5\051.) 90 83.33 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 8 of 13\321) 270 37 T
+90 72 522 720 R
+7 X
+V
+0 10 Q
+0 X
+0.31 (Lock sets are owned by tasks, but locks are owned by threads. The thread that acquires a lock becomes the) 90 713.33 P
+0.07 (owner of the lock. A lock can only be released by the thread who owns the lock. This notion of lock owner-) 90 701.33 P
+0.34 (ship allows straightforward priority boosting protocol support. If high priority thread A attempts to acquire) 90 689.33 P
+0.08 (a lock that is owned by another lower priority \050thread B\051, then the scheduler can temporarily raise the prior-) 90 677.33 P
+0.65 (ity of the thread owning the lock \050thread B\051. Once the lock is released thread B\325) 90 665.33 P
+0.65 (s priority is lowered back) 417.81 665.33 P
+0.8 (to its original level and a scheduling event occurs resulting in the execution of the highest priority thread) 90 653.33 P
+0.58 (currently runnable. In the absence of other threads being unblocked, thread A would run. Locks similar to) 90 641.33 P
+1.51 (the locks proposed have been used in conjunction with transactions to more sophisticated protocols for) 90 629.33 P
+(dealing with time based scheduling anomalies [Clark90].) 90 617.33 T
+0.5 (In the event a thread owning a lock should terminate before the lock is released, the lock is marked unsta-) 90 596.33 P
+0.14 (ble. If any threads are blocked on a lock when it becomes unstable, a single thread is made runnable to deal) 90 584.33 P
+0.3 (with correcting the problem. The thread selected to run is determined by the policy assigned to the lock set) 90 572.33 P
+(at creation time. All acquisitions of an unstable lock return with a LOCK_UNST) 90 560.33 T
+(ABLE status.) 412.04 560.33 T
+0.47 (Any thread holding a send right to a lock set can assert ownership of any lock in the lock set without hav-) 90 539.33 P
+(ing to acquire the lock \336rst. This functionality is useful for two reasons:) 90 527.33 T
+(1\051) 108 506.33 T
+0.26 (when a thread needs to \336x an unstable lock \050since you cannot perform lock operations on) 126 506.33 P
+(a lock unless you are the owner\051) 126 494.33 T
+(2\051) 108 478.33 T
+(to perform lock hand-of) 126 478.33 T
+(fs between threads) 221.58 478.33 T
+(The unstable state of a lock can only be cleared by the thread that owns the lock.) 90 457.33 T
+0.37 (The acquire operation grants exclusive access to a lock associated with the tar) 90 436.33 P
+0.37 (get lock set. If the lock is al-) 405.63 436.33 P
+0.99 (ready owned by another thread, the calling thread blocks until the lock is released. A lock cannot be ac-) 90 424.33 P
+(quired in the same lock set more than once at the same time.) 90 412.33 T
+0.43 (A lock try operation is provided as a \322probe\323. This operation attempts to acquire the lock but if the lock is) 90 391.33 P
+(already owned, one of two errors are returned:) 90 379.33 T
+(1\051) 108 358.33 T
+(LOCK_OWNED: another thread currently owns the lock.) 126 358.33 T
+(2\051) 108 342.33 T
+(LOCK_OWNED_SELF:) 126 342.33 T
+( the calling thread currently owns the lock.) 226.49 342.33 T
+1.15 (When a task terminates the lock sets associated with the task are destroyed. The send rights naming the) 90 321.33 P
+0.56 (lock set become dead names. Threads attempting to acquire a lock represented by a destroyed lock set are) 90 309.33 P
+(returned a LOCK_SET_DESTROYED error) 90 297.33 T
+(.) 268.48 297.33 T
+(All successful lock operations return KERN_SUCCESS.) 90 276.33 T
+1 12 Q
+(4.2.2  Interfaces) 90 247 T
+0 10 Q
+0.41 (Listed in this section are the interfaces for creating, deleting and operating on locks. For each interface the) 90 227.33 P
+0.01 (following features are presented: the interface name, a function description, a C form synopsis, and parame-) 90 215.33 P
+(ter descriptions.) 90 203.33 T
+1 11 Q
+(lock_set_cr) 90 160.67 T
+(eate) 142.89 160.67 T
+(Function) 126 138.67 T
+0 10 Q
+0.36 (Creates a new lock set representing a collection of associated locks. A send right naming) 126 121.33 P
+(the lock set is returned to the calling task.) 126 109.33 T
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 9 of 13\321) 270 37 T
+90 72 522 720 R
+7 X
+V
+1 11 Q
+0 X
+(Synopsis) 126 712.67 T
+3 10 Q
+(kern_return_t) 126 696.33 T
+(lock_set_create) 234 696.33 T
+(\050task_port_t) 234 680.33 T
+(task,) 378 680.33 T
+(mach_port_t) 234 664.33 T
+(&lock_set,) 378 664.33 T
+(int) 234 648.33 T
+(locks,) 378 648.33 T
+(int) 234 632.33 T
+(policy\051) 378 632.33 T
+1 11 Q
+(Parameters) 126 614.67 T
+2 10 Q
+(task) 126 597.33 T
+0 F
+(The task receiving the send right to the newly created lock set.) 198 597.33 T
+2 F
+(lock_set) 126 580.33 T
+0 F
+(The port naming the newly created lock set.) 198 580.33 T
+2 F
+(locks) 126 563.33 T
+0 F
+(The number of locks the lock set will represent.) 198 563.33 T
+2 F
+(policy) 126 546.33 T
+0 F
+(The blocked thread wakeup policy for the newly created lock set.) 198 546.33 T
+1 11 Q
+(lock_set_destr) 90 507.67 T
+(oy) 156.93 507.67 T
+(Function) 126 485.67 T
+0 10 Q
+0.51 (Destroys a lock set and all its associated locks. Threads blocked on locks represented by) 126 468.33 P
+0.49 (the destroyed lock set are unblocked. These threads will receive a error message indicat-) 126 456.33 P
+0.96 (ing that the lock set was destroyed. Lock_set_destroy will only succeed if the speci\336ed) 126 444.33 P
+(task is associated with the lock set.) 126 432.33 T
+1 11 Q
+(Synopsis) 126 414.67 T
+3 10 Q
+(kern_return_t) 126 398.33 T
+(lock_set_destroy) 234 398.33 T
+(\050task_port_t) 234 382.33 T
+(task,) 378 382.33 T
+(mach_port_t) 234 366.33 T
+(lock_set\051) 378 366.33 T
+1 11 Q
+(Parameters) 126 348.67 T
+2 10 Q
+(task) 126 331.33 T
+0 F
+(The task associated with the lock set.) 198 331.33 T
+2 F
+(lock_set) 126 314.33 T
+0 F
+(The port naming the lock set being destroyed.) 198 314.33 T
+1 11 Q
+(lock_acquir) 90 275.67 T
+(e) 145.35 275.67 T
+(Function) 126 253.67 T
+0 10 Q
+0.31 (Attempts to acquire access rights to a speci\336c lock being represented by a given lock set.) 126 236.33 P
+(If the lock is already controlled by another thread then the calling thread blocks.) 126 224.33 T
+1 11 Q
+(Synopsis) 126 206.67 T
+3 10 Q
+(kern_return_t) 126 190.33 T
+(lock_acquire) 234 190.33 T
+(\050mach_port_t) 234 174.33 T
+(lock_set,) 378 174.33 T
+(int) 234 158.33 T
+(lock_id\051) 378 158.33 T
+1 11 Q
+(Parameters) 126 140.67 T
+2 10 Q
+(lock_set) 126 123.33 T
+0 F
+(The the port naming the lock set which represents the lock.) 198 123.33 T
+2 F
+(lock_id) 126 106.33 T
+0 F
+(The lock, represented by the lock set, to be acquired.) 198 106.33 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 10 of 13\321) 270 37 T
+90 72 522 720 R
+7 X
+V
+1 11 Q
+0 X
+(lock_try) 90 712.67 T
+(Function) 126 690.67 T
+0 10 Q
+0.93 (Attempts to acquire the access rights to speci\336c lock being represented by a given lock) 126 673.33 P
+0.65 (set. If the lock is already controlled by another thread then the calling thread is returned) 126 661.33 P
+(with an error indicating that access was not granted.) 126 649.33 T
+1 11 Q
+(Synopsis) 126 631.67 T
+3 10 Q
+(kern_return_t) 126 615.33 T
+(lock_try) 234 615.33 T
+(\050mach_port_t) 234 599.33 T
+(lock_set,) 378 599.33 T
+(int) 234 583.33 T
+(lock_id\051) 378 583.33 T
+1 11 Q
+(Parameters) 126 565.67 T
+2 10 Q
+(lock_set) 126 548.33 T
+0 F
+(The port naming the lock set which represents the lock.) 198 548.33 T
+2 F
+(lock_id) 126 531.33 T
+0 F
+(The lock, represented by the lock set, to be acquired.) 198 531.33 T
+1 11 Q
+(lock_r) 90 492.67 T
+(elease) 119.71 492.67 T
+(Function) 126 470.67 T
+0 10 Q
+(Releases access rights to a given lock.) 126 453.33 T
+1 11 Q
+(Synopsis) 126 435.67 T
+3 10 Q
+(kern_return_t) 126 419.33 T
+(lock_release) 234 419.33 T
+(\050mach_port_t) 234 403.33 T
+(lock_set,) 378 403.33 T
+(int) 234 387.33 T
+(lock_id\051) 378 387.33 T
+1 11 Q
+(Parameters) 126 369.67 T
+2 10 Q
+(lock_set) 126 352.33 T
+0 F
+(The port naming the lock set which represents the lock.) 198 352.33 T
+2 F
+(lock_id) 126 335.33 T
+0 F
+(The lock, represented by the lock set, to be released.) 198 335.33 T
+1 11 Q
+(lock_assume_ownership) 90 296.67 T
+(Function) 126 274.67 T
+0 10 Q
+(Makes the calling thread the owner of the lock speci\336ed.) 126 257.33 T
+1 11 Q
+(Synopsis) 126 239.67 T
+3 10 Q
+(kern_return_t) 126 223.33 T
+(lock_assume_ownership) 234 223.33 T
+(\050mach_port_t) 234 207.33 T
+(lock_set,) 378 207.33 T
+(int) 234 191.33 T
+(lock_id\051) 378 191.33 T
+1 11 Q
+(Parameters) 126 157.67 T
+2 10 Q
+(lock_set) 126 140.33 T
+0 F
+(The port naming the lock set which represents the lock.) 198 140.33 T
+2 F
+(lock_id) 126 123.33 T
+0 F
+(The lock, represented by the lock set, to be owned by caller) 198 123.33 T
+(.) 435.32 123.33 T
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 1) 270 37 T
+(1 of 13\321) 316.86 37 T
+90 72 522 720 R
+7 X
+V
+1 11 Q
+0 X
+(lock_make_stable) 90 712.67 T
+(Function) 126 690.67 T
+0 10 Q
+(Clears the speci\336ed locks unstable state, making the lock\325) 126 673.33 T
+(s state stable again.) 356.68 673.33 T
+1 11 Q
+(Synopsis) 126 655.67 T
+3 10 Q
+(kern_return_t) 126 639.33 T
+(lock_make_stable) 234 639.33 T
+(\050mach_port_t) 234 623.33 T
+(lock_set,) 378 623.33 T
+(int) 234 607.33 T
+(lock_id\051) 378 607.33 T
+1 11 Q
+(Parameters) 126 590.67 T
+2 10 Q
+(lock_set) 126 573.33 T
+0 F
+(The port naming the lock set which represents the lock.) 198 573.33 T
+2 F
+(lock_id) 126 556.33 T
+0 F
+(The lock, represented by the lock set, to be made stable.) 198 556.33 T
+1 14 Q
+(5  Synchr) 90 508.67 T
+(onizer Scheduling Policies) 146.5 508.67 T
+0 10 Q
+0.87 (T) 90 488.33 P
+0.87 (o support both time-sharing and real-time applications, a scheduling policy is assigned to each synchro-) 95.41 488.33 P
+0.61 (nizer at creation time. A synchronizer) 90 476.33 P
+0.61 (\325) 244.41 476.33 P
+0.61 (s scheduling policy de\336nes the wakeup order of threads blocked on) 247.19 476.33 P
+(that synchronizer) 90 464.33 T
+(.) 158.56 464.33 T
+1.58 (T) 90 443.33 P
+1.58 (ime-sharing applications concerned with preventing thread scheduling starvation can choose a \336rst-in-) 95.76 443.33 P
+1.1 (\336rst-out \050FIFO\051 scheduling policy) 90 431.33 P
+1.1 (, where threads blocked on the synchronizer wakeup in the same order) 228.42 431.33 P
+0.42 (they blocked. Real-time applications may have greater constraints, however) 90 419.33 P
+0.42 (, requiring a deadline or priori-) 396.09 419.33 P
+0.5 (ty based scheduling policy) 90 407.33 P
+0.5 (. Since dif) 197.18 407.33 P
+0.5 (ferent applications have dif) 238.8 407.33 P
+0.5 (ferent demands each synchronizer) 349.21 407.33 P
+0.5 (\325) 487.35 407.33 P
+0.5 (s policy) 490.13 407.33 P
+0.78 (is speci\336ed by the application, selected from the policies supported by the OSF Mach Scheduling Frame-) 90 395.33 P
+(work [Haydt94].) 90 383.33 T
+0.53 (Because the Scheduling Framework supports interaction between threads of dif) 90 362.33 P
+0.53 (ferent policies, synchroniz-) 411.86 362.33 P
+0.21 (ers are not required to have the same policy as the threads performing the operations on it. In the event that) 90 350.33 P
+0.69 (the scheduling policy of a blocked thread does not match the policy of the synchronizer) 90 338.33 P
+0.69 (, the policy of the) 449.01 338.33 P
+0.3 (synchronizer uses the thread\325) 90 326.33 P
+0.3 (s) 207.21 326.33 P
+2 F
+0.3 (metapriority) 213.9 326.33 P
+0 F
+0.3 ( to determine the thread\325) 263.87 326.33 P
+0.3 (s position in the wakeup queue. Metap-) 362.79 326.33 P
+2.08 (riorities are used to evaluate the relative importance of threads universally throughout the Scheduling) 90 314.33 P
+(Framework.) 90 302.33 T
+0.39 (The result is that applications which have all their threads and synchronizers scheduled by the same policy) 90 281.33 P
+0.95 (will get fully predictable behavior) 90 269.33 P
+0.95 (. Where threads of multiple policies interact, the policy assigned to the) 229.26 269.33 P
+0.84 (synchronizer will order the threads it \322owns\323 to the granularity provided by its scheduling attributes \050e.g.) 90 257.33 P
+(deadlines, etc.\051 and then use the metapriority of the \322foreign\323 threads to order them into the list.) 90 245.33 T
+0.54 (This approach corresponds nicely with the CPU scheduling model in that threads from a policy in a better) 90 224.33 P
+1.01 (metapriority range should end up at the start of the wakeup queue and those from a policy with a worse) 90 212.33 P
+(metapriority range should be relegated to the tail.) 90 200.33 T
+2 F
+0.6 (Note: Once a synchr) 90 179.33 P
+0.6 (onizer) 173.87 179.33 P
+0.6 (\325) 199.23 179.33 P
+0.6 (s policy has been selected, it cannot be changed during the lifetime of the syn-) 201.27 179.33 P
+(chr) 90 167.33 T
+(onizer) 102.95 167.33 T
+(. Differ) 126.83 167.33 T
+(ent instances of synchr) 155.33 167.33 T
+(onizers may have differ) 246.29 167.33 T
+(ent policies.) 339.47 167.33 T
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 12 of 13\321) 270 37 T
+90 72 522 720 R
+7 X
+V
+1 14 Q
+0 X
+(Appendix A:  Optimizing Synchr) 90 710.67 T
+(onizer Performance) 287.22 710.67 T
+0 10 Q
+0.65 (As mentioned in Section 3, investigation is underway concerning the optimization of synchronizer perfor-) 90 690.33 P
+(mance. This appendix describes the current direction of this study) 90 678.33 T
+(.) 352.5 678.33 T
+1 (The idea is to achieve user) 90 657.33 P
+1 (-level synchronizer locality through the use of synchronizer caching on a per) 201.12 657.33 P
+1 (-) 518.67 657.33 P
+(task basis. This optimization would give us signi\336cant performance gains in the following scenarios:) 90 645.33 T
+0 6 Q
+(\245) 90 624.33 T
+0 10 Q
+(synchronization between threads of a common task) 102.02 624.33 T
+0 6 Q
+(\245) 90 608.33 T
+0 10 Q
+(synchronization between threads of dif) 102.02 608.33 T
+(ferent tasks where one task operates on the synchronizer more) 257.28 608.33 T
+(frequently than the other\050s\051.) 102.02 596.33 T
+1 14 Q
+(A.1  Caching Pr) 90 565.67 T
+(otocol) 185.36 565.67 T
+0 10 Q
+0.84 (The following example presents a possible solution in its simplest form. W) 90 545.33 P
+0.84 (e are aware of race-conditions) 398.22 545.33 P
+0.24 (in the caching protocol and realize much work has yet to be done in this area. This section merely provides) 90 533.33 P
+(a future glimpse at synchronizer performance optimization.) 90 521.33 T
+0.7 (Consider the case where threads of a common task synchronize via a single lock. First the lock is created) 90 500.33 P
+1.6 (using the lock_set_create\050\051 system call. The kernel creates the lock set, initializes the lock state to un-) 90 488.33 P
+0.59 (locked, and returns the lock set port to the calling thread. Upon the \336rst lock_acquire\050\051 request, the kernel) 90 476.33 P
+0.3 (marks the lock as owned and allows the requesting task to cache the lock data in its user space. All threads) 90 464.33 P
+0.64 (of that task can contend for the lock via the lock_acquire\050\051, lock_try\050\051 and lock_release\050\051 operations with-) 90 452.33 P
+0.02 (out trapping to the kernel. When lock_set_destroy\050\051 is executed, the cache is wiped clean of this lock, a ker-) 90 440.33 P
+(nel trap occurs and the lock set is destroyed.) 90 428.33 T
+1.1 (Now lets consider the case of threads of dif) 90 407.33 P
+1.1 (ferent tasks synchronizing via a lock. Like the \336rst case, the) 271.78 407.33 P
+0.17 (lock is created and owned by a single task \050task A\051. The task then passes a send right to the lock port a sec-) 90 395.33 P
+1.12 (ond task \050task B\051. Upon the \336rst lock_acquire\050\051 request, whether it be from task A or task B, the kernel) 90 383.33 P
+0.11 (marks the lock as owned and allows the requesting task to cache the lock data in its user space. For the pur-) 90 371.33 P
+1.43 (pose of this example, lets assume task A was the \336rst task to execute the lock_acquire\050\051 operation. All) 90 359.33 P
+1.23 (threads of task A can now contend for the lock without trapping to the kernel. When task B executes a) 90 347.33 P
+(lock_acquire\050\051 operation the following occurs:) 90 335.33 T
+0 6 Q
+(\245) 90 314.33 T
+0 10 Q
+(The local lock cache is checked for possession of the lock.) 102.02 314.33 T
+0 6 Q
+(\245) 90 298.33 T
+0 10 Q
+(Since task B does not possess the lock, the operation traps to the kernel.) 102.02 298.33 T
+0 6 Q
+(\245) 90 282.33 T
+0 10 Q
+(The kernel \322sees\323 that the lock is owned by task A and issues an upcall [Ford93, Burke94] to task A.) 102.02 282.33 T
+(The upcall is essentially a thread executing within task A) 102.02 270.33 T
+(\325) 329.37 270.33 T
+(s context on behalf of task B.) 332.15 270.33 T
+0 6 Q
+(\245) 90 254.33 T
+0 10 Q
+(The threads contend for the lock in task A) 102.02 254.33 T
+(\325) 269.12 254.33 T
+(s context.) 271.9 254.33 T
+0 6 Q
+(\245) 90 238.33 T
+0 10 Q
+(When task B\325) 102.02 238.33 T
+(s \322proxy\323 thread acquires the lock, task A) 156.43 238.33 T
+(\325) 322.41 238.33 T
+(s lock cache entry is invalidated, and the proxy) 325.19 238.33 T
+(thread traps back to the kernel.) 102.02 226.33 T
+0 6 Q
+(\245) 90 210.33 T
+0 10 Q
+(The kernel marks task B as the new owner of the lock.) 102.02 210.33 T
+0 6 Q
+(\245) 90 194.33 T
+0 10 Q
+(Control is passed back to task B, where the lock data is now cached.) 102.02 194.33 T
+0.41 (The protocol listed above is a win when one task operates on the lock \050synchronizer\051 more frequently than) 90 173.33 P
+0.07 (the other\050s\051. It becomes expensive, however) 90 161.33 P
+0.07 (, if lock accesses are uniform between the two tasks. This activ-) 266.18 161.33 P
+(ity is a signi\336cant variable in the performance equation.) 90 149.33 T
+2 F
+1.78 (Note: The implementation of synchr) 90 128.33 P
+1.78 (onizer caching depends on migrating thr) 240.54 128.33 P
+1.78 (ead technology existing in) 412.02 128.33 P
+(Mach \050scheduled for RT2\051.) 90 116.33 T
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+90 27 522 45 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 90 37 T
+(ersion 1.0) 97.33 37 T
+(\321 Page 13 of 13\321) 270 37 T
+90 72 522 720 R
+7 X
+V
+1 14 Q
+0 X
+(A.2  Complexity) 90 710.67 T
+0 10 Q
+0.18 (This technique adds complexity to the user) 90 690.33 P
+0.18 (-level library) 262.43 690.33 P
+0.18 (. The port abstraction should still be exported to the) 313.86 690.33 P
+0.41 (user) 90 678.33 P
+0.41 (, for ease of port right transfer) 106.25 678.33 P
+0.41 (. This means, the library must contain some sort of table to associate the) 228.31 678.33 P
+(port with the lock data.) 90 666.33 T
+1.72 (More importantly is the issue of new scheduling anomalies which crop up due to this optimization. If) 90 645.33 P
+0.27 (threads manipulating locks in user space never trap to the kernel, then scheduling support must be added at) 90 633.33 P
+0.17 (the library level to assure predictability) 90 621.33 P
+0.17 (. Implementing two tier scheduling is a hard problem which must be) 247.01 621.33 P
+(investigated further if this approach is to work correctly) 90 609.33 T
+(.) 312.52 609.33 T
+2 F
+0.54 (Last Note: The value of the softwar) 90 588.33 P
+0.54 (e cache is lar) 233.93 588.33 P
+0.54 (gely r) 288.75 588.33 P
+0.54 (elated to the cost of the null-trap, in addition to the) 311.96 588.33 P
+0.75 (way tasks operate on locks. In some ar) 90 576.33 P
+0.75 (chitectur) 249.76 576.33 P
+0.75 (es, it may not be worthwhile to pay for the extra logic r) 284.92 576.33 P
+0.75 (e-) 514.23 576.33 P
+(quir) 90 564.33 T
+(ed by caching.) 106.29 564.33 T
+1 14 Q
+(Refer) 90 519.67 T
+(ences) 123.15 519.67 T
+0 10 Q
+([Andrews91]) 90 497.33 T
+3.02 (G. Andrews, \322Concurrent Programming Principles and Practise\323. The Bejamin/) 180 497.33 P
+(Cummings Publishing Company) 180 485.33 T
+(, Inc. CA. 1991.) 309.86 485.33 T
+([Burke94]) 90 464.33 T
+2.62 (E. Burke, M. Condict, D. Mitchell, F) 180 464.33 P
+2.62 (. Reynolds, P) 342.59 464.33 P
+2.62 (. W) 400.02 464.33 P
+2.62 (atkins, B. W) 416.27 464.33 P
+2.62 (ilcox, \322RPC) 471.07 464.33 P
+(Design for Real-T) 180 452.33 T
+(ime Mach\323, OSF/RI T) 252.37 452.33 T
+(echnical Report, February 1994.) 341.06 452.33 T
+([CaraDonna93]) 90 431.33 T
+5.54 (J. CaraDonna, N. Paciorek, C.E. W) 180 431.33 P
+5.54 (ills, \322Measuring Lock Performance in) 348.57 431.33 P
+2.46 (Multiprocessor Operating System Kernels\323, USENIX Symposium on Experience) 180 419.33 P
+(with Distributed and Multiprocessor Systems, September 1993.) 180 407.33 T
+([Clark90]) 90 386.33 T
+6.95 (R.K. Clark, \322Scheduling Dependent Real-T) 180 386.33 P
+6.95 (ime Activities\323, Ph.D. Thesis,) 381.49 386.33 P
+(Department of Computer Science, CMU, May 1990.) 180 374.33 T
+([Draves90]) 90 353.33 T
+(R. Draves, \322A Revised IPC Interface\323, USENIX 1st Mach W) 180 353.33 T
+(orkshop, October 1990.) 424.01 353.33 T
+([Ford93]) 90 332.33 T
+0.47 (B. Ford, J. Lepreau, \322Evolving Mach 3.0 to Use Migrating Threads\323, Department of) 180 332.33 P
+(Computer Science, University of Utah, August 1993.) 180 320.33 T
+([Forin91]) 90 299.33 T
+0.5 (A. Forin, D. Golub and B. Bershad, \322An I/O System for Mach 3.0\323, USENIX Mach) 180 299.33 P
+(Symposium, November 1991.) 180 287.33 T
+([Haydt94]) 90 266.33 T
+0.44 (R. Haydt, J. CaraDonna, F) 180 266.33 P
+0.44 (. Reynolds, \322OSF Mach Scheduling Framework\323, OSF/RI) 287 266.33 P
+(T) 180 254.33 T
+(echnical Report, March 1994.) 185.41 254.33 T
+([Klein91]) 90 233.33 T
+(J. Klein, \322Synchronization of Multiple State Engines\323, CompCon, 1991.) 180 233.33 T
+([Locke86]) 90 212.33 T
+2.94 (C.D. Locke, \322Best Ef) 180 212.33 P
+2.94 (fort Decision Making for Real-T) 274.14 212.33 P
+2.94 (ime Scheduling\323, Ph. D.) 416.01 212.33 P
+(Thesis, Department of Computer Science, CMU, May 1986.) 180 200.33 T
+([Loepere93]) 90 179.33 T
+(K. Loepere, \322C Threads\323, OSF Server W) 180 179.33 T
+(riter) 343.63 179.33 T
+(\325) 360.65 179.33 T
+(s Guide, OSF and CMU, May 1993.) 363.43 179.33 T
+([Reynolds91]) 90 158.33 T
+3.15 (F) 180 158.33 P
+3.15 (.D. Reynolds and J. Heller) 184.76 158.33 P
+3.15 (, \322Kernel Support For Network Protocol Servers\323,) 302.71 158.33 P
+(Usenix Mach Symposium, November 1991.) 180 146.33 T
+([Swartzendruber94]) 90 125.33 T
+3.82 (D. Swartzendruber) 180 125.33 P
+3.82 (, \322A Preemptible Mach Kernel\323, OSF/RI T) 258.91 125.33 P
+3.82 (echnical Report,) 452.68 125.33 P
+(February 1994.) 180 113.33 T
+([T) 90 92.33 T
+(ravostino93]) 99.08 92.33 T
+(F) 180 92.33 T
+(. T) 184.76 92.33 T
+(ravostino, \322Mach3 Locking Protocol\323, OSF/RI T) 195.51 92.33 T
+(echnical Report, October 1993.) 390.52 92.33 T
+FMENDPAGE
+%%EndPage: "13" 14
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 13 1
+%%DocumentFonts: Times-Roman
+%%+ Times-Bold
+%%+ Times-Italic
+%%+ Courier

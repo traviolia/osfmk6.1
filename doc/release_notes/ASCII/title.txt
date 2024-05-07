@@ -1,0 +1,40 @@
+
+
+
+
+
+		OSF±RI Unencumbered
+		Mach Microkernel:
+		Release Notes
+
+		Adapted from the
+		MK6.1 Release Notes
+
+		OSF RESEARCH INSTITUTE
+		11 Cambridge Center
+		Cambridge, MA 02142
+
+
+
+
+
+
+
+
+		Revision 1.0
+
+Copyright  1995 by the Open Software Foundation, Inc.
+
+All rights reserved.
+
+Permission to reproduce this document without fee is hereby granted,
+provided that the copyright notice and this permission notice appear
+in all copies, derivative works or modified versions.
+
+OSF MAKES NO WARRRANTY OF ANY KIND WITH REGARD TO THIS MATERIAL,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+OSF shall not be liable for errors contained herein or for any direct
+or indirect, incidental, special or consequential damages in
+connection with the furnishing, performance, or use of this material.

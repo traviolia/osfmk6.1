@@ -1,0 +1,4559 @@
+%!PS-Adobe-2.0
+%%Title: ipc_specs.frame  -  /disk3/u2/billb/Home/Unencumbered/spec93/kernel_interface
+%%Creator: FrameMaker
+%%CreationDate: Tue Jan 31 18:32:49 1995
+%%For: billb
+%%DocumentFonts: (atend)
+%%Pages: 20 1
+%%BoundingBox: (atend)
+%%DocumentPaperSizes: Letter
+%%Orientation: Portrait
+%%NXNextStepVersion: 3.0
+%%EndComments
+
+%%BeginProcSet: /usr/lib/NextStep/printPackage.ps 3.0
+%!
+% NeXT Printing Package
+% Version: 3.0
+% Copyright: 1988, NeXT, Inc.
+
+/__NXdef{1 index where{pop pop pop}{def}ifelse}bind def
+/__NXbdef{1 index where{pop pop pop}{bind def}ifelse}bind def
+/UserObjects 10 array __NXdef
+/defineuserobject{
+	exch dup 1 add dup UserObjects length gt{
+		array dup 0 UserObjects putinterval
+		/UserObjects exch def
+	}{pop}ifelse UserObjects exch 3 -1 roll put
+}__NXbdef
+/undefineuserobject{UserObjects exch null put}__NXbdef
+/execuserobject{UserObjects exch get exec}__NXbdef
+/__NXRectPath{4 2 roll moveto 1 index 0 rlineto
+0 exch rlineto neg 0 rlineto closepath}__NXbdef
+/__NXProcessRectArgs{
+	1 index type /arraytype eq{
+		exch 0 4 2 index length 1 sub{
+			dup 3 add 1 exch{1 index exch get exch}for
+			5 1 roll 5 index exec
+		}for pop pop
+	}{exec}ifelse
+}__NXbdef
+/rectfill{gsave newpath {__NXRectPath fill} __NXProcessRectArgs grestore}__NXbdef
+/rectclip{newpath {__NXRectPath} __NXProcessRectArgs clip newpath}__NXbdef
+/rectstroke{
+	gsave newpath dup type /arraytype eq{dup length 6 eq}{false}ifelse{
+		{gsave __NXRectPath null concat stroke grestore}
+		dup length array cvx copy dup 2 4 -1 roll put __NXProcessRectArgs
+	}{{__NXRectPath stroke} __NXProcessRectArgs}ifelse grestore
+}__NXbdef
+/_NXLevel2 systemdict /languagelevel known {languagelevel 2 ge}{false}ifelse __NXdef
+/xyshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		3 index 3 index 2 mul 1 add get add exch
+		3 index	3 index 2 mul get add exch moveto pop
+	}for pop pop
+}__NXbdef
+/xshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		exch 3 index 3 index get add exch moveto pop
+	}for pop pop
+}__NXbdef
+/yshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		3 index 3 index get add moveto pop
+	}for pop pop
+}__NXbdef
+/arct{arcto pop pop pop pop}__NXbdef
+/setbbox{pop pop pop pop}__NXbdef
+/ucache{}__NXbdef
+/ucachestatus{mark 0 0 0 0 0}__NXbdef
+/setucacheparams{cleartomark}__NXbdef
+/uappend{systemdict begin cvx exec end}__NXbdef
+/ueofill{gsave newpath uappend eofill grestore}__NXbdef
+/ufill{gsave newpath uappend fill grestore}__NXbdef
+/ustroke{
+	gsave newpath dup length 6 eq
+	{exch uappend concat}{uappend}ifelse
+	stroke grestore
+}__NXbdef
+/__NXustrokepathMatrix dup where {pop pop}{matrix def}ifelse
+/ustrokepath{
+	newpath dup length 6 eq{
+		exch uappend __NXustrokepathMatrix currentmatrix exch concat
+		strokepath setmatrix
+	}{uappend strokepath}ifelse
+} __NXbdef
+/upath{
+	[exch {/ucache cvx}if pathbbox /setbbox cvx
+	 {/moveto cvx}{/lineto cvx}{/curveto cvx}{/closepath cvx}pathforall]cvx
+} __NXbdef
+/setstrokeadjust{pop}__NXbdef
+/currentstrokeadjust{false}__NXbdef
+/selectfont{exch findfont exch
+dup type /arraytype eq {makefont}{scalefont}ifelse setfont}__NXbdef
+/_NXCombineArrays{
+	counttomark dup 2 add index dup length 3 -1 roll {
+		2 index length sub dup 4 1 roll 1 index exch 4 -1 roll putinterval exch
+	}repeat pop pop pop
+}__NXbdef
+/flushgraphics{}def
+/setwindowtype{pop pop}def
+/currentwindowtype{pop 0}def
+/setalpha{pop}def
+/currentalpha{1.0}def
+/hidecursor{}def
+/obscurecursor{}def
+/revealcursor{}def
+/setcursor{4 {pop}repeat}bind def
+/showcursor{}def
+/NextStepEncoding where not{
+/NextStepEncoding StandardEncoding 256 array copy def
+0 [129/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/Ccedilla/Egrave
+/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/Ugrave/Uacute
+/Ucircumflex/Udieresis/Yacute/Thorn/mu/multiply/divide/copyright
+176/registered 181/brokenbar 190/logicalnot 192/onesuperior 201/twosuperior
+204/threesuperior 209/plusminus/onequarter/onehalf/threequarters/agrave
+/aacute/acircumflex/atilde/adieresis/aring/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave 226/iacute 228/icircumflex/idieresis/eth
+/ntilde 236/ograve/oacute/ocircumflex/otilde/odieresis 242/ugrave/uacute
+/ucircumflex 246/udieresis/yacute 252/thorn/ydieresis]
+{dup type /nametype eq
+ {NextStepEncoding 2 index 2 index put pop 1 add}{exch pop}ifelse
+}forall pop
+/NextStepEncoding NextStepEncoding readonly def
+/_NXfstr 128 string dup 0 (_NX) putinterval def
+/_NXfindfont /findfont load def
+/findfont{
+ % Because we can never let NextStepEncoding get into
+ % SharedFontDirectory, we cannot reencode a font to NextStepEncoding
+ % if we are in shared mode.  So if currentshared is true,
+ % we call the normal findfont and return that
+ /currentshared where {pop currentshared} {false} ifelse
+ {_NXfindfont}
+ {dup _NXfstr 3 125 getinterval cvs length 3 add _NXfstr 0 3 -1 roll
+  getinterval cvn exch FontDirectory 2 index known 
+  {pop FontDirectory exch get}
+  {_NXfindfont dup /Encoding get StandardEncoding eq
+   {	dup length dict exch
+	{1 index /FID ne {2 index 3 1 roll put}{pop pop}ifelse}forall
+	 dup /Encoding NextStepEncoding put definefont
+	}{exch pop} ifelse
+   }ifelse
+ }ifelse
+}bind def
+}{pop}ifelse
+/_NXImageString {/__NXImageString where{pop}{/__NXImageString 4000 string __NXdef}ifelse __NXImageString}__NXbdef
+/_NXDoImageOp{
+	3 dict begin /parr 5 array def 1 index{dup}{1}ifelse /chans exch def
+	chans 2 add 2 roll parr 0 chans getinterval astore pop
+	5 index 4 index mul 2 index{1 sub 8 idiv 1 add mul}{mul 1 sub 8 idiv 1 add}ifelse
+	4 index mul /totbytes exch def pop exch pop
+	gsave matrix invertmatrix concat 0.5 setgray 0 0 4 2 roll rectfill grestore
+	{0 1 chans 1 sub{parr exch get exec length totbytes exch sub /totbytes exch def}for totbytes 0 le{exit}if}loop end
+}__NXbdef
+/alphaimage{1 add _NXDoImageOp}def
+_NXLevel2{ 
+	/NXCalibratedRGBColorSpace where{pop}{
+		/NXCalibratedRGBColorSpace
+		{mark /NXCalibratedRGB /ColorSpace findresource exch pop}stopped
+		{cleartomark /NXCalibratedRGB[/CIEBasedABC 2 dict dup begin 
+		/MatrixLMN[.4124 .2126 .0193 .3576 .7152 .1192 .1805 .0722 .9505]def
+		/WhitePoint[.9505 1 1.089] def end] /ColorSpace defineresource}if def}ifelse
+	/nxsetrgbcolor{NXCalibratedRGBColorSpace setcolorspace setcolor}__NXbdef
+	/nxsetgray{dup dup nxsetrgbcolor}__NXbdef
+	/_NXCalibratedImage{exch{array astore dup length true}{false}ifelse
+		8 -1 roll{NXCalibratedRGBColorSpace setcolorspace}if
+		8 dict dup 9 1 roll begin /ImageType 1 def /MultipleDataSources exch def
+		currentcolorspace 0 get /Indexed eq{pop /Decode[0 2 6 index exp 1 sub]def}
+		{2 mul dup array /Decode exch def 1 sub 0 1 3 -1 roll{Decode exch dup 2 mod put}for}ifelse
+		/DataSource exch def /ImageMatrix exch def 
+		/BitsPerComponent exch def /Height exch def /Width exch def end image}__NXbdef
+} {
+	/setcmykcolor{
+		1.0 exch sub dup dup 6 -1 roll sub dup 0 lt{pop 0}if 5 1 roll
+		4 -1 roll sub dup 0 lt{pop 0}if 3 1 roll exch sub dup 0 lt{pop 0}if setrgbcolor}__NXbdef
+	/currentcmykcolor{currentrgbcolor 3{1.0 exch sub 3 1 roll}repeat 0}__NXbdef
+	/colorimage{_NXDoImageOp}__NXbdef
+	/nxsetrgbcolor{setrgbcolor}__NXbdef /nxsetgray{setgray}__NXbdef
+	/setpattern{pop .5 setgray}__NXbdef
+	/_NXCalibratedImage{dup 1 eq {pop pop image}{colorimage}ifelse pop}__NXbdef
+} ifelse
+/_NXSetCMYKOrRGB where{pop}{
+	mark{systemdict /currentwindow get exec}stopped
+	{{pop pop pop setcmykcolor}}{{nxsetrgbcolor pop pop pop pop}}ifelse /_NXSetCMYKOrRGB exch def cleartomark
+}ifelse
+%%EndProcSet
+
+_NXLevel2{/_NXsethsb where{pop}{/_NXsethsb /sethsbcolor load def}ifelse /sethsbcolor{_NXsethsb currentrgbcolor nxsetrgbcolor}def /setrgbcolor{nxsetrgbcolor}bind def /setgray{nxsetgray}bind def
+}if
+/FMwantcolorprinting true def
+%-
+%- FrameMaker Postscript Prolog 3.0, for use with FrameMaker 3.0
+%- Copyright (c) 1986, 87, 88, 89, 90, 91 by Frame Technology, Inc.
+%- All rights reserved.
+%-
+%-
+/landscape false def/t300[0.000 0.006 0.011 0.017 0.022 0.028 0.033 0.039
+0.045 0.050 0.056 0.061 0.067 0.073 0.078 0.084 0.089 0.095 0.101 0.117 0.133
+0.148 0.164 0.179 0.195 0.210 0.225 0.240 0.255 0.270 0.285 0.299 0.314 0.329
+0.344 0.359 0.374 0.389 0.404 0.419 0.435 0.451 0.466 0.482 0.498 0.513 0.529
+0.544 0.560 0.576 0.591 0.610 0.632 0.654 0.677 0.699 0.721 0.744 0.766 0.788
+0.821 0.866 0.911 0.955 1.000]def/t400[0.000 0.003 0.006 0.009 0.012 0.014
+0.017 0.020 0.023 0.026 0.029 0.032 0.035 0.038 0.041 0.043 0.046 0.049 0.056
+0.063 0.071 0.079 0.087 0.095 0.104 0.117 0.130 0.143 0.157 0.173 0.189 0.205
+0.225 0.245 0.259 0.272 0.285 0.298 0.314 0.329 0.345 0.361 0.376 0.392 0.407
+0.423 0.439 0.454 0.470 0.486 0.502 0.528 0.554 0.580 0.605 0.628 0.650 0.672
+0.695 0.727 0.762 0.796 0.857 0.922 1.000]def/tlinear[0.000 0.016 0.031 0.047
+0.062 0.078 0.094 0.109 0.125 0.141 0.156 0.172 0.188 0.203 0.219 0.234 0.250
+0.266 0.281 0.297 0.312 0.328 0.344 0.359 0.375 0.391 0.406 0.422 0.438 0.453
+0.469 0.484 0.500 0.516 0.531 0.547 0.562 0.578 0.594 0.609 0.625 0.641 0.656
+0.672 0.688 0.703 0.719 0.734 0.750 0.766 0.781 0.797 0.812 0.828 0.844 0.859
+0.875 0.891 0.906 0.922 0.938 0.953 0.969 0.984 1.000]def/orgmatrix matrix def
+/savematrix{orgmatrix currentmatrix pop}bind def/restorematrix{orgmatrix
+setmatrix}bind def/dmatrix matrix def/desiredpat 0 def/dpi 72 0 dmatrix
+defaultmatrix dtransform dup mul exch dup mul add sqrt round def/freq dpi
+18.75 div 8 div round dup 0 eq{pop 1}if 8 mul dpi exch div def/sangle 1 0
+dmatrix defaultmatrix dtransform exch atan def/graymode true def/pats 16 array
+def/mymatrix matrix def/savedgray 0 def/F/fill load def/rc/rectclip load def
+/GS/gsave load def/GR/grestore load def/SL/setlinewidth load def/SC
+/setlinecap load def/CS{closepath S}bind def/A/strokepath load def/TR
+/translate load def/L/lineto load def/M/moveto load def/D/curveto load def/C
+/closepath load def/T{moveto show}bind def/smat{mymatrix currentmatrix pop}
+bind def/rmat{mymatrix setmatrix}bind def/sp{P exch get exec}bind def
+systemdict/setshared known{300 dpi eq{/tran t300 def}{/tran t400 def}ifelse}{
+/tran tlinear def}ifelse systemdict/xshow known not{/xhow{/pts exch def/str
+exch def 0 1 str length 1 sub{currentpoint 3 -1 roll str 1 index 1 getinterval
+show 3 1 roll moveto pts exch get 0 rmoveto}for}bind def}{/xhow{checkink xshow
+}bind def}ifelse systemdict/xyshow known not{/xyhow{/pts exch def/str exch def
+0 1 str length 1 sub{currentpoint 3 -1 roll str 1 index 1 getinterval show 3 1
+roll moveto 2 mul pts 1 index get pts 3 -1 roll 1 add get rmoveto}for}bind def
+}{/xyhow{checkink xyshow}bind def}ifelse/CR{initclip newpath 4 2 roll M dup 0
+exch rlineto exch 0 rlineto 0 exch neg rlineto C clip newpath}bind def
+/makecontextpattern{exch pop[null 8 1/setpattern cvx]4 array copy dup 0 5 -1
+roll put cvx pats 3 1 roll put}def/P[0 1 15{[/desiredpat 3 -1 roll/store cvx]
+cvx}for]def/patoffsetx 0 def/patoffsety 0 def/currentpat null def/FrameDict
+250 dict def/FMBEGINPAGE{FrameDict begin}def/FMENDPAGE{end}def/FMLOCAL{
+FrameDict begin 0 def end}def FrameDict begin/NaN 0 def/gstring 0 def/gfile 0
+def/gindex 0 def/orgxfer 0 def/yscale 0 def/xscale 0 def/FMPrintInColor
+systemdict/colorimage known systemdict/currentcolortransfer known or
+FMwantcolorprinting and def FMPrintInColor{/HUE 0 def/SAT 0 def/BRIGHT 0 def
+/Colors[[0 0][0 0][0.00 1.0][0.37 1.0][0.66 1.0][0.58 1.0][0.83 1.0][0.10 1.0]
+]def/K{Colors exch get dup 0 get/HUE exch store 1 get/BRIGHT exch store HUE 0
+eq BRIGHT 0 eq and{1.0 SAT sub setgray}{HUE SAT BRIGHT sethsbcolor}ifelse}def
+/KT/K load def/mysetgray{/SAT exch 1.0 exch sub store HUE 0 eq BRIGHT 0 eq and
+{1.0 SAT sub setgray}{HUE SAT BRIGHT sethsbcolor}ifelse}bind def}{/mysetgray
+/setgray load def/K/pop load def/KT/pop load def}ifelse/G{/savedgray exch def
+savedgray mysetgray}def/setpattern{/bwidth exch def/bpside exch def/bstring
+exch def/onbits 0 def/offbits 0 def freq sangle landscape{90 add}if{/y exch
+def/x exch def/xindex x 1 add 2 div bpside mul cvi def/yindex y 1 add 2 div
+bpside mul cvi def bstring yindex bwidth mul xindex 8 idiv add get 1 7 xindex
+8 mod sub bitshift and 0 ne{/onbits onbits 1 add def 1}{/offbits offbits 1 add
+def 0}ifelse}setscreen tran offbits 64 mul offbits onbits add div cvi get
+mysetgray}bind def/myfonts[]def/procarray 30 array def 3.86 setmiterlimit
+currentscreen cvlit/orgproc exch def/organgle exch def/orgfreq exch def
+/currentpat -1 def/checkpat{graymode currentpat desiredpat ne or{pats
+desiredpat get exec/graymode false store/currentpat desiredpat store}if}bind
+def/Z{checkpat fill}bind def/checkink{graymode not{orgfreq organgle orgproc
+cvx setscreen/graymode true store savedgray mysetgray}if}bind def/F{checkink
+fill}bind def/dorectfill{checkink rectfill}bind def/dorectstroke{checkink
+rectstroke}bind def/S{checkink stroke}bind def/FmEncoding[/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/space/exclam/quotedbl/numbersign/dollar/percent
+/ampersand/quotesingle/parenleft/parenright/asterisk/plus/comma/hyphen/period
+/slash/zero/one/two/three/four/five/six/seven/eight/nine/colon/semicolon/less
+/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y
+/Z/bracketleft/backslash/bracketright/asciicircum/underscore/grave/a/b/c/d/e
+/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft/bar/braceright
+/asciitilde/.notdef/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis
+/Udieresis/aacute/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute
+/egrave/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde
+/oacute/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex
+/udieresis/dagger/.notdef/cent/sterling/section/bullet/paragraph/germandbls
+/registered/copyright/trademark/acute/dieresis/.notdef/AE/Oslash/.notdef
+/.notdef/.notdef/.notdef/yen/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/ordfeminine/ordmasculine/.notdef/ae/oslash/questiondown/exclamdown
+/logicalnot/.notdef/florin/.notdef/.notdef/guillemotleft/guillemotright
+/ellipsis/.notdef/Agrave/Atilde/Otilde/OE/oe/endash/emdash/quotedblleft
+/quotedblright/quoteleft/quoteright/.notdef/.notdef/ydieresis/Ydieresis
+/fraction/currency/guilsinglleft/guilsinglright/fi/fl/daggerdbl
+/periodcentered/quotesinglbase/quotedblbase/perthousand/Acircumflex
+/Ecircumflex/Aacute/Edieresis/Egrave/Iacute/Icircumflex/Idieresis/Igrave
+/Oacute/Ocircumflex/.notdef/Ograve/Uacute/Ucircumflex/Ugrave/dotlessi
+/circumflex/tilde/macron/breve/dotaccent/ring/cedilla/hungarumlaut/ogonek
+/caron]def/FmEncode{/basefontdict exch def/newfontdict basefontdict maxlength
+3 add dict def basefontdict{exch dup/FID ne{dup/Encoding eq{exch pop
+FmEncoding}{exch}ifelse newfontdict 3 1 roll put}{pop pop}ifelse}forall
+newfontdict}def/rrectpath{smat 4 2 roll TR/h exch def/w exch def/r exch def
+mark r 0 M w 0 w h r arcto w h 0 h r arcto 0 h 0 0 r arcto 0 0 w 0 r arcto C
+cleartomark rmat}def/RF{rrectpath F}bind def/RP{checkpat rrectpath fill}bind
+def/RS{rrectpath S}bind def/RQ{checkpat rrectpath A fill}bind def/NF{
+dorectfill}bind def/NR{checkpat 4 2 roll rectfill}bind def/W{savedgray 5 1
+roll 1.0 G dorectfill G}bind def/PP{newpath 3 1 roll M 1 sub{lineto}repeat}
+bind def/SP{3 1 roll M 3 div cvi{curveto}repeat}bind def/rectpath{M dup 0 exch
+rlineto exch 0 rlineto neg 0 exch rlineto C}def/N{dorectstroke}bind def/NQ{
+checkpat 4 2 roll rectstroke}bind def/replbox{M dup 0 exch rlineto exch 0
+rlineto neg 0 exch rlineto C currentgray .5 setgray fill setgray pop pop}def
+/graybox{currentgray 5 1 roll .6666666 setgray rectfill setgray}bind def
+/darkgraybox{currentgray 5 1 roll .333333 setgray rectfill setgray}bind def
+/arcpath{newpath TR/h exch def/w exch def/dth exch def/th exch def 90 th dth
+add sub 90 th sub dth 0 lt{exch}if 1 h w div neg scale 0 0 w 2 div 5 -2 roll
+arc}def/AS{smat arcpath rmat S}bind def/AP{checkpat smat arcpath rmat A fill}
+bind def/AF{smat arcpath 0 0 lineto rmat F}bind def/AQ{checkpat smat arcpath 0
+0 lineto rmat fill}bind def/mymakefont{/size exch def/name exch def/i exch def
+/myfontdict name cvn findfont def myfontdict begin Encoding StandardEncoding
+eq/NextStepEncoding where{pop Encoding NextStepEncoding eq or}if end{
+myfontdict FmEncode/gfontdict exch def/gfontdict(F   )dup 1 i(   )cvs
+putinterval cvn gfontdict definefont def}{/gfontdict myfontdict def}ifelse
+/myfonts[myfonts aload pop null]def myfonts i gfontdict[size 0 0 size neg 0 0
+]makefont put}def/mymakefontmetric{/BitmapWidths exch 0 eq def mymakefont}def
+/FF{myfonts exch get setfont}bind def/cliptowindow{initclip}def
+/beginprintcode{GS newpath 1 setlinewidth 0 SL 0 setlinejoin[]0 setdash 0
+setgray 10 setmiterlimit/FMdicttop countdictstack 1 add def/FMoptop count 7
+sub def 200 dict begin/showpage{}def TR dup neg scale 0.0 0.0 M}def
+/endprintcode{count -1 FMoptop{pop pop}for countdictstack -1 FMdicttop{pop
+end}for GR}def/beginPSInsetprintcode{/pinsetsave save def newpath 1
+setlinewidth 0 setlinecap 0 setlinejoin[]0 setdash 0 setgray 10 setmiterlimit
+/FMdicttop countdictstack 1 add def/FMoptop count def 200 dict begin/showpage
+{}def/showimage{}def}def/endPSInsetprintcode{count -1 FMoptop{pop pop}for
+countdictstack -1 FMdicttop{pop end}for pinsetsave restore}def/cacheimage{
+/flip exch def/theta exch def/bps exch def/h exch def/w exch def/destHeight
+exch def/destWidth exch def/destY exch def/destX exch def/rowbytes w bps mul 7
+add 8 idiv def/buffer rowbytes string def GS destX destY TR theta rotate
+destWidth flip{neg}if destHeight scale w h bps[w 0 0 h 0 h]{currentfile buffer
+readhexstring pop}bind image GR}def/inch{72 mul}def/paperheight 0 def
+/paperwidth 0 def/pagedimen{paperheight sub abs 16 lt exch paperwidth sub abs
+16 lt and{/papername exch def}{pop}ifelse}def/setpapername{/papersizedict 14
+dict def papersizedict begin/papername/unknown def/Letter 8.5 inch 11.0 inch
+pagedimen/LetterSmall 7.68 inch 10.16 inch pagedimen/Tabloid 11.0 inch 17.0
+inch pagedimen/Ledger 17.0 inch 11.0 inch pagedimen/Legal 8.5 inch 14.0 inch
+pagedimen/Statement 5.5 inch 8.5 inch pagedimen/Executive 7.5 inch 10.0 inch
+pagedimen/A3 11.69 inch 16.5 inch pagedimen/A4 8.26 inch 11.69 inch pagedimen
+/A4Small 7.47 inch 10.85 inch pagedimen/B4 10.125 inch 14.33 inch pagedimen
+/B5 7.16 inch 10.125 inch pagedimen end}def/papersize{papersizedict begin
+/Letter{lettertray letter}def/LetterSmall{lettertray lettersmall}def/Tabloid
+{11x17tray 11x17}def/Ledger{ledgertray ledger}def/Legal{legaltray legal}def
+/Statement{statementtray statement}def/Executive{executivetray executive}def
+/A3{a3tray a3}def/A4{a4tray a4}def/A4Small{a4tray a4small}def/B4{b4tray b4}
+def/B5{b5tray b5}def/unknown{unknown}def papersizedict dup papername known
+{papername}{/unknown}ifelse get end/FMdicttop countdictstack 1 add def
+statusdict begin stopped end countdictstack -1 FMdicttop{pop end}for}def
+/manualpapersize{papersizedict begin/Letter{letter}def/LetterSmall
+{lettersmall}def/Tabloid{11x17}def/Ledger{ledger}def/Legal{legal}def
+/Statement{statement}def/Executive{executive}def/A3{a3}def/A4{a4}def/A4Small
+{a4small}def/B4{b4}def/B5{b5}def/unknown{unknown}def papersizedict dup
+papername known{papername}{/unknown}ifelse get end stopped}def
+/desperatepapersize{statusdict/setpageparams known{paperwidth paperheight 0 1
+statusdict begin{setpageparams}stopped pop end}if}def/manualfeed false def
+/FmHorrible{4 dict begin/execuserobject{pop}def/undefineuserobject{pop}def
+/termwindow{}def/currentgstate{null}def}def/FmEndHorrible{end}def end
+/FmConfigurePaper{FrameDict begin pop pop/paperheight exch def/paperwidth exch
+def setpapername manualfeed{true}{papersize}ifelse{manualpapersize}{false}
+ifelse{desperatepapersize}if end}def/ALDsave FMLOCAL/ALDmatrix matrix def
+ALDmatrix currentmatrix pop/StartALD{/ALDsave save def savematrix ALDmatrix
+setmatrix}bind def/InALD{restorematrix}bind def/DoneALD{ALDsave restore}bind
+def
+<0f1e3c78f0e1c387> (I2366ec) 8 makecontextpattern
+<0f87c3e1f0783c1e> (I236708) 9 makecontextpattern
+<cccccccccccccccc> (I2367a8) 10 makecontextpattern
+<ffff0000ffff0000> (I2367c4) 11 makecontextpattern
+<8142241818244281> (I2367e0) 12 makecontextpattern
+<03060c183060c081> (I2367fc) 13 makecontextpattern
+<8040201008040201> (I236818) 14 makecontextpattern
+gsave
+-1 -9 translate
+ /__NXbasematrix matrix currentmatrix def
+grestore
+%%EndProlog
+%%BeginSetup
+%%PaperSize: Letter
+%%BeginPaperSize: Letter
+612 792 (Letter) false FmConfigurePaper
+%%EndPaperSize
+%%EndSetup
+
+%%Page: 7 1
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+2 SL
+3.86 setmiterlimit
+0 G
+432 45 M
+72 45 L
+S
+2 SC
+432 342 M
+72 342 L
+S
+0.25 SL
+432 720 M
+72 720 L
+S
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+427 732.706665 M -2.5 0 32 (7 ) widthshow
+0 0 612 792 CR
+1 G
+72 99 360 225 NF
+0 G
+2 (Times-Roman) 12 1 mymakefontmetric
+2 FF
+72 116 M 1.19989 0 (CHAPTER 2) ashow
+3 (Times-Roman) 24 1 mymakefontmetric
+3 FF
+180 116 M -0.479736 0 (IPC Interf) ashow
+271.610779 116 M -0.479736 0 (ace) ashow
+1 G
+72 360 360 344.015991 NF
+0 G
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+72 367.666656 M 0.702896 0 32 (This chapter discusses the speci\336cs of the k) widthshow
+250.960342 367.666656 M 0.702896 0 32 (ernel\325) widthshow
+273.730652 367.666656 M 0.702896 0 32 (s inter) widthshow
+298.953674 367.666656 M 0.702896 0 32 (-\322process\323 communication \(IPC\)) widthshow
+72 379.666626 M 1.26445 0 32 (interf) widthshow
+93.560059 379.666626 M 1.26445 0 32 (aces. The interf) widthshow
+157.909027 379.666626 M 1.26445 0 32 (aces discussed are only the interf) widthshow
+296.041351 379.666626 M 1.26445 0 32 (aces directly in) widthshow
+358.71048 379.666626 M 1.26445 0 32 (v) widthshow
+363.51059 379.666626 M 1.26445 0 32 (olv) widthshow
+376.140686 379.666626 M 1.26445 0 32 (ed in sending) widthshow
+(and recei) 72.0 391.667 T
+(ving IPC messages.) 108.12 391.667 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 8 2
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(8 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(IPC Interface) 180.0 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+180 119.983978 360 3.024002 CR
+0.25 SL
+2 SC
+0 G
+540 121.5 M
+180 121.5 L
+S
+0 0 612 792 CR
+3 (Times-Bold) 14 1 mymakefontmetric
+3 FF
+(mach_msg) 180.0 116.317 T
+0 FF
+(System T) 216.0 140.675 T
+(rap / Function) 254.98 140.675 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+( \321 Sends and recei) 316.1 140.675 T
+(v) 393.611 140.675 T
+(es a message) 398.461 140.675 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(SYNOPSIS) 180.0 172.008 T
+4 FF
+(mach_msg_return_t ) 216.0 190.675 T
+0 FF
+(mach_msg) 298.49 190.675 T
+4 FF
+(\(mach_msg_header_t*) 270.0 202.675 T
+6 (Times-Italic) 10 1 mymakefontmetric
+6 FF
+(msg) 521.49 202.675 T
+(,) 537.5 202.675 T
+4 FF
+(mach_msg_option_t) 270.0 214.675 T
+6 FF
+(option,) 511.94 214.675 T
+4 FF
+(mach_msg_size_t) 270.0 226.675 T
+6 FF
+(send_size) 499.27 226.675 T
+(,) 537.5 226.675 T
+4 FF
+(mach_msg_size_t) 270.0 238.675 T
+6 FF
+(r) 485.66 238.675 T
+(eceive_limit,) 489.18 238.675 T
+4 FF
+(mach_port_t) 270.0 250.675 T
+6 FF
+(r) 482.44 250.675 T
+(eceive_name) 485.96 250.675 T
+(,) 537.5 250.675 T
+4 FF
+(mach_msg_timeout_t) 270.0 262.675 T
+6 FF
+(timeout,) 507.5 262.675 T
+4 FF
+(mach_port_t) 270.0 274.675 T
+6 FF
+(notify\)) 511.11 274.675 T
+4 FF
+(;) 537.22 274.675 T
+5 FF
+(mach_msg_o) 180.0 294.008 T
+(v) 246.54 294.008 T
+(erwrite) 252.42 294.008 T
+0 FF
+(Expanded) 216.0 306.674 T
+4 FF
+( form) 259.35 306.674 T
+(mach_msg_return_t ) 216.0 324.674 T
+0 FF
+(mach_msg_o) 298.49 324.674 T
+(v) 353.94 324.674 T
+(erwrite) 358.84 324.674 T
+4 FF
+(\(mach_msg_header_t*) 270.0 336.674 T
+6 FF
+(send_msg) 498.16 336.674 T
+(,) 537.5 336.674 T
+4 FF
+(mach_msg_option_t) 270.0 348.674 T
+6 FF
+(option,) 511.94 348.674 T
+4 FF
+(mach_msg_size_t) 270.0 360.674 T
+6 FF
+(send_size) 499.27 360.674 T
+(,) 537.5 360.674 T
+4 FF
+(mach_msg_size_t) 270.0 372.674 T
+6 FF
+(r) 485.66 372.674 T
+(eceive_limit,) 489.18 372.674 T
+4 FF
+(mach_port_t) 270.0 384.674 T
+6 FF
+(r) 482.44 384.674 T
+(eceive_name) 485.96 384.674 T
+(,) 537.5 384.674 T
+4 FF
+(mach_msg_timeout_t) 270.0 396.674 T
+6 FF
+(timeout,) 507.5 396.674 T
+4 FF
+(mach_port_t) 270.0 408.674 T
+6 FF
+(notify) 515.37 408.674 T
+4 FF
+(,) 537.5 408.674 T
+(mach_msg_header_t*) 270.0 420.674 T
+6 FF
+(r) 487.89 420.674 T
+(eceive_msg) 491.41 420.674 T
+4 FF
+(,) 537.5 420.674 T
+(mach_msg_size_t) 270.0 432.674 T
+6 FF
+(r) 464.28 432.674 T
+(eceive_msg_size) 467.8 432.674 T
+4 FF
+(\);) 533.89 432.674 T
+5 FF
+(DESCRIPTION) 180.0 464.008 T
+4 FF
+216 480.674316 M 0.307953 0 32 (The ) widthshow
+0 FF
+234.357956 480.674316 M 0.307953 0 32 (mach_msg) widthshow
+4 FF
+279.907959 480.674316 M 0.307953 0 32 ( system call sends and recei) widthshow
+392.007874 480.674316 M 0.307953 0 32 (v) widthshow
+396.857971 480.674316 M 0.307953 0 32 (es Mach messages. Mach messages) widthshow
+216 492.674316 M 1.685791 0 32 (contain data, which can include port rights and addresses of lar) widthshow
+484.568054 492.674316 M 1.685791 0 32 (ge re) widthshow
+505.813904 492.674316 M 1.685791 0 32 (gions of) widthshow
+216 504.674316 M 0.593521 0 32 (memory) widthshow
+248.680359 504.674316 M 0.593521 0 32 (. ) widthshow
+0 FF
+254.27388 504.674316 M 0.593521 0 32 (mach_msg) widthshow
+4 FF
+299.823883 504.674316 M 0.593521 0 32 ( uses the same b) widthshow
+366.988098 504.674316 M 0.593521 0 32 (uf) widthshow
+375.068237 504.674316 M 0.593521 0 32 (fer for sending and recei) widthshow
+474.932465 504.674316 M 0.593521 0 32 (ving a message;) widthshow
+216 516.674316 M 1.071579 0 32 (the other calls permit separate send and recei) widthshow
+402.921204 516.674316 M 1.071579 0 32 (v) widthshow
+407.771301 516.674316 M 1.071579 0 32 (e b) widthshow
+420.583008 516.674316 M 1.071579 0 32 (uf) widthshow
+428.663147 516.674316 M 1.071579 0 32 (fers \(although the) widthshow
+501.196381 516.674316 M 1.071579 0 32 (y may be) widthshow
+(speci\336ed to be the same\).) 216.0 528.674 T
+216 552.674255 M 0.40596 0 32 (If the ) widthshow
+6 FF
+240.691925 552.674255 M 0.40596 0 32 (option) widthshow
+4 FF
+266.251923 552.674255 M 0.40596 0 32 ( ar) widthshow
+276.747986 552.674255 M 0.40596 0 32 (gument contains MA) widthshow
+361.600128 552.674255 M 0.40596 0 32 (CH_SEND_MSG, the call sends a message.) widthshow
+216 564.674255 M 1.8172 0 32 (The ) widthshow
+6 FF
+235.867203 564.674255 M 1.8172 0 32 (send_size) widthshow
+4 FF
+274.197205 564.674255 M 1.8172 0 32 ( ar) widthshow
+286.104492 564.674255 M 1.8172 0 32 (gument speci\336es the size of the message b) widthshow
+467.765015 564.674255 M 1.8172 0 32 (uf) widthshow
+475.845154 564.674255 M 1.8172 0 32 (fer \(header and) widthshow
+216 576.674194 M 0.755341 0 32 (body\) to send. The ) widthshow
+6 FF
+296.511353 576.674194 M 0.755341 0 32 (msgh_r) widthshow
+326.141571 576.674194 M 0.755341 0 32 (emote_port) widthshow
+4 FF
+371.691589 576.674194 M 0.755341 0 32 ( \336eld of the message header speci\336es the) widthshow
+(destination of the message.) 216.0 588.674 T
+216 612.674194 M 0.501938 0 32 (If the ) widthshow
+6 FF
+240.883881 612.674194 M 0.501938 0 32 (option) widthshow
+4 FF
+266.443878 612.674194 M 0.501938 0 32 ( ar) widthshow
+277.035919 612.674194 M 0.501938 0 32 (gument contains MA) widthshow
+362.080017 612.674194 M 0.501938 0 32 (CH_RCV_MSG, it recei) widthshow
+461.444031 612.674194 M 0.501938 0 32 (v) widthshow
+466.294128 612.674194 M 0.501938 0 32 (es a message. The) widthshow
+6 FF
+216 624.674194 M 1.24321 0 32 (r) widthshow
+219.520203 624.674194 M 1.24321 0 32 (eceive_limit) widthshow
+4 FF
+267.84021 624.674194 M 1.24321 0 32 ( ar) widthshow
+279.173523 624.674194 M 1.24321 0 32 (gument speci\336es the size of a b) widthshow
+411.412903 624.674194 M 1.24321 0 32 (uf) widthshow
+419.493042 624.674194 M 1.24321 0 32 (fer that will recei) widthshow
+491.562805 624.674194 M 1.24321 0 32 (v) widthshow
+496.412903 624.674194 M 1.24321 0 32 (e the mes-) widthshow
+216 636.674194 M 2.106888 0 32 (sage; messages that are lar) widthshow
+330.327667 636.674194 M 2.106888 0 32 (ger are not recei) widthshow
+401.088501 636.674194 M 2.106888 0 32 (v) widthshow
+405.938568 636.674194 M 2.106888 0 32 (ed. The ) widthshow
+6 FF
+442.642334 636.674194 M 2.106888 0 32 (r) widthshow
+446.162537 636.674194 M 2.106888 0 32 (eceive_name) widthshow
+4 FF
+497.802551 636.674194 M 2.106888 0 32 ( ar) widthshow
+509.999573 636.674194 M 2.106888 0 32 (gument) widthshow
+(speci\336es the port or port set from which to recei) 216.0 648.674 T
+(v) 407.66 648.674 T
+(e.) 412.51 648.674 T
+216 672.674133 M 3.888657 0 32 (If the ) widthshow
+6 FF
+247.657318 672.674133 M 3.888657 0 32 (option) widthshow
+4 FF
+273.217316 672.674133 M 3.888657 0 32 ( ar) widthshow
+287.196075 672.674133 M 3.888657 0 32 (gument contains both MA) widthshow
+403.182251 672.674133 M 3.888657 0 32 (CH_SEND_MSG and MA) widthshow
+517.779785 672.674133 M 3.888657 0 32 (CH_-) widthshow
+216 684.674133 M 0.656311 0 32 (RCV_MSG, then ) widthshow
+0 FF
+289.262634 684.674133 M 0.656311 0 32 (mach_msg) widthshow
+4 FF
+334.812622 684.674133 M 0.656311 0 32 ( does both send and recei) widthshow
+438.654327 684.674133 M 0.656311 0 32 (v) widthshow
+443.504395 684.674133 M 0.656311 0 32 (e operations \(in that or-) widthshow
+216 696.674072 M 2.506638 0 32 (der\). If the send operation encounters an error \(an) widthshow
+434.443237 696.674072 M 2.506638 0 32 (y return code other than) widthshow
+72 105.984009 108 167 CR
+1 G
+81 114.984009 81 135 NF
+0 G
+0 FF
+(Status:) 81.0 122.651 T
+(Amended f) 81.0 140.651 T
+(or secu-) 127.69 140.651 T
+0 FF
+(rity) 81.0 152.651 T
+(, un-typed ) 96.0 152.651 T
+0 FF
+(data, separate ) 81.0 164.651 T
+(send and r) 81.0 176.651 T
+(ecei) 125.83 176.651 T
+(v) 141.83 176.651 T
+(e ) 146.73 176.651 T
+(b) 81.0 188.651 T
+(uffers and out-of-) 86.36 188.651 T
+(line o) 81.0 200.651 T
+(v) 103.96 200.651 T
+(erwrite, de-) 108.86 200.651 T
+(leted msg-accept-) 81.0 212.651 T
+(ed noti\336cations) 81.0 224.651 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 9 3
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+427 732.706665 M -2.5 0 32 (9 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(mach_msg) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+0 SC
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+108 115.666656 M 1.501389 0 32 (MA) widthshow
+123.71022 115.666656 M 1.501389 0 32 (CH_MSG_SUCCESS\), then the call returns immediately without attempt-) widthshow
+108 127.666641 M 0.702667 0 32 (ing the recei) widthshow
+158.58548 127.666641 M 0.702667 0 32 (v) widthshow
+163.435562 127.666641 M 0.702667 0 32 (e operation. Semantically the combined call is equi) widthshow
+372.524384 127.666641 M 0.702667 0 32 (v) widthshow
+377.274536 127.666641 M 0.702667 0 32 (alent to sepa-) widthshow
+108 139.666626 M 0.735657 0 32 (rate send and recei) widthshow
+184.647125 139.666626 M 0.735657 0 32 (v) widthshow
+189.497208 139.666626 M 0.735657 0 32 (e calls, b) widthshow
+226.038635 139.666626 M 0.735657 0 32 (ut it sa) widthshow
+253.980057 139.666626 M 0.735657 0 32 (v) widthshow
+258.830139 139.666626 M 0.735657 0 32 (es a system call and enables other internal) widthshow
+(optimizations.) 108.0 151.667 T
+108 175.666595 M 2.639877 0 32 (If the ) widthshow
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+137.15976 175.666595 M 2.639877 0 32 (option) widthshow
+3 FF
+162.719757 175.666595 M 2.639877 0 32 ( ar) widthshow
+175.449738 175.666595 M 2.639877 0 32 (gument speci\336es neither MA) widthshow
+298.789612 175.666595 M 2.639877 0 32 (CH_SEND_MSG nor MA) widthshow
+409.779572 175.666595 M 2.639877 0 32 (CH_-) widthshow
+(RCV_MSG, then ) 108.0 187.667 T
+1 FF
+(mach_msg) 179.95 187.667 T
+3 FF
+( does nothing.) 225.5 187.667 T
+108 211.666565 M 1.963806 0 32 (Some options, lik) widthshow
+182.117661 211.666565 M 1.963806 0 32 (e MA) widthshow
+206.731689 211.666565 M 1.963806 0 32 (CH_SEND_TIMEOUT and MA) widthshow
+340.79953 211.666565 M 1.963806 0 32 (CH_RCV_TIMEOUT) widthshow
+429.499939 211.666565 M 1.963806 0 32 (,) widthshow
+108 223.66655 M 0.361588 0 32 (share a supporting ar) widthshow
+192.494873 223.66655 M 0.361588 0 32 (gument. If these options are used together) widthshow
+361.734619 223.66655 M 0.361588 0 32 (, the) widthshow
+379.166321 223.66655 M 0.361588 0 32 (y mak) widthshow
+404.147949 223.66655 M 0.361588 0 32 (e inde-) widthshow
+(pendent use of the supporting ar) 108.0 235.667 T
+(gument\325) 236.41 235.667 T
+(s v) 269.19 235.667 T
+(alue.) 280.331 235.667 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(P) 72.0 267.0 T
+(ARAMETERS) 78.444 267.0 T
+4 FF
+(msg) 108.0 291.667 T
+3 FF
+144 303.666504 M 0.469971 0 32 ([pointer to in/out structure containing random and reply rights] A mes-) widthshow
+144 315.666504 M 0.209915 0 32 (sage b) widthshow
+169.280029 315.666504 M 0.209915 0 32 (uf) widthshow
+177.360168 315.666504 M 0.209915 0 32 (fer used by ) widthshow
+1 FF
+224.919922 315.666504 M 0.209915 0 32 (mach_msg) widthshow
+3 FF
+270.46991 315.666504 M 0.209915 0 32 ( both for send and recei) widthshow
+365.409668 315.666504 M 0.209915 0 32 (v) widthshow
+370.259735 315.666504 M 0.209915 0 32 (e. This must be) widthshow
+(naturally aligned.) 144.0 327.666 T
+4 FF
+(send_msg) 108.0 351.666 T
+3 FF
+144 363.666443 M 1.192963 0 32 ([pointer to in structure containing random and reply rights] The mes-) widthshow
+(sage b) 144.0 375.666 T
+(uf) 169.07 375.666 T
+(fer to be sent. This must be naturally aligned.) 177.15 375.666 T
+4 FF
+(option) 108.0 399.666 T
+3 FF
+144 411.666382 M 1.445496 0 32 ([in scalar] Message options are bit v) widthshow
+297.393127 411.666382 M 1.445496 0 32 (alues, combined with bitwise-or) widthshow
+429.499939 411.666382 M 1.445496 0 32 (.) widthshow
+144 423.666382 M 1.297073 0 32 (One or both of MA) widthshow
+225.99852 423.666382 M 1.297073 0 32 (CH_SEND_MSG and MA) widthshow
+335.412903 423.666382 M 1.297073 0 32 (CH_RCV_MSG should) widthshow
+(be used. Other options act as modi\336ers.) 144.0 435.666 T
+4 FF
+(send_size) 108.0 459.666 T
+3 FF
+144 471.666321 M 0.935394 0 32 ([in scalar] When sending a message, speci\336es the size of the message) widthshow
+144 483.666321 M 0.740738 0 32 (b) widthshow
+148.80011 483.666321 M 0.740738 0 32 (uf) widthshow
+156.880249 483.666321 M 0.740738 0 32 (fer to be sent \(the size of the header and body\) in bytes. Otherwise) widthshow
+(zero should be supplied.) 144.0 495.666 T
+4 FF
+(r) 108.0 519.666 T
+(eceive_limit) 111.52 519.666 T
+3 FF
+144 531.66626 M 1.24794 0 32 ([in scalar] When recei) widthshow
+236.06398 531.66626 M 1.24794 0 32 (ving a message, speci\336es the maximum size of) widthshow
+144 543.66626 M 0.656311 0 32 (the ) widthshow
+4 FF
+159.376312 543.66626 M 0.656311 0 32 (msg) widthshow
+3 FF
+175.486313 543.66626 M 0.656311 0 32 ( or ) widthshow
+4 FF
+190.128937 543.66626 M 0.656311 0 32 (r) widthshow
+193.649139 543.66626 M 0.656311 0 32 (eceive_msg) widthshow
+3 FF
+239.739151 543.66626 M 0.656311 0 32 ( b) widthshow
+247.695572 543.66626 M 0.656311 0 32 (uf) widthshow
+255.775711 543.66626 M 0.656311 0 32 (fer in bytes. Otherwise zero should be sup-) widthshow
+(plied.) 144.0 555.666 T
+4 FF
+(r) 108.0 579.666 T
+(eceive_name) 111.52 579.666 T
+3 FF
+144 591.666199 M 0.704498 0 32 ([in random right] When recei) widthshow
+263.758148 591.666199 M 0.704498 0 32 (ving a message, speci\336es the port or port) widthshow
+(set. Otherwise MA) 144.0 603.666 T
+(CH_POR) 219.42 603.666 T
+(T_NULL should be supplied.) 257.161 603.666 T
+4 FF
+(timeout) 108.0 627.666 T
+3 FF
+144 639.666138 M 1.699905 0 32 ([in scalar] When using the MA) widthshow
+276.239746 639.666138 M 1.699905 0 32 (CH_SEND_TIMEOUT and MA) widthshow
+409.779785 639.666138 M 1.699905 0 32 (CH_-) widthshow
+144 651.666138 M 0.283279 0 32 (RCV_TIMEOUT options, speci\336es the time in milliseconds to w) widthshow
+406.446289 651.666138 M 0.283279 0 32 (ait be-) widthshow
+144 663.666138 M 0.47493 0 32 (fore gi) widthshow
+170.605072 663.666138 M 0.47493 0 32 (ving up. Otherwise MA) widthshow
+266.620087 663.666138 M 0.47493 0 32 (CH_MSG_TIMEOUT_NONE should be) widthshow
+(supplied.) 144.0 675.666 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 10 4
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(10 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(IPC Interface) 180.0 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Italic) 10 1 mymakefontmetric
+3 FF
+(notify) 216.0 113.651 T
+4 (Times-Roman) 10 1 mymakefontmetric
+4 FF
+252 125.65065 M 0.54866 0 32 ([in notify recei) widthshow
+312.277466 125.65065 M 0.54866 0 32 (v) widthshow
+317.127563 125.65065 M 0.54866 0 32 (e right] When using the MA) widthshow
+432.511078 125.65065 M 0.54866 0 32 (CH_SEND_CANCEL and) widthshow
+252 137.650635 M 0.164825 0 32 (MA) widthshow
+267.710205 137.650635 M 0.164825 0 32 (CH_RCV_NO) widthshow
+326.200439 137.650635 M 0.164825 0 32 (TIFY options, speci\336es the port used for the noti\336ca-) widthshow
+(tion. Otherwise MA) 252.0 149.651 T
+(CH_POR) 331.87 149.651 T
+(T_NULL should be supplied.) 369.611 149.651 T
+3 FF
+(r) 216.0 173.651 T
+(eceive_msg) 219.52 173.651 T
+4 FF
+252 185.650589 M 1.84993 0 32 ([pointer to in/out structure] A message b) widthshow
+425.099701 185.650589 M 1.84993 0 32 (uf) widthshow
+433.17984 185.650589 M 1.84993 0 32 (fer into which a message) widthshow
+252 197.650574 M 0.540878 0 32 (\(header and body\) will be recei) widthshow
+379.134552 197.650574 M 0.540878 0 32 (v) widthshow
+383.984619 197.650574 M 0.540878 0 32 (ed. This must be naturally aligned. By) widthshow
+252 209.650558 M 2.481155 0 32 (def) widthshow
+264.670044 209.650558 M 2.481155 0 32 (ault \() widthshow
+0 FF
+287.981201 209.650558 M 2.481155 0 32 (mach_msg) widthshow
+4 FF
+333.531219 209.650558 M 2.481155 0 32 (\), an) widthshow
+353.632446 209.650558 M 2.481155 0 32 (y recei) widthshow
+382.793762 209.650558 M 2.481155 0 32 (v) widthshow
+387.64386 209.650558 M 2.481155 0 32 (ed message will o) widthshow
+466.317383 209.650558 M 2.481155 0 32 (v) widthshow
+471.16748 209.650558 M 2.481155 0 32 (erwrite the send) widthshow
+252 221.650543 M 0.844269 0 32 (message b) widthshow
+294.024384 221.650543 M 0.844269 0 32 (uf) widthshow
+302.104523 221.650543 M 0.844269 0 32 (fer) widthshow
+312.654846 221.650543 M 0.844269 0 32 (. This b) widthshow
+344.423462 221.650543 M 0.844269 0 32 (uf) widthshow
+352.503601 221.650543 M 0.844269 0 32 (fer is in/out only if the MA) widthshow
+465.499451 221.650543 M 0.844269 0 32 (CH_RCV_O) widthshow
+516.669739 221.650543 M 0.844269 0 32 (VER-) widthshow
+(WRITE option is used; otherwise this b) 252.0 233.651 T
+(uf) 410.13 233.651 T
+(fer is out only) 418.21 233.651 T
+(.) 473.391 233.651 T
+3 FF
+(r) 216.0 257.651 T
+(eceive_msg_size) 219.52 257.651 T
+4 FF
+252 269.650513 M 0.719864 0 32 ([in scalar] When using the MA) widthshow
+379.339539 269.650513 M 0.719864 0 32 (CH_RCV_O) widthshow
+430.509827 269.650513 M 0.719864 0 32 (VER) widthshow
+449.960144 269.650513 M 0.719864 0 32 (WRITE option, speci-) widthshow
+252 281.650482 M 1.199219 0 32 <de6573207468652073697a652028696e20627974657329206f6620746865207265636569> widthshow
+394.834686 281.650482 M 1.199219 0 32 (v) widthshow
+399.684753 281.650482 M 1.199219 0 32 (e \322message\323 that is to be used by) widthshow
+0 FF
+(mach_msg) 252.0 293.65 T
+4 FF
+( to indicate the disposition of recei) 297.55 293.65 T
+(v) 435.62 293.65 T
+(ed out-of-line re) 440.47 293.65 T
+(gions.) 505.3 293.65 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(NO) 180.0 324.984 T
+(TES) 197.52 324.984 T
+4 FF
+216 341.650452 M 3.6716 0 32 (The Mach k) widthshow
+271.563263 341.650452 M 3.6716 0 32 (ernel pro) widthshow
+310.904968 341.650452 M 3.6716 0 32 (vides message-oriented, capability-based inter) widthshow
+506.679871 341.650452 M 3.6716 0 32 (-process) widthshow
+216 353.650452 M 2.063171 0 32 (communication. The inter) widthshow
+323.526459 353.650452 M 2.063171 0 32 (-process communication \(IPC\) primiti) widthshow
+481.956116 353.650452 M 2.063171 0 32 (v) widthshow
+486.806213 353.650452 M 2.063171 0 32 (es ef) widthshow
+507.219513 353.650452 M 2.063171 0 32 <de6369656e746c79> widthshow
+216 365.650421 M 1.389954 0 32 (support man) widthshow
+266.960022 365.650421 M 1.389954 0 32 (y dif) widthshow
+286.710144 365.650421 M 1.389954 0 32 (ferent styles of interaction, including remote procedure calls,) widthshow
+216 377.650391 M 1.729965 0 32 (object-oriented distrib) widthshow
+306.130066 377.650391 M 1.729965 0 32 (uted programming, streaming of data, and sending v) widthshow
+527.229919 377.650391 M 1.729965 0 32 (ery) widthshow
+(lar) 216.0 389.65 T
+(ge amounts of data.) 226.37 389.65 T
+0 FF
+(Major Concepts) 180.0 413.65 T
+4 FF
+216 426.65036 M 0.403595 0 32 (The IPC primiti) widthshow
+279.897339 426.65036 M 0.403595 0 32 (v) widthshow
+284.747406 426.65036 M 0.403595 0 32 (es operate on three abstractions: messages, ports, and port sets.) widthshow
+216 438.65033 M 1.226654 0 32 (User tasks access all other k) widthshow
+334.503357 438.65033 M 1.226654 0 32 (ernel services and abstractions via the IPC primi-) widthshow
+(ti) 216.0 450.65 T
+(v) 221.31 450.65 T
+(es.) 226.16 450.65 T
+216 474.65033 M 0.160782 0 32 (The message primiti) widthshow
+297.731689 474.65033 M 0.160782 0 32 (v) widthshow
+302.581787 474.65033 M 0.160782 0 32 (es let tasks send and recei) widthshow
+406.165833 474.65033 M 0.160782 0 32 (v) widthshow
+411.01593 474.65033 M 0.160782 0 32 (e messages. T) widthshow
+466.357941 474.65033 M 0.160782 0 32 (asks send messag-) widthshow
+216 486.650299 M 0.497086 0 32 (es to ports. Messages sent to a port are deli) widthshow
+391.863922 486.650299 M 0.497086 0 32 (v) widthshow
+396.713989 486.650299 M 0.497086 0 32 (ered reliably \(messages may not be) widthshow
+216 498.650269 M 0.774948 0 32 (lost\) and are recei) widthshow
+289.434998 498.650269 M 0.774948 0 32 (v) widthshow
+294.285095 498.650269 M 0.774948 0 32 (ed in the order in which the) widthshow
+408.764862 498.650269 M 0.774948 0 32 (y were sent via send rights by a) widthshow
+216 510.650269 M 1.224091 0 32 (gi) widthshow
+223.530136 510.650269 M 1.224091 0 32 (v) widthshow
+228.380219 510.650269 M 1.224091 0 32 (en sending task \(or a gi) widthshow
+327.290833 510.650269 M 1.224091 0 32 (v) widthshow
+332.1409 510.650269 M 1.224091 0 32 (en k) widthshow
+350.205048 510.650269 M 1.224091 0 32 (ernel\). \(Messages sent to send-once rights are) widthshow
+216 522.650269 M 0.932114 0 32 (unordered.\) Messages contain a \336x) widthshow
+359.268555 522.650269 M 0.932114 0 32 (ed-size header and a v) widthshow
+451.597168 522.650269 M 0.932114 0 32 (ariable-sized message) widthshow
+216 534.650269 M 1.419937 0 32 (body containing k) widthshow
+290.95993 534.650269 M 1.419937 0 32 (ernel and user data, and a v) widthshow
+408.359711 534.650269 M 1.419937 0 32 (ariable-size trailer of k) widthshow
+503.31958 534.650269 M 1.419937 0 32 (ernel ap-) widthshow
+216 546.650208 M 0.74176 0 32 (pended message attrib) widthshow
+306.153625 546.650208 M 0.74176 0 32 (utes. The header describes the destination and the size of) widthshow
+216 558.650208 M 0.520889 0 32 (the message \(header plus body\). The message body contains descriptions of ad-) widthshow
+216 570.650208 M 1.208984 0 32 (ditional port rights to be transmitted, descriptions of \322out-of-line\323 memory re-) widthshow
+216 582.650146 M 1.441498 0 32 (gions to be sent and a v) widthshow
+318.279114 582.650146 M 1.441498 0 32 (ariable amount of user data, which typically includes) widthshow
+216 594.650146 M 0.488663 0 32 (type con) widthshow
+250.248886 594.650146 M 0.488663 0 32 (v) widthshow
+255.098969 594.650146 M 0.488663 0 32 (ersion information. The out-of-line memory re) widthshow
+443.472382 594.650146 M 0.488663 0 32 (gions \(including out-of-) widthshow
+(line port arrays\) are \(typically\) disjoint from the message body) 216.0 606.65 T
+(.) 466.14 606.65 T
+216 630.650146 M 1.888123 0 32 (The IPC implementation mak) widthshow
+340.174438 630.650146 M 1.888123 0 32 (es use of the VM system to ef) widthshow
+472.291443 630.650146 M 1.888123 0 32 <de6369656e746c79207472616e73666572> widthshow
+216 642.650146 M 0.680725 0 32 (lar) widthshow
+226.370102 642.650146 M 0.680725 0 32 (ge amounts of data. The message can contain the addresses of re) widthshow
+491.418213 642.650146 M 0.680725 0 32 (gions of the) widthshow
+216 654.650085 M 2.441742 0 32 (sender\325) widthshow
+244.88031 654.650085 M 2.441742 0 32 (s address space which should be transferred as part of the message.) widthshow
+216 666.650085 M 0.54744 0 32 (When a task recei) widthshow
+288.752472 666.650085 M 0.54744 0 32 (v) widthshow
+293.602539 666.650085 M 0.54744 0 32 (es a message containing such out-of-line re) widthshow
+469.477295 666.650085 M 0.54744 0 32 (gions of data, the) widthshow
+216 678.650085 M 0.089188 0 32 (data can appear in unused portions or o) widthshow
+373.384399 678.650085 M 0.089188 0 32 (v) widthshow
+378.234497 678.650085 M 0.089188 0 32 (erwrite an e) widthshow
+425.462952 678.650085 M 0.089188 0 32 (xisting portion of the recei) widthshow
+531.669861 678.650085 M 0.089188 0 32 (v-) widthshow
+216 690.650024 M 1.415894 0 32 (er\325) widthshow
+226.550308 690.650024 M 1.415894 0 32 (s address space \(depending on the requested recei) widthshow
+434.761719 690.650024 M 1.415894 0 32 (v) widthshow
+439.611816 690.650024 M 1.415894 0 32 (e options\). Under f) widthshow
+519.299561 690.650024 M 1.415894 0 32 (a) widthshow
+523.539673 690.650024 M 1.415894 0 32 (v) widthshow
+528.339783 690.650024 M 1.415894 0 32 (or-) widthshow
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 11 5
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (11 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(mach_msg) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+108 115.666656 M 1.985962 0 32 (able circumstances, this transmission of out-of-line data is optimized so that) widthshow
+108 127.666641 M 0.318298 0 32 (sender and recei) widthshow
+173.35675 127.666641 M 0.318298 0 32 (v) widthshow
+178.206833 127.666641 M 0.318298 0 32 (er share the ph) widthshow
+237.701767 127.666641 M 0.318298 0 32 (ysical pages of data cop) widthshow
+334.405029 127.666641 M 0.318298 0 32 (y-on-write, and no actu-) widthshow
+108 139.666626 M 0.39798 0 32 (al data cop) widthshow
+152.016022 139.666626 M 0.39798 0 32 (y occurs unless the pages are written. Re) widthshow
+317.391968 139.666626 M 0.39798 0 32 (gions of memory up to 4 gi-) widthshow
+(g) 108.0 151.667 T
+(abytes may be sent in this manner) 112.95 151.667 T
+(.) 247.94 151.667 T
+108 175.666595 M 0.017929 0 32 (Ports hold a queue of messages. T) widthshow
+243.678024 175.666595 M 0.017929 0 32 (asks operate on a port to send and recei) widthshow
+400.751617 175.666595 M 0.017929 0 32 (v) widthshow
+405.601685 175.666595 M 0.017929 0 32 (e mes-) widthshow
+108 187.66658 M 1.859055 0 32 (sages by e) widthshow
+152.668198 187.66658 M 1.859055 0 32 (x) widthshow
+157.51828 187.66658 M 1.859055 0 32 (ercising capabilities \(rights\) for the port. Multiple tasks can hold) widthshow
+108 199.666565 M 0.108521 0 32 (send rights for a port. T) widthshow
+202.17305 199.666565 M 0.108521 0 32 (asks can also hold send-once rights, which grant the abil-) widthshow
+108 211.66655 M 0.774948 0 32 (ity to send a single message. Only one task can hold the recei) widthshow
+362.289551 211.66655 M 0.774948 0 32 (v) widthshow
+367.139618 211.66655 M 0.774948 0 32 (e capability \(re-) widthshow
+108 223.666534 M 3.729126 0 32 (cei) widthshow
+119.410141 223.666534 M 3.729126 0 32 (v) widthshow
+124.260223 223.666534 M 3.729126 0 32 (e right\) for a port. Port rights can be transferred between tasks via) widthshow
+108 235.666519 M 0.3992 0 32 (messages. The sender of a message can specify in the message that the message) widthshow
+108 247.666504 M 0.210571 0 32 (contains a port right. If a message contains a recei) widthshow
+309.595306 247.666504 M 0.210571 0 32 (v) widthshow
+314.445374 247.666504 M 0.210571 0 32 (e right for a port, then the re-) widthshow
+108 259.666504 M 1.490662 0 32 (cei) widthshow
+119.410141 259.666504 M 1.490662 0 32 (v) widthshow
+124.260223 259.666504 M 1.490662 0 32 (e right is remo) widthshow
+186.632294 259.666504 M 1.490662 0 32 (v) widthshow
+191.482376 259.666504 M 1.490662 0 32 (ed from the sender of the message and the right is trans-) widthshow
+108 271.666473 M 0.744934 0 32 (ferred to the recei) widthshow
+180.784958 271.666473 M 0.744934 0 32 (v) widthshow
+185.63504 271.666473 M 0.744934 0 32 (er of the message. While the recei) widthshow
+325.644806 271.666473 M 0.744934 0 32 (v) widthshow
+330.494873 271.666473 M 0.744934 0 32 (e right is in transit, tasks) widthshow
+108 283.666443 M 0.199234 0 32 (holding send rights can still send messages to the port, and the) widthshow
+359.47168 283.666443 M 0.199234 0 32 (y are queued until) widthshow
+(a task acquires the recei) 108.0 295.666 T
+(v) 203.27 295.666 T
+(e right and uses it to recei) 208.12 295.666 T
+(v) 310.63 295.666 T
+(e the messages.) 315.48 295.666 T
+108 319.666443 M 0.319931 0 32 (T) widthshow
+113.31044 319.666443 M 0.319931 0 32 (asks can recei) widthshow
+169.230453 319.666443 M 0.319931 0 32 (v) widthshow
+174.080536 319.666443 M 0.319931 0 32 (e messages from ports and port sets. The port set abstraction al-) widthshow
+108 331.666412 M 0.606567 0 32 (lo) widthshow
+115.530136 331.666412 M 0.606567 0 32 (ws a single thread to w) widthshow
+210.393036 331.666412 M 0.606567 0 32 (ait for a message from an) widthshow
+314.635986 331.666412 M 0.606567 0 32 (y of se) widthshow
+342.259247 331.666412 M 0.606567 0 32 (v) widthshow
+347.109314 331.666412 M 0.606567 0 32 (eral ports. T) widthshow
+396.122925 331.666412 M 0.606567 0 32 (asks ma-) widthshow
+108 343.666382 M 1.823532 0 32 (nipulate port sets with a port set name, which is tak) widthshow
+331.395386 343.666382 M 1.823532 0 32 (en from the same name) widthshow
+108 355.666382 M 0.531311 0 32 (space as are the port rights. The port-set name may not be transferred in a mes-) widthshow
+108 367.666382 M 0.231934 0 32 (sage. A port set holds recei) widthshow
+217.219818 367.666382 M 0.231934 0 32 (v) widthshow
+222.069901 367.666382 M 0.231934 0 32 (e rights, and a recei) widthshow
+300.777771 367.666382 M 0.231934 0 32 (v) widthshow
+305.627869 367.666382 M 0.231934 0 32 (e operation on a port set blocks) widthshow
+108 379.666351 M 1.026642 0 32 (w) widthshow
+115.120056 379.666351 M 1.026642 0 32 (aiting for a message sent to an) widthshow
+242.220001 379.666351 M 1.026642 0 32 (y of the constituent ports. A port may not be-) widthshow
+108 391.666321 M 0.198395 0 32 (long to more than one port set, and if a port is a member of a port set, the holder) widthshow
+(of the recei) 108.0 403.666 T
+(v) 152.73 403.666 T
+(e right can\325) 157.58 403.666 T
+(t recei) 202.94 403.666 T
+(v) 227.4 403.666 T
+(e directly from the port.) 232.251 403.666 T
+108 427.666321 M 1.716339 0 32 (Port rights are a secure, location-independent w) widthshow
+308.988098 427.666321 M 1.716339 0 32 (ay of naming ports. The port) widthshow
+108 439.66629 M 1.908112 0 32 (queue is a protected data structure, only accessible via the k) widthshow
+366.091187 439.66629 M 1.908112 0 32 (ernel\325) widthshow
+388.861511 439.66629 M 1.908112 0 32 (s e) widthshow
+401.449707 439.66629 M 1.908112 0 32 (xported) widthshow
+108 451.66626 M 0.656891 0 32 (message primiti) widthshow
+172.017029 451.66626 M 0.656891 0 32 (v) widthshow
+176.867111 451.66626 M 0.656891 0 32 (es. Rights are also protected by the k) widthshow
+328.56543 451.66626 M 0.656891 0 32 (ernel; there is no w) widthshow
+407.743042 451.66626 M 0.656891 0 32 (ay for) widthshow
+108 463.66626 M 1.177292 0 32 (a malicious user task to guess a port\325) widthshow
+263.171356 463.66626 M 1.177292 0 32 (s internal name and send a message to a) widthshow
+108 475.66626 M 0.75351 0 32 (port to which it shouldn\325) widthshow
+209.724136 475.66626 M 0.75351 0 32 (t ha) widthshow
+224.997757 475.66626 M 0.75351 0 32 (v) widthshow
+229.847839 475.66626 M 0.75351 0 32 (e access. Port rights do not carry an) widthshow
+377.162506 475.66626 M 0.75351 0 32 (y location in-) widthshow
+108 487.666229 M 0.215256 0 32 (formation. When a recei) widthshow
+205.585922 487.666229 M 0.215256 0 32 (v) widthshow
+210.436005 487.666229 M 0.215256 0 32 (e right for a port mo) widthshow
+292.182373 487.666229 M 0.215256 0 32 (v) widthshow
+297.032471 487.666229 M 0.215256 0 32 (es from task to task, and e) widthshow
+402.224121 487.666229 M 0.215256 0 32 (v) widthshow
+407.074219 487.666229 M 0.215256 0 32 (en be-) widthshow
+108 499.666199 M 4.279968 0 32 (tween tasks on dif) widthshow
+193.080048 499.666199 M 4.279968 0 32 (ferent machines, the send rights for the port remain) widthshow
+(unchanged and continue to function.) 108.0 511.666 T
+1 FF
+(P) 72.0 535.666 T
+(ort Rights) 77.91 535.666 T
+3 FF
+108 548.666138 M 0.989227 0 32 (Each task has its o) widthshow
+185.587051 548.666138 M 0.989227 0 32 (wn space of port rights. Port rights are named with positi) widthshow
+422.709473 548.666138 M 0.989227 0 32 (v) widthshow
+427.55957 548.666138 M 0.989227 0 32 (e) widthshow
+108 560.666138 M 0.355484 0 32 (\(unsigned\) inte) widthshow
+168.475571 560.666138 M 0.355484 0 32 (gers. F) widthshow
+195.901138 560.666138 M 0.355484 0 32 (or all architectures, sizeof \() widthshow
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+306.453094 560.666138 M 0.355484 0 32 (mac) widthshow
+322.963196 560.666138 M 0.355484 0 32 (h_port_t) widthshow
+3 FF
+357.413177 560.666138 M 0.355484 0 32 (\) = sizeof \() widthshow
+4 FF
+402.159637 560.666138 M 0.355484 0 32 (mac) widthshow
+418.669739 560.666138 M 0.355484 0 32 (h_-) widthshow
+108 572.666138 M 0.642273 0 32 (port_name_t) widthshow
+3 FF
+159.110001 572.666138 M 0.642273 0 32 (\) = sizeof \(v) widthshow
+209.516937 572.666138 M 0.642273 0 32 (oid*\) and so user space addresses may be used as port) widthshow
+108 584.666138 M 1.038742 0 32 (names, e) widthshow
+143.87883 584.666138 M 1.038742 0 32 (xcept for the reserv) widthshow
+224.315155 584.666138 M 1.038742 0 32 (ed v) widthshow
+242.044037 584.666138 M 1.038742 0 32 (alues MA) widthshow
+281.843018 584.666138 M 1.038742 0 32 (CH_POR) widthshow
+319.583313 584.666138 M 1.038742 0 32 (T_NULL \(0\) and MA) widthshow
+409.779785 584.666138 M 1.038742 0 32 (CH_-) widthshow
+108 596.666138 M 1.731491 0 32 (POR) widthshow
+126.850327 596.666138 M 1.731491 0 32 (T_DEAD \(all 1 bits\). When the k) widthshow
+270.72934 596.666138 M 1.731491 0 32 (ernel chooses a name for a ne) widthshow
+399.158447 596.666138 M 1.731491 0 32 (w right,) widthshow
+108 608.666077 M 0.572586 0 32 (ho) widthshow
+117.750137 608.666077 M 0.572586 0 32 (we) widthshow
+129.160278 608.666077 M 0.572586 0 32 (v) widthshow
+134.010361 608.666077 M 0.572586 0 32 (er) widthshow
+141.380585 608.666077 M 0.572586 0 32 (, it is free to pick an) widthshow
+224.37619 608.666077 M 0.572586 0 32 (y unused name \(one which denotes no right\) in the) widthshow
+(space.) 108.0 620.666 T
+108 644.666077 M 1.044113 0 32 (There are three basic kinds of rights: recei) widthshow
+283.618958 644.666077 M 1.044113 0 32 (v) widthshow
+288.469055 644.666077 M 1.044113 0 32 (e rights, send rights and send-once) widthshow
+108 656.666016 M 0.211212 0 32 (rights. A port name can name an) widthshow
+239.367371 656.666016 M 0.211212 0 32 (y of these types of rights, or name a port-set, be) widthshow
+108 668.666016 M 1.606903 0 32 (a dead name, or name nothing. Dead names are not capabilities. The) widthshow
+398.796051 668.666016 M 1.606903 0 32 (y act as) widthshow
+(place-holders to pre) 108.0 680.666 T
+(v) 187.17 680.666 T
+(ent a name from being otherwise used.) 192.02 680.666 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 12 6
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(12 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(IPC Interface) 180.0 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+216 113.650665 M 0.70282 0 32 (A port is destro) widthshow
+279.948517 113.650665 M 0.70282 0 32 (yed, or dies, when its recei) widthshow
+390.132751 113.650665 M 0.70282 0 32 (v) widthshow
+394.982849 113.650665 M 0.70282 0 32 (e right is de-allocated. When a port) widthshow
+216 125.65065 M 0.259201 0 32 (dies, send and send-once rights for the port turn into dead names. An) widthshow
+494.47052 125.65065 M 0.259201 0 32 (y messages) widthshow
+216 137.650635 M 0.879974 0 32 (queued at the port are destro) widthshow
+333.879944 137.650635 M 0.879974 0 32 (yed, which de-allocates the port rights and out-of-) widthshow
+(line memory in the messages. ) 216.0 149.651 T
+216 173.650604 M 1.222107 0 32 (Each send-once right held by a task has a dif) widthshow
+405.319122 173.650604 M 1.222107 0 32 (ferent name. In contrast, when a) widthshow
+(task holds send rights or a recei) 216.0 185.651 T
+(v) 341.84 185.651 T
+(e right for a port, the rights share a single name.) 346.69 185.651 T
+216 209.650574 M 0.479919 0 32 (T) widthshow
+221.31044 209.650574 M 0.479919 0 32 (asks may hold multiple user) widthshow
+335.250244 209.650574 M 0.479919 0 32 (-references for send rights. When a task recei) widthshow
+519.399841 209.650574 M 0.479919 0 32 (v) widthshow
+524.249939 209.650574 M 0.479919 0 32 (es a) widthshow
+216 221.650558 M 1.356308 0 32 (send right which it already holds, the k) widthshow
+380.934204 221.650558 M 1.356308 0 32 (ernel increments the right\325) widthshow
+490.263458 221.650558 M 1.356308 0 32 (s user) widthshow
+514.469849 221.650558 M 1.356308 0 32 (-refer-) widthshow
+216 233.650543 M 0.016891 0 32 (ence count. When a task de-allocates a send right, the k) widthshow
+437.679016 233.650543 M 0.016891 0 32 (ernel decrements its user) widthshow
+536.6698 233.650543 M 0.016891 0 32 (-) widthshow
+216 245.650528 M 1.063538 0 32 (reference count, and the task only loses the send right when the count goes to) widthshow
+(zero.) 216.0 257.651 T
+216 281.650513 M 1.633255 0 32 (Send-once rights al) widthshow
+296.376587 281.650513 M 1.633255 0 32 (w) widthshow
+303.496643 281.650513 M 1.633255 0 32 (ays ha) widthshow
+330.200012 281.650513 M 1.633255 0 32 (v) widthshow
+335.050079 281.650513 M 1.633255 0 32 (e a user reference count of one. T) widthshow
+479.513336 281.650513 M 1.633255 0 32 (asks may hold) widthshow
+(multiple user references for dead names.) 216.0 293.65 T
+216 317.650452 M 1.12999 0 32 (Each send-once right generated guarantees the receipt of a single message, ei-) widthshow
+216 329.650452 M 1.15863 0 32 (ther a message sent to that send-once right or) widthshow
+405.389282 329.650452 M 1.15863 0 32 (, if the send-once right is in an) widthshow
+534.999756 329.650452 M 1.15863 0 32 (y) widthshow
+(w) 216.0 341.65 T
+(ay destro) 223.12 341.65 T
+(yed, a send-once noti\336cation.) 259.4 341.65 T
+216 365.650421 M 1.247437 0 32 (A message can carry port rights; the ) widthshow
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+371.64209 365.650421 M 1.247437 0 32 (msgh_r) widthshow
+401.272278 365.650421 M 1.247437 0 32 (emote) widthshow
+3 FF
+425.152283 365.650421 M 1.247437 0 32 ( or ) widthshow
+4 FF
+440.977173 365.650421 M 1.247437 0 32 (msgh_local) widthshow
+3 FF
+487.087158 365.650421 M 1.247437 0 32 ( \336elds in the) widthshow
+216 377.650391 M 0.337448 0 32 (message header or the ) widthshow
+4 FF
+308.42981 377.650391 M 0.337448 0 32 (disposition) widthshow
+3 FF
+352.329803 377.650391 M 0.337448 0 32 ( \336eld in a message body descriptor specify the) widthshow
+216 389.650391 M 0.816193 0 32 (type of port right and ho) widthshow
+317.321106 389.650391 M 0.816193 0 32 (w the port right is to be e) widthshow
+423.154541 389.650391 M 0.816193 0 32 (xtracted from the caller) widthshow
+518.633423 389.650391 M 0.816193 0 32 (. The) widthshow
+216 401.650391 M 0.510941 0 32 (v) widthshow
+220.750137 401.650391 M 0.510941 0 32 (alues MA) widthshow
+260.021301 401.650391 M 0.510941 0 32 (CH_POR) widthshow
+297.761627 401.650391 M 0.510941 0 32 (T_NULL and MA) widthshow
+371.703735 401.650391 M 0.510941 0 32 (CH_POR) widthshow
+409.444061 401.650391 M 0.510941 0 32 (T_DEAD are v) widthshow
+471.306091 401.650391 M 0.510941 0 32 (alid in place of a) widthshow
+(port right in a message body) 216.0 413.65 T
+(.) 328.95 413.65 T
+216 437.65033 M 2.065506 0 32 (In a sent message, the follo) widthshow
+334.947693 437.65033 M 2.065506 0 32 (wing ) widthshow
+4 FF
+359.513184 437.65033 M 2.065506 0 32 (mac) widthshow
+376.023254 437.65033 M 2.065506 0 32 (h_msg_type_name_t) widthshow
+3 FF
+458.233276 437.65033 M 2.065506 0 32 ( v) widthshow
+467.54892 437.65033 M 2.065506 0 32 (alues denote port) widthshow
+(rights:) 216.0 449.65 T
+(MA) 216.0 473.65 T
+(CH_MSG_TYPE_MAKE_SEND) 231.71 473.65 T
+252 485.650299 M 1.318436 0 32 (The message will carry a send right, b) widthshow
+413.219177 485.650299 M 1.318436 0 32 (ut the caller must supply a re-) widthshow
+252 497.650269 M 0.447647 0 32 (cei) widthshow
+263.410156 497.650269 M 0.447647 0 32 (v) widthshow
+268.260223 497.650269 M 0.447647 0 32 (e right. The send right is created from the recei) widthshow
+459.769226 497.650269 M 0.447647 0 32 (v) widthshow
+464.619293 497.650269 M 0.447647 0 32 (e right, and the re-) widthshow
+(cei) 252.0 509.65 T
+(v) 263.41 509.65 T
+(e right\325) 268.26 509.65 T
+(s mak) 296.871 509.65 T
+(e-send count is incremented.) 320.381 509.65 T
+(MA) 216.0 533.65 T
+(CH_MSG_TYPE_COPY_SEND) 231.71 533.65 T
+252 545.650269 M 0.619202 0 32 (The message will carry a send right, and the caller must supply a send) widthshow
+252 557.650208 M 3.004532 0 32 (right. The user reference count for the supplied send right is not) widthshow
+252 569.650208 M 1.665421 0 32 (changed. The caller may also supply a dead name and the recei) widthshow
+522.219788 569.650208 M 1.665421 0 32 (ving) widthshow
+(task will get MA) 252.0 581.65 T
+(CH_POR) 319.1 581.65 T
+(T_DEAD.) 356.841 581.65 T
+(MA) 216.0 605.65 T
+(CH_MSG_TYPE_MO) 231.71 605.65 T
+(VE_SEND) 322.88 605.65 T
+252 617.650146 M 0.619202 0 32 (The message will carry a send right, and the caller must supply a send) widthshow
+252 629.650146 M 0.07724 0 32 (right. The user reference count for the supplied send right is decrement-) widthshow
+252 641.650146 M 1.119186 0 32 (ed, and the right is destro) widthshow
+358.596008 641.650146 M 1.119186 0 32 (yed if the count becomes zero. Unless a re-) widthshow
+252 653.650146 M 2.273254 0 32 (cei) widthshow
+263.410156 653.650146 M 2.273254 0 32 (v) widthshow
+268.260223 653.650146 M 2.273254 0 32 (e right remains, the name becomes a) widthshow
+427.499878 653.650146 M 2.273254 0 32 (v) widthshow
+432.25 653.650146 M 2.273254 0 32 (ailable for rec) widthshow
+492.176636 653.650146 M 2.273254 0 32 (ycling. The) widthshow
+252 665.650085 M 0.719986 0 32 (caller may also supply a dead name, which loses a user reference, and) widthshow
+(the recei) 252.0 677.65 T
+(ving task will get MA) 285.9 677.65 T
+(CH_POR) 373.28 677.65 T
+(T_DEAD.) 411.021 677.65 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 13 7
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (13 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(mach_msg) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(MA) 108.0 115.667 T
+(CH_MSG_TYPE_MAKE_SEND_ONCE) 123.71 115.667 T
+144 127.666641 M 0.710785 0 32 (The message will carry a send-once right, b) widthshow
+323.175629 127.666641 M 0.710785 0 32 (ut the caller must supply a) widthshow
+144 139.666626 M 2.10994 0 32 (recei) widthshow
+163.180145 139.666626 M 2.10994 0 32 (v) widthshow
+168.030228 139.666626 M 2.10994 0 32 (e right. The send-once right is created from the recei) widthshow
+396.709839 139.666626 M 2.10994 0 32 (v) widthshow
+401.559937 139.666626 M 2.10994 0 32 (e right.) widthshow
+(Note that send once rights can only be created from the recei) 144.0 151.667 T
+(v) 386.74 151.667 T
+(e right.) 391.59 151.667 T
+(MA) 108.0 175.667 T
+(CH_MSG_TYPE_MO) 123.71 175.667 T
+(VE_SEND_ONCE) 214.88 175.667 T
+144 187.66658 M 0.555801 0 32 (The message will carry a send-once right, and the caller must supply a) widthshow
+144 199.666565 M 0.194962 0 32 (send-once right. The caller loses the supplied send-once right. The call-) widthshow
+144 211.66655 M 0.643036 0 32 (er may also supply a dead name, which loses a user reference, and the) widthshow
+(recei) 144.0 223.667 T
+(ving task will get MA) 163.18 223.667 T
+(CH_POR) 250.56 223.667 T
+(T_DEAD.) 288.301 223.667 T
+(MA) 108.0 247.667 T
+(CH_MSG_TYPE_MO) 123.71 247.667 T
+(VE_RECEIVE) 214.88 247.667 T
+144 259.666504 M 0.395355 0 32 (The message will carry a recei) widthshow
+267.626953 259.666504 M 0.395355 0 32 (v) widthshow
+272.47702 259.666504 M 0.395355 0 32 (e right, and the caller must supply a re-) widthshow
+144 271.666504 M 1.013565 0 32 (cei) widthshow
+155.410141 271.666504 M 1.013565 0 32 (v) widthshow
+160.260223 271.666504 M 1.013565 0 32 (e right. The caller loses the supplied recei) widthshow
+333.735352 271.666504 M 1.013565 0 32 (v) widthshow
+338.585419 271.666504 M 1.013565 0 32 (e right, b) widthshow
+376.242676 271.666504 M 1.013565 0 32 (ut retains an) widthshow
+426.999878 271.666504 M 1.013565 0 32 (y) widthshow
+144 283.666473 M 1.509964 0 32 (send rights with the same name. The mak) widthshow
+320.559814 283.666473 M 1.509964 0 32 (e-send count and sequence) widthshow
+144 295.666443 M 0.493576 0 32 (number of the recei) widthshow
+223.26088 295.666443 M 0.493576 0 32 (v) widthshow
+228.110962 295.666443 M 0.493576 0 32 (e right are reset to zero and no-more-senders noti-) widthshow
+144 307.666443 M 0.308792 0 32 <de636174696f6e207265717565737473206172652063616e63656c6c656420287769746820612073656e642d6f6e6365206e6f7469de636174696f6e206265696e672073656e74> widthshow
+144 319.666443 M 0.684921 0 32 (to the no-more-senders noti\336cation right\), b) widthshow
+322.204712 319.666443 M 0.684921 0 32 (ut the port retains other at-) widthshow
+(trib) 144.0 331.666 T
+(utes lik) 157.69 331.666 T
+(e queued messages and e) 186.76 331.666 T
+(xtant send and send-once rights.) 286.58 331.666 T
+108 355.666382 M 0.605316 0 32 (If a message carries a send or send-once right, and the port dies while the mes-) widthshow
+108 367.666382 M 0.529892 0 32 (sage is in transit, then the recei) widthshow
+234.519501 367.666382 M 0.529892 0 32 (ving task will get MA) widthshow
+324.019287 367.666382 M 0.529892 0 32 (CH_POR) widthshow
+361.759613 367.666382 M 0.529892 0 32 (T_DEAD instead) widthshow
+(of a right.) 108.0 379.666 T
+108 403.666351 M 1.819916 0 32 (The follo) widthshow
+146.510056 403.666351 M 1.819916 0 32 (wing ) widthshow
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+170.829971 403.666351 M 1.819916 0 32 (mac) widthshow
+187.340057 403.666351 M 1.819916 0 32 (h_msg_type_name_t) widthshow
+3 FF
+269.550049 403.666351 M 1.819916 0 32 ( v) widthshow
+278.620117 403.666351 M 1.819916 0 32 (alues in a recei) widthshow
+343.530029 403.666351 M 1.819916 0 32 (v) widthshow
+348.380096 403.666351 M 1.819916 0 32 (ed message indicate) widthshow
+(that it carries port rights:) 108.0 415.666 T
+(MA) 108.0 439.666 T
+(CH_MSG_TYPE_POR) 123.71 439.666 T
+(T_SEND) 218.121 439.666 T
+144 451.666321 M 2.262756 0 32 (This v) widthshow
+171.292892 451.666321 M 2.262756 0 32 (alue is an alias for MA) widthshow
+273.576904 451.666321 M 2.262756 0 32 (CH_MSG_TYPE_MO) widthshow
+364.747192 451.666321 M 2.262756 0 32 (VE_SEND. The) widthshow
+144 463.66629 M 0.161621 0 32 (message carried a send right. If the recei) widthshow
+306.491516 463.66629 M 0.161621 0 32 (ving task already has send and/) widthshow
+144 475.66626 M 0.247116 0 32 (or recei) widthshow
+174.257263 475.66626 M 0.247116 0 32 (v) widthshow
+179.107346 475.66626 M 0.247116 0 32 (e rights for the port, then that name for the port will be reused.) widthshow
+144 487.66626 M 1.196243 0 32 (Otherwise, the right will ha) widthshow
+258.295105 487.66626 M 1.196243 0 32 (v) widthshow
+263.145172 487.66626 M 1.196243 0 32 (e a ne) widthshow
+288.607788 487.66626 M 1.196243 0 32 (w) widthshow
+295.178162 487.66626 M 1.196243 0 32 (, pre) widthshow
+313.894531 487.66626 M 1.196243 0 32 (viously unused, name. If the) widthshow
+144 499.66626 M 0.667679 0 32 (task already has send rights, it g) widthshow
+275.996094 499.66626 M 0.667679 0 32 (ains a user reference for the right \(un-) widthshow
+144 511.666229 M 0.589905 0 32 (less this w) widthshow
+186.749863 511.666229 M 0.589905 0 32 (ould cause the user) widthshow
+264.689697 511.666229 M 0.589905 0 32 (-reference count to o) widthshow
+349.329529 511.666229 M 0.589905 0 32 (v) widthshow
+354.179596 511.666229 M 0.589905 0 32 (er\337o) widthshow
+372.259735 511.666229 M 0.589905 0 32 (w\). Otherwise,) widthshow
+(it acquires send rights, with a user) 144.0 523.666 T
+(-reference count of one.) 280.17 523.666 T
+(MA) 108.0 547.666 T
+(CH_MSG_TYPE_POR) 123.71 547.666 T
+(T_SEND_ONCE) 218.121 547.666 T
+144 559.666199 M 6.713211 0 32 (This v) widthshow
+175.743347 559.666199 M 6.713211 0 32 (alue is an alias for MA) widthshow
+300.279633 559.666199 M 6.713211 0 32 (CH_MSG_TYPE_MO) widthshow
+391.44989 559.666199 M 6.713211 0 32 (VE_SEN-) widthshow
+144 571.666138 M 0.896942 0 32 (D_ONCE. The message carried a send-once right. The right will ha) widthshow
+422.709564 571.666138 M 0.896942 0 32 (v) widthshow
+427.559631 571.666138 M 0.896942 0 32 (e) widthshow
+(a ne) 144.0 583.666 T
+(w) 160.13 583.666 T
+(, pre) 166.701 583.666 T
+(viously unused, name.) 184.221 583.666 T
+(MA) 108.0 607.666 T
+(CH_MSG_TYPE_POR) 123.71 607.666 T
+(T_RECEIVE) 218.121 607.666 T
+144 619.666138 M 2.963211 0 32 (This v) widthshow
+171.993347 619.666138 M 2.963211 0 32 (alue is an alias for MA) widthshow
+277.779633 619.666138 M 2.963211 0 32 (CH_MSG_TYPE_MO) widthshow
+368.94989 619.666138 M 2.963211 0 32 (VE_RECEIVE.) widthshow
+144 631.666138 M 1.299927 0 32 (The message carried a recei) widthshow
+260.009888 631.666138 M 1.299927 0 32 (v) widthshow
+264.859955 631.666138 M 1.299927 0 32 (e right. If the recei) widthshow
+343.949829 631.666138 M 1.299927 0 32 (ving task already has) widthshow
+144 643.666077 M 0.395691 0 32 (send rights for the port, then that name for the port will be reused; oth-) widthshow
+(erwise, the right will ha) 144.0 655.666 T
+(v) 238.51 655.666 T
+(e a ne) 243.36 655.666 T
+(w) 266.43 655.666 T
+(, pre) 273.001 655.666 T
+(viously unused, name.) 290.521 655.666 T
+108 679.666077 M 1.786118 0 32 (It is also possible to send a \(nearly unbounded\) array of port rights \322out-of-) widthshow
+108 691.666016 M 0.670578 0 32 (line\323. All of the rights named by the array must be of the same type. The array) widthshow
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 14 8
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(14 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(IPC Interface) 180.0 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+216 113.650665 M 2.354965 0 32 (is ph) widthshow
+237.474991 113.650665 M 2.354965 0 32 (ysically copied with the message body proper) widthshow
+433.805115 113.650665 M 2.354965 0 32 (. The array of port right) widthshow
+216 125.65065 M 0.089905 0 32 (\(names\) can be recei) widthshow
+298.479858 125.65065 M 0.089905 0 32 (v) widthshow
+303.329956 125.65065 M 0.089905 0 32 (ed by the recei) widthshow
+361.939819 125.65065 M 0.089905 0 32 (v) widthshow
+366.789917 125.65065 M 0.089905 0 32 (er using the same options a) widthshow
+475.639526 125.65065 M 0.089905 0 32 (v) widthshow
+480.389679 125.65065 M 0.089905 0 32 (ailable for out-) widthshow
+(of-line data reception described belo) 216.0 137.651 T
+(w) 361.82 137.651 T
+(.) 368.391 137.651 T
+0 FF
+(Memory) 180.0 161.651 T
+3 FF
+216 174.650604 M 0.346863 0 32 (A message can contain one or more re) widthshow
+371.288147 174.650604 M 0.346863 0 32 (gions of the sender\325) widthshow
+450.929047 174.650604 M 0.346863 0 32 (s address space which) widthshow
+216 186.650589 M 0.597839 0 32 (are to be transferred as part of the message. The message carries a logical cop) widthshow
+534.999878 186.650589 M 0.597839 0 32 (y) widthshow
+216 198.650574 M 1.016037 0 32 (of the memory) widthshow
+276.262451 198.650574 M 1.016037 0 32 (. F) widthshow
+287.688538 198.650574 M 1.016037 0 32 (or this \322out-of-line\323 memory) widthshow
+405.347046 198.650574 M 1.016037 0 32 (, the k) widthshow
+431.999146 198.650574 M 1.016037 0 32 (ernel can cop) widthshow
+487.241302 198.650574 M 1.016037 0 32 (y the data or) widthshow
+216 210.650558 M 1.693298 0 32 (use virtual memory techniques to defer an) widthshow
+394.309875 210.650558 M 1.693298 0 32 (y actual page copies \321 unless the) widthshow
+(sender or the recei) 216.0 222.651 T
+(v) 289.33 222.651 T
+(er modi\336es the data, the ph) 294.18 222.651 T
+(ysical pages remain shared. ) 402.45 222.651 T
+216 246.650528 M 0.23494 0 32 (The sender of the message must e) widthshow
+352.229736 246.650528 M 0.23494 0 32 (xplicitly request an out-of-line transfer) widthshow
+507.589813 246.650528 M 0.23494 0 32 (. Such a) widthshow
+216 258.650513 M 1.869919 0 32 (re) widthshow
+223.620087 258.650513 M 1.869919 0 32 (gion is described as an arbitrary re) widthshow
+372.429688 258.650513 M 1.869919 0 32 (gion of the sender\325) widthshow
+452.749756 258.650513 M 1.869919 0 32 (s address space. The) widthshow
+(sender al) 216.0 270.65 T
+(w) 251.72 270.65 T
+(ays sees this memory as being copied to the recei) 258.84 270.65 T
+(v) 455.5 270.65 T
+(er) 460.35 270.65 T
+(.) 467.571 270.65 T
+216 294.650482 M 0.642624 0 32 (F) widthshow
+221.41008 294.650482 M 0.642624 0 32 (or each re) widthshow
+261.965424 294.650482 M 0.642624 0 32 (gion, the sender has a de-allocate option. If the option is set and the) widthshow
+216 306.650452 M 0.746338 0 32 (out-of-line memory re) widthshow
+306.212769 306.650452 M 0.746338 0 32 (gion is not null, then the re) widthshow
+418.040894 306.650452 M 0.746338 0 32 (gion is implicitly de-allocated) widthshow
+216 318.650452 M 0.716095 0 32 (from the sender) widthshow
+279.792419 318.650452 M 0.716095 0 32 (, as if by ) widthshow
+0 FF
+319.596802 318.650452 M 0.716095 0 32 (vm_deallocate) widthshow
+3 FF
+380.696808 318.650452 M 0.716095 0 32 (. In particular) widthshow
+435.879211 318.650452 M 0.716095 0 32 (, the start address is trun-) widthshow
+216 330.650452 M 1.21994 0 32 (cated do) widthshow
+250.570084 330.650452 M 1.21994 0 32 (wn and the end address rounded up so that e) widthshow
+438.209717 330.650452 M 1.21994 0 32 (v) widthshow
+443.059784 330.650452 M 1.21994 0 32 (ery page o) widthshow
+486.999756 330.650452 M 1.21994 0 32 (v) widthshow
+491.849854 330.650452 M 1.21994 0 32 (erlapped by) widthshow
+216 342.650421 M 0.80661 0 32 (the memory re) widthshow
+275.783325 342.650421 M 0.80661 0 32 (gion is de-allocated \(thereby possibly de-allocating more memo-) widthshow
+216 354.650391 M 0.423233 0 32 (ry than is ef) widthshow
+264.509827 354.650391 M 0.423233 0 32 (fecti) widthshow
+282.029968 354.650391 M 0.423233 0 32 (v) widthshow
+286.880066 354.650391 M 0.423233 0 32 (ely transmitted\). The use of this option ef) widthshow
+455.132843 354.650391 M 0.423233 0 32 (fecti) widthshow
+472.652985 354.650391 M 0.423233 0 32 (v) widthshow
+477.503052 354.650391 M 0.423233 0 32 (ely changes the) widthshow
+216 366.650391 M 1.690933 0 32 (memory cop) widthshow
+267.860992 366.650391 M 1.690933 0 32 (y into a memory mo) widthshow
+355.584808 366.650391 M 1.690933 0 32 (v) widthshow
+360.434875 366.650391 M 1.690933 0 32 (ement. Aside from possibly optimizing the) widthshow
+216 378.650391 M 0.557358 0 32 (sender\325) widthshow
+244.88031 378.650391 M 0.557358 0 32 (s use of memory) widthshow
+312.282745 378.650391 M 0.557358 0 32 (, the de-allocation option allo) widthshow
+431.752319 378.650391 M 0.557358 0 32 (ws the k) widthshow
+466.097107 378.650391 M 0.557358 0 32 (ernel to more ef) widthshow
+531.109314 378.650391 M 0.557358 0 32 <de2d> widthshow
+(ciently handle the transfer of memory) 216.0 390.65 T
+(.) 366.15 390.65 T
+216 414.65033 M 0.85495 0 32 (F) widthshow
+221.41008 414.65033 M 0.85495 0 32 (or each re) widthshow
+262.390076 414.65033 M 0.85495 0 32 (gion, the sender has the choice of permitting the k) widthshow
+469.954712 414.65033 M 0.85495 0 32 (ernel to choose a) widthshow
+(transmission strate) 216.0 426.65 T
+(gy or the choice of requiring ph) 290.57 426.65 T
+(ysical cop) 417.16 426.65 T
+(y:) 457.33 426.65 T
+(MA) 216.0 450.65 T
+(CH_MSG_VIR) 231.71 450.65 T
+(TU) 293.891 450.65 T
+(AL_COPY) 306.821 450.65 T
+252 462.650299 M 0.410767 0 32 (In a sent message, this \337ag allo) widthshow
+378.924744 462.650299 M 0.410767 0 32 (ws the k) widthshow
+412.976318 462.650299 M 0.410767 0 32 (ernel to choose an) widthshow
+486.538727 462.650299 M 0.410767 0 32 (y mechanism) widthshow
+252 474.650269 M 0.664474 0 32 (to transmit the data. F) widthshow
+342.007996 474.650269 M 0.664474 0 32 (or lar) widthshow
+363.872559 474.650269 M 0.664474 0 32 (ge re) widthshow
+384.097107 474.650269 M 0.664474 0 32 (gions, this in) widthshow
+436.42627 474.650269 M 0.664474 0 32 (v) widthshow
+441.226379 474.650269 M 0.664474 0 32 (olv) widthshow
+453.856476 474.650269 M 0.664474 0 32 (es constructing a vir-) widthshow
+252 486.650269 M 1.454117 0 32 (tual cop) widthshow
+285.294189 486.650269 M 1.454117 0 32 (y of the pages containing the re) widthshow
+419.398987 486.650269 M 1.454117 0 32 (gion. The portion of the \336rst) widthshow
+252 498.650269 M 0.923309 0 32 (page preceding the data and the portion of the last page follo) widthshow
+504.356567 498.650269 M 0.923309 0 32 (wing the) widthshow
+252 510.650238 M 1.099243 0 32 (data are not copied \(and will appear as zero if the virtual cop) widthshow
+507.801025 510.650238 M 1.099243 0 32 (y is dy-) widthshow
+(namically allocated in the recei) 252.0 522.65 T
+(v) 376.72 522.65 T
+(er\). ) 381.57 522.65 T
+252 546.650208 M 1.029922 0 32 (In a recei) widthshow
+291.01001 546.650208 M 1.029922 0 32 (v) widthshow
+295.860077 546.650208 M 1.029922 0 32 (ed message, this \337ag indicates that the k) widthshow
+463.509583 546.650208 M 1.029922 0 32 (ernel transmitted a) widthshow
+252 558.650208 M 1.105423 0 32 (virtual cop) widthshow
+296.055481 558.650208 M 1.105423 0 32 (y) widthshow
+300.405823 558.650208 M 1.105423 0 32 (. Access to the recei) widthshow
+384.827698 558.650208 M 1.105423 0 32 (v) widthshow
+389.677765 558.650208 M 1.105423 0 32 (ed memory may in) widthshow
+467.864258 558.650208 M 1.105423 0 32 (v) widthshow
+472.664368 558.650208 M 1.105423 0 32 (olv) widthshow
+485.294434 558.650208 M 1.105423 0 32 (e interactions) widthshow
+252 570.650146 M 0.355484 0 32 (with the memory manager managing the sender\325) widthshow
+447.433228 570.650146 M 0.355484 0 32 (s original data. Inte) widthshow
+525.559753 570.650146 M 0.355484 0 32 (gri-) widthshow
+252 582.650146 M 1.024933 0 32 (ty-conscious recei) widthshow
+325.255066 582.650146 M 1.024933 0 32 (v) widthshow
+330.105164 582.650146 M 1.024933 0 32 (ers should e) widthshow
+379.775116 582.650146 M 1.024933 0 32 (x) widthshow
+384.625183 582.650146 M 1.024933 0 32 (ercise caution when dealing with out-) widthshow
+252 594.650146 M 3.611603 0 32 (of-line memory from un-trustw) widthshow
+387.994873 594.650146 M 3.611603 0 32 (orth) widthshow
+404.054901 594.650146 M 3.611603 0 32 (y sources. Recei) widthshow
+476.288269 594.650146 M 3.611603 0 32 (v) widthshow
+481.138336 594.650146 M 3.611603 0 32 (ers concerned) widthshow
+252 606.650146 M 1.297714 0 32 (about deterministic access time should also e) widthshow
+439.616394 606.650146 M 1.297714 0 32 (x) widthshow
+444.466461 606.650146 M 1.297714 0 32 (ercise caution. The dy-) widthshow
+252 618.650146 M 0.612717 0 32 (namic allocation option guarantees that the virtual cop) widthshow
+473.659088 618.650146 M 0.612717 0 32 (y will not be di-) widthshow
+(rectly referenced during the act of recei) 252.0 630.65 T
+(ving the message.) 409.46 630.65 T
+(MA) 216.0 654.65 T
+(CH_MSG_PHYSICAL_COPY) 231.71 654.65 T
+252 666.650085 M 0.74913 0 32 (In a sent message, this \337ag requires that the k) widthshow
+440.282227 666.650085 M 0.74913 0 32 (ernel construct an actual) widthshow
+252 678.650024 M 0.027237 0 32 (cop) widthshow
+266.340057 678.650024 M 0.027237 0 32 (y of the memory \(either into wired k) widthshow
+412.240784 678.650024 M 0.027237 0 32 (ernel memory or def) widthshow
+494.142578 678.650024 M 0.027237 0 32 (ault memo-) widthshow
+252 690.650024 M 0.343048 0 32 (ry managed space\). There is a \(f) widthshow
+382.518372 690.650024 M 0.343048 0 32 (airly lar) widthshow
+414.061523 690.650024 M 0.343048 0 32 (ge\) limit on the amount of data) widthshow
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 15 9
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (15 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(mach_msg) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+144 115.666656 M 0.704498 0 32 (that can be ph) widthshow
+201.88353 115.666656 M 0.704498 0 32 (ysically copied in a message. Port arrays al) widthshow
+378.90509 115.666656 M 0.704498 0 32 (w) widthshow
+386.025146 115.666656 M 0.704498 0 32 (ays assume) widthshow
+(this option when sent.) 144.0 127.667 T
+144 151.666626 M 0.689087 0 32 (In a recei) widthshow
+182.328323 151.666626 M 0.689087 0 32 (v) widthshow
+187.178406 151.666626 M 0.689087 0 32 (ed message, this \337ag indicates that the k) widthshow
+352.442078 151.666626 M 0.689087 0 32 (ernel did transmit a) widthshow
+(ph) 144.0 163.667 T
+(ysical cop) 153.95 163.667 T
+(y) 194.12 163.667 T
+(.) 198.47 163.667 T
+108 187.666595 M 0.936615 0 32 (The recei) widthshow
+146.166763 187.666595 M 0.936615 0 32 (v) widthshow
+151.016846 187.666595 M 0.936615 0 32 (er has tw) widthshow
+188.890137 187.666595 M 0.936615 0 32 (o options for the reception of out-of-line memory \(or \322out-) widthshow
+(of-line\323 port arrays\): allocation and o) 108.0 199.667 T
+(v) 256.98 199.667 T
+(erwrite.) 261.83 199.667 T
+108 223.666565 M 2.092087 0 32 (In the absence of the MA) widthshow
+219.42067 223.666565 M 2.092087 0 32 (CH_RCV_O) widthshow
+270.590942 223.666565 M 2.092087 0 32 (VER) widthshow
+290.04126 223.666565 M 2.092087 0 32 (WRITE option, all out-of-line re-) widthshow
+108 235.66655 M 1.981201 0 32 (gions are dynamically allocated. Allocated out-of-line memory arri) widthshow
+389.89856 235.66655 M 1.981201 0 32 (v) widthshow
+394.748657 235.66655 M 1.981201 0 32 (es some-) widthshow
+108 247.666534 M 3.8974 0 32 (where in the recei) widthshow
+190.802353 247.666534 M 3.8974 0 32 (v) widthshow
+195.652435 247.666534 M 3.8974 0 32 (er\325) widthshow
+206.202744 247.666534 M 3.8974 0 32 (s address space as ne) widthshow
+305.402496 247.666534 M 3.8974 0 32 (w memory) widthshow
+351.700256 247.666534 M 3.8974 0 32 (. It has the same) widthshow
+108 259.666504 M 0.759918 0 32 (inheritance and protection attrib) widthshow
+238.109879 259.666504 M 0.759918 0 32 (utes as ne) widthshow
+278.259857 259.666504 M 0.759918 0 32 (wly ) widthshow
+1 FF
+296.519775 259.666504 M 0.759918 0 32 (vm_allocate) widthshow
+3 FF
+347.619781 259.666504 M 0.759918 0 32 <d56564206d656d6f7279> widthshow
+396.330078 259.666504 M 0.759918 0 32 (. The re-) widthshow
+108 271.666504 M 0.648834 0 32 (cei) widthshow
+119.410141 271.666504 M 0.648834 0 32 (v) widthshow
+124.260223 271.666504 M 0.648834 0 32 (er has the responsibility of de-allocating \(with ) widthshow
+1 FF
+315.722076 271.666504 M 0.648834 0 32 (vm_deallocate) widthshow
+3 FF
+376.822083 271.666504 M 0.648834 0 32 (\) the memory) widthshow
+108 283.666504 M 0.301392 0 32 (when it is no longer needed. If the message contains more than one re) widthshow
+390.598206 283.666504 M 0.301392 0 32 (gion, each) widthshow
+108 295.666473 M 1.699905 0 32 (will be allocated its o) widthshow
+200.099762 295.666473 M 1.699905 0 32 (wn re) widthshow
+224.139755 295.666473 M 1.699905 0 32 (gion, not necessarily contiguously) widthshow
+365.249817 295.666473 M 1.699905 0 32 (. If the sender\325) widthshow
+428.109863 295.666473 M 1.699905 0 32 (s) widthshow
+108 307.666443 M 1.199188 0 32 (data w) widthshow
+135.479248 307.666443 M 1.199188 0 32 (as transmitted as a virtual cop) widthshow
+260.525269 307.666443 M 1.199188 0 32 (y the allocated re) widthshow
+332.562927 307.666443 M 1.199188 0 32 (gion will ha) widthshow
+382.541382 307.666443 M 1.199188 0 32 (v) widthshow
+387.391479 307.666443 M 1.199188 0 32 (e the same) widthshow
+108 319.666443 M 0.405426 0 32 (data alignment within the page; otherwise, the recei) widthshow
+317.21814 319.666443 M 0.405426 0 32 (v) widthshow
+322.068237 319.666443 M 0.405426 0 32 (ed data will appear starting) widthshow
+(at the be) 108.0 331.666 T
+(ginning of a page.) 141.73 331.666 T
+108 355.666412 M 1.253845 0 32 (If the MA) widthshow
+150.097916 355.666412 M 1.253845 0 32 (CH_RCV_O) widthshow
+201.268188 355.666412 M 1.253845 0 32 (VER) widthshow
+220.718491 355.666412 M 1.253845 0 32 (WRITE option is set, the recei) widthshow
+348.387878 355.666412 M 1.253845 0 32 (v) widthshow
+353.237946 355.666412 M 1.253845 0 32 (er can specify ho) widthshow
+424.779633 355.666412 M 1.253845 0 32 (w) widthshow
+108 367.666382 M 2.296936 0 32 (each recei) widthshow
+150.297089 367.666382 M 2.296936 0 32 (v) widthshow
+155.147171 367.666382 M 2.296936 0 32 (ed re) widthshow
+177.004196 367.666382 M 2.296936 0 32 (gion is to be processed \(dynamically allocated as described) widthshow
+108 379.666382 M 0.099945 0 32 (abo) widthshow
+122.290085 379.666382 M 0.099945 0 32 (v) widthshow
+127.140167 379.666382 M 0.099945 0 32 (e, or written o) widthshow
+183.390091 379.666382 M 0.099945 0 32 (v) widthshow
+188.240173 379.666382 M 0.099945 0 32 (er e) widthshow
+202.900208 379.666382 M 0.099945 0 32 (xisting memory\). W) widthshow
+283.530334 379.666382 M 0.099945 0 32 (ith this option, the contents of the re-) widthshow
+108 391.666382 M 0.450745 0 32 (cei) widthshow
+119.410141 391.666382 M 0.450745 0 32 (v) widthshow
+124.260223 391.666382 M 0.450745 0 32 (e b) widthshow
+136.45108 391.666382 M 0.450745 0 32 (uf) widthshow
+144.531219 391.666382 M 0.450745 0 32 (fer \() widthshow
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+161.911972 391.666382 M 0.450745 0 32 (r) widthshow
+165.432175 391.666382 M 0.450745 0 32 (eceive_msg) widthshow
+3 FF
+211.522186 391.666382 M 0.450745 0 32 (\) are e) widthshow
+237.253769 391.666382 M 0.450745 0 32 (xamined by the k) widthshow
+307.666077 391.666382 M 0.450745 0 32 (ernel. The k) widthshow
+356.507629 391.666382 M 0.450745 0 32 (ernel scans the de-) widthshow
+108 403.666351 M 0.894928 0 32 (scriptors in the recei) widthshow
+191.804932 403.666351 M 0.894928 0 32 (v) widthshow
+196.655014 403.666351 M 0.894928 0 32 (e b) widthshow
+209.290054 403.666351 M 0.894928 0 32 (uf) widthshow
+217.370193 403.666351 M 0.894928 0 32 (fer \322message\323 to determine ho) widthshow
+342.330078 403.666351 M 0.894928 0 32 (w to handle each out-) widthshow
+108 415.666321 M 0.706284 0 32 (of-line re) widthshow
+145.486374 415.666321 M 0.706284 0 32 (gion. \(Note: whereas ) widthshow
+4 FF
+233.695236 415.666321 M 0.706284 0 32 (r) widthshow
+237.215439 415.666321 M 0.706284 0 32 (eceive_limit) widthshow
+3 FF
+285.535461 415.666321 M 0.706284 0 32 ( is the maximum size of the recei) widthshow
+422.709595 415.666321 M 0.706284 0 32 (v) widthshow
+427.559662 415.666321 M 0.706284 0 32 (e) widthshow
+108 427.666321 M 1.018982 0 32 (b) widthshow
+112.80011 427.666321 M 1.018982 0 32 (uf) widthshow
+120.880249 427.666321 M 1.018982 0 32 (fer) widthshow
+131.580475 427.666321 M 1.018982 0 32 (, ) widthshow
+4 FF
+137.599457 427.666321 M 1.018982 0 32 (r) widthshow
+141.119659 427.666321 M 1.018982 0 32 (eceive_msg_size) widthshow
+3 FF
+207.209671 427.666321 M 1.018982 0 32 ( is the amount \336lled in with this \322message\323.\) The k) widthshow
+420.899536 427.666321 M 1.018982 0 32 (er-) widthshow
+108 439.666321 M 0.664139 0 32 (nel uses each out-of-line data descriptor \(in order\) to specify the processing for) widthshow
+108 451.66629 M 0.919113 0 32 (each recei) widthshow
+148.919266 451.66629 M 0.919113 0 32 (v) widthshow
+153.769348 451.66629 M 0.919113 0 32 (ed data re) widthshow
+194.327667 451.66629 M 0.919113 0 32 (gion in turn, each out-of-line port array descriptor is used) widthshow
+108 463.66626 M 0.971176 0 32 (correspondingly) widthshow
+172.340363 463.66626 M 0.971176 0 32 (. \(Intermingled port descriptors are ignored when matching de-) widthshow
+108 475.66626 M 1.163559 0 32 (scriptors between the incoming message and the recei) widthshow
+331.125061 475.66626 M 1.163559 0 32 (v) widthshow
+335.975159 475.66626 M 1.163559 0 32 (e b) widthshow
+348.878845 475.66626 M 1.163559 0 32 (uf) widthshow
+356.958984 475.66626 M 1.163559 0 32 (fer list.\) The cop) widthshow
+426.999695 475.66626 M 1.163559 0 32 (y) widthshow
+(option in the matching descriptor speci\336es the processing:) 108.0 487.666 T
+(MA) 108.0 511.666 T
+(CH_MSG_O) 123.71 511.666 T
+(VER) 175.99 511.666 T
+(WRITE) 195.441 511.666 T
+144 523.666199 M 0.860779 0 32 (This \337ag indicates that the re) widthshow
+263.973999 523.666199 M 0.860779 0 32 (gion should write o) widthshow
+343.906403 523.666199 M 0.860779 0 32 (v) widthshow
+348.75647 523.666199 M 0.860779 0 32 (er a speci\336ed re) widthshow
+414.218933 523.666199 M 0.860779 0 32 (gion) widthshow
+144 535.666199 M 1.528122 0 32 (of the recei) widthshow
+191.786392 535.666199 M 1.528122 0 32 (v) widthshow
+196.636475 535.666199 M 1.528122 0 32 (er\325) widthshow
+207.186783 535.666199 M 1.528122 0 32 (s address space, as indicated by the address and size/) widthshow
+144 547.666199 M 1.0289 0 32 (count \336elds of the descriptor) widthshow
+261.995911 547.666199 M 1.0289 0 32 (. The full range o) widthshow
+335.111603 547.666199 M 1.0289 0 32 (v) widthshow
+339.96167 547.666199 M 1.0289 0 32 (erwritten must already) widthshow
+144 559.666138 M 0.44693 0 32 (e) widthshow
+148.290085 559.666138 M 0.44693 0 32 (xist \(be allocated or mapped\) in the recei) widthshow
+314.73877 559.666138 M 0.44693 0 32 (v) widthshow
+319.588837 559.666138 M 0.44693 0 32 (er\325) widthshow
+330.13916 559.666138 M 0.44693 0 32 (s address space. Depend-) widthshow
+144 571.666138 M 1.254456 0 32 (ing on the nature of the data transmission this o) widthshow
+344.850189 571.666138 M 1.254456 0 32 (v) widthshow
+349.700256 571.666138 M 1.254456 0 32 (erwrite may in) widthshow
+410.129395 571.666138 M 1.254456 0 32 (v) widthshow
+414.929504 571.666138 M 1.254456 0 32 (olv) widthshow
+427.559601 571.666138 M 1.254456 0 32 (e) widthshow
+(virtual memory manipulations or it may in) 144.0 583.666 T
+(v) 313.6 583.666 T
+(olv) 318.4 583.666 T
+(e actual data cop) 331.03 583.666 T
+(y) 397.85 583.666 T
+(.) 402.201 583.666 T
+(MA) 108.0 607.666 T
+(CH_MSG_ALLOCA) 123.71 607.666 T
+(TE) 208.711 607.666 T
+144 619.666138 M 1.399948 0 32 (This \337ag indicates that the re) widthshow
+266.66983 619.666138 M 1.399948 0 32 (gion is to be dynamically allocated. No) widthshow
+(other descriptor v) 144.0 631.666 T
+(alues are rele) 214.29 631.666 T
+(v) 266.79 631.666 T
+(ant.) 271.54 631.666 T
+108 655.666077 M 0.305283 0 32 (If not enough descriptors appear in the recei) widthshow
+286.227142 655.666077 M 0.305283 0 32 (v) widthshow
+291.077209 655.666077 M 0.305283 0 32 (e b) widthshow
+303.12262 655.666077 M 0.305283 0 32 (uf) widthshow
+311.202759 655.666077 M 0.305283 0 32 (fer to describe all recei) widthshow
+403.804047 655.666077 M 0.305283 0 32 (v) widthshow
+408.654114 655.666077 M 0.305283 0 32 (ed re-) widthshow
+108 667.666077 M 2.518799 0 32 (gions, additional re) widthshow
+189.827682 667.666077 M 2.518799 0 32 (gions are dynamically allocated. If the recei) widthshow
+379.920654 667.666077 M 2.518799 0 32 (v) widthshow
+384.770721 667.666077 M 2.518799 0 32 (er speci\336es) widthshow
+108 679.666016 M 1.026306 0 32 (more descriptors than there are re) widthshow
+247.101639 679.666016 M 1.026306 0 32 (gions in the recei) widthshow
+318.530701 679.666016 M 1.026306 0 32 (v) widthshow
+323.380798 679.666016 M 1.026306 0 32 (ed message, the additional) widthshow
+(descriptors are ignored \(and do not appear in the \336nal recei) 108.0 691.666 T
+(v) 343.8 691.666 T
+(ed message\).) 348.65 691.666 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 16 10
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(16 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(IPC Interface) 180.0 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(Note that the recei) 216.0 113.651 T
+(v) 289.34 113.651 T
+(e b) 294.19 113.651 T
+(uf) 305.93 113.651 T
+(fer descriptors will be o) 314.01 113.651 T
+(v) 408.841 113.651 T
+(erwritten:) 413.691 113.651 T
+4 (Times-Roman) 7 1 mymakefontmetric
+4 FF
+<a5> 216.0 131.651 T
+3 FF
+229.535995 131.65065 M 0.868454 0 32 (The size \336elds in descriptors will be updated \(when scanned, the) widthshow
+496.080627 131.65065 M 0.868454 0 32 (y speci\336ed) widthshow
+229.535995 143.650635 M 1.045761 0 32 (the maximum sizes of re) widthshow
+331.88913 143.650635 M 1.045761 0 32 (gions, when recei) widthshow
+403.990784 143.650635 M 1.045761 0 32 (v) widthshow
+408.840881 143.650635 M 1.045761 0 32 (ed, the) widthshow
+436.396729 143.650635 M 1.045761 0 32 (y specify the actual sizes) widthshow
+(of recei) 229.536 155.651 T
+(v) 259.546 155.651 T
+(ed re) 264.396 155.651 T
+(gions\).) 283.956 155.651 T
+4 FF
+<a5> 216.0 170.651 T
+3 FF
+229.535995 170.650604 M 0.523911 0 32 (The cop) widthshow
+262.449951 170.650604 M 0.523911 0 32 (y \336elds in descriptors will be updated \(when scanned, the) widthshow
+496.425262 170.650604 M 0.523911 0 32 (y speci\336ed) widthshow
+229.535995 182.650589 M 1.639252 0 32 (allocate v) widthshow
+269.625336 182.650589 M 1.639252 0 32 (ersus o) widthshow
+299.164673 182.650589 M 1.639252 0 32 (v) widthshow
+304.014771 182.650589 M 1.639252 0 32 (erwrite, when recei) widthshow
+383.95343 182.650589 M 1.639252 0 32 (v) widthshow
+388.803497 182.650589 M 1.639252 0 32 (ed, the) widthshow
+416.95282 182.650589 M 1.639252 0 32 (y indicate whether the re) widthshow
+522.219971 182.650589 M 1.639252 0 32 (gion) widthshow
+(w) 229.536 194.651 T
+(as ph) 236.656 194.651 T
+(ysically or virtually copied\).) 257.436 194.651 T
+4 FF
+<a5> 216.0 209.651 T
+3 FF
+229.535995 209.650558 M 1.579285 0 32 (The descriptors may appear in dif) widthshow
+371.872559 209.650558 M 1.579285 0 32 (ferent positions \(gi) widthshow
+450.331299 209.650558 M 1.579285 0 32 (v) widthshow
+455.181366 209.650558 M 1.579285 0 32 (en intermingled port) widthshow
+(descriptors\).) 229.536 221.651 T
+4 FF
+<a5> 216.0 236.651 T
+3 FF
+229.535995 236.650528 M 0.000259 0 32 (Descriptors that were not used \(because there were not that man) widthshow
+485.428711 236.650528 M 0.000259 0 32 (y recei) widthshow
+512.109131 236.650528 M 0.000259 0 32 (v) widthshow
+516.959229 236.650528 M 0.000259 0 32 (ed re-) widthshow
+(gions\) will be discarded.) 229.536 248.651 T
+216 272.650513 M 0.829956 0 32 (Null out-of-line memory is le) widthshow
+336.939911 272.650513 M 0.829956 0 32 (g) widthshow
+341.889954 272.650513 M 0.829956 0 32 (al. If the out-of-line re) widthshow
+434.19986 272.650513 M 0.829956 0 32 (gion size is zero, then the) widthshow
+216 284.650482 M 0.321884 0 32 (re) widthshow
+223.620087 284.650482 M 0.321884 0 32 (gion\325) widthshow
+244.180389 284.650482 M 0.321884 0 32 (s speci\336ed address is ignored. A recei) widthshow
+396.661865 284.650482 M 0.321884 0 32 (v) widthshow
+401.511932 284.650482 M 0.321884 0 32 (e allocated null out-of-line memo-) widthshow
+(ry re) 216.0 296.65 T
+(gion al) 234.45 296.65 T
+(w) 261.85 296.65 T
+(ays has a zero address.) 268.97 296.65 T
+216 320.650452 M 0.297653 0 32 (Unaligned addresses and re) widthshow
+326.433044 320.650452 M 0.297653 0 32 (gion sizes that are not page multiples are le) widthshow
+501.414368 320.650452 M 0.297653 0 32 (g) widthshow
+506.36441 320.650452 M 0.297653 0 32 (al. A re-) widthshow
+216 332.650452 M 2.127945 0 32 (cei) widthshow
+227.410141 332.650452 M 2.127945 0 32 (v) widthshow
+232.260223 332.650452 M 2.127945 0 32 (ed message can also contain re) widthshow
+365.77005 332.650452 M 2.127945 0 32 (gions with unaligned addresses and sizes) widthshow
+(which are not multiples of the page size. ) 216.0 344.65 T
+0 FF
+(Message Send) 180.0 368.65 T
+3 FF
+216 381.650391 M 0.874252 0 32 (The send operation queues a message to a port. The message carries a cop) widthshow
+523.29541 381.650391 M 0.874252 0 32 (y of) widthshow
+216 393.650391 M 0.499146 0 32 (the caller\325) widthshow
+256.209473 393.650391 M 0.499146 0 32 (s data. After the send, the caller can freely modify the message b) widthshow
+520.819336 393.650391 M 0.499146 0 32 (uf) widthshow
+528.899475 393.650391 M 0.499146 0 32 (fer) widthshow
+216 405.65036 M 1.820862 0 32 (or the out-of-line memory re) widthshow
+337.553528 405.65036 M 1.820862 0 32 (gions and the message contents will remain un-) widthshow
+(changed. ) 216.0 417.65 T
+3 FF
+216 441.65033 M 0.289948 0 32 (The message carries with it the security ID of the sender) widthshow
+443.999725 441.65033 M 0.289948 0 32 (, which the recei) widthshow
+510.709717 441.65033 M 0.289948 0 32 (v) widthshow
+515.559814 441.65033 M 0.289948 0 32 (er can) widthshow
+(request in the message trailer) 216.0 453.65 T
+(.) 332.09 453.65 T
+3 FF
+216 477.650299 M 0.64296 0 32 (Message deli) widthshow
+268.883118 477.650299 M 0.64296 0 32 (v) widthshow
+273.733185 477.650299 M 0.64296 0 32 (ery is reliable and sequenced. Reception of a message guarantees) widthshow
+216 489.650269 M 0.45929 0 32 (that all messages pre) widthshow
+300.16803 489.650269 M 0.45929 0 32 (viously sent to the port by a single task \(or a single k) widthshow
+516.679565 489.650269 M 0.45929 0 32 (ernel\)) widthshow
+216 501.650269 M 1.694214 0 32 (via send rights ha) widthshow
+291.152771 501.650269 M 1.694214 0 32 (v) widthshow
+296.002838 501.650269 M 1.694214 0 32 (e been recei) widthshow
+346.891418 501.650269 M 1.694214 0 32 (v) widthshow
+351.741516 501.650269 M 1.694214 0 32 (ed and that the) widthshow
+415.274231 501.650269 M 1.694214 0 32 (y are recei) widthshow
+460.052795 501.650269 M 1.694214 0 32 (v) widthshow
+464.902893 501.650269 M 1.694214 0 32 (ed in the order in) widthshow
+(which the) 216.0 513.65 T
+(y were sent. Messages sent to send-once rights are unordered.) 255.01 513.65 T
+216 537.650269 M 0.663025 0 32 (If the destination port\325) widthshow
+307.149384 537.650269 M 0.663025 0 32 (s queue is full, se) widthshow
+378.711609 537.650269 M 0.663025 0 32 (v) widthshow
+383.561707 537.650269 M 0.663025 0 32 (eral things can happen. If the message) widthshow
+216 549.650208 M 0.908127 0 32 (is sent to a send-once right \() widthshow
+5 (Times-Italic) 10 1 mymakefontmetric
+5 FF
+334.208771 549.650208 M 0.908127 0 32 (msgh_r) widthshow
+363.838989 549.650208 M 0.908127 0 32 (emote_port) widthshow
+3 FF
+409.388977 549.650208 M 0.908127 0 32 ( carries a send-once right\), then) widthshow
+216 561.650208 M 0.218277 0 32 (the k) widthshow
+235.838333 561.650208 M 0.218277 0 32 (ernel ignores the queue limit and deli) widthshow
+385.768127 561.650208 M 0.218277 0 32 (v) widthshow
+390.618225 561.650208 M 0.218277 0 32 (ers the message. Otherwise the caller) widthshow
+216 573.650208 M 1.24794 0 32 (blocks until there is room in the queue, unless the MA) widthshow
+445.009644 573.650208 M 1.24794 0 32 (CH_SEND_TIMEOUT) widthshow
+216 585.650146 M 1.883499 0 32 (option is used. If a port has se) widthshow
+348.364624 585.650146 M 1.883499 0 32 (v) widthshow
+353.214722 585.650146 M 1.883499 0 32 (eral block) widthshow
+394.708282 585.650146 M 1.883499 0 32 (ed senders, then an) widthshow
+476.298889 585.650146 M 1.883499 0 32 (y of them may) widthshow
+216 597.650146 M 1.338272 0 32 (queue the ne) widthshow
+269.06665 597.650146 M 1.338272 0 32 (xt message when space in the queue becomes a) widthshow
+468.412964 597.650146 M 1.338272 0 32 (v) widthshow
+473.163086 597.650146 M 1.338272 0 32 (ailable, with the) widthshow
+(pro) 216.0 609.65 T
+(viso that a block) 229.18 609.65 T
+(ed sender will not be inde\336nitely starv) 294.91 609.65 T
+(ed. ) 448.08 609.65 T
+216 633.650146 M 2.987061 0 32 (These options modify MA) widthshow
+330.391418 633.650146 M 2.987061 0 32 (CH_SEND_MSG. If MA) widthshow
+437.905762 633.650146 M 2.987061 0 32 (CH_SEND_MSG is not) widthshow
+(also speci\336ed, the) 216.0 645.65 T
+(y are ignored.) 287.23 645.65 T
+(MA) 216.0 669.65 T
+(CH_SEND_TIMEOUT) 231.71 669.65 T
+252 681.650085 M 1.991074 0 32 (The ) widthshow
+5 FF
+272.041077 681.650085 M 1.991074 0 32 (timeout) widthshow
+3 FF
+302.041077 681.650085 M 1.991074 0 32 ( ar) widthshow
+314.122253 681.650085 M 1.991074 0 32 (gument should specify a maximum time \(in millisec-) widthshow
+252 693.650085 M 1.507645 0 32 (onds\) for the call to block before gi) widthshow
+403.663666 693.650085 M 1.507645 0 32 (ving up. If the message can\325) widthshow
+523.771973 693.650085 M 1.507645 0 32 (t be) widthshow
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 17 11
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (17 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(mach_msg) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+144 115.666656 M 3.885529 0 32 (queued before the timeout interv) widthshow
+289.822266 115.666656 M 3.885529 0 32 (al elapses, then the call returns) widthshow
+(MA) 144.0 127.667 T
+(CH_SEND_TIMED_OUT) 159.71 127.667 T
+(. A zero timeout is le) 266.181 127.667 T
+(gitimate.) 349.911 127.667 T
+(MA) 108.0 151.667 T
+(CH_SEND_INTERR) 123.71 151.667 T
+(UPT) 209.42 151.667 T
+144 163.666611 M 2.237045 0 32 (If speci\336ed, the ) widthshow
+1 FF
+215.141144 163.666611 M 2.237045 0 32 (mach_msg) widthshow
+3 FF
+260.691162 163.666611 M 2.237045 0 32 ( call will return MA) widthshow
+349.229553 163.666611 M 2.237045 0 32 (CH_SEND_INTER-) widthshow
+144 175.666595 M 0.146332 0 32 (R) widthshow
+150.270218 175.666595 M 0.146332 0 32 (UPTED if a softw) widthshow
+223.099274 175.666595 M 0.146332 0 32 (are interrupt aborts the call. Otherwise, the send op-) widthshow
+(eration will be retried.) 144.0 187.667 T
+(MA) 108.0 211.667 T
+(CH_SEND_CANCEL) 123.71 211.667 T
+144 223.66655 M 0.789108 0 32 (The ) widthshow
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+162.839111 223.66655 M 0.789108 0 32 (notify) widthshow
+3 FF
+185.61911 223.66655 M 0.789108 0 32 ( ar) widthshow
+196.498322 223.66655 M 0.789108 0 32 (gument should specify a recei) widthshow
+318.82489 223.66655 M 0.789108 0 32 (v) widthshow
+323.674988 223.66655 M 0.789108 0 32 (e right for a notify port. If) widthshow
+144 235.666534 M 1.401932 0 32 (the send operation remo) widthshow
+244.425888 235.666534 M 1.401932 0 32 (v) widthshow
+249.27597 235.666534 M 1.401932 0 32 (es the destination port right from the caller) widthshow
+429.499725 235.666534 M 1.401932 0 32 (,) widthshow
+144 247.666519 M 1.380875 0 32 (and the remo) widthshow
+198.821838 247.666519 M 1.380875 0 32 (v) widthshow
+203.671921 247.666519 M 1.380875 0 32 (ed right had a dead-name request re) widthshow
+354.537292 247.666519 M 1.380875 0 32 (gistered for it, and) widthshow
+4 FF
+144 259.666504 M 0.580902 0 32 (notify) widthshow
+3 FF
+166.779999 259.666504 M 0.580902 0 32 ( is the notify port for the dead-name request, then the dead-name) widthshow
+144 271.666504 M 1.59198 0 32 (request may be silently canceled \(instead of resulting in what w) widthshow
+414.219879 271.666504 M 1.59198 0 32 (ould) widthshow
+(ha) 144.0 283.666 T
+(v) 153.24 283.666 T
+(e been a port-deleted noti\336cation\).) 158.09 283.666 T
+144 307.666443 M 0.655441 0 32 (This option is typically used to cancel a dead-name request made with) widthshow
+144 319.666443 M 0.074921 0 32 (the MA) widthshow
+174.505142 319.666443 M 0.074921 0 32 (CH_RCV_NO) widthshow
+232.995361 319.666443 M 0.074921 0 32 (TIFY option. It should only be used as an optimi-) widthshow
+(zation.) 144.0 331.666 T
+3 FF
+(MA) 108.0 355.666 T
+(CH_SEND_TRAILER) 123.71 355.666 T
+144 367.666382 M 1.250946 0 32 (If set, the k) widthshow
+192.642899 367.666382 M 1.250946 0 32 (ernel, instead of determining the message attrib) widthshow
+389.638702 367.666382 M 1.250946 0 32 (utes itself,) widthshow
+144 379.666382 M 1.166946 0 32 (will accept a formatted message trailer from the sender) widthshow
+372.725891 379.666382 M 1.166946 0 32 (. The supplied) widthshow
+144 391.666382 M 0.944977 0 32 (trailer must be of the latest v) widthshow
+263.949951 391.666382 M 0.944977 0 32 (ersion supported by the k) widthshow
+368.729919 391.666382 M 0.944977 0 32 (ernel, and must) widthshow
+144 403.666351 M 0.808105 0 32 (contain all message attrib) widthshow
+248.154434 403.666351 M 0.808105 0 32 (utes de\336ned by the k) widthshow
+334.056915 403.666351 M 0.808105 0 32 (ernel. Only tasks with a) widthshow
+144 415.666321 M 1.416656 0 32 (security ID of KERNEL_SECURITY_ID can use this option; the in-) widthshow
+144 427.666321 M 0.843002 0 32 (tended use of this option is in support of the Net Message serv) widthshow
+403.386108 427.666321 M 0.843002 0 32 (er) widthshow
+410.606445 427.666321 M 0.843002 0 32 (. The) widthshow
+144 439.666321 M 0.795364 0 32 (trailer must follo) widthshow
+212.560867 439.666321 M 0.795364 0 32 (w the message in memory as it w) widthshow
+351.068481 439.666321 M 0.795364 0 32 (ould appear in a re-) widthshow
+144 451.66629 M 0.903702 0 32 (cei) widthshow
+155.410141 451.66629 M 0.903702 0 32 (v) widthshow
+160.260223 451.66629 M 0.903702 0 32 (ed message. \(The ) widthshow
+4 FF
+235.171341 451.66629 M 0.903702 0 32 (send_size) widthshow
+3 FF
+273.501343 451.66629 M 0.903702 0 32 ( ar) widthshow
+284.495148 451.66629 M 0.903702 0 32 (gument to ) widthshow
+1 FF
+329.08255 451.66629 M 0.903702 0 32 (mach_msg) widthshow
+3 FF
+374.632568 451.66629 M 0.903702 0 32 ( still indicates) widthshow
+(the size of the message proper) 144.0 463.666 T
+(, not including this trailer) 264.4 463.666 T
+(.\)) 365.241 463.666 T
+3 FF
+108 487.66626 M 0.453033 0 32 (The queueing of a message carrying recei) widthshow
+277.078369 487.66626 M 0.453033 0 32 (v) widthshow
+281.928467 487.66626 M 0.453033 0 32 (e rights may create a circular loop of) widthshow
+108 499.66626 M 0.720749 0 32 (recei) widthshow
+127.180145 499.66626 M 0.720749 0 32 (v) widthshow
+132.030228 499.66626 M 0.720749 0 32 (e rights and messages, which can ne) widthshow
+280.794861 499.66626 M 0.720749 0 32 (v) widthshow
+285.644958 499.66626 M 0.720749 0 32 (er be recei) widthshow
+328.476624 499.66626 M 0.720749 0 32 (v) widthshow
+333.326691 499.66626 M 0.720749 0 32 (ed. F) widthshow
+353.897522 499.66626 M 0.720749 0 32 (or e) widthshow
+369.738342 499.66626 M 0.720749 0 32 (xample, a mes-) widthshow
+108 511.666229 M 1.08139 0 32 (sage carrying a recei) widthshow
+193.45433 511.666229 M 1.08139 0 32 (v) widthshow
+198.304413 511.666229 M 1.08139 0 32 (e right can be sent to that recei) widthshow
+328.094299 511.666229 M 1.08139 0 32 (v) widthshow
+332.944397 511.666229 M 1.08139 0 32 (e right. This situation is) widthshow
+108 523.666199 M 0.594101 0 32 (not an error) widthshow
+155.438431 523.666199 M 0.594101 0 32 (, b) widthshow
+165.832642 523.666199 M 0.594101 0 32 (ut the k) widthshow
+196.920898 523.666199 M 0.594101 0 32 (ernel will g) widthshow
+243.609131 523.666199 M 0.594101 0 32 (arbage-collect such loops, destro) widthshow
+376.371521 523.666199 M 0.594101 0 32 (ying the mes-) widthshow
+(sages.) 108.0 535.666 T
+108 559.666199 M 1.006119 0 32 (Some return codes, lik) widthshow
+200.908417 559.666199 M 1.006119 0 32 (e MA) widthshow
+224.564758 559.666199 M 1.006119 0 32 (CH_SEND_TIMED_OUT) widthshow
+331.035156 559.666199 M 1.006119 0 32 (, imply that the message) widthshow
+108 571.666138 M 0.574265 0 32 (w) widthshow
+115.120056 571.666138 M 0.574265 0 32 (as almost sent, b) widthshow
+182.75296 571.666138 M 0.574265 0 32 (ut could not be queued. In these situations, the k) widthshow
+380.861389 571.666138 M 0.574265 0 32 (ernel tries to) widthshow
+108 583.666138 M 0.961761 0 32 (return the message contents to the caller with a pseudo-recei) widthshow
+357.736023 583.666138 M 0.961761 0 32 (v) widthshow
+362.586121 583.666138 M 0.961761 0 32 (e operation. This) widthshow
+108 595.666138 M 0.704224 0 32 (pre) widthshow
+120.520142 595.666138 M 0.704224 0 32 (v) widthshow
+125.370224 595.666138 M 0.704224 0 32 (ents the loss of port rights or memory which only e) widthshow
+336.692566 595.666138 M 0.704224 0 32 (xist in the message, for) widthshow
+108 607.666138 M 0.047409 0 32 (e) widthshow
+112.290085 607.666138 M 0.047409 0 32 (xample, a recei) widthshow
+172.945053 607.666138 M 0.047409 0 32 (v) widthshow
+177.795135 607.666138 M 0.047409 0 32 (e right which w) widthshow
+240.327423 607.666138 M 0.047409 0 32 (as mo) widthshow
+263.8349 607.666138 M 0.047409 0 32 (v) widthshow
+268.684998 607.666138 M 0.047409 0 32 (ed into the message, or out-of-line mem-) widthshow
+(ory sent with the de-allocate option.) 108.0 619.666 T
+108 643.666077 M 0.791504 0 32 (The intent of the pseudo-recei) widthshow
+230.886169 643.666077 M 0.791504 0 32 (v) widthshow
+235.736252 643.666077 M 0.791504 0 32 (e operation is to restore, as best as possible, the) widthshow
+108 655.666077 M 0.153 0 32 (state prior to attempting the send. This in) widthshow
+273.111206 655.666077 M 0.153 0 32 (v) widthshow
+277.911316 655.666077 M 0.153 0 32 (olv) widthshow
+290.541412 655.666077 M 0.153 0 32 (es restoring the port rights and out-) widthshow
+108 667.666077 M 0.234146 0 32 (of-line memory re) widthshow
+181.078384 667.666077 M 0.234146 0 32 (gions contained in the message. The port right names and out-) widthshow
+108 679.666016 M 0.750687 0 32 (of-line addresses in the message send b) widthshow
+269.494263 679.666016 M 0.750687 0 32 (uf) widthshow
+277.574402 679.666016 M 0.750687 0 32 (fer are updated to re\337ect the ne) widthshow
+406.228668 679.666016 M 0.750687 0 32 (w v) widthshow
+421.449493 679.666016 M 0.750687 0 32 (al-) widthshow
+108 691.666016 M 0.374908 0 32 (ues resulting from their ef) widthshow
+213.119781 691.666016 M 0.374908 0 32 (fecti) widthshow
+230.639923 691.666016 M 0.374908 0 32 (v) widthshow
+235.490005 691.666016 M 0.374908 0 32 (e reception. The pseudo-recei) widthshow
+354.654907 691.666016 M 0.374908 0 32 (v) widthshow
+359.504974 691.666016 M 0.374908 0 32 (e handles the des-) widthshow
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 18 12
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(18 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(IPC Interface) 180.0 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+216 113.650665 M 2.084961 0 32 (tination and reply rights as an) widthshow
+344.874878 113.650665 M 2.084961 0 32 (y other rights; the) widthshow
+421.809875 113.650665 M 2.084961 0 32 (y are not re) widthshow
+473.07489 113.650665 M 2.084961 0 32 (v) widthshow
+477.924988 113.650665 M 2.084961 0 32 (ersed as is the) widthshow
+216 125.65065 M 1.530792 0 32 (appearance in a normal recei) widthshow
+336.823334 125.65065 M 1.530792 0 32 (v) widthshow
+341.673401 125.65065 M 1.530792 0 32 (ed message. Also, no trailer is appended to the) widthshow
+3 FF
+216 137.650635 M 0.174561 0 32 (message. After the pseudo-recei) widthshow
+344.563843 137.650635 M 0.174561 0 32 (v) widthshow
+349.41394 137.650635 M 0.174561 0 32 (e, the message is ready to be resent. If the mes-) widthshow
+3 FF
+216 149.65062 M 1.30661 0 32 (sage is not resent, note that out-of-line memory re) widthshow
+425.992981 149.65062 M 1.30661 0 32 (gions may ha) widthshow
+481.736328 149.65062 M 1.30661 0 32 (v) widthshow
+486.586395 149.65062 M 1.30661 0 32 (e mo) widthshow
+507.463074 149.65062 M 1.30661 0 32 (v) widthshow
+512.313171 149.65062 M 1.30661 0 32 (ed and) widthshow
+(some port rights may ha) 216.0 161.651 T
+(v) 312.46 161.651 T
+(e changed names. ) 317.31 161.651 T
+216 185.650589 M 0.96489 0 32 (Although unlik) widthshow
+277.704956 185.650589 M 0.96489 0 32 (ely) widthshow
+289.275299 185.650589 M 0.96489 0 32 (, the pseudo-recei) widthshow
+361.765228 185.650589 M 0.96489 0 32 (v) widthshow
+366.615295 185.650589 M 0.96489 0 32 (e operation may encounter resource short-) widthshow
+216 197.650574 M 0.74173 0 32 (ages. This is similar to a MA) widthshow
+335.880615 197.650574 M 0.74173 0 32 (CH_RCV_BOD) widthshow
+400.8909 197.650574 M 0.74173 0 32 (Y_ERR) widthshow
+432.161133 197.650574 M 0.74173 0 32 (OR return code from a re-) widthshow
+216 209.650558 M 4.668961 0 32 (cei) widthshow
+227.410141 209.650558 M 4.668961 0 32 (v) widthshow
+232.260223 209.650558 M 4.668961 0 32 (e operation. When this happens, the normal send return codes are) widthshow
+216 221.650543 M 2.826996 0 32 (augmented with the MA) widthshow
+321.571228 221.650543 M 2.826996 0 32 (CH_MSG_IPC_SP) widthshow
+397.891724 221.650543 M 2.826996 0 32 (A) widthshow
+404.711914 221.650543 M 2.826996 0 32 (CE, MA) widthshow
+441.029144 221.650543 M 2.826996 0 32 (CH_MSG_VM_SP) widthshow
+517.899658 221.650543 M 2.826996 0 32 (A) widthshow
+524.719849 221.650543 M 2.826996 0 32 (CE,) widthshow
+216 233.650528 M 2.569885 0 32 (MA) widthshow
+231.71022 233.650528 M 2.569885 0 32 (CH_MSG_IPC_KERNEL and MA) widthshow
+377.560211 233.650528 M 2.569885 0 32 (CH_MSG_VM_KERNEL bits to indi-) widthshow
+(cate the nature of the resource shortage.) 216.0 245.651 T
+0 FF
+(Message Recei) 180.0 269.65 T
+(v) 241.82 269.65 T
+(e) 246.72 269.65 T
+3 FF
+216 282.650482 M 0.835754 0 32 (The recei) widthshow
+254.065903 282.650482 M 0.835754 0 32 (v) widthshow
+258.915985 282.650482 M 0.835754 0 32 (e operation de-queues a message from a port. The recei) widthshow
+487.227966 282.650482 M 0.835754 0 32 (ving task ac-) widthshow
+(quires the port rights and out-of-line memory re) 216.0 294.65 T
+(gions carried in the message. ) 407.21 294.65 T
+216 318.650452 M 0.259125 0 32 (The ) widthshow
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+234.309128 318.650452 M 0.259125 0 32 (r) widthshow
+237.82933 318.650452 M 0.259125 0 32 (eceive_name) widthshow
+3 FF
+289.46936 318.650452 M 0.259125 0 32 ( ar) widthshow
+299.818573 318.650452 M 0.259125 0 32 (gument speci\336es a port or port set from which to recei) widthshow
+518.789978 318.650452 M 0.259125 0 32 (v) widthshow
+523.640076 318.650452 M 0.259125 0 32 (e. If) widthshow
+216 330.650452 M 0.741272 0 32 (a port is speci\336ed, the caller must possess the recei) widthshow
+425.721619 330.650452 M 0.741272 0 32 (v) widthshow
+430.571686 330.650452 M 0.741272 0 32 (e right for the port and the) widthshow
+216 342.650421 M 0.679398 0 32 (port must not be a member of a port set. If no message is present, then the call) widthshow
+(blocks, subject to the MA) 216.0 354.65 T
+(CH_RCV_TIMEOUT option. ) 318.65 354.65 T
+216 378.650391 M 0.434647 0 32 (If a port set is speci\336ed, the call will recei) widthshow
+386.85199 378.650391 M 0.434647 0 32 (v) widthshow
+391.702057 378.650391 M 0.434647 0 32 (e a message sent to an) widthshow
+482.315369 378.650391 M 0.434647 0 32 (y of the mem-) widthshow
+216 390.650391 M 1.014633 0 32 (ber ports. It is permissible for the port set to ha) widthshow
+413.426453 390.650391 M 1.014633 0 32 (v) widthshow
+418.27655 390.650391 M 1.014633 0 32 (e no member ports, and ports) widthshow
+216 402.65036 M 0.42926 0 32 (may be added and remo) widthshow
+313.097137 402.65036 M 0.42926 0 32 (v) widthshow
+317.947205 402.65036 M 0.42926 0 32 (ed while a recei) widthshow
+382.015137 402.65036 M 0.42926 0 32 (v) widthshow
+386.865234 402.65036 M 0.42926 0 32 (e from the port set is in progress. The) widthshow
+216 414.65033 M 0.693283 0 32 (recei) widthshow
+235.180145 414.65033 M 0.693283 0 32 (v) widthshow
+240.030228 414.65033 M 0.693283 0 32 (ed message can come from an) widthshow
+363.586731 414.65033 M 0.693283 0 32 (y of the member ports which ha) widthshow
+494.746582 414.65033 M 0.693283 0 32 (v) widthshow
+499.596649 414.65033 M 0.693283 0 32 (e messag-) widthshow
+216 426.65033 M 1.04686 0 32 (es, with the pro) widthshow
+280.650665 426.65033 M 1.04686 0 32 (viso that a member port with messages will not be inde\336nitely) widthshow
+216 438.65033 M 2.302094 0 32 (starv) widthshow
+235.290085 438.65033 M 2.302094 0 32 (ed. The ) widthshow
+4 FF
+272.384277 438.65033 M 2.302094 0 32 (msgh_local_port) widthshow
+3 FF
+340.164276 438.65033 M 2.302094 0 32 ( \336eld in the recei) widthshow
+416.332794 438.65033 M 2.302094 0 32 (v) widthshow
+421.182861 438.65033 M 2.302094 0 32 (ed message header speci\336es) widthshow
+(from which port in the port set the message came. ) 216.0 450.65 T
+216 474.650269 M 2.451859 0 32 (The ) widthshow
+4 FF
+236.501862 474.650269 M 2.451859 0 32 (r) widthshow
+240.022064 474.650269 M 2.451859 0 32 (eceive_limit) widthshow
+3 FF
+288.342072 474.650269 M 2.451859 0 32 ( ar) widthshow
+300.884033 474.650269 M 2.451859 0 32 (gument speci\336es the size of the caller\325) widthshow
+468.34552 474.650269 M 2.451859 0 32 (s message b) widthshow
+520.819336 474.650269 M 2.451859 0 32 (uf) widthshow
+528.899475 474.650269 M 2.451859 0 32 (fer) widthshow
+216 486.650269 M 0.00148 0 32 (\(which must be big enough for the message header) widthshow
+418.9021 486.650269 M 0.00148 0 32 (, body and trailer\); the ) widthshow
+4 FF
+510.559509 486.650269 M 0.00148 0 32 (msgh_-) widthshow
+216 498.650269 M 0.781433 0 32 (size) widthshow
+3 FF
+231 498.650269 M 0.781433 0 32 ( \336eld of the recei) widthshow
+301.635864 498.650269 M 0.781433 0 32 (v) widthshow
+306.485962 498.650269 M 0.781433 0 32 (ed message indicates the actual size of the recei) widthshow
+502.98761 498.650269 M 0.781433 0 32 (v) widthshow
+507.837677 498.650269 M 0.781433 0 32 (ed mes-) widthshow
+216 510.650238 M 1.62326 0 32 (sage header and body) widthshow
+306.580139 510.650238 M 1.62326 0 32 (. The ) widthshow
+0 FF
+332.876678 510.650238 M 1.62326 0 32 (mach_msg) widthshow
+3 FF
+378.426697 510.650238 M 1.62326 0 32 ( call will not recei) widthshow
+456.879883 510.650238 M 1.62326 0 32 (v) widthshow
+461.72995 510.650238 M 1.62326 0 32 (e a message lar) widthshow
+527.229858 510.650238 M 1.62326 0 32 (ger) widthshow
+216 522.650208 M 3.804932 0 32 (than ) widthshow
+4 FF
+239.524933 522.650208 M 3.804932 0 32 (r) widthshow
+243.045135 522.650208 M 3.804932 0 32 (eceive_limit) widthshow
+3 FF
+291.365143 522.650208 M 3.804932 0 32 (. Messages that are too lar) widthshow
+414.629913 522.650208 M 3.804932 0 32 (ge are destro) widthshow
+473.229858 522.650208 M 3.804932 0 32 (yed, unless the) widthshow
+(MA) 216.0 534.65 T
+(CH_RCV_LARGE option is used.) 231.71 534.65 T
+3 FF
+216 558.650208 M 1.14238 0 32 (F) widthshow
+221.41008 558.650208 M 1.14238 0 32 (ollo) widthshow
+236.720215 558.650208 M 1.14238 0 32 (wing the recei) widthshow
+295.405121 558.650208 M 1.14238 0 32 (v) widthshow
+300.255188 558.650208 M 1.14238 0 32 (ed data, at the ne) widthshow
+372.154816 558.650208 M 1.14238 0 32 (xt natural boundary) widthshow
+452.109924 558.650208 M 1.14238 0 32 (, is a message trailer) widthshow
+537.499756 558.650208 M 1.14238 0 32 (.) widthshow
+216 570.650146 M 0.662231 0 32 (The ) widthshow
+4 FF
+234.712234 570.650146 M 0.662231 0 32 (msgh_size) widthshow
+3 FF
+275.822235 570.650146 M 0.662231 0 32 ( \336eld of the recei) widthshow
+345.981323 570.650146 M 0.662231 0 32 (v) widthshow
+350.83139 570.650146 M 0.662231 0 32 (ed message does not include the length of this) widthshow
+216 582.650146 M 0.194885 0 32 (trailer; the trailer\325) widthshow
+286.930084 582.650146 M 0.194885 0 32 (s length is gi) widthshow
+338.104858 582.650146 M 0.194885 0 32 (v) widthshow
+342.954956 582.650146 M 0.194885 0 32 (en by the ) widthshow
+4 FF
+382.699615 582.650146 M 0.194885 0 32 (msgh_tr) widthshow
+415.329712 582.650146 M 0.194885 0 32 (ailer_size) widthshow
+3 FF
+454.219696 582.650146 M 0.194885 0 32 ( \336eld within the trail-) widthshow
+216 594.650146 M 0.982437 0 32 (er) widthshow
+223.220306 594.650146 M 0.982437 0 32 (. The recei) widthshow
+267.415344 594.650146 M 0.982437 0 32 (v) widthshow
+272.265411 594.650146 M 0.982437 0 32 (er of a message is gi) widthshow
+358.297729 594.650146 M 0.982437 0 32 (v) widthshow
+363.147827 594.650146 M 0.982437 0 32 (en a choice as to what trailer format is de-) widthshow
+216 606.650146 M 0.748291 0 32 (sired, and, within that format, which of the leading trailer attrib) widthshow
+476.30304 606.650146 M 0.748291 0 32 (utes are desired) widthshow
+216 618.650146 M 0.835342 0 32 (\(that is, to get trailer element three, the recei) widthshow
+399.612915 618.650146 M 0.835342 0 32 (v) widthshow
+404.462982 618.650146 M 0.835342 0 32 (er must also accept elements one) widthshow
+216 630.650085 M 0.3078 0 32 (and tw) widthshow
+243.147858 630.650085 M 0.3078 0 32 (o\). F) widthshow
+262.19574 630.650085 M 0.3078 0 32 (or an) widthshow
+282.623627 630.650085 M 0.3078 0 32 (y gi) widthshow
+297.961548 630.650085 M 0.3078 0 32 (v) widthshow
+302.811646 630.650085 M 0.3078 0 32 (en trailer format \(of which there is currently only one\), the) widthshow
+(trailer is compatibly e) 216.0 642.65 T
+(xtended by adding additional elements to the end.) 303.34 642.65 T
+3 FF
+216 666.650085 M 1.159927 0 32 (Recei) widthshow
+238.520142 666.650085 M 1.159927 0 32 (v) widthshow
+243.370224 666.650085 M 1.159927 0 32 (ed messages are stamped \(in the trailer\) with a sequence number) widthshow
+512.279785 666.650085 M 1.159927 0 32 (, tak) widthshow
+530.559753 666.650085 M 1.159927 0 32 (en) widthshow
+216 678.650024 M 0.439102 0 32 (from the port from which the message w) widthshow
+381.443787 678.650024 M 0.439102 0 32 (as recei) widthshow
+411.893036 678.650024 M 0.439102 0 32 (v) widthshow
+416.743103 678.650024 M 0.439102 0 32 (ed. \(Messages recei) widthshow
+495.951477 678.650024 M 0.439102 0 32 (v) widthshow
+500.801575 678.650024 M 0.439102 0 32 (ed from a) widthshow
+216 690.650024 M 2.213623 0 32 (port set are stamped with a sequence number from the appropriate member) widthshow
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 19 13
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (19 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(mach_msg) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+108 115.666656 M 0.626602 0 32 (port.\) Ne) widthshow
+144.476746 115.666656 M 0.626602 0 32 (wly created ports start with a zero sequence number) widthshow
+356.809814 115.666656 M 0.626602 0 32 (, and the sequence) widthshow
+108 127.666641 M 0.952408 0 32 (number is reset to zero whene) widthshow
+232.202194 127.666641 M 0.952408 0 32 (v) widthshow
+237.052277 127.666641 M 0.952408 0 32 (er the port's recei) widthshow
+308.379639 127.666641 M 0.952408 0 32 (v) widthshow
+313.229736 127.666641 M 0.952408 0 32 (e right mo) widthshow
+356.094635 127.666641 M 0.952408 0 32 (v) widthshow
+360.944702 127.666641 M 0.952408 0 32 (es between tasks.) widthshow
+108 139.666626 M 1.370697 0 32 (When a message is de-queued from the port, it is stamped with the port's se-) widthshow
+108 151.666611 M 0.761795 0 32 (quence number and the port's sequence number is then incremented. \(Note that) widthshow
+108 163.666595 M 0.152283 0 32 (this occurs whether or not the recei) widthshow
+249.183853 163.666595 M 0.152283 0 32 (v) widthshow
+254.033936 163.666595 M 0.152283 0 32 (er requests the sequence number in the trail-) widthshow
+108 175.66658 M 0.647232 0 32 (er) widthshow
+115.220306 175.66658 M 0.647232 0 32 (.\) The de-queue and increment operations are atomic, so that multiple threads) widthshow
+108 187.666565 M 0.683289 0 32 (recei) widthshow
+127.180145 187.666565 M 0.683289 0 32 (ving messages from a port can use the ) widthshow
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+287.616455 187.666565 M 0.683289 0 32 (msgh_seqno) widthshow
+3 FF
+337.056458 187.666565 M 0.683289 0 32 ( \336eld to reconstruct the) widthshow
+(original order of the messages.) 108.0 199.667 T
+108 223.666534 M 0.847397 0 32 (The destination and reply ports are re) widthshow
+262.244537 223.666534 M 0.847397 0 32 (v) widthshow
+267.094604 223.666534 M 0.847397 0 32 (ersed in a recei) widthshow
+329.636963 223.666534 M 0.847397 0 32 (v) widthshow
+334.487061 223.666534 M 0.847397 0 32 (ed message header) widthshow
+410.602173 223.666534 M 0.847397 0 32 (. The) widthshow
+4 FF
+108 235.666519 M 1.02359 0 32 (msgh_local_port) widthshow
+3 FF
+175.779999 235.666519 M 1.02359 0 32 ( \336eld carries the name of the destination port, from which the) widthshow
+108 247.666504 M 1.854889 0 32 (message w) widthshow
+153.35495 247.666504 M 1.854889 0 32 (as recei) widthshow
+185.219986 247.666504 M 1.854889 0 32 (v) widthshow
+190.070068 247.666504 M 1.854889 0 32 (ed, and the ) widthshow
+4 FF
+241.734741 247.666504 M 1.854889 0 32 (msgh_r) widthshow
+271.364929 247.666504 M 1.854889 0 32 (emote_port) widthshow
+3 FF
+316.914948 247.666504 M 1.854889 0 32 ( \336eld carries the reply port) widthshow
+108 259.666504 M 1.123276 0 32 (right. The bits in ) widthshow
+4 FF
+181.663101 259.666504 M 1.123276 0 32 (msgh_bits) widthshow
+3 FF
+222.223099 259.666504 M 1.123276 0 32 ( are also re) widthshow
+268.933075 259.666504 M 1.123276 0 32 (v) widthshow
+273.783142 259.666504 M 1.123276 0 32 (ersed. The MA) widthshow
+335.889954 259.666504 M 1.123276 0 32 (CH_MSGH_BITS_LO-) widthshow
+108 271.666473 M 4.492722 0 32 (CAL bits ha) widthshow
+165.675552 271.666473 M 4.492722 0 32 (v) widthshow
+170.525635 271.666473 M 4.492722 0 32 (e a v) widthshow
+198.14122 271.666473 M 4.492722 0 32 (alue of MA) widthshow
+252.826889 271.666473 M 4.492722 0 32 (CH_MSG_TYPE_POR) widthshow
+347.237213 271.666473 M 4.492722 0 32 (T_SEND_ONCE or) widthshow
+108 283.666443 M 2.014923 0 32 (MA) widthshow
+123.71022 283.666443 M 2.014923 0 32 (CH_MSG_TYPE_POR) widthshow
+218.120544 283.666443 M 2.014923 0 32 (T_SEND depending on the type of right to which) widthshow
+108 295.666443 M 1.55365 0 32 (the message w) widthshow
+169.327362 295.666443 M 1.55365 0 32 (as sent. The MA) widthshow
+239.688538 295.666443 M 1.55365 0 32 (CH_MSGH_BITS_REMO) widthshow
+347.628754 295.666443 M 1.55365 0 32 (TE bits describe the) widthshow
+(reply port right. ) 108.0 307.666 T
+108 331.666412 M 1.576263 0 32 (A recei) widthshow
+138.47641 331.666412 M 1.576263 0 32 (v) widthshow
+143.326492 331.666412 M 1.576263 0 32 (ed message can contain port rights and out-of-line memory) widthshow
+391.356995 331.666412 M 1.576263 0 32 (. The ) widthshow
+4 FF
+417.559509 331.666412 M 1.576263 0 32 (ms-) widthshow
+108 343.666382 M 0.608398 0 32 (gh_local_port) widthshow
+3 FF
+164.669998 343.666382 M 0.608398 0 32 ( \336eld does not carry a port right; the act of recei) widthshow
+361.902527 343.666382 M 0.608398 0 32 (ving the message) widthshow
+108 355.666382 M 1.765396 0 32 (consumes the send or send-once right for the destination port. The ) widthshow
+4 FF
+394.599365 355.666382 M 1.765396 0 32 (msgh_r) widthshow
+424.229584 355.666382 M 1.765396 0 32 (e-) widthshow
+108 367.666382 M 1.611633 0 32 (mote_port) widthshow
+3 FF
+149.110001 367.666382 M 1.611633 0 32 ( \336eld does carry a port right, and the message can carry additional) widthshow
+108 379.666351 M 0.578949 0 32 (port rights and memory if the MA) widthshow
+247.17392 379.666351 M 0.578949 0 32 (CH_MSGH_BITS_COMPLEX bit is set. Re-) widthshow
+108 391.666321 M 1.944504 0 32 (cei) widthshow
+119.410141 391.666321 M 1.944504 0 32 (v) widthshow
+124.260223 391.666321 M 1.944504 0 32 (ed port rights and memory should be consumed or de-allocated in some) widthshow
+(f) 108.0 403.666 T
+(ashion. ) 111.23 403.666 T
+108 427.666321 M 0.278427 0 32 (In almost all cases, ) widthshow
+4 FF
+187.713715 427.666321 M 0.278427 0 32 (msgh_local_port) widthshow
+3 FF
+255.493713 427.666321 M 0.278427 0 32 ( will specify the name of a recei) widthshow
+385.21286 427.666321 M 0.278427 0 32 (v) widthshow
+390.062927 427.666321 M 0.278427 0 32 (e right, ei-) widthshow
+108 439.66629 M 0.421555 0 32 (ther) widthshow
+4 FF
+123.550003 439.66629 M 0.421555 0 32 ( r) widthshow
+129.99176 439.66629 M 0.421555 0 32 (eceive_name) widthshow
+3 FF
+181.631775 439.66629 M 0.421555 0 32 (, or) widthshow
+194.983551 439.66629 M 0.421555 0 32 (, if) widthshow
+4 FF
+206.515106 439.66629 M 0.421555 0 32 ( r) widthshow
+212.956863 439.66629 M 0.421555 0 32 (eceive_name) widthshow
+3 FF
+264.596863 439.66629 M 0.421555 0 32 ( is a port set, a member of) widthshow
+4 FF
+371.417786 439.66629 M 0.421555 0 32 ( r) widthshow
+377.859528 439.66629 M 0.421555 0 32 (eceive_name) widthshow
+3 FF
+429.499542 439.66629 M 0.421555 0 32 (.) widthshow
+108 451.66626 M 0.85994 0 32 (If other threads are concurrently manipulating the recei) widthshow
+334.539734 451.66626 M 0.85994 0 32 (v) widthshow
+339.389832 451.66626 M 0.85994 0 32 (e right, the situation is) widthshow
+108 463.66626 M 0.418274 0 32 (more complicated. If the recei) widthshow
+229.663254 463.66626 M 0.418274 0 32 (v) widthshow
+234.513336 463.66626 M 0.418274 0 32 (e right is renamed during the call, then ) widthshow
+4 FF
+394.779541 463.66626 M 0.418274 0 32 (msgh_lo-) widthshow
+108 475.66626 M 0.44838 0 32 (cal_port) widthshow
+3 FF
+141.889999 475.66626 M 0.44838 0 32 ( speci\336es the right\325) widthshow
+219.065445 475.66626 M 0.44838 0 32 (s ne) widthshow
+235.093964 475.66626 M 0.44838 0 32 (w name. If the caller loses the recei) widthshow
+379.602783 475.66626 M 0.44838 0 32 (v) widthshow
+384.452881 475.66626 M 0.44838 0 32 (e right after) widthshow
+108 487.666229 M 0.463287 0 32 (the message w) widthshow
+167.146637 487.666229 M 0.463287 0 32 (as de-queued from it, then ) widthshow
+1 FF
+276.663086 487.666229 M 0.463287 0 32 (mach_msg) widthshow
+3 FF
+322.213074 487.666229 M 0.463287 0 32 ( will proceed instead of re-) widthshow
+108 499.666199 M 0.164337 0 32 (turning MA) widthshow
+155.264557 499.666199 M 0.164337 0 32 (CH_RCV_POR) widthshow
+218.56488 499.666199 M 0.164337 0 32 (T_DIED. If the recei) widthshow
+302.108032 499.666199 M 0.164337 0 32 (v) widthshow
+306.95813 499.666199 M 0.164337 0 32 (e right w) widthshow
+342.736877 499.666199 M 0.164337 0 32 (as destro) widthshow
+378.071259 499.666199 M 0.164337 0 32 (yed, then ) widthshow
+4 FF
+417.559937 499.666199 M 0.164337 0 32 (ms-) widthshow
+108 511.666199 M 1.459839 0 32 (gh_local_port) widthshow
+3 FF
+164.669998 511.666199 M 1.459839 0 32 ( speci\336es MA) widthshow
+222.739899 511.666199 M 1.459839 0 32 (CH_POR) widthshow
+260.480225 511.666199 M 1.459839 0 32 (T_DEAD. If the recei) widthshow
+351.799896 511.666199 M 1.459839 0 32 (v) widthshow
+356.649963 511.666199 M 1.459839 0 32 (e right still e) widthshow
+411.159576 511.666199 M 1.459839 0 32 (xists,) widthshow
+108 523.666199 M 2.248718 0 32 (b) widthshow
+112.80011 523.666199 M 2.248718 0 32 (ut isn\325) widthshow
+140.148926 523.666199 M 2.248718 0 32 (t held by the caller) widthshow
+223.174026 523.666199 M 2.248718 0 32 (, then ) widthshow
+4 FF
+252.391464 523.666199 M 2.248718 0 32 (msgh_local_port) widthshow
+3 FF
+320.171448 523.666199 M 2.248718 0 32 ( speci\336es MA) widthshow
+379.819122 523.666199 M 2.248718 0 32 (CH_POR) widthshow
+417.559448 523.666199 M 2.248718 0 32 (T_-) widthshow
+(NULL.) 108.0 535.666 T
+108 559.666138 M 1.674911 0 32 (These options modify MA) widthshow
+218.454956 559.666138 M 1.674911 0 32 (CH_RCV_MSG. If MA) widthshow
+317.794983 559.666138 M 1.674911 0 32 (CH_RCV_MSG is not also) widthshow
+(speci\336ed, the) 108.0 571.666 T
+(y are ignored.) 160.62 571.666 T
+(MA) 108.0 595.666 T
+(CH_RCV_TIMEOUT) 123.71 595.666 T
+144 607.666138 M 1.991074 0 32 (The ) widthshow
+4 FF
+164.041077 607.666138 M 1.991074 0 32 (timeout) widthshow
+3 FF
+194.041077 607.666138 M 1.991074 0 32 ( ar) widthshow
+206.122253 607.666138 M 1.991074 0 32 (gument should specify a maximum time \(in millisec-) widthshow
+144 619.666077 M 0.883789 0 32 (onds\) for the call to block before gi) widthshow
+291.296692 619.666077 M 0.883789 0 32 (ving up. If no message arri) widthshow
+402.665771 619.666077 M 0.883789 0 32 (v) widthshow
+407.515869 619.666077 M 0.883789 0 32 (es be-) widthshow
+144 631.666077 M 9.473724 0 32 (fore the timeout interv) widthshow
+261.881317 631.666077 M 9.473724 0 32 (al elapses, then the call returns) widthshow
+(MA) 144.0 643.666 T
+(CH_RCV_TIMED_OUT) 159.71 643.666 T
+(. A zero timeout is le) 260.631 643.666 T
+(gitimate.) 344.361 643.666 T
+(MA) 108.0 667.666 T
+(CH_RCV_NO) 123.71 667.666 T
+(TIFY) 182.2 667.666 T
+144 679.666016 M 0.789108 0 32 (The ) widthshow
+4 FF
+162.839111 679.666016 M 0.789108 0 32 (notify) widthshow
+3 FF
+185.61911 679.666016 M 0.789108 0 32 ( ar) widthshow
+196.498322 679.666016 M 0.789108 0 32 (gument should specify a recei) widthshow
+318.82489 679.666016 M 0.789108 0 32 (v) widthshow
+323.674988 679.666016 M 0.789108 0 32 (e right for a notify port. If) widthshow
+144 691.666016 M 0.946075 0 32 (recei) widthshow
+163.180145 691.666016 M 0.946075 0 32 (ving the reply port creates a ne) widthshow
+291.906738 691.666016 M 0.946075 0 32 (w port right in the caller) widthshow
+393.167358 691.666016 M 0.946075 0 32 (, then the) widthshow
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 20 14
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(20 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(IPC Interface) 180.0 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+252 113.650665 M 0.505783 0 32 (notify port is used to request a dead-name noti\336cation for the ne) widthshow
+513.663757 113.650665 M 0.505783 0 32 (w port) widthshow
+(right.) 252.0 125.651 T
+(MA) 216.0 149.651 T
+(CH_RCV_INTERR) 231.71 149.651 T
+(UPT) 311.87 149.651 T
+252 161.65062 M 3.029892 0 32 (If speci\336ed, the ) widthshow
+0 FF
+325.519684 161.65062 M 3.029892 0 32 (mach_msg) widthshow
+3 FF
+371.069702 161.65062 M 3.029892 0 32 ( call will return MA) widthshow
+462.77948 161.65062 M 3.029892 0 32 (CH_RCV_INTER-) widthshow
+252 173.650604 M 0.729935 0 32 (R) widthshow
+258.270203 173.650604 M 0.729935 0 32 (UPTED if a softw) widthshow
+332.850098 173.650604 M 0.729935 0 32 (are interrupt aborts the call. Otherwise, the recei) widthshow
+530.709778 173.650604 M 0.729935 0 32 (v) widthshow
+535.559875 173.650604 M 0.729935 0 32 (e) widthshow
+(operation will be retried.) 252.0 185.651 T
+(MA) 216.0 209.651 T
+(CH_RCV_O) 231.71 209.651 T
+(VER) 282.88 209.651 T
+(WRITE) 302.331 209.651 T
+252 221.650558 M 1.111862 0 32 (If speci\336ed, the message b) widthshow
+362.057556 221.650558 M 1.111862 0 32 (uf) widthshow
+370.137695 221.650558 M 1.111862 0 32 (fer speci\336ed by ) widthshow
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+437.623291 221.650558 M 1.111862 0 32 (r) widthshow
+441.143494 221.650558 M 1.111862 0 32 (eceive_msg) widthshow
+3 FF
+487.233521 221.650558 M 1.111862 0 32 ( \(or ) widthshow
+4 FF
+506.117249 221.650558 M 1.111862 0 32 (msg) widthshow
+3 FF
+522.227234 221.650558 M 1.111862 0 32 (\), of) widthshow
+252 233.650543 M 0.948715 0 32 (length ) widthshow
+4 FF
+280.44873 233.650543 M 0.948715 0 32 (r) widthshow
+283.968933 233.650543 M 0.948715 0 32 (eceive_msg_size) widthshow
+3 FF
+350.058929 233.650543 M 0.948715 0 32 (, will be scanned for out-of-line descriptors to) widthshow
+252 245.650528 M 1.309967 0 32 (specify the processing to be done when recei) widthshow
+440.039917 245.650528 M 1.309967 0 32 (ving out-of-line re) widthshow
+515.829956 245.650528 M 1.309967 0 32 (gions.) widthshow
+(This option is only allo) 252.0 257.651 T
+(wed for ) 344.54 257.651 T
+0 FF
+(mach_msg_o) 377.86 257.651 T
+(v) 433.31 257.651 T
+(erwrite) 438.21 257.651 T
+3 FF
+(.) 469.3 257.651 T
+(MA) 216.0 281.65 T
+(CH_RCV_LARGE) 231.71 281.65 T
+252 293.650482 M 1.478119 0 32 (If the message is lar) widthshow
+337.712585 293.650482 M 1.478119 0 32 (ger than ) widthshow
+4 FF
+375.658813 293.650482 M 1.478119 0 32 (r) widthshow
+379.179016 293.650482 M 1.478119 0 32 (eceive_limit) widthshow
+3 FF
+427.499023 293.650482 M 1.478119 0 32 ( or an out-of-line re) widthshow
+511.571594 293.650482 M 1.478119 0 32 (gion is) widthshow
+252 305.650452 M 2.872162 0 32 (lar) widthshow
+262.370117 305.650452 M 2.872162 0 32 (ger than the size allo) widthshow
+356.368896 305.650452 M 2.872162 0 32 (wed by a corresponding recei) widthshow
+485.347717 305.650452 M 2.872162 0 32 (v) widthshow
+490.197784 305.650452 M 2.872162 0 32 (e descriptor) widthshow
+252 317.650452 M 0.424835 0 32 (\(MA) widthshow
+271.040222 317.650452 M 0.424835 0 32 (CH_RCV_O) widthshow
+322.21051 317.650452 M 0.424835 0 32 (VER) widthshow
+341.660797 317.650452 M 0.424835 0 32 (WRITE\), the message remains queued instead of) widthshow
+252 329.650452 M 1.306564 0 32 (being destro) widthshow
+302.366638 329.650452 M 1.306564 0 32 (yed. If the header) widthshow
+375.856567 329.650452 M 1.306564 0 32 (, trailer and body w) widthshow
+459.022888 329.650452 M 1.306564 0 32 (ould not \336t into ) widthshow
+4 FF
+528.709106 329.650452 M 1.306564 0 32 (r) widthshow
+532.229309 329.650452 M 1.306564 0 32 (e-) widthshow
+252 341.650421 M 1.888535 0 32 (ceive_limit) widthshow
+3 FF
+295.880005 341.650421 M 1.888535 0 32 (, only the message header \() widthshow
+4 FF
+414.182678 341.650421 M 1.888535 0 32 (mac) widthshow
+430.69278 341.650421 M 1.888535 0 32 (h_msg_header) widthshow
+3 FF
+489.572784 341.650421 M 1.888535 0 32 (\) and trailer) widthshow
+3 FF
+252 353.650391 M 0.170975 0 32 (header \() widthshow
+4 FF
+284.651001 353.650391 M 0.170975 0 32 (mac) widthshow
+301.161072 353.650391 M 0.170975 0 32 (h_msg_tr) widthshow
+338.791138 353.650391 M 0.170975 0 32 (ailer) widthshow
+3 FF
+357.681152 353.650391 M 0.170975 0 32 (\) are returned with the actual size of the mes-) widthshow
+3 FF
+252 365.650391 M 1.528275 0 32 (sage returned in the ) widthshow
+4 FF
+339.203125 365.650391 M 1.528275 0 32 (msgh_size) widthshow
+3 FF
+380.31311 365.650391 M 1.528275 0 32 ( \336eld, the actual size of the trailer re-) widthshow
+3 FF
+252 377.650391 M 3.121902 0 32 (turned in the ) widthshow
+4 FF
+314.41571 377.650391 M 3.121902 0 32 (msgh_tr) widthshow
+347.045776 377.650391 M 3.121902 0 32 (ailer_size) widthshow
+3 FF
+385.935791 377.650391 M 3.121902 0 32 ( \336eld and an error return v) widthshow
+509.38736 377.650391 M 3.121902 0 32 (alue of) widthshow
+3 FF
+252 389.65036 M 1.266968 0 32 (MA) widthshow
+267.710205 389.65036 M 1.266968 0 32 (CH_RCV_T) widthshow
+318.090332 389.65036 M 1.266968 0 32 (OO_LARGE. If ) widthshow
+4 FF
+387.55426 389.65036 M 1.266968 0 32 (r) widthshow
+391.074463 389.65036 M 1.266968 0 32 (eceive_limit) widthshow
+3 FF
+439.39447 389.65036 M 1.266968 0 32 ( is suf) widthshow
+465.568542 389.65036 M 1.266968 0 32 <de6369656e742062> widthshow
+499.13562 389.65036 M 1.266968 0 32 (ut an out-) widthshow
+252 401.65033 M 1.401779 0 32 (of-line descriptor is not, the message header) widthshow
+436.360901 401.65033 M 1.401779 0 32 (, trailer and body are re-) widthshow
+252 413.65033 M 1.261932 0 32 (cei) widthshow
+263.410156 413.65033 M 1.261932 0 32 (v) widthshow
+268.260223 413.65033 M 1.261932 0 32 (ed, with out-of-line descriptors set to indicate the nature and size) widthshow
+252 425.65033 M 0.398743 0 32 (of the out-of-line re) widthshow
+331.636322 425.65033 M 0.398743 0 32 (gions, with an error return of MA) widthshow
+467.769012 425.65033 M 0.398743 0 32 (CH_RCV_SCA) widthshow
+530.559631 425.65033 M 0.398743 0 32 (T-) widthshow
+252 437.650299 M 1.032181 0 32 (TER_SMALL. No out-of-line re) widthshow
+385.486633 437.650299 M 1.032181 0 32 (gions or port rights \(including the re-) widthshow
+252 449.650269 M 0.609085 0 32 (ply right\) will be recei) widthshow
+343.616486 449.650269 M 0.609085 0 32 (v) widthshow
+348.466553 449.650269 M 0.609085 0 32 (ed. If this option is not speci\336ed, messages too) widthshow
+252 461.650269 M 0.215408 0 32 (lar) widthshow
+262.370117 461.650269 M 0.215408 0 32 (ge will be de-queued and then destro) widthshow
+410.752625 461.650269 M 0.215408 0 32 (yed; the caller recei) widthshow
+489.729004 461.650269 M 0.215408 0 32 (v) widthshow
+494.579102 461.650269 M 0.215408 0 32 (es the mes-) widthshow
+252 473.650269 M 1.418915 0 32 (sage header) widthshow
+299.939148 473.650269 M 1.418915 0 32 (, with all \336elds correct, including the destination port b) widthshow
+532.219482 473.650269 M 1.418915 0 32 (ut) widthshow
+252 485.650238 M 0.464355 0 32 (e) widthshow
+256.2901 485.650238 M 0.464355 0 32 (xcepting the reply port, which is MA) widthshow
+406.716431 485.650238 M 0.464355 0 32 (CH_POR) widthshow
+444.456787 485.650238 M 0.464355 0 32 (T_NULL and an empty) widthshow
+3 FF
+(\(no additional element\) message trailer) 252.0 497.65 T
+(.) 407.53 497.65 T
+(MA) 216.0 521.65 T
+(CH_RCV_TRAILER_TYPE\() 231.71 521.65 T
+4 FF
+(value) 351.71 521.65 T
+3 FF
+(\)) 373.37 521.65 T
+252 533.650208 M 0.910797 0 32 (This macro encodes the type of trailer the k) widthshow
+433.036438 533.650208 M 0.910797 0 32 (ernel must return with the) widthshow
+252 545.650146 M 0.44902 0 32 (message. If the k) widthshow
+321.007141 545.650146 M 0.44902 0 32 (ernel does not recognize this type, it returns MA) widthshow
+517.779541 545.650146 M 0.44902 0 32 (CH_-) widthshow
+252 557.650146 M 4.306213 0 32 (RCV_INV) widthshow
+293.980743 557.650146 M 4.306213 0 32 (ALID_TRAILER. Currently) widthshow
+412.067322 557.650146 M 4.306213 0 32 (, only MA) widthshow
+461.669983 557.650146 M 4.306213 0 32 (CH_MSG_TRAIL-) widthshow
+(ER_FORMA) 252.0 569.65 T
+(T_0 is supported.) 304.231 569.65 T
+(MA) 216.0 593.65 T
+(CH_RCV_TRAILER_ELEMENTS\() 231.71 593.65 T
+4 FF
+(value) 378.93 593.65 T
+3 FF
+(\)) 400.59 593.65 T
+252 605.650146 M 0.79361 0 32 (This macro encodes the number of trailer elements desired. If the k) widthshow
+528.89978 605.650146 M 0.79361 0 32 (er-) widthshow
+252 617.650085 M 0.47081 0 32 (nel does not support this number for the requested trailer type, the k) widthshow
+528.89978 617.650085 M 0.47081 0 32 (er-) widthshow
+252 629.650085 M 1.026947 0 32 (nel returns MA) widthshow
+314.75412 629.650085 M 1.026947 0 32 (CH_RCV_INV) widthshow
+375.624878 629.650085 M 1.026947 0 32 (ALID_TRAILER. Zero is a le) widthshow
+500.392761 629.650085 M 1.026947 0 32 (g) widthshow
+505.342773 629.650085 M 1.026947 0 32 (al v) widthshow
+520.839844 629.650085 M 1.026947 0 32 (alue.) widthshow
+(The follo) 252.0 641.65 T
+(wing trailer elements are supported:) 288.69 641.65 T
+(MA) 252.0 665.65 T
+(CH_RCV_TRAILER_SEQNO) 267.71 665.65 T
+288 677.650024 M 1.968842 0 32 (Returns the sequence number of the message relati) widthshow
+504.542053 677.650024 M 1.968842 0 32 (v) widthshow
+509.392151 677.650024 M 1.968842 0 32 (e to its) widthshow
+(port. This v) 288.0 689.65 T
+(alue is of type ) 334.14 689.65 T
+4 FF
+(mac) 393.02 689.65 T
+(h_port_seqno_t) 409.53 689.65 T
+3 FF
+(.) 472.31 689.65 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 21 15
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (21 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(mach_msg) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(MA) 144.0 115.667 T
+(CH_RCV_TRAILER_SENDER) 159.71 115.667 T
+180 127.666641 M 0.437241 0 32 (Returns the security ID of the task that sent the message. This) widthshow
+(v) 180.0 139.667 T
+(alue is of type ) 184.75 139.667 T
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+(security_id_t) 243.63 139.667 T
+3 FF
+(.) 295.85 139.667 T
+3 FF
+108 163.666611 M 0.52063 0 32 (If a resource shortage pre) widthshow
+211.452682 163.666611 M 0.52063 0 32 (v) widthshow
+216.302765 163.666611 M 0.52063 0 32 (ents the reception of a port right, the port right is de-) widthshow
+108 175.666595 M 0.520813 0 32 (stro) widthshow
+122.900055 175.666595 M 0.520813 0 32 (yed and the caller sees the name MA) widthshow
+273.605988 175.666595 M 0.520813 0 32 (CH_POR) widthshow
+311.346313 175.666595 M 0.520813 0 32 (T_NULL. If a resource short-) widthshow
+108 187.66658 M 3.059036 0 32 (age pre) widthshow
+139.959183 187.66658 M 3.059036 0 32 (v) widthshow
+144.809265 187.66658 M 3.059036 0 32 (ents the reception of an out-of-line memory re) widthshow
+350.752625 187.66658 M 3.059036 0 32 (gion, the re) widthshow
+401.990784 187.66658 M 3.059036 0 32 (gion is) widthshow
+108 199.666565 M 0.626633 0 32 (destro) widthshow
+132.340057 199.666565 M 0.626633 0 32 (yed and the caller sees a zero address. In addition, the corresponding ele-) widthshow
+108 211.66655 M 0.286819 0 32 (ment in the size array is set to zero. A task ne) widthshow
+292.535156 211.66655 M 0.286819 0 32 (v) widthshow
+297.385254 211.66655 M 0.286819 0 32 (er recei) widthshow
+327.122223 211.66655 M 0.286819 0 32 (v) widthshow
+331.97229 211.66655 M 0.286819 0 32 (es port rights or memory) widthshow
+(for which it is not told.) 108.0 223.667 T
+108 247.666519 M 1.764175 0 32 (The MA) widthshow
+143.524399 247.666519 M 1.764175 0 32 (CH_RCV_HEADER_ERR) widthshow
+252.574615 247.666519 M 1.764175 0 32 (OR return code indicates a resource short-) widthshow
+108 259.666504 M 1.381378 0 32 (age in the reception of the message header) widthshow
+286.789978 259.666504 M 1.381378 0 32 (. The reply port and all port rights) widthshow
+108 271.666504 M 0.035782 0 32 (and memory in the message are destro) widthshow
+261.414764 271.666504 M 0.035782 0 32 (yed. The caller recei) widthshow
+342.902283 271.666504 M 0.035782 0 32 (v) widthshow
+347.75235 271.666504 M 0.035782 0 32 (es the message head-) widthshow
+(er with all \336elds correct e) 108.0 283.666 T
+(xcept for the reply port. ) 209.77 283.666 T
+108 307.666443 M 0.536118 0 32 (The MA) widthshow
+142.296341 307.666443 M 0.536118 0 32 (CH_RCV_BOD) widthshow
+207.306641 307.666443 M 0.536118 0 32 (Y_ERR) widthshow
+238.576859 307.666443 M 0.536118 0 32 (OR return code indicates a resource shortage in) widthshow
+108 319.666443 M 2.005386 0 32 (the reception of the message body) widthshow
+253.737305 319.666443 M 2.005386 0 32 (. The message header) widthshow
+345.433716 319.666443 M 2.005386 0 32 (, including the reply) widthshow
+108 331.666443 M 1.196136 0 32 (port, is correct. The k) widthshow
+198.774612 331.666443 M 1.196136 0 32 (ernel attempts to transfer all port rights and memory re-) widthshow
+(gions in the body) 108.0 343.666 T
+(, and only destro) 176.52 343.666 T
+(ys those that can\325) 243.08 343.666 T
+(t be transferred.) 312.611 343.666 T
+1 FF
+(Atomicity) 72.0 367.666 T
+3 FF
+108 380.666382 M 0.780869 0 32 (The ) widthshow
+1 FF
+126.830872 380.666382 M 0.780869 0 32 (mach_msg) widthshow
+3 FF
+172.380875 380.666382 M 0.780869 0 32 ( call handles port rights in the message header atomically) widthshow
+407.889069 380.666382 M 0.780869 0 32 (. Out-) widthshow
+108 392.666382 M 0.551529 0 32 (of-line memory and port rights in the message body do not enjo) widthshow
+368.66687 392.666382 M 0.551529 0 32 (y this atomicity) widthshow
+108 404.666351 M 2.351227 0 32 (guarantee. These elements may be processed front-to-back, back-to-front, in) widthshow
+(some random order) 108.0 416.666 T
+(, or e) 185.36 416.666 T
+(v) 205.38 416.666 T
+(en atomically) 210.23 416.666 T
+(. ) 263.741 416.666 T
+108 440.666321 M 0.84903 0 32 (F) widthshow
+113.41008 440.666321 M 0.84903 0 32 (or e) widthshow
+129.379196 440.666321 M 0.84903 0 32 (xample, consider sending a message with the destination port speci\336ed as) widthshow
+108 452.666321 M 8.413162 0 32 (MA) widthshow
+123.71022 452.666321 M 8.413162 0 32 (CH_MSG_TYPE_MO) widthshow
+214.880493 452.666321 M 8.413162 0 32 (VE_SEND and the reply port speci\336ed as) widthshow
+108 464.66629 M 0.702774 0 32 (MA) widthshow
+123.71022 464.66629 M 0.702774 0 32 (CH_MSG_TYPE_COPY_SEND. The same send right, with one user) widthshow
+406.469757 464.66629 M 0.702774 0 32 (-refer-) widthshow
+108 476.66626 M 1.876602 0 32 (ence, is supplied for both the ) widthshow
+4 FF
+237.299622 476.66626 M 1.876602 0 32 (msgh_r) widthshow
+266.92981 476.66626 M 1.876602 0 32 (emote_port ) widthshow
+3 FF
+316.856445 476.66626 M 1.876602 0 32 (and ) widthshow
+4 FF
+335.673035 476.66626 M 1.876602 0 32 (msgh_local_port) widthshow
+3 FF
+403.453033 476.66626 M 1.876602 0 32 ( \336elds.) widthshow
+108 488.66626 M 1.30394 0 32 (Because ) widthshow
+1 FF
+145.123947 488.66626 M 1.30394 0 32 (mach_msg) widthshow
+3 FF
+190.67395 488.66626 M 1.30394 0 32 ( processes the port rights atomically) widthshow
+340.694031 488.66626 M 1.30394 0 32 (, this succeeds. If ) widthshow
+4 FF
+417.559784 488.66626 M 1.30394 0 32 (ms-) widthshow
+108 500.66626 M 4.579926 0 32 (gh_r) widthshow
+126.520203 500.66626 M 4.579926 0 32 (emote_port ) widthshow
+3 FF
+179.150131 500.66626 M 4.579926 0 32 (were processed before ) widthshow
+4 FF
+284.789917 500.66626 M 4.579926 0 32 (msgh_local_port) widthshow
+3 FF
+352.569946 500.66626 M 4.579926 0 32 (, then ) widthshow
+1 FF
+386.449768 500.66626 M 4.579926 0 32 (mach_msg) widthshow
+3 FF
+(w) 108.0 512.666 T
+(ould return MA) 115.12 512.666 T
+(CH_SEND_INV) 177.49 512.666 T
+(ALID_REPL) 243.911 512.666 T
+(Y in this situation.) 296.242 512.666 T
+108 536.666199 M 0.866882 0 32 (On the other hand, suppose the destination and reply port are both speci\336ed as) widthshow
+108 548.666199 M 1.489899 0 32 (MA) widthshow
+123.71022 548.666199 M 1.489899 0 32 (CH_MSG_TYPE_MO) widthshow
+214.880493 548.666199 M 1.489899 0 32 (VE_SEND, and ag) widthshow
+293.63031 548.666199 M 1.489899 0 32 (ain the same send right with one) widthshow
+108 560.666199 M 0.63327 0 32 (user) widthshow
+124.460114 560.666199 M 0.63327 0 32 (-reference is supplied for both. No) widthshow
+265.116638 560.666199 M 0.63327 0 32 (w the send operation f) widthshow
+356.419769 560.666199 M 0.63327 0 32 (ails, b) widthshow
+380.743164 560.666199 M 0.63327 0 32 (ut because it) widthshow
+108 572.666138 M 0.117416 0 32 (processes the rights atomically) widthshow
+230.742615 572.666138 M 0.117416 0 32 (, ) widthshow
+1 FF
+235.860031 572.666138 M 0.117416 0 32 (mach_msg) widthshow
+3 FF
+281.410034 572.666138 M 0.117416 0 32 ( can return either MA) widthshow
+368.119934 572.666138 M 0.117416 0 32 (CH_SEND_IN-) widthshow
+(V) 108.0 584.666 T
+(ALID_DEST or MA) 113.871 584.666 T
+(CH_SEND_INV) 196.791 584.666 T
+(ALID_REPL) 263.212 584.666 T
+(Y) 315.542 584.666 T
+(.) 321.473 584.666 T
+108 608.666138 M 0.013809 0 32 (F) widthshow
+113.41008 608.666138 M 0.013809 0 32 (or e) widthshow
+128.543976 608.666138 M 0.013809 0 32 (xample, consider recei) widthshow
+218.571747 608.666138 M 0.013809 0 32 (ving a message at the same time another thread is de-) widthshow
+108 620.666138 M 1.768112 0 32 (allocating the destination recei) widthshow
+235.534485 620.666138 M 1.768112 0 32 (v) widthshow
+240.384567 620.666138 M 1.768112 0 32 (e right. Suppose the reply port \336eld carries a) widthshow
+108 632.666138 M 1.334152 0 32 (send right for the destination port. If the de-allocation happens before the de-) widthshow
+108 644.666077 M 0.542374 0 32 (queuing, then the recei) widthshow
+200.46727 644.666077 M 0.542374 0 32 (v) widthshow
+205.317352 644.666077 M 0.542374 0 32 (er gets MA) widthshow
+250.992325 644.666077 M 0.542374 0 32 (CH_RCV_POR) widthshow
+314.292664 644.666077 M 0.542374 0 32 (T_DIED. If the de-allocation) widthshow
+108 656.666077 M 0.906601 0 32 (happens after the recei) widthshow
+200.709961 656.666077 M 0.906601 0 32 (v) widthshow
+205.560043 656.666077 M 0.906601 0 32 (e, then the ) widthshow
+4 FF
+252.159851 656.666077 M 0.906601 0 32 (msgh_local_port) widthshow
+3 FF
+319.93985 656.666077 M 0.906601 0 32 ( and the ) widthshow
+4 FF
+356.819641 656.666077 M 0.906601 0 32 (msgh_r) widthshow
+386.44986 656.666077 M 0.906601 0 32 (emote_port) widthshow
+3 FF
+108 668.666077 M 1.509171 0 32 <de656c647320626f74682073706563696679207468652073616d652072696768742c207768696368206265636f6d657320612064656164206e616d65207768656e207468652072652d> widthshow
+108 680.666016 M 1.531937 0 32 (cei) widthshow
+119.410141 680.666016 M 1.531937 0 32 (v) widthshow
+124.260223 680.666016 M 1.531937 0 32 (e right is de-allocated. If the de-allocation happens between the de-queue) widthshow
+108 692.666016 M 1.953232 0 32 (and the recei) widthshow
+162.746613 692.666016 M 1.953232 0 32 (v) widthshow
+167.596695 692.666016 M 1.953232 0 32 (e, then the ) widthshow
+4 FF
+217.336395 692.666016 M 1.953232 0 32 (msgh_local_port) widthshow
+3 FF
+285.116394 692.666016 M 1.953232 0 32 ( and ) widthshow
+4 FF
+308.46286 692.666016 M 1.953232 0 32 (msgh_r) widthshow
+338.093079 692.666016 M 1.953232 0 32 (emote_port) widthshow
+3 FF
+383.643066 692.666016 M 1.953232 0 32 ( \336elds both) widthshow
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 22 16
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(22 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(IPC Interface) 180.0 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+216 113.650665 M 1.337357 0 32 (specify MA) widthshow
+264.427582 113.650665 M 1.337357 0 32 (CH_POR) widthshow
+302.167908 113.650665 M 1.337357 0 32 (T_DEAD. Because the rights are processed atomically) widthshow
+528.102417 113.650665 M 1.337357 0 32 (, it) widthshow
+(is not possible for just one of the tw) 216.0 125.651 T
+(o \336elds to hold MA) 359.23 125.651 T
+(CH_POR) 437.17 125.651 T
+(T_DEAD.) 474.911 125.651 T
+216 149.650635 M 0.827667 0 32 (The MA) widthshow
+250.587891 149.650635 M 0.827667 0 32 (CH_RCV_NO) widthshow
+309.078125 149.650635 M 0.827667 0 32 (TIFY option pro) widthshow
+376.693542 149.650635 M 0.827667 0 32 (vides a more lik) widthshow
+443.236572 149.650635 M 0.827667 0 32 (ely e) widthshow
+463.074341 149.650635 M 0.827667 0 32 (xample. Suppose a) widthshow
+216 161.65062 M 3.541946 0 32 (message carrying a send-once right reply port is recei) widthshow
+457.915741 161.65062 M 3.541946 0 32 (v) widthshow
+462.765808 161.65062 M 3.541946 0 32 (ed with MA) widthshow
+517.779907 161.65062 M 3.541946 0 32 (CH_-) widthshow
+216 173.650604 M 0.740662 0 32 (RCV_NO) widthshow
+255.60022 173.650604 M 0.740662 0 32 (TIFY at the same time the reply port is destro) widthshow
+444.64624 173.650604 M 0.740662 0 32 (yed. If the reply port is) widthshow
+216 185.650589 M 0.546906 0 32 (destro) widthshow
+240.340057 185.650589 M 0.546906 0 32 (yed \336rst, then ) widthshow
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+299.200775 185.650589 M 0.546906 0 32 (msgh_r) widthshow
+328.830994 185.650589 M 0.546906 0 32 (emote_port ) widthshow
+3 FF
+377.427887 185.650589 M 0.546906 0 32 (speci\336es MA) widthshow
+430.625 185.650589 M 0.546906 0 32 (CH_POR) widthshow
+468.365356 185.650589 M 0.546906 0 32 (T_DEAD and the) widthshow
+216 197.650574 M 0.564117 0 32 (k) widthshow
+220.900055 197.650574 M 0.564117 0 32 (ernel does not generate a dead-name noti\336cation. If the reply port is destro) widthshow
+525.55957 197.650574 M 0.564117 0 32 (yed) widthshow
+216 209.650558 M 0.611572 0 32 (after it is recei) widthshow
+275.06488 209.650558 M 0.611572 0 32 (v) widthshow
+279.914948 209.650558 M 0.611572 0 32 (ed, then ) widthshow
+4 FF
+315.298096 209.650558 M 0.611572 0 32 (msgh_r) widthshow
+344.928284 209.650558 M 0.611572 0 32 (emote_port) widthshow
+3 FF
+390.478302 209.650558 M 0.611572 0 32 ( speci\336es a dead name for which the) widthshow
+216 221.650543 M 0.345764 0 32 (k) widthshow
+220.900055 221.650543 M 0.345764 0 32 (ernel generates a dead-name noti\336cation. Either the reply port is dead on arri) widthshow
+531.669434 221.650543 M 0.345764 0 32 (v-) widthshow
+(al or noti\336cation ) 216.0 233.651 T
+(is requested.) 284.61 233.651 T
+0 FF
+(Implementation) 180.0 257.651 T
+0 FF
+216 270.650513 M 2.221069 0 32 (mach_msg) widthshow
+3 FF
+261.549988 270.650513 M 2.221069 0 32 ( and ) widthshow
+0 FF
+285.432129 270.650513 M 2.221069 0 32 (mach_msg_o) widthshow
+340.882202 270.650513 M 2.221069 0 32 (v) widthshow
+345.782257 270.650513 M 2.221069 0 32 (erwrite) widthshow
+3 FF
+376.872253 270.650513 M 2.221069 0 32 ( are wrappers for a system call. The) widthshow
+534.999878 270.650513 M 2.221069 0 32 (y) widthshow
+(ha) 216.0 282.65 T
+(v) 225.24 282.65 T
+(e the responsibility for repeating the interrupted system call.) 230.09 282.65 T
+5 (Times-Bold) 12 1 mymakefontmetric
+5 FF
+(CA) 180.0 313.984 T
+(UTIONS) 196.728 313.984 T
+3 FF
+216 330.650452 M 1.314804 0 32 (If MA) widthshow
+242.185028 330.650452 M 1.314804 0 32 (CH_RCV_TIMEOUT is used without MA) widthshow
+418.15448 330.650452 M 1.314804 0 32 (CH_RCV_INTERR) widthshow
+498.314697 330.650452 M 1.314804 0 32 (UPT) widthshow
+516.465088 330.650452 M 1.314804 0 32 (, then) widthshow
+216 342.650452 M 0.439987 0 32 (the timeout duration might not be accurate. When the call is interrupted and au-) widthshow
+216 354.650452 M 1.570969 0 32 (tomatically retried, the original timeout is used. If interrupts occur frequently) widthshow
+216 366.650421 M 2.612717 0 32 (enough, the timeout interv) widthshow
+329.138306 366.650421 M 2.612717 0 32 (al might ne) widthshow
+379.113861 366.650421 M 2.612717 0 32 (v) widthshow
+383.963928 366.650421 M 2.612717 0 32 (er e) widthshow
+401.136749 366.650421 M 2.612717 0 32 (xpire. MA) widthshow
+445.009705 366.650421 M 2.612717 0 32 (CH_SEND_TIMEOUT) widthshow
+(without MA) 216.0 378.65 T
+(CH_SEND_INTERR) 264.77 378.65 T
+(UPT suf) 350.48 378.65 T
+(fers from the same problem.) 383.841 378.65 T
+5 FF
+(RETURN V) 180.0 409.984 T
+(ALUE) 240.709 409.984 T
+3 FF
+216 426.650391 M 0.596313 0 32 (The send operation can generate the follo) widthshow
+384.838043 426.650391 M 0.596313 0 32 (wing return codes. These return codes) widthshow
+(imply that the call did nothing:) 216.0 438.65 T
+(MA) 216.0 462.65 T
+(CH_SEND_MSG_T) 231.71 462.65 T
+(OO_SMALL) 314.31 462.65 T
+252 474.65033 M 0.613586 0 32 (The speci\336ed) widthshow
+4 FF
+306.213593 474.65033 M 0.613586 0 32 ( send_size) widthshow
+3 FF
+347.657166 474.65033 M 0.613586 0 32 ( w) widthshow
+357.890808 474.65033 M 0.613586 0 32 (as smaller than the minimum size for a mes-) widthshow
+(sage.) 252.0 486.65 T
+(MA) 216.0 510.65 T
+(CH_SEND_NO_B) 231.71 510.65 T
+(UFFER) 307.72 510.65 T
+252 522.650269 M 1.909943 0 32 (A resource shortage pre) widthshow
+352.719971 522.650269 M 1.909943 0 32 (v) widthshow
+357.570068 522.650269 M 1.909943 0 32 (ented the k) widthshow
+405.170013 522.650269 M 1.909943 0 32 (ernel from allocating a message) widthshow
+(b) 252.0 534.65 T
+(uf) 256.8 534.65 T
+(fer) 264.88 534.65 T
+(.) 275.431 534.65 T
+(MA) 216.0 558.65 T
+(CH_SEND_INV) 231.71 558.65 T
+(ALID_D) 298.131 558.65 T
+(A) 333.831 558.65 T
+(T) 339.942 558.65 T
+(A) 345.122 558.65 T
+(The supplied message b) 252.0 570.65 T
+(uf) 347.62 570.65 T
+(fer w) 355.7 570.65 T
+(as not readable.) 376.42 570.65 T
+(MA) 216.0 594.65 T
+(CH_SEND_INV) 231.71 594.65 T
+(ALID_HEADER) 298.131 594.65 T
+(The ) 252.0 606.65 T
+4 FF
+(msgh_bits ) 270.05 606.65 T
+3 FF
+(v) 313.11 606.65 T
+(alue w) 317.86 606.65 T
+(as in) 344.14 606.65 T
+(v) 362.35 606.65 T
+(alid.) 367.101 606.65 T
+(MA) 216.0 630.65 T
+(CH_SEND_INV) 231.71 630.65 T
+(ALID_DEST) 298.131 630.65 T
+(The ) 252.0 642.65 T
+4 FF
+(msgh_r) 270.05 642.65 T
+(emote_port) 299.68 642.65 T
+3 FF
+( v) 345.23 642.65 T
+(alue w) 352.48 642.65 T
+(as in) 378.76 642.65 T
+(v) 396.971 642.65 T
+(alid.) 401.721 642.65 T
+(MA) 216.0 666.65 T
+(CH_SEND_INV) 231.71 666.65 T
+(ALID_NO) 298.131 666.65 T
+(TIFY) 341.051 666.65 T
+252 678.650146 M 0.414917 0 32 (When using MA) widthshow
+319.090057 678.650146 M 0.414917 0 32 (CH_SEND_CANCEL, the ) widthshow
+4 FF
+429.639893 678.650146 M 0.414917 0 32 (notify) widthshow
+3 FF
+452.419891 678.650146 M 0.414917 0 32 ( ar) widthshow
+462.924927 678.650146 M 0.414917 0 32 (gument did not de-) widthshow
+(note a v) 252.0 690.65 T
+(alid recei) 283.41 690.65 T
+(v) 320.09 690.65 T
+(e right.) 324.94 690.65 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 23 17
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (23 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(mach_msg) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(MA) 108.0 115.667 T
+(CH_SEND_INV) 123.71 115.667 T
+(ALID_REPL) 190.131 115.667 T
+(Y) 242.462 115.667 T
+(The ) 144.0 127.667 T
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+(msgh_local_port) 162.05 127.667 T
+3 FF
+( v) 229.83 127.667 T
+(alue w) 237.08 127.667 T
+(as in) 263.36 127.667 T
+(v) 281.57 127.667 T
+(alid.) 286.321 127.667 T
+3 FF
+(MA) 108.0 151.667 T
+(CH_SEND_INV) 123.71 151.667 T
+(ALID_TRAILER) 190.131 151.667 T
+144 163.666611 M 0.610809 0 32 (The trailer to be sent does not correspond to the current k) widthshow
+379.738983 163.666611 M 0.610809 0 32 (ernel format,) widthshow
+144 175.666595 M 1.055786 0 32 (or the sending task does not ha) widthshow
+273.454834 175.666595 M 1.055786 0 32 (v) widthshow
+278.304932 175.666595 M 1.055786 0 32 (e the pri) widthshow
+312.936646 175.666595 M 1.055786 0 32 (vile) widthshow
+327.786713 175.666595 M 1.055786 0 32 (ge to supply the message) widthshow
+(attrib) 144.0 187.667 T
+(utes.) 164.91 187.667 T
+3 FF
+(These return codes imply that some or all of the message w) 108.0 211.667 T
+(as destro) 345.36 211.667 T
+(yed:) 380.53 211.667 T
+(MA) 108.0 235.667 T
+(CH_SEND_INV) 123.71 235.667 T
+(ALID_MEMOR) 190.131 235.667 T
+(Y) 256.141 235.667 T
+(The message body speci\336ed out-of-line data that w) 144.0 247.667 T
+(as not readable.) 348.03 247.667 T
+(MA) 108.0 271.667 T
+(CH_SEND_INV) 123.71 271.667 T
+(ALID_RIGHT) 190.131 271.667 T
+(The message body speci\336ed a port right which the caller didn\325) 144.0 283.667 T
+(t possess.) 393.22 283.667 T
+(MA) 108.0 307.666 T
+(CH_SEND_INV) 123.71 307.666 T
+(ALID_TYPE) 190.131 307.666 T
+(A k) 144.0 319.666 T
+(ernel processed descriptor w) 158.62 319.666 T
+(as in) 272.65 319.666 T
+(v) 290.86 319.666 T
+(alid.) 295.61 319.666 T
+(MA) 108.0 343.666 T
+(CH_SEND_MSG_T) 123.71 343.666 T
+(OO_SMALL) 206.31 343.666 T
+(The last data item in the message ran o) 144.0 355.666 T
+(v) 299.38 355.666 T
+(er the end of the message.) 304.23 355.666 T
+108 379.666443 M 1.794586 0 32 (These return codes imply that the message w) widthshow
+300.152161 379.666443 M 1.794586 0 32 (as returned to the caller with a) widthshow
+(pseudo-recei) 108.0 391.666 T
+(v) 158.84 391.666 T
+(e operation:) 163.69 391.666 T
+(MA) 108.0 415.666 T
+(CH_SEND_TIMED_OUT) 123.71 415.666 T
+(The ) 144.0 427.666 T
+4 FF
+(timeout) 162.05 427.666 T
+3 FF
+( interv) 192.05 427.666 T
+(al e) 217.63 427.666 T
+(xpired.) 231.64 427.666 T
+(MA) 108.0 451.666 T
+(CH_SEND_INTERR) 123.71 451.666 T
+(UPTED) 209.42 451.666 T
+(A softw) 144.0 463.666 T
+(are interrupt occurred.) 175.84 463.666 T
+(This return code implies that the message w) 108.0 487.666 T
+(as queued:) 283.71 487.666 T
+(MA) 108.0 511.666 T
+(CH_MSG_SUCCESS) 123.71 511.666 T
+(The message w) 144.0 523.666 T
+(as queued.) 205.55 523.666 T
+108 547.66626 M 2.168915 0 32 (The recei) widthshow
+147.399063 547.66626 M 2.168915 0 32 (v) widthshow
+152.249146 547.66626 M 2.168915 0 32 (e operation can generate the follo) widthshow
+296.413879 547.66626 M 2.168915 0 32 (wing return codes. These return) widthshow
+(codes imply that the call did not de-queue a message:) 108.0 559.666 T
+(MA) 108.0 583.666 T
+(CH_RCV_INV) 123.71 583.666 T
+(ALID_N) 184.581 583.666 T
+(AME) 220.331 583.666 T
+(The speci\336ed ) 144.0 595.666 T
+4 FF
+(r) 200.1 595.666 T
+(eceive_name) 203.62 595.666 T
+3 FF
+( w) 255.26 595.666 T
+(as in) 264.88 595.666 T
+(v) 283.09 595.666 T
+(alid.) 287.841 595.666 T
+(MA) 108.0 619.666 T
+(CH_RCV_IN_SET) 123.71 619.666 T
+(The speci\336ed port w) 144.0 631.666 T
+(as a member of a port set.) 225.83 631.666 T
+(MA) 108.0 655.666 T
+(CH_RCV_TIMED_OUT) 123.71 655.666 T
+(The ) 144.0 667.666 T
+4 FF
+(timeout) 162.05 667.666 T
+3 FF
+( interv) 192.05 667.666 T
+(al e) 217.63 667.666 T
+(xpired.) 231.64 667.666 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 24 18
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(24 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(IPC Interface) 180.0 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(MA) 216.0 113.651 T
+(CH_RCV_INTERR) 231.71 113.651 T
+(UPTED) 311.87 113.651 T
+(A softw) 252.0 125.651 T
+(are interrupt occurred.) 283.84 125.651 T
+(MA) 216.0 149.651 T
+(CH_RCV_POR) 231.71 149.651 T
+(T_DIED) 295.011 149.651 T
+(The caller lost the rights speci\336ed by ) 252.0 161.651 T
+4 (Times-Italic) 10 1 mymakefontmetric
+4 FF
+(r) 402.26 161.651 T
+(eceive_name) 405.78 161.651 T
+3 FF
+(.) 457.42 161.651 T
+(MA) 216.0 185.651 T
+(CH_RCV_POR) 231.71 185.651 T
+(T_CHANGED) 295.011 185.651 T
+4 FF
+252 197.650589 M 0.359879 0 32 (r) widthshow
+255.520203 197.650589 M 0.359879 0 32 (eceive_name) widthshow
+3 FF
+307.160217 197.650589 M 0.359879 0 32 ( speci\336ed a recei) widthshow
+374.910004 197.650589 M 0.359879 0 32 (v) widthshow
+379.760071 197.650589 M 0.359879 0 32 (e right which w) widthshow
+443.229797 197.650589 M 0.359879 0 32 (as mo) widthshow
+467.049744 197.650589 M 0.359879 0 32 (v) widthshow
+471.899841 197.650589 M 0.359879 0 32 (ed into a port set) widthshow
+(during the call.) 252.0 209.651 T
+(MA) 216.0 233.651 T
+(CH_RCV_T) 231.71 233.651 T
+(OO_LARGE) 282.09 233.651 T
+252 245.650543 M 1.65741 0 32 (When using MA) widthshow
+321.575043 245.650543 M 1.65741 0 32 (CH_RCV_LARGE, the message w) widthshow
+467.547333 245.650543 M 1.65741 0 32 (as lar) widthshow
+490.404846 245.650543 M 1.65741 0 32 (ger than ) widthshow
+4 FF
+528.709656 245.650543 M 1.65741 0 32 (r) widthshow
+532.229858 245.650543 M 1.65741 0 32 (e-) widthshow
+252 257.650513 M 0.909073 0 32 (ceive_limit) widthshow
+3 FF
+295.880005 257.650513 M 0.909073 0 32 (. The message is left queued, and its actual size is returned) widthshow
+(in the message header/message body) 252.0 269.651 T
+(.) 398.54 269.651 T
+(MA) 216.0 293.65 T
+(CH_RCV_SCA) 231.71 293.65 T
+(TTER_SMALL) 294.501 293.65 T
+252 305.650482 M 7.74231 0 32 (When using MA) widthshow
+333.744843 305.650482 M 7.74231 0 32 (CH_RCV_LARGE with MA) widthshow
+465.499695 305.650482 M 7.74231 0 32 (CH_RCV_O) widthshow
+516.669922 305.650482 M 7.74231 0 32 (VER-) widthshow
+252 317.650452 M 0.919907 0 32 (WRITE, one or more scatter list descriptors speci\336ed an o) widthshow
+492.309265 317.650452 M 0.919907 0 32 (v) widthshow
+497.159363 317.650452 M 0.919907 0 32 (erwrite re-) widthshow
+252 329.650452 M 1.094391 0 32 (gion smaller than the corresponding incoming re) widthshow
+452.836426 329.650452 M 1.094391 0 32 (gion. The message is) widthshow
+252 341.650452 M 2.223969 0 32 (left queued, and the proper descriptors are returned in the message) widthshow
+(header/message body) 252.0 353.65 T
+(.) 337.16 353.65 T
+3 FF
+(MA) 216.0 377.65 T
+(CH_RCV_INV) 231.71 377.65 T
+(ALID_TRAILER) 292.581 377.65 T
+3 FF
+252 389.650391 M 1.41452 0 32 (The trailer type desired, or the number of trailer elements desired, is) widthshow
+(not supported by the k) 252.0 401.65 T
+(ernel.) 341.34 401.65 T
+3 FF
+(These return codes imply that a message w) 216.0 425.65 T
+(as de-queued and destro) 387.81 425.65 T
+(yed:) 484.07 425.65 T
+(MA) 216.0 449.65 T
+(CH_RCV_HEADER_ERR) 231.71 449.65 T
+(OR) 340.76 449.65 T
+252 461.65033 M 1.602661 0 32 (A resource shortage pre) widthshow
+351.798157 461.65033 M 1.602661 0 32 (v) widthshow
+356.648224 461.65033 M 1.602661 0 32 (ented the reception of the port rights in the) widthshow
+(message header) 252.0 473.65 T
+(.) 314.48 473.65 T
+(MA) 216.0 497.65 T
+(CH_RCV_INV) 231.71 497.65 T
+(ALID_NO) 292.581 497.65 T
+(TIFY) 335.501 497.65 T
+252 509.650269 M 1.73732 0 32 (When using MA) widthshow
+321.734863 509.650269 M 1.73732 0 32 (CH_RCV_NO) widthshow
+380.225098 509.650269 M 1.73732 0 32 (TIFY) widthshow
+401.155792 509.650269 M 1.73732 0 32 (, the ) widthshow
+4 FF
+424.350433 509.650269 M 1.73732 0 32 (notify) widthshow
+3 FF
+447.130432 509.650269 M 1.73732 0 32 ( ar) widthshow
+458.957855 509.650269 M 1.73732 0 32 (gument did not de-) widthshow
+(note a v) 252.0 521.65 T
+(alid recei) 283.41 521.65 T
+(v) 320.09 521.65 T
+(e right.) 324.94 521.65 T
+(MA) 216.0 545.65 T
+(CH_RCV_INV) 231.71 545.65 T
+(ALID_D) 292.581 545.65 T
+(A) 328.281 545.65 T
+(T) 334.392 545.65 T
+(A) 339.572 545.65 T
+(The speci\336ed message b) 252.0 557.65 T
+(uf) 349.28 557.65 T
+(fer w) 357.36 557.65 T
+(as not writable.) 378.08 557.65 T
+(MA) 216.0 581.65 T
+(CH_RCV_T) 231.71 581.65 T
+(OO_LARGE) 282.09 581.65 T
+252 593.650208 M 2.963669 0 32 (When not using MA) widthshow
+342.431213 593.650208 M 2.963669 0 32 (CH_RCV_LARGE, a message lar) widthshow
+487.792358 593.650208 M 2.963669 0 32 (ger than ) widthshow
+4 FF
+528.709717 593.650208 M 2.963669 0 32 (r) widthshow
+532.229858 593.650208 M 2.963669 0 32 (e-) widthshow
+(ceive_limit) 252.0 605.65 T
+3 FF
+( w) 295.88 605.65 T
+(as de-queued and destro) 305.5 605.65 T
+(yed.) 401.76 605.65 T
+(MA) 216.0 629.65 T
+(CH_RCV_SCA) 231.71 629.65 T
+(TTER_SMALL) 294.501 629.65 T
+252 641.650146 M 3.137848 0 32 (When not using MA) widthshow
+342.953766 641.650146 M 3.137848 0 32 (CH_RCV_LARGE with MA) widthshow
+465.499695 641.650146 M 3.137848 0 32 (CH_RCV_O) widthshow
+516.669922 641.650146 M 3.137848 0 32 (VER-) widthshow
+252 653.650146 M 0.919907 0 32 (WRITE, one or more scatter list descriptors speci\336ed an o) widthshow
+492.309265 653.650146 M 0.919907 0 32 (v) widthshow
+497.159363 653.650146 M 0.919907 0 32 (erwrite re-) widthshow
+252 665.650146 M 2.377472 0 32 (gion smaller than the corresponding incoming re) widthshow
+460.534912 665.650146 M 2.377472 0 32 (gion. The message) widthshow
+(w) 252.0 677.65 T
+(as de-queued and destro) 259.12 677.65 T
+(yed.) 355.38 677.65 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 25 19
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+1 G
+72 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 8 1 mymakefontmetric
+0 FF
+(Mach 3 Kernel Interfaces) 72.0 732.707 T
+1 (Times-Bold) 10 1 mymakefontmetric
+1 FF
+422 732.706665 M -2.5 0 32 (25 ) widthshow
+1 G
+72 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(mach_msg) 72.0 56.824 T
+0.25 SL
+3.86 setmiterlimit
+432 63 M
+72 63 L
+S
+2 SL
+432 45 M
+72 45 L
+S
+0.25 SL
+2 SC
+432 720 M
+72 720 L
+S
+0 0 612 792 CR
+1 G
+72 108 360 594 NF
+0 G
+3 (Times-Roman) 10 1 mymakefontmetric
+3 FF
+(MA) 108.0 115.667 T
+(CH_RCV_O) 123.71 115.667 T
+(VER) 174.88 115.667 T
+(WRITE_ERR) 194.331 115.667 T
+(OR) 250.041 115.667 T
+144 127.666641 M 4.706116 0 32 (A re) widthshow
+166.046204 127.666641 M 4.706116 0 32 (gion speci\336ed by a recei) widthshow
+281.820801 127.666641 M 4.706116 0 32 (v) widthshow
+286.670898 127.666641 M 4.706116 0 32 (e o) widthshow
+303.167114 127.666641 M 4.706116 0 32 (v) widthshow
+308.017181 127.666641 M 4.706116 0 32 (erwrite descriptor \(MA) widthshow
+409.779663 127.666641 M 4.706116 0 32 (CH_-) widthshow
+(RCV_O) 144.0 139.667 T
+(VER) 176.28 139.667 T
+(WRITE\) w) 195.731 139.667 T
+(as not allocated or could not be written.) 240.341 139.667 T
+(MA) 108.0 163.667 T
+(CH_RCV_INV) 123.71 163.667 T
+(ALID_TYPE) 184.581 163.667 T
+144 175.666595 M 0.942383 0 32 (When using MA) widthshow
+212.144989 175.666595 M 0.942383 0 32 (CH_RCV_O) widthshow
+263.315247 175.666595 M 0.942383 0 32 (VER) widthshow
+282.765564 175.666595 M 0.942383 0 32 (WRITE, one or more scatter list de-) widthshow
+144 187.66658 M 1.45549 0 32 (scriptors did not ha) widthshow
+225.106583 187.66658 M 1.45549 0 32 (v) widthshow
+229.956665 187.66658 M 1.45549 0 32 (e the type matching the corresponding incoming) widthshow
+(message descriptor or had an in) 144.0 199.667 T
+(v) 269.96 199.667 T
+(alid cop) 274.71 199.667 T
+(y \(disposition\) \336eld.) 306.55 199.667 T
+(MA) 108.0 223.667 T
+(CH_RCV_LIMITS) 123.71 223.667 T
+144 235.666534 M 0.618164 0 32 (The combined size of all out-of-line memory re) widthshow
+338.417236 235.666534 M 0.618164 0 32 (gions or the total num-) widthshow
+(ber of port rights in the message e) 144.0 247.667 T
+(xceeds the limit set for the port.) 279.66 247.667 T
+(These return codes imply that a message w) 108.0 271.667 T
+(as recei) 279.81 271.667 T
+(v) 309.82 271.667 T
+(ed:) 314.67 271.667 T
+(MA) 108.0 295.666 T
+(CH_RCV_BOD) 123.71 295.666 T
+(Y_ERR) 188.721 295.666 T
+(OR) 219.991 295.666 T
+144 307.666473 M 1.199951 0 32 (A resource shortage pre) widthshow
+242.590012 307.666473 M 1.199951 0 32 (v) widthshow
+247.440094 307.666473 M 1.199951 0 32 (ented the reception of a port right or out-of-) widthshow
+(line memory re) 144.0 319.666 T
+(gion in the message body) 204.95 319.666 T
+(.) 305.96 319.666 T
+(MA) 108.0 343.666 T
+(CH_MSG_SUCCESS) 123.71 343.666 T
+(A message w) 144.0 355.666 T
+(as recei) 197.22 355.666 T
+(v) 227.23 355.666 T
+(ed.) 232.08 355.666 T
+108 379.666412 M 1.159973 0 32 (Resource shortages can occur after a message is de-queued, while transferring) widthshow
+108 391.666382 M 4.915955 0 32 (port rights and out-of-line memory re) widthshow
+282.129883 391.666382 M 4.915955 0 32 (gions to the recei) widthshow
+365.227875 391.666382 M 4.915955 0 32 (ving task. The) widthshow
+1 FF
+108 403.666382 M 2.653839 0 32 (mach_msg) widthshow
+3 FF
+153.550003 403.666382 M 2.653839 0 32 ( call returns MA) widthshow
+226.931747 403.666382 M 2.653839 0 32 (CH_RCV_HEADER_ERR) widthshow
+335.981964 403.666382 M 2.653839 0 32 (OR or MA) widthshow
+384.219849 403.666382 M 2.653839 0 32 (CH_RCV_-) widthshow
+108 415.666382 M 0.131714 0 32 (BOD) widthshow
+128.560303 415.666382 M 0.131714 0 32 (Y_ERR) widthshow
+159.830521 415.666382 M 0.131714 0 32 (OR in this situation. These return codes al) widthshow
+328.972595 415.666382 M 0.131714 0 32 (w) widthshow
+336.092651 415.666382 M 0.131714 0 32 (ays carry e) widthshow
+379.516174 415.666382 M 0.131714 0 32 (xtra bits \(bit-) widthshow
+(wise-or\325ed\) that indicate the nature of the resource shortage:) 108.0 427.666 T
+(MA) 108.0 451.666 T
+(CH_MSG_IPC_SP) 123.71 451.666 T
+(A) 200.031 451.666 T
+(CE) 206.851 451.666 T
+(There w) 144.0 463.666 T
+(as no room in the task\325) 176.94 463.666 T
+(s IPC name space for another port name.) 267.77 463.666 T
+(MA) 108.0 487.666 T
+(CH_MSG_VM_SP) 123.71 487.666 T
+(A) 200.581 487.666 T
+(CE) 207.401 487.666 T
+144 499.66629 M 1.096603 0 32 (There w) widthshow
+178.036667 499.66629 M 1.096603 0 32 (as no room in the task\325) widthshow
+274.349976 499.66629 M 1.096603 0 32 (s VM address space for an out-of-line) widthshow
+(memory re) 144.0 511.666 T
+(gion.) 187.45 511.666 T
+(MA) 108.0 535.666 T
+(CH_MSG_IPC_KERNEL) 123.71 535.666 T
+(A k) 144.0 547.666 T
+(ernel resource shortage pre) 158.62 547.666 T
+(v) 266.38 547.666 T
+(ented the reception of a port right.) 271.23 547.666 T
+(MA) 108.0 571.666 T
+(CH_MSG_VM_KERNEL) 123.71 571.666 T
+144 583.666199 M 1.848831 0 32 (A k) widthshow
+160.468887 583.666199 M 1.848831 0 32 (ernel resource shortage pre) widthshow
+273.775543 583.666199 M 1.848831 0 32 (v) widthshow
+278.62561 583.666199 M 1.848831 0 32 (ented the reception of an out-of-line) widthshow
+(memory re) 144.0 595.666 T
+(gion.) 187.45 595.666 T
+4 (Times-Bold) 12 1 mymakefontmetric
+4 FF
+(RELA) 72.0 627.0 T
+(TED INFORMA) 104.197 627.0 T
+(TION) 189.385 627.0 T
+3 FF
+108 643.666199 M 0.847427 0 32 (Functions: ) widthshow
+1 FF
+153.577423 643.666199 M 0.847427 0 32 (vm_allocate) widthshow
+3 FF
+204.677429 643.666199 M 0.847427 0 32 (, ) widthshow
+1 FF
+210.524857 643.666199 M 0.847427 0 32 (vm_deallocate) widthshow
+3 FF
+271.624878 643.666199 M 0.847427 0 32 (, ) widthshow
+1 FF
+277.47229 643.666199 M 0.847427 0 32 (vm_write) widthshow
+3 FF
+318.012299 643.666199 M 0.847427 0 32 (, ) widthshow
+1 FF
+323.859741 643.666199 M 0.847427 0 32 (mach_port_r) widthshow
+379.779846 643.666199 M 0.847427 0 32 (equest_noti-) widthshow
+<de636174696f6e> 108.0 655.666 T
+3 FF
+(.) 139.67 655.666 T
+(Data Structures: ) 108.0 679.666 T
+1 FF
+(mach_msg_header) 175.21 679.666 T
+3 FF
+(.) 254.65 679.666 T
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+
+%%Page: 26 20
+%%PageBoundingBox: 0 0 612 792
+%%PageFonts: (atend)
+%%BeginPageSetup
+%%PaperSize: Letter
+/__NXsheetsavetoken save def
+0 0 translate
+gsave
+ /__NXbasematrix matrix currentmatrix def
+grestore
+gsave
+0 0 612 792 rectclip
+[1 0 0 -1 0 792] concat
+0 0 translate
+%%EndPageSetup
+FMBEGINPAGE
+gsave
+0 0 612 792 rectclip
+/landscape false def
+0 0 612 792 CR
+0.25 SL
+3.86 setmiterlimit
+0 G
+540 720 M
+180 720 L
+S
+1 G
+180 725.039978 360 11.951996 NF
+0 G
+0 (Times-Bold) 10 1 mymakefontmetric
+0 FF
+(26 ) 180.0 732.707 T
+1 (Times-Bold) 8 1 mymakefontmetric
+1 FF
+(Mach 3 Kernel Interfaces) 324.0 732.707 T
+1 G
+180 49.824005 360 12.024002 NF
+0 G
+2 (Times-Bold) 9 1 mymakefontmetric
+2 FF
+(IPC Interface) 180.0 56.824 T
+0 SC
+540 63 M
+180 63 L
+S
+2 SL
+540 45 M
+180 45 L
+S
+0 0 612 792 CR
+1 G
+180 105.984009 360 596.015991 NF
+grestore
+FMENDPAGE
+grestore
+showpage
+__NXsheetsavetoken restore
+%%PageTrailer
+%%Trailer
+%%BoundingBox:0 0 612 792
+

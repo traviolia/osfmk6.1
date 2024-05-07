@@ -1,0 +1,5768 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 18 FMDOCUMENT
+0 0 /Helvetica-Bold FMFONTDEFINE
+1 0 /Helvetica FMFONTDEFINE
+2 0 /Helvetica-BoldOblique FMFONTDEFINE
+3 0 /Times-Roman FMFONTDEFINE
+4 0 /Times-Bold FMFONTDEFINE
+5 0 /Courier FMFONTDEFINE
+6 0 /Times-Italic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "-2" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+0 24 Q
+0 X
+0 K
+(OSF\320RI MK6.1) 224.02 704 T
+(Real-T) 150.93 674 T
+(ime Threads Library:) 223.8 674 T
+(Rthreads Interface Guide) 163.37 644 T
+0 12 Q
+(By) 298.34 610 T
+(Joseph CaraDonna) 248.57 594 T
+1 10 Q
+(\240) 357.87 598.8 T
+0 12 Q
+(Revision 0.7 \320 September 14, 1994) 208.34 578 T
+246.12 485.86 246.12 461.11 249.59 457.58 273.9 457.58 273.9 485.86 5 Y
+V
+1 H
+0 Z
+N
+2 36 Q
+7 X
+1 K
+(S) 240.1 456.03 T
+279.91 485.86 279.91 461.11 283.38 457.58 307.7 457.58 307.7 485.86 5 Y
+0 X
+0 K
+V
+N
+7 X
+1 K
+(F) 273.89 456.03 T
+212.32 485.86 212.32 461.11 215.8 457.58 240.11 457.58 240.11 485.86 5 Y
+0 X
+0 K
+V
+N
+7 X
+1 K
+(O) 206.3 456.03 T
+308 453 411 484 R
+0 K
+V
+0 14 Q
+0 X
+(RESEARCH) 320.24 474.67 T
+(INSTITUTE) 323.35 458.67 T
+144 414 468 446 R
+7 X
+V
+0 X
+(1 Cambridge Center) 239.52 436.67 T
+(Cambridge, MA 02142) 233.3 420.67 T
+72 48 522 252 R
+7 X
+V
+3 10 Q
+0 X
+(Copyright \2511994 by the Open Software Foundation, Inc.) 72 245.33 T
+(All rights reserved.) 72 221.33 T
+1.17 (Permission to reproduce this document without fee is hereby granted, provided that the copyright notice and) 72 197.33 P
+(this permission notice appear in all copies, derivative works or modi\336ed versions.) 72 185.33 T
+1.34 (OSF MAKES NO W) 72 161.33 P
+1.34 (ARRRANTY OF ANY KIND WITH REGARD T) 159.57 161.33 P
+1.34 (O THIS MA) 370.04 161.33 P
+1.34 (TERIAL, INCLUDING,) 422.13 161.33 P
+0.22 (BUT NOT LIMITED T) 72 149.33 P
+0.22 (O, THE IMPLIED W) 167.69 149.33 P
+0.22 (ARRANTIES OF MERCHANT) 253.85 149.33 P
+0.22 (ABILITY AND FITNESS FOR A) 383.42 149.33 P
+(P) 72 137.33 T
+(AR) 76.64 137.33 T
+(TICULAR PURPOSE.) 89.92 137.33 T
+0.14 (OSF shall not be liable for errors contained herein or for any direct or indirect, incidental, special or consequen-) 72 113.33 P
+(tial damages in connection with the furnishing, performance, or use of this material.) 72 101.33 T
+(\240) 72 56.8 T
+3 12 Q
+(This document was compiled by Marc J. T) 77 52 T
+(eller using the authors notes.) 281.35 52 T
+FMENDPAGE
+%%EndPage: "-2" 2
+%%Page: "-1" 2
+612 792 0 FMBEGINPAGE
+72 22.66 523 57.95 R
+7 X
+0 K
+V
+4 10 Q
+0 X
+(OSF\320RI MK6.1 Real-Time Threads Library: Rthreads Interface Guide) 216 51.28 T
+72 740.81 522 756 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 264.42 750 T
+72 721 522 739 R
+7 X
+V
+0 14 Q
+0 X
+(T) 222.11 729.67 T
+(ABLE OF CONTENTS) 229.63 729.67 T
+72 72 522 702 R
+7 X
+V
+1 12 Q
+0 X
+(Introduction) 90 694 T
+(.................................................................................) 153.37 694 T
+(1) 425.33 694 T
+(Rthread Handles) 108 680 T
+(...................................................................) 200.05 680 T
+(1) 425.33 680 T
+(Forking Support) 108 666 T
+(.....................................................................) 193.38 666 T
+(1) 425.33 666 T
+(Synchronization) 108 652 T
+(.....................................................................) 193.38 652 T
+(1) 425.33 652 T
+(Parent-Child Relationship) 108 638 T
+(.....................................................) 246.73 638 T
+(2) 425.33 638 T
+(Application Exit) 108 624 T
+(......................................................................) 190.05 624 T
+(2) 425.33 624 T
+(Scheduling) 108 610 T
+(............................................................................) 170.04 610 T
+(2) 425.33 610 T
+(Using The Rthreads Library) 90 584 T
+(........................................................) 236.73 584 T
+(3) 425.33 584 T
+(Compile T) 108 570 T
+(ime Options) 162.2 570 T
+(...........................................................) 226.72 570 T
+(3) 425.33 570 T
+(Stack Management) 108 556 T
+(...............................................................) 213.39 556 T
+(4) 425.33 556 T
+(References) 90 530 T
+(.................................................................................) 153.37 530 T
+(4) 425.33 530 T
+197.99 502.84 90 502.84 2 L
+V
+0.88 H
+0 Z
+N
+(Spawning Functions) 90 504 T
+3 F
+(rthread_activation_create) 108 490 T
+(.................................................................) 230.87 490 T
+(6) 426 490 T
+(rthread_spawn) 108 476 T
+(..................................................................................) 179.9 476 T
+(7) 426 476 T
+(rthread_spawn_priority) 108 462 T
+(....................................................................) 221.88 462 T
+(8) 426 462 T
+230.65 434.84 90 434.84 2 L
+V
+N
+1 F
+(Forking Support Functions) 90 436 T
+3 F
+(rthread_fork_child) 108 422 T
+(.........................................................................) 200.89 422 T
+(10) 420.01 422 T
+(rthread_fork_parent) 108 408 T
+(.......................................................................) 206.89 408 T
+(1) 420.45 408 T
+(1) 426 408 T
+(rthread_fork_prepare) 108 394 T
+(.....................................................................) 212.88 394 T
+(12) 420.01 394 T
+183.98 366.84 90 366.84 2 L
+V
+N
+1 F
+(Control Functions) 90 368 T
+3 F
+(rthread_abort) 108 354 T
+(..................................................................................) 173.9 354 T
+(14) 420.01 354 T
+(rthread_exit) 108 340 T
+(....................................................................................) 167.91 340 T
+(15) 420.01 340 T
+(rthread_kernel_port) 108 326 T
+(........................................................................) 203.89 326 T
+(16) 420.01 326 T
+(rthread_resume) 108 312 T
+(...............................................................................) 182.9 312 T
+(17) 420.01 312 T
+(rthread_suspend) 108 298 T
+(.............................................................................) 188.9 298 T
+(18) 420.01 298 T
+(rthread_terminate) 108 284 T
+(...........................................................................) 194.89 284 T
+(19) 420.01 284 T
+(rthread_wait) 108 270 T
+(...................................................................................) 170.91 270 T
+(20) 420.01 270 T
+(rthread_yield) 108 256 T
+(..................................................................................) 173.9 256 T
+(21) 420.01 256 T
+239.98 228.84 90 228.84 2 L
+V
+N
+1 F
+(Scheduling Policy Functions) 90 230 T
+3 F
+(rthread_get_default_policy) 108 216 T
+(............................................................) 239.87 216 T
+(23) 420.01 216 T
+(rthread_get_default_quantum) 108 202 T
+(........................................................) 251.86 202 T
+(24) 420.01 202 T
+(rthread_get_max_priority) 108 188 T
+(..............................................................) 233.87 188 T
+(25) 420.01 188 T
+(rthread_get_policy) 108 174 T
+(.........................................................................) 200.89 174 T
+(26) 420.01 174 T
+(rthread_get_priority) 108 160 T
+(.......................................................................) 206.89 160 T
+(27) 420.01 160 T
+(rthread_set_default_policy) 108 146 T
+(.............................................................) 236.87 146 T
+(28) 420.01 146 T
+(rthread_set_default_quantum) 108 132 T
+(.........................................................) 248.86 132 T
+(30) 420.01 132 T
+(rthread_set_policy) 108 118 T
+(..........................................................................) 197.89 118 T
+(31) 420.01 118 T
+(rthread_set_priority) 108 104 T
+(........................................................................) 203.89 104 T
+(33) 420.01 104 T
+FMENDPAGE
+%%EndPage: "-1" 3
+%%Page: "0" 3
+612 792 0 FMBEGINPAGE
+72 22.66 523 57.95 R
+7 X
+0 K
+V
+4 10 Q
+0 X
+(OSF\320RI MK6.1 Real-Time Threads Library: Rthreads Interface Guide) 216 51.28 T
+72 740.81 522 756 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 264.42 750 T
+72 721 522 739 R
+7 X
+V
+0 14 Q
+0 X
+(T) 222.11 729.67 T
+(ABLE OF CONTENTS) 229.63 729.67 T
+72 72 522 702 R
+7 X
+V
+187.99 692.84 90 692.84 2 L
+0 X
+V
+0.88 H
+0 Z
+N
+1 12 Q
+(General Functions) 90 694 T
+3 F
+(rthread_activation_count) 108 680 T
+(...............................................................) 230.87 680 T
+(35) 420.01 680 T
+(rthread_count) 108 666 T
+(.................................................................................) 176.9 666 T
+(36) 420.01 666 T
+(rthread_get_data) 108 652 T
+(.............................................................................) 188.9 652 T
+(37) 420.01 652 T
+(rthread_get_name) 108 638 T
+(...........................................................................) 194.89 638 T
+(38) 420.01 638 T
+(rthread_self) 108 624 T
+(....................................................................................) 167.91 624 T
+(39) 420.01 624 T
+(rthread_set_data) 108 610 T
+(.............................................................................) 188.9 610 T
+(40) 420.01 610 T
+(rthread_set_name) 108 596 T
+(...........................................................................) 194.89 596 T
+(41) 420.01 596 T
+1 F
+(Coding Example) 90 570 T
+(.......................................................................) 180.04 570 T
+(42) 418.66 570 T
+FMENDPAGE
+%%EndPage: "0" 4
+%%Page: "1" 4
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+3 10 Q
+0 X
+(1) 180 60.29 T
+-0.69 (OSF\320RI MK6.1 Real-Time Threads Library: Rthreads) 324 60.29 P
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 327.42 736.18 T
+180 90 540 720.02 R
+7 X
+V
+0 14 Q
+0 X
+(Introduction) 180 710.68 T
+3 12 Q
+2.41 (This document describes the Rthreads library which provides real-) 201.6 684.02 P
+0.12 (time thread control support for parallel programming in a \324C\325 language ap-) 180 670.02 P
+1.73 (plication. The library takes advantage of the real-time features provided) 180 656.02 P
+1.16 (by OSF Mach version MK 6.1, including synchronizers and the schedul-) 180 642.02 P
+1.04 (ing framework. The functions provided by this Real-T) 180 628.02 P
+1.04 (ime threads library) 447.33 628.02 P
+(are divided into \336ve catagories:) 180 614.02 T
+(\245) 180 594.02 T
+(Spawning functions \050lightweight operations\051.) 193.54 594.02 T
+(\245) 180 577.02 T
+(Forking support functions \050heavyweight operations\051.) 193.54 577.02 T
+(\245) 180 560.02 T
+(Control functions.) 193.54 560.02 T
+(\245) 180 543.02 T
+(Scheduling policy functions.) 193.54 543.02 T
+(\245) 180 526.02 T
+(General functions.) 193.54 526.02 T
+4 F
+(Rthr) 180 494.02 T
+(ead Handles) 204.43 494.02 T
+3 F
+0.42 (Spawning functions return a value of type) 201.6 468.02 P
+5 10 Q
+0.84 (rthread_t) 408.73 468.02 P
+3 12 Q
+0.42 (. This value is a) 462.7 468.02 P
+1.51 (handle which identi\336es the newly spawned rthread or rthread activation.) 180 454.02 P
+0.37 (The rthread handle is required for many of the control, policy) 180 440.02 P
+0.37 (, and general) 477.66 440.02 P
+(functions.) 180 426.02 T
+1.95 (Rthread handles may be re-used by the underlying implementation.) 201.6 400.02 P
+0.7 (Therefore, the programmer should be careful to clean-up any associations) 180 386.02 P
+(the programmer created, when the rthread exits.) 180 372.02 T
+4 F
+(Forking Support) 180 340.02 T
+3 F
+1.76 (The forking support routines do not create new tasks. They are de-) 201.6 314.02 P
+0.74 (signed to allow new tasks \050via a heavyweight fork operation like UNIX\250) 180 300.02 P
+(fork\051 to inherit and properly initialize the real-time thread state.) 180 286.02 T
+4 F
+(Synchr) 180 254.02 T
+(onization) 216.44 254.02 T
+3 F
+3.7 (The rthread library is dependent on kernel synchronizer support.) 201.6 228.02 P
+2.36 (Rthread mutual exclusion and condition synchronization is handled via) 180 214.02 P
+1.77 (the new kernel synchronization services [1]. OSF-RI Mach MK6.1 syn-) 180 200.02 P
+1.66 (chronization services export locks and semaphores as \336rst class entities.) 180 186.02 P
+0.81 (Locks and semaphores interact directly with the kernel scheduling frame-) 180 172.02 P
+1.51 (work [2], providing support for both time-sharing and real-time applica-) 180 158.02 P
+2.79 (tions. The rthread library utilizes locks internally to protect its shared) 180 144.02 P
+180 103 540 133.02 C
+180 115.02 324 115.02 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+3 9 Q
+0 X
+0 K
+(.  UNIX is a registered trademark of Novell, Inc.) 180 97 T
+FMENDPAGE
+%%EndPage: "1" 5
+%%Page: "2" 5
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+3 10 Q
+0 X
+(OSF\320RI MK6.1 Real-Time Threads Library: Rthreads Interface Guide) 72 60.29 T
+-2.5 (2) 427 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 219.43 736.18 T
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 720 R
+7 X
+V
+3 12 Q
+0 X
+2.26 (state. The) 72 712 P
+4 F
+2.26 (rthr) 126.16 712 P
+2.26 (ead_exit) 147.25 712 P
+3 F
+2.26 (,) 189.89 712 P
+4 F
+2.26 (rthr) 198.15 712 P
+2.26 (ead_wait) 219.25 712 P
+3 F
+2.26 ( and) 265.22 712 P
+4 F
+2.26 (rthr) 293.06 712 P
+2.26 (ead_terminate) 314.16 712 P
+3 F
+2.26 ( routines) 388.1 712 P
+2.78 (use a semaphore to control the blocking and waking-up of the parent) 72 698 P
+(rthread.) 72 684 T
+4 F
+(Par) 72 652 T
+(ent-Child Relationship) 90.43 652 T
+3 F
+1.44 (Each task has only one parent rthread \050the \336rst one spawned by the) 93.6 626 P
+0.19 (\324C\325 language runtime startup routine \320 crt0\051. All rthreads spawned thereaf-) 72 612 P
+0.2 (ter are considered child rthreads.) 72 598 P
+0.2 (Activations \050empty rthreads\051 are not con-) 232.84 598 P
+1.22 (sidered to be children.) 72 584 P
+1.22 (This relationship is important in the case where a) 186.44 584 P
+0.83 (parent executes an) 72 570 P
+4 F
+0.83 (rthr) 166.08 570 P
+0.83 (ead_wait) 187.18 570 P
+3 F
+0.83 ( call. The parent rthread will wait for all) 233.15 570 P
+1.13 (it's spawned children to exit before) 72 556 P
+1.13 (returning from the call \050regardless of) 249.49 556 P
+(the number of activations) 72 542 T
+(created via the) 197.25 542 T
+4 F
+(rthr) 270.18 542 T
+(ead_activation_cr) 291.27 542 T
+(eate) 382.33 542 T
+3 F
+( call\051.) 402.97 542 T
+4 F
+(Application Exit) 72 510 T
+3 F
+3.44 (The) 93.6 484 P
+5 10 Q
+6.87 (osf1_server) 118.68 484 P
+3 12 Q
+3.44 ( does not exit the task properly when multiple) 184.65 484 P
+2.2 (rthreads are executing within the task. This can be avoided by making) 72 470 P
+2.22 (sure only one rthread \050i.e. the parent\051 exists when exit\050\051 is called. The) 72 456 P
+4 F
+1.21 (rthr) 72 442 P
+1.21 (ead_exit) 93.1 442 P
+3 F
+1.21 (,) 135.73 442 P
+4 F
+1.21 (rthr) 142.94 442 P
+1.21 (ead_wait) 164.04 442 P
+3 F
+1.21 ( and) 210.01 442 P
+4 F
+1.21 (rthr) 235.74 442 P
+1.21 (ead_terminate) 256.84 442 P
+3 F
+1.21 ( routines are provid-) 330.78 442 P
+(ed to deal with this condition gracefully) 72 428 T
+(.) 262.43 428 T
+4 F
+(Scheduling) 72 396 T
+3 F
+3.07 (The rthreads package does not perform user) 93.6 370 P
+3.07 (-level scheduling. All) 322.26 370 P
+2.11 (thread scheduling is handled by the kernel [2]. An rthread's scheduling) 72 356 P
+1.23 (policy can be changed at any time via the) 72 342 P
+4 F
+1.23 (rthr) 284.62 342 P
+1.23 (ead_set_policy) 305.71 342 P
+3 F
+1.23 ( call.  The) 380.34 342 P
+1.57 (call will not succeed if the policy is not enabled on the task's processor) 72 328 P
+1.11 (set. All rthread policy/attribute changes must be made via the rthread in-) 72 314 P
+2.41 (terfaces or unpredictable behavior will result. Spawned rthreads inherit) 72 300 P
+1.36 (the rthread package default scheduling policy upon creation. The default) 72 286 P
+1.4 (scheduling policy for rthreads is \336rst-in-\336rst-out \050POLICY_FIFO\051, if the) 72 272 P
+1.27 (task's processor set has the POLICY_FIFO scheduling policy enabled. If) 72 258 P
+0.55 (the policy is disabled, then the default scheduling policy of the rthreads is) 72 244 P
+1.26 (the same as the default scheduling policy for the processor set \050typically) 72 230 P
+3.85 (POLICY_TIMESHARE\051. The rthread package default policy may be) 72 216 P
+0.93 (changed at anytime via the) 72 202 P
+4 F
+0.93 (rthr) 208.23 202 P
+0.93 (ead_set_default_policy) 229.33 202 P
+3 F
+0.93 ( call. All rthreads) 345.93 202 P
+3.73 (spawned after the default policy change will inherit the new policy) 72 188 P
+3.73 (.) 429 188 P
+(Rthreads executing prior to the default policy change will not be ef) 72 174 T
+(fected.) 393.22 174 T
+1.37 (Quantum values are only used by the round-robin scheduling policy) 93.6 148 P
+2.98 (\050POLICY_RR\051. The default quantum is the minimum quantum of the) 72 134 P
+0.76 (task's processor set \050typically 10 mS\051. This value may be changed via the) 72 120 P
+4 F
+0.25 (rthr) 72 106 P
+0.25 (ead_set_default_quantum) 93.1 106 P
+3 F
+0.25 ( call. All round-robin rthreads spawned af-) 225.7 106 P
+FMENDPAGE
+%%EndPage: "2" 6
+%%Page: "3" 6
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+3 10 Q
+0 X
+(3) 180 60.29 T
+-0.69 (OSF\320RI MK6.1 Real-Time Threads Library: Rthreads) 324 60.29 P
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 327.42 736.18 T
+180 90 540 720.02 R
+7 X
+V
+3 12 Q
+0 X
+0.86 (ter changing the default quantum will inherit the new value. Round-robin) 180 712.02 P
+(rthreads executing prior to the quantum change will not be ef) 180 698.02 T
+(fected.) 472.9 698.02 T
+0 14 Q
+(Using The Rthreads Library) 180 659.68 T
+3 12 Q
+0.51 (T) 201.6 633.02 P
+0.51 (o compile a program that uses Rthreads, the) 208.09 633.02 P
+5 10 Q
+1.03 (rthreads.h) 425.72 633.02 P
+3 12 Q
+0.51 ( header \336le) 485.68 633.02 P
+0.75 (must be included in each module that utilizes the rthread functions. Upon) 180 619.02 P
+0.94 (linking the application, the Rthreads library is to be speci\336ed prior to the) 180 605.02 P
+(Mach library; for example:) 180 591.02 T
+5 10 Q
+(cc -lrthreads -lmach [f) 201.6 566.35 T
+(iles]) 339.52 566.35 T
+3 12 Q
+1.16 (The Rthreads environment is initialized automatically at run-time by) 201.6 541.02 P
+(the) 180 527.02 T
+5 10 Q
+(_start) 197.65 527.02 T
+3 12 Q
+( function in) 233.63 527.02 T
+5 10 Q
+(crt0) 291.93 527.02 T
+3 12 Q
+(.) 315.92 527.02 T
+4 F
+(Compile T) 180 495.02 T
+(ime Options) 234.09 495.02 T
+3 F
+1.07 (The) 201.6 469.02 P
+5 10 Q
+2.14 (options.h) 224.32 469.02 P
+3 12 Q
+1.07 ( header \336le in the Rthreads library directory contains) 278.29 469.02 P
+(a list) 180 455.02 T
+( of compile time options.  These options include:) 202.99 455.02 T
+3 10 Q
+(CHECK_ST) 216 430.35 T
+(A) 265.73 430.35 T
+(TUS) 271.84 430.35 T
+(Check the return status of each Mach system call.) 252 418.35 T
+(RED_ZONE) 216 394.35 T
+0.74 (Allocate room for a protected red zone at end of the) 252 382.35 P
+0.74 (rthread stack that) 469.69 382.35 P
+(will cause an exception if touched.) 252 370.35 T
+(LOCKS) 216 346.35 T
+0.99 (Compile critical region locks \050needed when) 252 334.35 P
+0.99 (executing on an MP plat-) 435.01 334.35 P
+(form or preemptable kernel\051.) 252 322.35 T
+(TRLOG) 216 298.35 T
+(Compile rthread tracing code.) 252 286.35 T
+(R) 216 262.35 T
+(THREAD_DEF) 222.07 262.35 T
+(AUL) 285.73 262.35 T
+(T_POLICY) 305.35 262.35 T
+(The default scheduling policy of the rthreads) 252 250.35 T
+(package.) 433.81 250.35 T
+244.24 223.83 201.6 223.83 2 L
+V
+1.14 H
+0 Z
+N
+4 12 Q
+(Defaults) 201.6 225.02 T
+3 10 Q
+(CHECK_ST) 216 206.35 T
+(A) 265.73 206.35 T
+(TUS:) 271.84 206.35 T
+(of) 296 206.35 T
+(f) 304.14 206.35 T
+(RED_ZONE:) 216 191.35 T
+(of) 272.91 191.35 T
+(f) 281.05 191.35 T
+(LOCKS:) 216 176.35 T
+( on) 251.54 176.35 T
+(TRLOG:) 216 161.35 T
+( of) 252.09 161.35 T
+(f) 262.73 161.35 T
+(R) 216 146.35 T
+(THREAD_DEF) 222.07 146.35 T
+(AUL) 285.73 146.35 T
+(T_POLICY) 305.35 146.35 T
+(:) 351.62 146.35 T
+(POLICY_FIFO) 356.9 146.35 T
+FMENDPAGE
+%%EndPage: "3" 7
+%%Page: "4" 7
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+3 10 Q
+0 X
+(OSF\320RI MK6.1 Real-Time Threads Library: Rthreads Interface Guide) 72 60.29 T
+-2.5 (4) 427 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 219.43 736.18 T
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 720 R
+7 X
+V
+4 12 Q
+0 X
+(Stack Management) 72 712 T
+3 F
+0.47 (The rthread library automatically allocates space for the stack of each) 93.6 686 P
+0.83 (rthread and rthread activation. Each rthread will have a stack of the same) 72 672 P
+1.66 (size. All stacks are page aligned and have a length which is an integral) 72 658 P
+2.05 (multiple of the page size. The only control over this process is control) 72 644 P
+1.12 (over the size of stacks to be allocated. Such control can only be af) 72 630 P
+1.12 (fected) 402.7 630 P
+(at compile time by declaring \050at \336le scope\051:) 72 616 T
+5 10 Q
+(vm_size_t) 108 591.33 T
+(rthread_stack_size = N) 246 591.33 T
+3 12 Q
+1.35 (Where N is the desired stack size. The stack in ef) 93.6 566 P
+1.35 (fect can be exam-) 343.03 566 P
+(ined at run-time by reading rthread_stack_size.) 72 552 T
+0 14 Q
+(References) 72 513.67 T
+3 12 Q
+([1]) 72 487 T
+1.62 (CaraDonna, Joseph, Robert Haydt, Franklin Reynolds, "New) 93.6 487 P
+2.13 (Synchronization Services for OSF Mach: Synchronizers,") 108 473 P
+(OSF Research Institute, Cambridge, MA, April 12, 1994.) 108 459 T
+([2]) 72 433 T
+0.84 (Haydt, Robert, Joseph CaraDonna, Franklin Reynolds, "Mach) 93.6 433 P
+12.65 (Scheduling Framework," OSF Research Institute,) 108 419 P
+(Cambridge, MA, April, 1994.) 108 405 T
+FMENDPAGE
+%%EndPage: "4" 8
+%%Page: "5" 8
+612 792 0 FMBEGINPAGE
+71 720 431 720 2 L
+7 X
+0 K
+V
+2 H
+0 Z
+0 X
+N
+71 423 431 423 2 L
+7 X
+V
+2 Z
+0 X
+N
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 219.43 736.18 T
+71 441 431 666 R
+7 X
+V
+1 24 Q
+0 X
+(Spawning Functions) 143.01 650 T
+FMENDPAGE
+%%EndPage: "5" 9
+%%Page: "6" 9
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(6) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_activation_cr) 204.61 676.68 T
+(eate) 310.84 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Create a rthread activation) 254.32 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(rthread_t) 216 602.32 T
+4 F
+(rthr) 254.58 602.32 T
+(ead_activation_cr) 272.16 602.32 T
+(eate) 348.04 602.32 T
+3 F
+(\050mach_port_t) 270 590.32 T
+6 F
+(subsystem) 493.37 590.32 T
+3 F
+(\051;) 533.89 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+2.44 (The) 216 542.32 P
+4 F
+2.44 (rthr) 236.48 542.32 P
+2.44 (ead_activation_cr) 254.06 542.32 P
+2.44 (eate) 329.94 542.32 P
+3 F
+2.44 (function creates an empty rthread activation) 352.09 542.32 P
+(and returns the rthread handle to the created activation.) 216 530.33 T
+4 12 Q
+(P) 180 498.99 T
+(ARAMETERS) 186.44 498.99 T
+6 10 Q
+(subsystem) 216 474.33 T
+3 F
+0.41 ([in send right] The port right naming the subsystem that the newly cre-) 252 462.33 P
+(ated rthread activation is to be associated with.) 252 450.33 T
+4 12 Q
+(RETURN V) 180 418.99 T
+(ALUE) 240.75 418.99 T
+3 10 Q
+(A handle to the newly created rthread activation is returned.) 216 402.33 T
+4 12 Q
+(RELA) 180 370.99 T
+(TED INFORMA) 212.43 370.99 T
+(TION) 297.82 370.99 T
+3 10 Q
+(Functions:) 216 354.33 T
+4 F
+( rthr) 258.21 354.33 T
+(ead_spawn) 278.29 354.33 T
+3 F
+(,) 325.49 354.33 T
+4 F
+(rthr) 330.49 354.33 T
+(ead_spawn_priority) 348.07 354.33 T
+3 F
+(.) 432.93 354.33 T
+FMENDPAGE
+%%EndPage: "6" 10
+%%Page: "7" 10
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (7) 427 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_spawn) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_spawn) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Create a new lightweight wired rthread) 146.32 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(rthread_t) 108 600.31 T
+4 F
+(rthr) 146.58 600.31 T
+(ead_spawn) 164.16 600.31 T
+3 F
+(\050rthread_fn_t) 162 588.31 T
+6 F
+(function,) 396.74 588.31 T
+3 F
+(void*) 162 576.31 T
+6 F
+(arg) 412.01 576.31 T
+3 F
+(\051;) 425.89 576.31 T
+4 12 Q
+(DESCRIPTION) 72 544.98 T
+3 10 Q
+3.11 (The) 108 528.31 P
+4 F
+3.11 (rthr) 129.15 528.31 P
+3.11 (ead_spawn) 146.73 528.31 P
+3 F
+3.11 (function creates a new wired lightweight rthread and) 199.55 528.31 P
+(schedules it for execution.) 108 516.31 T
+4 12 Q
+(P) 72 484.98 T
+(ARAMETERS) 78.44 484.98 T
+6 10 Q
+(function) 108 460.31 T
+3 F
+0.82 ([in vm_address_t] The name of the function which the created rthread) 144 448.31 P
+(will begin execution \050i.e. the starting function\051.) 144 436.31 T
+6 F
+(ar) 108 412.31 T
+(g) 116.51 412.31 T
+3 F
+([in pointer] An ar) 144 400.31 T
+(gument to passed to the rthread\325) 214.04 400.31 T
+(s starting function.) 342.01 400.31 T
+4 12 Q
+(RETURN V) 72 368.98 T
+(ALUE) 132.75 368.98 T
+3 10 Q
+(A handle to the newly created rthread is returned.) 108 352.31 T
+4 12 Q
+(RELA) 72 320.98 T
+(TED INFORMA) 104.43 320.98 T
+(TION) 189.82 320.98 T
+3 10 Q
+(Functions:) 108 304.31 T
+4 F
+( rthr) 150.21 304.31 T
+(ead_activation_cr) 170.29 304.31 T
+(eate) 246.16 304.31 T
+3 F
+(,) 263.36 304.31 T
+4 F
+(rthr) 268.36 304.31 T
+(ead_spawn_priority) 285.94 304.31 T
+3 F
+(.) 370.81 304.31 T
+FMENDPAGE
+%%EndPage: "7" 11
+%%Page: "8" 11
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(8) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_spawn_priority) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Create a new lightweight wired thread with a priority) 254.32 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(rthread_t) 216 602.32 T
+4 F
+(rthr) 254.58 602.32 T
+(ead_spawn_priority) 272.16 602.32 T
+3 F
+(\050rthread_fn_t) 270 590.32 T
+6 F
+(function,) 504.74 590.32 T
+3 F
+(void*) 270 578.32 T
+6 F
+(arg,) 523.62 578.32 T
+3 F
+(int) 270 566.32 T
+6 F
+(priority) 503.35 566.32 T
+3 F
+(\051;) 533.89 566.32 T
+4 12 Q
+(DESCRIPTION) 180 534.99 T
+3 10 Q
+0.83 (The) 216 518.33 P
+4 F
+0.83 (rthr) 234.87 518.33 P
+0.83 (ead_spawn_priority) 252.45 518.33 P
+3 F
+0.83 (function creates a new wired lightweight rthread) 341.29 518.33 P
+1.96 (and schedules it for execution with the speci\336ed priority) 216 506.33 P
+1.96 (. The priority is as-) 455.84 506.33 P
+0.84 (signed before the rthread is scheduled to run. If the requested priority does not) 216 494.33 P
+0.24 (fall within the valid child thread priority range, then the rthread will be spawned) 216 482.33 P
+(inheriting the default priority value.) 216 470.33 T
+4 12 Q
+(P) 180 438.99 T
+(ARAMETERS) 186.44 438.99 T
+6 10 Q
+(function) 216 414.33 T
+3 F
+0.82 ([in vm_address_t] The name of the function which the created rthread) 252 402.33 P
+(will begin execution \050i.e. the starting function\051.) 252 390.33 T
+6 F
+(ar) 216 366.33 T
+(g) 224.51 366.33 T
+3 F
+([in pointer] An ar) 252 354.33 T
+(gument to passed to the rthread\325) 322.04 354.33 T
+(s starting function.) 450.01 354.33 T
+6 F
+(priority) 216 330.33 T
+3 F
+([in scalar] The requested priority value for the newly spawned rthread.) 252 318.33 T
+4 12 Q
+(RETURN V) 180 286.99 T
+(ALUE) 240.75 286.99 T
+3 10 Q
+(A handle to the newly created rthread is returned.) 216 270.33 T
+4 12 Q
+(RELA) 180 238.99 T
+(TED INFORMA) 212.43 238.99 T
+(TION) 297.82 238.99 T
+3 10 Q
+(Functions:) 216 222.33 T
+4 F
+(rthr) 260.7 222.33 T
+(ead_activation_cr) 278.29 222.33 T
+(eate) 354.16 222.33 T
+3 F
+(,) 371.36 222.33 T
+4 F
+(rthr) 376.36 222.33 T
+(ead_spawn) 393.94 222.33 T
+3 F
+(.) 441.15 222.33 T
+FMENDPAGE
+%%EndPage: "8" 12
+%%Page: "9" 12
+612 792 0 FMBEGINPAGE
+71 720 431 720 2 L
+7 X
+0 K
+V
+2 H
+0 Z
+0 X
+N
+71 423 431 423 2 L
+7 X
+V
+2 Z
+0 X
+N
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 219.43 736.18 T
+71 441 431 666 R
+7 X
+V
+1 24 Q
+0 X
+(Forking Support Functions) 110.35 650 T
+FMENDPAGE
+%%EndPage: "9" 13
+%%Page: "10" 13
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(10) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_fork_child) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Initialize a child task\325) 254.32 652.32 T
+(s rthread state) 355.64 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(void) 216 602.32 T
+4 F
+(rthr) 236.27 602.32 T
+(ead_fork_child) 253.85 602.32 T
+3 F
+(\050) 270 590.32 T
+( \051;) 273.33 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+0.33 (The) 216 542.32 P
+4 F
+0.33 (rthr) 234.37 542.32 P
+0.33 (ead_fork_child) 251.95 542.32 P
+3 F
+0.33 (function is called directly after a heavyweight fork op-) 319.2 542.32 P
+0.45 (eration \050i.e. UNIX fork\051 by the child task. This initializes the new task\325) 216 530.33 P
+0.45 (s rthread) 504.86 530.33 P
+(state.) 216 518.33 T
+0.87 (The) 216 494.33 P
+4 F
+0.87 (rthr) 234.91 494.33 P
+0.87 (ead_fork_child) 252.49 494.33 P
+3 F
+0.87 ( routine is always preceded by the) 316.91 494.33 P
+4 F
+0.87 (rthr) 461.53 494.33 P
+0.87 (ead_fork_pr) 479.11 494.33 P
+0.87 (e-) 532.23 494.33 P
+(par) 216 482.33 T
+(e) 230.81 482.33 T
+3 F
+( routine.) 235.25 482.33 T
+4 12 Q
+(P) 180 450.99 T
+(ARAMETERS) 186.44 450.99 T
+3 10 Q
+(NONE.) 216 434.33 T
+4 12 Q
+(RETURN V) 180 402.99 T
+(ALUE) 240.75 402.99 T
+3 10 Q
+(NONE.) 216 386.33 T
+4 12 Q
+(RELA) 180 354.99 T
+(TED INFORMA) 212.43 354.99 T
+(TION) 297.82 354.99 T
+3 10 Q
+(Functions:) 216 338.33 T
+4 F
+(rthr) 260.7 338.33 T
+(ead_fork_par) 278.29 338.33 T
+(ent) 336.4 338.33 T
+3 F
+(,) 349.73 338.33 T
+4 F
+(rthr) 354.72 338.33 T
+(ead_fork_pr) 372.3 338.33 T
+(epar) 425.42 338.33 T
+(e) 444.67 338.33 T
+3 F
+(.) 449.11 338.33 T
+FMENDPAGE
+%%EndPage: "10" 14
+%%Page: "11" 14
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (11) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_fork_par) 87.81 736.18 T
+(ent) 140.07 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_fork_par) 96.61 674.67 T
+(ent) 177.98 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Reverts the rthread state to non-fork mode) 146.32 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(void) 108 600.31 T
+4 F
+(rthr) 128.27 600.31 T
+(ead_fork_par) 145.85 600.31 T
+(ent) 203.97 600.31 T
+3 F
+(\050) 162 588.31 T
+( \051;) 165.33 588.31 T
+4 12 Q
+(DESCRIPTION) 72 556.98 T
+3 10 Q
+1.35 (The) 108 540.31 P
+4 F
+1.35 (rthr) 127.39 540.31 P
+1.35 (ead_fork_par) 144.96 540.31 P
+1.35 (ent) 203.08 540.31 P
+3 F
+1.35 (function is called directly after a heavyweight fork) 220.25 540.31 P
+1.22 (operation \050i.e. UNIX fork\051 by the parent task. This reverts the rthread state to) 108 528.31 P
+(non-fork mode, allowing child rthreads to continue computation.) 108 516.31 T
+1.78 (The) 108 492.31 P
+4 F
+1.78 (rthr) 127.82 492.31 P
+1.78 (ead_fork_par) 145.4 492.31 P
+1.78 (ent) 203.52 492.31 P
+3 F
+1.78 ( routine is always preceded by the) 216.84 492.31 P
+4 F
+1.78 (rthr) 367.79 492.31 P
+1.78 (ead_fork_-) 385.36 492.31 P
+(pr) 108 480.31 T
+(epar) 117.82 480.31 T
+(e) 137.06 480.31 T
+3 F
+( routine.) 141.5 480.31 T
+4 12 Q
+(P) 72 448.98 T
+(ARAMETERS) 78.44 448.98 T
+3 10 Q
+(NONE.) 108 432.31 T
+4 12 Q
+(RETURN V) 72 400.98 T
+(ALUE) 132.75 400.98 T
+3 10 Q
+(NONE.) 108 384.31 T
+4 12 Q
+(RELA) 72 352.98 T
+(TED INFORMA) 104.43 352.98 T
+(TION) 189.82 352.98 T
+3 10 Q
+(Functions:) 108 336.31 T
+4 F
+(rthr) 152.71 336.31 T
+(ead_fork_child) 170.29 336.31 T
+3 F
+(,) 234.7 336.31 T
+4 F
+(rthr) 239.7 336.31 T
+(ead_fork_pr) 257.28 336.31 T
+(epar) 310.4 336.31 T
+(e) 329.65 336.31 T
+3 F
+(.) 334.09 336.31 T
+FMENDPAGE
+%%EndPage: "11" 15
+%%Page: "12" 15
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(12) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_fork_pr) 204.61 676.68 T
+(epar) 278.98 676.68 T
+(e) 305.93 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Convert the rthread state to fork mode) 254.32 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(void) 216 602.32 T
+4 F
+(rthr) 236.27 602.32 T
+(ead_fork_pr) 253.85 602.32 T
+(epar) 306.97 602.32 T
+(e) 326.22 602.32 T
+3 F
+(\050) 270 590.32 T
+( \051;) 273.33 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+0.69 (The) 216 542.32 P
+4 F
+0.69 (rthr) 234.73 542.32 P
+0.69 (ead_fork_pr) 252.31 542.32 P
+0.69 (epar) 305.43 542.32 P
+0.69 (e) 324.68 542.32 P
+3 F
+0.69 (function prepares the rthread state for copying \050i.e.) 332.3 542.32 P
+0.43 (fork-mode\051. The) 216 530.33 P
+4 F
+0.43 (rthr) 285.4 530.33 P
+0.43 (ead_fork_pr) 302.98 530.33 P
+0.43 (epar) 356.11 530.33 P
+0.43 (e) 375.35 530.33 P
+3 F
+0.43 ( routine is always called directly before) 379.79 530.33 P
+(a heavyweight fork operation \050i.e. UNIX fork\051.) 216 518.33 T
+0.29 (All child rthreads will suspend computation until the) 216 494.33 P
+4 F
+0.29 (rthr) 431.54 494.33 P
+0.29 (ead_fork_par) 449.12 494.33 P
+0.29 (ent) 507.24 494.33 P
+3 F
+0.29 ( rou-) 520.56 494.33 P
+(tine is called.) 216 482.33 T
+4 12 Q
+(P) 180 450.99 T
+(ARAMETERS) 186.44 450.99 T
+3 10 Q
+(NONE.) 216 434.33 T
+4 12 Q
+(RETURN V) 180 402.99 T
+(ALUE) 240.75 402.99 T
+3 10 Q
+(NONE.) 216 386.33 T
+4 12 Q
+(RELA) 180 354.99 T
+(TED INFORMA) 212.43 354.99 T
+(TION) 297.82 354.99 T
+3 10 Q
+(Functions:) 216 338.33 T
+4 F
+(rthr) 260.7 338.33 T
+(ead_fork_child) 278.29 338.33 T
+3 F
+(,) 342.7 338.33 T
+4 F
+(rthr) 347.7 338.33 T
+(ead_fork_par) 365.28 338.33 T
+(ent) 423.4 338.33 T
+3 F
+(.) 436.72 338.33 T
+FMENDPAGE
+%%EndPage: "12" 16
+%%Page: "13" 16
+612 792 0 FMBEGINPAGE
+71 720 431 720 2 L
+7 X
+0 K
+V
+2 H
+0 Z
+0 X
+N
+71 423 431 423 2 L
+7 X
+V
+2 Z
+0 X
+N
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 219.43 736.18 T
+71 441 431 666 R
+7 X
+V
+1 24 Q
+0 X
+(Control Functions) 157.02 650 T
+FMENDPAGE
+%%EndPage: "13" 17
+%%Page: "14" 17
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(14) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_abort) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Abort an rthread) 254.32 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(kern_return_t) 216 602.32 T
+4 F
+(rthr) 272.9 602.32 T
+(ead_abort) 290.48 602.32 T
+3 F
+(\050) 270 590.32 T
+(rthread_t) 273.33 590.32 T
+6 F
+(target_rthread) 475.04 590.32 T
+3 F
+(\051;) 533.89 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+0.61 (The) 216 542.32 P
+4 F
+0.61 (rthr) 234.65 542.32 P
+0.61 (ead_abort) 252.23 542.32 P
+3 F
+0.61 ( function aborts page faults and any message primitive calls) 295.53 542.32 P
+0.05 (in use by) 216 530.33 P
+6 F
+0.05 (tar) 254.73 530.33 P
+0.05 (get_rthr) 266.02 530.33 P
+0.05 (ead) 298.42 530.33 P
+3 F
+0.05 (. Scheduling depressions and clock sleeps are also abort-) 312.85 530.33 P
+1.1 (ed. The call returns a code indicating that it was interrupted. The call is inter-) 216 518.33 P
+2.66 (rupted even if the rthread \050or the task containing it\051 is suspended. If it is) 216 506.33 P
+(suspended, the rthread receives the interrupt when it resumes.) 216 494.33 T
+1.35 (If its state is not modi\336ed before it resumes, the rthread will retry an aborted) 216 470.33 P
+0.22 (page fault. The Mach message trap returns either MACH_SEND_INTERRUPT-) 216 458.33 P
+0.01 (ED or MACH_RCV_INTERRUPTED, depending on whether the send or the re-) 216 446.33 P
+3.56 (ceive side was interrupted. Note, though, that the Mach message trap is) 216 434.33 P
+0.56 (contained within the) 216 422.33 P
+4 F
+0.56 (mach_msg) 301.8 422.33 P
+3 F
+0.56 ( library routine, which, by default, retries inter-) 347.32 422.33 P
+(rupted message calls.) 216 410.33 T
+1.2 (The basic purpose of) 216 386.33 P
+4 F
+1.2 (rthr) 306.85 386.33 P
+1.2 (ead_abort) 324.43 386.33 P
+3 F
+1.2 ( is to let one rthread cleanly stop another) 367.73 386.33 P
+0.78 (rthread \050) 216 374.33 P
+6 F
+0.78 (tar) 250.91 374.33 P
+0.78 (get_rthr) 262.2 374.33 P
+0.78 (ead) 294.59 374.33 P
+3 F
+0.78 (\051. The tar) 309.02 374.33 P
+0.78 (get rthread is stopped in such a manner that its) 347.31 374.33 P
+(future execution can be controlled in a predictable way) 216 362.33 T
+(.) 435.17 362.33 T
+4 12 Q
+(P) 180 330.99 T
+(ARAMETERS) 186.44 330.99 T
+6 10 Q
+(tar) 216 306.33 T
+(get_rthr) 227.29 306.33 T
+(ead) 259.69 306.33 T
+3 F
+([in rthread] The handle for the rthread to be aborted.) 252 294.33 T
+4 12 Q
+(RETURN V) 180 262.99 T
+(ALUE) 240.75 262.99 T
+3 10 Q
+(The following return values are possible:) 216 246.33 T
+(KERN_SUCCESS) 216 222.33 T
+(The operation was successful.) 252 210.33 T
+(KERN_INV) 216 186.33 T
+(ALID_ARGUMENT) 264.67 186.33 T
+(The) 252 174.33 T
+6 F
+(tar) 270.04 174.33 T
+(get_rthr) 281.33 174.33 T
+(ead) 313.73 174.33 T
+3 F
+( ar) 328.16 174.33 T
+(gument was invalid.) 338.24 174.33 T
+4 12 Q
+(RELA) 180 142.99 T
+(TED INFORMA) 212.43 142.99 T
+(TION) 297.82 142.99 T
+3 10 Q
+(NONE.) 216 126.33 T
+FMENDPAGE
+%%EndPage: "14" 18
+%%Page: "15" 18
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (15) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_exit) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_exit) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 T) 146.32 650.31 T
+(erminate the calling rthread) 166.72 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(void) 108 600.31 T
+4 F
+(rthr) 128.27 600.31 T
+(ead_exit) 145.85 600.31 T
+3 F
+(\050) 162 588.31 T
+(int) 165.33 588.31 T
+6 F
+(exit_value) 384.82 588.31 T
+3 F
+(\051;) 425.89 588.31 T
+4 12 Q
+(DESCRIPTION) 72 556.98 T
+3 10 Q
+1.61 (The) 108 540.31 P
+4 F
+1.61 (rthr) 127.65 540.31 P
+1.61 (ead_exit) 145.23 540.31 P
+3 F
+1.61 (function terminates the calling rthread. If this thread is the) 184.88 540.31 P
+0.12 (parent rthread, the parent will wait for all of its children to terminate before exit-) 108 528.31 P
+(ing.) 108 516.31 T
+4 12 Q
+(P) 72 484.98 T
+(ARAMETERS) 78.44 484.98 T
+6 10 Q
+(exit_value) 108 460.31 T
+3 F
+([in scalar] The value passed to the UNIX exit\050\051 function.) 144 448.31 T
+4 12 Q
+(RETURN V) 72 416.98 T
+(ALUE) 132.75 416.98 T
+3 10 Q
+(NONE.) 108 400.31 T
+4 12 Q
+(RELA) 72 368.98 T
+(TED INFORMA) 104.43 368.98 T
+(TION) 189.82 368.98 T
+3 10 Q
+(NONE.) 108 352.31 T
+FMENDPAGE
+%%EndPage: "15" 19
+%%Page: "16" 19
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(16) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_kernel_port) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Return the rthread\325) 254.32 652.32 T
+(s kernel thread port) 344.81 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(mach_port_t) 216 602.32 T
+4 F
+(rthr) 269.02 602.32 T
+(ead_kernel_port) 286.6 602.32 T
+3 F
+(\050) 270 590.32 T
+(rthread_t) 273.33 590.32 T
+6 F
+(target_rthread) 475.04 590.32 T
+3 F
+(\051;) 533.89 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+0.48 (The) 216 542.32 P
+4 F
+0.48 (rthr) 234.52 542.32 P
+0.48 (ead_kernel_port) 252.1 542.32 P
+3 F
+0.48 (function returns the kernel thread port corresponding) 325.6 542.32 P
+0.92 (to the rthread. This allows the use of kernel thread functions by an application) 216 530.33 P
+(using rthreads.) 216 518.33 T
+4 12 Q
+(P) 180 486.99 T
+(ARAMETERS) 186.44 486.99 T
+6 10 Q
+(tar) 216 462.33 T
+(get_rthr) 227.29 462.33 T
+(ead) 259.69 462.33 T
+3 F
+0.82 ([in rthread] The handle of the rthread for which the kernel thread port) 252 450.33 P
+(is desired.) 252 438.33 T
+4 12 Q
+(RETURN V) 180 406.99 T
+(ALUE) 240.75 406.99 T
+3 10 Q
+(The kernel thread port corresponding to the rthread is returned.) 216 390.33 T
+4 12 Q
+(RELA) 180 358.99 T
+(TED INFORMA) 212.43 358.99 T
+(TION) 297.82 358.99 T
+3 10 Q
+(NONE.) 216 342.33 T
+FMENDPAGE
+%%EndPage: "16" 20
+%%Page: "17" 20
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (17) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_r) 87.81 736.18 T
+(esume) 109.61 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_r) 96.61 674.67 T
+(esume) 130.56 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Resume an rthread) 146.32 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(kern_return_t) 108 600.31 T
+4 F
+(rthr) 164.9 600.31 T
+(ead_r) 182.48 600.31 T
+(esume) 206.73 600.31 T
+3 F
+(\050) 162 588.31 T
+(rthread_t) 165.33 588.31 T
+6 F
+(target_rthread) 367.04 588.31 T
+3 F
+(\051;) 425.89 588.31 T
+4 12 Q
+(DESCRIPTION) 72 556.98 T
+3 10 Q
+0.6 (The) 108 540.31 P
+4 F
+0.6 (rthr) 126.64 540.31 P
+0.6 (ead_r) 144.22 540.31 P
+0.6 (esume) 168.46 540.31 P
+3 F
+0.6 ( function decrements the suspend count for) 195.11 540.31 P
+6 F
+0.6 (tar) 373.88 540.31 P
+0.6 (get_rthr) 385.17 540.31 P
+0.6 (ead) 417.57 540.31 P
+3 F
+0.78 (by one. The thread is resumed if its suspend count goes to zero. If the suspend) 108 528.31 P
+0.42 (count is still positive,) 108 516.31 P
+4 F
+0.42 (rthr) 197.68 516.31 P
+0.42 (ead_r) 215.27 516.31 P
+0.42 (esume) 239.51 516.31 P
+3 F
+0.42 ( must be repeated until the count reaches) 266.16 516.31 P
+(zero.) 108 504.31 T
+4 12 Q
+(P) 72 472.98 T
+(ARAMETERS) 78.44 472.98 T
+6 10 Q
+(tar) 108 448.31 T
+(get_rthr) 119.29 448.31 T
+(ead) 151.69 448.31 T
+3 F
+([in rthread] The handle of the rthread to be resumed.) 144 436.31 T
+4 12 Q
+(RETURN V) 72 404.98 T
+(ALUE) 132.75 404.98 T
+3 10 Q
+(The following return values are possible:) 108 388.31 T
+(KERN_SUCCESS) 108 364.31 T
+(The operation was successful.) 144 352.31 T
+(KERN_INV) 108 328.31 T
+(ALID_ARGUMENT) 156.67 328.31 T
+(The) 144 316.31 T
+6 F
+(tar) 162.04 316.31 T
+(get_rthr) 173.33 316.31 T
+(ead) 205.73 316.31 T
+3 F
+( ar) 220.16 316.31 T
+(gument was invalid.) 230.24 316.31 T
+4 12 Q
+(RELA) 72 284.98 T
+(TED INFORMA) 104.43 284.98 T
+(TION) 189.82 284.98 T
+3 10 Q
+(Functions:) 108 268.31 T
+4 F
+(rthr) 152.71 268.31 T
+(ead_suspend) 170.29 268.31 T
+3 F
+(.) 224.72 268.31 T
+FMENDPAGE
+%%EndPage: "17" 21
+%%Page: "18" 21
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(18) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_suspend) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Increment a rthread\325) 254.32 652.32 T
+(s suspend count) 350.35 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(kern_return_t) 216 602.32 T
+4 F
+(rthr) 272.9 602.32 T
+(ead_suspend) 290.48 602.32 T
+3 F
+(\050) 270 590.32 T
+(rthread_t) 273.33 590.32 T
+6 F
+(target_rthread) 475.04 590.32 T
+3 F
+(\051;) 533.89 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+0.36 (The) 216 542.32 P
+4 F
+0.36 (rthr) 234.4 542.32 P
+0.36 (ead_suspend) 251.98 542.32 P
+3 F
+0.36 ( function increments the suspend count for) 306.41 542.32 P
+6 F
+0.36 (tar) 481.88 542.32 P
+0.36 (get_rthr) 493.17 542.32 P
+0.36 (ead) 525.57 542.32 P
+3 F
+(and prevents the rthread from executing any more user) 216 530.33 T
+(-level instructions.) 434.51 530.33 T
+0.72 (In this context, a user) 216 506.33 P
+0.72 (-level instruction can be either a machine instruction exe-) 304.44 506.33 P
+1.53 (cuted in user mode or a system trap instruction, including a page fault. If an) 216 494.33 P
+0.56 (rthread is currently executing within a system trap, the kernel code may contin-) 216 482.33 P
+1.13 (ue to execute until it reaches the system return code or it may suspend within) 216 470.33 P
+-0.07 (the kernel code. In either case, the system trap returns when the rthread resumes.) 216 458.33 P
+1.47 (T) 216 434.33 P
+1.47 (o resume a suspended rthread, use) 221.41 434.33 P
+4 F
+1.47 ( rthr) 365.29 434.33 P
+1.47 (ead_r) 386.84 434.33 P
+1.47 (esume) 411.08 434.33 P
+3 F
+1.47 (. If the suspend count is) 437.73 434.33 P
+(greater than one,) 216 422.33 T
+4 F
+(rthr) 285.38 422.33 T
+(ead_r) 302.96 422.33 T
+(esume) 327.21 422.33 T
+3 F
+( must be repeated that number of times.) 353.85 422.33 T
+4 12 Q
+(P) 180 390.99 T
+(ARAMETERS) 186.44 390.99 T
+6 10 Q
+(tar) 216 366.33 T
+(get_rthr) 227.29 366.33 T
+(ead) 259.69 366.33 T
+3 F
+([in rthread] The handle of the rthread to be suspended.) 252 354.33 T
+4 12 Q
+(RETURN V) 180 322.99 T
+(ALUE) 240.75 322.99 T
+3 10 Q
+(The following return values are possible:) 216 306.33 T
+(KERN_SUCCESS) 216 282.33 T
+(The operation was successful.) 252 270.33 T
+(KERN_INV) 216 246.33 T
+(ALID_ARGUMENT) 264.67 246.33 T
+(The) 252 234.33 T
+6 F
+(tar) 270.04 234.33 T
+(get_rthr) 281.33 234.33 T
+(ead) 313.73 234.33 T
+3 F
+( ar) 328.16 234.33 T
+(gument was invalid.) 338.24 234.33 T
+4 12 Q
+(RELA) 180 202.99 T
+(TED INFORMA) 212.43 202.99 T
+(TION) 297.82 202.99 T
+3 10 Q
+(Functions:) 216 186.33 T
+4 F
+(rthr) 260.7 186.33 T
+(ead_r) 278.29 186.33 T
+(esume) 302.53 186.33 T
+3 F
+(.) 329.18 186.33 T
+FMENDPAGE
+%%EndPage: "18" 22
+%%Page: "19" 22
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (19) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_terminate) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_terminate) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 T) 146.32 650.31 T
+(erminate the speci\336ed rthread) 166.72 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(void) 108 600.31 T
+4 F
+(rthr) 128.27 600.31 T
+(ead_terminate) 145.85 600.31 T
+3 F
+(\050) 162 588.31 T
+(rthread_t) 165.33 588.31 T
+6 F
+(target_rthread) 367.04 588.31 T
+3 F
+(\051;) 425.89 588.31 T
+4 12 Q
+(DESCRIPTION) 72 556.98 T
+3 10 Q
+2.05 (The) 108 540.31 P
+4 F
+2.05 (rthr) 128.09 540.31 P
+2.05 (ead_terminate) 145.67 540.31 P
+3 F
+2.05 (function terminates the speci\336ed real-time thread. If) 211.83 540.31 P
+0.14 (this thread is the parent rthread, it will wait for all of its children to complete be-) 108 528.31 P
+(fore terminating.) 108 516.31 T
+4 12 Q
+(P) 72 484.98 T
+(ARAMETERS) 78.44 484.98 T
+6 10 Q
+(tar) 108 460.31 T
+(get_rthr) 119.29 460.31 T
+(ead) 151.69 460.31 T
+3 F
+([in rthread] The handle of the rthread to be terminated.) 144 448.31 T
+4 12 Q
+(RETURN V) 72 416.98 T
+(ALUE) 132.75 416.98 T
+3 10 Q
+(NONE.) 108 400.31 T
+4 12 Q
+(RELA) 72 368.98 T
+(TED INFORMA) 104.43 368.98 T
+(TION) 189.82 368.98 T
+3 10 Q
+(NONE.) 108 352.31 T
+FMENDPAGE
+%%EndPage: "19" 23
+%%Page: "20" 23
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(20) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_wait) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Block the parent rthread on its children) 254.32 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(int) 216 602.32 T
+4 F
+(rthr) 229.05 602.32 T
+(ead_wait) 246.63 602.32 T
+3 F
+(\050) 270 590.32 T
+( \051;) 273.33 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+0.68 (The) 216 542.32 P
+4 F
+0.68 (rthr) 234.72 542.32 P
+0.68 (ead_wait) 252.3 542.32 P
+3 F
+0.68 (function will cause the parent real-time thread to block until) 293.79 542.32 P
+(all of its children have completed.) 216 530.33 T
+0.46 (This) 216 506.33 P
+0.46 (function can only be called by the parent rthread; any attempt from a child) 236.73 506.33 P
+(will result in an error being returned.) 216 494.33 T
+4 12 Q
+(P) 180 462.99 T
+(ARAMETERS) 186.44 462.99 T
+3 10 Q
+(NONE.) 216 446.33 T
+4 12 Q
+(RETURN V) 180 414.99 T
+(ALUE) 240.75 414.99 T
+3 10 Q
+(If a child rthread calls) 216 398.33 T
+4 F
+(rthr) 306.2 398.33 T
+(ead_wait) 323.78 398.33 T
+3 F
+(, a 0 is returned; otherwise a 1 is returned.) 362.09 398.33 T
+4 12 Q
+(RELA) 180 366.99 T
+(TED INFORMA) 212.43 366.99 T
+(TION) 297.82 366.99 T
+3 10 Q
+(NONE.) 216 350.33 T
+FMENDPAGE
+%%EndPage: "20" 24
+%%Page: "21" 24
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (21) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_yield) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_yield) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Y) 146.32 650.31 T
+(ields the processor) 167.98 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(void) 108 600.31 T
+4 F
+(rthr) 128.27 600.31 T
+(ead_yield) 145.85 600.31 T
+3 F
+(\050) 162 588.31 T
+( \051;) 165.33 588.31 T
+4 12 Q
+(DESCRIPTION) 72 556.98 T
+3 10 Q
+0.46 (The) 108 540.31 P
+4 F
+0.46 (rthr) 126.5 540.31 P
+0.46 (ead_yield) 144.08 540.31 P
+3 F
+0.46 (function provides a hint to the scheduling policy that now is) 187.57 540.31 P
+1.59 (a good time to reschedule. This ef) 108 528.31 P
+1.59 (fectively results in the rthread yielding the) 253.11 528.31 P
+(processor) 108 516.31 T
+(, if another rthread is ready to execute.) 145.9 516.31 T
+4 12 Q
+(P) 72 484.98 T
+(ARAMETERS) 78.44 484.98 T
+3 10 Q
+(NONE.) 108 468.31 T
+4 12 Q
+(RETURN V) 72 436.98 T
+(ALUE) 132.75 436.98 T
+3 10 Q
+(NONE.) 108 420.31 T
+4 12 Q
+(RELA) 72 388.98 T
+(TED INFORMA) 104.43 388.98 T
+(TION) 189.82 388.98 T
+3 10 Q
+(NONE.) 108 372.31 T
+FMENDPAGE
+%%EndPage: "21" 25
+%%Page: "22" 25
+612 792 0 FMBEGINPAGE
+71 720 431 720 2 L
+7 X
+0 K
+V
+2 H
+0 Z
+0 X
+N
+71 423 431 423 2 L
+7 X
+V
+2 Z
+0 X
+N
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 219.43 736.18 T
+71 441 431 666 R
+7 X
+V
+1 24 Q
+0 X
+(Scheduling Policy Functions) 101.02 650 T
+FMENDPAGE
+%%EndPage: "22" 26
+%%Page: "23" 26
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (23) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_get_default_policy) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_get_default_policy) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Return the task\325) 146.32 650.31 T
+(s current default policy) 224.61 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(policy_t) 108 600.31 T
+4 F
+(rthr) 143.26 600.31 T
+(ead_get_default_policy) 160.84 600.31 T
+3 F
+(\050) 162 588.31 T
+( \051;) 165.33 588.31 T
+4 12 Q
+(DESCRIPTION) 72 556.98 T
+3 10 Q
+1.7 (The) 108 540.31 P
+4 F
+1.7 (rthr) 127.74 540.31 P
+1.7 (ead_get_default_policy) 145.32 540.31 P
+3 F
+1.7 (function returns the current default schedul-) 247.8 540.31 P
+(ing policy for the task.) 108 528.31 T
+4 12 Q
+(P) 72 496.98 T
+(ARAMETERS) 78.44 496.98 T
+3 10 Q
+(NONE.) 108 480.31 T
+4 12 Q
+(RETURN V) 72 448.98 T
+(ALUE) 132.75 448.98 T
+3 10 Q
+(The current default scheduling policy is returned as a policy_t. V) 108 432.31 T
+(alid values are:) 366.98 432.31 T
+(POLICY_FIFO) 108 408.31 T
+(A \336rst-in-\336rst-out scheduling policy) 144 396.31 T
+(.) 287.99 396.31 T
+(POLICY_RR) 108 372.31 T
+(A round-robin scheduling policy) 144 360.31 T
+(.) 274.1 360.31 T
+(POLICY_TIMESHARE) 108 336.31 T
+(A timeshare scheduling policy) 144 324.31 T
+(.) 265.21 324.31 T
+4 12 Q
+(RELA) 72 292.98 T
+(TED INFORMA) 104.43 292.98 T
+(TION) 189.82 292.98 T
+3 10 Q
+0.44 (Functions:) 108 276.31 P
+4 F
+0.44 (rthr) 153.15 276.31 P
+0.44 (ead_set_default_policy) 170.73 276.31 P
+3 F
+0.44 (,) 267.24 276.31 P
+4 F
+0.44 (rthr) 272.68 276.31 P
+0.44 (ead_get_policy) 290.26 276.31 P
+3 F
+0.44 (,) 352.9 276.31 P
+4 F
+0.44 (rthr) 358.34 276.31 P
+0.44 (ead_set_poli-) 375.92 276.31 P
+(cy) 108 264.31 T
+3 F
+(.) 116.79 264.31 T
+FMENDPAGE
+%%EndPage: "23" 27
+%%Page: "24" 27
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(24) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_get_default_quantum) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Return the default quantum value) 254.32 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(int) 216 602.32 T
+4 F
+(rthr) 229.05 602.32 T
+(ead_get_default_quantum) 246.63 602.32 T
+3 F
+(\050) 270 590.32 T
+( \051;) 273.33 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+2.1 (The) 216 542.32 P
+4 F
+2.1 (rthr) 236.14 542.32 P
+2.1 (ead_get_default_quantum) 253.72 542.32 P
+3 F
+2.1 (function returns the current default time) 369.92 542.32 P
+1.07 (quantum used by the scheduling policy for the task. Note that quantum values) 216 530.33 P
+(are only used by the round-robin scheduling policy \050POLICY_RR\051.) 216 518.33 T
+4 12 Q
+(P) 180 486.99 T
+(ARAMETERS) 186.44 486.99 T
+3 10 Q
+(NONE.) 216 470.33 T
+4 12 Q
+(RETURN V) 180 438.99 T
+(ALUE) 240.75 438.99 T
+3 10 Q
+(The current default quantum is returned as an integer) 216 422.33 T
+(.) 427.5 422.33 T
+4 12 Q
+(RELA) 180 390.99 T
+(TED INFORMA) 212.43 390.99 T
+(TION) 297.82 390.99 T
+3 10 Q
+(Functions:) 216 374.33 T
+4 F
+(rthr) 260.7 374.33 T
+(ead_set_default_quantum) 278.29 374.33 T
+3 F
+(.) 388.79 374.33 T
+FMENDPAGE
+%%EndPage: "24" 28
+%%Page: "25" 28
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (25) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_get_max_priority) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_get_max_priority) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Return the task\325) 146.32 650.31 T
+(s maximum priority value) 224.61 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(int) 108 600.31 T
+4 F
+(rthr) 121.05 600.31 T
+(ead_get_max_priority) 138.63 600.31 T
+3 F
+(\050) 162 588.31 T
+( \051;) 165.33 588.31 T
+4 12 Q
+(DESCRIPTION) 72 556.98 T
+3 10 Q
+1.94 (The) 108 540.31 P
+4 F
+1.94 (rthr) 127.98 540.31 P
+1.94 (ead_get_max_priority) 145.56 540.31 P
+3 F
+1.94 (function returns the maximum priority value) 244.37 540.31 P
+(that can be assigned to the calling task\325) 108 528.31 T
+(s rthreads.) 264.28 528.31 T
+4 12 Q
+(P) 72 496.98 T
+(ARAMETERS) 78.44 496.98 T
+3 10 Q
+(NONE.) 108 480.31 T
+4 12 Q
+(RETURN V) 72 448.98 T
+(ALUE) 132.75 448.98 T
+3 10 Q
+(The maximum priority value is returned as an integer) 108 432.31 T
+(.) 320.63 432.31 T
+4 12 Q
+(RELA) 72 400.98 T
+(TED INFORMA) 104.43 400.98 T
+(TION) 189.82 400.98 T
+3 10 Q
+(NONE.) 108 384.31 T
+FMENDPAGE
+%%EndPage: "25" 29
+%%Page: "26" 29
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(26) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_get_policy) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Return the policy of a rthread) 254.32 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(policy_t) 216 602.32 T
+4 F
+(rthr) 251.26 602.32 T
+(ead_get_policy) 268.84 602.32 T
+3 F
+(\050) 270 590.32 T
+(rthread_t) 273.33 590.32 T
+6 F
+(target_rthread) 475.04 590.32 T
+3 F
+(\051;) 533.89 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+0.46 (The) 216 542.32 P
+4 F
+0.46 (rthr) 234.5 542.32 P
+0.46 (ead_get_policy) 252.08 542.32 P
+3 F
+0.46 (function returns the current scheduling of the speci\336ed) 318.33 542.32 P
+(rthread.) 216 530.33 T
+4 12 Q
+(P) 180 498.99 T
+(ARAMETERS) 186.44 498.99 T
+6 10 Q
+(tar) 216 474.33 T
+(get_rthr) 227.29 474.33 T
+(ead) 259.69 474.33 T
+3 F
+0.62 ([in rthread] The handle of the rthread for which the current scheduling) 252 462.33 P
+(policy is desired.) 252 450.33 T
+4 12 Q
+(RETURN V) 180 418.99 T
+(ALUE) 240.75 418.99 T
+3 10 Q
+(The tar) 216 402.33 T
+(get rthread\325) 244.4 402.33 T
+(s current scheduling policy is returned. V) 290.2 402.33 T
+(alid values are:) 454.25 402.33 T
+(POLICY_FIFO) 216 378.33 T
+(A \336rst-in-\336rst-out scheduling policy) 252 366.33 T
+(.) 395.99 366.33 T
+(POLICY_RR) 216 342.33 T
+(A round-robin scheduling policy) 252 330.33 T
+(.) 382.1 330.33 T
+(POLICY_TIMESHARE) 216 306.33 T
+(A timeshare scheduling policy) 252 294.33 T
+(.) 373.21 294.33 T
+4 12 Q
+(RELA) 180 262.99 T
+(TED INFORMA) 212.43 262.99 T
+(TION) 297.82 262.99 T
+3 10 Q
+2.48 (Functions:) 216 246.33 P
+4 F
+2.48 (rthr) 263.18 246.33 P
+2.48 (ead_set_policy) 280.76 246.33 P
+3 F
+2.48 (,) 342.3 246.33 P
+4 F
+2.48 (rthr) 349.77 246.33 P
+2.48 (ead_get_default_policy) 367.36 246.33 P
+3 F
+2.48 (,) 464.98 246.33 P
+4 F
+2.48 (rthr) 472.46 246.33 P
+2.48 (ead_set_de-) 490.04 246.33 P
+(fault_policy) 216 234.33 T
+3 F
+(.) 265.88 234.33 T
+FMENDPAGE
+%%EndPage: "26" 30
+%%Page: "27" 30
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (27) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_get_priority) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_get_priority) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Return the priority of a rthread) 146.32 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(int) 108 600.31 T
+4 F
+(rthr) 121.05 600.31 T
+(ead_get_priority) 138.63 600.31 T
+3 F
+(\050) 162 588.31 T
+(rthread_t) 165.33 588.31 T
+6 F
+(target_rthread) 367.04 588.31 T
+3 F
+(\051;) 425.89 588.31 T
+4 12 Q
+(DESCRIPTION) 72 556.98 T
+3 10 Q
+0.33 (The) 108 540.31 P
+4 F
+0.33 (rthr) 126.37 540.31 P
+0.33 (ead_get_priority) 143.95 540.31 P
+3 F
+0.33 (function returns the priority value used by the sched-) 217.84 540.31 P
+(uling policy for the tar) 108 528.31 T
+(get rthread.) 197.76 528.31 T
+4 12 Q
+(P) 72 496.98 T
+(ARAMETERS) 78.44 496.98 T
+6 10 Q
+(tar) 108 472.31 T
+(get_rthr) 119.29 472.31 T
+(ead) 151.69 472.31 T
+3 F
+0.92 ([in rthread] The handle of the rthread for which the current priority is) 144 460.31 P
+(desired.) 144 448.31 T
+4 12 Q
+(RETURN V) 72 416.98 T
+(ALUE) 132.75 416.98 T
+3 10 Q
+(The priority value is returned as an integer) 108 400.31 T
+(.) 277.6 400.31 T
+4 12 Q
+(RELA) 72 368.98 T
+(TED INFORMA) 104.43 368.98 T
+(TION) 189.82 368.98 T
+3 10 Q
+(Functions:) 108 352.31 T
+4 F
+(rthr) 152.71 352.31 T
+(ead_set_priority) 170.29 352.31 T
+3 F
+(.) 239.59 352.31 T
+FMENDPAGE
+%%EndPage: "27" 31
+%%Page: "28" 31
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(28) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_set_default_policy) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Set the task\325) 254.32 652.32 T
+(s default policy) 318.17 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(kern_return_t) 216 602.32 T
+4 F
+(rthr) 272.9 602.32 T
+(ead_set_default_policy) 290.48 602.32 T
+3 F
+(\050) 270 590.32 T
+(policy_t) 273.33 590.32 T
+6 F
+(policy) 509.47 590.32 T
+3 F
+(\051;) 533.89 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+0.69 (The) 216 542.32 P
+4 F
+0.69 (rthr) 234.73 542.32 P
+0.69 (ead_set_default_policy) 252.31 542.32 P
+3 F
+0.69 (function sets the default scheduling policy for) 352.66 542.32 P
+1.12 (the task. All new real-time threads created in the task will inherit the new de-) 216 530.33 P
+0.75 (fault scheduling policy) 216 518.33 P
+0.75 (. The policies of rthreads currently executing will not be) 308.45 518.33 P
+(af) 216 506.33 T
+(fected.) 223.59 506.33 T
+4 12 Q
+(P) 180 474.99 T
+(ARAMETERS) 186.44 474.99 T
+6 10 Q
+(policy) 216 450.33 T
+3 F
+0.6 ([in policy_t] The policy to which becomes the default scheduling poli-) 252 438.33 P
+(cy for the task. V) 252 426.33 T
+(alid values are:) 320 426.33 T
+(POLICY_FIFO) 216 402.33 T
+(A \336rst-in-\336rst-out scheduling policy) 252 390.33 T
+(.) 395.99 390.33 T
+(POLICY_RR) 216 366.33 T
+(A round-robin scheduling policy) 252 354.33 T
+(.) 382.1 354.33 T
+(POLICY_TIMESHARE) 216 330.33 T
+(A timeshare scheduling policy) 252 318.33 T
+(.) 373.21 318.33 T
+4 12 Q
+(RETURN V) 180 286.99 T
+(ALUE) 240.75 286.99 T
+3 10 Q
+(The following return values are possible:) 216 270.33 T
+(KERN_SUCCESS) 216 246.33 T
+(The operation was successful.) 252 234.33 T
+(KERN_INV) 216 210.33 T
+(ALID_POLICY) 264.67 210.33 T
+1.12 (The processor set does not) 252 198.33 P
+1.12 ( currently enable the specified) 362.51 198.33 P
+6 F
+1.12 ( policy) 487.43 198.33 P
+3 F
+1.12 ( ar) 515.47 198.33 P
+1.12 (gu-) 526.68 198.33 P
+(ment.) 252 186.33 T
+(KERN_POLICY_LIMIT) 216 162.33 T
+1.37 (The scheduling attributes exceeds the rthread\325) 252 150.33 P
+1.37 (s limits \050i.e. the default) 442.34 150.33 P
+(quantum value is set to low\051.) 252 138.33 T
+FMENDPAGE
+%%EndPage: "28" 32
+%%Page: "29" 32
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (29) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_set_default_policy) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+4 12 Q
+0 X
+(RELA) 72 676 T
+(TED INFORMA) 104.43 676 T
+(TION) 189.82 676 T
+3 10 Q
+0.07 (Functions:) 108 659.33 P
+4 F
+0.07 (rthr) 152.77 659.33 P
+0.07 (ead_get_default_policy) 170.35 659.33 P
+3 F
+0.07 (,) 267.98 659.33 P
+4 F
+0.07 (rthr) 273.05 659.33 P
+0.07 (ead_get_policy) 290.63 659.33 P
+3 F
+0.07 (,) 353.27 659.33 P
+4 F
+0.07 (rthr) 358.34 659.33 P
+0.07 (ead_set_poli-) 375.92 659.33 P
+(cy) 108 647.33 T
+3 F
+(.) 116.79 647.33 T
+FMENDPAGE
+%%EndPage: "29" 33
+%%Page: "30" 33
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(30) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_set_default_quantum) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Set the default quantum value) 254.32 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(void) 216 602.32 T
+4 F
+(rthr) 236.27 602.32 T
+(ead_set_default_quantum) 253.85 602.32 T
+3 F
+(\050) 270 590.32 T
+(int) 273.33 590.32 T
+6 F
+(default_quantum) 466.15 590.32 T
+3 F
+(\051;) 533.89 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+3.12 (The) 216 542.32 P
+4 F
+3.12 (rthr) 237.16 542.32 P
+3.12 (ead_set_default_quantum) 254.74 542.32 P
+3 F
+3.12 (function sets the default time quantum) 370.87 542.32 P
+1.35 (used for the task. Note that quantum values are only used by the round-robin) 216 530.33 P
+(scheduling policy \050POLICY_RR\051.) 216 518.33 T
+4 12 Q
+(P) 180 486.99 T
+(ARAMETERS) 186.44 486.99 T
+6 10 Q
+(default_quantum) 216 462.33 T
+3 F
+0.44 ([in scalar] The value to be used as the default quantum by the schedul-) 252 450.33 P
+(ing policy \050POLICY_RR only\051.) 252 438.33 T
+4 12 Q
+(RETURN V) 180 406.99 T
+(ALUE) 240.75 406.99 T
+3 10 Q
+(NONE.) 216 390.33 T
+4 12 Q
+(RELA) 180 358.99 T
+(TED INFORMA) 212.43 358.99 T
+(TION) 297.82 358.99 T
+3 10 Q
+(Functions:) 216 342.33 T
+4 F
+(rthr) 260.7 342.33 T
+(ead_get_default_quantum) 278.29 342.33 T
+3 F
+(.) 389.89 342.33 T
+FMENDPAGE
+%%EndPage: "30" 34
+%%Page: "31" 34
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (31) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_set_policy) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_set_policy) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Set the policy of a rthread) 146.32 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(kern_return_t) 108 600.31 T
+4 F
+(rthr) 164.9 600.31 T
+(ead_set_policy) 182.48 600.31 T
+3 F
+(\050) 162 588.31 T
+(rthread_t) 165.33 588.31 T
+6 F
+(target_rthread) 370.64 588.31 T
+3 F
+(,) 429.5 588.31 T
+(policy_t) 162 576.31 T
+6 F
+(policy) 401.47 576.31 T
+3 F
+(\051;) 425.89 576.31 T
+4 12 Q
+(DESCRIPTION) 72 544.98 T
+3 10 Q
+3.44 (The) 108 528.31 P
+4 F
+3.44 (rthr) 129.48 528.31 P
+3.44 (ead_set_policy) 147.06 528.31 P
+3 F
+3.44 (function sets the scheduling policy for the tar) 215.18 528.31 P
+3.44 (get) 419.79 528.31 P
+(rthread to the speci\336ed policy) 108 516.31 T
+(.) 226.15 516.31 T
+4 12 Q
+(P) 72 484.98 T
+(ARAMETERS) 78.44 484.98 T
+6 10 Q
+(tar) 108 460.31 T
+(get_rthr) 119.29 460.31 T
+(ead) 151.69 460.31 T
+3 F
+0.44 ([in rthread] The handle of the rthread for which the current policy is to) 144 448.31 P
+(be set.) 144 436.31 T
+6 F
+(policy) 108 412.31 T
+3 F
+([in policy_t] The scheduling policy to use. V) 144 400.31 T
+(alid values are:) 322.22 400.31 T
+(POLICY_FIFO) 108 376.31 T
+(A \336rst-in-\336rst-out scheduling policy) 144 364.31 T
+(.) 287.99 364.31 T
+(POLICY_RR) 108 340.31 T
+(A round-robin scheduling policy) 144 328.31 T
+(.) 274.1 328.31 T
+(POLICY_TIMESHARE) 108 304.31 T
+(A timeshare scheduling policy) 144 292.31 T
+(.) 265.21 292.31 T
+4 12 Q
+(RETURN V) 72 260.98 T
+(ALUE) 132.75 260.98 T
+3 10 Q
+(The following return values are possible:) 108 244.31 T
+(KERN_SUCCESS) 108 220.31 T
+(The operation was successful.) 144 208.31 T
+(KERN_INV) 108 184.31 T
+(ALID_POLICY) 156.67 184.31 T
+1.12 (The processor set does not) 144 172.31 P
+1.12 ( currently enable the specified) 254.51 172.31 P
+6 F
+1.12 ( policy) 379.43 172.31 P
+3 F
+1.12 ( ar) 407.47 172.31 P
+1.12 (gu-) 418.68 172.31 P
+(ment.) 144 160.31 T
+(KERN_POLICY_LIMIT) 108 136.31 T
+1.37 (The scheduling attributes exceeds the rthread\325) 144 124.31 P
+1.37 (s limits \050i.e. the default) 334.34 124.31 P
+(quantum value is set to low\051.) 144 112.31 T
+FMENDPAGE
+%%EndPage: "31" 35
+%%Page: "32" 35
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(32) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+4 12 Q
+0 X
+(RELA) 180 678.02 T
+(TED INFORMA) 212.43 678.02 T
+(TION) 297.82 678.02 T
+3 10 Q
+2.11 (Functions:) 216 661.35 P
+4 F
+2.11 (rthr) 262.81 661.35 P
+2.11 (ead_get_policy) 280.39 661.35 P
+3 F
+2.11 (,) 343.04 661.35 P
+4 F
+2.11 (rthr) 350.14 661.35 P
+2.11 (ead_get_default_policy) 367.73 661.35 P
+3 F
+2.11 (,) 465.35 661.35 P
+4 F
+2.11 (rthr) 472.46 661.35 P
+2.11 (ead_set_de-) 490.04 661.35 P
+(fault_policy) 216 649.35 T
+3 F
+(.) 265.88 649.35 T
+FMENDPAGE
+%%EndPage: "32" 36
+%%Page: "33" 36
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (33) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_set_priority) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_set_priority) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Set the priority of a rthread) 146.32 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(kern_return_t) 108 600.31 T
+4 F
+(rthr) 164.9 600.31 T
+(ead_set_priority) 182.48 600.31 T
+3 F
+(\050) 162 588.31 T
+(rthread_t) 165.33 588.31 T
+6 F
+(target_rthread,) 370.64 588.31 T
+3 F
+(int) 162 576.31 T
+6 F
+(priority) 395.35 576.31 T
+3 F
+(\051;) 425.89 576.31 T
+4 12 Q
+(DESCRIPTION) 72 544.98 T
+3 10 Q
+0.77 (The) 108 528.31 P
+4 F
+0.77 (rthr) 126.81 528.31 P
+0.77 (ead_set_policy) 144.39 528.31 P
+3 F
+0.77 (function sets the priority value used by the scheduling) 209.85 528.31 P
+(policy for the tar) 108 516.31 T
+(get rthread.) 174.71 516.31 T
+4 12 Q
+(P) 72 484.98 T
+(ARAMETERS) 78.44 484.98 T
+6 10 Q
+(tar) 108 460.31 T
+(get_rthr) 119.29 460.31 T
+(ead) 151.69 460.31 T
+3 F
+([in rthread] The handle of the rthread for which the priority is to be set.) 144 448.31 T
+6 F
+(priority) 108 424.31 T
+3 F
+([in scalar] The priority to associate with the tar) 144 412.31 T
+(get rthread.) 331.46 412.31 T
+4 12 Q
+(RETURN V) 72 380.98 T
+(ALUE) 132.75 380.98 T
+3 10 Q
+(The following return values are possible:) 108 364.31 T
+(KERN_SUCCESS) 108 340.31 T
+(The operation was successful.) 144 328.31 T
+(KERN_POLICY_LIMIT) 108 304.31 T
+1.37 (The scheduling attributes exceeds the rthread\325) 144 292.31 P
+1.37 (s limits \050i.e. the default) 334.34 292.31 P
+(quantum value is set to low\051.) 144 280.31 T
+4 12 Q
+(RELA) 72 248.98 T
+(TED INFORMA) 104.43 248.98 T
+(TION) 189.82 248.98 T
+3 10 Q
+(Functions:) 108 232.31 T
+4 F
+(rthr) 152.71 232.31 T
+(ead_get_priority) 170.29 232.31 T
+3 F
+(.) 240.7 232.31 T
+FMENDPAGE
+%%EndPage: "33" 37
+%%Page: "34" 37
+612 792 0 FMBEGINPAGE
+71 720 431 720 2 L
+7 X
+0 K
+V
+2 H
+0 Z
+0 X
+N
+71 423 431 423 2 L
+7 X
+V
+2 Z
+0 X
+N
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 219.43 736.18 T
+71 441 431 666 R
+7 X
+V
+1 24 Q
+0 X
+(General Functions) 153.01 650 T
+FMENDPAGE
+%%EndPage: "34" 38
+%%Page: "35" 38
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (35) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_activation_count) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_activation_count) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Return the number of allocated activations) 146.32 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(int) 108 600.31 T
+4 F
+(rthr) 121.05 600.31 T
+(ead_activation_count) 138.63 600.31 T
+3 F
+(\050) 162 588.31 T
+( \051;) 165.33 588.31 T
+4 12 Q
+(DESCRIPTION) 72 556.98 T
+3 10 Q
+0.2 (The) 108 540.31 P
+4 F
+0.2 (rthr) 126.25 540.31 P
+0.2 (ead_activation_count) 143.82 540.31 P
+3 F
+0.2 (function returns the number of currently allocat-) 237.59 540.31 P
+(ed rthread activations.) 108 528.31 T
+4 12 Q
+(P) 72 496.98 T
+(ARAMETERS) 78.44 496.98 T
+3 10 Q
+(NONE.) 108 480.31 T
+4 12 Q
+(RETURN V) 72 448.98 T
+(ALUE) 132.75 448.98 T
+3 10 Q
+(The number of activations is returned as an integer) 108 432.31 T
+(.) 310.63 432.31 T
+4 12 Q
+(RELA) 72 400.98 T
+(TED INFORMA) 104.43 400.98 T
+(TION) 189.82 400.98 T
+3 10 Q
+(Functions:) 108 384.31 T
+4 F
+(rthr) 152.71 384.31 T
+(ead_activation_cr) 170.29 384.31 T
+(eate) 246.16 384.31 T
+3 F
+(.) 263.36 384.31 T
+FMENDPAGE
+%%EndPage: "35" 39
+%%Page: "36" 39
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(36) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_count) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Return the number of active rthreads) 254.32 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(int) 216 602.32 T
+4 F
+(rthr) 229.05 602.32 T
+(ead_count) 246.63 602.32 T
+3 F
+(\050) 270 590.32 T
+( \051;) 273.33 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+1.97 (The) 216 542.32 P
+4 F
+1.97 (rthr) 236.01 542.32 P
+1.97 (ead_count) 253.59 542.32 P
+3 F
+1.97 (function returns the number of currently active rthreads.) 301.93 542.32 P
+1.15 (This value includes the parent and all of its children,) 216 530.33 P
+1.15 (but does not include the) 439.89 530.33 P
+(number of rthread activations \050see) 216 518.33 T
+4 F
+(rthr) 355.05 518.33 T
+(ead_activation_count) 372.63 518.33 T
+3 F
+(\051.) 463.69 518.33 T
+4 12 Q
+(P) 180 486.99 T
+(ARAMETERS) 186.44 486.99 T
+3 10 Q
+(NONE.) 216 470.33 T
+4 12 Q
+(RETURN V) 180 438.99 T
+(ALUE) 240.75 438.99 T
+3 10 Q
+(The number of active rthreads is returned.) 216 422.33 T
+4 12 Q
+(RELA) 180 390.99 T
+(TED INFORMA) 212.43 390.99 T
+(TION) 297.82 390.99 T
+3 10 Q
+5.86 (Functions:) 216 374.33 P
+4 F
+5.86 (rthr) 266.57 374.33 P
+5.86 (ead_spawn) 284.14 374.33 P
+3 F
+5.86 (,) 331.35 374.33 P
+4 F
+5.86 (rthr) 342.21 374.33 P
+5.86 (ead_spawn_priority) 359.79 374.33 P
+3 F
+5.86 (,) 444.65 374.33 P
+4 F
+5.86 (rthr) 455.51 374.33 P
+5.86 (ead_fork_child) 473.09 374.33 P
+3 F
+5.86 (,) 537.5 374.33 P
+4 F
+(rthr) 216 362.33 T
+(ead_wait) 233.58 362.33 T
+3 F
+(,) 271.89 362.33 T
+4 F
+(rthr) 276.89 362.33 T
+(ead_activation_count) 294.47 362.33 T
+3 F
+(.) 385.53 362.33 T
+FMENDPAGE
+%%EndPage: "36" 40
+%%Page: "37" 40
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (37) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_get_data) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_get_data) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Return a single value from an rthread) 146.32 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(void*) 108 600.31 T
+4 F
+(rthr) 133.27 600.31 T
+(ead_get_data) 150.85 600.31 T
+3 F
+(\050) 162 588.31 T
+(rthread_t) 165.33 588.31 T
+6 F
+(target_rthread) 367.04 588.31 T
+3 F
+(\051;) 425.89 588.31 T
+4 12 Q
+(DESCRIPTION) 72 556.98 T
+3 10 Q
+0.55 (The) 108 540.31 P
+4 F
+0.55 (rthr) 126.59 540.31 P
+0.55 (ead_get_data) 144.17 540.31 P
+3 F
+0.55 (function returns the single value associated with the tar-) 203.85 540.31 P
+(get rthread.) 108 528.31 T
+4 12 Q
+(P) 72 496.98 T
+(ARAMETERS) 78.44 496.98 T
+6 10 Q
+(tar) 108 472.31 T
+(get_rthr) 119.29 472.31 T
+(ead) 151.69 472.31 T
+3 F
+0.4 ([in rthread] The handle of the rthread for which the data variable is de-) 144 460.31 P
+(sired.) 144 448.31 T
+4 12 Q
+(RETURN V) 72 416.98 T
+(ALUE) 132.75 416.98 T
+3 10 Q
+1.54 (Returns the value associated with the tar) 108 400.31 P
+1.54 (get rthread. Note that if a value was) 278.59 400.31 P
+(never assigned, via) 108 388.31 T
+4 F
+(rthr) 186.83 388.31 T
+(ead_set_data) 204.41 388.31 T
+3 F
+(, then the return value may be invalid.) 259.93 388.31 T
+4 12 Q
+(RELA) 72 356.98 T
+(TED INFORMA) 104.43 356.98 T
+(TION) 189.82 356.98 T
+3 10 Q
+(Functions:) 108 340.31 T
+4 F
+(rthr) 152.71 340.31 T
+(ead_set_data) 170.29 340.31 T
+3 F
+(.) 225.8 340.31 T
+FMENDPAGE
+%%EndPage: "37" 41
+%%Page: "38" 41
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(38) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_get_name) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Return the name of an rthread) 254.32 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(const char*) 216 602.32 T
+4 F
+(rthr) 264.29 602.32 T
+(ead_get_name) 281.87 602.32 T
+3 F
+(\050) 270 590.32 T
+(rthread_t) 273.33 590.32 T
+6 F
+(target_rthread) 475.04 590.32 T
+3 F
+(\051;) 533.89 590.32 T
+4 12 Q
+(DESCRIPTION) 180 558.99 T
+3 10 Q
+1 (The) 216 542.32 P
+4 F
+1 (rthr) 235.04 542.32 P
+1 (ead_get_name) 252.62 542.32 P
+3 F
+1 (function returns the text name associated with the tar-) 317.18 542.32 P
+(get rthread.) 216 530.33 T
+4 12 Q
+(P) 180 498.99 T
+(ARAMETERS) 186.44 498.99 T
+6 10 Q
+(tar) 216 474.33 T
+(get_rthr) 227.29 474.33 T
+(ead) 259.69 474.33 T
+3 F
+1.34 ([in rthread] The handle of the rthread for which the text name is de-) 252 462.33 P
+(sired.) 252 450.33 T
+4 12 Q
+(RETURN V) 180 418.99 T
+(ALUE) 240.75 418.99 T
+3 10 Q
+0.34 (Returns the name, as text, associated with the tar) 216 402.33 P
+0.34 (get rthread. Note that if a name) 413.37 402.33 P
+1.54 (was never assigned, via) 216 390.33 P
+4 F
+1.54 (rthr) 319.02 390.33 P
+1.54 (ead_set_name) 336.6 390.33 P
+3 F
+1.54 (, then the return value may be in-) 396.56 390.33 P
+(valid.) 216 378.33 T
+4 12 Q
+(RELA) 180 346.99 T
+(TED INFORMA) 212.43 346.99 T
+(TION) 297.82 346.99 T
+3 10 Q
+(Functions:) 216 330.33 T
+4 F
+(rthr) 260.7 330.33 T
+(ead_set_name) 278.29 330.33 T
+3 F
+(.) 338.24 330.33 T
+FMENDPAGE
+%%EndPage: "38" 42
+%%Page: "39" 42
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (39) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_self) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_self) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Return the handle of the calling rthread) 146.32 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(rthread_t) 108 600.31 T
+4 F
+(rthr) 146.58 600.31 T
+(ead_self) 164.16 600.31 T
+3 F
+(\050) 162 588.31 T
+( \051;) 165.33 588.31 T
+4 12 Q
+(DESCRIPTION) 72 556.98 T
+3 10 Q
+0.55 (The) 108 540.31 P
+4 F
+0.55 (rthr) 126.59 540.31 P
+0.55 (ead_self) 144.17 540.31 P
+3 F
+0.55 (function returns the handle of the calling rthread. This handle) 181.65 540.31 P
+(is used to identify the rthread, and is required by many rthread operations.) 108 528.31 T
+4 12 Q
+(P) 72 496.98 T
+(ARAMETERS) 78.44 496.98 T
+3 10 Q
+(NONE.) 108 480.31 T
+4 12 Q
+(RETURN V) 72 448.98 T
+(ALUE) 132.75 448.98 T
+3 10 Q
+(Returns the rthread handle of the calling rthread.) 108 432.31 T
+4 12 Q
+(RELA) 72 400.98 T
+(TED INFORMA) 104.43 400.98 T
+(TION) 189.82 400.98 T
+3 10 Q
+(NONE.) 108 384.31 T
+FMENDPAGE
+%%EndPage: "39" 43
+%%Page: "40" 43
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+4 10 Q
+0 X
+(40) 180 60.29 T
+4 8 Q
+(Mach 3 Kernel Interfaces) 324 60.29 T
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(OSF\320RI MK6.1 Real-T) 180 736.18 T
+(ime Thr) 269.46 736.18 T
+(eads Library: Rthr) 300.5 736.18 T
+(eads Interface Guide) 373.73 736.18 T
+180 729 540 729 2 L
+7 X
+V
+0 Z
+0 X
+N
+180 747 540 747 2 L
+7 X
+V
+2 H
+0 X
+N
+180 90 540 686.02 R
+7 X
+V
+180 668.99 540 672.02 C
+180 670.5 540 670.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 180 676.68 T
+(ead_set_data) 204.61 676.68 T
+4 10 Q
+(Function) 216 652.32 T
+3 F
+( \321 Assign a single value to a rthread) 254.32 652.32 T
+4 12 Q
+(SYNOPSIS) 180 620.99 T
+3 10 Q
+(void) 216 602.32 T
+4 F
+(rthr) 236.27 602.32 T
+(ead_set_data) 253.85 602.32 T
+3 F
+(\050) 270 590.32 T
+(rthread_t) 273.33 590.32 T
+6 F
+(target_rthread) 478.64 590.32 T
+3 F
+(,) 537.5 590.32 T
+(void*) 270 578.32 T
+6 F
+(data) 516.12 578.32 T
+3 F
+(\051;) 533.89 578.32 T
+4 12 Q
+(DESCRIPTION) 180 546.99 T
+3 10 Q
+0.02 (The) 216 530.33 P
+4 F
+0.02 (rthr) 234.06 530.33 P
+0.02 (ead_set_data) 251.64 530.33 P
+3 F
+0.02 (function is used to assign a data value \050pointer\051 to the tar-) 309.68 530.33 P
+(get rthread. The data value can be retrieved via the) 216 518.33 T
+4 F
+(rthr) 421.1 518.33 T
+(ead_get_data) 438.68 518.33 T
+3 F
+( function.) 495.31 518.33 T
+4 12 Q
+(P) 180 486.99 T
+(ARAMETERS) 186.44 486.99 T
+6 10 Q
+(tar) 216 462.33 T
+(get_rthr) 227.29 462.33 T
+(ead) 259.69 462.33 T
+3 F
+([in rthread] The handle of the rthread for which a data value is to be set.) 252 450.33 T
+6 F
+(data) 216 426.33 T
+3 F
+([in void *] A pointer to the data to be assigned to the tar) 252 414.33 T
+(get rthread.) 475.84 414.33 T
+4 12 Q
+(RETURN V) 180 382.99 T
+(ALUE) 240.75 382.99 T
+3 10 Q
+(NONE.) 216 366.33 T
+4 12 Q
+(RELA) 180 334.99 T
+(TED INFORMA) 212.43 334.99 T
+(TION) 297.82 334.99 T
+3 10 Q
+(Functions:) 216 318.33 T
+4 F
+(rthr) 260.7 318.33 T
+(ead_get_data) 278.29 318.33 T
+3 F
+(.) 334.92 318.33 T
+FMENDPAGE
+%%EndPage: "40" 44
+%%Page: "41" 44
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+4 8 Q
+0 X
+(Mach 3 Kernel Interfaces) 72 60.29 T
+4 10 Q
+-2.5 (41) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(rthr) 72 736.18 T
+(ead_set_name) 87.81 736.18 T
+72 729 432 729 2 L
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+72 747 432 747 2 L
+7 X
+V
+2 H
+0 X
+N
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 684 R
+7 X
+V
+72 666.98 432 670 C
+72 668.49 432 668.49 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+4 14 Q
+0 X
+0 K
+(rthr) 72 674.67 T
+(ead_set_name) 96.61 674.67 T
+4 10 Q
+(Function) 108 650.31 T
+3 F
+( \321 Associate a name with a rthread) 146.32 650.31 T
+4 12 Q
+(SYNOPSIS) 72 618.98 T
+3 10 Q
+(void) 108 600.31 T
+4 F
+(rthr) 128.27 600.31 T
+(ead_set_name) 145.85 600.31 T
+3 F
+(\050) 162 588.31 T
+(rthread_t) 165.33 588.31 T
+6 F
+(target_rthread) 370.64 588.31 T
+3 F
+(,) 429.5 588.31 T
+(const char*) 162 576.31 T
+6 F
+(name) 404.24 576.31 T
+3 F
+(\051;) 425.89 576.31 T
+4 12 Q
+(DESCRIPTION) 72 544.98 T
+3 10 Q
+0.63 (The) 108 528.31 P
+4 F
+0.63 (rthr) 126.67 528.31 P
+0.63 (ead_get_data) 144.25 528.31 P
+3 F
+0.63 (function associates a text name with the tar) 204 528.31 P
+0.63 (get real-time) 380.58 528.31 P
+(thread.) 108 516.31 T
+4 12 Q
+(P) 72 484.98 T
+(ARAMETERS) 78.44 484.98 T
+6 10 Q
+(tar) 108 460.31 T
+(get_rthr) 119.29 460.31 T
+(ead) 151.69 460.31 T
+3 F
+([in rthread] The handle of the rthread for which the name is to be set.) 144 448.31 T
+6 F
+(name) 108 424.31 T
+3 F
+([in pointer] A pointer to the name to be associated with the rthread.) 144 412.31 T
+4 12 Q
+(RETURN V) 72 380.98 T
+(ALUE) 132.75 380.98 T
+3 10 Q
+(NONE.) 108 364.31 T
+4 12 Q
+(RELA) 72 332.98 T
+(TED INFORMA) 104.43 332.98 T
+(TION) 189.82 332.98 T
+3 10 Q
+(Functions:) 108 316.31 T
+4 F
+(rthr) 152.71 316.31 T
+(ead_get_name) 170.29 316.31 T
+3 F
+(.) 231.35 316.31 T
+FMENDPAGE
+%%EndPage: "41" 45
+%%Page: "42" 45
+612 792 0 FMBEGINPAGE
+72 55.01 432 66.96 R
+7 X
+0 K
+V
+3 10 Q
+0 X
+(OSF\320RI MK6.1 Real-Time Threads Library: Rthreads Interface Guide) 72 60.29 T
+-2.5 (42) 422.01 60.29 P
+72 730.15 432 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 219.43 736.18 T
+72 72 432 72 2 L
+7 X
+V
+0.25 H
+2 Z
+0 X
+N
+72 90 432 720 R
+7 X
+V
+0 14 Q
+0 X
+(Coding Example) 72 710.67 T
+3 12 Q
+2.33 (The following program \050) 93.6 684 P
+5 10 Q
+4.66 (lock_f) 219.5 684 P
+4.66 (ight.c) 255.48 684 P
+3 12 Q
+2.33 (\051 demonstrates the usage of) 291.46 684 P
+2.16 (rthreads and locks. Upon execution of lock_\336ght, the parent thread ac-) 72 670 P
+0.52 (quires a contention lock \050) 72 656 P
+5 10 Q
+1.05 (contend_lock_set) 196.01 656 P
+5 12 Q
+1.25 (\051) 291.95 656 P
+3 F
+0.52 ( and forks a speci\336ed num-) 299.15 656 P
+4.39 (ber of child threads. Each child thread will attempt to acquire the) 72 642 P
+2.63 (contention lock and block, since the parent thread already acquired it.) 72 628 P
+1.88 (When all of the children are blocked, the parent thread will release the) 72 614 P
+2.95 (contention lock allowing the children to \336ght amongst themselves for) 72 600 P
+1.02 (lock ownership. When all of the children are dead, the parent thread will) 72 586 P
+(clean-up and exit.) 72 572 T
+0.45 (Protection of critical regions is important in multi-threaded programs.) 93.6 546 P
+0.12 (Y) 72 532 P
+0.12 (ou will note that a separate lock,) 79.46 532 P
+5 10 Q
+0.24 (alive_lock_set) 238.86 532 P
+3 12 Q
+0.12 (,) 322.82 532 P
+0.12 ( is used to enforce ex-) 325.82 532 P
+(clusive access to the) 72 518 T
+5 10 Q
+(alive) 172.59 518 T
+3 12 Q
+( variable.) 202.57 518 T
+1.81 (T) 93.6 492 P
+1.81 (o build the lock_\336ght program execute the following) 100.09 492 P
+1.81 (on the com-) 371.08 492 P
+(mand line:) 72 478 T
+5 10 Q
+(cc -o lock_fight lock_fight.c -lrthreads -lmach) 72 455 T
+(/*) 72 433.33 T
+( * File: lock_f) 72 423.33 T
+(ight.c) 161.95 423.33 T
+( *) 72 413.33 T
+( * To execute: lock_f) 72 403.33 T
+(ight <children>) 197.93 403.33 T
+( */) 72 393.33 T
+(#include <stdio.h>) 72 373.33 T
+(#include <mach.h>) 72 363.33 T
+(#include <mach_error.h>) 72 353.33 T
+(#include <rthreads.h>) 72 343.33 T
+(/* When linking with rthreads) 216 343.33 T
+( */) 389.9 343.33 T
+(#include <mach/sync.h>) 72 333.33 T
+(/* For SYNC_POLICY def) 216 333.33 T
+(initions) 347.93 333.33 T
+(*/) 395.9 333.33 T
+(lock_set_port_t) 72 313.33 T
+(contend_lock_set;) 180 313.33 T
+(lock_set_port_t) 72 303.33 T
+(alive_lock_set;) 180 303.33 T
+(volatile int) 72 283.33 T
+(alive = 0) 180 283.33 T
+(void) 72 263.33 T
+(child\050int\051;) 180 263.33 T
+(main\050int argc, char *argv[]\051) 72 233.33 T
+({) 72 223.33 T
+(int) 108 213.33 T
+(children = 30;) 180 213.33 T
+(int) 108 203.33 T
+(priority;) 180 203.33 T
+(volatile int) 108 193.33 T
+(i = 0;) 180 193.33 T
+(if\050argc == 2\051) 108 163.33 T
+(children = atoi\050argv[1]\051;) 144 153.33 T
+(/* Create two lock sets, each representing one lock */) 108 133.33 T
+(lock_set_create) 108 123.33 T
+(\050mach_task_self\050\051, &contend_lock_set,) 197.95 123.33 T
+(1, SYNC_POLICY_FIXED_PRIORITY\051;) 144 113.33 T
+FMENDPAGE
+%%EndPage: "42" 46
+%%Page: "43" 46
+612 792 0 FMBEGINPAGE
+180 72 540 72 2 L
+7 X
+0 K
+V
+0.25 H
+2 Z
+0 X
+N
+180 55.01 540 66.96 R
+7 X
+V
+3 10 Q
+0 X
+(43) 180 60.29 T
+-0.69 (OSF\320RI MK6.1 Real-Time Threads Library: Rthreads) 324 60.29 P
+180 730.15 540 742.18 R
+7 X
+V
+4 9 Q
+0 X
+(October 26, 1994) 327.42 736.18 T
+180 90 540 720.02 R
+7 X
+V
+5 10 Q
+0 X
+(lock_set_create\050mach_task_self\050\051, &alive_lock_set, 1,) 216 713.35 T
+(SYNC_POLICY_FIFO\051;) 252 703.35 T
+(/* Acquire lock to force all child threads to block */) 216 683.35 T
+(lock_acquire\050contend_lock_set, 0\051;) 216 673.35 T
+(/* Launch children */) 216 653.35 T
+(while\050i < children\051 {) 216 643.35 T
+(/* child priority range is 15 through 24 */) 252 633.35 T
+(priority = \050i%10\051+15;) 252 623.35 T
+(rthread_spawn_priority\050\050rthread_fn_t\051) 252 613.35 T
+(child,\050any_t\051 i, priority\051;) 288 603.35 T
+(i++;) 252 593.35 T
+(}) 216 583.35 T
+(/* Wait for all children to block on the contention) 216 563.35 T
+( * lock.) 216 553.35 T
+( *) 216 543.35 T
+( * Note: the parent thread will not be rescheduled) 216 533.35 T
+( * until all of its children are blocked. This) 216 523.35 T
+( * behavior occurs because the scheduling policy is) 216 513.35 T
+( * FIFO and the parent will now have the lowest) 216 503.35 T
+( * priority.) 216 493.35 T
+( */) 216 483.35 T
+(rthread_set_priority\050rthread_self\050\051, 25\051;) 216 473.35 T
+(lock_release\050contend_lock_set, 0\051;) 216 463.35 T
+(/* wait for all children to terminate */) 216 443.35 T
+(rthread_wait\050\051;) 216 433.35 T
+(/* clean-up locks */) 216 413.35 T
+(lock_set_destroy\050mach_task_self\050\051, contend_lock_set\051;) 216 403.35 T
+(lock_set_destroy\050mach_task_self\050\051, alive_lock_set\051;) 216 393.35 T
+(exit\0500\051;) 216 373.35 T
+(}) 180 363.35 T
+(void) 180 333.35 T
+(child \050int i\051) 180 323.35 T
+({) 180 313.35 T
+(int) 216 303.35 T
+(priority;) 252 303.35 T
+(/* Get thread\325s current priority */) 216 283.35 T
+(priority = rthread_get_priority\050rthread_self\050\051\051;) 216 273.35 T
+(lock_acquire\050alive_lock_set,0\051;) 216 253.35 T
+(alive++;) 216 243.35 T
+(lock_release\050alive_lock_set,0\051;) 216 233.35 T
+(lock_acquire\050contend_lock_set,0\051;) 216 213.35 T
+(lock_release\050contend_lock_set,0\051;) 216 203.35 T
+(lock_acquire\050alive_lock_set,0\051;) 216 183.35 T
+(alive--;) 216 173.35 T
+(lock_release\050alive_lock_set,0\051;) 216 163.35 T
+(rthread_exit\0500\051;) 216 143.35 T
+(}) 180 133.35 T
+FMENDPAGE
+%%EndPage: "43" 47
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 46 1
+%%DocumentFonts: Helvetica-Bold
+%%+ Helvetica
+%%+ Helvetica-BoldOblique
+%%+ Times-Roman
+%%+ Times-Bold
+%%+ Courier
+%%+ Times-Italic
